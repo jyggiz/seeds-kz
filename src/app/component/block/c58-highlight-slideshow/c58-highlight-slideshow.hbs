@@ -1,0 +1,34 @@
+
+
+<section class="b-highlightSlideshow t-darkMono" data-component="c58-highlight-slideshow" data-scroll-component {{#if id}}
+  id="{{id}}" {{/if}}{{#if disableScaleAnimation}}data-disabled-scale-animation{{/if}} data-lazy-component>
+  <div class="b-highlightSlideshow__container">
+    <div class="b-highlightSlideshow__items" data-slideshow-container>
+      {{#each items}}
+        <div class="b-highlightSlideshow__slide {{#if active}} -isActive{{/if}}"
+          {{#if eventTracking}} data-event-tracking="{{ toJson eventTracking }}"{{/if}}
+          data-slide>
+          {{> atom/a01-image image disableTransition=true aria=(object hidden="true") }}
+          <div class="b-highlightSlideshow__copy {{#with alignment}} -{{vertical}} -{{horizontal}}{{^}} -bottom -start{{/with}}
+            {{#unless ../disableUI}} -gradient {{/unless}}">
+            {{> molecule/m04-component-header header alignment="none" disableTransition=true }}
+            {{#with description}}
+              <p class="b-highlightSlideshow__copyDescription">
+                {{this}}
+              </p>
+            {{/with}}
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    {{#unless disableUI}}
+    <div class="b-highlightSlideshow__controls" data-controls>
+      {{> organism/o42-slider-controls level='secondary' }}
+    </div>
+    <div class="b-highlightSlideshow__pagination{{#if roundedPagination}} -rounded{{/if}}">
+      {{> molecule/m48-slider-pagination items=items autoplay=true }}
+    </div>
+    {{/unless}}
+
+  </div>
+</section>

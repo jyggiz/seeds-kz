@@ -1,0 +1,23 @@
+scrollComponent: true
+
+header:
+  eyebrow:
+    text: 'C16-carousel replacement'
+  heading:
+    text: 'CTA variant <span>with no card links</span>'
+    size: 'h4'
+    element: 'h2'
+
+componentId: 'o13'
+
+items:
+  - 'import!../../../organism/o13-content-card/data/thumbnail-description.yaml'
+  - 'import!../../../organism/o13-content-card/data/thumbnail-description.yaml'
+  - 'import!../../../organism/o13-content-card/data/thumbnail-description.yaml'
+
+buttons:
+  - href: '#'
+    label: 'Read more'
+    level: 'secondary'
+    theme: 'black'
+    icon: 'arrow-right'

@@ -1,0 +1,22 @@
+scrollComponent: true
+
+sectorImage:
+  src: 'image/logo-mark-neom.png'
+  alt: entertainment sector
+
+header:
+  eyebrow:
+    text: CONTACT our LEADERSHIP TEAM
+    size: medium
+  moustache:
+    text:
+      NEOM is bringing together world-leading experts to help build a more sustainable future,
+      preserving this limited natural resource through groundbreaking technology..
+    size: small
+  alignment: left
+
+people:
+  - 'import!../../../molecule/m22-person-card/data/gavin.yaml'
+  - 'import!../../../molecule/m22-person-card/data/gavin.yaml'
+  - 'import!../../../molecule/m22-person-card/data/gavin.yaml'
+  - 'import!../../../molecule/m22-person-card/data/gavin.yaml'

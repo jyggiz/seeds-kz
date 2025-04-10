@@ -1,0 +1,129 @@
+title:
+  heading:
+    size: h4
+    text: WHAT MAKES OXAGON <span>SPECIAL</span>?
+
+blocks:
+  - heading: 'A unique region of NEOM'
+    description: ''
+    label: 'LEARN MORE'
+    icon: 'neom-logo'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading: 'Port integrated with sustainable supply chain'
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus laudantium optio
+      eligendi cum culpa. Praesentium recusandae sunt rem dolorem voluptatibus, eum dicta, quidem
+      soluta laboriosam nam alias, incidunt enim?'
+    label: 'LEARN MORE'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+    type: modal
+  - heading: 'A CITY POWERED BY 100% RENEWABLE ENERGY'
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus laudantium optio
+      eligendi cum culpa. Praesentium recusandae sunt rem dolorem voluptatibus, eum dicta, quidem
+      soluta laboriosam nam alias, incidunt enim?'
+    label: 'LEARN MORE'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+    type: modal
+  - heading: 'BEST-IN-CLASS Regulations & Business Rates'
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus laudantium optio
+      eligendi cum culpa. Praesentium recusandae sunt rem dolorem voluptatibus, eum dicta, quidem
+      soluta laboriosam nam alias, incidunt enim?'
+    href: '#'
+    target: '_blank'
+    label: 'LEARN MORE'
+    icon: technology
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+    type: link
+  - heading:
+      '<span>A CIRCULAR ECONOMY</span> <span>WITH</span> <span>INDUSTRY</span> <span>4.0</span>'
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus laudantium optio
+      eligendi cum culpa. Praesentium recusandae sunt rem dolorem voluptatibus, eum dicta, quidem
+      soluta laboriosam nam alias, incidunt enim?'
+    label: 'LEARN MORE'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+    type: modal
+  - heading: 'Every business service IN ONE PLACE'
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus laudantium optio
+      eligendi cum culpa. Praesentium recusandae sunt rem dolorem voluptatibus, eum dicta, quidem
+      soluta laboriosam nam alias, incidunt enim?'
+    label: 'LEARN MORE'
+    icon: technology
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+    type: modal
+  - heading: 'OXAGON is a perfectly located Red Sea port'
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus laudantium optio
+      eligendi cum culpa. Praesentium recusandae sunt rem dolorem voluptatibus, eum dicta, quidem
+      soluta laboriosam nam alias, incidunt enim?'
+    label: 'LEARN MORE'
+    background:
+      disableTransition: true
+      mask:
+        opacity: 1
+        solid: true
+      video:
+        props:
+          src: 'video/background-video-preview.mp4'
+          type: 'video/mp4'
+          autoplay: false
+          loop: true
+          playsinline: true
+          muted: true
+    type: modal
+  - heading: 'DEDICATED RESEARCH & INNOVATION CENTER'
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus laudantium optio
+      eligendi cum culpa. Praesentium recusandae sunt rem dolorem voluptatibus, eum dicta, quidem
+      soluta laboriosam nam alias, incidunt enim?'
+    label: 'LEARN MORE'
+    icon: dna
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+    type: modal
+  - heading: 'Start-up accelerator to attract financing'
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus laudantium optio
+      eligendi cum culpa. Praesentium recusandae sunt rem dolorem voluptatibus, eum dicta, quidem
+      soluta laboriosam nam alias, incidunt enim?'
+    label: 'LEARN MORE'
+    icon: wallet
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+    type: modal
+  - heading: 'EXCEPTIONAL LIVABILITY'
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusamus laudantium optio
+      eligendi cum culpa. Praesentium recusandae sunt rem dolorem voluptatibus, eum dicta, quidem
+      soluta laboriosam nam alias, incidunt enim?'
+    label: 'LEARN MORE'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+    type: modal

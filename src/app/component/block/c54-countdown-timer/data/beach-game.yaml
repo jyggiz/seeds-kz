@@ -1,0 +1,24 @@
+scrollComponent: 'true'
+alignment: 'center'
+id: 'c54-beach-game'
+
+background:
+  image:
+    src: 'image/c54-countdown-timer/hackaphon.jpg'
+
+header:
+  heading:
+    text: 'NEOM BEACH </br> GAMES'
+    size: 'h2'
+
+subheader:
+  text: 'COMING ON OCTOBER IN 2022'
+
+timer:
+  variant: 'h1'
+  date: '9/12/2022 14:00:00 UTC'
+  displayOptions:
+    days: true
+    hours: true
+    minutes: true
+    seconds: true

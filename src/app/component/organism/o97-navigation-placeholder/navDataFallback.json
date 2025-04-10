@@ -1,0 +1,78 @@
+{
+  "navigationContent": {
+    "scrollComponent": true,
+    "logo": {
+      "link": {
+        "href": "/index.html",
+        "label": "NEOM.com homepage",
+        "target": null
+      },
+      "image": {
+        "src": "https://images.prismic.io/seeds-kz/Z_Y1KXdAxsiBweT1_logo-header.webp?auto=format,compress",
+        "alt": "",
+        "variant": "contain"
+      }
+    },
+    "navigation": {
+      "mainAriaLabel": "",
+      "main": [
+        {
+          "label": "Домашняя страница",
+          "href": "/index.html"
+        },
+        {
+          "label": "НПА",
+          "href": "/files.html#npa",
+          "target": "_blank"
+        },
+        {
+          "label": "Список участников",
+          "href": "/companies.html#participants",
+          "target": "_blank"
+        },
+        {
+          "label": "Контакты",
+          "href": "/contacts.html#contacts",
+          "target": "_blank"
+        },
+        {
+          "label": "Семинары",
+          "href": "/gallery.html",
+          "target": "_blank"
+        }
+      ],
+      "aside": [
+        {
+          "type": "CTA",
+          "button": {
+            "label": "Вступить в ассоциацию",
+            "size": "small",
+            "level": "primary",
+            "theme": "white",
+            "href": "/join.html#form",
+            "target": "_blank"
+          }
+        }
+      ]
+    },
+    "isStickySearch": false,
+    "isDrawerNavigation": false,
+    "languages": {
+      "activeLanguageCode": "ru",
+      "options": [
+        {
+          "languageCode": "ru",
+          "shortLabel": "Рус",
+          "label": "Русский",
+          "href": "/index.html"
+        },
+        {
+          "languageCode": "kz",
+          "shortLabel": "Қаз",
+          "label": "Қазақша",
+          "href": "/kz/index.html"
+        }
+      ]
+    }
+  }
+}

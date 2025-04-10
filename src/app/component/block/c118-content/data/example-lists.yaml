@@ -1,0 +1,46 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 1 / 2 / 5
+      componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m17-list
+          data: 'import!../../../molecule/m17-list/data/bulleted.yaml'
+
+    - alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 5 / 2 / 9
+      componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        imageMaxWidth: calc(100% / 1.5)
+        content:
+          componentName: m17-list
+          data: 'import!../../../molecule/m17-list/data/ordered.yaml'
+
+    - alignment:
+        vertical: end
+      gridArea:
+        smallScreen: 3 / 1 / 4 / 5
+        mediumScreen: 1 / 9 / 2 / 13
+      componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m17-list
+          data: 'import!../../../molecule/m17-list/data/definitions.yaml'

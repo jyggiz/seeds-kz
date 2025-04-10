@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="./m46-media-card.scss">
+<script src="./M46MediaCard.ts"></script>
+
+
+<div class="m-mediaCard"
+  data-component="m46-media-card"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}>
+  {{#if image }}
+    <div class="m-mediaCard__media {{#if variant}} -{{variant}}{{/if}}">
+      {{> atom/a01-image image disableTransition=true }}
+      {{#if video}}
+        {{> molecule/m02-button
+          data=(object play-button=null)
+          icon="play-solid"
+          theme="white"
+          variant="play"
+        }}
+      {{/if}}
+    </div>
+  {{/if}}
+
+  {{#with meta}}
+    <div class="m-mediaCard__meta">
+      <span class="m-mediaCard__section">{{section}} &middot;</span>
+      <span class="m-mediaCard__date">{{date}}</span>
+    </div>
+  {{/with}}
+
+  {{#with title}}
+    <h3 class="m-mediaCard__title">{{this}}</h3>
+  {{/with}}
+
+  {{#with cta}}
+    {{> molecule/m02-button
+      size="small"
+      level="tertiary"
+      icon="arrow-right"
+      label=label
+    }}
+  {{/with}}
+</div>

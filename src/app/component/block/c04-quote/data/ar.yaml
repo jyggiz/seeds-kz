@@ -1,0 +1,33 @@
+scrollComponent: true
+
+quote:
+  variant: royalAnnouncement
+  author:
+    prefix: صاحب السمو الملكي
+    name: الأمير محمد بن سلمان، ولي العهد ورئيس مجلس إدارة شركة نيوم
+  quote:
+    '"أقدم لكم "ذا لاين"، مدينة مليونية بطول 170 كم تحافظ على 95% من الطبيعة في أراضي نيوم، صفر
+    سيارات، صفر شوارع، وصفر انبعاثات كربونية".'
+
+callToActions:
+  - label: البيان الصحفي
+    href: 'https://whatistheline-newsroom.neom.com/qaymt-almwad-alalamyt-alkhast-batlaq-mshrw-dha-layn'
+    target: _blank
+    icon: arrow-left
+    level: secondary
+  - label: إطلاق "ذا لاين"
+    icon: play-outline
+    data:
+      play-button:
+    video:
+      props:
+        youtube: ey4fiZe7DdA
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true

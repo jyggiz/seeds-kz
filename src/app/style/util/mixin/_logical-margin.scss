@@ -1,0 +1,9 @@
+@mixin margin-block($start: 0, $end: $start) {
+  margin-block-start: $start;
+  margin-block-end: $end;
+}
+
+@mixin margin-inline($start: 0, $end: $start) {
+  margin-inline-start: $start;
+  margin-inline-end: $end;
+}

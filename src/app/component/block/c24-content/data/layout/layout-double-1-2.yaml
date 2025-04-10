@@ -1,0 +1,23 @@
+scrollComponent: true
+variant: 'double-1-2'
+theme: 'dark'
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Small Double column'
+        size: h4
+        element: h2
+
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Large Double column'
+        size: h3
+        element: h2

@@ -1,0 +1,72 @@
+scrollComponent: true
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              text: 'Quadruple column'
+              size: h6
+              element: h2
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 1 / 2 / 7
+        largeScreen: 1 / 1 / 2 / 4
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              text: 'Quadruple column'
+              size: h6
+              element: h2
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 7 / 2 / 13
+        largeScreen: 1 / 4 / 2 / 7
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              text: 'Quadruple column'
+              size: h6
+              element: h2
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 3 / 1 / 4 / 5
+        mediumScreen: 2 / 1 / 3 / 7
+        largeScreen: 1 / 7 / 2 / 10
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              text: 'Quadruple column'
+              size: h6
+              element: h2
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 4 / 1 / 5 / 5
+        mediumScreen: 2 / 7 / 3 / 13
+        largeScreen: 1 / 10 / 2 / 13

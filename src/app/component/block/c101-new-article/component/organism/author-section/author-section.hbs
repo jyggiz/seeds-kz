@@ -1,0 +1,31 @@
+
+
+<div class="o-author-section" data-component="author-section" data-item="{{toJson this}}">
+  <div class="o-author-section__label">
+    {{ label }}
+  </div>
+  <div class="o-author-section__card">
+    <div class="o-author-section__image">
+      {{> atom/a01-image image disableTransition=true }}
+    </div>
+    <div class="o-author-section__info">
+      <div data-name-button>
+        {{> molecule/m02-button
+          icon="arrow-right"
+          iconAlignment="right"
+          level="tertiary"
+          size="small"
+          theme="black"
+          label=name
+        }}
+      </div>
+
+      {{#with position}}
+        <p class="o-author-section__position">
+          {{this}}
+        </p>
+      {{/with}}
+
+    </div>
+  </div>
+</div>

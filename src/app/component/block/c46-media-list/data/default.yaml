@@ -1,0 +1,503 @@
+scrollComponent: true
+
+filter:
+  filterApiUrl: '/bin/api/newsroom/gallery?componentResourcePath=/content/neom/en-us/newsroom/gallery/jcr:content/root/responsivegrid/c46_media_list&' # Not disclosed for authors
+  devEnvironmentUrl: 'https://dev.neom.com' # Not disclosed for authors
+  primary:
+    items:
+      - label: 'All'
+        value: all
+        active: true
+      - label: 'Images'
+        value: image
+      - label: 'Videos'
+        value: video
+      - label: 'Brand assets'
+        value: brand-asset
+  secondary:
+    items:
+      - label: 'Sector'
+        value: sectors
+        items:
+          - label: 'Energy'
+            value: neom:sectors/energy
+            # disabled: true
+          - label: 'Water'
+            value: neom:sectors/water
+          - label: 'Mobility'
+            value: neom:sectors/mobility
+          - label: Food
+            value: neom:sectors/food
+          - label: 'Health, well-being & biotech'
+            value: neom:sectors/health-well-being-&-biotech
+      - label: 'Collection'
+        value: collection
+        items:
+          - label: 'Collection 1'
+            value: neom:collections/collection1
+          - label: 'Collection 2'
+            value: neom:collections/collection2
+          - label: 'Collection 3'
+            value: neom:collections/collection3
+      - label: 'Location'
+        value: location
+        items:
+          - label: 'Energy'
+            value: energy
+          - label: 'Water'
+            value: water
+          - label: 'Mobility'
+            value: mobility
+      - label: 'Orientation'
+        value: orientation
+        items:
+          - label: 'Vertical'
+            value: vertical
+          - label: 'Horizontal'
+            value: horizontal
+          - label: 'Square'
+            value: square
+
+  # Activate this once we will enable this feature
+  # tertiary:
+  #   label: 'View'
+  #   items:
+  #     - label: '12'
+  #       value: 12
+  #     - label: '48'
+  #       value: 48
+  #     - label: '96'
+  #       value: 96
+checkboxLabels:
+  select: Select Asset
+  selected: Selected
+
+apiUrl: '/bin/api/assets/download'
+
+eventTracking:
+  event: 'Download'
+  eventAction: 'Download - ZIP'
+  eventCategory: 'Download'
+
+content:
+  items:
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: May 22
+      image:
+        src: 'image/c46-media-list/item1.jpg'
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download1.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item1.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: April 26
+      image:
+        src: 'image/c46-media-list/item2.jpg'
+      video:
+        props:
+          sources:
+            - src: 'video/video-preview.mp4'
+              type: 'video/mp4'
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: true
+          loop: true
+          controls:
+            playPause: false
+            fullscreen: false
+            seek: false
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download2.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item2.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: April 5
+      image:
+        src: 'image/c46-media-list/item-portrait.jpg'
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download3.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item-portrait.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: March 28
+      image:
+        src: 'image/c46-media-list/item-landscape.jpg'
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item-landscape.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: February 14
+      image:
+        src: 'image/c46-media-list/item5.jpg'
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item5.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: February 1
+      image:
+        src: 'image/c46-media-list/item6.jpg'
+      video:
+        props:
+          sources:
+            - src: 'video/video-preview.mp4'
+              type: 'video/mp4'
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: true
+          loop: true
+          controls:
+            playPause: false
+            fullscreen: false
+            seek: false
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item6.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: May 22
+      image:
+        src: 'image/c46-media-list/item1.jpg'
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download1.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item1.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: April 26
+      image:
+        src: 'image/c46-media-list/item2.jpg'
+      video:
+        props:
+          sources:
+            - src: 'video/video-preview.mp4'
+              type: 'video/mp4'
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: true
+          loop: true
+          controls:
+            playPause: false
+            fullscreen: false
+            seek: false
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download2.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item2.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: April 5
+      image:
+        src: 'image/c46-media-list/item-portrait.jpg'
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download3.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item-portrait.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: March 28
+      image:
+        src: 'image/c46-media-list/item-landscape.jpg'
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item-landscape.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: February 14
+      image:
+        src: 'image/c46-media-list/item5.jpg'
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item5.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+    - heading: LONG media title goes in MULTIPLE lines
+      datePublished: February 1
+      image:
+        src: 'image/c46-media-list/item6.jpg'
+      video:
+        props:
+          sources:
+            - src: 'video/video-preview.mp4'
+              type: 'video/mp4'
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: true
+          loop: true
+          controls:
+            playPause: false
+            fullscreen: false
+            seek: false
+      link:
+        label: DOWNLOAD file 1MB
+        href: 'downloads/media-download.zip'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item6.jpg'
+        content:
+          copy:
+            Asian wearing virtual reality goggles with amazing cosmic futuristic space virtual
+            imaging background.
+          information:
+            - label: Credit
+              value: Gory Cummins
+            - label: Album
+              value: Album 4
+            - label: Format
+              value: 2048 x 3072 px
+            - label: Licence Type
+              href: '#'
+              value: Terms of Usage
+            - label: Uploaded on
+              value: April 26, 2021
+
+  termsOfUse:
+    heading:
+      text: Terms of use
+      element: h3
+      size: h6
+    items:
+      - size: small
+        content:
+          <p>Welcome to our image bank. All of the content we offer through this image bank can only
+          be downloaded and used to promote NEOM. The material is for editorial use and should not
+          be used for merchandising and/or product advertising. It is not allowed to resell or
+          license photos.<br>If in doubt, please contact <a
+          href="mailto:media@neom.com">media@neom.com</a></p>
+    buttons:
+      - label: Agree with the terms
+        size: small
+        theme: black
+        href: '#'
+        level: primary
+        data:
+          agree-terms: ''
+      - label: Cancel Download
+        size: small
+        theme: black
+        level: secondary
+        data:
+          close-terms: ''
+
+pagination:
+  total: 29
+  limit: 12
+  offset: 0
+  pages:
+    - pageNumber: 1
+      offset: 0
+      active: true
+    - pageNumber: 2
+      offset: 12
+    - pageNumber: 3
+      offset: 24

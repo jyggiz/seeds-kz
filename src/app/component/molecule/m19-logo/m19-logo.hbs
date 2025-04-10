@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="./m19-logo.scss">
+<script src="./M19Logo.ts"></script>
+
+<div class="m-logo" data-component="m19-logo">
+  <a href="{{ link.href }}"{{#with link.target}} target="{{this}}"{{#if (condition this '===' '_blank')}} rel="noopener"{{/if}}{{/with}}{{#with link.label}} aria-label="{{this}}"{{/with}} class="m-logo__link">
+    {{> atom/a01-image image disableTransition=true }}
+  </a>
+</div>

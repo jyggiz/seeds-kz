@@ -1,0 +1,24 @@
+
+<div class="o-stories" data-component="o17-stories" >
+  <div class="o-stories__container">
+    <div class="o-stories__headingContainer -has{{items.length}}Items">
+      <div class="o-stories__headingWrapper">
+        <div class="o-stories__heading" data-slide-in>
+          {{> molecule/m04-component-header header}}
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-container" data-slider>
+      <ul class="o-stories__list swiper-wrapper -has{{items.length}}Items">
+        {{#each items}}
+          <li class="o-stories__item swiper-slide -position-{{arithmetic @index '+' 1}}" data-slide-in>
+            {{> organism/o18-story-card }}
+          </li>
+        {{/each}}
+      </ul>
+
+      {{> atom/a08-page-indicators items=null }}
+    </div>
+  </div>
+</div>

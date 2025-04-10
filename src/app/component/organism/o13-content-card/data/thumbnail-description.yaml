@@ -1,0 +1,14 @@
+thumbnail:
+  aspectRatio: 'square'
+  image:
+    src: './image/c16-carousel/updates_instagram.jpg'
+    alt: null
+
+content:
+  description:
+    size: 'small'
+    copy: '<p>Highlights of the opening ceremony</p>'
+
+meta:
+  year: 2022
+  month: October

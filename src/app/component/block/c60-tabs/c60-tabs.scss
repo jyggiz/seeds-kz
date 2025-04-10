@@ -1,0 +1,130 @@
+.b-tabs {
+  position: relative;
+  z-index: zindex($zLayout, content);
+  background: var(--component-background-color);
+
+  &__container {
+    @include container("compact");
+  }
+
+  &__items {
+    @include list-reset();
+
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin-inline-end: auto;
+    min-height: 70px;
+    overflow: scroll;
+    width: 100%;
+  }
+
+  &__item {
+    @include type("body", "small");
+
+    cursor: pointer;
+    min-height: 70px;
+    position: relative;
+    color: var(--component-text-color);
+    padding: 0 10px 0 5px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:first-child {
+      // stylelint-disable-next-line no-descending-specificity
+      .b-tabs__itemLabel {
+        margin-left: 20px;
+      }
+    }
+
+    &.-isActive {
+      z-index: zindex($zLayout, active-filter);
+      background-color: var(--component-active-color);
+      border: 1px solid var(--component-border-color);
+      border-bottom: 1px solid transparent;
+
+      // stylelint-disable-next-line no-descending-specificity
+      .b-tabs__itemLabel {
+        color: var(--component-text-color-active);
+      }
+    }
+  }
+
+  // stylelint-disable-next-line no-descending-specificity
+  &__itemLabel {
+    @include type("overline", "small");
+    margin: 0 5px;
+  }
+
+  &__content {
+    background-color: var(--component-active-color);
+    border-top: 1px solid var(--component-border-color);
+    display: none;
+    left: 0;
+    opacity: 0;
+    overflow: auto;
+    position: relative;
+    transition: background-color 0.5s;
+    width: 100%;
+
+    &__shadow {
+      @include size(100vw, 50px);
+
+      position: fixed;
+      pointer-events: none;
+      background-image: linear-gradient(to top, transparent 40%, var(--color-black) 200%);
+    }
+
+    &.-isOpen {
+      display: block;
+      opacity: 1;
+      transition: opacity 300ms linear;
+      margin: -1px;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__items {
+      margin-inline-end: -25px;
+      min-height: 142px;
+      overflow: visible;
+      width: auto;
+    }
+
+    &__item {
+      min-height: 142px;
+      min-width: 200px;
+      padding: 0 25px;
+
+      &:first-child {
+        // stylelint-disable-next-line no-descending-specificity
+        .b-tabs__itemLabel {
+          margin-left: unset;
+        }
+      }
+    }
+
+    // stylelint-disable-next-line no-descending-specificity
+    &__itemLabel {
+      @include type("overline", "small");
+      margin: unset;
+    }
+  }
+
+  @include neomThemes() {
+    --component-active-color: var(--color-cream-25);
+    --component-border-color: var(--color-border-grey);
+    --component-text-color-active: var(--color-black);
+    --component-text-color: var(--color-black-75);
+
+    &.t-dark {
+      --component-background-color: var(--color-black);
+      --component-active-color: var(--color-black-75);
+      --component-border-color: var(--color-black-50);
+      --component-text-color-active: var(--color-white);
+      --component-text-color: var(--color-cream-50);
+    }
+  }
+}

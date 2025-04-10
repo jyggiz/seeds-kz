@@ -1,0 +1,23 @@
+.c000-pagination {
+  .m-sliderPagination__timedPagination {
+    position: relative;
+    padding: 0;
+  }
+
+  @include respond-to(MEDIUM) {
+    .m-sliderPagination__title {
+      cursor: pointer;
+    }
+  }
+
+  @include neomThemes() {
+    .t-darkMono & {
+      .m-sliderPagination {
+        --pagination-bar-color-active: var(--color-white);
+        --pagination-bar-color-hover: var(--color-white);
+        --pagination-bar-color: var(--color-white-50a);
+        --pagination-bar-color-passed: var(--color-white);
+      }
+    }
+  }
+}

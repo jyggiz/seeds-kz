@@ -1,0 +1,44 @@
+scrollComponent: true
+id: 'testFragmentID'
+
+header:
+  heading:
+    element: h2
+    text: "What's in it for you?"
+    size: h4
+
+items:
+  - heading:
+      text: A global<br />Platform
+    description:
+      text:
+        'NEOM reimagines urban living by establishing walkability as its
+        cornerstone.<br><br>Communities will be built on a physical and digital infrastructure layer
+        containing essential utilities and transportation services integrated below the surface.'
+      size: small
+    image:
+      alt: Built from the ground up
+      src: 'image/c03-blinds/homepage/home-key-feature-image-01.jpg'
+
+  - heading:
+      text: A postitive<br />Impact
+    description:
+      text:
+        'NEOM will introduce a new model for urban sustainability powered by 100% renewable
+        energy.<br><br> It will adopt environmental responsibility principles, that promote
+        sustainable and regenerative development practices.'
+      size: small
+    image:
+      alt: Sustainability as the main driver
+      src: 'image/c03-blinds/homepage/home-key-feature-image-02.jpg'
+
+  - heading:
+      text: A chance to<br />Grow
+    description:
+      text:
+        'NEOM will be built around people, not cars, and designed for convenience and walkability.
+        Adopting a pedestrian-first approach, all amenities will be within a five-minute walk.'
+      size: small
+    image:
+      alt: Humanity-centered
+      src: 'image/c03-blinds/homepage/home-key-feature-image-03.jpg'

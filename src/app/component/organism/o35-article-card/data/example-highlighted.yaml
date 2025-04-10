@@ -1,0 +1,18 @@
+datePublished: 'May 21st'
+# highlighted
+
+image:
+  src: 'image/c20-test-image.jpg'
+
+heading:
+  text: 'NEOM × OCEANX most recent article goes here'
+
+copy:
+  'At vero eos et accusamus et iusto odio dignissimos duci mus qui blanditiis praesentium voluptatum
+  deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+  provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+  fuga.'
+
+link:
+  label: Learn more
+  href: '#'

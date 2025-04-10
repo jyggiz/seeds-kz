@@ -1,0 +1,186 @@
+scrollComponent: true
+
+overlapTopComponent: true
+
+header:
+  disableTransition: true
+  alignment: left
+  heading:
+    text: Inside<br>NEOM
+    size: h3
+
+items:
+  - title: Rethinking Water
+    image:
+      src: 'image/c29-stories/stories_episodewater.jpg'
+      alt: Rethinking Water
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Rethinking Water
+            title: Rethinking Water
+            src: video/video-preview.mp4
+
+  - title: Where humanity and nature live in harmony
+    image:
+      src: 'image/c29-stories/humanity-harmony.jpg'
+      alt: Where humanity and nature live in harmony
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Where humanity and nature live in harmony
+            title: Where humanity and nature live in harmony
+            src: video/video-preview.mp4
+
+  - title: The Dreamers and Doers
+    image:
+      src: 'image/c29-stories/stories_settlers.jpg'
+      alt: The Dreamers and Doers
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: The Dreamers and Doers
+            title: The Dreamers and Doers
+            src: video/video-preview.mp4
+
+  - title: Building the School of the Future
+    image:
+      src: 'image/c29-stories/stories_education.jpg'
+      alt: Building the School of the Future
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Building the School of the Future
+            title: Building the School of the Future
+            src: video/video-preview.mp4
+
+  - title: Powering NEOM
+    image:
+      src: 'image/c29-stories/stories_peterterium.jpg'
+      alt: Powering NEOM
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Powering NEOM
+            title: Powering NEOM
+            src: video/video-preview.mp4
+
+  - title: Putting Nature First
+    image:
+      src: 'image/c29-stories/stories_environment.jpg'
+      alt: Putting Nature First
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Putting Nature First
+            title: Putting Nature First
+            src: video/video-preview.mp4
+
+  - title: A Preventative Approach to Health
+    image:
+      src: 'image/c29-stories/stories_health.jpg'
+      alt: A Preventative Approach to Health
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: A Preventative Approach to Health
+            title: A Preventative Approach to Health
+            src: video/video-preview.mp4

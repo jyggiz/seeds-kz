@@ -1,0 +1,35 @@
+scrollComponent: true
+alignment: center
+
+background:
+  image:
+    src: 'image/c54-countdown-timer/hackaphon.jpg'
+
+header:
+  flipHeading:
+    size: h4
+    element: h4
+    labels:
+      - calling all creatives
+      - calling all professionals
+      - calling all entrepreneurs
+  moustache:
+    text:
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu suscipit ligula.
+      Suspendisse elementum augue id gravida placerat. Sed semper.
+  disableTransition: true
+
+subheader:
+  text: 'Applications close in'
+
+timer:
+  date: 9/12/2022 14:00:00 UTC
+  displayOptions:
+    days: true
+    hours: true
+    minutes: true
+    seconds: true
+
+buttons:
+  - label: Sign us up
+    theme: white

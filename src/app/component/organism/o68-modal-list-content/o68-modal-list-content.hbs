@@ -1,0 +1,36 @@
+
+
+{{!-- FE Only --}}
+<div class="o-modalListContent" data-component="o68-modal-list-content"
+ {{#if id}} id="{{id}}" {{/if}}
+  data-modal-props="{{toJson this}}">
+
+  {{#if backButtonLabel }}
+  <div class="o-modalListContent__previousModalButton" data-back-button >
+    {{> molecule/m02-button label=backButtonLabel variant="leftIcon" icon="arrow-left" theme="dark-gold"
+    level="tertiary" size="small"}}
+  </div>
+  {{/if}}
+
+  <div class="o-modalListContent__heading">
+    {{>atom/a03-heading size="h6" element="h6" text=heading.text}}
+  </div>
+
+  <div class="o-modalListContent__content" data-content>
+    {{#if (condition type "===" "groupedHotspots")}}
+      {{#each items}}
+        <div class="o-modalListContent__groupHeader">
+          {{>atom/a02-icon name=icon }}
+          {{>atom/a04-eyebrow size="medium" text=heading.text}}
+        </div>
+        {{>organism/o69-abstract-list items=items}}
+      {{/each}}
+    {{/if}}
+    {{#if (condition type "===" "itineraries")}}
+      {{>organism/o69-abstract-list items=items}}
+    {{/if}}
+
+  </div>
+</div>
+
+</div>

@@ -1,0 +1,34 @@
+scrollComponent: true
+
+heading:
+  text: 'THE FUTURE OF DESIGN AND CONSTRUCTION'
+  size: h2
+
+background:
+  image:
+    alt: Neom launches the Line
+    src: 'image/c01-promotion-hero/teaser-still.jpg'
+  video:
+    props:
+      sources:
+        - src: 'video/the-line-background-video.mp4'
+          type: video/mp4
+      originalWidth: 16
+      originalHeight: 9
+      autoplay: true
+      muted: true
+      loop: true
+      cover: true
+
+content:
+  icon: 'health-wellbeing-biotech'
+  heading:
+    text: 'THE FUTURE OF DESIGN AND CONSTRUCTION'
+    size: h2
+    element: h2
+  copy:
+    size: 'medium'
+    content:
+      '<p>NEOM has an unprecedented opportunity to become a global leader in water production,
+      distribution, treatment and reuse by constantly innovating to find better ways to use and
+      protect this valuable resource.</p>'

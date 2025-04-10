@@ -1,0 +1,37 @@
+scrollComponent: true
+columnCount: 3
+hasHighlight: true
+
+items:
+  - 'import!../../../organism/o35-article-card/data/example.yaml'
+
+  - 'import!../../../organism/o35-article-card/data/example.yaml'
+
+  - heading:
+      text: 'Fallback image used'
+
+    copy:
+      'Potable water reservoirs, able to satisfy up to five days of demand, will be built across
+      NEOM’s smart water network. Most of these reservoirs will be impressive concrete structures
+      with a storage capacity of over 100,000 m3 to supply safe, high-quality drinking water
+      on-demand.'
+    link:
+      href: '#'
+      label: Learn more
+
+  - image:
+      src: 'image/c20-test-image.jpg'
+
+    heading:
+      text: 'Transmission & Storage'
+
+    copy:
+      'From coast to desert, all of NEOM’s regions will be supplied with water through a 600km
+      network of carbon steel pipes, valves, equipment, utility, and pipeline culverts. Up to 20
+      pumping stations will be commissioned and delivered by the end of 2024, and six major water
+      reservoirs will be built over the next four years, aiming for a total storage capacity of six
+      million m3.'
+
+    link:
+      href: '#'
+      label: Learn more

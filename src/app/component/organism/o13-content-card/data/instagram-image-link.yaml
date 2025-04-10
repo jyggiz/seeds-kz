@@ -1,0 +1,22 @@
+type: 'social'
+icon: 'instagram-gold'
+
+thumbnail:
+  aspectRatio: 'square'
+  image:
+    src: './image/c16-carousel/updates_instagram.jpg'
+    alt: null
+
+meta:
+  author: 'NEOMAuthorName'
+  date: 'Aug 1st 2022'
+
+content:
+  description:
+    size: 'small'
+    copy: '<p>Highlights of the opening ceremony</p>'
+
+link:
+  href: 'https://instagram.com'
+  label: 'An SEO friendly link text for this card'
+  target: '_blank'

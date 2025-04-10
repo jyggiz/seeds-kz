@@ -1,0 +1,84 @@
+theme: 'dark'
+id: 'newsroom-contact-form'
+action: '#'
+method: 'post'
+form_id: 'newsroom_contact_form'
+heading:
+  text: 'Form example'
+
+recaptcha:
+  sitekey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+  statement:
+    This site is protected by reCAPTCHA and the Google <a
+    href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+    href="https://policies.google.com/terms">Terms of Service</a> apply.
+
+groups:
+  - items:
+      - type: text
+        label: 'Full Name'
+        name: 'full-name'
+        id: 'full-name'
+        placeholder: 'John Doe'
+        required: true
+        titleInEnglish: 'Full Name'
+        validate:
+          presence:
+            message: '^Please enter your full name'
+            allowEmpty: false
+      - type: email
+        name: 'email'
+        id: 'email'
+        placeholder: 'john@example.com'
+        label: 'Email address'
+        required: true
+        titleInEnglish: 'email'
+        validate:
+          presence:
+            message: '^Please enter your business email address'
+          email:
+            message: '^Please enter a correct business email address'
+      - type: select
+        label: 'Role'
+        name: 'role'
+        id: 'role'
+        placeholder: 'Choose one...'
+        required: true
+        titleInEnglish: 'example-select-2'
+        items:
+          - label: 'Foo'
+            value: 'foo-1'
+          - label: 'Bar'
+            value: 'bar-1'
+          - label: 'Baz'
+            value: 'baz-1'
+        validate:
+          presence:
+            message: '^Please choose a role'
+  - type: checkboxGroup
+    legend: 'Contact permissions'
+    name: 'contact-permissions'
+    id: 'contact-permissions'
+    required: true
+    validate:
+      presence:
+        message: '^Please select at least one'
+    items:
+      - type: checkbox
+        name: 'contact-permissions'
+        id: 'contact-permissions'
+        label: 'Yes'
+        value: yes
+        titleInEnglish: 'Contact permissions'
+      - type: checkbox
+        name: 'contact-permissions'
+        id: 'contact-permissions'
+        label: 'No'
+        value: no
+        titleInEnglish: 'Contact permissions'
+
+buttons:
+  - label: 'Send inquiry'
+    size: 'small'
+    theme: 'gold'
+    type: 'submit'

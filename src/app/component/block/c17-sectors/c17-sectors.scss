@@ -1,0 +1,190 @@
+.b-sectors {
+  --sector-text-color: var(--color-black);
+  --sector-grid-padding: 9.5vw 0;
+
+  @include size(100%);
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  overflow: hidden;
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  &__backgroundImage {
+    opacity: 0;
+    transition: opacity 0.6s $easeOutQuad;
+
+    &::after {
+      @include size(100%);
+      @include offset(0, 0);
+
+      background: var(--color-black);
+      content: "";
+      opacity: 0.5;
+      position: absolute;
+    }
+
+    &.-isActive {
+      opacity: 1;
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: var(--fluid-type-max-width);
+    position: relative;
+
+    .a-heading {
+      margin: 0 0 20px;
+    }
+    .m-paragraph {
+      padding: 0 10px;
+      margin: 0 0 50px;
+      text-align: center;
+    }
+    .a-heading,
+    .m-paragraph {
+      --component-heading-color: var(--sector-text-color);
+      --component-text-color: var(--sector-text-color);
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: relative;
+  }
+
+  &.-isActive {
+    --sector-text-color: var(--color-white);
+  }
+
+  &__row {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    &.-compact {
+      padding: var(--sector-grid-padding);
+    }
+  }
+
+  &__placeholder {
+    --sector-button-background-color: var(--color-black);
+    --sector-button-border-color: rgba(0, 0, 0, 0);
+
+    pointer-events: none;
+    user-select: none;
+    display: none;
+
+    &.-isDisabled {
+      --sector-button-background-color: transparent;
+      --sector-button-border-color: var(--color-white-20a);
+    }
+
+    &.-isVisible {
+      display: block;
+      order: 1;
+
+      // stylelint-disable-next-line no-descending-specificity
+      .b-sectors__placeholderWrapper {
+        @include size(30vw);
+      }
+    }
+  }
+
+  // stylelint-disable-next-line no-descending-specificity
+  &__placeholderWrapper {
+    @include size(15.4vw);
+
+    max-height: 266px;
+    max-width: 266px;
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--sector-button-background-color);
+    border: 2px solid var(--sector-button-border-color);
+    box-sizing: border-box;
+    margin: 0 0 15px;
+    overflow: hidden;
+    transition: border-color 0.4s ease, background-color 0.4s ease, transform 0.5s ease;
+
+    // stylelint-disable-next-line no-descending-specificity
+    .-isDisabled & {
+      transform: scale(0.8);
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__content {
+      justify-content: center;
+    }
+
+    .m-paragraph {
+      max-width: 50%;
+      margin: 0 auto 100px;
+    }
+
+    &__placeholder {
+      &.-isVisible {
+        .b-sectors__placeholderWrapper {
+          @include size(21vw);
+        }
+      }
+    }
+  }
+
+  @include respond-to("LARGE") {
+    --sector-grid-padding: 0 9.5vw;
+
+    &__content {
+      display: block;
+      padding: 0;
+    }
+
+    &__row {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &__placeholder {
+      display: block;
+
+      &.-isVisible {
+        order: unset;
+
+        .b-sectors__placeholderWrapper {
+          @include size(15.4vw);
+        }
+      }
+
+      .m-sectorButton {
+        &:not(:last-child) {
+          margin-inline-end: 34px;
+        }
+      }
+    }
+  }
+
+  @include respond-to("XXLARGE") {
+    --sector-grid-padding: 0 137px;
+  }
+
+  @include neomThemes() {
+    &.t-darkMono {
+      --sector-text-color: var(--color-white);
+      .m-sectorButton {
+        --sector-button-background-color: transparent;
+        --sector-button-border-color: var(--color-white-15a);
+
+        &:not(.-isCurrent) {
+          @include hover {
+            --sector-button-background-color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+}

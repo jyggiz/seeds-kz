@@ -1,0 +1,94 @@
+scrollComponent: true
+
+cards:
+  - content:
+      image:
+        src: 'image/maliha-hashmi-main.jpg'
+      heading:
+        text: Example with links
+      copy:
+        'At vero eos et <a href="#">link</a> et iusto odio dignissimos ducimus qui blanditiis
+        praesentium voluptatum <a href="#">deleniti</a> atque corrupti quos dolores et quas.'
+
+    outerContent:
+      image:
+        src: 'image/maliha-hashmi-main.jpg'
+      copy:
+        'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        voluptatum deleniti atque corrupti quos dolores et quas.'
+      link:
+        label: Learn more
+        href: '#'
+        icon: 'plus-circle'
+
+  - content:
+      image:
+        src: 'image/neom-investors-main.jpg'
+      heading:
+        text: Long copy and long heading text inside modal popup
+      copy:
+        'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        voluptatum deleniti atque corrupti quos dolores et quas. At vero eos et accusamus et iusto
+        odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+        dolores et quas. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+        praesentium voluptatum deleniti atque corrupti quos dolores et quas.'
+
+    outerContent:
+      image:
+        src: 'image/neom-investors-main.jpg'
+      copy: ''
+      link:
+        label: Learn more
+        href: '#'
+        icon: 'plus-circle'
+
+  - content:
+      image:
+        src: 'image/c20-test-image.jpg'
+      heading:
+        text: Example with a bullet list text
+      copy: 'Long long text <ul><li>A</li><li>B</li><li>C</li><li>D</li><li>E</li></ul>'
+
+    outerContent:
+      image:
+        src: 'image/c20-test-image.jpg'
+      copy:
+        'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        voluptatum deleniti atque corrupti quos dolores et quas.'
+      link:
+        label: Learn more
+        icon: 'plus-circle'
+
+  - content:
+      image:
+        src: 'image/c20-test-image.jpg'
+      heading:
+        text: An omni-channel operation
+      copy:
+        'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        voluptatum deleniti atque corrupti quos dolores et quas.'
+
+    outerContent:
+      image:
+        src: 'image/c20-test-image.jpg'
+      copy:
+        'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        voluptatum deleniti atque corrupti quos dolores et quas.'
+      link:
+        label: Learn more
+        icon: 'plus-circle'
+
+  - content:
+      image:
+        src: 'image/c20-test-image.jpg'
+      heading:
+        text: Short copy
+      copy: 'At vero eos et accusamus.'
+
+    outerContent:
+      image:
+        src: 'image/c20-test-image.jpg'
+      copy: 'At vero eos et accusamus.'
+      link:
+        label: Learn more
+        icon: 'plus-circle'

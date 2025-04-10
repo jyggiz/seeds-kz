@@ -1,0 +1,36 @@
+scrollComponent: true
+variant: 'double-1-2'
+
+background:
+  image:
+    alt: 'alt'
+    src: 'image/c24-content/intro-bg.jpg'
+    sources:
+      - src: 'image/c24-content/intro-bg.jpg'
+        media: '(min-width: 768px)'
+
+items:
+  - align:
+      horizontal: end
+      vertical: middle
+    type: 'asset'
+    content:
+      variant: square
+      image:
+        variant: contain
+        src: 'image/c24-content/brandbook-photography-intro-image.png'
+        alt: 'Intro icon'
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      copy:
+        size: 'medium'
+        content:
+          '<p>Photography plays a critical role for the NEOM brand. NEOM is a giga-project and needs
+          to communicate many different topics to many different audiences ranging from internal
+          initiatives, corporate communications or investor collateral, to promoting the economic
+          sectors such as tourism, sport and education.<br><br>Setting a few simple but important
+          guidelines for photography will ensure any imagery chosen consistently represents the NEOM
+          brand.</p>'

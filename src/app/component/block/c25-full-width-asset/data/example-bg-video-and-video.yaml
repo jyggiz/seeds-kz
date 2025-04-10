@@ -1,0 +1,52 @@
+scrollComponent: true
+
+heading:
+  text: 'Reshaping the way we live'
+  size: h4
+
+buttons:
+  button:
+    theme: black
+    icon: play-solid
+    size: large
+    prefix: play
+    suffix: video
+    video:
+      props:
+        sources:
+          - src: video/video-preview.mp4
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+    data:
+      play-button:
+
+backgroundVideo:
+  autoloop: true
+  props:
+    enhancedPoster:
+      image:
+        src: 'image/c26-hero-banner/teaser-homepage.jpg'
+        alt: 'Homepage teaser image'
+        sources:
+          - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+            media: '(min-width: 1024px)'
+          - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+            media: '(min-width: 768px)'
+    src: 'video/the-line-background-video.mp4'
+    type: 'video/mp4'
+    sources:
+      - src: 'video/the-line-background-video.mp4'
+        type: 'video/mp4'
+        media: '(min-width: 1024px)'
+      - src: 'video/the-line-background-video.mp4'
+        type: 'video/mp4'
+        media: '(min-width: 768px)'

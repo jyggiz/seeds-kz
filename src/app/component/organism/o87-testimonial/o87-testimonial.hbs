@@ -1,0 +1,16 @@
+
+
+
+<div class="o-testimonial"
+     data-component="o87-testimonial"
+     {{#with ariaLive}}aria-live="{{this}}"{{/with}}
+>
+  {{> molecule/m01-blockquote variant="testimonial" }}
+  {{#with buttons}}
+    <div class="o-testimonial__buttons">
+      {{#each this}}
+        {{> molecule/m02-button size="small" }}
+      {{/each}}
+    </div>
+  {{/with}}
+</div>

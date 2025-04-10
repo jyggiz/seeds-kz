@@ -1,0 +1,28 @@
+scrollComponent: true
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: end
+        content:
+          componentName: m18-paragraph
+          data:
+            icon: 'health-wellbeing-biotech'
+            heading:
+              text: 'World‑class water infrastructures'
+              size: h4
+              element: h2
+            copy:
+              content:
+                '<p>NEOM has an unprecedented opportunity to become a global leader in water
+                production, distribution, treatment and reuse by constantly innovating to find
+                better ways to use and protect this valuable resource.</p>'
+        buttons:
+          contentButtons: 'import!./partial-buttons.yaml'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

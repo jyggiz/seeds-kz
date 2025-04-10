@@ -1,0 +1,98 @@
+.b-slider {
+  --component-highlight-color: var(--color-dark-gold);
+  --component-text-color: var(--color-black);
+  --eyebrow-text-color: var(--component-highlight-color);
+
+  --color-cream-theme-accent: var(--color-dark-gold);
+  --color-black-theme-accent: var(--color-gold);
+  --color-light-blue-theme-accent: var(--color-white);
+
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  overflow-x: hidden;
+
+  .o-updateCard {
+    --card-size: 300px;
+
+    width: clamp(280px, calc((28 / 36) * 100vw), 420px);
+  }
+
+  &__content {
+    .o-contentCard {
+      --content-card-meta-highlight-color: var(--color-theme-accent);
+    }
+  }
+
+  &.t-dark,
+  &.t-darkOxagonBlue {
+    --component-background-color: var(--color-black);
+    --component-highlight-color: var(--color-gold);
+    --component-text-color: var(--color-white);
+
+    .o-contentCard {
+      --content-card-meta-color: var(--color-white);
+    }
+  }
+
+  &__container {
+    @include container();
+
+    position: relative;
+  }
+
+  .o-genericSlider__controls {
+    display: none;
+  }
+
+  &.-ctaCarousel {
+    .o-updateCard:not(.-video) {
+      pointer-events: none;
+
+      .m-button {
+        display: none;
+      }
+    }
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+  @include respond-to(SMALL) {
+    .o-updateCard {
+      --card-size: 360px;
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &__footer {
+      text-align: start;
+    }
+
+    .o-genericSlider__controls {
+      display: block;
+    }
+
+    .o-updateCard {
+      --card-size: 420px;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      row-gap: var(--container-margin);
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @include neomThemes();
+}

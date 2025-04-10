@@ -1,0 +1,75 @@
+heading:
+  element: 'h2'
+  size: 'h5'
+  text: 'Other buttons'
+copy:
+  size: 'small'
+  content: '<p>Other buttons text.</p>'
+
+variant: other
+examples:
+  - heading:
+      text: 'Page Indicators'
+    id: 'm08'
+    example:
+      items:
+        - active: false
+        - active: true
+        - active: false
+  - heading:
+      text: 'Scroll button'
+    id: 'm10'
+    hideOnMobile: true
+  - heading:
+      text: 'Sector button'
+    id: 'm11'
+    example:
+      heading:
+        text: Energy
+        size: h5
+      icon: mobility
+      copy:
+        <p>NEOM will be the first at-scale region powered by 100 percent renewable energy. NEOM’s
+        geographical location provides unrivalled solar and wind potential that will be harnessed to
+        create the world’s most innovative energy system, including hydrogen as one of the most
+        important energy carriers of the future. Through the latest advances in technology NEOM will
+        architect a low-cost and carbon-positive energy ecosystem, and develop energy-intensive
+        industries with potential to front global trends.</p>
+      image:
+        alt: Energy
+        src: 'image/c17-sectors/energy.jpg'
+  - heading:
+      text: 'Social'
+    id: 'm12'
+    example:
+      items: 'import!../../../molecule/m12-social/data/default.yaml'
+  - heading:
+      text: 'Toggle button'
+    id: 'm14'
+  - heading:
+      text: 'Action button'
+    id: 'm15'
+    example:
+      label:
+        top: 'Get in'
+        bottom: 'TOUCH'
+  - heading:
+      text: 'Tile button'
+    id: 'm25'
+    example: 'import!../../../molecule/m25-tile-button/data/example-previous.yaml'
+    hideOnMobile: true
+  - heading:
+      text: 'Tile button / dark '
+    id: 'm25'
+    theme: 'dark'
+    example: 'import!../../../molecule/m25-tile-button/data/example-previous.yaml'
+    hideOnMobile: true
+  - heading:
+      text: 'Hotspot button'
+    id: 'm26'
+  - heading:
+      text: 'Share button'
+    id: 'm32'
+    example:
+      items: 'import!../../../molecule/m32-share-button/data/default.yaml'
+    hideOnMobile: true

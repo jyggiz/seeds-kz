@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="./s01-navigation.scss">
+<script src="./S01Navigation.ts"></script>
+
+{{#with navigationContent}}
+  <nav class="b-navigation{{#if secondaryNavigation}} -hasSecondaryNavigation{{/if}}{{#unless navigation}} -minimal{{/unless}}"
+          data-component="s01-navigation"
+          {{#if navigation}}data-content="{{toJson this}}"{{/if}}
+          {{#unless navigation}}data-minimal-navigation{{/unless}}
+          {{#if scrollComponent}}data-scroll-component{{/if}}
+          {{#if isDrawerNavigation}}data-is-drawer-navigation{{/if}}
+          data-early-display
+  >
+    <div class="b-navigation__container" data-navigation-container>
+      <div class="b-navigation__mask" data-navigation-mask></div>
+
+      <div class="b-navigation__primary" data-primary-navigation>
+        {{> molecule/m19-logo logo }}
+
+        {{#if navigation}}{{> organism/o27-panel-navigation }}{{/if}}
+        {{!-- organism/029-dropdown-navigation injected here if large viewport is present --}}
+      </div>
+      <div class='b-navigation__search-container{{#if isStickySearch}} -isStickySearch{{/if}}'>
+        {{> organism/o88-search-bar search }}
+      </div>
+
+      {{#if secondaryNavigation}}
+        {{> organism/o36-secondary-navigation secondaryNavigation }}
+      {{/if}}
+
+    </div>
+  </nav>
+{{/with}}

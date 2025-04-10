@@ -1,0 +1,16 @@
+scrollComponent: true
+social:
+  label: Наши социальные сети
+  items: import!../../../molecule/m12-social/data/seeds.yaml
+marginalia:
+  items:
+    - label: Политика конфиденциальности
+      href: privacy-policy.html
+      target: _blank
+    - label: Условия пользования
+      href: terms-of-use.html
+      target: _blank
+    - label: Политика использования файлов cookie
+      href: cookie-policy.html
+      target: _blank
+copyrightNotice: © 2025 ОЮЛ "Ассоциация семеноводов Казахстана"

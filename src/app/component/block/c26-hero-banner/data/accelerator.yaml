@@ -1,0 +1,31 @@
+scrollComponent: true
+
+align:
+  horizontal: start
+  vertical: bottom
+
+background:
+  image:
+    src: './image/homepage-mountain-background.jpg'
+    alt: 'Mountain background'
+
+content:
+  header:
+    heading:
+      element: 'h1'
+      size: 'h3'
+      text: 'The Accelerator Program'
+    eyebrow:
+      text: 'Starting in September 2022'
+
+  buttons:
+    - level: 'primary'
+      theme: 'white'
+      label: 'Sign up'
+      variant: 'play'
+      href: '#'
+      target: '_blank'
+      eventTracking:
+        componentId: 'CTA id'
+
+scrollButton: true

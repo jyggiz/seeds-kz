@@ -1,0 +1,15 @@
+
+<div class="o-storyCard" data-component="o18-story-card" {{#if video}}data-video="{{ toJson video.props }}"{{/if}}>
+  <figure class="o-storyCard__figure">
+    {{> atom/a01-image image disableTransition=true }}
+    {{#if video }}
+    {{> molecule/m02-button icon="play-solid" theme="white" variant="play" title=null }}
+    {{/if}}
+  </figure>
+  <div class="o-storyCard__copy">
+    <p class="o-storyCard__title">{{title}}</p>
+    {{#if subtitle }}
+      <p class="o-storyCard__subtitle"> - {{subtitle}}</p>
+    {{/if}}
+  </div>
+</div>

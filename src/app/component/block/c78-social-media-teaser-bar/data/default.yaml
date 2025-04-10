@@ -1,0 +1,21 @@
+variant: 'sliderSize'
+heading: 'Join the conversation'
+
+link:
+  href: 'https://twitter.com/NEOM'
+  label: '#NEOMBeachGames'
+
+social:
+  items:
+    - icon: 'twitter-gold'
+      href: 'https://twitter.com/NEOM'
+      target: '_blank'
+      label: 'Twitter'
+    - icon: 'instagram-gold'
+      href: 'https://www.instagram.com/discoverneom/?hl=en'
+      target: '_blank'
+      label: 'Twitter'
+    - icon: 'tiktok-gold'
+      href: '#'
+      target: '_blank'
+      label: 'TikTok'

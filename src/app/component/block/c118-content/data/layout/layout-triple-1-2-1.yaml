@@ -1,0 +1,56 @@
+scrollComponent: true
+theme: 'dark'
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              text: 'Small Triple column'
+              size: h6
+              element: h2
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 2 / 1 / 3 / 7
+        largeScreen: 1 / 1 / 2 / 5
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              text: 'Large Triple column'
+              size: h5
+              element: h2
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 1 / 2 / 13
+        largeScreen: 1 / 5 / 2 / 9
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              text: 'Small Triple column'
+              size: h6
+              element: h2
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 3 / 1 / 4 / 5
+        mediumScreen: 2 / 7 / 3 / 13
+        largeScreen: 1 / 9 / 2 / 13

@@ -1,0 +1,7 @@
+<a href="{{href}}" class="o-dropdownNavigation__link{{#if highlighted}} -highlighted{{/if}}" data-navigation-link {{#if
+    target }}target="{{ target }}" {{/if}} {{#if (condition target '===' '_blank' )}}rel="noopener" {{/if}}>
+    <span class="o-dropdownNavigation__label">{{ label }}</span>
+    {{#if (condition target '===' "_blank") }}
+        {{> atom/a02-icon name="external-link-arrow"}}
+    {{/if}}
+</a>

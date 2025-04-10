@@ -1,0 +1,153 @@
+.o-dropdownNavigationList {
+  @include size(100%, auto);
+  cursor: default;
+
+  background-color: transparent;
+  border-top: 1px solid var(--color-white-15a);
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  max-height: calc(100vh - var(--dropdown-navigation-offset));
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: var(--dropdown-navigation-offset);
+  transition: background-color 0.5s;
+
+  .-line {
+    border-inline-end: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  &.-isOpen {
+    background-color: var(--color-deep-black);
+    padding: 60px;
+  }
+
+  &__container {
+    @include container;
+
+    padding: 0;
+    overflow: auto;
+
+    &.-menu {
+      display: flex;
+      padding: 0 40px 0 130px;
+    }
+  }
+
+  &__items {
+    @include list-reset(0);
+
+    --project-grid-columns: 4;
+
+    &.-menu {
+      padding-inline-start: 10px;
+      margin-top: 25px;
+      flex: 0 0 32%;
+      height: fit-content;
+    }
+
+    &.-projectMenu {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(var(--project-grid-columns, auto-fit), minmax(0, 1fr));
+    }
+
+    &.-sectorMenu {
+      display: grid;
+      grid-template-columns: repeat(var(--grid-columns, 3), minmax(0, 1fr));
+      gap: 40px;
+      overflow: hidden;
+    }
+  }
+
+  &__item.-menu:not(:last-child) {
+    margin: 0 0 40px;
+  }
+
+  &__link,
+  &__button {
+    color: var(--color-white-70a);
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+
+    @include hover {
+      color: var(--color-white);
+
+      .o-dropdownNavigationList__index {
+        color: var(--color-gold);
+      }
+    }
+
+    &.-isActive {
+      color: var(--color-white);
+
+      .o-dropdownNavigationList__index {
+        color: var(--color-gold);
+      }
+    }
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-inline-start: 0;
+  }
+
+  // stylelint-disable-next-line no-descending-specificity
+  &__index {
+    @include type("navigation", "large");
+
+    padding-top: 8px;
+    color: var(--color-white-30a);
+    display: inline-block;
+    margin-inline-end: var(--grid-gap);
+    position: relative;
+    top: -1.44ex;
+    font-weight: 100;
+  }
+
+  &__label {
+    @include type("heading", "h6");
+    display: flex;
+    align-items: center;
+
+    .a-icon {
+      --icon-size: 10px;
+
+      margin-inline-start: 16px;
+
+      [dir="rtl"] & {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  &__sideMenu {
+    padding-inline-start: 70px;
+    opacity: 0;
+    display: none;
+    padding-bottom: 20px;
+  }
+
+  .m-button {
+    padding-top: 30px;
+  }
+
+  @include respond-to("XXXLARGE") {
+    &__sideMenu {
+      padding-inline-start: 80px;
+    }
+
+    &__items {
+      &.-menu {
+        flex: 0 0 30%;
+        padding-inline-start: 40px;
+      }
+    }
+  }
+}

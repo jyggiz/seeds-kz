@@ -1,0 +1,19 @@
+scrollComponent: true
+
+heading:
+  text: NEOM becomes Formula E Principal partner
+variant: article
+link:
+  href: https://newsroom.neom.com/neom-named-as-principal-partner-of-mercedes-benz-eq-formula-e-team-296622
+  target: '_blank'
+callToAction:
+  label: Read more
+  target: _blank
+  icon: arrow-right
+  iconAlign: right
+image:
+  alt: 'Image'
+  src: 'image/c16-carousel/updates_mercedes.jpg'
+  sources:
+    - src: 'image/c16-carousel/updates_mercedes.jpg'
+      media: '(min-width: 768px)'

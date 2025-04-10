@@ -1,0 +1,76 @@
+.b-logos {
+  @include fullMinHeight();
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  &__container {
+    @include container();
+
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__link {
+    @include size(100%);
+
+    display: flex;
+  }
+
+  &__items {
+    @include list-reset();
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    @include aspect-ratio(240, 180);
+
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    max-height: 144px;
+    max-width: 260px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+
+    .a-image {
+      margin: auto;
+      position: relative;
+    }
+
+    .a-image__img {
+      object-fit: contain;
+    }
+  }
+
+  .m-componentHeader {
+    margin: 0 auto 20px;
+  }
+
+  @include respond-to("MEDIUM") {
+    .m-componentHeader {
+      margin: 0 auto 60px;
+    }
+  }
+
+  @include neomThemes() {
+    &.-backgroundAsset {
+      --component-background-color: var(--color-black);
+      --component-text-color: var(--color-white);
+      --component-heading-color: var(--component-text-color);
+      --component-highlight-color: var(--component-text-color);
+    }
+  }
+}

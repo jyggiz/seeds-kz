@@ -1,0 +1,84 @@
+scrollComponent: true
+
+image:
+  src: 'image/c26-hero-banner/teaser-homepage.jpg'
+  alt: Neom launches the Line
+
+overviewLink:
+  href: './'
+
+heading:
+  text: 'Hello there'
+  size: h5
+
+publicationDate: 'May 21st 2021'
+
+author:
+  name: 'John Doe'
+
+items:
+  - size: large
+    content:
+      '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ac neque quis ultrices nibh.
+      Aliquam mi in ut eu id nec nisi. Nisi lectus vitae vitae, eu urna risus quis pretium
+      malesuada. Lectus semper aenean ornare ornare. Eget vel accumsan tellus venenatis sapien
+      mattis arcu ut ut. Lobortis nunc diam amet, malesuada sed a. Dapibus pellentesque platea et et
+      ut nulla sit est venenatis. Nibh viverra ut dui vitae condimentum sed gravida nibh. Congue mi
+      eu aliquet nisl tincidunt porta elementum.</p>'
+  - size: medium
+    content:
+      '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ac neque quis ultrices nibh.
+      Aliquam mi in ut eu id nec nisi. Nisi lectus vitae vitae, eu urna risus quis pretium
+      malesuada. Lectus semper aenean ornare ornare. Eget vel accumsan tellus venenatis sapien
+      mattis arcu ut ut. Lobortis nunc diam amet, malesuada sed a. Dapibus pellentesque platea et et
+      ut nulla sit est venenatis. Nibh viverra ut dui vitae condimentum sed gravida nibh. Congue mi
+      eu aliquet nisl tincidunt porta elementum.</p> <p>Rhoncus amet urna vulputate metus quis sed
+      in ante. <strong>Dignissim fringilla</strong> <em>egestas interdum</em> faucibus id.</p>
+      <p>Est aenean scelerisque <b>laoreet mi. Egestas</b> <i>ac sagittis</i>, <u>aliquam mi</u>.
+      Condimentum <a href="#">eget feugiat non</a>, leo enim tellus quis nec. Commodo ipsum in
+      ultrices sed habitant. Dui sapien purus eget sed arcu nisl, euismod nec mauris. Nunc sed
+      tortor sagittis sagittis aliquet.</p> <p>Vestibulum nisl tellus at viverra vivamus id sed sit
+      sed. A felis tortor nunc, id integer dolor laoreet ultrices. Etiam tincidunt vitae tincidunt
+      dignissim eget. Vel purus, enim metus pellentesque sollicitudin eget erat. Tempus nibh eget
+      vestibulum massa nulla volutpat scelerisque vitae. Nulla amet cras fusce aenean fermentum
+      vitae. Imperdiet massa non pharetra condimentum. Interdum elit vitae pulvinar sit quam
+      ridiculus. Semper urna elit, consectetur at ut lorem. Condimentum dolor ac viverra accumsan a
+      imperdiet tincidunt. Libero faucibus nunc massa, lorem nec sed ullamcorper nulla. Enim natoque
+      nisl quis hendrerit sed at diam pretium consectetur.</p> <img
+      src="./image/c26-hero-banner/teaser-homepage.jpg" />'
+  - size: medium
+    content:
+      '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ac neque quis ultrices nibh.
+      Aliquam mi in ut eu id nec nisi.</p> <figure> <img
+      src="./image/c26-hero-banner/teaser-homepage.jpg" /> <figcaption> Nisi lectus vitae vitae, eu
+      urna risus quis pretium malesuada </figcaption> </figure> <p>Lectus semper aenean ornare
+      ornare. Eget vel accumsan tellus venenatis sapien mattis arcu ut ut. Lobortis nunc diam amet,
+      malesuada sed a. Dapibus pellentesque platea et et ut nulla sit est venenatis. Nibh viverra ut
+      dui vitae condimentum sed gravida nibh. Congue mi eu aliquet nisl tincidunt porta
+      elementum.</p>'
+  - size: small
+    content:
+      '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ac neque quis ultrices nibh.
+      Aliquam mi in ut eu id nec nisi. Nisi lectus vitae vitae, eu urna risus quis pretium
+      malesuada. Lectus semper aenean ornare ornare. Eget vel accumsan tellus venenatis sapien
+      mattis arcu ut ut. Lobortis nunc diam amet, malesuada sed a. Dapibus pellentesque platea et et
+      ut nulla sit est venenatis. Nibh viverra ut dui vitae condimentum sed gravida nibh. Congue mi
+      eu aliquet nisl tincidunt porta elementum.</p>'
+  - size: medium
+    content:
+      '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ac neque quis ultrices nibh.
+      Aliquam mi in ut eu id nec nisi. Nisi lectus vitae vitae, eu urna risus quis pretium
+      malesuada. Lectus semper aenean ornare ornare.</p> <ul> <li>Lorem Ipsum</li> <li>Dolor Sit
+      Amet</li> </ul> <p> Eget vel accumsan tellus venenatis sapien mattis arcu ut ut. Lobortis nunc
+      diam amet, malesuada sed a. Dapibus pellentesque platea et et ut nulla sit est venenatis. Nibh
+      viverra ut dui vitae condimentum sed gravida nibh. Congue mi eu aliquet nisl tincidunt porta
+      elementum.</p> <ol> <li>Lorem Ipsum</li> <li>Dolor Sit Amet</li> </ol> <p>Lorem ipsum dolor
+      sit amet, consectetur adipiscing elit. Amet ac neque quis ultrices nibh. Aliquam mi in ut eu
+      id nec nisi. Nisi lectus vitae vitae, eu urna risus quis pretium malesuada. Lectus semper
+      aenean ornare ornare. Eget vel accumsan tellus venenatis sapien mattis arcu ut ut. Lobortis
+      nunc diam amet, malesuada sed a. Dapibus pellentesque platea et et ut nulla sit est venenatis.
+      Nibh viverra ut dui vitae condimentum sed gravida nibh. Congue mi eu aliquet nisl tincidunt
+      porta elementum.</p>'
+
+share: 'import!./share.yaml'
+backButton: true

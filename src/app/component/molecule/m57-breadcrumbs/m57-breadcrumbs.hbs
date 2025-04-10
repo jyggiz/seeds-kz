@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="./m57-breadcrumbs.scss">
+<script src="./M57Breadcrumbs.ts"></script>
+
+
+<div class="m-breadcrumbs" data-component="m57-breadcrumbs">
+  <ul class="m-breadcrumbs__items">
+    {{#each items}}
+      <li class="m-breadcrumbs__item{{#if nonClickable}} -isNotClickable{{/if}}{{#if @last}} -isActive{{/if}}{{#if transform}} -transform-{{transform}}{{/if}}" data-breadcrumbs-item>
+        <div class="m-breadcrumbs__divider -left">
+          {{> atom/a02-icon name="chevron-left"}}
+        </div>
+        <a href="{{this.href}}">{{this.label}}</a>
+        {{#unless @last}}
+          <div class="m-breadcrumbs__divider -right">
+            {{> atom/a02-icon name="chevron-right"}}
+          </div>
+        {{/unless}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

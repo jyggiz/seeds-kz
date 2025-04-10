@@ -1,0 +1,80 @@
+scrollComponent: true
+variant: 'double-viewportWidth'
+theme: 'light'
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: 'Our Initiatives'
+        size: 'medium'
+      heading:
+        size: h3
+        text: '<strong>AGRI-FOODTECH</strong> ACCELERATOR'
+      copy:
+        content:
+          '<p>NEOM is not just a place – it is a mindset.<br /> Citizens will embody an
+          international ethos and embrace a culture of exploration, risk-taking and diversity, all
+          supported by a progressive legal system compatible with international norms & conducive to
+          economic growth.</p>'
+      buttons:
+        - level: primary
+          theme: dark-gold
+          label: LEARN MORE
+
+  - align:
+      horizontal: start
+      vertical: fullHeight
+    type: 'asset'
+    content:
+      videoContent:
+        video:
+          autoloop: true
+          lazy: true
+          props:
+            enhancedPoster:
+              image:
+                src: 'image/c26-hero-banner/teaser-homepage.jpg'
+                alt: 'First teaser image'
+                sources:
+                  - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+                    media: '(min-width: 1024px)'
+                  - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+                    media: '(min-width: 768px)'
+            sources:
+              - src: './video/background-video-preview.mp4'
+                type: 'video/mp4'
+        heading:
+          element: h5
+          size: h5
+          text: Film Title
+        playButton:
+          level: primary
+          icon: play-solid
+          theme: white
+          variant: play
+          aria:
+            label: 'play video'
+          video:
+            props:
+              sources:
+                - src: 'video/video-preview.mp4'
+                  type: video/mp4
+              originalWidth: 16
+              originalHeight: 9
+              autoplay: false
+              muted: false
+              loop: false
+              disablePreload: true
+              controls:
+                fullscreen: true
+                playPause: true
+                seek: true
+              eventTracking:
+                event: 'video_start'
+                video:
+                  src: 'video/video-preview.mp4'
+                  title: 'A Vision of a New Future: Explainer video'
+                  titleInEnglish: 'A Vision of a New Future: Explainer video'

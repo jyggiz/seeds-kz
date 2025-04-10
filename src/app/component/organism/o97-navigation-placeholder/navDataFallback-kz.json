@@ -1,0 +1,78 @@
+{
+  "navigationContent": {
+    "scrollComponent": true,
+    "logo": {
+      "link": {
+        "href": "/kz/index.html",
+        "label": "NEOM.com homepage",
+        "target": null
+      },
+      "image": {
+        "src": "https://images.prismic.io/seeds-kz/Z_Y1KXdAxsiBweT1_logo-header.webp?auto=format,compress",
+        "alt": "",
+        "variant": "contain"
+      }
+    },
+    "navigation": {
+      "mainAriaLabel": "",
+      "main": [
+        {
+          "label": "Басты бет",
+          "href": "/kz/index.html"
+        },
+        {
+          "label": "НҚА",
+          "href": "/kz/files.html#npa",
+          "target": "_blank"
+        },
+        {
+          "label": "Қатысушылар тізімі",
+          "href": "/kz/companies.html#participants",
+          "target": "_blank"
+        },
+        {
+          "label": "Байланыс",
+          "href": "/kz/contacts.html#contacts",
+          "target": "_blank"
+        },
+        {
+          "label": "Семинарлар",
+          "href": "/kz/gallery.html",
+          "target": "_blank"
+        }
+      ],
+      "aside": [
+        {
+          "type": "CTA",
+          "button": {
+            "label": "Қауымдастыққа қосылу",
+            "size": "small",
+            "level": "primary",
+            "theme": "white",
+            "href": "/kz/join.html#form",
+            "target": "_blank"
+          }
+        }
+      ]
+    },
+    "isStickySearch": false,
+    "isDrawerNavigation": false,
+    "languages": {
+      "activeLanguageCode": "kz",
+      "options": [
+        {
+          "languageCode": "ru",
+          "shortLabel": "Рус",
+          "label": "Русский",
+          "href": "/index.html"
+        },
+        {
+          "languageCode": "kz",
+          "shortLabel": "Қаз",
+          "label": "Қазақша",
+          "href": "/kz/index.html"
+        }
+      ]
+    }
+  }
+}

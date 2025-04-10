@@ -1,0 +1,24 @@
+scrollComponent: true
+
+eyebrow:
+  text: Thank you for your interest in NEOM!
+
+heading:
+  text: 'We’ll be in touch as soon as possible. '
+  size: h4
+
+moustache:
+  size: small
+  text: 'If you would like to learn more, you can download the NEOM Information pack here.'
+
+buttons:
+  - theme: white
+    label: Download Information pack
+    href: 'downloads/download-placeholder.zip'
+  - theme: white
+    label: Home
+    href: 'homepage.html'
+
+image:
+  alt: null
+  src: 'image/homepage-mountain-background.jpg'

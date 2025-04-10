@@ -1,0 +1,130 @@
+.b-carousel {
+  @include neomThemes;
+
+  --eyebrow-text-color: var(--component-highlight-color);
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  overflow-x: hidden;
+  padding-block: var(--component-block-padding, var(--container-margin));
+
+  .a-pageIndicators {
+    padding-bottom: 0;
+  }
+
+  &__container {
+    @include container;
+
+    position: relative;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 35px;
+  }
+
+  &.-ctaCarousel .o-updateCard:not(.-video) .m-button {
+    display: none;
+  }
+
+  &__footer {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .swiper-container {
+    overflow: visible;
+  }
+
+  .swiper-slide {
+    @include size(var(--card-size), auto);
+
+    --card-size: 280px;
+  }
+
+  &__controls {
+    display: none;
+  }
+
+  [data-component="m04-component-header"] {
+    .m-componentHeader__asset {
+      margin-bottom: 8px;
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &__header {
+      margin: 0 0 60px;
+    }
+
+    .a-pageIndicators {
+      display: none;
+    }
+
+    .swiper-slide {
+      --card-size: 420px;
+
+      .a-image {
+        height: 100%;
+      }
+    }
+
+    &__controls {
+      @include size(160px, 60px);
+
+      align-self: flex-end;
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      right: var(--containerMargin);
+      z-index: zindex($zLayout, content);
+
+      [dir="rtl"] & {
+        left: var(--containerMargin);
+        right: inherit;
+      }
+
+      &.-isHidden {
+        display: none;
+      }
+    }
+
+    &__footer {
+      text-align: start;
+    }
+  }
+
+  @include respond-to(LARGE) {
+    &__container {
+      display: grid;
+      column-gap: var(--grid-gap);
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    &__header {
+      grid-column: 2 / span 11;
+      grid-row-start: 1;
+    }
+
+    &__content {
+      grid-column: 2 / span 11;
+      grid-row-start: 2;
+    }
+
+    &__footer {
+      grid-column: 2 / span 11;
+      grid-row-start: 3;
+    }
+  }
+
+  @include respond-to(XXLARGE) {
+    .swiper-slide {
+      --card-size: 478px;
+    }
+  }
+
+  @include theme("neom") {
+    --component-background-color: var(--color-cream);
+  }
+}

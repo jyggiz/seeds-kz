@@ -1,0 +1,22 @@
+
+
+<div class="m-copyProgressIndicator"
+         data-component="m44-copy-progress-indicator">
+  <span class="m-copyProgressIndicator__container">
+    <svg class="m-copyProgressIndicator__svg" viewBox="0 0 210 54">
+      <mask id="balloon-mask-{{id}}-{{arithmetic @index '+' 1}}" fill="white">
+        <path d="M24 0C10.7452 0 0 10.7452 0 24C0 36.1653 9.05124 46.2165 20.7868 47.7868L25.3639 52.3639C26.5355 53.5355 28.435 53.5355 29.6066 52.3639L33.9705 48H186C199.255 48 210 37.2548 210 24C210 10.7452 199.255 0 186 0H24Z"/>
+      </mask>
+      <g mask="url(#balloon-mask-{{id}}-{{arithmetic @index '+' 1}})">
+        <path d="M24 0C10.7452 0 0 10.7452 0 24C0 36.1653 9.05124 46.2165 20.7868 47.7868L25.3639 52.3639C26.5355 53.5355 28.435 53.5355 29.6066 52.3639L33.9705 48H186C199.255 48 210 37.2548 210 24C210 10.7452 199.255 0 186 0H24Z" fill="#1D1F22"/>
+        <rect x="-1" y="-1" width="211" height="55" fill="#006B44" class="m-copyProgressIndicator__progress" data-progress />
+        <path d="M20.7868 47.7868L21.4939 47.0797L21.2547 46.8405L20.9194 46.7956L20.7868 47.7868ZM33.9705 48V47H33.5563L33.2634 47.2929L33.9705 48ZM1 24C1 11.2975 11.2975 1 24 1V-1C10.1929 -1 -1 10.1929 -1 24H1ZM20.9194 46.7956C9.67383 45.2909 1 35.6576 1 24H-1C-1 36.673 8.42865 47.1421 20.6541 48.7779L20.9194 46.7956ZM26.0711 51.6568L21.4939 47.0797L20.0797 48.4939L24.6568 53.0711L26.0711 51.6568ZM28.8995 51.6568C28.1184 52.4379 26.8521 52.4379 26.0711 51.6568L24.6568 53.0711C26.2189 54.6331 28.7516 54.6331 30.3137 53.0711L28.8995 51.6568ZM33.2634 47.2929L28.8995 51.6568L30.3137 53.0711L34.6776 48.7071L33.2634 47.2929ZM186 47H33.9705V49H186V47ZM209 24C209 36.7025 198.703 47 186 47V49C199.807 49 211 37.8071 211 24H209ZM186 1C198.703 1 209 11.2975 209 24H211C211 10.1929 199.807 -1 186 -1V1ZM24 1H186V-1H24V1Z" fill="white" fill-opacity="0.1"/>
+      </g>
+  </svg>
+
+    {{> atom/a02-icon name="color-picker"}}
+    <span class="m-copyProgressIndicator__label"data-copied-label={{@root.i18n.copied}}>
+    {{> atom/a07-label text=@root.i18n.copyHexCode size="small"}}
+    </span>
+  </span>
+</div>

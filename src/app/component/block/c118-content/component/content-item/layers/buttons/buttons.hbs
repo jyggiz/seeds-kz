@@ -1,0 +1,18 @@
+
+<div data-component="buttons" class="buttons
+  {{#if buttons.type}}-{{buttons.type}}{{/if}}
+  {{#if horizontalAlign}}-{{horizontalAlign}}{{/if}}">
+
+  {{#each buttons.contentButtons }}
+    {{> (lookup . "componentName")
+        (ternaryOperator (condition data.type "===" "share")
+          (setProperties data 'data' (object
+            share-button=null
+            share=(toJson data)
+            success-message=@root.i18n.copied)
+            'icon' 'share'
+          )
+          data)
+    }}
+  {{/each}}
+</div>

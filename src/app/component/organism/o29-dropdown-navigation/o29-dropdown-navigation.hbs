@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="./o29-dropdown-navigation.scss">
+<script src="./O29DropdownNavigation.ts"></script>
+
+
+<div
+  class="o-dropdownNavigation"
+  data-component="o29-dropdown-navigation"
+  >
+   <nav class="o-dropdownNavigation__section -main">
+    {{#with navigation.main}}
+      {{> ./_dropdown-navigation-list.hbs}}
+    {{/with}}
+  </nav>
+  <div class="o-dropdownNavigation__section -aside">
+    {{#with search }}
+      {{> molecule/m02-button icon='search-navigation' level='secondary' theme='white' type='submit' aria=mainButtonAria data=(object search-button=null) }}
+    {{/with}}
+
+    {{#if languages}}
+      {{#if (condition languages.options.length '<=' 2)}}
+        {{> molecule/m07-language-toggle }}
+      {{^}}
+        {{> organism/o04-language-selector }}
+      {{/if}}
+    {{/if}}
+    {{#with navigation.aside}}
+      {{> ./_dropdown-navigation-list.hbs }}
+    {{/with}}
+  </div>
+  <span class="o-dropdownNavigation__indicator" data-navigation-indicator></span>
+</div>

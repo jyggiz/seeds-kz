@@ -1,0 +1,92 @@
+
+
+<div class="o-hotspotMap{{#if static}} -isStatic{{/if}}{{#if regions}} -regions{{/if}}"
+     data-component="o64-hotspot-map"
+     {{#if scrollComponent}}data-scroll-component{{/if}}
+     {{#if id}} id="{{id}}"{{/if}}
+     data-items="{{toJson items}}"
+     data-hotspot-style="{{#if alternateHotspotStyle}}alternate{{^}}default{{/if}}"
+     {{#with xAxisMobileOffset}}data-x-axis-offset="{{this}}"{{/with}}
+     >
+  {{#if regions}}
+    <div class="o-hotspotMap__regionsDescriptionSlider" data-regions-slider-container>
+      <div class="swiper-container" data-regions-slider>
+        <ul class="swiper-wrapper">
+          {{#each regions}}
+            <li class="swiper-slide">
+              <div class="o-hotspotMap__regionsDescriptionSliderLabel">
+                {{{description.label}}}
+              </div>
+              <div class="o-hotspotMap__regionsDescriptionSliderCopy">
+                {{description.copy}}
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="swiper__controls">
+        <div class="swiper-button-prev" data-previous-button>
+          {{> molecule/m02-button theme="white" level="primary" icon="arrow-left" }}
+        </div>
+        {{> atom/a08-page-indicators items=regions }}
+        <div class="swiper-button-next" data-next-button>
+          {{> molecule/m02-button theme="white" level="primary" icon="arrow-right" }}
+        </div>
+      </div>
+    </div>
+  {{/if}}
+  {{#with discoverLocationsButton}}
+    <div class="o-hotspotMap__discoverLocationsButton" data-discover-locations-button>
+      {{> molecule/m02-button }}
+    </div>
+  {{/with}}
+  <div class="o-hotspotMap__background-wrapper" data-hotspot-background-wrapper>
+    <div class="o-hotspotMap__background" data-hotspot-background>
+      {{> atom/a01-image mapBackground disableTransition=true}}
+      {{#if regions}}
+        <div class="o-hotspotMap__backgroundRegions">
+          {{#each regions}}
+            {{> atom/a01-image image disableTransition=true}}
+            <div class="o-hotspotMap__backgroundRegionsButton" style="top: {{cta.offset.y}}%; left: {{cta.offset.x}}%" data-region-button="{{id}}">
+              {{> molecule/m02-button cta }}
+            </div>
+            {{#with description}}
+              <div class="o-hotspotMap__backgroundRegionsDescription" style="top: {{offset.y}}%; left: {{offset.x}}%" data-position-x="{{offset.x}}%" data-position-y="{{offset.y}}%" data-region-description>
+                <div class="o-hotspotMap__backgroundRegionsLabel">
+                  {{{label}}}
+                </div>
+                <div class="o-hotspotMap__backgroundRegionsCopy">
+                  {{copy}}
+                </div>
+              </div>
+            {{/with}}
+          {{/each}}
+        </div>
+      {{/if}}
+      {{#if overlayBackgrounds}}
+        {{> molecule/m42-overlay-background}}
+      {{/if}}
+
+      {{#if scale}}
+       {{> atom/a28-scale scale }}
+      {{/if}}
+
+      <div class="o-hotspotMap__container" data-hotspot-container>
+        {{#each items}}
+          <div class="o-hotspotMap__hotspot{{#if active}} -isActive{{/if}}" data-hotspot data-item="{{toJson this}}">
+            {{> molecule/m26-hotspot-button aria=(object labelledby=(arithmetic "o64-hotspot-map-" '+' @index)) alternateHotspotStyle=../alternateHotspotStyle }}
+            <div class="o-hotspotMap__tooltipWrapper" data-tooltip-wrapper>
+              {{#if (isArray content)}}
+                {{#each content as |item|}}
+                  {{> molecule/m24-tooltip item.heading isStatic=true id=(arithmetic "o64-hotspot-map-" '+' @index) aria=(object hidden="true") }}
+                {{/each}}
+              {{else}}
+                {{> molecule/m24-tooltip content.heading isStatic=true id=(arithmetic "o64-hotspot-map-" '+' @index) aria=(object hidden="true") }}
+              {{/if}}
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

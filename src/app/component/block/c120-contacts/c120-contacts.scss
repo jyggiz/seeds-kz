@@ -1,0 +1,40 @@
+.b-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+
+    @include respond-to(MEDIUM) {
+      flex-direction: row;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include respond-to(MEDIUM) {
+      margin-right: 50px;
+    }
+
+    & > * {
+      max-width: 300px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

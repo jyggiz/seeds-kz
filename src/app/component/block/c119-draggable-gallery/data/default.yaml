@@ -1,0 +1,656 @@
+copy:
+  grid: 'Grid'
+  slider: 'Slide Show'
+  drag: 'Drag and Drop'
+  click: 'Click for More information'
+  view: 'View'
+
+items:
+  - title:
+      text: 'Blue Moon'
+      element: h2
+      size: h3
+    eyebrow:
+      text: 'Vista Hotel Beach – August'
+    cta:
+      label: 'Learn more'
+      icon: 'arrow-right'
+      level: primary
+      theme: white
+    image:
+      src: 'image/c17-sectors/services.jpg'
+      alt: 'Slide 1'
+
+    about:
+      title: About'
+      date: '22th of August, 2022'
+      description:
+        'Traditionally the definition of a blue moon is the third full Moon in an astronomical
+        season containing four full moons. The next Blue Moon wil be on 31 August 2023.'
+      image:
+        src: 'https://picsum.photos/seed/picsum/600/600'
+        alt: 'Slide 1'
+
+    tabs:
+      - eyebrow:
+          text: 'Specifications'
+        details:
+          - label: 'Camera'
+            copy: 'Canon EOS 60D (APS-C Sensor)'
+          - label: 'Lens'
+            copy: 'TAMRON 18-400mm F/3.5-6.3 Di II VC HLD B028'
+          - label: 'Focal Length'
+            copy: '400mm (x 1.6)'
+
+      - eyebrow:
+          text: 'Sky'
+        details:
+          - label: 'Aperture'
+            copy: 'f/6.3'
+          - label: 'Shutter Speed'
+            copy: '1/250'
+          - label: 'ISO'
+            copy: '100'
+
+      - eyebrow:
+          text: 'Subs'
+        details:
+          - label: 'Light Frames'
+            copy: 'Single frame'
+
+      - eyebrow:
+          text: 'Equipment'
+        details:
+          - label: 'Tripod'
+            copy: 'Manfrotto Befree'
+          - label: 'Software'
+            copy: 'Deep Sky Stacker + Adobe Photoshop'
+
+  - title:
+      text: 'Milky Way'
+      element: h2
+      size: h3
+    eyebrow:
+      text: 'NEOM – August'
+    cta:
+      label: 'Learn more'
+      icon: 'arrow-right'
+      level: primary
+      theme: white
+    image:
+      src: 'image/c17-sectors/education-research-innovation.jpg'
+      alt: 'Slide 2'
+
+    about:
+      title: 'About'
+      date: '22th of August, 2022'
+      description:
+        'The Milky Way Galactic Centre dances with the desert. Our is a spiral Galaxy, is estimated
+        to be 13.6 billion years old, and has an estimated radius of 52,850 light-years it is the
+        home of 100–400 billion stars.'
+      image:
+        src: 'https://picsum.photos/seed/picsum/200/200'
+        alt: 'Slide 1'
+
+    tabs:
+      - eyebrow:
+          text: 'Specifications'
+        details:
+          - label: 'Camera'
+            copy: 'Canon EOS R5 (Full Frame Sensor)'
+          - label: 'Lens'
+            copy: 'Canon RF 24-105mm F4L IS USM'
+          - label: 'Focal Length'
+            copy: '24mm'
+
+      - eyebrow:
+          text: 'Sky'
+        details:
+          - label: 'Aperture'
+            copy: 'f/4'
+          - label: 'Shutter Speed'
+            copy: '120"'
+          - label: 'ISO'
+            copy: '1600'
+          - label: 'Total Integration'
+            copy: '1h 16m'
+
+      - eyebrow:
+          text: 'Subs'
+        details:
+          - label: 'Light Frames'
+            copy: '40 @ 120"'
+          - label: 'Dark Frames'
+            copy: 'Yes'
+          - label: 'Bias Frames'
+            copy: 'Yes'
+          - label: 'Flat Frames'
+            copy: 'Yes'
+
+      - eyebrow:
+          text: 'Foreground'
+        details:
+          - label: 'Other'
+            copy:
+              'The photo was taken with my mobile phone Samsung Note 20 Ultra during the blue hour
+              while I was finding the right spot to place the equipment.'
+
+      - eyebrow:
+          text: 'Equipment'
+        details:
+          - label: 'Tripod'
+            copy: 'Artcise AS95C Carbon Tripod'
+          - label: 'Star Tracker'
+            copy: 'SkyWatcher Star Adventures'
+          - label: 'Guiding Scope'
+            copy: 'ZWO 30F4'
+          - label: 'Guiding Camera'
+            copy: 'ZWO ASI 120MM'
+          - label: 'Guiding Computer'
+            copy: 'ASIAIR Plus'
+
+  - title:
+      text: 'The Neandertal Comet'
+      element: h2
+      size: h3
+    eyebrow:
+      text: 'The Line – January'
+    cta:
+      label: 'Learn more'
+      icon: 'arrow-right'
+      level: primary
+      theme: white
+    image:
+      src: 'image/c03-blinds/key-feature-image-01.jpg'
+      alt: 'Slide 3'
+
+    about:
+      title: 'About'
+      date: '23 of January 2023'
+      description:
+        'The Milky Way Galactic Centre dances with the desert. Our is a spiral Galaxy, is estimated
+        to be 13.6 billion years old, and has an estimated radius of 52,850 light-years it is the
+        home of 100–400 billion stars.'
+      image:
+        src: 'https://picsum.photos/seed/picsum/200/200'
+        alt: 'Slide 1'
+
+    tabs:
+      - eyebrow:
+          text: 'Specifications'
+        details:
+          - label: 'Camera'
+            copy: 'Canon EOS R5 (Full Frame Sensor)'
+          - label: 'Focal Length'
+            copy: '420mm'
+
+      - eyebrow:
+          text: 'Sky'
+        details:
+          - label: 'Aperture'
+            copy: 'f/5.8'
+          - label: 'Shutter Speed'
+            copy: '30"'
+          - label: 'ISO'
+            copy: '1600'
+
+      - eyebrow:
+          text: 'Subs'
+        details:
+          - label: 'Light Frames'
+            copy: '65 @ 30"'
+          - label: 'Dark Frames'
+            copy: 'Yes'
+          - label: 'Bias Frames'
+            copy: 'Yes'
+          - label: 'Flat Frames'
+            copy: 'Yes'
+
+      - eyebrow:
+          text: 'Equipment'
+        details:
+          - label: 'Tripod'
+            copy: 'Artcise AS95C Carbon Tripod'
+          - label: 'Star Tracker'
+            copy: 'ZWO model AM5'
+          - label: Telescope
+            copy: 'Sky-Watcher Evostar 72ED 420mm f/5.8'
+          - label: 'Guiding Scope'
+            copy: 'ZWO 30F4'
+          - label: 'Guiding Camera'
+            copy: 'ZWO ASI 120MM'
+          - label: 'Guiding Computer'
+            copy: 'ASIAIR Plus'
+          - label: 'Software'
+            copy: 'Deep Sky Stacker + Adobe Photoshop'
+          - label: 'Filters'
+            copy: 'Optolog 2" L-Pro (Light Pollution filter)'
+
+  - title:
+      text: 'Orion Constallation'
+      size: 'h3'
+    eyebrow:
+      text: 'The Line – January'
+    cta:
+      label: 'Learn more'
+      icon: 'arrow-right'
+      level: primary
+      theme: white
+    image:
+      src: 'https://picsum.photos/seed/picsum/2560/1440'
+      alt: 'Slide 1'
+
+    about:
+      title: 'About'
+      date: '23 of January 2023'
+      description:
+        'The Milky Way Galactic Centre dances with the desert. Our is a spiral Galaxy, is estimated
+        to be 13.6 billion years old, and has an estimated radius of 52,850 light-years it is the
+        home of 100–400 billion stars.'
+      image:
+        src: 'https://picsum.photos/seed/picsum/200/200'
+        alt: 'Slide 1'
+
+    tabs:
+      - eyebrow:
+          text: 'Specifications'
+        details:
+          - label: 'Camera'
+            copy: 'Canon EOS R5 (Full Frame Sensor)'
+          - label: 'Focal Length'
+            copy: '420mm'
+
+      - eyebrow:
+          text: 'Sky'
+        details:
+          - label: 'Aperture'
+            copy: 'f/5.8'
+          - label: 'Shutter Speed'
+            copy: '30"'
+          - label: 'ISO'
+            copy: '1600'
+
+      - eyebrow:
+          text: 'Subs'
+        details:
+          - label: 'Light Frames'
+            copy: '65 @ 30"'
+          - label: 'Dark Frames'
+            copy: 'Yes'
+          - label: 'Bias Frames'
+            copy: 'Yes'
+          - label: 'Flat Frames'
+            copy: 'Yes'
+
+      - eyebrow:
+          text: 'Equipment'
+        details:
+          - label: 'Tripod'
+            copy: 'Artcise AS95C Carbon Tripod'
+          - label: 'Star Tracker'
+            copy: 'ZWO model AM5'
+          - label: Telescope
+            copy: 'Sky-Watcher Evostar 72ED 420mm f/5.8'
+          - label: 'Guiding Scope'
+            copy: 'ZWO 30F4'
+          - label: 'Guiding Camera'
+            copy: 'ZWO ASI 120MM'
+          - label: 'Guiding Computer'
+            copy: 'ASIAIR Plus'
+          - label: 'Software'
+            copy: 'Deep Sky Stacker + Adobe Photoshop'
+          - label: 'Filters'
+            copy: 'Optolog 2" L-Pro (Light Pollution filter)'
+
+  - title:
+      text: 'Orion Nebula'
+      size: 'h3'
+    eyebrow:
+      text: 'The Line – January'
+    cta:
+      label: 'Learn more'
+      icon: 'arrow-right'
+      level: primary
+      theme: white
+    image:
+      src: 'https://picsum.photos/seed/picsum/2560/1440'
+      alt: 'Slide 1'
+
+    about:
+      title: 'About'
+      date: '23 of January 2023'
+      description:
+        'The Milky Way Galactic Centre dances with the desert. Our is a spiral Galaxy, is estimated
+        to be 13.6 billion years old, and has an estimated radius of 52,850 light-years it is the
+        home of 100–400 billion stars.'
+      image:
+        src: 'https://picsum.photos/seed/picsum/200/200'
+        alt: 'Slide 1'
+
+    tabs:
+      - eyebrow:
+          text: 'Specifications'
+        details:
+          - label: 'Camera'
+            copy: 'Canon EOS R5 (Full Frame Sensor)'
+          - label: 'Focal Length'
+            copy: '420mm'
+
+      - eyebrow:
+          text: 'Sky'
+        details:
+          - label: 'Aperture'
+            copy: 'f/5.8'
+          - label: 'Shutter Speed'
+            copy: '30"'
+          - label: 'ISO'
+            copy: '1600'
+
+      - eyebrow:
+          text: 'Subs'
+        details:
+          - label: 'Light Frames'
+            copy: '65 @ 30"'
+          - label: 'Dark Frames'
+            copy: 'Yes'
+          - label: 'Bias Frames'
+            copy: 'Yes'
+          - label: 'Flat Frames'
+            copy: 'Yes'
+
+      - eyebrow:
+          text: 'Equipment'
+        details:
+          - label: 'Tripod'
+            copy: 'Artcise AS95C Carbon Tripod'
+          - label: 'Star Tracker'
+            copy: 'ZWO model AM5'
+          - label: Telescope
+            copy: 'Sky-Watcher Evostar 72ED 420mm f/5.8'
+          - label: 'Guiding Scope'
+            copy: 'ZWO 30F4'
+          - label: 'Guiding Camera'
+            copy: 'ZWO ASI 120MM'
+          - label: 'Guiding Computer'
+            copy: 'ASIAIR Plus'
+          - label: 'Software'
+            copy: 'Deep Sky Stacker + Adobe Photoshop'
+          - label: 'Filters'
+            copy: 'Optolog 2" L-Pro (Light Pollution filter)'
+  - title:
+      text: 'Milky Way'
+      size: 'h3'
+    eyebrow:
+      text: 'The Line – January'
+    cta:
+      label: 'Learn more'
+      icon: 'arrow-right'
+      level: primary
+      theme: white
+    image:
+      src: 'https://picsum.photos/seed/picsum/2560/1440'
+      alt: 'Slide 1'
+
+    about:
+      title: 'About'
+      date: '23 of January 2023'
+      description:
+        'The Milky Way Galactic Centre dances with the desert. Our is a spiral Galaxy, is estimated
+        to be 13.6 billion years old, and has an estimated radius of 52,850 light-years it is the
+        home of 100–400 billion stars.'
+      image:
+        src: 'https://picsum.photos/seed/picsum/200/200'
+        alt: 'Slide 1'
+
+    tabs:
+      - eyebrow:
+          text: 'Specifications'
+        details:
+          - label: 'Camera'
+            copy: 'Canon EOS R5 (Full Frame Sensor)'
+          - label: 'Focal Length'
+            copy: '420mm'
+
+      - eyebrow:
+          text: 'Sky'
+        details:
+          - label: 'Aperture'
+            copy: 'f/5.8'
+          - label: 'Shutter Speed'
+            copy: '30"'
+          - label: 'ISO'
+            copy: '1600'
+
+      - eyebrow:
+          text: 'Subs'
+        details:
+          - label: 'Light Frames'
+            copy: '65 @ 30"'
+          - label: 'Dark Frames'
+            copy: 'Yes'
+          - label: 'Bias Frames'
+            copy: 'Yes'
+          - label: 'Flat Frames'
+            copy: 'Yes'
+
+      - eyebrow:
+          text: 'Equipment'
+        details:
+          - label: 'Tripod'
+            copy: 'Artcise AS95C Carbon Tripod'
+          - label: 'Star Tracker'
+            copy: 'ZWO model AM5'
+          - label: Telescope
+            copy: 'Sky-Watcher Evostar 72ED 420mm f/5.8'
+          - label: 'Guiding Scope'
+            copy: 'ZWO 30F4'
+          - label: 'Guiding Camera'
+            copy: 'ZWO ASI 120MM'
+          - label: 'Guiding Computer'
+            copy: 'ASIAIR Plus'
+          - label: 'Software'
+            copy: 'Deep Sky Stacker + Adobe Photoshop'
+          - label: 'Filters'
+            copy: 'Optolog 2" L-Pro (Light Pollution filter)'
+  - title:
+      text: 'Milky Way Galactic Centre (Core)'
+      size: 'h3'
+    eyebrow:
+      text: 'The Line – January'
+    cta:
+      label: 'Learn more'
+      icon: 'arrow-right'
+      level: primary
+      theme: white
+    image:
+      src: 'https://picsum.photos/seed/picsum/2560/1440'
+      alt: 'Slide 1'
+
+    about:
+      title: 'About'
+      date: '23 of January 2023'
+      description:
+        'The Milky Way Galactic Centre dances with the desert. Our is a spiral Galaxy, is estimated
+        to be 13.6 billion years old, and has an estimated radius of 52,850 light-years it is the
+        home of 100–400 billion stars.'
+      image:
+        src: 'https://picsum.photos/seed/picsum/200/200'
+        alt: 'Slide 1'
+
+    tabs:
+      - eyebrow:
+          text: 'Specifications'
+        details:
+          - label: 'Camera'
+            copy: 'Canon EOS R5 (Full Frame Sensor)'
+          - label: 'Focal Length'
+            copy: '420mm'
+
+      - eyebrow:
+          text: 'Sky'
+        details:
+          - label: 'Aperture'
+            copy: 'f/5.8'
+          - label: 'Shutter Speed'
+            copy: '30"'
+          - label: 'ISO'
+            copy: '1600'
+
+      - eyebrow:
+          text: 'Subs'
+        details:
+          - label: 'Light Frames'
+            copy: '65 @ 30"'
+          - label: 'Dark Frames'
+            copy: 'Yes'
+          - label: 'Bias Frames'
+            copy: 'Yes'
+          - label: 'Flat Frames'
+            copy: 'Yes'
+
+      - eyebrow:
+          text: 'Equipment'
+        details:
+          - label: 'Tripod'
+            copy: 'Artcise AS95C Carbon Tripod'
+          - label: 'Star Tracker'
+            copy: 'ZWO model AM5'
+          - label: Telescope
+            copy: 'Sky-Watcher Evostar 72ED 420mm f/5.8'
+          - label: 'Guiding Scope'
+            copy: 'ZWO 30F4'
+          - label: 'Guiding Camera'
+            copy: 'ZWO ASI 120MM'
+          - label: 'Guiding Computer'
+            copy: 'ASIAIR Plus'
+          - label: 'Software'
+            copy: 'Deep Sky Stacker + Adobe Photoshop'
+          - label: 'Filters'
+            copy: 'Optolog 2" L-Pro (Light Pollution filter)'
+  - title:
+      text: 'The sky around the Polaris Star'
+      size: 'h3'
+    eyebrow:
+      text: 'The Line – January'
+    cta:
+      label: 'Learn more'
+      icon: 'arrow-right'
+      level: primary
+      theme: white
+    image:
+      src: 'https://picsum.photos/seed/picsum/2560/1440'
+      alt: 'Slide 1'
+
+    about:
+      title: 'About'
+      date: '23 of January 2023'
+      description:
+        'The Milky Way Galactic Centre dances with the desert. Our is a spiral Galaxy, is estimated
+        to be 13.6 billion years old, and has an estimated radius of 52,850 light-years it is the
+        home of 100–400 billion stars.'
+      image:
+        src: 'https://picsum.photos/seed/picsum/200/200'
+        alt: 'Slide 1'
+
+    tabs:
+      - eyebrow:
+          text: 'Specifications'
+        details:
+          - label: 'Camera'
+            copy: 'Canon EOS R5 (Full Frame Sensor)'
+          - label: 'Focal Length'
+            copy: '420mm'
+
+      - eyebrow:
+          text: 'Sky'
+        details:
+          - label: 'Aperture'
+            copy: 'f/5.8'
+          - label: 'Shutter Speed'
+            copy: '30"'
+          - label: 'ISO'
+            copy: '1600'
+
+      - eyebrow:
+          text: 'Subs'
+        details:
+          - label: 'Light Frames'
+            copy: '65 @ 30"'
+          - label: 'Dark Frames'
+            copy: 'Yes'
+          - label: 'Bias Frames'
+            copy: 'Yes'
+          - label: 'Flat Frames'
+            copy: 'Yes'
+
+      - eyebrow:
+          text: 'Equipment'
+        details:
+          - label: 'Tripod'
+            copy: 'Artcise AS95C Carbon Tripod'
+          - label: 'Star Tracker'
+            copy: 'ZWO model AM5'
+          - label: Telescope
+            copy: 'Sky-Watcher Evostar 72ED 420mm f/5.8'
+          - label: 'Guiding Scope'
+            copy: 'ZWO 30F4'
+          - label: 'Guiding Camera'
+            copy: 'ZWO ASI 120MM'
+          - label: 'Guiding Computer'
+            copy: 'ASIAIR Plus'
+          - label: 'Software'
+            copy: 'Deep Sky Stacker + Adobe Photoshop'
+          - label: 'Filters'
+            copy: 'Optolog 2" L-Pro (Light Pollution filter)'
+  - title:
+      text: 'The sky around the Polaris Star'
+      size: 'h3'
+    eyebrow:
+      text: 'The Line – January'
+    cta:
+      label: 'View'
+    image:
+      src: 'https://picsum.photos/seed/picsum/2560/1440'
+      alt: 'Slide 1'
+
+    about:
+      title: 'About'
+      date: '23 of January 2023'
+      description:
+        'The Milky Way Galactic Centre dances with the desert. Our is a spiral Galaxy, is estimated
+        to be 13.6 billion years old, and has an estimated radius of 52,850 light-years it is the
+        home of 100–400 billion stars.'
+      image:
+        src: 'https://picsum.photos/seed/picsum/200/200'
+        alt: 'Slide 1'
+
+    tabs:
+      - eyebrow:
+          text: 'Specifications'
+        details:
+          - label: 'Camera'
+            copy: 'Canon EOS R5 (Full Frame Sensor)'
+          - label: 'Focal Length'
+            copy: '420mm'
+
+      - eyebrow:
+          text: 'Sky'
+        details:
+          - label: 'Aperture'
+            copy: 'f/5.8'
+          - label: 'Shutter Speed'
+            copy: '30"'
+          - label: 'ISO'
+            copy: '1600'
+
+      - eyebrow:
+          text: 'Subs'
+        details:
+          - label: 'Light Frames'
+            copy: '65 @ 30"'
+          - label: 'Dark Frames'
+            copy: 'Yes'
+          - label: 'Bias Frames'
+            copy: 'Yes'
+          - label: 'Flat Frames'
+            copy: 'Yes'

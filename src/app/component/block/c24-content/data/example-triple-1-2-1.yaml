@@ -1,0 +1,31 @@
+scrollComponent: true
+variant: 'triple-1-2-1'
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'volupta repudian<br /> sint et'
+        size: h5
+
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'asset'
+    content:
+      variant: 'circle'
+      image:
+        src: 'image/c24-content/c24-portrait-placeholder.jpg'
+
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      copy:
+        content:
+          '<p><span class="s-paragraph -small">By working with the best minds in the industry,
+          utilizing the latest technology and innovations, we are implementing world-class, smart
+          and connected water infrastructures.</span></p>'

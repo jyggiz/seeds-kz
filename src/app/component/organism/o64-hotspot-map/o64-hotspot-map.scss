@@ -1,0 +1,356 @@
+.o-hotspotMap {
+  --icon-size: 100%;
+  --hotspot-button: 28px;
+
+  height: var(--hotspot-map-height, 100%);
+  position: relative;
+
+  &__mask {
+    @include size(100%, 100%);
+    top: 0;
+    left: 0;
+    background: var(--modal-mask-color);
+    position: absolute;
+    z-index: 20;
+  }
+
+  &__svgCanvas {
+    @include size(100%, 100%);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 21;
+  }
+
+  &.-isStatic {
+    pointer-events: none;
+
+    .a-icon {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  &__background-wrapper {
+    @include size(100%, 100%);
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__mobile-instructions-overlay {
+    @include size(100%, 100%);
+    background: gray;
+    opacity: 0.5;
+  }
+
+  &__background {
+    @include size(100%, 100%);
+
+    position: relative;
+
+    .a-image {
+      transition: opacity 250ms linear;
+    }
+
+    &Regions {
+      .a-image {
+        position: absolute !important;
+        inset: 0;
+        opacity: 0;
+      }
+
+      &Button {
+        position: absolute;
+        z-index: zindex($zLayout, default);
+
+        &.-isHidden {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      &Description {
+        @include type("body", "small");
+
+        width: min(420px, 100%);
+        color: var(--color-white);
+        position: absolute;
+        z-index: zindex($zLayout, default);
+        text-transform: none;
+        transition: opacity 250ms linear;
+        opacity: 0;
+        pointer-events: none;
+        display: none;
+
+        @include respond-to("MEDIUM") {
+          display: block;
+        }
+      }
+
+      &Label {
+        @include type("overline", "small");
+
+        color: var(--color-dark-accent);
+
+        strong {
+          @include type("subTitle", "large");
+
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+
+  &__container {
+    @include offset(0);
+    @include size(100%);
+
+    position: absolute;
+  }
+
+  .m-tooltip {
+    bottom: 170%;
+    padding: 20px;
+    pointer-events: none;
+    width: 170px;
+
+    &.-isOpen {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__tooltipWrapper {
+    opacity: 0;
+    transition: opacity 0.2s $easeOut;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    background: var(--color-white);
+    border-radius: 8px;
+    width: fit-content;
+    position: absolute;
+    bottom: 40px;
+    left: -71px;
+    pointer-events: none;
+
+    &.-top {
+      bottom: -66px;
+
+      .m-tooltip__arrow {
+        transform: rotate(180deg);
+        top: -10px;
+      }
+    }
+
+    &.-left {
+      bottom: -15px;
+      left: 45px;
+
+      .m-tooltip__arrow {
+        @include offset(-5px, 21px);
+
+        transform: rotate(90deg);
+      }
+    }
+
+    &.-right {
+      bottom: -15px;
+      left: -190px;
+
+      .m-tooltip__arrow {
+        @include offset(175px, 21px);
+
+        transform: rotate(-90deg);
+      }
+    }
+
+    & [dir="rtl"] {
+      left: initial;
+      right: -71px;
+    }
+
+    .m-tooltip:not(:last-child) {
+      &:after {
+        @include pseudo;
+        @include size(100%, 1px);
+        @include position(initial, 0, 0);
+
+        background: var(--color-black-20);
+      }
+    }
+  }
+
+  &__hotspot {
+    @include size(var(--hotspot-button));
+    @include offset;
+
+    position: absolute;
+    transform: translate(-14px, -14px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 250ms ease, visibility 250ms ease;
+
+    &.-isHidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &.-isActive {
+      z-index: 2;
+
+      .o-hotspotMap__tooltipWrapper {
+        opacity: 1;
+      }
+    }
+
+    .m-hotspotButton {
+      position: relative;
+
+      &::before {
+        box-shadow: 0 4px calc(var(--hotspot-button-size) / 2) rgba(0, 0, 0, 0.75);
+      }
+    }
+
+    &.-isPartOfItinerary {
+      z-index: 22;
+
+      .m-hotspotButton {
+        position: relative;
+
+        &__stopIndex {
+          z-index: 1;
+          font-weight: bold;
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+
+  .a-image {
+    @include aspect-ratio(16, 9);
+  }
+
+  .a-image__img {
+    object-position: left;
+    object-fit: cover;
+  }
+
+  &.-isOldMapComponent {
+    height: 100%;
+
+    .a-image {
+      @include aspect-ratio(1, 1);
+    }
+  }
+
+  .a-scale {
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+  }
+
+  &__regionsDescriptionSlider {
+    position: absolute;
+    min-height: 360px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: zindex($zLayout, default);
+    background-color: var(--color-black);
+    transform: translateY(100%) !important;
+
+    .swiper-container {
+      color: var(--color-white);
+      height: 100%;
+    }
+
+    .swiper-slide {
+      padding: 20px;
+    }
+
+    .swiper__controls {
+      --page-indicator-color: var(--color-white-20a);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    &.-isDisabled {
+      .swiper-container {
+        pointer-events: none;
+      }
+
+      .swiper__controls {
+        pointer-events: none;
+
+        // TODO: Make it global, but could cause regression
+        .m-button__container {
+          background-color: var(--button-background-color-disabled, transparent);
+          border-color: var(--button-border-color-disabled, grey);
+          color: var(--button-text-color-disabled, grey);
+        }
+      }
+    }
+
+    &Copy {
+      @include type("body", "small");
+    }
+
+    &Label {
+      @include type("overline", "small");
+
+      color: var(--color-dark-accent);
+
+      strong {
+        @include type("subTitle", "large");
+
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &__discoverLocationsButton {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    z-index: zindex($zLayout, default);
+
+    &.-isHidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &.-regions {
+    .m-hotspotButton {
+      --hotspot-size: 32px;
+      --icon-size: 16px;
+      --hotspot-color: var(--color-white);
+      --hotspot-background: var(--color-dark-gold);
+      --hotspot-background-hover: var(--color-dark-gold);
+      --hotspot-border-color: var(--color-dark-gold);
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    height: 100%;
+
+    &.-isOldMapComponent {
+      .a-image {
+        @include aspect-ratio(16, 9);
+      }
+    }
+
+    &__regionsDescriptionSlider,
+    &__discoverLocationsButton {
+      display: none;
+    }
+  }
+}

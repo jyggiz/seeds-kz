@@ -1,0 +1,9 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'list'
+    content: 'import!../../../molecule/m17-list/data/brandbook-photography-ratios-list.yaml'

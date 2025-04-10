@@ -1,0 +1,42 @@
+scrollComponent: true
+
+static: false
+
+mapBackground:
+  src: 'image/c61-hotspot-map/contact-map.jpg'
+  alt: 'map image'
+
+mobileInstructions: 'import!../../../organism/o65-mobile-instructions/data/only-heading-and-cta.yaml'
+stopExploringButton:
+  icon: exit
+  size: small
+  theme: black
+  label: EXIT
+  variant: leftIcon
+
+items:
+  - content:
+      - heading:
+          text: TABUK HQ
+        copy: 'NEOM Company, Building 4758, Gayal, Tabuk Province, 49643 - Kingdom Of Saudi Arabia'
+        phoneNumber: 08-111-222-333
+        email: contact@neom.com
+        image:
+          alt: TABUK HQ
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    active: false
+    offset:
+      y: 40
+      x: 34
+  - content:
+      - heading:
+          text: Riyadh
+        copy: 'Al Nakheel District 12382, Riyadh, Saudi Arabia'
+        phoneNumber: 08-111-222-333
+        email: contact@neom.com
+        image:
+          alt: Riyadh
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 46
+      x: 55

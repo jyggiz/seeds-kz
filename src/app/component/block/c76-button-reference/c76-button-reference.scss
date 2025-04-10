@@ -1,0 +1,100 @@
+.b-buttonReference {
+  --component-border-color: var(--color-black-10);
+
+  padding: var(--containerMargin) 0;
+
+  &__referenceSheet {
+    padding: 50px 0;
+    border-bottom: 1px solid var(--component-border-color);
+  }
+
+  &__example {
+    @include neomThemes() {
+      background-color: var(--component-background-color);
+
+      .b-buttonReference__subHeading {
+        color: var(--component-heading-color);
+      }
+
+      &.t-dark {
+        --component-border-color: var(--color-white-10a);
+      }
+    }
+
+    .m-button {
+      margin: 30px 0 0;
+
+      &:not(:last-child) {
+        margin-inline-end: 30px;
+      }
+    }
+
+    &.-hide {
+      display: none;
+      @include respond-to("LARGE") {
+        display: block;
+      }
+    }
+
+    &:last-child {
+      .b-buttonReference__referenceSheet {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__header,
+  &__container {
+    @include container("compact");
+  }
+
+  &__subHeading {
+    @include type("overline", "medium");
+    margin: 0 0 20px;
+  }
+
+  .a-heading {
+    margin: 0 0 30px;
+  }
+
+  &__buttonExamples {
+    .-m10 & {
+      .m-scrollButton {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .-m15 & {
+      .m-actionButton:first-of-type {
+        margin-right: 20px;
+      }
+    }
+
+    .-m25 & {
+      .a-eyebrow {
+        margin: 1em 0 1ex;
+      }
+
+      .m-tileButton {
+        max-width: 640px;
+        margin: 0 0 20px;
+      }
+    }
+
+    .-m26 & {
+      --hotspot-button: 28px;
+
+      .m-hotspotButton {
+        position: relative;
+      }
+    }
+
+    .-m32 & {
+      .m-shareButton {
+        margin: 0 5px;
+      }
+    }
+  }
+}

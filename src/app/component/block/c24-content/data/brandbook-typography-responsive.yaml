@@ -1,0 +1,22 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: left
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        element: 'h3'
+        text: 'Responsive typography'
+        size: 'h5'
+      copy:
+        size: 'medium'
+        content:
+          <p>Responsive web design is a methodology to create websites that scales and adapts
+          depending up the size of the screen and capabilities of the device on which the website is
+          being viewed.</p> <p>For example, content and images scale to best fit the screen,
+          navigation pattern changes according to the capabilities of the device. Therefore it is
+          crucial for typography to adopt the responsive nature of the design to make the content
+          legible and appealing on all devices.</p>

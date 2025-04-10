@@ -1,0 +1,27 @@
+
+
+
+
+<section class="b-warningMessage{{#if theme}} t-{{theme}}{{/if}}" data-component="c13-warning-message" {{#if scrollComponent}}data-scroll-component{{/if}} data-lazy-component>
+  <div class="b-warningMessage__container">
+    <header class="b-warningMessage__header">
+      {{#with logo}}
+        <a href="{{href}}" class="b-warningMessage__logo">
+          {{> atom/a01-image image disableTransition=true}}
+        </a>
+      {{/with}}
+    </header>
+
+    <div class="b-warningMessage__content">
+      {{#each items}}
+        <div class="b-warningMessage__item" lang="{{#if language}}{{language}}{{^}}en{{/if}}" dir="{{#if direction}}{{direction}}{{^}}ltr{{/if}}">
+          {{> atom/a04-eyebrow eyebrow }}
+          {{> atom/a03-heading heading }}
+          <p class="b-warningMessage__description">{{description}}</p>
+        </div>
+      {{/each}}
+    </div>
+
+  </div>
+</section>
+

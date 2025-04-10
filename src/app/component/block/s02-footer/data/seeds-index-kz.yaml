@@ -1,0 +1,16 @@
+scrollComponent: true
+social:
+  label: Біздің әлеуметтік желілер
+  items: import!../../../molecule/m12-social/data/seeds.yaml
+marginalia:
+  items:
+    - label: Құпиялылық саясаты
+      href: /kz/privacy-policy.html
+      target: _blank
+    - label: Пайдалану шарттары
+      href: /kz/terms-of-use.html
+      target: _blank
+    - label: Cookie файлдарын пайдалану саясаты
+      href: /kz/cookie-policy.html
+      target: _blank
+copyrightNotice: © 2025 "Қазақстанның тұқым өсірушілер қауымдастығы" ЗТБ

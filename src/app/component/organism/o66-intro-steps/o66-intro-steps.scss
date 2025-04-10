@@ -1,0 +1,88 @@
+.o-introSteps {
+  @include size(100%);
+  --start: 0;
+  --expand: 0;
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: zindex($zLayout, navigation-mask);
+
+  &__caption {
+    @include type("exception", "countdownNumbers");
+
+    position: absolute;
+    color: var(--color-white);
+    left: 50%;
+    top: 5%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-weight: 300;
+  }
+
+  &__mapVideo {
+    @include size(100%, auto);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  &__mapImage {
+    @include size(100%, auto);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .a-image {
+      @include aspect-ratio(1);
+    }
+
+    &:not(:first-child) {
+      picture {
+        mask-image: radial-gradient(
+          circle at 50% 50%,
+          black calc(var(--start, 0) * 90%),
+          transparent calc(min(1, var(--start) + 0) * 100%)
+        );
+      }
+
+      img {
+        transform: translate3d(0, 0, 0);
+      }
+
+      .b-regionHotspots__caption {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__map {
+    @include size(100%);
+    mask-image: radial-gradient(
+      circle at 50% 50%,
+      black calc(var(--start, 0) * 90%),
+      transparent calc(min(1, var(--start) + 0) * 100%)
+    );
+
+    .b-hotspotMap {
+      margin: 0;
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    .a-image {
+      @include aspect-ratio(16, 10);
+    }
+
+    &__caption {
+      @include type("subTitle", "large");
+
+      text-align: left;
+      top: 45%;
+      left: 20%;
+      width: 15%;
+      transform: initial;
+    }
+  }
+}

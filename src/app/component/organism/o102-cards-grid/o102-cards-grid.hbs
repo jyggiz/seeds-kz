@@ -1,0 +1,14 @@
+
+<ul class="o-cardsGrid{{#if variant}} -{{variant}}{{/if}}"
+  data-component="o102-cards-grid"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#each data}}data-{{@key}}="{{this}}"{{/each}}
+  data-lazy-component
+>
+  {{#each items}}
+    <li class="o-cardsGrid__item" data-item>
+      {{> ./component/molecule/hoverable-card}}
+    </li>
+  {{/each}}
+</ul>

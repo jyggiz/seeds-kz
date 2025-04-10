@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="./c39-hero-sticky-header.scss">
+<script src="./C39HeroStickyHeader.ts"></script>
+
+<section class="b-heroStickyHeader -hasBackgroundImage"
+  data-component="c39-hero-sticky-header"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if staticFontSize}}data-static-font-size{{/if}}
+>
+  <div class="b-heroStickyHeader__heroWrapper" data-hero-wrapper>
+    {{> molecule/m34-component-background background }}
+    <div class="b-heroStickyHeader__topContainer" data-hero-content>
+      <div class="b-heroStickyHeader__topContent">
+        <div class="b-heroStickyHeader__headingWrapper" data-hero-heading-wrapper>
+          <div class="b-heroStickyHeader__heading" data-hero-heading>
+            {{> atom/a03-heading heading}}
+          </div>
+        </div>
+        <div class="b-heroStickyHeader__buttonsWrapper{{#if buttonsAlignment}} -{{buttonsAlignment}}{{/if}}">
+          {{#each buttons}}
+            {{> molecule/m02-button this data=(object hero-button="") }}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="b-heroStickyHeader__bottomContainer">
+    {{#with breadcrumbs}}
+    <div class="b-heroStickyHeader__breadcumbs">
+      {{> molecule/m57-breadcrumbs }}
+    </div>
+    {{/with}}
+    <div class="b-heroStickyHeader__bottomContent" data-content-wrapper>
+      {{#if content}}
+        {{> molecule/m18-paragraph content }}
+      {{/if}}
+    </div>
+  </div>
+</section>

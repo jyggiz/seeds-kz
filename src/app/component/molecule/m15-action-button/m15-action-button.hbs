@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="./m15-action-button.scss">
+<script src="./M15ActionButton.ts"></script>
+
+
+<{{#if (condition variant '===' 'link') }}a{{^}}button{{/if}}
+  class="m-actionButton{{#if variant}} -{{variant}}{{/if}}"
+  href="{{href}}"
+  {{#if target}}target="{{target}}" {{/if}}
+  {{#if (condition target '===' '_blank' )}}rel="noopener" {{/if}}
+  {{#if @root.language}} lang="{{@root.language}}"{{/if}}
+  {{#if variant}} data-variant="{{variant}}"{{/if}}
+  data-component="m15-action-button">
+
+  <div class="m-actionButton__container" data-action-button-container>
+    {{#with label}}
+      <span class="m-actionButton__labels">
+        {{#if top}}<small class="m-actionButton__label -small">{{ top }}</small>{{/if}}
+        {{#if bottom}}<span class="m-actionButton__label -medium">{{ bottom }}</span>{{/if}}
+      </span>
+    {{/with}}
+    <div class="m-actionButton__closeButton">
+      {{> atom/a02-icon name="cross" }}
+    </div>
+  </div>
+
+</{{#if (condition variant '===' 'link') }}a{{^}}button{{/if}}>

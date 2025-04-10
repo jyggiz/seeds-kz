@@ -1,0 +1,137 @@
+disableUI: false
+items:
+  - image:
+      src: 'image/c58-highlight-slideshow/the-line/01.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/the-line/01.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'This is the line'
+        size: large
+      heading:
+        text: 'Designed to deliver new wonders'
+        size: 'h3'
+    active: true
+  - image:
+      src: 'image/c58-highlight-slideshow/the-line/02.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/the-line/02.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Enhanced human livability'
+        size: large
+      heading:
+        text: 'Vertical urbanism'
+        size: 'h3'
+    alignment:
+      vertical: middle
+      horizontal: start
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/the-line/03.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/the-line/03.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'A 20 minute journey end to end'
+        size: large
+      heading:
+        text: 'High speed linear mobility'
+        size: 'h3'
+
+    active: false
+    alignment:
+      vertical: top
+      horizontal: center
+  - image:
+      src: 'image/c58-highlight-slideshow/the-line/04.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/the-line/04.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Everything you need within 5 minutes'
+        size: large
+      heading:
+        text: 'Advanced construction & manufacturing'
+        size: 'h3'
+
+    active: false
+    alignment:
+      vertical: bottom
+      horizontal: center
+  - image:
+      src: 'image/c58-highlight-slideshow/the-line/05.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/the-line/05.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'A model for nature preservation'
+        size: large
+      heading:
+        text: 'Alternative ways for humanity to live'
+        size: 'h3'
+    alignment:
+      vertical: bottom
+      horizontal: end
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/the-line/06.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/the-line/06.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Solutions to environmental crisis'
+        size: large
+      heading:
+        text: '95% of land & sea protected for nature'
+        size: 'h3'
+    alignment:
+      vertical: top
+      horizontal: start
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/the-line/07.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/the-line/07.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Ideal climate all-year-round'
+        size: large
+      heading:
+        text: 'Reduced infrastructure footprint'
+        size: 'h3'
+    alignment:
+      vertical: top
+      horizontal: end
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/the-line/08.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/the-line/08.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Mirrored design blending with nature'
+        size: large
+      heading:
+        text: 'Unmatched business oppurtunities'
+        size: 'h3'
+    alignment:
+      vertical: top
+      horizontal: end
+    active: false

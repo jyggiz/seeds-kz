@@ -1,0 +1,35 @@
+scrollComponent: true
+
+items:
+  - quote:
+      icon: quote
+      author:
+        name: Joseph Bradley
+        role: Head of Technology and Digital
+      quote: '<p>NEOM is not about building a smart city, but building a cognitive one.</p>'
+      eyebrow:
+        text: 'Building the airport of the future'
+    image:
+      src: 'image/joseph_bradley.jpg'
+      alt: 'Photo of Joseph Bradley'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        originalWidth: 512
+        originalHeight: 640
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+    thumbnail:
+      src: 'image/thumbnails/joseph-bradley-thumbnail.jpg'
+      alt: 'Photo of Joseph Bradley'
+    button:
+      label: Watch
+      data:
+        play-button:

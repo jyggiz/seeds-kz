@@ -1,0 +1,117 @@
+scrollComponent: true
+
+header:
+  heading:
+    text: المستجدات الخاصة بالاستثمار
+    size: h4
+
+items:
+  - heading:
+      text: نيوم تطلق "ذا لاين"
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_thelinelaunch.jpg'
+    video:
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Welcome to THE LINE'
+            title: 'Welcome to THE LINE'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: نيوم... موطناً لأكبر مشروع للهيدروجين الأخضر في العالم
+    variant: type
+    link:
+      href: https://newsroom.neom.com/neom-will-be-the-home-to-worlds-largest-renewable-hydrogen-project
+      target: '_blank'
+    callToAction:
+      label: اقرأ المزيد
+      target: _blank
+      icon: arrow-left
+      iconAlign: right
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_hydrogen.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_hydrogen.jpg'
+          media: '(min-width: 768px)'
+
+  - heading:
+      text: 'المدن الإدراكية: كيف ستستفيد نيوم من البيانات لتحسين الحياة جذريّاً'
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_josephbradley.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_josephbradley.jpg'
+          media: '(min-width: 768px)'
+    video:
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish:
+              'Cognitive cities: how NEOM will fully utilize data to fundamentally improve life'
+            title:
+              'Cognitive cities: how NEOM will fully utilize data to fundamentally improve life'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: ريادة نهج جديد وقوي لمستقبل البناء
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_construction.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_construction.jpg'
+          media: '(min-width: 768px)'
+    video:
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Pioneering a powerful new approach to construction'
+            title: 'Pioneering a powerful new approach to construction'
+            src: video/video-preview.mp4

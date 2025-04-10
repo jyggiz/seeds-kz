@@ -1,0 +1,31 @@
+.o-dynamicGrid {
+  $grid-columns-XS: var(--grid-template-columnsXS);
+  $grid-columns-S: var(--grid-template-columnsS, $grid-columns-XS);
+  $grid-columns-M: var(--grid-template-columnsM, $grid-columns-S);
+  $grid-columns-L: var(--grid-template-columnsL, $grid-columns-M);
+  $grid-columns-XL: var(--grid-template-columnsXL, $grid-columns-L);
+
+  display: grid;
+  grid-auto-rows: var(--grid-auto-rows, auto);
+  gap: var(--grid-gap, 20px);
+
+  @include respond-to("XSMALL") {
+    grid-template-columns: $grid-columns-XS;
+  }
+
+  @include respond-to("SMALL") {
+    grid-template-columns: $grid-columns-S;
+  }
+
+  @include respond-to("MEDIUM") {
+    grid-template-columns: $grid-columns-M;
+  }
+
+  @include respond-to("LARGE") {
+    grid-template-columns: $grid-columns-L;
+  }
+
+  @include respond-to("XLARGE") {
+    grid-template-columns: $grid-columns-XL;
+  }
+}

@@ -1,0 +1,163 @@
+navigationContent:
+  scrollComponent: true
+  logo: 'import!../../../molecule/m19-logo/data/default.yaml'
+
+  navigation:
+    main:
+      - label: 'About us'
+        href: '#'
+        active: true
+
+      - label: 'Regions'
+        type: 'projectMenu'
+        items:
+          - label: Solar Dome
+            image:
+              src: 'image/s01-navigation/solar-dome.jpg'
+              alt: Solar Dome
+            href: '#'
+            copy: Lorem ipsum dolor sit amet
+          - label: The Spine
+            image:
+              src: 'image/s01-navigation/the-spine.jpg'
+              alt: The Spine
+            href: '#'
+            copy: New wonders for the world
+          - label: Project X
+            image:
+              src: 'image/s01-navigation/project-x.jpg'
+              alt: Project X
+            href: '#'
+            copy: The mountains of NEOM
+          - label: Project X
+            image:
+              src: 'image/s01-navigation/project-x.jpg'
+              alt: Project X
+            href: '#'
+            copy: A blueprint for advanced and clean industries
+
+      - label: 'Our business'
+        type: 'menu'
+        items:
+          - label: 'Our Suppliers'
+
+          - label: 'Sector'
+            type: 'sectorMenu'
+            viewAllButton:
+              label: 'edit your text here'
+              icon: 'arrow-right'
+              size: 'small'
+              level: 'tertiary'
+              theme: 'gold'
+            items:
+              - label: 'Design & Construction'
+                href: '#'
+                icon: 'design-construction'
+              - label: 'Health, Well-Being and biotech'
+                href: '#'
+                icon: 'health-wellbeing-biotech'
+              - label: Tourism
+                href: '#'
+                icon: tourism
+              - label: Education
+                href: '#'
+                icon: education
+              - label: Manufacturing
+                href: '#'
+                icon: manufacturing
+              - label: Water
+                href: '#'
+                icon: water
+              - label: Energy
+                href: '#'
+                icon: energy
+              - label: Media
+                href: '#'
+                icon: media
+              - label: Mobility
+                href: '#'
+                icon: mobility
+              - label: Entertainment & Culture
+                href: '#'
+                icon: entertainment-culture
+              - label: Sport
+                href: '#'
+                icon: sport
+              - label: Financial services
+                href: '#'
+                icon: services
+              - label: Food
+                href: '#'
+                icon: food
+              - label: Technology & Digital
+                href: '#'
+                icon: technology-digital
+
+      - label: 'Invest'
+        highlighted: true
+        type: 'menu'
+        items:
+          - label: 'Neom investment office'
+            href: '#'
+          - label: 'Invest in NEOM'
+            href: '#'
+            target: '_blank'
+
+      - label: 'Newsroom'
+        type: 'menu'
+        items:
+          - label: 'Press release'
+            href: '#'
+          - label: 'Media resources'
+            href: '#'
+            target: '_blank'
+          - label: 'News & updates'
+            href: '#'
+            target: '_blank'
+
+      - label: 'Careers'
+        type: 'menu'
+        items:
+          - label: 'Working at NEOM'
+            href: '#'
+          - label: 'Search jobs'
+            href: '#'
+            target: '_blank'
+
+    aside:
+      - type: CTA
+        button:
+          label: 'Be part of NEOM'
+          size: 'small'
+          level: 'primary'
+          theme: 'white'
+          href: './'
+          target: '_blank'
+  secondaryNavigation:
+    parent:
+      label: 'Regular active link'
+      href: '#'
+      active: true
+    items:
+      - label: 'Regular menu link'
+        href: '#'
+      - label: 'Regular menu link'
+        href: '#'
+
+  languages:
+    activeLanguageCode: en
+    options:
+      - languageCode: en
+        label: English
+        href: '/homepage.html'
+      - languageCode: nl
+        label: Nederlands
+        href: '/homepage.html'
+      - languageCode: ar
+        shortLabel: عربي
+        label: العربية
+        href: '/homepage-ar.html'
+
+  search:
+    placeholder: 'Traveling to NEOM'
+    redirectUrl: '#'

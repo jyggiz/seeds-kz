@@ -1,0 +1,86 @@
+.o-timer {
+  padding: 40px 0;
+
+  &__items {
+    @include type("exception", "countdownNumbers");
+
+    color: var(--color-white);
+    display: grid;
+    grid-auto-flow: column;
+    gap: 12px;
+    line-height: 1;
+    margin: auto;
+    width: 100%;
+  }
+
+  &__item {
+    @include size(100%, auto);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+
+    &::after {
+      @include type("heading", "h5");
+
+      text-align: center;
+      color: var(--color-gold);
+      content: ":";
+      display: flex;
+      font-weight: 100;
+      inset: 0;
+      position: absolute;
+      align-items: center;
+      transform: translateX(100%);
+    }
+
+    &:last-child::after {
+      content: normal;
+    }
+  }
+
+  @include respond-to("SMALL") {
+    &__items {
+      width: 70%;
+    }
+  }
+  @include respond-to("LARGE") {
+    &.-h1 {
+      .o-timer__item::after {
+        @include type("heading", "h4");
+        transform: translateX(100%) translateX(-6px);
+      }
+    }
+
+    &.-h2 {
+      .o-timer__item::after {
+        @include type("heading", "h5");
+        transform: translateX(100%) translateX(-4px);
+      }
+    }
+
+    &.-h3 {
+      .o-timer__item::after {
+        @include type("heading", "h6");
+      }
+    }
+
+    &.-h4,
+    &.-h5,
+    &.-h6 {
+      .o-timer__item::after {
+        @include type("body", "large");
+      }
+    }
+  }
+
+  &.-h1 &.-h2 &.-h3 &.-h4 &.-h5 &.-h6 {
+    .o-timer__item {
+      .a-label {
+        left: 47%;
+      }
+    }
+  }
+}

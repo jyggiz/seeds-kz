@@ -1,0 +1,18 @@
+title: Rethinking Water
+image:
+  src: 'image/c29-stories/stories_episodewater.jpg'
+  alt: Rethinking Water
+video:
+  props:
+    sources:
+      - src: 'video/video-preview.mp4'
+        type: 'video/mp4'
+    originalWidth: 16
+    originalHeight: 9
+    autoplay: true
+    muted: false
+    loop: false
+    controls:
+      playPause: true
+      fullscreen: true
+      seek: true

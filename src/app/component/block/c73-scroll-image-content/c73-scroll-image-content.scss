@@ -1,0 +1,211 @@
+.b-scrollImageContent {
+  position: relative;
+
+  &__contentWrapper {
+    .a-eyebrow {
+      color: var(--color-dark-gold);
+    }
+  }
+
+  &__imageWrapper {
+    position: relative;
+
+    .a-image {
+      padding-inline: 50px;
+      margin-block: 50px;
+    }
+
+    .a-eyebrow {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__itemContent {
+    @include container();
+  }
+
+  &__copy {
+    @include type("body", "small");
+
+    margin-block: 20px;
+    opacity: 0.75;
+    color: var(--color-black);
+
+    &:first-of-type {
+      @include type("body", "medium");
+
+      opacity: 1;
+    }
+  }
+
+  &__item {
+    padding-block: 20px;
+    background: var(--component-background-color);
+
+    @include neomThemes() {
+      &.t-dark,
+      &.t-darkMono {
+        .b-scrollImageContent__copy,
+        .b-scrollImageContent__imageWrapper .a-eyebrow {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+
+  &__labels {
+    position: absolute;
+    inset: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__label {
+    @include size(fit-content);
+
+    --line-width: 1px;
+    --line-length: 30px;
+    --dot-size: 10px;
+
+    display: flex;
+    position: absolute;
+    align-items: center;
+    inset: 0;
+
+    &Line {
+      @include pseudo(block, static);
+
+      background: var(--color-gold);
+    }
+
+    &Dot {
+      @include pseudo(block, static);
+      @include size(var(--dot-size));
+
+      background: var(--color-gold);
+      border-radius: 100%;
+    }
+
+    &CopyWrapper {
+      max-width: 130px;
+    }
+
+    &Copy {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+
+    &Overline {
+      @include type("overline", "medium");
+
+      margin-block-end: 10px;
+    }
+
+    &.-start {
+      text-align: start;
+      align-items: start;
+    }
+
+    &.-center {
+      text-align: center;
+    }
+
+    &.-horizontal,
+    &.-horizontalInverted {
+      .b-scrollImageContent__labelLine {
+        margin-inline-start: 1em;
+        height: var(--line-width);
+        width: var(--line-length);
+        transform-origin: right;
+        margin-block: calc(var(--dot-size) / 2 - var(--line-width));
+      }
+
+      .b-scrollImageContent__labelDot {
+        position: absolute;
+      }
+    }
+
+    &.-vertical,
+    &.-verticalInverted {
+      flex-direction: column;
+
+      .b-scrollImageContent__labelLine {
+        margin-block-start: 1em;
+        width: var(--line-width);
+        height: var(--line-length);
+        transform-origin: bottom;
+        margin-inline: calc(var(--dot-size) / 2 - var(--line-width));
+      }
+
+      &.-verticalInverted {
+        flex-direction: column-reverse;
+
+        .b-scrollImageContent__labelLine {
+          margin-block-start: 0;
+          margin-block-end: 1em;
+          transform-origin: top;
+        }
+      }
+    }
+  }
+
+  @include respond-to(LARGE) {
+    &__scrollContainer {
+      @include vh(100);
+
+      position: relative;
+      width: 100%;
+    }
+
+    &__label {
+      --line-length: 60px;
+
+      &CopyWrapper {
+        max-width: 250px;
+      }
+
+      &Copy {
+        @include type("overline", "small");
+      }
+    }
+
+    &__item {
+      @include size(100%);
+
+      --icon-size: clamp(400px, 50vw, 650px);
+      position: absolute;
+      pointer-events: none;
+
+      &.-isActive {
+        pointer-events: all;
+      }
+    }
+
+    &__imageWrapper {
+      @include size(min(100%, 900px), fit-content);
+
+      .a-image {
+        padding-inline: 100px;
+        margin-block: 0;
+      }
+    }
+
+    &__itemContent {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 120px;
+    }
+
+    &__contentWrapper {
+      flex-basis: min(50%, 600px);
+    }
+  }
+}

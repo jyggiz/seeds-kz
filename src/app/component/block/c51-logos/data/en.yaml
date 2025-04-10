@@ -1,0 +1,40 @@
+scrollComponent: true
+fullMinHeight: true
+
+header:
+  alignment: center
+  eyebrow:
+    text: Our Partners
+
+background:
+  video:
+    props:
+      sources:
+        - src: 'video/c51-logos/background.mp4'
+          type: 'video/mp4'
+
+items:
+  - image:
+      alt: MediaMonks
+      src: 'image/c51-logos/mediamonks-logo.svg'
+    link:
+      href: 'https://media.monks.com/'
+      target: '_blank'
+  - image:
+      alt: Logo
+      src: 'image/c10-countdown/logo-neom.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'

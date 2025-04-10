@@ -1,0 +1,132 @@
+apiUrl: 'http://localhost:4503/bin/api/forms'
+form_id: 'trojena-form_id'
+id: 'trojena-form-id'
+
+submitView:
+  background:
+    disableTransition: true
+    image:
+      alt: '#'
+      src: 'image/c54-countdown-timer/oxagon.jpeg'
+  success:
+    eyebrow:
+      text: success eyebrow
+      size: medium
+    heading:
+      text: Success heading
+      size: h4
+      element: h4
+    copy:
+      size: medium
+      content:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex magni dolorem officia iste
+        obcaecati vel cum impedit ut mollitia?
+  error:
+    eyebrow:
+      text: Error eyebrow
+    heading:
+      text: Error heading
+      size: h4
+      element: h4
+  buttons:
+    done:
+      label: Done
+      href: trojena
+      target: _blank
+    retry:
+      label: Please try again
+
+  social:
+    cta: Please follow us
+    items:
+      - icon: youtube-gold
+        href: 'https://www.youtube.com/channel/UCl0eCJPupCsTrobb_0bprhw'
+        target: _blank
+        label: Youtube
+      - icon: twitter-gold
+        href: 'https://twitter.com/NEOM'
+        target: _blank
+        label: Twitter
+      - icon: instagram-gold
+        href: 'https://www.instagram.com/discoverneom/?hl=en'
+        target: _blank
+        label: Instagram
+      - icon: facebook-gold
+        href: 'https://www.facebook.com/NEOM'
+        target: _blank
+        label: Facebook
+      - icon: linkedin-gold
+        href: 'https://www.linkedin.com/NEOM'
+        target: _blank
+        label: LinkedIn
+      - icon: tiktok-gold
+        href: 'https://www.tiktook.com/NEOM'
+        target: _blank
+        label: TikTok
+
+recaptcha:
+  sitekey: '6Lf4Aw8cAAAAANeB20rZn037kPCGjImQzsqm8aYK'
+  statement:
+    'This site is protected by reCAPTCHA and the Google <a
+    href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+    href="https://policies.google.com/terms">Terms of Service</a> apply.'
+titleInEnglish: 'Trojena Form title in english'
+
+dir: 'ltr'
+
+background:
+  image:
+    alt: '#'
+    src: 'image/c71-facts-list/tourism/1-mobile.jpg'
+    sources:
+      - src: 'image/c71-facts-list/tourism/1.jpg'
+        media: '(min-width: 768px)'
+
+steps:
+  - header:
+      eyebrow:
+        text: 'Research or innovate'
+      heading:
+        text: 'OXAGON 3.0'
+        element: h5
+        size: h5
+
+    groupsHeading:
+      text: Next, we need your personal and company details
+
+    groups:
+      - type: grid
+        variant: subgroup
+        legend:
+          variant: subgroup
+          text: Basic details
+        items:
+          - type: text
+            name: FNAME
+            id: first-name
+            placeholder: Type here
+            label: 'First Name'
+            maxlength: 20
+            required: true
+            titleInEnglish: 'First Name'
+            validate:
+              presence:
+                message: '^Please enter your first name'
+                allowEmpty: false
+              format:
+                pattern: "[^0-9!-\/:-@\\[-`{-~]+"
+                message: '^Please only use letters'
+          - type: text
+            name: LNAME
+            id: last-name
+            placeholder: Type here
+            label: 'Last Name'
+            required: true
+            titleInEnglish: 'Last Name'
+            validate:
+              presence:
+                message: '^Please enter your last name'
+                allowEmpty: false
+              format:
+                pattern: "[^0-9!-\/:-@\\[-`{-~]+"
+                message: '^Please only use letters'

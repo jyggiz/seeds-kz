@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["DOM", "DOM.Iterable", "ES2017", "ES2019.Array"],
+    "baseUrl": "./src/",
+    "types": ["@types/handlebars", "@types/core-js", "@types/webpack-env"]
+  },
+  "exclude": ["./build-tools/plop-template/**/*"],
+  "include": ["./src/types.d.ts", "./src/**/*.ts", "node_modules/@types/grecaptcha/index.d.ts", "node_modules/@types/fontfaceobserver/index.d.ts"]
+}

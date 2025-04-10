@@ -1,0 +1,19 @@
+scrollComponent: true
+
+heading:
+  text: 'find out more'
+  size: h4
+
+moustache:
+  text:
+    'Discover our new vision of the future. A revolution in sustainability, manufacturing and
+    livability.'
+
+buttons:
+  - theme: white
+    label: Visit neom.com
+    href: '#'
+
+image:
+  alt: null
+  src: 'image/homepage-mountain-background.jpg'

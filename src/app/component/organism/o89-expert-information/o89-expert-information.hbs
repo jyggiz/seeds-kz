@@ -1,0 +1,22 @@
+
+
+
+<div
+  class="o-expertInformation"
+  data-component="o89-expert-information"
+  {{#if video}}data-video-background="{{toJson video.props.sources.[0]}}"{{/if}}
+  {{#if id}}id="{{id}}"{{/if}}
+  
+>
+  <div class="o-expertInformation__asset" data-expert-asset>
+    {{> atom/a01-image image disableTransition=true }}
+    <div data-video-container></div>
+  </div>
+
+  <div class="o-expertInformation__expertBio" data-expert-bio>
+    <div class="o-expertInformation__expertName">
+      {{> atom/a03-heading heading}}
+    </div>
+    <p class="o-expertInformation__expertRole">{{ role }}</p>
+  </div>
+</div>

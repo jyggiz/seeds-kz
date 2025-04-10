@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="./m26-hotspot-button.scss">
+<script src="./M26HotspotButton.ts"></script>
+
+<button class="m-hotspotButton{{#if variant }} -{{variant}}{{/if}}{{#if alternateHotspotStyle}} -alternate{{/if}}{{#if iconTheme}} -{{iconTheme}}{{/if}}"
+        {{#with aria}}aria-labelledby="{{labelledby}}"{{/with}}
+        data-component="m26-hotspot-button"
+>
+  {{#unless alternateHotspotStyle}}
+    {{#if icon}}
+      {{> atom/a02-icon name=icon }}
+    {{else}}
+      {{> atom/a02-icon name="plus"}}
+    {{/if}}
+  {{/unless}}
+</button>

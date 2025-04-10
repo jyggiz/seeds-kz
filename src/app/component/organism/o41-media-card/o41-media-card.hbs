@@ -1,0 +1,27 @@
+
+
+<div class="o-mediaCard" data-component="o41-media-card" >
+  <div class="o-mediaCard__content" data-media-content>
+    <div class="o-mediaCard__image">
+      {{#if video}}
+        {{> molecule/m02-button icon="play-solid" theme="white" variant="play"}}
+      {{/if}}
+      {{> atom/a01-image image disableTransition=true }}
+    </div>
+
+    {{#if datePublished}}<p class="o-mediaCard__publicationDate">{{datePublished}}</p>{{/if}}
+
+    <h2 class="o-mediaCard__heading">{{heading}}</h2>
+    {{#if description}}
+      {{{description}}}
+    {{/if}}
+  </div>
+
+  {{!-- TODO Create new molecule  --}}
+  {{#if checkboxLabels}}
+  <div class="o-mediaCard__checkbox">
+    <input class="o-mediaCard__checkboxInput" type="checkbox" id="media-{{index}}" data-media-checkbox>
+    <label class="o-mediaCard__checkboxLabel" for="media-{{index}}" data-media-checkbox-label>{{checkboxLabels.select}}</label>
+  </div>
+  {{/if}}
+</div>

@@ -1,0 +1,134 @@
+/**
+ * AEM edit mode custom styles for components where necessary
+ *
+ * Use this selector to find the iframe in the browser and start debugging your component's appearance in edit mode
+ */
+
+[data-editor="true"] {
+  .app,
+  .app__content {
+    height: initial;
+    overflow: initial;
+  }
+
+  .b-logos {
+    height: auto;
+  }
+
+  .b-scrollGallery__header,
+  .o-scrollGalleryItem:nth-child(2) {
+    align-self: center;
+  }
+
+  .b-scrollGallery__horizontalWrapper {
+    width: 100%;
+  }
+
+  .b-warningMessage__content {
+    position: relative;
+  }
+
+  .o-richQuoteCarousel__asset,
+  .o-richQuoteCarousel__quote {
+    &:first-of-type {
+      display: block;
+      opacity: 1;
+      position: absolute;
+    }
+  }
+
+  .b-verticalCarousel {
+    &__imageItem {
+      height: 800px;
+      width: 800px;
+    }
+
+    &__imageList {
+      padding-inline: 800px;
+    }
+
+    &__contentItemList {
+      margin-block-start: initial;
+    }
+  }
+
+  .b-heroBanner {
+    .o-heroContent {
+      .o-megaButtonsInvestForm__drillDownControlsContainer {
+        display: flex;
+        flex-direction: column;
+
+        .o-megaButtonsInvestForm__drillDownControls {
+          opacity: 1;
+          visibility: visible;
+          position: relative;
+        }
+
+        .o-megaButtonsInvestForm__drillDownControlsDesktop,
+        .o-megaButtonsInvestForm__drillDownControlsMobile {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    .b-motionSlider,
+    .b-articleContent__banner {
+      height: 800px;
+    }
+
+    .b-motionSlider {
+      min-height: 800px;
+
+      &__item {
+        min-height: 600px;
+      }
+    }
+  }
+}
+
+/*
+  AemEditorMessage
+  ----------------
+  Adds a message visible to the content editors only.
+  Example usage:
+
+  .b-deprecatedComponentExample {
+    @include AemEditorMessage(
+      "⚠ [X] is a deprecated component. Please replace it with [Y] at your earliest convenience."
+    );
+  }
+
+ */
+@mixin AemEditorMessage($message) {
+  position: relative;
+
+  &::before {
+    background-color: var(--color-black);
+    box-sizing: border-box;
+    color: var(--color-bright-yellow);
+    content: $message;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    line-height: 1.25;
+    max-width: 100%;
+    outline: 1px solid black;
+    padding: 1.5ex 1em 1.5ex;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    z-index: zindex($zLayout, modal);
+  }
+}
+
+.b-timeline {
+  @include AemEditorMessage(
+    "⚠ C31 is a deprecated component. Please replace it with c33 at your earliest convenience️"
+  );
+}
+
+.webkit-fill-available {
+  width: -webkit-fill-available;
+}

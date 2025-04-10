@@ -1,0 +1,62 @@
+<{{#if modal}}button
+ {{else if link}}a
+  {{#with link}}
+    {{#if href}} href="{{href}}"{{/if}}
+    {{#if target }}
+      target="{{ target }}"
+      {{#if (condition target '===' '_blank' )}}rel="noopener"{{/if}}
+    {{/if}}
+  {{/with}}
+ {{^}}div
+{{/if}}
+  class="o-boxedCard
+  {{#if variant}}-{{variant}}{{/if}}
+  {{#if align}}-{{align}}{{/if}}
+  {{#if link}}-hasLink{{/if}}"
+  {{#if modal}}data-modal{{/if}}
+  data-component="o34-boxed-card"
+>
+  {{#if (condition variant '===' 'indexed') }}
+    {{> atom/a10-index }}
+  {{^}}
+
+    {{#if (condition icon '||' image)}}
+      <div class="o-boxedCard__asset{{#if image}} -image{{/if}} {{#if bigSizeAsset}}-bigSizeAsset{{/if}}">
+        {{#if image}}
+          {{> atom/a01-image image variant="block" disableTransition=true }}
+        {{else if icon}}
+          {{> atom/a02-icon name=icon }}
+        {{/if}}
+      </div>
+    {{/if}}
+
+  {{/if}}
+
+  {{#with heading}}
+    <{{#if href}}a
+      href="{{href}}"
+      {{#if target }}
+        target="{{ target }}"
+        {{#if (condition target '===' '_blank' )}}rel="noopener"{{/if}}
+      {{/if}}
+      data-heading-link
+    {{else}}h3{{/if}}
+      class="o-boxedCard__heading {{#if bigSize}}-bigSize{{/if}} {{#if href}}-hasLink{{/if}}"
+    >
+      {{{text}}}
+    </{{#if href}}a{{else}}h3{{/if}}>
+  {{/with}}
+
+  {{#if copy}}
+    <p class="o-boxedCard__copy">{{ copy }}</p>
+  {{/if}}
+
+  {{#with link}}
+    <div class="o-boxedCard__link -small">
+      {{> atom/a07-label text=label size="small" }}
+      {{#if icon}}
+        {{> atom/a02-icon name=icon size="small" }}
+      {{/if}}
+    </div>
+  {{/with}}
+</{{#if modal}}button{{else if link}}a{{^}}div{{/if}}>

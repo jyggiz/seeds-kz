@@ -1,0 +1,10 @@
+heading:
+  text: '3&times;3 Basketball'
+
+image:
+  src: './image/o14-popout-card/basketball.webp'
+  alt: 'Basketball asset'
+
+link:
+  href: '#'
+  target: '_blank'

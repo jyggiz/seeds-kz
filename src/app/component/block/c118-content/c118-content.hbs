@@ -1,0 +1,23 @@
+
+
+<section class="b-content{{#if theme}} t-{{theme}}{{/if}}
+  {{#if fullMinHeight}} -fullMinHeight{{/if}}
+  {{#if background}} -hasBackgroundImage{{/if}}"
+  data-component="c118-content"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+    style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+    {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component
+>
+  {{#if background}}
+    {{> ./layers/background/c118-background.hbs background }}
+  {{/if}}
+
+  <div class="b-content__grid">
+    {{> ./layers/grid/c118-grid.hbs grid noPadding=noPadding }}
+  </div>
+</section>

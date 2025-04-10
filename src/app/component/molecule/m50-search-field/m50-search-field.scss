@@ -1,0 +1,20 @@
+.m-searchField {
+  --icon-fill: var(--color-dark-gold);
+  position: relative;
+
+  .a-input__input {
+    padding-inline: 6% 25%;
+  }
+
+  .a-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-75%);
+    right: 25px;
+
+    [dir="rtl"] & {
+      right: initial;
+      left: 25px;
+    }
+  }
+}

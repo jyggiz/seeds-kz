@@ -1,0 +1,89 @@
+.m-hamburgerMenu {
+  --hamburger-icon-color: var(--color-white);
+  --breadcrumb-color: var(--color-white);
+  --hamburger-open-icon-size: 24px;
+  --hamburger-close-icon-size: 22px;
+  --min-touch-size: 44px;
+
+  align-items: center;
+  display: flex;
+  min-height: var(--min-touch-size);
+  min-width: var(--min-touch-size);
+  justify-content: center;
+
+  &__container {
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding: 0;
+    position: relative;
+    transition: color 0.4s ease, background-color 0.4s ease;
+    justify-content: center;
+
+    @include hover {
+      cursor: pointer;
+    }
+  }
+
+  &__menu {
+    @include size(var(--hamburger-open-icon-size));
+  }
+
+  &__svg {
+    color: var(--hamburger-icon-color);
+  }
+
+  &__breadcrumb {
+    @include type("navigation", "small");
+
+    color: var(--breadcrumb-color);
+    display: inline-block;
+    font-weight: 500;
+    margin-inline-end: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &.-mainSiteNavigation {
+    inset-inline-start: var(--hamburgerPosition);
+    position: absolute;
+    top: 30%;
+
+    @include respond-to("XLARGE") {
+      top: 35%;
+    }
+
+    &.-isOpen {
+      bottom: 0;
+      border-inline-start: 1px solid #282a2d;
+      display: grid;
+      inset-inline-end: 0;
+      inset-inline-start: unset;
+      min-height: 69px;
+      min-width: 62px;
+      place-items: center;
+      top: 0;
+      height: 69px;
+      transform: unset;
+      z-index: zindex($zLayout, hamburger);
+
+      @include hover {
+        cursor: pointer;
+      }
+
+      .m-hamburgerMenu__container,
+      .m-hamburgerMenu__svg {
+        @include size(var(--hamburger-close-icon-size));
+      }
+
+      .m-hamburgerMenu__menu {
+        @include size(100%);
+
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}

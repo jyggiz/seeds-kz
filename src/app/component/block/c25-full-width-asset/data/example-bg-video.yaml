@@ -1,0 +1,45 @@
+scrollComponent: true
+
+cropped: true
+
+eyebrow:
+  text: The Line is
+
+heading:
+  text: 'the enabler for futureproof urbanization'
+  size: h4
+
+moustache:
+  text:
+    'One of the main projects for NEOM is the realisation of THE LINE. The core for urban living in
+    NEOM.'
+
+buttons:
+  - theme: white
+    label: More about The Line
+    href: '#'
+  - theme: white
+    label: More about The Line
+    href: '#'
+
+backgroundVideo:
+  autoloop: true
+  props:
+    enhancedPoster:
+      image:
+        src: 'image/c26-hero-banner/teaser-homepage.jpg'
+        alt: 'Homepage teaser image'
+        sources:
+          - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+            media: '(min-width: 1024px)'
+          - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+            media: '(min-width: 768px)'
+    src: 'video/the-line-background-video.mp4'
+    type: 'video/mp4'
+    sources:
+      - src: 'video/the-line-background-video.mp4'
+        type: 'video/mp4'
+        media: '(min-width: 1024px)'
+      - src: 'video/the-line-background-video.mp4'
+        type: 'video/mp4'
+        media: '(min-width: 768px)'

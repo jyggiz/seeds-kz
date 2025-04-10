@@ -1,0 +1,35 @@
+.b-socialMedia {
+  @include neomThemes;
+
+  --social-media-divider-color: var(--color-white-10a);
+
+  position: relative;
+  background: var(--component-background-color);
+
+  &.-bottom {
+    .a-image__img {
+      object-position: bottom;
+    }
+  }
+
+  &.-fullWidthDivider,
+  &.-withPaddingDivider .o-socialMedia {
+    border-top: 1px solid var(--social-media-divider-color);
+  }
+
+  &.t-light .o-socialMedia {
+    --social-media-divider-color: var(--color-black-20);
+    --component-highlight-color: var(--color-black);
+    --component-highlight-color-hover: var(--color-accent);
+  }
+
+  &.t-dark .o-socialMedia {
+    --label-color: var(--color-white);
+    --component-highlight-color: var(--color-white);
+    --component-highlight-color-hover: var(--color-accent);
+  }
+
+  .m-componentBackground + .o-socialMedia {
+    --label-color: var(--color-white);
+  }
+}

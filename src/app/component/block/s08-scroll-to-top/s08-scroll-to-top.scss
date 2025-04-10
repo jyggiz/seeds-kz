@@ -1,0 +1,32 @@
+.b-scrollToTop {
+  display: none;
+
+  @include respond-to("LARGE") {
+    @include size(60px);
+
+    bottom: 20px;
+    overflow: hidden;
+    position: fixed;
+    opacity: 0.75;
+    right: 2vw;
+    transition: opacity 0.3s ease;
+    z-index: zindex($zLayout, scroll-to-top);
+
+    [dir="rtl"] & {
+      left: 2vw;
+      right: auto;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .m-button__container {
+      @include hover() {
+        --button-background-color: var(--color-white);
+        --button-icon-color: var(--color-black);
+        --button-text-color: var(--color-black);
+      }
+    }
+  }
+}

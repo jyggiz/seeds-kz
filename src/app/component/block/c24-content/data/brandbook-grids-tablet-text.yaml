@@ -1,0 +1,16 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        element: 'h3'
+        text: 'M - Tablet'
+        size: 'h5'
+      copy:
+        size: 'medium'
+        content: <p>768px, 6 columns, 20px baseline.</p>

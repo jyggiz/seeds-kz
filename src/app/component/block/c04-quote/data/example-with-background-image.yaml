@@ -1,0 +1,11 @@
+scrollComponent: true
+
+background:
+  mask:
+    opacity: 0
+  image:
+    src: './image/c46-media-list/item-landscape.jpg'
+
+theme: dark
+
+quote: 'import!../../../molecule/m01-blockquote/data/example-generic.yaml'

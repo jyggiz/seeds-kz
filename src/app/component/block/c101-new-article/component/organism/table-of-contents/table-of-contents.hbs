@@ -1,0 +1,13 @@
+
+
+<div class="o-table-of-contents" data-component="table-of-contents"{{#if id}} id="{{id}}"{{/if}}>
+  <p class="o-table-of-contents__label">
+    {{ label }}
+  </p>
+  <ol class="o-table-of-contents__list" role="list">
+    <div class="o-table-of-contents__activeIndicator" data-active-indicator></div>
+    {{#each items}}
+      <li data-item class="o-table-of-contents__listItem"><a href="#{{paragraphId}}">{{label}}</a></li>
+    {{/each}}
+  </ol>
+</div>

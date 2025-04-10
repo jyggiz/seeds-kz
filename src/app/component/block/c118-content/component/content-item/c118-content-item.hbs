@@ -1,0 +1,12 @@
+<div class="b-content__contentItem
+  {{#if type}} -{{type}}{{/if}}
+  {{#if alignment.horizontal}} -{{alignment.horizontal}}{{^}} -start{{/if}}"
+  style="{{#if imageMaxWidth}} --large-image-max-width: {{imageMaxWidth}};{{/if}}"
+  data-content-item>
+
+  {{> ./layers/content/content.hbs content horizontalAlign=alignment.horizontal }}
+
+  {{#if buttons}}
+    {{> ./layers/buttons/buttons.hbs horizontalAlign=alignment.horizontal }}
+  {{/if}}
+</div>

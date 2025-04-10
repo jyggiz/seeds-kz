@@ -1,0 +1,46 @@
+
+<section
+  class="b-richQuote
+    {{#if theme}} t-{{theme}}{{/if}}
+    {{#if (condition items.length ">" 1)}}-isCarousel{{^}}-isSingleQuote{{/if}}
+    {{#if overlapTopComponent}}-overlapTopComponent{{/if}}"
+  data-component="c27-rich-quote" {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+  style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+    {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component>
+  {{#if header}}
+    <div class="b-richQuote__header">
+      {{> molecule/m04-component-header header disableTransition=true }}
+    </div>
+  {{/if}}
+  <div class="b-richQuote__container">
+    {{#with background}}{{> molecule/m34-component-background disableTransition=true }}{{/with}}
+    <div class="b-richQuote__content" id="b-richQuote__content" aria-live="polite">
+      <div class="swiper-container" data-slider>
+        <div class="swiper-wrapper">
+          {{#each items}}
+            <div class="b-richQuote__slide swiper-slide" data-slide>
+              {{> organism/o12-rich-quote theme=../theme}}
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    {{#if (condition items.length ">" 1)}}
+      <button class="b-richQuote__previousItem" data-previous aria-controls="b-richQuote__content">
+        {{#if (condition items.length ">" 2)}}
+          {{> molecule/m09-rich-quote-thumbnail direction="previous" }}
+        {{^}}
+          {{> molecule/m09-rich-quote-thumbnail direction="previous" items=null }}
+        {{/if}}
+      </button>
+      <button class="b-richQuote__nextItem" data-next aria-controls="b-richQuote__content">
+        {{> molecule/m09-rich-quote-thumbnail direction="next" }}
+      </button>
+    {{/if}}
+  </div>
+  {{> atom/a08-page-indicators items=null }}
+</section>

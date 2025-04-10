@@ -1,0 +1,47 @@
+&__features {
+  .o-regionSliderNavigation__pagination {
+    &Item {
+      &:nth-child(1) {
+        @include offset(50%, 55%);
+
+        transform: translate(-50%, -135%);
+      }
+
+      &:nth-child(2) {
+        @include offset(50%, 55%);
+
+        transform: translate(-135%, -50%);
+      }
+
+      &:nth-child(3) {
+        @include offset(50%, 55%);
+
+        transform: translate(-50%, 35%);
+      }
+    }
+  }
+
+  .a-stepIndicator {
+    --step-indicator-size: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-white-20a);
+
+    &.-isActive {
+      --step-label-color: var(--color-black);
+      --step-indicator-size: 100px;
+    }
+  }
+
+  @include respond-to(XLARGE) {
+    .a-stepIndicator {
+      --step-indicator-size: 200px;
+
+      &.-isActive {
+        --step-indicator-size: 200px;
+      }
+    }
+  }
+}

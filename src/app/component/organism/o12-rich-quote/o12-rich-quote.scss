@@ -1,0 +1,127 @@
+@use "sass:math";
+
+.o-richQuote {
+  --blockquote-color-highlight: var(--color-black-75);
+
+  color: var(--component-text-color);
+
+  &__authorAsset {
+    width: percentage(math.div(3, 4));
+
+    &:has(.o-richQuote__assetRatio.-landscape) {
+      width: 100%;
+    }
+  }
+
+  // Provides aspect ratio for image.
+  &__assetRatio {
+    aspect-ratio: 4/5;
+    position: relative;
+
+    &.-landscape {
+      aspect-ratio: 3/2;
+    }
+  }
+
+  &__assetMask, // Provides masking for image transition.
+  &__assetWrapper, // Provides horizontal wobble motion of masked image during transition.
+  &__assetWrapper > div {
+    @include position(0);
+    position: absolute;
+  }
+
+  &__assetMask {
+    overflow: hidden;
+  }
+
+  &__authorQuote {
+    margin: auto;
+    position: relative;
+    width: calc(100% - var(--containerMargin) * 2);
+  }
+
+  &__quote {
+    opacity: 0;
+  }
+
+  .m-blockquote {
+    margin: -40px 0 30px;
+
+    &__asset {
+      --icon-fill: var(--component-highlight-color);
+      --icon-size: 70px;
+
+      margin: 0 0 20px;
+      justify-content: flex-start;
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &__authorAsset,
+    &__authorQuote {
+      margin: auto;
+      width: percentage(math.div(2, 3));
+    }
+  }
+
+  @include respond-to(XLARGE) {
+    &__container {
+      display: grid;
+      grid-column: 2 / span 8;
+      grid-gap: var(--grid-gap);
+      grid-template-columns: repeat(12, 1fr);
+      width: auto;
+    }
+
+    &__authorAsset {
+      grid-column: 3 / span 5;
+      margin: 0;
+      margin-inline-start: calc(var(--grid-gap) * -1);
+      max-width: 500px;
+      width: auto;
+    }
+
+    &__authorQuote {
+      display: flex;
+      grid-column: 8 / span 4;
+      height: 100%;
+      margin: 0 45px 0 0;
+      width: auto;
+    }
+
+    .m-blockquote {
+      margin: 30px 0 30px;
+    }
+
+    .m-button {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include respond-to(XXLARGE) {
+    &__container {
+      padding: 60px 0 0;
+    }
+
+    &__authorQuote {
+      padding-bottom: 60px;
+    }
+  }
+
+  @include respond-to(XXXLARGE) {
+    &__authorAsset {
+      max-width: 650px;
+    }
+
+    &__quote {
+      margin: 200px 0 0;
+    }
+  }
+
+  @include neomThemes {
+    &.t-dark,
+    &.t-darkMono {
+      --blockquote-color-highlight: var(--component-highlight-color);
+    }
+  }
+}

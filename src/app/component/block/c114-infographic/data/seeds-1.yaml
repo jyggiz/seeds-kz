@@ -1,0 +1,53 @@
+scrollComponent: true
+padding:
+  start: 'regular'
+  end: 'regular'
+heading:
+  element: h2
+  size: h4
+  text: 'Галерея'
+image:
+  src: '/image/c46-media-list/item1.jpg'
+  alt: ''
+lightbox: true
+
+items:
+  - variant: 'landscape'
+    image:
+      src: '/image/c46-media-list/gallery-1.webp'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/gallery-1.webp'
+    copy: ''
+
+  - variant: 'landscape'
+    image:
+      src: '/image/c46-media-list/gallery-2.webp'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/gallery-2.webp'
+    copy: ''
+
+  - variant: 'landscape'
+    image:
+      src: '/image/c46-media-list/gallery-3.webp'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/gallery-3.webp'
+    copy: ''
+
+  - variant: 'landscape'
+    image:
+      src: '/image/c46-media-list/gallery-4.webp'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/gallery-4.webp'
+    copy: ''
+
+  - variant: 'landscape'
+    image:
+      src: '/image/c46-media-list/gallery-5.webp'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/gallery-5.webp'
+    copy: ''

@@ -1,0 +1,27 @@
+heading:
+  text: Welcome to THE LINE
+variant: video
+image:
+  alt:
+  src: 'image/c16-carousel/updates_thelinelaunch.jpg'
+video:
+  label: Watch video
+  props:
+    sources:
+      - src: 'video/video-preview.mp4'
+        type: 'video/mp4'
+    originalWidth: 16
+    originalHeight: 9
+    autoplay: true
+    muted: false
+    loop: false
+    controls:
+      playPause: true
+      fullscreen: true
+      seek: true
+    eventTracking:
+      event: 'Video Play'
+      video:
+        titleInEnglish: 'Welcome to THE LINE'
+        title: 'Welcome to THE LINE'
+        src: video/video-preview.mp4

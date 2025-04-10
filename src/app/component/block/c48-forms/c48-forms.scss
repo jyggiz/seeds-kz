@@ -1,0 +1,22 @@
+.b-forms {
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  &__container {
+    @include container();
+  }
+
+  @include neomThemes() {
+    &.-nic {
+      background-color: var(--color-nic-navy);
+    }
+
+    &.t-dark,
+    &.t-darkMono,
+    &.-nic {
+      --form-error-color: var(--color-ui-error-dark);
+    }
+  }
+}

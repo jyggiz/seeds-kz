@@ -1,0 +1,35 @@
+scrollComponent: true
+variant: 'double-1-2'
+
+background:
+  image:
+    alt: 'alt'
+    src: 'image/c24-content/intro-bg.jpg'
+    sources:
+      - src: 'image/c24-content/intro-bg.jpg'
+        media: '(min-width: 768px)'
+
+items:
+  - align:
+      horizontal: end
+      vertical: middle
+    type: 'asset'
+    content:
+      variant: square
+      image:
+        variant: contain
+        src: 'image/c24-content/brandbook-forms-intro-image.png'
+        alt: 'Intro icon'
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      copy:
+        size: 'medium'
+        content:
+          '<p>A webform, web form or HTML form on a web page allows a user to enter data that is
+          sent to a server for processing. Forms can resemble paper or database forms because web
+          users fill out the forms using checkboxes, radio buttons, or text fields.<br><br>For
+          example, forms can be used to enter shipping or credit card data to order a product, or
+          can be used to retrieve search results from a search engine.</p>'

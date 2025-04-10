@@ -1,0 +1,37 @@
+.b-draggableGallery {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-black);
+
+  &__viewControls {
+    display: none;
+  }
+
+  &__viewContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    > * {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
+  }
+
+  @include respond-to(LARGE) {
+    &__viewControls {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      position: absolute;
+      color: var(--color-white);
+      z-index: zindex($zLayout, content);
+      inset-block-start: 64px;
+      inset-inline-end: 70px;
+    }
+
+    &__viewCopy {
+      @include type("overline", "small");
+    }
+  }
+}

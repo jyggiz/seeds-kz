@@ -1,0 +1,199 @@
+scrollComponent: true
+
+filter:
+  title:
+    text: 'Ферма'
+    size: h4
+  filterApiUrl: '/bin/api/newsroom/gallery?componentResourcePath=/content/neom/en-us/newsroom/gallery/jcr:content/root/responsivegrid/c46_media_list&' # Not disclosed for authors
+  devEnvironmentUrl: 'https://dev.neom.com' # Not disclosed for authors
+  secondary:
+    items:
+      - label: 'Местоположение'
+        value: location
+        items:
+          - label: 'Акмолинская область'
+            value: akmoly
+          - label: 'Актюбинская область'
+            value: aktobe
+          - label: 'Алматинская область'
+            value: almaty
+          - label: 'Атырауская область'
+            value: atyrau
+          - label: 'Восточно-Казахстанская область'
+            value: vko
+          - label: 'Жамбыльская область'
+            value: zhambyl
+          - label: 'Карагандинская область'
+            value: karaganda
+          - label: 'Костанайская область'
+            value: kostanay
+          - label: 'Кызылординская область'
+            value: kyzylorda
+          - label: 'Северо-Казахстанская область'
+            value: sko
+          - label: 'Павлодарская область'
+            value: pavlodar
+          - label: 'Туркестанская область'
+            value: turkestan
+          - label: 'Западно-Казахстанская область'
+            value: zko
+          - label: 'Мангистауская область'
+            value: mangystau
+
+apiUrl: '/bin/api/assets/download'
+
+eventTracking:
+  event: 'Download'
+  eventAction: 'Download - ZIP'
+  eventCategory: 'Download'
+
+content:
+  items:
+    - heading: Акмолинская ферма
+      datePublished: May 22
+      image:
+        src: 'http://storage.milkua.info/uploads/news/wisconsin_dairy_farm.jpg'
+      tag: 'akmoly'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+    - heading: Алматинская ферма
+      datePublished: April 26
+      image:
+        src: 'https://img.youtube.com/vi/wqa3eZ_9doc/mqdefault.jpg'
+      tag: 'almaty'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Актюбинская ферма
+      datePublished: April 5
+      image:
+        src: 'http://storage.milkua.info/uploads/news/wisconsin_dairy_farm.jpg'
+      tag: 'aktobe'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Атырауская ферма 1
+      datePublished: May 22
+      image:
+        src: 'https://img.youtube.com/vi/wqa3eZ_9doc/mqdefault.jpg'
+      tag: 'atyrau'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Восточно-Казахстанская ферма
+      datePublished: April 26
+      image:
+        src: 'http://storage.milkua.info/uploads/news/wisconsin_dairy_farm.jpg'
+      tag: 'vko'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Жамбыльская ферма
+      datePublished: April 5
+      image:
+        src: 'https://img.youtube.com/vi/wqa3eZ_9doc/mqdefault.jpg'
+      tag: 'zhambyl'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Атырауская ферма 2
+      datePublished: May 22
+      image:
+        src: 'http://storage.milkua.info/uploads/news/wisconsin_dairy_farm.jpg'
+      tag: 'atyrau'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Карагандинская ферма
+      datePublished: April 26
+      image:
+        src: 'https://img.youtube.com/vi/wqa3eZ_9doc/mqdefault.jpg'
+      tag: 'karaganda'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Костанайская ферма
+      datePublished: April 5
+      image:
+        src: 'http://storage.milkua.info/uploads/news/wisconsin_dairy_farm.jpg'
+      tag: 'kostanay'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Кызылординская ферма
+      datePublished: May 22
+      image:
+        src: 'https://img.youtube.com/vi/wqa3eZ_9doc/mqdefault.jpg'
+      tag: 'kyzylorda'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Северо-Казахстанская ферма
+      datePublished: April 26
+      image:
+        src: 'http://storage.milkua.info/uploads/news/wisconsin_dairy_farm.jpg'
+      tag: 'sko'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Павлодарская ферма
+      datePublished: April 5
+      image:
+        src: 'https://img.youtube.com/vi/wqa3eZ_9doc/mqdefault.jpg'
+      tag: 'pavlodar'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Туркестанская ферма
+      datePublished: May 22
+      image:
+        src: 'http://storage.milkua.info/uploads/news/wisconsin_dairy_farm.jpg'
+      tag: 'turkestan'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Западно-Казахстанская ферма
+      datePublished: April 26
+      image:
+        src: 'https://img.youtube.com/vi/wqa3eZ_9doc/mqdefault.jpg'
+      tag: 'zko'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'
+
+    - heading: Мангыстауская ферма
+      datePublished: April 5
+      image:
+        src: 'http://storage.milkua.info/uploads/news/wisconsin_dairy_farm.jpg'
+      tag: 'mangystau'
+      description:
+        '<p>Лидер в области пшеничной отрасли в данной области</p><p>Работает на протяжении 5
+        лет</p>'
+      href: '/seed_farm-card.html'

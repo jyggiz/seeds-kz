@@ -1,0 +1,163 @@
+.b-contentSlider {
+  @include vh(100);
+
+  overflow: hidden;
+  position: relative;
+
+  &__swiperContainer {
+    height: 100%;
+  }
+
+  &__slide {
+    --containerMaxWidth: 100%;
+
+    align-items: center;
+    background-color: var(--component-background-color);
+    color: var(--component-text-color);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    @include neomThemes();
+
+    &.-cream {
+      background-color: var(--color-cream-25);
+
+      .o-contentGrid {
+        --content-marker-color: var(--color-dark-gold);
+        --component-background-color: var(--color-cream-25);
+        --component-highlight-color: var(--color-dark-gold);
+        --component-text-color: var(--color-black);
+      }
+    }
+
+    &.-uppercaseCopy {
+      .m-paragraph__content {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__controls {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    @include size(100%);
+
+    @include respond-to(MEDIUM) {
+      display: block;
+    }
+  }
+
+  &__control {
+    @include container();
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &.-isDisabled {
+      display: none;
+    }
+
+    &.-prev {
+      left: 0;
+    }
+
+    &.-next {
+      right: 0;
+    }
+  }
+
+  &__imageContainer {
+    position: relative;
+    @include size(100%);
+
+    .a-image__img {
+      padding: var(--containerMargin);
+      object-fit: scale-down;
+    }
+  }
+
+  &__multipleCopyContainer {
+    color: var(--component-text-color);
+    --component-highlight-color: var(--color-dark-gold);
+    --component-text-color: var(--color-black);
+
+    @include respond-to(MEDIUM) {
+      width: 80%;
+    }
+
+    .-cream & {
+      --component-text-color: var(--color-black);
+      --component-highlight-color: var(--color-dark-gold);
+    }
+
+    .t-dark & {
+      --component-highlight-color: var(--color-gold);
+      --component-text-color: var(--color-white);
+    }
+
+    @include container();
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .m-multipleCopy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .m-multipleCopy__content {
+      width: 80%;
+      @include respond-to(MEDIUM) {
+        width: 60%;
+      }
+    }
+
+    .a-heading {
+      &.-h1 {
+        @include type("heading", "h3");
+
+        @include respond-to(MEDIUM) {
+          @include type("heading", "h1");
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    .m-sliderPagination__paginationBar {
+      transition: background-color 0.2s ease-in;
+      background-color: var(--color-black-20);
+
+      &.-isActive {
+        background-color: var(--color-gold);
+      }
+    }
+  }
+
+  .o-contentGrid.-hasBackgroundImage {
+    min-height: initial;
+    height: 100%;
+  }
+
+  .o-contentGrid__item.-asset {
+    .m-figure.-portrait {
+      .m-figure__image:before {
+        padding-top: 75%;
+
+        @include respond-to(MEDIUM) {
+          padding-top: 125%;
+        }
+      }
+    }
+  }
+}

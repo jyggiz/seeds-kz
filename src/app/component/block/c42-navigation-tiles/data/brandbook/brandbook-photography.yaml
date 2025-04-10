@@ -1,0 +1,13 @@
+scrollComponent: true
+
+items:
+  previous:
+    heading:
+      text: 'Visual Guidelines: Iconography'
+    link:
+      href: './page-brandbook-iconography.html'
+  next:
+    heading:
+      text: 'Visual Guidelines: Call to actions'
+    link:
+      href: './page-brandbook-call-to-actions.html'

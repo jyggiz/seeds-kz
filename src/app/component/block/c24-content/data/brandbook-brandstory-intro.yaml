@@ -1,0 +1,19 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      image:
+        src: 'image/logo-mark-neom.png'
+        alt: 'NEOM logo mark'
+      eyebrow:
+        text: 'Our Vision'
+      copy:
+        size: 'medium'
+        content:
+          '<p>The land of the future, where the greatest minds and best talents are empowered to
+          embody pioneering ideas and exceed boundaries in a world inspired by imagination.</p>'

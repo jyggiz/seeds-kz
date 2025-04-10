@@ -1,0 +1,20 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        element: 'h3'
+        text: 'General icons'
+        size: 'h5'
+      copy:
+        size: 'medium'
+        content:
+          <p>For all other iconography we use a flat version of the ribbon, without shadows. This
+          ensures the economic sector icons are seen to have a more important role within NEOM. They
+          are uniform in line width, used at small to medium sizes and rendered in any of the
+          primary colors. The twist in the ribbon ensures they stand out as unique to NEOM.</p>

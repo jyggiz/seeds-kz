@@ -1,0 +1,100 @@
+.o-colorSwatch {
+  margin-bottom: -1px;
+  margin-left: -1px;
+
+  &__colorContainer {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border-grey);
+    padding: 5px;
+  }
+
+  &__hexCode {
+    margin-top: auto;
+  }
+
+  &__color {
+    background-color: var(--swatch-color);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+
+    .m-copyProgressIndicator {
+      display: none;
+    }
+
+    .a-eyebrow {
+      padding: 20px;
+    }
+
+    &.-isDark {
+      color: var(--color-white);
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &__colorContainer {
+      padding: 10px;
+      min-width: 240px;
+    }
+
+    &__hexCode {
+      visibility: hidden;
+      margin-top: unset;
+    }
+
+    &__color {
+      width: inherit;
+      min-width: 236px;
+      height: 280px;
+
+      .a-eyebrow {
+        @include type("overline", "medium");
+      }
+
+      .m-copyProgressIndicator {
+        align-self: flex-start;
+        margin: auto 0 0 20px;
+        display: inline;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.6s;
+
+        [dir="rtl"] & {
+          margin: auto 20px 0 0;
+        }
+      }
+
+      &.-isDark {
+        svg g path {
+          fill: var(--color-white);
+        }
+
+        .a-label {
+          color: var(--color-black);
+        }
+
+        .a-icon svg path {
+          fill: var(--color-black);
+        }
+      }
+
+      &.-isLight {
+        .a-icon svg path {
+          fill: var(--color-white);
+        }
+      }
+
+      &:hover {
+        .m-copyProgressIndicator {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .o-colorSwatch__hexCode {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

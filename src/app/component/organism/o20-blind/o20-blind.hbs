@@ -1,0 +1,26 @@
+
+
+<div class="o-blind" data-component="o20-blind">
+  <div class="o-blind__itemContent" data-feature-item-content>
+    {{> atom/a01-image image disableTransition=true aria=(object hidden="true") }}
+    <p class="o-blind__title" data-blind-heading>{{{heading.text}}}</p>
+    {{> atom/a02-icon name="chevron-down"}}
+  </div>
+  <div class="o-blind__contentWrapper" data-feature-content>
+    <div class="o-blind__content">
+      {{#if textContent}}
+        <ul class="o-blind__items{{#if textContent.size}} -{{textContent.size}}{{^}} -medium{{/if}}">
+        {{#each textContent.items}}
+          <li class="o-blind__item">{{this}}</li>
+        {{/each}}
+        </ul>
+      {{/if}}
+      {{#if description}}
+        <p class="o-blind__description{{#if description.size}} -{{description.size}}{{^}} -small{{/if}}">{{{ description.text }}}</p>
+      {{/if}}
+      {{#if video}}
+        {{> molecule/m02-button icon="play-solid" theme="white" variant="play" }}
+      {{/if}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 50px -10px -10px;
+  white-space: nowrap;
+
+  &.-center {
+    justify-content: center;
+  }
+
+  &.-end {
+    justify-content: flex-end;
+  }
+
+  &.-pillar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap);
+  }
+
+  .m-button {
+    margin: 10px;
+  }
+
+  .m-button__container {
+    width: 235px;
+    height: 55px;
+  }
+
+  @include respond-to("MEDIUM") {
+    margin: 40px -10px -10px;
+
+    &.-pillar {
+      grid-template-columns: repeat(2, 310px);
+    }
+
+    .m-button {
+      margin: 10px;
+    }
+  }
+}

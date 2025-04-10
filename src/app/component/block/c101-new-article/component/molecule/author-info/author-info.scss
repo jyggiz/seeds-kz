@@ -1,0 +1,37 @@
+.m-author-info {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: row;
+  padding: 40px;
+
+  &__image {
+    @include size(370px);
+
+    margin-block-end: 10px;
+    position: relative;
+  }
+
+  &__mainInfo {
+    display: grid;
+    gap: 7px;
+    grid-auto-flow: row;
+  }
+
+  &__name {
+    @include type("body", "medium");
+
+    color: var(--color-black);
+  }
+
+  &__position {
+    @include type("body", "small");
+
+    color: var(--component-highlight-color);
+  }
+
+  &__description {
+    @include type("body", "small");
+
+    color: var(--color-black);
+  }
+}

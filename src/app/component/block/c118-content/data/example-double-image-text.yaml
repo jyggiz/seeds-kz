@@ -1,0 +1,58 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m16-figure
+          data:
+            variant: portrait
+            image:
+              src: 'image/c24-content/c24-portrait-placeholder.jpg'
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 1 / 2 / 5
+      alignment:
+        vertical: start
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: 'What to do at'
+              size: 'medium'
+            heading:
+              size: h3
+              text: 'Haddah beach'
+            copy:
+              size: 'medium'
+              content:
+                '<p>NEOM is not just a place – it is a mindset.<br /> Citizens will embody an
+                international ethos and embrace a culture of exploration, risk-taking and diversity,
+                all supported by a progressive legal system compatible with international norms &
+                conducive to economic growth.</p>'
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                level: primary
+                theme: black
+                label: 'Primary button'
+            - componentName: m02-button
+              data:
+                level: secondary
+                theme: black
+                label: 'Secondary button'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 6 / 2 / 12

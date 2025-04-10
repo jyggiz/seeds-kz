@@ -1,0 +1,24 @@
+
+
+<section class="b-highlights{{#if theme}} t-{{theme}}{{/if}}{{#if fullMinHeight}} -fullMinHeight{{/if}}
+  {{#with variant}} v-{{this}}{{/with}}
+" data-component="c08-highlights" {{#if scrollComponent}}data-scroll-component{{/if}}{{#if id}} id="{{id}}"{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+         style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+           {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+           {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+ data-lazy-component>
+  {{#with background}}
+    {{> molecule/m34-component-background disableTransition=true}}
+  {{/with}}
+  <div class="b-highlights__container">
+    {{> molecule/m04-component-header header}}
+    {{#with description}}
+      <div class="b-highlights__description">
+        {{this}}
+      </div>
+    {{/with}}
+    {{> organism/o21-highlight-list }}
+  </div>
+</section>

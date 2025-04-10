@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="./o22-mobile-language-selector.scss">
+<script src="./O22MobileLanguageSelector.ts"></script>
+
+
+<div class="m-mobileLanguageSelector" data-component="o22-mobile-language-selector" >
+  <div class="m-mobileLanguageSelector__container" data-toggle>
+    {{#each languages.options }}
+      {{#if (condition languageCode '===' ../languages.activeLanguageCode)}}
+        <label class="m-mobileLanguageSelector__toggle" for="language_toggle"
+          data-language="{{languageCode}}">
+          <span>{{label}}</span>
+          {{> atom/a02-icon name="chevron-up" }}
+        </label>
+      {{/if}}
+    {{/each}}
+  </div>
+  <div class="m-mobileLanguageSelector__languageList">
+    <ul class="m-mobileLanguageSelector__items">
+      {{#each languages.options }}
+        <li class="
+            m-mobileLanguageSelector__item
+            {{#if (condition languageCode '===' ../languages.activeLanguageCode)}} -isActive{{/if}}"
+          data-language="{{languageCode}}">
+          <a href="{{ href }}"
+            class="m-mobileLanguageSelector__link">
+            {{ label }}
+            {{#if (condition languageCode '===' ../languages.activeLanguageCode)}}
+              {{> atom/a02-icon name="checkmark" className="checkmark" }}
+            {{/if}}
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

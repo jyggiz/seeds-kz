@@ -1,0 +1,47 @@
+.o-table-of-contents {
+  color: var(--component-highlight-color);
+  width: 100%;
+
+  &__label {
+    @include type("overline", "small");
+
+    color: var(--component-highlight-color);
+  }
+
+  &__list {
+    @include type("body", "small");
+    @include list-reset;
+
+    color: var(--color-black-50);
+    display: grid;
+    grid-auto-flow: row;
+    margin-block-start: 20px;
+    padding-inline-start: 20px;
+    position: relative;
+
+    &::before {
+      @include size(2px, 100%);
+
+      background-color: var(--color-black-20);
+      content: "";
+      position: absolute;
+    }
+
+    &Item {
+      @include padding-block(6px);
+
+      &.-isActive {
+        color: var(--color-black);
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__activeIndicator {
+    @include size(2px, 36px);
+
+    background-color: var(--color-black);
+    position: absolute;
+    top: 0;
+  }
+}

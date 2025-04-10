@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="./c10-countdown.scss">
+<script src="./C10Countdown.ts"></script>
+
+<section class="b-countdown" data-component="c10-countdown" {{#if scrollComponent}}data-scroll-component{{/if}}
+  data-public-path="{{@root.publicPath}}">
+  <div class="b-countdown__container">
+    <div class="b-countdown__logoContainer">
+      <img class="b-countdown__logo" src="{{ logo.src }}" alt="{{ logo.alt }}" />
+    </div>
+    <div class="b-countdown__counterContainer">
+      <ul class="b-countdown__countdown" data-countdown="{{countdown.date}}">
+        <li class="b-countdown__number">
+          <div class="b-countdown__digits" data-days>00</div>
+          <div class="b-countdown__label">{{countdown.days}}</div>
+        </li>
+        <li class="b-countdown__number">
+          <div class="b-countdown__digits" data-hours>00</div>
+          <div class="b-countdown__label">{{countdown.hours}}</div>
+        </li>
+        <li class="b-countdown__number">
+          <div class="b-countdown__digits" data-minutes>00</div>
+          <div class="b-countdown__label">{{countdown.minutes}}</div>
+        </li>
+        <li class="b-countdown__number">
+          <div class="b-countdown__digits" data-seconds>00</div>
+          <div class="b-countdown__label">{{countdown.seconds}}</div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <p class="b-countdown__copy -intro">To opening</p>
+      <p class="b-countdown__copy -place">Sindalah Island</p>
+      <p class="b-countdown__copy -date">June 1, 2022</p>
+    </div>
+  </div>
+</section>

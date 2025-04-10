@@ -1,0 +1,11 @@
+currentStep: 1
+items:
+  - active: false
+    index: 1
+    passed: true
+  - active: true
+    index: 2
+    passed: false
+  - active: false
+    index: 3
+    passed: false

@@ -1,0 +1,3 @@
+scrollComponent: true
+
+quote: 'import!../../../molecule/m01-blockquote/data/example-with-logo.yaml'

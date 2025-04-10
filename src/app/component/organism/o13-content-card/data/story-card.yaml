@@ -1,0 +1,34 @@
+thumbnail:
+  aspectRatio: 'portrait'
+  image:
+    src: './image/c29-stories/humanity-harmony.jpg'
+    alt: null
+
+content:
+  description:
+    size: 'small'
+    copy: '<p>Where humanity and nature live in harmony</p>'
+
+button:
+  level: 'primary'
+  theme: 'white'
+  icon: 'play-solid'
+
+video:
+  props:
+    youtube: 'xLN2Vu1iels'
+    originalWidth: 16
+    originalHeight: 9
+    autoplay: true
+    muted: false
+    loop: true
+    controls:
+      playPause: true
+      fullscreen: true
+      seek: true
+    eventTracking:
+      event: 'video_start'
+      video:
+        src: foo/bar/baz.mp4
+        title: Test
+        titleInEnglish: Test

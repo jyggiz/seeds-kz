@@ -1,0 +1,3 @@
+navigationContent:
+  scrollComponent: true
+  logo: 'import!../../../molecule/m19-logo/data/default.yaml'

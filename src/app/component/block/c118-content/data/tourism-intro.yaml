@@ -1,0 +1,32 @@
+scrollComponent: true
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            icon: 'tourism'
+            heading:
+              size: 'h4'
+              text: Changing the<br />Future of TOURISM
+            copy:
+              size: 'small'
+              content:
+                '<p>NEOM is the world’s most ambitious tourism project. Built on a most ancient
+                land, enhanced by world-leading design, immersive digital experiences and seamless
+                travel. It will challenge and shape the possibilities of global travel in the years
+                to come. Nurturing the raw, untouched landscapes and spectacular coastal waters –
+                this will be a new model for measurably regenerative tourism. From the revolutionary
+                urban design of one of our flagship projects THE LINE – with no pollution and no
+                traffic – to the regenerated and rewilded natural wilderness. It will be a
+                destination like no other, enthralling and enticing the world’s travelers.</p>'
+      alignment:
+        vertical:
+          - center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

@@ -1,0 +1,13 @@
+<script src="./C26HeroBanner.ts"></script>
+<link rel="stylesheet" href="./c26-hero-banner.scss">
+
+
+<section class="b-heroBanner -hasBackgroundAsset{{#if theme}} t-{{theme}}{{/if}}{{#if (condition fullHeight '===' false)}} -clip{{/if}}"
+  data-component="c26-hero-banner"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#with id}}id="{{this}}"{{/with}}
+  {{#if earlyDisplay}}data-early-display{{/if}}
+>
+  {{> organism/o60-hero-content }}
+</section>
+

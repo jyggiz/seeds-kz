@@ -1,0 +1,55 @@
+<script src="./App.ts"></script>
+
+<div class="app__root{{#if theme}} t-{{theme}}{{/if}}" data-component="app-root" {{#if
+  enablePageTransitions}}data-enable-page-transitions="true" {{/if}} dir="{{dir}}" lang="{{language}}"
+  data-theme="{{#if theme}}{{theme}}{{^}}neom{{/if}}">
+  {{#with navigation}}
+  {{> organism/o97-navigation-placeholder this}}
+  {{/with}}
+
+  {{#with brandbookNavigation}}
+  {{> block/s07-brandbook-navigation this}}
+  {{/with}}
+
+  <main class="app__content" id="app-content">
+    {{!-- replicating AEM generated markup around components in prod --}}
+    <div class="root responsivegrid">
+      <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+        <div class="responsivegrid aem-GridColumn aem-GridColumn--default--12">
+          <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
+            {{#each blocks}}
+            {{#unless (condition name '===' 's02-footer')}}
+            <div class="cmp cmp-{{name}} aem-GridColumn aem-GridColumn--default--12">
+              {{> (lookup . 'name') data }}
+            </div>
+            {{/unless}}
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{#each blocks}}
+    {{#if (condition name '===' 's02-footer')}}
+    {{> (lookup . 'name') data }}
+    {{/if}}
+    {{/each}}
+  </main>
+
+  {{#with anchorLinkButton}}
+  {{> block/s05-anchor-link-button this}}
+  {{/with}}
+
+  {{#with scrollToTop}}
+  {{> block/s08-scroll-to-top this}}
+  {{/with}}
+
+  {{> block/s09-overlay }}
+  {{> organism/o47-download-drawer }}
+
+  {{#if enablePageTransitions}}
+  {{> organism/o54-page-transition }}
+  {{/if}}
+
+  {{> molecule/m33-cursor }}
+  {{> organism/o48-loading-spinner }}
+</div>

@@ -1,0 +1,23 @@
+variant: 'landscape'
+
+preview:
+  props:
+    poster: 'image/c16-carousel/neom-heritage.jpg'
+    sources:
+      - src: 'video/video-preview.mp4'
+        type: 'video/mp4'
+copy: '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+video:
+  props:
+    sources:
+      - src: 'video/video-preview.mp4'
+        type: 'video/mp4'
+    originalWidth: 16
+    originalHeight: 9
+    autoplay: false
+    muted: false
+    loop: true
+    controls:
+      playPause: true
+      fullscreen: true
+      seek: true

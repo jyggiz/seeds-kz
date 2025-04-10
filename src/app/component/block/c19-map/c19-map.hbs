@@ -1,0 +1,14 @@
+
+
+<section class="b-map{{#if theme}} t-{{theme}}{{/if}}" data-component="c19-map"{{#if scrollComponent}} data-scroll-component{{/if}} data-lazy-component>
+  {{#if lottieDesktop}}
+    <div class="b-map__animation -desktop" data-desktop>
+      {{> atom/a20-lottie-animation lottieDesktop }}
+    </div>
+  {{/if}}
+  {{#if lottieMobile}}
+    <div class="b-map__animation -mobile" data-mobile>
+      {{> atom/a20-lottie-animation lottieMobile }}
+    </div>
+  {{/if}}
+</section>

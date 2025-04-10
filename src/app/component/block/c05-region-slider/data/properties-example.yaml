@@ -1,0 +1,20 @@
+id: 'c05-id-demo'
+activeItem: 1
+
+resetOnLeave: false
+
+variant: properties
+
+images:
+  region:
+    src: 'image/c05-region-slider/map-borders-square.png'
+    alt:
+    sources:
+      - src: 'image/c05-region-slider/map-borders-square.png'
+        media: '(min-width: 768px)'
+
+items:
+  - 'import!./_region-1-properties.yaml'
+  - 'import!./_region-2-properties.yaml'
+  - 'import!./_region-3-properties.yaml'
+  - 'import!./_region-4-properties.yaml'

@@ -1,0 +1,33 @@
+scrollComponent: true
+optimizeForLCP: true
+earlyDisplay: true
+fullHeight: true
+align:
+  horizontal: start
+  vertical: bottom
+background:
+  image:
+    src: >-
+      https://images.prismic.io/seeds-kz/Z_aW7HdAxsiBwfrC_seed_index.webp?auto=format,compress
+    alt: ''
+content:
+  header:
+    heading:
+      element: h1
+      size: h4
+      text: Ценим ваше доверие
+    eyebrow:
+      size: medium
+      text: ОЮЛ "Ассоциация семеноводов Казахстана"
+  buttonType: pillar-short
+  buttons:
+    - icon: wallet
+      title: Вступить в ассоциацию
+      label: заполнить форму
+      href: /join.html#form
+      transparent: true
+    - icon: clapper
+      title: Бизнес предложения
+      label: Связаться с нами
+      href: /contacts.html#contacts
+      transparent: true

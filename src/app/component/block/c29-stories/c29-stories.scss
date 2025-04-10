@@ -1,0 +1,19 @@
+.b-stories {
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+
+  &__container {
+    @include container("compact");
+  }
+
+  @include respond-to(LARGE) {
+    &.-overlapTopComponent {
+      padding-block: 0 60px;
+      margin-block: -50px 0;
+      z-index: zindex($zLayout, content);
+    }
+  }
+
+  @include neomThemes();
+}

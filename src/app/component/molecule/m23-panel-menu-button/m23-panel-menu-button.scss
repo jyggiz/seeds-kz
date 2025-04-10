@@ -1,0 +1,50 @@
+.m-panelMenuButton {
+  --component-background-color: transparent;
+  --icon-size: 12px;
+  --icon-fill: var(--color-gold);
+
+  @include type("navigation", "large");
+
+  align-items: center;
+  appearance: none;
+  background-color: var(--component-background-color);
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  padding: 25px 30px;
+  justify-content: space-between;
+  margin: 0;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  width: 100%;
+
+  .a-icon {
+    @include iconFlip();
+  }
+
+  .a-label {
+    line-height: 20px;
+  }
+
+  @include hover() {
+    --component-background-color: var(--color-mobile-language-selector-background);
+  }
+
+  &.-back {
+    --component-background-color: var(--color-mobile-language-selector-background);
+    padding: 47px 30px;
+
+    justify-content: flex-start;
+
+    .a-icon {
+      margin-inline-end: 20px;
+    }
+  }
+
+  @include respond-to("XXSMALL") {
+    --component-padding: 10px 20px;
+  }
+}

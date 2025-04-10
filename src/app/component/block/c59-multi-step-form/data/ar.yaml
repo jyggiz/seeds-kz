@@ -1,0 +1,401 @@
+apiUrl: 'http://localhost:4503/bin/api/forms'
+form_id: 'trojena-form_id'
+id: 'trojena-form-id'
+
+submitView:
+  background:
+    disableTransition: true
+    image:
+      alt: '#'
+      src: 'image/c54-countdown-timer/oxagon.jpeg'
+  success:
+    eyebrow:
+      text: success eyebrow
+      size: medium
+    heading:
+      text: Success heading
+      size: h4
+      element: h4
+    copy:
+      size: medium
+      content:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex magni dolorem officia iste
+        obcaecati vel cum impedit ut mollitia?
+  error:
+    eyebrow:
+      text: Error eyebrow
+    heading:
+      text: Error heading
+      size: h4
+      element: h4
+  buttons:
+    done:
+      label: Done
+      href: trojena
+      target: _blank
+    retry:
+      label: Please try again
+  social:
+    cta: Please follow us
+    items:
+      - icon: youtube-gold
+        href: 'https://www.youtube.com/channel/UCl0eCJPupCsTrobb_0bprhw'
+        target: _blank
+        label: Youtube
+      - icon: twitter-gold
+        href: 'https://twitter.com/NEOM'
+        target: _blank
+        label: Twitter
+      - icon: instagram-gold
+        href: 'https://www.instagram.com/discoverneom/?hl=en'
+        target: _blank
+        label: Instagram
+      - icon: facebook-gold
+        href: 'https://www.facebook.com/NEOM'
+        target: _blank
+        label: Facebook
+      - icon: linkedin-gold
+        href: 'https://www.linkedin.com/NEOM'
+        target: _blank
+        label: LinkedIn
+      - icon: tiktok-gold
+        href: 'https://www.tiktook.com/NEOM'
+        target: _blank
+        label: TikTok
+
+recaptcha:
+  sitekey: '6Lf4Aw8cAAAAANeB20rZn037kPCGjImQzsqm8aYK'
+  statement:
+    'This site is protected by reCAPTCHA and the Google <a
+    href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+    href="https://policies.google.com/terms">Terms of Service</a> apply.'
+titleInEnglish: 'Trojena Form title in english'
+
+dir: 'rtl'
+
+background:
+  image:
+    alt: '#'
+    src: 'image/c71-facts-list/tourism/1-mobile.jpg'
+    sources:
+      - src: 'image/c71-facts-list/tourism/1.jpg'
+        media: '(min-width: 768px)'
+
+steps:
+  - header:
+      eyebrow:
+        text: 'Travel Preferences'
+      heading:
+        text: 'LTR form'
+        element: h5
+        size: h5
+    groups:
+      - type: radioStylized
+        name: category_interest
+        id: category_interest
+        legend: 'I work in (tick one)'
+        required: true
+
+        showTextareaForOtherChoice:
+          name: category_interest_clarification
+          id: category_interest_clarification
+          placeholder: Type here
+          label: 'Please explain your choice'
+          required: true
+          titleInEnglish: 'Other choice explanation'
+          validate:
+            presence:
+              message: '^Please enter an explanation for your choice'
+              allowEmpty: false
+        items:
+          - name: category_interest
+            value: 'food & drink'
+            label: 'Food & drink'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/1.jpg'
+          - name: category_interest
+            value: 'construction / maintenance'
+            label: 'Construction / maintenance'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/2.jpg'
+          - name: category_interest
+            value: 'hotel / accommodation'
+            label: 'Hotel / accommodation'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/3.jpg'
+          - name: category_interest
+            value: 'leisure experiences'
+            label: 'Leisure experiences'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/1.jpg'
+          - name: category_interest
+            value: 'wellness'
+            label: 'Wellness'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/4.jpg'
+          - name: category_interest
+            value: 'retail'
+            label: 'Retail'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/5.jpg'
+          - name: category_interest
+            value: 'tech & digital'
+            label: 'Tech & digital'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/6.jpg'
+          - name: category_interest
+            value: 'travel agent / tourism'
+            label: 'Travel agent / tourism'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/7.jpg'
+          - name: category_interest
+            value: 'other'
+            label: 'Other'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/8.jpg'
+        validate:
+          presence:
+            message: '^Please select at least one'
+
+  - header:
+      eyebrow:
+        text: 'Travel Preferences'
+      heading:
+        text: 'WE JUST NEED YOUR CONTACT DETAILS'
+        element: h5
+        size: h5
+    groups:
+      - type: checkboxStylized
+        name: category_interest_2
+        id: category_interest_2
+        legend: 'I work in (tick one)'
+        required: true
+        showDropdownForMultipleChoice:
+          label: 'Extra choice'
+          name: 'extraChoice'
+          id: extraChoice
+          placeholder: 'Select'
+          required: true
+          items:
+            - label: 'Foo'
+              value: 'foo-1'
+            - label: 'Bar'
+              value: 'bar-1'
+            - label: 'Baz'
+              value: 'baz-1'
+          validate:
+            presence:
+              message: 'I’m specialized in'
+        items:
+          - name: category_interest_2
+            value: 'food & drink'
+            label: 'Food & drink'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/1.jpg'
+          - name: category_interest_2
+            value: 'construction / maintenance'
+            label: 'Construction / maintenance'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/2.jpg'
+          - name: category_interest_2
+            value: 'hotel / accommodation'
+            label: 'Hotel / accommodation'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/3.jpg'
+          - name: category_interest_2
+            value: 'leisure experiences'
+            label: 'Leisure experiences'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/4.jpg'
+          - name: category_interest_2
+            value: 'wellness'
+            label: 'Wellness'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/5.jpg'
+          - name: category_interest_2
+            value: 'retail'
+            label: 'Retail'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/6.jpg'
+          - name: category_interest_2
+            value: 'tech & digital'
+            label: 'Tech & digital'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/7.jpg'
+          - name: category_interest_2
+            value: 'travel agent / tourism'
+            label: 'Travel agent / tourism'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/8.jpg'
+          - name: category_interest_2
+            value: 'other'
+            label: 'Other'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/8.jpg'
+        validate:
+          presence:
+            message: '^Please select at least one'
+
+  - header:
+      eyebrow:
+        text: 'Travel Preferences'
+      heading:
+        text: 'Please narrow down your choice '
+        element: h5
+        size: h5
+    groups:
+      - type: grid
+        items:
+          - type: text
+            name: FNAME
+            id: first-name
+            placeholder: Type here
+            label: 'First Name'
+            required: true
+            titleInEnglish: 'First Name'
+            validate:
+              presence:
+                message: '^Please enter your first name'
+                allowEmpty: false
+              format:
+                pattern: "[^0-9!-\/:-@\\[-`{-~]+"
+                message: '^Please only use letters'
+          - type: text
+            name: LNAME
+            id: last-name
+            placeholder: Type here
+            label: 'Last Name'
+            required: true
+            titleInEnglish: 'Last Name'
+            validate:
+              presence:
+                message: '^Please enter your last name'
+                allowEmpty: false
+              format:
+                pattern: "[^0-9!-\/:-@\\[-`{-~]+"
+                message: '^Please only use letters'
+          - type: email
+            name: Email
+            id: email
+            placeholder: 'name@mail.com'
+            label: 'Email address'
+            required: true
+            titleInEnglish: 'Email Address'
+            validate:
+              presence:
+                message: '^Please enter your email address'
+              email:
+                message: '^Please enter a correct email address'
+          - type: phone
+            name: PHONE
+            id: phone-number
+            placeholder: 'Type here'
+            label: 'Phone number'
+            titleInEnglish: 'Phone number'
+            countrySelector: #TODO: update this when phone number is ready
+              label: 'Country'
+              name: 'country'
+              placeholder: 'Select'
+            validate:
+              numericality:
+                numericality: true
+                message: '^Please use only numbers'
+          - type: select
+            label: 'Your location'
+            name: 'LOCATION'
+            id: location
+            placeholder: 'Select'
+            required: true
+            items:
+              - label: 'Foo'
+                value: 'foo-1'
+              - label: 'Bar'
+                value: 'bar-1'
+              - label: 'Baz'
+                value: 'baz-1'
+            validate:
+              presence:
+                message: '^Please choose a location'
+          - type: select
+            label: 'Preferred language'
+            placeholder: 'Select'
+            name: 'LANGUAGE'
+            id: 'language'
+            items:
+              - type: select
+                value: english
+                label: 'English'
+                selected: true
+              - type: select
+                value: chinese (traditional)
+                label: 'Chinese (Traditional)'
+              - type: select
+                value: chinese (simplified)
+                label: 'Chinese (Simplified)'
+              - type: select
+                value: russian
+                label: 'Russian'
+              - type: select
+                value: arabic
+                label: 'Arabic'
+              - type: select
+                value: japanese
+                label: 'Japanese'
+              - type: select
+                value: french
+                label: 'French'
+              - type: select
+                value: german
+                label: 'German'
+
+      - type: checkbox
+        legend: 'Can we stay in touch'
+        name: contact-permissions
+        id: contact-permissions
+        required: true
+        items:
+          - name: contact-permissions
+            value: 'yes'
+            id: contact-permissions
+            copy:
+              '<p>I agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.  All
+              your information will be treated carefully.</p>'
+        validate:
+          presence:
+            message: '^Please select at least one'

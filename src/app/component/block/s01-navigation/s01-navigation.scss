@@ -1,0 +1,203 @@
+.b-navigation {
+  @include position(0, 0, auto);
+
+  --navigation-background: transparent;
+  --navigation-min-height: 110px;
+  --navigation-grid-dropdown: minmax(0, 1fr) minmax(0, 11fr);
+  --navigation-border: 1px solid var(--color-white-15a);
+  --search-container-min-height: 118px;
+
+  --color-accent: var(--color-gold);
+  --color-dark-accent: var(--color-gold-dark);
+  --color-accent-hover: var(--color-gold-hover);
+
+  display: none;
+  color: var(--color-white);
+  min-height: var(--navigation-min-height);
+  position: fixed;
+  transition: opacity 0.4s ease;
+  z-index: zindex($zLayout, navigation);
+
+  &.-hasSecondaryNavigation {
+    --navigation-background: var(--color-deep-black-30a);
+  }
+
+  &.-backgroundTint {
+    --navigation-background: var(--color-black-90a);
+  }
+
+  &.-isScrollingToTop,
+  &.-isScrolled {
+    --navigation-background: var(--color-black);
+
+    &.-hasSecondaryNavigation {
+      --navigation-background: var(--color-black-90a);
+      backdrop-filter: none;
+    }
+  }
+
+  &.-isSearchOpen {
+    background: var(--gradient-navigation-open-search);
+
+    .o-secondaryNavigation {
+      visibility: hidden;
+    }
+  }
+
+  &.-minimal {
+    --navigation-border: none;
+  }
+
+  &__search-container {
+    --search-container-offset: var(--navigation-min-height);
+    --offsetY: calc(-1 * (var(--search-container-offset) + var(--dropdown-navigation-offset)));
+
+    min-height: 97px;
+    background: var(--color-black);
+    grid-template-areas: "search links";
+    grid-template-columns: var(--navigation-grid-dropdown);
+    height: auto;
+    width: 100%;
+    display: block;
+    left: 0;
+    max-height: calc(100vh - var(--dropdown-navigation-offset));
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: var(--search-container-offset);
+    transition: background-color 0.5s;
+    transform: translateY(var(--offsetY));
+
+    @include respond-to("XXLARGE") {
+      --search-container-offset: var(--dropdown-navigation-offset);
+
+      min-height: var(--search-container-min-height);
+    }
+
+    &.-isStickySearch {
+      display: block;
+      transform: translateY(0);
+    }
+
+    &:not(.-isStickySearch) {
+      display: none;
+    }
+  }
+
+  &__container {
+    backdrop-filter: var(--navigation-filter);
+    background-color: var(--navigation-background);
+    border-bottom: var(--navigation-border);
+    position: relative;
+    transition: background-color 0.4s ease;
+  }
+
+  &__primary {
+    position: relative;
+    min-height: var(--navigation-min-height);
+    gap: var(--grid-gap);
+    grid-template-areas: "logo nav";
+    grid-template-columns: var(--navigation-grid-dropdown);
+
+    @include respond-to("XLARGE") {
+      @include container;
+
+      margin-inline: 0;
+      max-width: initial;
+      align-items: center;
+      display: grid;
+    }
+  }
+
+  .m-logo {
+    @include size(50px, 64px);
+
+    flex-shrink: 0;
+    grid-area: logo;
+    position: absolute;
+    top: 23px;
+    transition: transform 0.4s ease;
+    z-index: zindex($zLayout, logo);
+
+    [dir="ltr"] & {
+      left: var(--containerMargin);
+    }
+
+    [dir="rtl"] & {
+      right: var(--containerMargin);
+    }
+  }
+
+  &__mask {
+    @include size(100vw);
+    @include vh(100);
+    @include offset;
+
+    background-color: var(--modal-mask-color);
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transition: background-color 0.4s ease;
+    z-index: zindex($zLayout, navigation-mask);
+
+    .b-navigation.-isOpen & {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &.-isDropdown {
+    min-height: 100px;
+
+    &.-isOpen {
+      background-color: var(--color-black-50);
+
+      &.-isSearchOpen {
+        background: var(--gradient-navigation-open-search);
+
+        .b-navigation__mask {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &.-isScrolled {
+      --dropdown-navigation-offset: 140px;
+    }
+
+    .m-logo {
+      grid-area: logo;
+    }
+  }
+
+  .o-dropdownNavigation {
+    grid-area: nav;
+  }
+
+  @include respond-to("XLARGE") {
+    --navigation-min-height: 140px;
+
+    .m-logo {
+      @include size(68px, 88px);
+
+      position: relative;
+      top: 0;
+
+      [dir="ltr"] & {
+        left: 0;
+      }
+
+      [dir="rtl"] & {
+        right: 0;
+      }
+    }
+
+    &__mask {
+      z-index: zindex($zLayout, dropdown-navigation-mask);
+    }
+  }
+
+  @include respond-to("XXLARGE") {
+    --navigation-grid-dropdown: minmax(0, 0.4fr) minmax(0, 5fr);
+  }
+}

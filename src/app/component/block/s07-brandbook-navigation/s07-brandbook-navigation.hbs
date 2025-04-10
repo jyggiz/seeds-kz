@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="./s07-brandbook-navigation.scss">
+<script src="./S07BrandbookNavigation.ts"></script>
+
+
+<nav class="b-brandbookNavigation" data-component="s07-brandbook-navigation" data-content="{{toJson this}}">
+
+  <div class="b-brandbookNavigation__container" data-navigation-container>
+    <div class="b-brandbookNavigation__content">
+      {{#with logoLight}}
+      <div class="b-brandbookNavigation__logoContainer -light">
+        {{> molecule/m19-logo }}
+      </div>
+      {{/with}}
+      {{#with logoDark}}
+      <div class="b-brandbookNavigation__logoContainer -dark">
+        {{> molecule/m19-logo }}
+      </div>
+      {{/with}}
+
+      {{#with navigation}}
+        {{#with main}}
+        <ul class="b-brandbookNavigation__items -primary" data-navigation-items>
+        {{#each this}}
+        <li class="b-brandbookNavigation__item -primary {{#if active}} -isActive{{/if}}" data-navigation-item data-navigation-primary-list>
+        {{#unless type}}
+            <a {{#if href}}href="{{href}}"{{/if}}
+              class="b-brandbookNavigation__link -primary"
+              data-navigation-primary-action
+              {{#if target }}
+                target="{{ target }}"
+                {{#if (condition target '===' '_blank' )}}rel="noopener"{{/if}}
+              {{/if}}
+            >
+              <span class="b-brandbookNavigation__label">{{ label }}</span>
+              {{#if (condition target '===' '_blank')}}
+                {{> atom/a02-icon name="external-link-arrow" }}
+              {{/if}}
+            </a>
+        {{^}}
+          <button class="b-brandbookNavigation__button -primary" data-navigation-primary-action>
+            <span class="b-brandbookNavigation__label">{{ label }}</span>
+            {{> atom/a02-icon name="chevron-down" }}
+          </button>
+        {{/unless}}
+          {{#with items}}
+          <div class="b-brandbookNavigation__menuContainer" data-menu-container>
+            <ol class="b-brandbookNavigation__items -secondary">
+              {{#each this}}
+              <li class="b-brandbookNavigation__item -secondary {{#if active}}-isActive{{/if}}" data-navigation-item data-navigation-secondary-list>
+                <button class="b-brandbookNavigation__button -secondary" data-navigation-secondary-action>
+                  <span class="b-brandbookNavigation__label">{{ label }}</span>
+                  {{> atom/a02-icon name="chevron-down" }}
+                </button>
+                {{#with items}}
+                <ul class="b-brandbookNavigation__items -tertiary">
+                  {{#each this}}
+                  <li class="b-brandbookNavigation__item -tertiary {{#if active}} -isActive{{/if}}" data-navigation-tertiary>
+                    <a href="{{href}}" class="b-brandbookNavigation__link -tertiary">
+                      <span class="b-brandbookNavigation__label">{{ label }}</span>
+                    </a>
+                  </li>
+                  {{/each}}
+                </ul>
+                {{/with}}
+              </li>
+              {{/each}}
+            </ol>
+          </div>
+          {{/with}}
+        </li>
+        {{/each}}
+      </ul>
+        {{/with}}
+      {{/with}}
+    </div>
+  </div>
+
+  <div class="b-brandbookNavigation__hamburgerContainer" data-navigation-hamburger>
+    {{> molecule/m47-hamburger-menu }}
+  </div>
+
+  <div class="b-brandbookNavigation__closeButtonContainer" data-navigation-close-button>
+    {{> atom/a02-icon name="close" }}
+  </div>
+
+  <div class="b-brandbookNavigation__overlay" data-navigation-overlay>
+  </div>
+</nav>

@@ -1,0 +1,146 @@
+.b-richQuote {
+  @include container();
+
+  overflow: hidden;
+  position: relative;
+  padding-block: var(--component-block-padding, var(--container-margin));
+
+  &.-overlapTopComponent {
+    margin-top: -40px;
+  }
+
+  &__header {
+    padding: 40px 0 30px 0;
+
+    .a-eyebrow {
+      margin: 0 0 10px 0;
+      --eyebrow-text-color: var(--color-dark-gold);
+    }
+
+    .a-heading {
+      --component-heading-color: var(--color-black);
+    }
+  }
+
+  &__container {
+    position: relative;
+
+    &::before {
+      background-color: var(--component-background-color);
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &__slide,
+  &__content {
+    position: relative;
+  }
+
+  &__content {
+    padding: 0 0 30px;
+  }
+
+  &__previousItem,
+  &__nextItem {
+    display: none;
+  }
+
+  @include respond-to(MEDIUM) {
+    &__header {
+      padding: 70px 0 50px 0;
+    }
+
+    &__content {
+      padding: 60px 0;
+    }
+
+    &__previousItem,
+    &__nextItem {
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      z-index: 1;
+    }
+
+    &__previousItem {
+      left: 0;
+      text-align: left;
+    }
+
+    &__nextItem {
+      right: 0;
+      text-align: right;
+    }
+  }
+
+  @include respond-to(XLARGE) {
+    &.-overlapTopComponent {
+      margin-top: -120px;
+    }
+
+    &__container {
+      display: grid;
+      grid-gap: var(--grid-gap);
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    &__container::before,
+    .m-componentBackground {
+      height: calc(100% - 64px);
+    }
+
+    &__content {
+      grid-column: 1 / span 12;
+    }
+
+    &__slide {
+      &:nth-child(n + 2) {
+        @include size(100%);
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+
+      &:not(.-isActive) {
+        pointer-events: none;
+      }
+    }
+
+    .a-pageIndicators {
+      display: none;
+    }
+  }
+
+  @include respond-to(XXLARGE) {
+    &__content {
+      padding-bottom: 0;
+    }
+  }
+
+  @include neomThemes() {
+    --component-background-color: var(--color-cream);
+
+    &.t-dark,
+    &.t-darkMono {
+      --component-background-color: var(--color-black);
+    }
+
+    &.t-dark,
+    &.t-darkMono,
+    &.t-orange {
+      .m-richQuoteThumbnail__role,
+      .m-blockquote__role {
+        color: var(--color-white);
+      }
+    }
+  }
+}

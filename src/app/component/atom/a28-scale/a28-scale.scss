@@ -1,0 +1,52 @@
+.a-scale {
+  margin: 20px 0px;
+  height: 6px;
+  display: flex;
+  justify-content: center;
+  transform: rotate(90deg);
+  width: calc(50px * (var(--cell-count) + 1));
+
+  &__scaleCell {
+    @include type("overline", "large");
+    color: var(--color-black);
+    opacity: 0.5;
+    position: relative;
+    height: 100%;
+    width: calc(100% - 20px);
+    border-left: 1.5px solid var(--color-black);
+    background-repeat: no-repeat;
+    background-size: 100% 1px, 1px 5px, 1px 5px, 1px 5px, 1px 5px;
+    background-position: 0% center, 20% center, 40% center, 60% center, 80% center;
+    background-image: linear-gradient(#1d1f2250, #1d1f2250), linear-gradient(#1d1f22, #1d1f22),
+      linear-gradient(#1d1f22, #1d1f22), linear-gradient(#1d1f22, #1d1f22),
+      linear-gradient(#1d1f22, #1d1f22);
+  }
+  &__scaleCell span {
+    position: absolute;
+    top: 30px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &__startValue {
+    border-right: 0;
+    left: -27px;
+    transform: rotate(270deg);
+    display: none;
+  }
+
+  &__value {
+    right: -19px;
+    transform: rotate(270deg);
+  }
+
+  &__scaleCell:last-child {
+    border-right: 1.5px solid var(--color-black);
+  }
+
+  &__scaleCell:first-child {
+    .a-scale__startValue {
+      display: block;
+    }
+  }
+}

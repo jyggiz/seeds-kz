@@ -1,0 +1,32 @@
+header:
+  eyebrow:
+    text: 'Lower desert region'
+  heading:
+    text: 'Tranquil Expansive Deserts'
+description:
+  'Sweeping desert plains and rocky foothills support unique wildlife and a long cultural history.'
+
+images:
+  background:
+    src: 'image/c05-region-slider/region-2/background.jpg'
+    alt: 'Pretty reef picture'
+    sources:
+      - src: 'image/c05-region-slider/region-2/background.jpg'
+        media: '(min-width: 768px)'
+  region:
+    src: 'image/c05-region-slider/map-coastal-desert-square.png'
+    alt: 'Region #2 highlight layer image here'
+    sources:
+      src: 'image/c05-region-slider/map-coastal-desert-square.png'
+      media: '(min-width: 768px)'
+
+properties:
+  - items:
+      - 'import!../../../molecule/m51-region-property/data/green-sea-turtle.yaml'
+      - 'import!../../../molecule/m51-region-property/data/default.yaml'
+  - items:
+      - 'import!../../../molecule/m51-region-property/data/green-sea-turtle.yaml'
+      - 'import!../../../molecule/m51-region-property/data/default.yaml'
+  - items:
+      - 'import!../../../molecule/m51-region-property/data/green-sea-turtle.yaml'
+      - 'import!../../../molecule/m51-region-property/data/default.yaml'

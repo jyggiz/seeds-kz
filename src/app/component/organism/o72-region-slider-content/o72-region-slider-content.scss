@@ -1,0 +1,223 @@
+.o-regionSliderContent {
+  overflow: hidden;
+
+  &__mapItemList {
+    @include size(100%);
+    position: relative;
+  }
+
+  &__mapItem {
+    width: 100%;
+    position: absolute;
+    list-style: none;
+    background: var(--component-background-color);
+    transition: 0.5s $easeLinear;
+    transition-property: opacity, visibility;
+
+    &:not(.-isActive) {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__secondaryContent {
+    @include size(100%);
+
+    position: relative;
+    visibility: hidden;
+    align-self: center;
+
+    &.-properties {
+      visibility: visible;
+    }
+
+    &.-isActive {
+      visibility: visible;
+    }
+  }
+
+  &__secondaryContentHeader {
+    box-sizing: border-box;
+    max-width: var(--containerMaxWidth);
+    padding: 0 clamp(20px, 4.8611111111vw, 70px);
+    margin-block: 30px;
+    text-align: center;
+    min-height: 150px;
+
+    .m-paragraph__content {
+      color: var(--component-text-color);
+    }
+  }
+
+  &__backgroundWrapper {
+    @include size(100%, calc((13 / 18) * 100vw));
+
+    position: relative;
+  }
+
+  &__mapItemHeader {
+    @include container;
+
+    margin-block: 30px 0;
+    text-align: center;
+    min-height: 150px;
+
+    .a-eyebrow {
+      color: var(--component-highlight-color);
+    }
+
+    .a-heading {
+      margin-block: 15px;
+      color: var(--component-heading-color);
+    }
+
+    .o-regionSliderContent__mapItemDescription {
+      @include type("exception", "body14");
+
+      color: var(--component-text-color);
+    }
+  }
+
+  &__propertyList {
+    display: flex;
+    list-style: none;
+  }
+
+  &__propertySubList {
+    list-style: none;
+  }
+
+  &__propertySubItem {
+    @include container;
+
+    text-align: center;
+    padding-block: 10px;
+
+    .o-regionSliderContent {
+      &__propertyImageWrapper {
+        @include size(128px);
+
+        position: relative;
+        overflow: hidden;
+        margin-inline: auto;
+        border-radius: 100%;
+      }
+
+      &__propertySubItemHeading {
+        @include type("body", "medium");
+
+        font-weight: 300;
+        text-transform: initial;
+        margin-block: 10px;
+        color: var(--component-heading-color);
+      }
+
+      &__propertySubItemDescription {
+        @include type("exception", "body14");
+
+        color: var(--component-text-color);
+      }
+    }
+  }
+
+  @include respond-to("LARGE_LANDSCAPE") {
+    &__mapItem {
+      @include vh(100, min-height);
+
+      display: flex;
+    }
+
+    &__mapItemList {
+      @include vh(100, min-height);
+
+      display: flex;
+    }
+
+    &__primaryContent,
+    &__secondaryContent {
+      flex-basis: 50%;
+      position: relative;
+
+      &.-properties {
+        padding: 50px 0;
+      }
+    }
+
+    &__secondaryContentHeader {
+      height: 100%;
+      margin-inline-start: auto;
+      margin-block: 0;
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+
+    &__backgroundWrapper {
+      @include size(100%);
+    }
+
+    &__mapItemHeader {
+      position: absolute;
+      width: 100%;
+      z-index: zindex($zLayout, default);
+      top: 0;
+      margin-block: 70px;
+
+      .a-eyebrow {
+        color: var(--color-white-70a);
+      }
+
+      .a-heading {
+        color: var(--color-white);
+      }
+
+      .o-regionSliderContent__mapItemDescription {
+        @include type("body", "small");
+
+        color: var(--color-white-70a);
+      }
+    }
+
+    &__propertyList {
+      @include vh(100, min-height);
+      @include size(100%);
+
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-inline: 70px;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+
+    &__propertySubList {
+      display: grid;
+      grid-template-columns: 1fr 100px 1fr;
+      gap: 20px;
+      grid-auto-flow: dense;
+      height: 250px;
+    }
+
+    &__propertySubItem {
+      padding: 0;
+      flex-basis: 100%;
+    }
+
+    &__propertyMarker {
+      grid-column: 2 / 3;
+      text-align: center;
+      margin-block-start: 25px;
+
+      &Icon {
+        --icon-size: 50px;
+        --icon-fill: var(--component-highlight-color);
+
+        margin-block-end: 16px;
+      }
+
+      &Copy {
+        @include type("overline", "small");
+        color: var(--component-heading-color);
+      }
+    }
+  }
+}

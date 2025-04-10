@@ -1,0 +1,72 @@
+title:
+  heading:
+    size: h4
+    text: <span>Задачи Палаты</span>
+
+blocks:
+  - heading: 'Создание условий устойчивого развития отечественного рынка семян'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading:
+      'представление интересов субъектов семеноводства в заинтересованных органах и организациях'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading:
+      'координация работы семеноводческих хозяйств в интересах стабильного и эффективного развития
+      семеноводства'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading: 'внедрение современных технологий производства семян сельскохозяйственных растений'
+    icon: technology
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading: 'обеспечение производства и реализации высококачественных семян'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading: 'контроль за технологией производства семян'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading: 'защита интересов субъектов семеноводства на рынке Казахстана'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading: 'осуществление анализа и мониторинга развития семеноводства'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading: 'организация обучения на базе передовых хозяйств'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading:
+      'оказание содействие в организации получения от субъектов семеноводства вознаграждений
+      (роялти) за использованные селекционные достижения'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading: 'техническая и технологическая модернизация семеноводства'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'
+  - heading: 'участие в разработке нормативных правовых актов в области семеноводства'
+    background:
+      disableTransition: true
+      image:
+        src: 'image/c99-blocks-list/planet_desktop.png'

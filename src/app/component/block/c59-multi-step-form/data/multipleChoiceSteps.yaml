@@ -1,0 +1,263 @@
+apiUrl: 'http://localhost:4503/bin/api/forms'
+form_id: 'trojena-form_id'
+id: 'trojena-form-id'
+
+submitView:
+  background:
+    disableTransition: true
+    image:
+      alt: '#'
+      src: 'image/c54-countdown-timer/oxagon.jpeg'
+  success:
+    eyebrow:
+      text: success eyebrow
+      size: medium
+    heading:
+      text: Success heading
+      size: h4
+      element: h4
+    copy:
+      size: medium
+      content:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex magni dolorem officia iste
+        obcaecati vel cum impedit ut mollitia?
+  error:
+    eyebrow:
+      text: Error eyebrow
+    heading:
+      text: Error heading
+      size: h4
+      element: h4
+  buttons:
+    done:
+      label: Done
+      href: trojena
+      target: _blank
+    retry:
+      label: Please try again
+
+  social:
+    cta: Please follow us
+    items:
+      - icon: youtube-gold
+        href: 'https://www.youtube.com/channel/UCl0eCJPupCsTrobb_0bprhw'
+        target: _blank
+        label: Youtube
+      - icon: twitter-gold
+        href: 'https://twitter.com/NEOM'
+        target: _blank
+        label: Twitter
+      - icon: instagram-gold
+        href: 'https://www.instagram.com/discoverneom/?hl=en'
+        target: _blank
+        label: Instagram
+      - icon: facebook-gold
+        href: 'https://www.facebook.com/NEOM'
+        target: _blank
+        label: Facebook
+      - icon: linkedin-gold
+        href: 'https://www.linkedin.com/NEOM'
+        target: _blank
+        label: LinkedIn
+      - icon: tiktok-gold
+        href: 'https://www.tiktook.com/NEOM'
+        target: _blank
+        label: TikTok
+
+recaptcha:
+  sitekey: '6Lf4Aw8cAAAAANeB20rZn037kPCGjImQzsqm8aYK'
+  statement:
+    'This site is protected by reCAPTCHA and the Google <a
+    href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+    href="https://policies.google.com/terms">Terms of Service</a> apply.'
+titleInEnglish: 'Trojena Form title in english'
+
+dir: 'ltr'
+
+background:
+  image:
+    alt: '#'
+    src: 'image/c71-facts-list/tourism/1-mobile.jpg'
+    sources:
+      - src: 'image/c71-facts-list/tourism/1.jpg'
+        media: '(min-width: 768px)'
+
+steps:
+  - header:
+      eyebrow:
+        text: 'Travel Preferences'
+      heading:
+        text: 'Multiple choice steps form'
+        element: h5
+        size: h5
+    groups:
+      - type: checkboxStylized
+        name: category_interest
+        id: category_interest
+        legend:
+          text: I work in (tick one)
+        required: true
+        showDropdownForMultipleChoice:
+          multiselect: false
+          titleInEnglish: 'interestedIn'
+          name: category_interest_select
+          label: "I'm interested in"
+          id: category_interest_select
+          placeholder: 'Please select what you are most interested in'
+          required: true
+          validate:
+            presence:
+              message: '^Please select at least one option'
+        items:
+          - name: category_interest
+            value: 'food & drink'
+            label: 'Food & drink'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/1.jpg'
+          - name: category_interest
+            value: 'construction/maintenance'
+            label: 'Construction/maintenance'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/2.jpg'
+          - name: category_interest
+            value: 'hotel / accommodation'
+            label: 'Hotel / accommodation'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/3.jpg'
+          - name: category_interest
+            value: 'leisure experiences'
+            label: 'Leisure experiences'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/4.jpg'
+          - name: category_interest
+            value: 'wellness'
+            label: 'Wellness'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/5.jpg'
+          - name: category_interest
+            value: 'retail'
+            label: 'Retail'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/6.jpg'
+          - name: category_interest
+            value: 'tech & digital'
+            label: 'Tech & digital'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/7.jpg'
+          - name: category_interest
+            value: 'travel agent / tourism'
+            label: 'Travel agent / tourism'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/8.jpg'
+          - name: category_interest
+            value: 'other'
+            label: 'Other'
+            id: category_interest
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/8.jpg'
+        validate:
+          presence:
+            message: '^Please select at least one'
+
+  - groups:
+      - type: checkboxStylized
+        name: category_interest_2
+        id: category_interest_2
+        legend:
+          text: I work in (tick one)
+        required: true
+        showDropdownForMultipleChoice:
+          multiselect: true
+          titleInEnglish: 'interestedIn'
+          legend:
+            text: "I'm interested in"
+          id: category_interest_multi_select
+          placeholder: 'Please select what you are most interested in'
+          required: true
+          validate:
+            presence:
+              message: '^Please select at least one option'
+        items:
+          - name: category_interest_2
+            value: 'food & drink'
+            label: 'Food & drink'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/1.jpg'
+          - name: category_interest_2
+            value: 'construction/maintenance'
+            label: 'Construction/maintenance'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/2.jpg'
+          - name: category_interest_2
+            value: 'hotel / accommodation'
+            label: 'Hotel / accommodation'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/3.jpg'
+          - name: category_interest_2
+            value: 'leisure experiences'
+            label: 'Leisure experiences'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/4.jpg'
+          - name: category_interest_2
+            value: 'wellness'
+            label: 'Wellness'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/5.jpg'
+          - name: category_interest_2
+            value: 'retail'
+            label: 'Retail'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/6.jpg'
+          - name: category_interest_2
+            value: 'tech & digital'
+            label: 'Tech & digital'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/7.jpg'
+          - name: category_interest_2
+            value: 'travel agent / tourism'
+            label: 'Travel agent / tourism'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/8.jpg'
+          - name: category_interest_2
+            value: 'other'
+            label: 'Other'
+            id: category_interest_2
+            image:
+              alt: '#'
+              src: 'image/c71-facts-list/8.jpg'
+        validate:
+          presence:
+            message: '^Please select at least one'

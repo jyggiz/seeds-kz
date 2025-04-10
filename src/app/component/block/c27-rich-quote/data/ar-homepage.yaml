@@ -1,0 +1,155 @@
+overlapTopComponent: true
+scrollComponent: true
+
+items:
+  - quote:
+      icon: quote
+      author:
+        name: جوزيف برادلي
+        role: رئيس قطاع العلوم التقنية والرقمية
+      quote:
+        '<p>نيوم ليست مجرد بناء مدينة ذكية، بل بناء أول مدينة إدراكية، حيث ستغذّي البيانات والذكاء
+        الاصطناعي تقنياتها المتطورة لتتفاعل بكل انسجام مع السكان.</p>'
+    image:
+      src: 'image/joseph_bradley.jpg'
+      alt: 'Photo of Joseph Bradley'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        originalWidth: 512
+        originalHeight: 640
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'The Future of Technology: Joseph Bradley'
+            title: 'The Future of Technology: Joseph Bradley'
+            src: 'video/quote-video-preview.mp4'
+    thumbnail:
+      src: 'image/thumbnails/joseph-bradley-thumbnail.jpg'
+      alt: 'Photo of Joseph Bradley'
+    button:
+      label: شاهد
+      data:
+        play-button:
+
+  - quote:
+      icon: quote
+      author:
+        name: د. مليحة هاشمي
+        role: المديرة التنفيذية في قطاع الصحة والرفاهية والتقنيات الحيوية
+      quote: '<p>توفّر نيوم منصة تتفاعل من خلالها الصحة والرفاهية مع كافة تفاصيل الحياة.</p>'
+    image:
+      src: 'image/maliha-hashmi-main.jpg'
+      alt: 'Photo of Dr. Maliha Hashmi'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        originalWidth: 54
+        originalHeight: 64
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'The Future of Health and Well-Being: Dr. Maliha Hashmi'
+            title: 'The Future of Health and Well-Being: Dr. Maliha Hashmi'
+            src: 'video/quote-video-preview.mp4'
+    thumbnail:
+      src: 'image/thumbnails/maliha-hashmi-thumbnail.jpg'
+      alt: 'Photo of Dr. Maliha Hashmi'
+    button:
+      label: شاهد
+      data:
+        play-button:
+
+  - quote:
+      icon: quote
+      author:
+        name: جافين فان توندر
+        role: رئيس قطاع الماء
+      quote:
+        '<p>سيكون للنهج المستدام الذي تتبناه نيوم أثرٌ كبيرٌ على قطاع الماء على مستوى العالم.</p>'
+    image:
+      src: 'image/gavin-van-tonder-main.jpg'
+      alt: 'Photo of Gavin van Tonder'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        originalWidth: 512
+        originalHeight: 640
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'The Future of Water Sector: Gavin van Tonder'
+            title: 'The Future of Water Sector: Gavin van Tonder'
+            src: 'video/quote-video-preview.mp4'
+    thumbnail:
+      src: 'image/thumbnails/gavin-van-tonder-thumbnail.jpg'
+      alt: 'Photo of Gavin van Tonder'
+    button:
+      label: شاهد
+      data:
+        play-button:
+
+  - quote:
+      icon: quote
+      author:
+        name: جيوفانا كارنيفالي
+        role: المديرة التنفيذية للتخطيط الحضري
+      quote:
+        '<p>ستكون مساحات التطوير الحضري في نيوم محدودة، وذلك من أجل الحفاظ على الطبيعة وتحسينها.</p>'
+    image:
+      src: 'image/giovanna-carnevali-main.jpg'
+      alt: 'Photo of Giovanna Carnevali'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        originalWidth: 512
+        originalHeight: 640
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Urban Architecture: Giovanna Carnevali'
+            title: 'Urban Architecture: Giovanna Carnevali'
+            src: 'video/quote-video-preview.mp4'
+    thumbnail:
+      src: 'image/thumbnails/giovanna-carnevali-thumbnail.jpg'
+      alt: 'Photo of Giovanna Carnevali'
+    button:
+      label: شاهد
+      data:
+        play-button:

@@ -1,0 +1,74 @@
+.a-stepIndicator {
+  --step-indicator-size: 30px;
+  --step-label-color: var(--color-white);
+  @include size(var(--step-indicator-size));
+  @include type("body", "small");
+
+  [dir="rtl"] & {
+    font-size: 16px;
+  }
+
+  display: inline-block;
+  font-weight: 100;
+  user-select: none;
+
+  &__label {
+    @include type("capsCopy", "xsmall");
+
+    color: var(--step-label-color);
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    transition: color 250ms ease;
+  }
+
+  &__index {
+    @include size(var(--step-indicator-size));
+
+    background-color: var(--color-white);
+    border-radius: 50%;
+    border: 1.5px solid var(--step-indicator-border-color);
+    color: var(--step-indicator-color);
+    font-weight: 400;
+    line-height: var(--step-indicator-size);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  &.-isActive,
+  &.-isPassed {
+    --step-indicator-border-color: var(--color-gold);
+    --step-indicator-color: var(--color-black);
+  }
+
+  &.-regionSlider {
+    --step-indicator-size: 15px;
+    --step-indicator-border-color: var(--color-gold);
+
+    .a-stepIndicator__index {
+      --step-indicator-color: var(--color-white);
+    }
+
+    &.-isActive {
+      --step-indicator-size: 35px;
+
+      .a-stepIndicator__index {
+        --step-indicator-color: var(--color-black);
+      }
+    }
+  }
+
+  @include respond-to("XLARGE") {
+    &.-regionSlider {
+      --step-indicator-size: 18px;
+
+      &.-isActive {
+        --step-indicator-size: 45px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.m-stickyMedia {
+  @include size(100%);
+
+  &,
+  &__container {
+    @include position(0);
+
+    position: absolute;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__background {
+    @include offset(0, 0);
+    @include vh(100);
+
+    position: absolute;
+    will-change: transform;
+    width: 100vw;
+  }
+}

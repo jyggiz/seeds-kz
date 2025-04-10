@@ -1,0 +1,5 @@
+variant: 'circle'
+image:
+  src: '/image/c16-carousel/updates_instagram.jpg'
+  alt: ''
+copy: '<p>An image cropped in 1:1 ratio, giving an example of the circle image variant.</p>'

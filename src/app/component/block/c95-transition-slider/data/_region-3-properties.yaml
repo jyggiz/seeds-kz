@@ -1,0 +1,5 @@
+images:
+  region:
+    src: 'image/c95-transition-slider/map-region-3.jpg'
+    alt: 'Region #3 highlight layer image here'
+label: MOUNTAIN

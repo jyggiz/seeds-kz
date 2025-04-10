@@ -1,0 +1,62 @@
+.o-downloadDrawer {
+  @include type("body", "small");
+  @include size(100%);
+  @include vh(100);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: var(--color-black-75);
+  overflow: hidden;
+  z-index: zindex($zLayout, download-drawer);
+
+  &__drawer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-white);
+    overflow: scroll;
+    width: 100%;
+    height: auto;
+    pointer-events: auto;
+    padding: 40px 0 20px;
+  }
+
+  &__container {
+    @include container();
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 0;
+
+    .m-button:not(:first-child) {
+      margin-inline-start: var(--grid-gap);
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__drawer {
+      overflow: auto;
+      padding: 40px 0;
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__buttons {
+      margin: 0;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__drawer {
+      padding: 50px 0;
+    }
+  }
+}

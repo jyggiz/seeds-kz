@@ -1,0 +1,36 @@
+<div class="b-exploreMap__contentItem" data-content-item>
+  {{#with content}}
+    {{> atom/a03-heading text=heading.text size="h5" }}
+    {{#with copy}}
+      <div class="b-exploreMap__contentCopy">{{{ this }}}</div>
+    {{/with}}
+    {{#with features}}
+      <ul class="b-exploreMap__features">
+        {{#each this}}
+          <li class="b-exploreMap__featuresItem">
+            {{this}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/with}}
+    <div class="b-exploreMap__media">
+      {{#if preview}}
+        {{> atom/a19-video props=content.preview.props autoloop=true}}
+      {{^}}
+        {{> atom/a01-image image disableTransition=true }}
+      {{/if}}
+      {{#if video}}
+        {{> molecule/m02-button video=video icon="play-solid" theme="white" variant="play" title=null }}
+      {{/if}}
+    </div>
+    {{#with buttons}}
+      <ul class="b-exploreMap__buttons">
+        {{#each this}}
+          <li class="b-exploreMap__button">
+            {{> molecule/m02-button level="tertiary" theme="dark-gold" size="small" icon="arrow-right"}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/with}}
+  {{/with}}
+</div>

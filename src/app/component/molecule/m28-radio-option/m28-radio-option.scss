@@ -1,0 +1,33 @@
+.m-radioOption {
+  position: relative;
+  border-radius: var(--input-border-radius);
+  background-color: var(--o45-radio-option-background, var(--checkbox-group-background-color));
+
+  &__label {
+    height: 100%;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+
+    .a-radio {
+      flex-shrink: 0;
+    }
+  }
+
+  &__textLabel {
+    align-items: center;
+    color: var(--checkbox-label-color, var(--color-black-75));
+    cursor: pointer;
+    display: flex;
+    margin-inline-start: 10px;
+    user-select: none;
+  }
+
+  &.-isDisabled {
+    .m-radioOption__label {
+      cursor: not-allowed;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+  }
+}

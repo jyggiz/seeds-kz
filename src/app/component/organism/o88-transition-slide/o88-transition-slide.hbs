@@ -1,0 +1,30 @@
+
+
+<div class="o-transitionSlide"
+  data-component="o88-transition-slide"
+  data-statistic="{{ toJson statistic }}"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+> 
+  <div class="o-transitionSlide__{{#if mapType}}{{mapType}}{{^}}default{{/if}}">
+    {{> organism/o71-region-slider-navigation items=backgrounds images=initialImage resetOnLeave=true }}
+  </div>
+  <div class="o-transitionSlide__container">
+    <div class="o-transitionSlide__statistic">
+        {{#with statistic }}
+          {{> molecule/m56-statistic-card this }}
+        {{/with}}
+    </div>
+    <div class="o-transitionSlide__content">
+      {{> molecule/m18-paragraph }}
+      <div class="o-transitionSlide__buttons">
+        {{#each buttons}}
+          {{> molecule/m02-button this}}
+        {{/each}}
+        <div class="o-transitionSlide__learnMoreButton" data-open-modal-button>
+          {{> molecule/m02-button label='Learn more' theme='white' level='secondary'}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

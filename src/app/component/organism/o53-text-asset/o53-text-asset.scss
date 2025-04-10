@@ -1,0 +1,66 @@
+@use "sass:math";
+
+.o-textAsset {
+  --component-grid-areas: ". content content content content content . asset asset asset asset asset";
+  display: flex;
+  flex-direction: column;
+  gap: var(--container-margin);
+
+  width: 100%;
+
+  @include container();
+
+  &__item {
+    &.-content {
+      grid-area: content;
+    }
+
+    &.-asset {
+      grid-area: asset;
+    }
+  }
+
+  &__video {
+    position: relative;
+
+    &.-widescreen {
+      @include aspect-ratio(16, 9);
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--grid-gap);
+    margin-block: 40px 0;
+  }
+
+  @include respond-to("LARGE") {
+    align-items: center;
+    display: grid;
+    gap: var(--grid-gap);
+    grid-template-areas: var(--component-grid-areas);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+
+    &.-assetPull {
+      --component-grid-areas: ". content content content content . . asset asset asset asset asset";
+
+      .o-textAsset__item.-asset {
+        justify-self: self-start;
+        width: calc(100% + clamp(20px, #{math.div(70, 1440) * 100vw}, 70px));
+      }
+    }
+
+    &.-assetFirst {
+      --component-grid-areas: "asset asset asset asset asset . content content content content content .";
+
+      &.-assetPull {
+        --component-grid-areas: "asset asset asset asset asset . . content content content content .";
+
+        .o-textAsset__item.-asset {
+          justify-self: self-end;
+        }
+      }
+    }
+  }
+}

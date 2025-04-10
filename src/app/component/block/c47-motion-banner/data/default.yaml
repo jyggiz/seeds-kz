@@ -1,0 +1,30 @@
+fullMinHeight: true
+padding:
+  start: 'none'
+
+variant: 'beachGames'
+
+logo:
+  src: 'image/c47-motion-banner/beach-games-logo.webp'
+  alt: 'NEOM Beach Games 2022'
+
+background:
+  mask:
+    opacity: 0
+  disableTransition: true
+  effect: 'wave'
+  image:
+    src: 'image/c47-motion-banner/ribbon.webp'
+    alt: 'Ribbon'
+
+assets:
+  - src: 'image/c47-motion-banner/kite-surfer.webp'
+    alt: 'Kite surfer'
+  - src: 'image/c47-motion-banner/runner.webp'
+    alt: 'Runner'
+  - src: 'image/c47-motion-banner/basketball-player.webp'
+    alt: 'Basketball player'
+  - src: 'image/c47-motion-banner/football-player.webp'
+    alt: 'Football player'
+  - src: 'image/c47-motion-banner/cyclist.webp'
+    alt: 'Cyclist'

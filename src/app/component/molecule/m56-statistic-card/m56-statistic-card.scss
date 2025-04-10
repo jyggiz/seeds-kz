@@ -1,0 +1,88 @@
+.m-statisticCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding: 28px var(--container-margin) 0;
+
+  &::before {
+    @include pseudo(none);
+    @include size(100%, 2px);
+
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: var(--color-hotspots);
+  }
+
+  &__figures {
+    --icon-size: 40px;
+
+    color: var(--color-hotspots);
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+    width: 100%;
+    text-align: center;
+
+    .a-icon {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__figureItem {
+    position: relative;
+  }
+
+  &__figureValue {
+    @include type("body", "xlarge");
+    font-weight: 400;
+    line-height: 108%;
+    margin-bottom: 5px;
+
+    &.-medium {
+      @include type("body", "large");
+    }
+
+    &.-small {
+      @include type("body", "medium");
+    }
+  }
+
+  &__figureMeasure {
+    @include type("overline", "large");
+
+    margin-inline: 4px;
+    text-transform: uppercase;
+
+    .m-statisticCard__figureValue.-medium & {
+      @include type("overline", "medium");
+    }
+
+    .m-statisticCard__figureValue.-small & {
+      @include type("overline", "small");
+    }
+  }
+
+  &__figureLabel {
+    @include type("overline", "small");
+    text-transform: uppercase;
+  }
+
+  @include respond-to(LARGE) {
+    padding-left: 0;
+    padding-right: 0;
+
+    &::before {
+      display: block;
+    }
+
+    &__figures {
+      grid-template-columns: repeat(2, 1fr);
+      text-align: start;
+    }
+  }
+}

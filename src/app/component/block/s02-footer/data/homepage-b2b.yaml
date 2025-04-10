@@ -1,0 +1,72 @@
+scrollComponent: true
+
+sitemap:
+  - label: 'About us'
+    items:
+      - label: 'What is NEOM'
+        href: '#'
+
+  - label: 'Regions'
+    items:
+      - label: 'THE LINE'
+        href: '#'
+      - label: 'OXAGON'
+        href: '#'
+      - label: 'TROJENA'
+        href: '#'
+
+  - label: 'Our business'
+    items:
+      - label: 'Companies'
+        href: '#'
+      - label: 'Sectors'
+        href: '#'
+      - label: 'Our Partners'
+        href: '#'
+      - label: 'Our Suppliers'
+        href: '#'
+      - label: 'Financial Services'
+        href: '#'
+
+  - label: 'Invest'
+    items:
+      - label: 'NEOM Investment Office'
+        href: '#'
+
+  - label: 'News room'
+    items:
+      - label: 'Press Release'
+        href: '#'
+      - label: 'Media Resources'
+        href: '#'
+      - label: 'News & Updates'
+        href: '#'
+
+  - label: 'Careers'
+    items:
+      - label: 'Working at NEOM'
+        href: '#'
+      - label: 'Search jobs'
+        href: '#'
+
+social:
+  items: 'import!../../../molecule/m12-social/data/default.yaml'
+
+marginalia:
+  items:
+    - label: 'Privacy policy'
+      href: 'privacy-policy.html'
+      target: '_blank'
+    - label: 'Terms of Use'
+      href: 'terms-of-use.html'
+      target: '_blank'
+    - label: 'Cookie Policy'
+      href: 'cookie-policy.html'
+      target: '_blank'
+  recaptcha:
+    statement:
+      'This site is protected by reCAPTCHA and the <a
+      href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a
+      href="https://policies.google.com/terms">Terms of Service</a> apply.'
+
+copyrightNotice: '© 2022 NEOM'

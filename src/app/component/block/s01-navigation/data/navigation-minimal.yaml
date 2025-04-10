@@ -1,0 +1,15 @@
+navigationContent:
+  scrollComponent: true
+  logo: 'import!../../../molecule/m19-logo/data/default.yaml'
+
+  navigation:
+    mainAriaLabel: 'navigation menu'
+    aside:
+      - type: CTA
+        button:
+          label: 'Be part of NEOM'
+          size: 'small'
+          level: 'primary'
+          theme: 'white'
+          href: './'
+          target: '_blank'

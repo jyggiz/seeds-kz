@@ -1,0 +1,56 @@
+.b-breadcrumbs {
+  --breadcrumbs-divider-color: var(--color-black-10);
+
+  padding-block-start: 19px;
+  padding-block-end: 19px;
+  position: relative;
+  padding-inline-start: var(--container-margin);
+  padding-inline-end: var(--container-margin);
+  width: 100%;
+  background-color: var(--component-background-color);
+
+  &.-fullWidthDivider {
+    border-bottom: 1px solid var(--breadcrumbs-divider-color);
+  }
+
+  &.-withPaddingDivider::after {
+    @include size(auto, 1px);
+
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - var(--container-margin) - var(--container-margin));
+    background-color: var(--breadcrumbs-divider-color);
+  }
+
+  @include neomThemes {
+    &.t-dark {
+      --breadcrumbs-divider-color: var(--color-white-20a);
+
+      .m-breadcrumbs {
+        --breadcrumbs-active-color: var(--color-black-20);
+        --breadcrumbs-divider-color: var(--color-white-25a);
+      }
+    }
+
+    @include theme("oxagon") {
+      .m-breadcrumbs {
+        --breadcrumbs-inactive-color: var(--color-accent);
+      }
+
+      &.t-light {
+        .m-breadcrumbs {
+          --breadcrumbs-active-color: var(--color-black-75);
+          --breadcrumbs-divider-color: var(--color-black-30a);
+        }
+      }
+
+      &.t-dark {
+        .m-breadcrumbs {
+          --breadcrumbs-active-color: var(--color-white-50a);
+          --breadcrumbs-divider-color: var(--color-white-25a);
+        }
+      }
+    }
+  }
+}

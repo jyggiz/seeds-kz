@@ -1,0 +1,58 @@
+
+
+<section class="b-transitionSlider"
+  data-component="c95-transition-slider"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#with padding}}
+    style="--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};
+    {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/with}}
+  data-lazy-component
+>
+  {{#with intro }}
+    <div class="b-transitionSlider__intro">
+      {{> atom/a19-video lazy=true}}
+    </div>
+  {{/with}}
+  {{#with cloudsOverlay}}
+    {{> molecule/m42-overlay-background overlayBackgrounds=this}}
+  {{/with}}
+  {{#each slides}}
+    <div class="b-transitionSlider__backgrounds">
+      {{#each backgrounds}}
+        {{> molecule/m34-component-background image=images.background disableTransition=true }}
+      {{/each}}
+    </div>
+  {{/each}}
+  <div class="b-transitionSlider__index">
+    {{#with heading}}
+      <div class="b-transitionSlider__heading">
+        {{> atom/a03-heading }}
+      </div>
+    {{/with}}
+    <ul class="b-transitionSlider__titlePagination">
+      {{#each slides}}
+        <li class="b-transitionSlider__titlePaginationItem" data-pagination-title>
+          <button class="b-transitionSlider__titlePaginationItemCta" aria-controls={{arithmetic "c95-transition-slider-" "+" @index}} aria-expanded="false">
+            <span>{{ label }}</span>
+            {{> atom/a02-icon name="arrow-right" }}
+          </button>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="b-transitionSlider__slidesWrapper swiper-container" data-slider>
+    <ul class="b-transitionSlider__items swiper-wrapper">
+      {{#each slides}}
+        <li class="b-transitionSlider__item swiper-slide" id={{arithmetic "c95-transition-slider-" "+" @index}} aria-live="polite" data-item>
+          {{> organism/o88-transition-slide }}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="b-transitionSlider__pagination" data-pagination>
+    {{> atom/a08-page-indicators items=null }}
+  </div>
+</section>

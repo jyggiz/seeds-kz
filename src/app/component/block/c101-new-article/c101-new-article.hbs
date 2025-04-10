@@ -1,0 +1,105 @@
+
+
+
+<section class="b-new-article"
+  data-component="c101-new-article"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  data-lazy-component
+>
+  <div class="b-new-article__container">
+    <div class="b-new-article__page">
+      <div class="b-new-article__content" data-article-content>
+        <header class="b-new-article__header">
+          {{> atom/a03-heading heading }}
+          <div class="b-new-article__metaString">
+            <div class="b-new-article__authorImage">
+              {{> atom/a01-image author.image disableTransition=true }}
+            </div>
+            <p>{{{ metaString }}}</p>
+          </div>
+          {{#with image}}
+            <div class="b-new-article__banner">
+              {{> atom/a01-image disableTransition=true }}
+            </div>
+          {{/with}}
+          {{#if tableOfContents.showTableOfContents}}
+            <div class="b-new-article__contentTableMobile">
+              {{> ./component/organism/table-of-contents this id="regular-toc"}}
+            </div>
+          {{/if}}
+        </header>
+        <div class="b-new-article__body" data-article-body>
+          {{#each items}}
+            <div {{#if id}}id="{{id}}" data-paragraph-anchor{{/if}}>
+              {{#if (condition type '===' 'paragraph')}}
+                  {{> molecule/m18-paragraph item}}
+              {{/if}}
+              {{#if (condition type '===' 'cta')}}
+                {{> ./component/organism/article-cta item}}
+              {{/if}}
+            </div>
+          {{/each}}
+        </div>
+
+        <footer class="b-new-article__footer">
+          <div class="b-new-article__buttons">
+            {{#if backButton}}
+              {{> molecule/m02-button
+                href=overviewLink.href
+                icon="arrow-left"
+                iconAlignment="left"
+                label=@root.i18n.backToOverview
+                level="secondary"
+                size="small"
+                theme="black"
+              }}
+            {{/if}}
+
+            {{#if share}}
+              {{> molecule/m02-button
+                data=(object
+                  share-button=null
+                  share=(toJson share)
+                  success-message=@root.i18n.copied
+                )
+                icon="share"
+                label=@root.i18n.shareArticle
+                level="secondary"
+                size="small"
+                theme="black"
+              }}
+            {{/if}}
+          </div>
+        </footer>
+      </div>
+      <div class="b-new-article__info" data-info data-table-container-sticky>
+        {{#if tableOfContents.showTableOfContents}}
+          {{> ./component/organism/table-of-contents this id="sticky-toc"}}
+        {{/if}}
+        {{#with author}}
+          {{> ./component/organism/author-section}}
+        {{/with}}
+        {{#if share}}
+          <div class="b-new-article__shareButton" data-share-button>
+            {{> molecule/m02-button
+              data=(object
+                share-button=null
+                share=(toJson share)
+                success-message=@root.i18n.copied
+              )
+              icon="share"
+              label=@root.i18n.shareArticle
+              level="secondary"
+              size="small"
+              theme="black"
+            }}
+          </div>
+        {{/if}}
+      </div>
+      <div class="b-new-article__toTopButton" data-to-top-button>
+        {{> atom/a02-icon name="arrow-up"}}
+      </div>
+    </div>
+  </div>
+</section>

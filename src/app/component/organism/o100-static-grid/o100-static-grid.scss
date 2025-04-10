@@ -1,0 +1,46 @@
+.o-staticGrid {
+  --component-grid-columns: repeat(4, minmax(0, 1fr));
+
+  display: grid;
+  grid-template-columns: var(--component-grid-columns);
+  column-gap: var(--column-gap-small, var(--grid-gap));
+  row-gap: var(--row-gap-small, var(--grid-gap));
+
+  @for $i from 0 through 30 {
+    .grid-item--#{$i} {
+      align-self: var(--vertical-align-#{$i}, stretch);
+      grid-area: var(--grid-area-small-#{$i}, auto);
+    }
+  }
+
+  &.-fullWidth {
+    width: 100%;
+  }
+
+  @include respond-to("MEDIUM") {
+    --component-grid-columns: repeat(12, minmax(0, 1fr));
+
+    column-gap: var(--column-gap-medium, var(--grid-gap));
+    row-gap: var(--row-gap-medium, var(--grid-gap));
+
+    @for $i from 0 through 30 {
+      .grid-item--#{$i} {
+        grid-area: var(--grid-area-medium-#{$i}, var(--grid-area-small-#{$i}, auto));
+      }
+    }
+  }
+
+  @include respond-to("LARGE") {
+    column-gap: var(--column-gap-large, var(--grid-gap));
+    row-gap: var(--row-gap-large, var(--grid-gap));
+
+    @for $i from 0 through 30 {
+      .grid-item--#{$i} {
+        grid-area: var(
+          --grid-area-large-#{$i},
+          var(--grid-area-medium-#{$i}, var(--grid-area-small-#{$i}, auto))
+        );
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.b-scrollStories {
+  --stories-text-color: var(--color-white);
+
+  @mixin scrollStoriesContentWrapper {
+    @include container;
+
+    position: relative;
+    display: flex;
+    z-index: zindex($zLayout, content);
+    justify-content: center;
+    width: 100%;
+
+    [dir="rtl"] & {
+      flex-direction: row-reverse;
+    }
+
+    .m-paragraph {
+      pointer-events: all;
+    }
+
+    .a-heading,
+    .m-paragraph {
+      --component-heading-color: var(--stories-text-color);
+      --component-text-color: var(--stories-text-color);
+    }
+
+    &.-top {
+      align-items: flex-start;
+    }
+
+    &.-middle,
+    &.-center {
+      align-items: center;
+    }
+
+    &.-bottom {
+      align-items: flex-end;
+    }
+  }
+
+  overflow: hidden;
+  position: relative;
+
+  &__pinContainer {
+    @include size(100%);
+  }
+
+  &__item {
+    @include size(100%);
+    @include vh(100);
+
+    color: var(--color-white);
+    display: flex;
+    padding-block: 80px;
+    pointer-events: none;
+    position: absolute;
+    transform: scale(1);
+  }
+
+  &__imageWrapper {
+    @include size(100%);
+    @include position(0);
+
+    position: absolute;
+  }
+
+  &__contentWrapper {
+    @include scrollStoriesContentWrapper;
+  }
+
+  @include respond-to(MEDIUM) {
+    &__contentWrapper {
+      .m-paragraph {
+        flex-basis: max(420px, calc(40% - 180px));
+      }
+
+      &.-top,
+      &.-middle,
+      &.-bottom {
+        align-items: center;
+      }
+
+      &.-left {
+        justify-content: flex-start;
+      }
+
+      &.-center {
+        justify-content: center;
+
+        .m-paragraph {
+          flex-basis: 40%;
+        }
+      }
+
+      &.-right {
+        justify-content: flex-end;
+      }
+
+      &.-spread {
+        gap: 240px;
+        justify-content: space-between;
+
+        .m-paragraph {
+          display: contents;
+
+          &__content,
+          &__heading {
+            flex-basis: max(420px, calc(40% - 180px));
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) and (orientation: portrait) {
+    &__contentWrapper {
+      @include scrollStoriesContentWrapper;
+
+      .m-paragraph {
+        flex-basis: unset;
+      }
+
+      .m-paragraph__content {
+        width: 69%;
+      }
+    }
+  }
+}

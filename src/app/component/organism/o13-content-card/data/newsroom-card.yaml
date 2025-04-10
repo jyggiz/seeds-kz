@@ -1,0 +1,29 @@
+thumbnail:
+  aspectRatio: 'landscape'
+  image:
+    src: './image/c16-carousel/updates_instagram.jpg'
+    alt: null
+
+meta:
+  date: 'May 25th 2022'
+
+content:
+  heading:
+    text: 'Newsroom card'
+  description:
+    size: 'small'
+    copy:
+      '<p>Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget lacus
+      eget semper.</p>'
+
+button:
+  theme: 'black'
+  level: 'tertiary'
+  icon: 'arrow-right'
+  label: 'Read more'
+  size: 'small'
+
+link:
+  href: '#'
+  label: 'SEO friendly name'
+  target: '_blank'

@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="./m21-sector-menu-item.scss">
+<script src="./M21SectorMenuItem.ts"></script>
+
+  <a {{#unless underContstruction}}
+       href="{{href}}"{{/unless}}
+       {{#with target}}target="{{this}}"{{#if (condition this '===' '_blank')}} rel="noopener"{{/if}}{{/with}}
+     class="m-sectorMenuItem{{#if variant}} -{{variant}}{{/if}}{{#if underConstruction}} -isUnderConstruction{{/if}}"
+     data-component="m21-sector-menu-item"
+     >
+    {{> atom/a02-icon name=icon }}
+    <span class="m-sectorMenuItem__label">{{ label }}</span>
+  </a>

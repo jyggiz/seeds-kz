@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="./c12-hero-slider.scss">
+<script src="./C12HeroSlider.ts"></script>
+
+
+<section class="b-heroSlider -hasBackgroundImage{{#if theme}} t-{{theme}}{{/if}} {{#if clip}}-clip{{/if}}"
+         data-component="c12-hero-slider"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#with id}}id="{{this}}"{{/with}}
+         {{#if earlyDisplay}}data-early-display{{/if}}>
+
+  <div class="b-heroSlider__container">
+    <div class="b-heroSlider__controls -isHidden" data-controls>
+      {{> organism/o42-slider-controls level="secondary" theme="dark" }}
+    </div>
+
+    <div class="b-heroSlider__content" data-hero-slider-container>
+      <div class="swiper__container b-heroSlider__swiperContainer" data-slider>
+        <ul class="swiper-wrapper b-heroSlider__items"{{#if sliderAriaLabel}} aria-label="{{sliderAriaLabel}}"{{/if}}>
+          {{#each items}}
+            <li class="swiper-slide b-heroSlider__item" data-slide {{#with topic}}data-topic="{{this}}"{{/with}}>
+            {{#if (condition @index '===' 0)}}
+              {{> organism/o60-hero-content optimizeForLCP=../optimizeForLCP earlyDisplay=../earlyDisplay}}
+            {{^}}
+              {{> organism/o60-hero-content }}
+            {{/if}}
+            </li>
+          {{/each}}
+        </ul>
+        {{> atom/a08-page-indicators items=null }}
+      </div>
+    </div>
+  </div>
+</section>

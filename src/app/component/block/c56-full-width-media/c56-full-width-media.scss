@@ -1,0 +1,23 @@
+.b-fullWidthMedia {
+  @include neomThemes;
+
+  position: relative;
+  padding-block: var(--component-block-padding, 0);
+  background-color: var(--component-background-color, transparent);
+
+  &__container {
+    @include container;
+
+    padding-block: 48px;
+  }
+
+  .a-heading {
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(MEDIUM) {
+    .a-heading {
+      margin-bottom: 60px;
+    }
+  }
+}

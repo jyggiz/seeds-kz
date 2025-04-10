@@ -1,0 +1,5 @@
+scrollComponent: true
+
+items:
+  previous: 'import!../../../molecule/m25-tile-button/data/example-previous.yaml'
+  next: 'import!../../../molecule/m25-tile-button/data/example-next.yaml'

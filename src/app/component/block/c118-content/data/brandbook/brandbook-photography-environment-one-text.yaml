@@ -1,0 +1,50 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m16-figure
+          data:
+            variant: square
+            image:
+              variant: contain
+              src: 'image/c24-content/brandbook-photography-environment-one.png'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 1 / 2 / 5
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: 'Environment Photography'
+              size: 'medium'
+            heading:
+              size: 'h6'
+              text:
+                'NEOM is a land of beauty and potential. Taking photographs of environments should
+                be elevated to an art form.'
+            copy:
+              size: 'medium'
+              content:
+                '<p>Environments follow the same principles when shooting landscapes and urban
+                environments. Beauty is in the detail, so shoot with a hero element in mind rather
+                than getting as much into one scene as possible.</p>'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 6 / 2 / 12

@@ -1,0 +1,23 @@
+
+
+
+<section class="b-blinds" data-component="c03-blinds" {{#if
+  scrollComponent}}data-scroll-component{{/if}}{{#if id}} id="{{id}}" {{/if}} data-lazy-component>
+  {{#with title}}
+    <div class="b-blinds__title">
+      {{> molecule/m18-paragraph }}
+    </div>
+  {{/with}}
+  <div class="b-blinds__container{{#if (condition fullHeight '===' true)}} -fullHeight{{/if}}" data-blinds-container>
+    <div class="b-blinds__header" data-blinds-header>
+      {{> molecule/m04-component-header header disableTransition="true"}}
+    </div>
+    <ul class="b-blinds__items" style="--blinds-count: {{items.length}}">
+      {{#each items}}
+        <li class="b-blinds__item" data-feature-item {{#if video}}data-video="{{ toJson video.props }}" {{/if}}>
+          {{> organism/o20-blind }}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

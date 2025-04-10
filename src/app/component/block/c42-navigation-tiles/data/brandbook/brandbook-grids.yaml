@@ -1,0 +1,13 @@
+scrollComponent: true
+
+items:
+  previous:
+    heading:
+      text: 'Visual Guidelines: Colors'
+    link:
+      href: './page-brandbook-colors.html'
+  next:
+    heading:
+      text: 'Visual Guidelines: Iconography'
+    link:
+      href: './page-brandbook-iconography.html'

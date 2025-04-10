@@ -1,0 +1,54 @@
+.o-author-section {
+  @include size(100%, auto);
+  @include type("capsCopy", "xsmall");
+
+  color: var(--color-dark-gold);
+
+  &__card {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    grid-template-columns: min-content 1fr;
+    margin-block-start: 20px;
+  }
+
+  &__image {
+    @include size(50px);
+
+    align-self: center;
+    position: relative;
+  }
+
+  &__label {
+    @include type("overline", "small");
+
+    color: var(--component-highlight-color);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .m-button {
+      margin-inline-end: auto;
+
+      &,
+      &__container {
+        height: min-content;
+        text-align: start;
+
+        .a-label {
+          max-width: 25ch;
+        }
+      }
+    }
+  }
+
+  &__position {
+    @include type("body", "small");
+
+    color: var(--color-black-50);
+    font-size: 14px;
+  }
+}

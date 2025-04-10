@@ -1,0 +1,34 @@
+scrollComponent: true
+variant: 'double-1-2'
+
+background:
+  image:
+    alt: 'alt'
+    src: 'image/c24-content/intro-bg.jpg'
+    sources:
+      - src: 'image/c24-content/intro-bg.jpg'
+        media: '(min-width: 768px)'
+
+items:
+  - align:
+      horizontal: end
+      vertical: middle
+    type: 'asset'
+    content:
+      variant: square
+      image:
+        variant: contain
+        src: 'image/c24-content/brandbook-calltoactions-intro-image.png'
+        alt: 'Intro icon'
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      copy:
+        size: 'medium'
+        content:
+          '<p>Call to action (CTA) is a marketing term for any design to prompt an immediate
+          response or encourage an immediate sale.<br><br>A CTA most often refers to the use of
+          words or phrases that can be incorporated into sales scripts, advertising messages, or web
+          pages, which compel an audience to act in a specific way.</p>'

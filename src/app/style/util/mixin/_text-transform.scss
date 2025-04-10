@@ -1,0 +1,17 @@
+@mixin textTransform {
+  &.-transform-uppercase {
+    text-transform: uppercase !important;
+  }
+
+  &.-transform-lowercase {
+    text-transform: lowercase !important;
+  }
+
+  &.-transform-capitalize {
+    text-transform: capitalize !important;
+  }
+
+  &.-transform-none {
+    text-transform: none !important;
+  }
+}

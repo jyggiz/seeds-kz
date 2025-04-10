@@ -1,0 +1,62 @@
+
+<div class="o-updateCard{{#if variant}} -{{variant}}{{/if}}{{#unless image }} -noImage{{/unless}}" data-component="o19-update-card" >
+  <a {{#if link}}href="{{link.href}}"{{#if link.target}} target="{{link.target}}"{{/if}}{{/if}}
+     class="o-updateCard__link {{#if video}}-video{{/if}}" {{#if video}}data-video="{{ toJson video.props }}" {{/if}}
+     data-slide>
+    {{#if image }}
+      <div class="o-updateCard__media" data-update-card>
+        {{> atom/a01-image image disableTransition=true aria=(object hidden="true") }}
+        {{#if video}}
+          {{> molecule/m02-button eventTracking=video.playButtonEventTracking icon="play-solid" theme="white" variant="play"}}
+        {{/if}}
+      </div>
+    {{/if}}
+    <div class="o-updateCard__copy">
+      {{!-- todo: spin authorInfo off to a molecule --}}
+      {{#if authorInfo}}
+        <div class="o-updateCard__authorInfo">
+          {{#if authorInfo.writtenBy}}
+            <span class="o-updateCard__writtenBy">{{authorInfo.writtenBy}} &middot;</span>
+          {{/if}}
+          {{#if authorInfo.date}}
+            <span class="o-updateCard__date">{{authorInfo.date}}</span>
+          {{/if}}
+          {{#if authorInfo.title}}
+            <span class="o-updateCard__title">{{authorInfo.title}}</span>
+          {{/if}}
+        </div>
+      {{/if}}
+      {{#if heading}}
+      {{#with heading.title}}
+        <p class="o-updateCard__title{{#if transform}} -transform-{{transform}}{{/if}}{{#with size}} -{{this}}{{^}} -large{{/with}}" data-card-title>
+          {{copy}}
+        </p>
+      {{/with}}
+        <p class="o-updateCard__text">
+          {{heading.text}}
+        </p>
+      {{/if}}
+    </div>
+    {{#if callToAction}}
+      {{#if (condition theme '===' 'dark')}}
+        {{> molecule/m02-button theme="white"
+                size="small"
+                level="secondary"
+                icon=callToAction.icon
+                label=callToAction.label
+                iconAlignment=callToAction.iconAlign
+                eventTracking=callToAction.eventTracking}}
+      {{^}}
+        {{> molecule/m02-button theme="dark-accent"
+                size="small"
+                label=callToAction.label
+                icon=callToAction.icon
+                iconAlignment=callToAction.iconAlign
+                eventTracking=callToAction.eventTracking }}
+      {{/if}}
+    {{/if}}
+    {{#if socialMediaIcon}}
+      {{> atom/a02-icon name=socialMediaIcon  }}
+    {{/if}}
+  </a>
+</div>

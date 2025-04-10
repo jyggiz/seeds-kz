@@ -1,0 +1,197 @@
+.b-journey {
+  @include neomThemes;
+
+  --eyebrow-text-color: var(--component-highlight-color);
+  --moustache-text-color: var(--component-text-color);
+  --timeline-point-color: var(--component-text-color);
+  --card-height: 426px;
+  --card-width: 640px;
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+  background-color: var(--component-background-color);
+
+  &__heading {
+    color: var(--component-heading-color);
+    text-align: center;
+    padding: 25px 0 50px;
+  }
+
+  &__carousel {
+    position: relative;
+    padding: 70px var(--container-margin) 30px;
+  }
+
+  &__image {
+    @include aspect-ratio(280, 280);
+
+    position: relative;
+  }
+
+  .a-moustache.-small {
+    font-size: 16px;
+  }
+
+  .a-pageIndicators {
+    display: none;
+  }
+
+  .o-dynamicCarousel {
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .o-dynamicCarousel .swiper-slide,
+  &__card {
+    max-height: var(--card-height);
+    max-width: var(--card-width);
+  }
+
+  .o-dynamicCarousel__controls {
+    @include offset(0, 50%);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 0 var(--containerMargin);
+    transform: translateY(-50%);
+    display: none;
+
+    & .o-sliderControls {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .m-button {
+        position: absolute;
+        transform: translateY(-50%);
+
+        &:last-child {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &__cardInfoContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+    @include respond-to(MEDIUM) {
+      text-align: center;
+    }
+  }
+
+  &__cardInfo {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 1s;
+    opacity: 0;
+    padding: 0 var(--container-margin);
+    max-width: 600px;
+    margin-bottom: 20px;
+
+    .a-moustache.-small {
+      font-weight: 300;
+    }
+
+    &.-isActive {
+      opacity: 1;
+    }
+  }
+
+  &__cardInfo:not(:first-child) {
+    width: 100%;
+    top: 0;
+    position: absolute;
+  }
+
+  &__cardInfoMoustache {
+    margin-top: 10px;
+  }
+
+  &__timeline {
+    @include list-reset;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+
+    &::before {
+      content: "";
+      border-bottom: 1px dotted var(--component-text-color);
+      bottom: 3px;
+      position: absolute;
+      width: 100%;
+      opacity: 0.25;
+    }
+  }
+
+  &__timelinePointDescription {
+    position: absolute;
+    top: -20px;
+    font-weight: 400;
+    cursor: pointer;
+
+    .-isActive & {
+      top: -24px;
+    }
+
+    .a-moustache.-small {
+      transition: font 0.4s ease-out, color 0.4s ease-out;
+      font-weight: 400;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: top 0.5s;
+    }
+  }
+
+  &__timelinePoint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &.-isActive {
+      --timeline-point-color: var(--component-highlight-color);
+      --moustache-text-color: var(--timeline-point-color);
+
+      .a-moustache.-small {
+        font-size: 21px;
+      }
+    }
+  }
+
+  &__timelineDot {
+    @include size(7px, 7px);
+    transition: background-color 0.4s ease-out;
+    margin-top: 12px;
+    background-color: var(--timeline-point-color);
+    border-radius: 50%;
+  }
+
+  @include respond-to(MEDIUM) {
+    .o-dynamicCarousel {
+      max-width: 90%;
+    }
+
+    &__cardInfo {
+      align-items: center;
+    }
+
+    &__carousel {
+      padding: 70px 0;
+    }
+
+    .o-dynamicCarousel__controls {
+      display: block;
+    }
+
+    &__image {
+      @include aspect-ratio(640, 426);
+    }
+  }
+}

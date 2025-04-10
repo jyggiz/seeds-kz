@@ -1,0 +1,7 @@
+variant: 'panel'
+icon: 'energy'
+image:
+  src: 'image/c17-sectors/energy.jpg'
+  alt: 'Energy'
+label: 'Energy'
+href: '#'

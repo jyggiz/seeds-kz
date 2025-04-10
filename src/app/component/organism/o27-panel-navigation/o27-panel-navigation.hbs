@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="./o27-panel-navigation.scss">
+<script src="./O27PanelNavigation.ts"></script>
+
+<div class="o-panelNavigation" data-component="o27-panel-navigation">
+
+  {{#each navigation.aside}}
+    {{#if (condition type "===" "CTA")}}
+      <div class="o-panelNavigation__CTA {{#if (condition ../languages '||' ../navigation.main)}}-hasMenu{{/if}}">
+        {{> molecule/m02-button button variant="CTA" data=(object panel-CTA=null)}}
+      </div>
+    {{/if}}
+  {{/each}}
+
+  {{#if (condition languages '||' navigation.main) }}
+    <div class="o-panelNavigation__wrapper" data-panel-wrapper>
+      {{> molecule/m47-hamburger-menu variant="mainSiteNavigation" }}
+      <div class="o-panelNavigation__overlay" data-panel-overlay>
+        <div class="o-panelNavigation__container{{#unless languages}} -noLanguageSelector{{/unless}}">
+          <ul class="o-panelNavigation__items"{{#if navigation.mainAriaLabel}} aria-label="{{navigation.mainAriaLabel}}"{{/if}} data-panel-items>
+            {{#if search}}
+              <li class="o-panelNavigation__item -search" data-panel-item>
+                {{> organism/o88-search-bar search }}
+              </li>
+            {{/if}}
+            {{#each navigation.main}}
+              {{> ./_panel-navigation-list.hbs }}
+            {{/each}}
+            {{#each navigation.aside}}
+              {{> ./_panel-navigation-list.hbs }}
+            {{/each}}
+          </ul>
+        </div>
+        {{#if languages}}
+          {{> organism/o22-mobile-language-selector }}
+        {{/if}}
+      </div>
+    </div>
+  {{/if}}
+
+</div>
+

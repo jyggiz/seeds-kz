@@ -1,0 +1,66 @@
+scrollComponent: true
+
+align: center
+
+background:
+  image:
+    src: 'image/c18-boxed-list/hackathon-default.jpg'
+
+header:
+  eyebrow:
+    text: NEOM
+    size: medium
+  heading:
+    text: Hackathon with icons in cards example
+    size: h5
+
+items:
+  - icon: technology-digital
+    heading:
+      text: Desalination technologies
+    copy:
+      A Global reference to showcase new and innovative approaches to desalination, including high
+      recovery membrane technologies, low energy systems, and integration with renewable energy
+      supplies
+    background:
+      video:
+        props:
+          sources:
+            - src: video/background-video-preview.mp4
+              type: video/mp4
+
+  - icon: water
+    heading:
+      text: Brine processing for minerals
+    copy:
+      World Class full seawater processing (brine mining) for high-value minerals and by-products
+      such as magnesium metals and high purity salts, thereby achieving zero waste while generating
+      strong economic value.
+    background:
+      image:
+        alt: 'Water'
+        src: 'image/c18-boxed-list/hackathon-water.jpg'
+
+  - icon: energy
+    heading:
+      text: Renewable energy integration
+    copy:
+      100% renewable energy will be utilized for desalination and mineral recovery processes via
+      concentrated solar power, waste heat, and renewable energy-sourced electrical grids.
+    background:
+      video:
+        props:
+          sources:
+            - src: video/background-video-preview.mp4
+              type: video/mp4
+
+  - icon: heart
+    heading:
+      text: Brine usage for greenhouse cooling usage
+    copy:
+      Concentrating brine by evaporative cooling in seawater greenhouses thereby enabling high-value
+      crop production and mineral recovery delivering the greatest benefit for its customers
+    background:
+      image:
+        alt: 'Green Hydrogen'
+        src: 'image/c18-boxed-list/hackathon-hydrogen.jpg'

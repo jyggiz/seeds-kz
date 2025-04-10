@@ -1,0 +1,68 @@
+.o-modalWindow {
+  --modal-heading-color: var(--color-white);
+
+  @include container;
+
+  &__buttons {
+    position: absolute;
+    inset-inline-end: 45px;
+    inset-block-start: 35px;
+    z-index: zindex($zLayout, content);
+    display: flex;
+    gap: 20px;
+
+    .m-button:not(.-iconOnly) {
+      .m-button__container {
+        padding-inline: calc(var(--button-padding) / 2);
+      }
+
+      .a-label {
+        display: none;
+      }
+
+      .a-icon {
+        margin-inline-start: 0;
+      }
+    }
+  }
+
+  .a-heading {
+    display: none;
+    inset-block-start: 40px;
+    inset-inline-start: 130px;
+    position: absolute;
+    z-index: zindex($zLayout, default);
+  }
+
+  .o-video {
+    position: static;
+
+    video {
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+    }
+  }
+
+  @include respond-to(LARGE) {
+    .a-heading {
+      display: block;
+    }
+
+    &__buttons {
+      .m-button:not(.-iconOnly) {
+        .m-button__container {
+          padding-inline-start: var(--button-padding);
+        }
+
+        .a-label {
+          display: block;
+        }
+
+        .a-icon {
+          margin-inline-start: calc(var(--button-icon-size) / 1.5);
+        }
+      }
+    }
+  }
+}

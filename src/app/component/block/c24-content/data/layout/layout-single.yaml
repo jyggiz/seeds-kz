@@ -1,0 +1,19 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Single column'
+        size: h3
+        element: h2
+      copy:
+        content:
+          'A competition led by NEOM OXAGON that challenges you to solve issues related to the tech
+          industries, water, e-fuel and green hydrogen. If youre a team of talented tech wizards
+          looking to make an impact, sign up now and show your critical thinking skills.Who can
+          apply?'

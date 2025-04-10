@@ -1,0 +1,13 @@
+image:
+  src: 'image/avatar.png'
+  alt: 'User avatar'
+  type: 'photo'
+
+quote:
+  '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, ligula id bibendum
+  facilisis, massa erat tincidunt sem, nec fermentum sapien libero et ante.”'
+
+author:
+  prefix: 'Author Prefix'
+  name: 'Author with Photo'
+  role: 'Author Suffix, role'

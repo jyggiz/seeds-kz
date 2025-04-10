@@ -1,0 +1,32 @@
+
+
+<section class="b-mediaList"
+  data-component="c46-media-list"
+  data-checkbox-labels="{{toJson checkboxLabels}}"
+  data-api-url="{{apiUrl}}"
+  data-pagination="{{ toJson pagination}}"
+  {{#with eventTracking}}data-event-tracking="{{toJson this}}{{/with}}"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if padding}}
+         style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+           {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component
+  id="participants"
+>
+<div class="b-mediaList__container">
+  <p class="b-mediaList__warningMessage -isHidden" data-warning-message>{{ @root.i18n.noItemsWarning}}</p>
+  <ul class="b-mediaList__items" data-media-items data-lightbox="{{toJson content}}">
+    {{#each content.items }}
+      <li class="b-mediaList__item">
+        {{#if this.href}}<a href="{{this.href}}">{{/if}}
+          {{> organism/o41-media-card checkboxLabels=../checkboxLabels index=@index }}
+        {{#if this.href}}</a>{{/if}}
+      </li>
+    {{/each}}
+  </ul>
+  {{#if (condition pagination.pages.length '>' 1)}}
+    {{> organism/o55-pagination pagination}}
+  {{/if}}
+</div>
+</section>

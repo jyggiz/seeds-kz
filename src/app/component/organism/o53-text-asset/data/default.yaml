@@ -1,0 +1,7 @@
+assetFirst: false
+assetPull: true
+type: 'paragraph'
+text:
+  content: 'import!../../../molecule/m18-paragraph/data/the-line-2.yaml'
+asset:
+  content: 'import!../../../molecule/m16-figure/data/example-asset-image.yaml'

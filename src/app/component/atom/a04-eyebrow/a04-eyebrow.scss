@@ -1,0 +1,21 @@
+.a-eyebrow {
+  @include textTransform;
+
+  color: var(--eyebrow-text-color);
+
+  &.-small {
+    @include type("overline", "small");
+  }
+
+  &.-medium {
+    @include type("overline", "medium");
+  }
+
+  &.-large {
+    @include type("overline", "large");
+  }
+
+  &.-xlarge {
+    @include type("overline", "xlarge");
+  }
+}

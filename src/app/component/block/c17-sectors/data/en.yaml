@@ -1,0 +1,356 @@
+scrollComponent: true
+theme: 'darkMono'
+id: sectors
+
+heading:
+  text: Sectors
+  size: h4
+
+description:
+  copy:
+    size: 'small'
+    content:
+      '<p>BidNet provides you with targeted government bid opportunities that precisely match your
+      business needs, no matter what product or service your business specializes in</p>'
+
+items:
+  - heading:
+      text: Energy
+      size: h5
+    icon: energy
+    copy:
+      <p>NEOM will be the first at-scale region powered by 100 percent renewable energy. NEOM’s
+      geographical location provides unrivalled solar and wind potential that will be harnessed to
+      create the world’s most innovative energy system, including hydrogen as one of the most
+      important energy carriers of the future. Through the latest advances in technology NEOM will
+      architect a low-cost and carbon-positive energy ecosystem, and develop energy-intensive
+      industries with potential to front global trends.</p>
+    image:
+      alt: Energy
+      src: 'image/c17-sectors/energy.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Energy
+        title: Energy
+    list:
+      heading:
+        text: 'Including:'
+        size: h6
+      buttons:
+        - label: Aluminum busbars
+          nestedModalId:
+            This nested modal id is an endpoint that will be used to fetch the template data needed
+            to render a nested modal
+        - label: Brace for crossarm
+        - label: Cluminum busbars
+        - label: Dluminum busbars
+        - label: Eluminum busbars
+        - label: Fluminum busbars
+    buttons:
+      heading:
+        text: Ready to be a supplier?
+        size: large
+      items:
+        - label: Register
+          theme: gold
+          size: small
+        - label: contact us
+          theme: white
+          size: small
+
+  - heading:
+      text: Mobility
+      size: h5
+    icon: mobility
+    copy:
+      <p>NEOM will be the first at-scale region powered by 100 percent renewable energy. NEOM’s
+      geographical location provides unrivalled solar and wind potential that will be harnessed to
+      create the world’s most innovative energy system, including hydrogen as one of the most
+      important energy carriers of the future. Through the latest advances in technology NEOM will
+      architect a low-cost and carbon-positive energy ecosystem, and develop energy-intensive
+      industries with potential to front global trends.</p>
+    image:
+      alt: Mobility
+      src: 'image/c17-sectors/mobility.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: mobility
+        title: mobility
+    list:
+      heading:
+        text: 'Including:'
+        size: h6
+      buttons:
+        - label: Aluminum busbars
+        - label: Brace for crossarm
+        - label: Cluminum busbars
+        - label: Dluminum busbars
+        - label: Eluminum busbars
+        - label: Fluminum busbars
+    buttons:
+      heading:
+        text: Ready to be a supplier?
+        size: large
+      items:
+        - label: Register
+          theme: gold
+          size: small
+        - label: contact us
+          theme: white
+          size: small
+  - heading:
+      text: Energy
+      size: h5
+    icon: energy
+    copy:
+      <p>NEOM will be the first at-scale region powered by 100 percent renewable energy. NEOM’s
+      geographical location provides unrivalled solar and wind potential that will be harnessed to
+      create the world’s most innovative energy system, including hydrogen as one of the most
+      important energy carriers of the future. Through the latest advances in technology NEOM will
+      architect a low-cost and carbon-positive energy ecosystem, and develop energy-intensive
+      industries with potential to front global trends.</p>
+    image:
+      alt: Energy
+      src: 'image/c17-sectors/energy.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Energy
+        title: Energy
+    list:
+      heading:
+        text: 'Including:'
+        size: h6
+      buttons:
+        - label: Aluminum busbars
+        - label: Brace for crossarm
+        - label: Cluminum busbars
+        - label: Dluminum busbars
+        - label: Eluminum busbars
+        - label: Fluminum busbars
+    buttons:
+      heading:
+        text: Ready to be a supplier?
+        size: large
+      items:
+        - label: Register
+          theme: gold
+          size: small
+        - label: contact us
+          theme: white
+          size: small
+
+  - heading:
+      text: Entertainment and culture
+      size: h5
+    icon: entertainment-culture
+    copy:
+      <p>NEOM will redefine cultural and entertainment experiences, harnessing advanced technologies
+      and our unique environments to deliver immersive, hyper-personalised attractions and
+      programming unlike anything before. Developed and debuted at NEOM, these experiences,
+      attractions and events will be exported and showcased globally.</p>
+    image:
+      alt: Entertainment & culture
+      src: 'image/c17-sectors/entertainment-culture.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Entertainment and culture
+        title: Entertainment and culture
+
+  - heading:
+      text: Food
+      size: h5
+    icon: food
+    copy:
+      <p>NEOM Food Sector will be a global community with food at its heart, harnessing innovation
+      to nourish people and the planet and guaranteeing food security for generations to come. We do
+      this by making NEOM a lighthouse for the world in climate-proof agriculture, sustainable
+      aquaculture, personalized nutrition, and novel food. On this journey, we will build a safe,
+      secure and sustainable food system for NEOM while exporting NEOM solutions to the Kingdom and
+      the world.</p>
+    image:
+      alt: Food
+      src: 'image/c17-sectors/food.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Food
+        title: Food
+
+  - heading:
+      text: Manufacturing
+      size: h5
+    icon: manufacturing
+    copy:
+      <p>Low-cost, 100 percent renewable energy and strategic location makes NEOM attractive to a
+      range of technologically-led manufacturing industries. At the core of our manufacturing offer
+      is the world’s most advanced supply chain and logistics center, providing manufacturers with
+      access to NEOM and a platform from which to supply regional and global markets. Our focus on
+      research and innovation gives manufacturers an opportunity to lead their industries and thrive
+      in a circular carbon economy.</p>
+    image:
+      alt: Manufacturing
+      src: 'image/c17-sectors/manufacturing.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Manufacturing
+        title: Manufacturing
+
+  - heading:
+      text: Media
+      size: h5
+    icon: media
+    copy:
+      <p>NEOM will be the region’s first fully integrated media hub focusing on TV & film,
+      broadcasting, gaming and digital publishing. It will be unrivalled, allowing the industry to
+      flourish, providing a collaborative and connected environment with next generation
+      infrastructure and technologies supporting industry, production, workforce and talent
+      development; delivered to global standards. Enabled by leading-edge policy and a world-class
+      regulatory framework, it will be unlike any other globally.</p>
+    image:
+      alt: Media
+      src: 'image/c17-sectors/media.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Media
+        title: Media
+
+  - heading:
+      text: Tourism
+      size: h5
+    icon: tourism
+    copy:
+      <p>With over 26,500 square kilometers of natural habitats, from majestic mountain ranges to
+      rich coral seas, NEOM is spectacularly beautiful. A rich and untold heritage that is being
+      unearthed, a feast for the mind. Iconic, design-led hotels and properties will welcome
+      travelers with technology at the fore, from unique and cutting-edge AR, through to seamless
+      travel that will see visitors in their rooms within 30 minutes of touching down.</p>
+      <p>Untamed in nature. Unlimited in thinking. NEOM is The New Frontier in travel.</p>
+    image:
+      alt: Tourism
+      src: 'image/c17-sectors/tourism.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Tourism
+        title: Tourism
+
+  - heading:
+      text: Sport
+      size: h5
+    icon: sport
+    copy:
+      <p>NEOM will create a unique sport ecosystem, focusing on the bespoke needs of elite athletes
+      and residents. NEOM aims to push the boundaries of achievement using the latest technology. It
+      will also create a sustainable environment that offers world-class adventure sports. In
+      addition, NEOM will be a regional esports hub. From grassroots to high-performance -
+      leveraging innovative assets, partnerships and world-class events - sport at NEOM will unite
+      communities, create exceptional livability and contribute to a thriving economy.</p>
+    image:
+      alt: Sport
+      src: 'image/c17-sectors/sport.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Sport
+        title: Sport
+
+  - heading:
+      text: Design and construction
+      size: h5
+    icon: design-construction
+    copy:
+      <p>We are creating a sustainable blueprint for living and working from the ground up,
+      including standards and specifications. Modern Methods of Construction (MMC) will be at the
+      forefront of our planning, design, supply, manufacture, installation and operation. All NEOM
+      projects will be delivered as a digital twin and subscribe to the principles of a circular
+      economy. This will be an integral part of a digital twin platform which will require a
+      commitment to technological advancement across all aspects of construction.</p>
+    image:
+      alt: Design & construction
+      src: 'image/c17-sectors/design-construction.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Design and construction
+        title: Design and construction
+
+  - heading:
+      text: Services
+      size: h5
+    icon: services
+    copy:
+      <p>NEOM will be the world’s first fully cashless society. Promoting the concept of 100%
+      financial inclusion, every resident and business will have access to banking services. All
+      payments will be biometric, from plane tickets to shopping and dining, with a unique biometric
+      identifier for every individual. All banking will be digital, doing away with the need for
+      physical branches.</p>
+    image:
+      alt: Services
+      src: 'image/c17-sectors/services.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Services
+        title: Services
+
+  - heading:
+      text: 'Health, Well&#8209;being and biotech'
+      size: h5
+    icon: health-wellbeing-biotech
+    copy:
+      <p>Our health ecosystem will be centered on the individual and guided by high-end integrated
+      technologies to provide a comprehensive experience at each point of care. NEOM will encourage
+      a fundamental shift toward a culture of proactive prevention, with medical intervention as
+      needed, all powered by the latest technologies. Biotechnology is an essential part of Health &
+      Well-being as it will enhance our personalized journey of care.</p>
+    image:
+      alt: Health, well-being & biotech
+      src: 'image/c17-sectors/health-wellbeing-biotech.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Health, Well-being and biotech
+        title: Health, Well-being and biotech
+
+  - heading:
+      text: Education
+      size: h5
+    icon: education
+    copy:
+      '<p>We will establish a world-class education, research, and innovation ecosystem of schools,
+      a university, research centers, and technical and vocational training to attract and inspire
+      the best minds. Through the use of technology and innovation as the “lab of the future”, NEOM
+      Education, Research and Innovation will drive life-long learning for all.</p>'
+    image:
+      alt: Education
+      src: 'image/c17-sectors/education-research-innovation.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Education
+        title: Education
+
+  - heading:
+      text: Technology and digital
+      size: h5
+    icon: technology-digital
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: Technology & digital
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Technology and digital
+        title: Technology and digital

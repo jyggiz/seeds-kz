@@ -1,0 +1,57 @@
+scrollComponent: true
+theme: 'dark'
+
+grid:
+  rowGap:
+    smallScreen: 0
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: 'A NEW MODEL FOR'
+              size: 'medium'
+            heading:
+              size: h4
+              text: 'NEW WONDERS <br /> FOR THE WORLD'
+            copy:
+              size: 'small'
+              content:
+                '<p>From the deep blue ocean and pristine beaches to awesome desert and epic
+                mountains, NEOM has an ancient geography and topography unlike anywhere else. Reefs
+                that sparkle with colour, green wadis that provide an unexpected oasis, mesmerizing
+                red sand dunes shifting with the wind and endless mountain valleys providing iconic
+                views. The rich tapestry of the natural world will be protected, preserved and
+                elevated – at scale.</p>'
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                level: primary
+                theme: white
+                label: 'learn more'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 2 / 2 / 8
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m16-figure
+          data:
+            variant: portrait
+            image:
+              src: 'image/c24-content/content-nature.jpg'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 9 / 2 / 13

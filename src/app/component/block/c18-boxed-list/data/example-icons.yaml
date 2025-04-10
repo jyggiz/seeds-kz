@@ -1,0 +1,24 @@
+scrollComponent: true
+
+align: center
+theme: 'dark'
+header:
+  eyebrow:
+    text: NEOM
+    size: medium
+  heading:
+    text: Healthy Investors<br />Climate
+    size: h5
+
+items:
+  - heading:
+      text: ENHANCED CONNECTIVITY
+    icon: tourism
+
+  - heading:
+      text: SEAMLESS DELIVERY
+    icon: tourism
+
+  - heading:
+      text: ADVANCING EFFICIENCY
+    icon: tourism

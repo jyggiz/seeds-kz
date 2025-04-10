@@ -1,0 +1,7 @@
+heading:
+  text: 'Title of next page'
+link:
+  href: '#'
+image:
+  src: 'image/c20-test-image.jpg'
+  alt: ''

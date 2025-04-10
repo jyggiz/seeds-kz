@@ -1,0 +1,283 @@
+.b-verticalCarousel {
+  @include neomThemes;
+
+  --eyebrow-text-color: var(--component-highlight-color);
+  --image-width: 33vh;
+  --image-heigth: 40vh;
+
+  position: relative;
+  background-color: var(--component-background-color);
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__container {
+    @include container;
+    @include size(100%);
+    @include vh(100);
+
+    position: relative;
+    padding-block: var(--component-block-padding, var(--container-margin));
+
+    .a-eyebrow {
+      text-align: center;
+      margin-block: calc(25px - var(--component-block-padding, var(--container-margin))) 25px;
+    }
+  }
+
+  &__copy {
+    @include type("body", "small");
+
+    color: var(--component-text-color);
+    font-size: 14px;
+  }
+
+  &__scrollLabel {
+    display: none;
+  }
+
+  &__imageList {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-inline: calc((100vw - var(--image-width)) / 2 - var(--container-margin));
+    list-style: none;
+  }
+
+  &__imageItem {
+    @include size(calc(var(--image-width) - 20px), var(--image-heigth));
+
+    transform: scale(0.7);
+    opacity: 0.4;
+    pointer-events: none;
+    transition: 0.75s $easeInOutQuad;
+    transition-property: transform, opacity;
+
+    &.-isActive {
+      transform: scale(1);
+      opacity: 1;
+      pointer-events: initial;
+    }
+
+    .a-image {
+      width: var(--image-width);
+
+      &__img {
+        object-position: center;
+      }
+    }
+  }
+
+  &__contentItemList {
+    position: relative;
+    margin-block-start: calc(var(--image-heigth));
+    text-align: center;
+    list-style: none;
+  }
+
+  &__contentItem {
+    position: absolute;
+
+    transform: translateY(150px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s $easeOut;
+    transition-property: transform, opacity;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    > * {
+      width: fit-content;
+    }
+
+    &.-isActive {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: initial;
+      transition: 1.2s $easeOutExpo;
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    --image-heigth: calc(var(--image-width) * 1.25);
+
+    &__contentItemList {
+      margin-block-start: calc(var(--image-heigth) + 40px);
+    }
+
+    &__contentItem {
+      width: 100%;
+    }
+
+    &__copy {
+      width: var(--image-width);
+    }
+
+    &__container .a-eyebrow {
+      margin-block: calc(70px - var(--component-block-padding, var(--container-margin))) 70px;
+    }
+  }
+
+  @include respond-to(LARGE_LANDSCAPE) {
+    --image-width: 45vh;
+    --image-heigth: calc(var(--image-width) * 1.25);
+    --image-offset: 0px;
+    --content-width: calc(
+      min(var(--containerMaxWidth), 100vw) - var(--containerMargin) * 2 - var(--image-width) -
+        var(--image-offset) - 100px
+    );
+
+    overflow: hidden;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__scrollLabel {
+      @include size(var(--container-margin), 150px);
+
+      justify-content: center;
+      color: var(--component-text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      position: absolute;
+      inset-block-start: calc(50% - 180px);
+      inset-inline-start: 0;
+
+      &Copy {
+        @include type("overline", "medium");
+
+        writing-mode: tb-rl;
+        transform: rotate(180deg);
+        display: block;
+      }
+
+      .a-icon {
+        --icon-fill: var(--component-highlight-color);
+      }
+    }
+
+    .a-eyebrow {
+      text-align: start;
+      width: var(--content-width);
+      inset-block-start: calc(50vh - 250px);
+      inset-inline-end: var(--container-margin);
+      transform: translateX(5%);
+      margin-inline-start: -215px;
+      position: absolute;
+      z-index: zindex($zLayout, "content");
+    }
+
+    &__imageList {
+      padding-inline: var(--image-offset);
+    }
+
+    &__imageItem {
+      @include size(calc(var(--image-width)), var(--image-heigth));
+
+      transform: scale(1);
+      opacity: 1;
+      position: absolute;
+      transition: none;
+
+      .-hideInactiveSlides & {
+        transition: opacity 250ms ease-out;
+        opacity: 0;
+
+        &.-isActive {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__copy {
+      @include type("body", "medium");
+      width: 70%;
+    }
+
+    &__contentItemList {
+      text-align: start;
+      margin-block-start: initial;
+      height: 400px;
+      display: flex;
+      align-items: center;
+    }
+
+    &__contentItem {
+      width: var(--content-width);
+      inset-inline-end: 0;
+      align-items: start;
+      transition: none;
+      opacity: 1;
+      gap: 0;
+
+      transform: translateY(0);
+
+      .a-heading[data-component="a03-heading"],
+      .b-verticalCarousel__copy,
+      .m-button[data-component="m02-button"] {
+        opacity: 0;
+        transition: 0.2s $easeOutQuad;
+        transition-property: transform, opacity;
+      }
+
+      .a-heading {
+        @include type("heading", "h2");
+
+        margin-inline-start: -215px;
+        transform: translateX(25%);
+        margin-block-end: 30px;
+      }
+
+      .b-verticalCarousel__copy {
+        margin-block-end: 40px;
+      }
+
+      &__copy {
+        width: 100%;
+      }
+
+      .b-verticalCarousel__copy,
+      .m-button {
+        transform: translateY(150px);
+      }
+
+      &.-isActive {
+        opacity: 1;
+        transition: none;
+        transform: translateX(5%);
+
+        .a-heading[data-component="a03-heading"],
+        .b-verticalCarousel__copy,
+        .m-button[data-component="m02-button"] {
+          opacity: 1;
+          transition: 1.2s $easeOutExpo;
+          transition-delay: 0.4s;
+        }
+
+        .a-heading {
+          transform: translateX(0);
+        }
+
+        .b-verticalCarousel__copy,
+        .m-button {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  @include respond-to(XLARGE) {
+    --image-offset: 80px;
+  }
+}

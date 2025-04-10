@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="./m35-fact.scss">
+<script src="./M35Fact.ts"></script>
+
+<div class="m-fact{{#with type}} -{{this}}{{/with}}" data-component="m35-fact">
+  {{#if (condition type '===' 'icons')}}
+    <div class="m-fact__icon">{{> atom/a02-icon name=icon }}</div>
+  {{^}}
+    <div class="m-fact__container">
+      <div class="m-fact__value">{{value}}</div>
+      <div class="m-fact__unit">{{unit}}</div>
+    </div>
+  {{/if}}
+  <p class="m-fact__copy">{{copy}}</p>
+</div>

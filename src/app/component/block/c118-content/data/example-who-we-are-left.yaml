@@ -1,0 +1,38 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              size: h3
+              text: 'Who we<br /> are'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 2 / 2 / 7
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            copy:
+              content:
+                '<p>By working with the best minds in the industry, utilizing the latest technology
+                and innovations, we are implementing world-class, smart and connected water
+                infrastructures.</p>'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 7 / 2 / 12

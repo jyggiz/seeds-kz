@@ -1,0 +1,90 @@
+.b-motionBanner {
+  @include neomThemes;
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+  overflow: hidden;
+  position: relative;
+
+  &__container {
+    @include container("compact");
+  }
+
+  &__logo {
+    @include size(150px, 90px);
+
+    position: relative;
+    margin-inline: auto;
+    z-index: zindex($zLayout, content);
+  }
+
+  &__assetWrapper {
+    height: 500px;
+    display: flex;
+    position: relative;
+  }
+
+  &__background {
+    position: absolute;
+    min-width: 1500px;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    bottom: -30%;
+    left: 0;
+  }
+
+  &__asset {
+    @include size(100%, 70%);
+
+    min-width: 300px;
+    position: relative;
+  }
+
+  &.-beachGames {
+    .b-motionBanner__asset {
+      &:nth-child(2) {
+        top: 2%;
+      }
+
+      &:nth-child(3) {
+        top: 30%;
+      }
+
+      &:nth-child(4) {
+        top: 0;
+      }
+
+      &:nth-child(5) {
+        top: 20%;
+      }
+
+      &:nth-child(6) {
+        top: 2%;
+      }
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &__assetWrapper {
+      height: 600px;
+      padding-inline: 50px;
+    }
+
+    &__background {
+      bottom: -10vw;
+    }
+
+    &__logo {
+      @include size(185px, 110px);
+
+      margin-inline: 0;
+    }
+  }
+
+  @media (pointer: fine) {
+    &__asset {
+      min-width: 185px;
+    }
+  }
+}

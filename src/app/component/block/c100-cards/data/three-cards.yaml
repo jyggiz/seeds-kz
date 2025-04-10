@@ -1,0 +1,59 @@
+scrollComponent: true
+
+cards:
+  - content:
+      image:
+        src: 'image/maliha-hashmi-main.jpg'
+      heading:
+        text: Example with links
+      copy:
+        'At vero eos et <a href="#">link</a> et iusto odio dignissimos ducimus qui blanditiis
+        praesentium voluptatum <a href="#">deleniti</a> atque corrupti quos dolores et quas.'
+
+    outerContent:
+      image:
+        src: 'image/maliha-hashmi-main.jpg'
+      copy:
+        'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        voluptatum deleniti atque corrupti quos dolores et quas.'
+      link:
+        label: Learn more
+        icon: 'plus-circle'
+
+  - content:
+      image:
+        src: 'image/maliha-hashmi-main.jpg'
+      heading:
+        text: Example with links
+      copy:
+        'At vero eos et <a href="#">link</a> et iusto odio dignissimos ducimus qui blanditiis
+        praesentium voluptatum <a href="#">deleniti</a> atque corrupti quos dolores et quas.'
+
+    outerContent:
+      image:
+        src: 'image/maliha-hashmi-main.jpg'
+      copy:
+        'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        voluptatum deleniti atque corrupti quos dolores et quas.'
+      link:
+        label: Learn more
+        icon: 'plus-circle'
+
+  - content:
+      image:
+        src: 'image/maliha-hashmi-main.jpg'
+      heading:
+        text: Example with links
+      copy:
+        'At vero eos et <a href="#">link</a> et iusto odio dignissimos ducimus qui blanditiis
+        praesentium voluptatum <a href="#">deleniti</a> atque corrupti quos dolores et quas.'
+
+    outerContent:
+      image:
+        src: 'image/maliha-hashmi-main.jpg'
+      copy:
+        'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+        voluptatum deleniti atque corrupti quos dolores et quas.'
+      link:
+        label: Learn more
+        icon: 'plus-circle'

@@ -1,0 +1,33 @@
+scrollComponent: true
+variant: 'single'
+theme: 'dark'
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'DISCOVER MORE'
+        size: h3
+        element: h2
+      moustache:
+        text: 'The integrated port and Supply chain'
+      buttonType: 'pillar'
+      buttons:
+        - icon: truck
+          title: SUPPLY CHAIN & LOGISTICS
+          label: CALL TO ACTION
+          href: '#'
+          backgroundImage:
+            disableTransition: true
+            src: './image/c26-hero-banner/formula-e-modal.jpg'
+            alt: ''
+        - icon: ship
+          title: INTEGRATED PORT
+          label: CALL TO ACTION
+          href: '#'
+          backgroundImage:
+            disableTransition: true
+            src: './image/c26-hero-banner/formula-e-modal.jpg'
+            alt: ''

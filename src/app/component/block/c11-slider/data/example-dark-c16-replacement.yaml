@@ -1,0 +1,17 @@
+scrollComponent: true
+theme: 'dark'
+
+header:
+  eyebrow:
+    text: 'C16-carousel replacement'
+  heading:
+    text: 'Default carousel <span>in dark mode</span>'
+    size: 'h4'
+    element: 'h2'
+
+componentId: 'o13'
+
+items:
+  - 'import!../../../organism/o13-content-card/data/video-description.yaml'
+  - 'import!../../../organism/o13-content-card/data/text-button-dark.yaml'
+  - 'import!../../../organism/o13-content-card/data/formula-e-partner.yaml'

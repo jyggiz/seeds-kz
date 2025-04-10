@@ -1,0 +1,61 @@
+scrollComponent: true
+
+header:
+  heading:
+    text: Get news & updates from NEOM
+    element: h4
+    size: h6
+  moustache:
+    text: Sign up for the latest news on how we are shaping a new future.
+    size: small
+    variant: small
+
+successHeader:
+  heading:
+    text: your request has been sent successfully
+    element: h4
+    size: h5
+
+alignment: start
+
+background:
+  mask:
+    opacity: 0
+  disableTransition: true
+  image:
+    src: 'image/c96-newsletter-subscription/background.jpg'
+    alt: 'background image'
+    sources:
+      - src: 'image/c96-newsletter-subscription/background-mobile.jpg'
+        media: '(max-width: 480px)'
+
+form:
+  titleInEnglish: 'Newsletter default subscription form'
+  recaptcha:
+    sitekey: '6LcYTwwcAAAAAD6B-Nge1Va-9OrBt1ohmcEsfK7f'
+  action: '#'
+  method: 'post'
+  form_id: 'newsletter-subscription-form_id'
+  id: 'newsletter-subscription-form'
+  groups:
+    - items:
+        - type: 'email'
+          label: 'Email'
+          name: 'email'
+          id: 'email'
+          placeholder: 'Your email'
+          required: true
+          titleInEnglish: 'Email'
+          validate:
+            presence:
+              message: '^Please enter your email address'
+            email:
+              message: '^Please enter a valid email'
+  buttons:
+    - label: 'Sign up'
+      type: 'submit'
+      eventTracking:
+        componentId: 'newsletter-signup'
+  messages:
+    error:
+      description: an error has occurred, please try again

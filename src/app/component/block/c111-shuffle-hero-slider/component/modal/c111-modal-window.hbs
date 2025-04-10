@@ -1,0 +1,11 @@
+<div class="o-modalWindow" data-component="c111-modal-window">
+  {{> atom/a03-heading heading }}
+  <div class="o-modalWindow__buttons">
+    {{#each ctas}} 
+      {{> molecule/m02-button }}
+    {{/each}}
+  </div>
+  {{#with video}}
+    {{> organism/o01-video }}
+  {{/with}}
+</div>

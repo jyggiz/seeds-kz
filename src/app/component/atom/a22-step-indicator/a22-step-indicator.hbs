@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="./a22-step-indicator.scss">
+<script src="./A22StepIndicator.ts"></script>
+
+
+<{{#if link}}a href={{link.href}}{{#if (condition link.target '===' '_blank')}} target="_blank"{{/if}}{{^}}div tabindex="0"{{/if}} class="a-stepIndicator{{#if variant}} -{{variant}}{{/if}}{{#if active}} -isActive{{/if}}{{#if passed}} -isPassed{{/if}}"
+     data-component="a22-step-indicator"
+>
+  {{#with label}}
+    <span class="a-stepIndicator__label">{{this}}</span>
+  {{/with}}
+  <span class="a-stepIndicator__index">{{index}}</span>
+</{{#if link}}a{{^}}div{{/if}}>

@@ -1,0 +1,10 @@
+@mixin asterisk() {
+  color: var(--component-highlight-color, var(--color-dark-accent));
+  content: "*";
+  font-size: 12px;
+  margin-inline-start: 0.25em;
+
+  @include theme("oxagon") {
+    color: var(--color-light-blue, var(--color-dark-accent));
+  }
+}

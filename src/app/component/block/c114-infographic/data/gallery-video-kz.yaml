@@ -1,0 +1,251 @@
+scrollComponent: true
+headingStartAlignment: true
+padding:
+  start: regular
+  end: regular
+heading:
+  element: h2
+  size: h4
+  text: Семинарлар
+  alignment: start
+image:
+  src: image/c46-media-list/item1.jpg
+  alt: ''
+lightbox: true
+items:
+  - variant: landscape
+    video:
+      props:
+        youtube: 7EA6UqP2O2c
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: >-
+        https://images.prismic.io/seeds-kz/Z_aBi3dAxsiBwfWF_seminar_preview.jpg?auto=format,compress
+    lightbox:
+      image:
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_aBi3dAxsiBwfWF_seminar_preview.jpg?auto=format,compress
+    copy: '"Дәнді дақылдардың тұрақты өнімін алу" семинарының өтуі туралы есеп'
+  - variant: landscape
+    video:
+      props:
+        youtube: lFtYCQRZF1M
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: >-
+        https://images.prismic.io/seeds-kz/Z_aBjHdAxsiBwfWG_seminar-2.jpg?auto=format,compress
+    lightbox:
+      image:
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_aBjHdAxsiBwfWG_seminar-2.jpg?auto=format,compress
+    copy: >-
+      2024 жылғы 3 шілдеде "бұршақ дақылдарын өсіру ерекшеліктері (бұршақ
+      мысалында)" тақырыбындағы семинар
+  - variant: landscape
+    video:
+      props:
+        youtube: 444DjyxtmH0
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: >-
+        https://images.prismic.io/seeds-kz/Z_aBjXdAxsiBwfWH_seminar-3.jpg?auto=format,compress
+    lightbox:
+      image:
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_aBjXdAxsiBwfWH_seminar-3.jpg?auto=format,compress
+    copy: >-
+      "Майлы дақылдардың тәжірибелік шаруашылығы" ЖШС мысалында күнбағыс
+      будандарын өсіру технологиясы
+  - variant: landscape
+    video:
+      props:
+        youtube: DU-VTO04auQ
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: >-
+        https://images.prismic.io/seeds-kz/Z_aBjndAxsiBwfWI_seminar-4.jpg?auto=format,compress
+    lightbox:
+      image:
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_aBjndAxsiBwfWI_seminar-4.jpg?auto=format,compress
+    copy: >-
+      2024 жылғы 8 қазанда "жүгері: ШҚО-да өсіру технологиясының
+      ерекшеліктері"тақырыбында семинар өткізілді
+  - variant: landscape
+    video:
+      props:
+        youtube: 7EA6UqP2O2c
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: >-
+        https://images.prismic.io/seeds-kz/Z_aBj3dAxsiBwfWJ_seminar-5.jpg?auto=format,compress
+    lightbox:
+      image:
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_aBj3dAxsiBwfWJ_seminar-5.jpg?auto=format,compress
+    copy: >-
+      "ШҚО-да ресурстарды үнемдейтін егіншілік элементтері бар дәнді дақылдардың
+      тұрақты өнімін алу"
+  - variant: landscape
+    video:
+      props:
+        youtube: sqYwJNUPynQ
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: >-
+        https://images.prismic.io/seeds-kz/Z_aBkHdAxsiBwfWK_seminar-6.jpg?auto=format,compress
+    lightbox:
+      image:
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_aBkHdAxsiBwfWK_seminar-6.jpg?auto=format,compress
+    copy: >-
+      2024 жылғы 9 қазанда "күздік бидай өсіру технологиясы"тақырыбында семинар
+      ұйымдастырылып, өткізілді
+  - variant: landscape
+    video:
+      props:
+        youtube: fYWNxiZIXZk
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: >-
+        https://images.prismic.io/seeds-kz/Z_aBkXdAxsiBwfWM_seminar-7.jpg?auto=format,compress
+    lightbox:
+      image:
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_aBkXdAxsiBwfWM_seminar-7.jpg?auto=format,compress
+    copy: >-
+      21.11.2024 ж. "егістік дақылдарының агроклиматтық жағдайларға тәуелділігі
+      2020-2024 ж."семинары

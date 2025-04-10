@@ -1,0 +1,39 @@
+.o-storyCard {
+  &__figure {
+    @include aspect-ratio(280, 360);
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .m-button {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+  }
+
+  &__copy {
+    padding-top: 15px;
+  }
+
+  &__title {
+    @include type("body", "small");
+
+    color: var(--component-heading-color);
+    display: contents;
+  }
+
+  &__subtitle {
+    @include type("body", "small");
+
+    color: var(--component-text-color);
+    display: contents;
+  }
+
+  @include respond-to(MEDIUM) {
+    &__copy {
+      min-height: 100px;
+      padding-top: 18px;
+    }
+  }
+}

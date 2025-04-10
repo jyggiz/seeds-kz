@@ -1,0 +1,42 @@
+scrollComponent: true
+
+fullHeight: false
+
+align:
+  horizontal: start
+  vertical: bottom
+
+background:
+  image:
+    src: './image/homepage-mountain-background.jpg'
+    alt: 'Mountain background'
+
+content:
+  header:
+    heading:
+      element: h1
+      size: h4
+      text: DRIVING INNOVATION AND EQUIPPING STUDENTS FOR THE FUTURE
+    eyebrow:
+      size: medium
+      text: do you need our help?
+  buttonType: pillar-short
+  buttons:
+    - icon: wallet
+      title: Invest in neom
+      label: register interest
+      href: '#'
+      transparent: true
+      heroBackgroundImageOnHover:
+        image:
+          src: './image/c26-hero-banner/beach-games.jpg'
+          alt: ''
+    - icon: clapper
+      title: Media inquiries
+      label: Contact us
+      href: '#'
+      transparent: true
+      heroBackgroundImageOnHover:
+        image:
+          src: './image/c26-hero-banner/teaser-homepage.jpg'
+          alt: ''

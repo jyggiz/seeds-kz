@@ -1,0 +1,24 @@
+
+
+<div class="o-popupMessageContent" data-component="o25-popup-message-content" >
+  
+  {{#with content}}
+    {{> atom/a03-heading heading disableTransition=true}}
+    
+    <div class="o-popupMessageContent__copy">
+      {{#each items}}
+        <div class="s-content{{#if size}} -{{size}}{{/if}}">
+          {{{ content }}}
+        </div>
+      {{/each}}
+    </div>
+
+    {{#if buttons}}
+      <ul class="o-popupMessageContent__buttons" data-media-data="{{../mediaArray}}" data-popup-buttons>
+        {{#each buttons}}
+          {{> molecule/m02-button theme=theme label=label level=level}}
+        {{/each}}
+      </ul>
+    {{/if}}
+  {{/with}}
+</div>

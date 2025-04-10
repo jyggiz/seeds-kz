@@ -1,0 +1,3 @@
+scrollComponent: true
+theme: 'darkMono'
+quote: 'import!../../../molecule/m01-blockquote/data/example-generic.yaml'

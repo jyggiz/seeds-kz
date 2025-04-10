@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="./m11-sector-button.scss">
+<script src="./M11SectorButton.ts"></script>
+
+<{{#if href}}a href="{{href}}"{{^}}div{{/if}}
+  class="m-sectorButton {{#if current}}-isCurrent{{/if}}"
+  data-component="m11-sector-button"
+  data-sector
+  data-content="{{ toJson this }}"
+  {{#if eventTracking}}data-event-tracking="{{ toJson eventTracking }}"{{/if}}
+>
+  <div class="m-sectorButton__container">
+    <svg class="m-sectorButton__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2">
+        <circle class="{{#if current}}-isCurrent{{/if}}" data-sector-circle cx="1" cy="1" r="1" />
+    </svg>
+      
+    <div class="m-sectorButton__icon">
+      {{> atom/a02-icon name=icon }}
+    </div>
+    <div class="m-sectorButton__label">
+      <span class="m-sectorButton__text">{{{ heading.text }}}</span>
+    </div>
+    <div class="m-sectorButton__arrow">
+      {{> atom/a02-icon name="arrow-right" }}
+    </div>
+  </div>
+</{{#if href}}a{{^}}div{{/if}}>

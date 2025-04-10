@@ -1,0 +1,12 @@
+image:
+  src: './image/c101-new-article/article-cta-image.png'
+  alt: 'Article CTA'
+date: 'November, 2'
+heading: 'NEOM INVESTS USD 175M IN VOLOCOPTER TO ACCELERATE ELECTRIC URBAN AIR MOBILITY'
+description:
+  'This offers a whole new approach to how urban air mobility can increase quality of life in
+  cities.'
+cta:
+  href: './'
+  label: 'read article'
+highlighted: true

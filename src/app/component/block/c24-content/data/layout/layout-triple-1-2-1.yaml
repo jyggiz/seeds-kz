@@ -1,0 +1,33 @@
+scrollComponent: true
+variant: 'triple-1-2-1'
+
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Small Triple column'
+        size: h6
+        element: h2
+
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Large Triple column'
+        size: h5
+        element: h2
+
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Small Triple column'
+        size: h6
+        element: h2

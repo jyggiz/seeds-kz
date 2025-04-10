@@ -1,0 +1,5 @@
+scrollComponent: true
+id: 'trojena-facts-figures'
+items:
+  - 'import!../../../organism/o58-facts-list/data/example-icons.yaml'
+  - 'import!../../../organism/o58-facts-list/data/trojena-figures.yaml'

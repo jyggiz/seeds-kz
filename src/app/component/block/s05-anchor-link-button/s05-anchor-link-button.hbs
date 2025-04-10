@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="./s05-anchor-link-button.scss">
+<script src="./S05AnchorLinkButton.ts"></script>
+
+
+<div
+  class="b-anchorLinkButton"
+  data-component="s05-anchor-link-button"
+  {{#with actionButton.fragmentId}}data-fragment-id="{{this}}"{{/with}}>
+  <div class="b-anchorLinkButton__buttonContainer" data-anchor-link-container>
+    {{#with actionButton}}
+      {{> molecule/m15-action-button this }}
+    {{/with}}
+  </div>
+</div>

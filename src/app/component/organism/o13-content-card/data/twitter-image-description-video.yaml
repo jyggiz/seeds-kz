@@ -1,0 +1,37 @@
+type: 'social'
+icon: 'twitter'
+
+thumbnail:
+  aspectRatio: 'square'
+  image:
+    src: './image/c16-carousel/updates_instagram.jpg'
+    alt: null
+
+content:
+  description:
+    size: 'small'
+    copy: '<p>Highlights of the opening ceremony</p>'
+
+button:
+  level: 'primary'
+  theme: 'white'
+  icon: 'play-solid'
+
+video:
+  props:
+    youtube: 'xLN2Vu1iels'
+    originalWidth: 16
+    originalHeight: 9
+    autoplay: true
+    muted: false
+    loop: true
+    controls:
+      playPause: true
+      fullscreen: true
+      seek: true
+    eventTracking:
+      event: 'video_start'
+      video:
+        src: foo/bar/baz.mp4
+        title: Test
+        titleInEnglish: Test

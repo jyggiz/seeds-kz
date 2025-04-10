@@ -1,0 +1,135 @@
+scrollComponent: true
+
+filter:
+  title:
+    text: 'Қауымдастық мүшелері'
+    size: h4
+  filterApiUrl: '/bin/api/newsroom/gallery?componentResourcePath=/content/neom/en-us/newsroom/gallery/jcr:content/root/responsivegrid/c46_media_list&' # Not disclosed for authors
+  devEnvironmentUrl: 'https://dev.neom.com' # Not disclosed for authors
+  secondary:
+    items:
+      - label: 'Орналасқан жері'
+        value: location
+        items:
+          - label: 'Ақмола облысы'
+            value: akmoly
+          - label: 'Ақтөбе облысы'
+            value: aktobe
+          - label: 'Алматы облысы'
+            value: almaty
+          - label: 'Атырау облысы'
+            value: atyrau
+          - label: 'Шығыс Қазақстан облысы'
+            value: vko
+          - label: 'Жамбыл облысы'
+            value: zhambyl
+          - label: 'Қарағанды облысы'
+            value: karaganda
+          - label: 'Қостанай облысы'
+            value: kostanay
+          - label: 'Қызылорда облысы'
+            value: kyzylorda
+          - label: 'Солтүстік Қазақстан облысы'
+            value: sko
+          - label: 'Павлодар облысы'
+            value: pavlodar
+          - label: 'Түркістан облысы'
+            value: turkestan
+          - label: 'Батыс Қазақстан облысы'
+            value: zko
+          - label: 'Маңғыстау облысы'
+            value: mangystau
+          - label: 'Шетелдік'
+            value: abroad
+
+apiUrl: '/bin/api/assets/download'
+
+eventTracking:
+  event: 'Download'
+  eventAction: 'Download - ZIP'
+  eventCategory: 'Download'
+
+content:
+  items:
+    - heading: «EVS Group» ЖШС
+      tag: 'akmoly'
+      image:
+        src: '/image/c46-media-list/evs-group.png'
+      description: '<p>Астана қ.</p>'
+    - heading: «Ақмола-Феникс» АҚ
+      image:
+        src: '/image/c46-media-list/1.jpg'
+      tag: 'akmoly'
+      description: '<p>Целиноград ауданы, Ақмол ауылы</p>'
+
+    - heading: «Құмқұдық» ЖШС
+      image:
+        src: '/image/c46-media-list/2.jpg'
+      tag: 'aktobe'
+      description: '<p>Әйтеке би ауданы, Құмкұдық с. </p>'
+
+    - heading: «Опытное хозяйство масличных культур» ЖШС
+      image:
+        src: '/image/c46-media-list/too-ohmc.webp'
+      tag: 'vko'
+      description: '<p>Глубокое ауданы, С. Солнечный</p>'
+
+    - heading: «Астана-Бизнес» ЖШС
+      image:
+        src: '/image/c46-media-list/too-astana-business.webp'
+      tag: 'vko'
+      description: '<p>Өскемен Қ.</p>'
+
+    - heading: «Милейко» ЖШС
+      image:
+        src: '/image/c46-media-list/3.jpg'
+      tag: 'vko'
+      description: '<p>Глубокое ауданы, Винное ауылы</p>'
+
+    - heading: «ТАЛДЫ- ЕКПІН» ЖШС
+      image:
+        src: '/image/c46-media-list/7.jpg'
+      tag: 'vko'
+      description: '<p>Сакмар ауданы, Самар ауылы</p>'
+
+    - heading: «SBA-Agro Group» ЖШС
+      image:
+        src: '/image/c46-media-list/sba-group.webp'
+      tag: 'vko'
+      description: '<p>Глубокое ауданы, Секисовка ауылы</p>'
+
+    - heading: «Найдоровское» ЖШС
+      image:
+        src: '/image/c46-media-list/too-neudorf.webp'
+      tag: 'karaganda'
+      description: '<p>Осакаров ауданы, Ақпан ауылы</p>'
+
+    - heading: «Trade Company Akseleu» ЖШС
+      image:
+        src: '/image/c46-media-list/6.jpg'
+      tag: 'kostanay'
+      description: '<p>Қостанай қ.</p>'
+
+    - heading: «Галицкое» ЖШС
+      image:
+        src: '/image/c46-media-list/5.jpg'
+      tag: 'pavlodar'
+      description: '<p>Успен ауданы, Галицкое ауылы</p>'
+
+    - heading: «ТҰҚЫМ» ЖШС
+      image:
+        src: '/image/c46-media-list/4.jpg'
+      tag: 'sko'
+      description: '<p>Аудан.Ғабит Мүсірепов, Рузаевка ауылы</p>'
+
+    - heading: «АгроСервис-Батыс» ЖШС
+      image:
+        src: '/image/c46-media-list/too-agro-service-batys.webp'
+      tag: 'zko'
+      description: '<p>Бәйтерек Ауданы</p>'
+
+    - heading: SECOBRA RECHERCHES
+      image:
+        src: '/image/c46-media-list/secobra-recherches.webp'
+      tag: 'abroad'
+      description: '<p>Франция, Мауле қ.</p>'

@@ -1,0 +1,18 @@
+
+
+
+<div
+  class="o-cardWaterfall"
+  data-component="o90-card-waterfall"
+  {{#if id}} id="{{id}}"{{/if}}
+  
+>
+  <ul class="o-cardWaterfall__items" data-expert-items>
+    {{#each items}}
+      <li class="o-cardWaterfall__item -position-{{arithmetic @index '+' 1}}" data-expert-content="{{toJson this}}"
+          data-expert-item>
+        {{> organism/o52-expert-card index=(arithmetic @index '+' 1) }}
+      </li>
+    {{/each}}
+  </ul>
+</div>

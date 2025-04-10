@@ -1,0 +1,176 @@
+sections:
+  - image:
+      src: 'image/c73-scroll-image-content/neom-logo-color.svg'
+    copy:
+      eyebrow:
+        text: NEOM Brand Mark
+        size: medium
+      descriptions:
+        - 'The NEOM brand mark is our most important visual asset. It is our brand’s signature and
+          embodies the spirit of our mission to create a society of the future where the principles
+          of technology, nature, livability, sustainability and community are irrevocably linked.'
+        - 'The future loop brand mark is a fluid, interconnected representation of our dynamic
+          community and the ideals NEOM will strive to realize.'
+
+  - image:
+      src: 'image/c73-scroll-image-content/neom-logo-color.svg'
+    labels:
+      - label:
+          copy: NEOM future loop mark
+        direction: vertical
+        location:
+          x: 50
+          y: 18
+      - label:
+          copy: NEOM word mark
+        direction: verticalInverted
+        location:
+          x: 50
+          y: 89
+    copy:
+      eyebrow:
+        text: Brand mark naming
+        size: medium
+      descriptions:
+        - 'The NEOM brand mark consists of two elements: the NEOM future loop mark and the NEOM word
+          mark.'
+        - 'These elements have a fixed size and position relative to each other, which have been
+          created as master artwork files. The brand mark should not be redrawn, reset or altered in
+          any way. Additionally, never recreate or replace any of the patterns contained within the
+          future loop mark. In certain situations, the NEOM future loop mark can appear without the
+          NEOM word mark e.g. in social media applications.'
+        - '*In text, the word NEOM is always written in capital letters.'
+
+  - image:
+      src: 'image/c73-scroll-image-content/neom-logo-color.svg'
+    labels:
+      - label:
+          copy: Technology
+        direction: horizontal
+        location:
+          x: 50
+          y: 24
+      - label:
+          copy: Nature
+        direction: horizontal
+        location:
+          x: 65
+          y: 33
+      - label:
+          copy: Community
+        direction: horizontal
+        location:
+          x: 25
+          y: 42
+      - label:
+          copy: Sustainability
+        direction: horizontal
+        location:
+          x: 35
+          y: 51
+      - label:
+          copy: livability
+        direction: horizontal
+        location:
+          x: 55
+          y: 60
+    copy:
+      eyebrow:
+        text: The five principles
+        size: medium
+      descriptions:
+        - 'NEOM, and the future loop mark, is built of five fundamental, interconnected principles –
+          technology, nature, livability, sustainability and community.'
+        - 'The five principles must always appear in the sequence shown here, never swapped around
+          nor replaced with any other principle. Although the illustration for each principle is an
+          obvious representation of that subject and commonly used, they have been adjusted so they
+          can only be found in these particular colors and arrangement as part of the NEOM brand.
+          They come together as a unique combination found nowhere else.'
+
+  - image:
+      src: 'image/c73-scroll-image-content/neom-word.svg'
+    labels:
+      - label:
+          overline: NEO
+          copy: Greek prefix meaning “new”
+        direction: verticalInverted
+        textAlign: start
+        location:
+          x: 0
+          y: 100
+      - label:
+          overline: M
+          copy: Abbreviation of ‘mostaqbal’ arabic meaning ‘future’
+        direction: verticalInverted
+        location:
+          x: 80
+          y: 100
+    copy:
+      eyebrow:
+        text: Definition of NEOM
+        size: medium
+      descriptions:
+        - 'The name ‘NEOM’ is constructed from two words and translates as ‘New Future’.'
+        - '"We didn’t want an Arabic name and we didn’t want a Latin name, or a name from any other
+          language, because the project represents a civilizational leap for humanity. So the name
+          shouldn’t be from a specific civilization."'
+        - 'Prince Mohammed bin Salman Bloomberg interview, Oct ‘17'
+
+  - image:
+      src: 'image/c73-scroll-image-content/neom-logo-color.svg'
+      caption:
+        text: Primary mark
+        size: medium
+    copy:
+      eyebrow:
+        text: 1 of 4 – Mark Variants
+        size: medium
+      descriptions:
+        - 'The NEOM brand mark is available in four variants.'
+        - 'The primary mark should be used across the majority of communications. The primary brand
+          mark is only ever reproduced in full color.'
+
+  - image:
+      src: 'image/c73-scroll-image-content/neom-logo-black.svg'
+      caption:
+        text: Secondary mark black
+        size: medium
+    copy:
+      eyebrow:
+        text: 2 of 4 – Mark Variants
+        size: medium
+      descriptions:
+        - 'The NEOM brand mark is available in four variants.'
+        - 'The black secondary mark is only used when black is the only available color.'
+
+  - image:
+      src: 'image/c73-scroll-image-content/neom-logo-white.svg'
+      caption:
+        text: Secondary mark white
+        size: medium
+    theme: 'dark'
+    copy:
+      eyebrow:
+        text: 3 of 4 – Mark Variants
+        size: medium
+      descriptions:
+        - 'The NEOM brand mark is available in four variants.'
+        - 'The white secondary mark is used on dark primary brand colors, secondary brand colors and
+          dark colored backgrounds.'
+
+  - image:
+      src: 'image/c73-scroll-image-content/neom-logo-color.svg'
+      caption:
+        text: Small use mark
+        size: medium
+    copy:
+      eyebrow:
+        text: 4 of 4 – Mark Variants
+        size: medium
+      descriptions:
+        - 'The NEOM brand mark is available in four variants.'
+        - 'The small use mark is limited to applications where reproduction of the patterns is
+          impossible with the primary mark.'
+        - 'Size limitations and production techniques require a version of the logo with larger
+          patterns within the future loop mark, such as stitching the mark into fabric, or debossing
+          into leather. For this the small use brand mark was created.'

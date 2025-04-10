@@ -1,0 +1,52 @@
+scrollComponent: true
+
+background:
+  image:
+    alt: 'alt'
+    src: 'image/c24-content/intro-bg.jpg'
+    sources:
+      - src: 'image/c24-content/intro-bg.jpg'
+        media: '(min-width: 768px)'
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: end
+        content:
+          componentName: m16-figure
+          data:
+            variant: square
+            image:
+              variant: contain
+              src: 'image/c24-content/brandbook-brandmarks-intro-image.png'
+              alt: 'Intro icon'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 1 / 2 / 5
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            copy:
+              size: 'medium'
+              content:
+                '<p>The NEOM masterbrand has a number of marks available, each created for a
+                specific use. It’s important to use the full color primary mark as widely as
+                possible to stay true to the NEOM brand. The amount of color in the mark requires
+                you to be mindful of your creative and the limits stated here.</p>'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 6 / 2 / 12

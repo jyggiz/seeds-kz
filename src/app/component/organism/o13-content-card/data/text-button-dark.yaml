@@ -1,0 +1,16 @@
+content:
+  description:
+    size: 'xlarge'
+    copy: '<p>NEOM moves Headquarters to the Northwest of the Kingdom</p>'
+
+button:
+  icon: 'arrow-right-up'
+  label: 'Read More'
+  size: 'small'
+  level: 'secondary'
+  theme: 'white'
+
+link:
+  href: 'https://twitter.com'
+  label: 'An SEO friendly link text for this card'
+  target: '_blank'

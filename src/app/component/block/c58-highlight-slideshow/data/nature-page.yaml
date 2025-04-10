@@ -1,0 +1,121 @@
+items:
+  - image:
+      src: 'image/c58-highlight-slideshow/nature/1.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/nature/1.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'TRANSFORMATIVE NATURE-<br>BASED EXPERIENCES'
+        size: 'h3'
+      alignment: left
+    active: true
+  - image:
+      src: 'image/c58-highlight-slideshow/nature/2.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/nature/2.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'CONSERVATION &<br>PROTECTION'
+        size: 'h3'
+      alignment: left
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/nature/3.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/nature/3.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'HABITAT<br>RESTORATION'
+        size: 'h3'
+      alignment: left
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/nature/4.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/nature/4.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'REWILDING'
+        size: 'h3'
+      alignment: left
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/nature/5.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/nature/5.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'REGREENING'
+        size: 'h3'
+      alignment: left
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/nature/6.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/nature/6.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'CORAL REEF<br>RESTORATION'
+        size: 'h3'
+      alignment: left
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/nature/7.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/nature/7.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'REGENERATIVE<br>TOURISM'
+        size: 'h3'
+      alignment: left
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/nature/8.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/nature/8.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'WORLD-CLASS<br>PROTECTED AREAS'
+        size: 'h3'
+      alignment: left
+    active: false

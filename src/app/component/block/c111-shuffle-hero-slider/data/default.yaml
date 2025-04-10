@@ -1,0 +1,75 @@
+backgroundColor: black
+theme: dark
+
+items:
+  - componentName: 'c111-slide-card'
+    data:
+      slideImage:
+        alt: 'NEOM IS REAL'
+        src: 'image/c17-sectors/technology-digital.jpg'
+      label: 'NEOM IS REAL'
+      cta:
+        label: START STORY
+        icon: play-solid
+        theme: white
+      modalContent:
+        heading:
+          text: 'NOW PLAYING: NEOM IS REAL'
+          size: h6
+        ctas:
+          - icon: share
+            href: '#'
+            theme: white
+            level: secondary
+          - icon: mail
+            label: STAY UPDATED
+            href: '#'
+            theme: white
+            level: secondary
+        video:
+          timings:
+            - label: CHAPTER 1
+              start: 0
+              end: 3
+            - label: CHAPTER 2
+              start: 3.1
+              end: 8
+            - label: CHAPTER 3
+              start: 8.1
+              end: 15
+            - label: CHAPTER 4
+              start: 15.1
+              end: 22.3
+          props:
+            controls:
+              # Should be these fixed values
+              volumeToggle: true
+              playPause: true
+              seek: true
+            sources:
+              - src: 'video/the-line-background-video.mp4'
+                type: video/mp4
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: true
+            muted: false
+  - componentName: 'c111-slide-card'
+    data:
+      slideImage:
+        alt: 'SINDALAH'
+        src: 'image/c17-sectors/water.jpg'
+      label: 'SINDALAH'
+      cta:
+        label: START STORY
+        icon: play-solid
+        theme: white
+  - componentName: 'c111-slide-card'
+    data:
+      slideImage:
+        alt: 'TROJENA'
+        src: 'image/c17-sectors/tourism.jpg'
+      label: 'TROJENA'
+      cta:
+        label: START STORY
+        icon: play-solid
+        theme: white

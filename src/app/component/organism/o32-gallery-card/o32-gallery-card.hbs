@@ -1,0 +1,31 @@
+
+
+<div class="o-galleryCard{{#if variant}} -{{variant}}{{/if}}"{{#with id}} id={{this}}{{/with}} data-component="o32-gallery-card"
+  {{#if lightbox}}data-lightbox-item="{{toJson lightbox}}"{{/if}} data-slide>
+  <div class="o-galleryCard__thumbnail{{#if variant}} -{{variant}}{{/if}}" data-gallery-image>
+    {{#if preview}}
+      {{> organism/o01-video }}
+    {{^}}
+      {{> atom/a01-image image disableTransition=true }}
+    {{/if}}
+    {{#if video}}
+      {{> molecule/m02-button icon="play-solid" theme="white" variant="play" title=null }}
+    {{/if}}
+    {{#if hasFullscreenButton}}
+      <div class="o-galleryCard__thumbnail__fullscreen" data-fullscreen-button>
+        {{> molecule/m02-button level="secondary" icon="fullscreen" theme="white" video=null aria=(object label=@root.i18n.open) }}
+      </div>
+    {{/if}}
+  </div>
+  {{#if copy }}
+    <div class="o-galleryCard__copy" data-gallery-copy>
+      {{{ copy }}}
+    </div>
+  {{/if}}
+  {{#with download}}
+    <a href="{{ href }}" class="o-galleryCard__download" download>
+      {{ label }}
+      {{> atom/a02-icon name="download" }}
+    </a>
+  {{/with}}
+</div>

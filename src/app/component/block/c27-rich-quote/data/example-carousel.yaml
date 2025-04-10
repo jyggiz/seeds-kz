@@ -1,0 +1,153 @@
+scrollComponent: true
+background:
+  image:
+    src: 'image/joseph_bradley.jpg'
+    alt: 'Photo of Joseph Bradley'
+theme: darkMono
+
+header:
+  eyebrow:
+    size: large
+    text: NEOM-Stimmen
+  heading:
+    element: h2
+    size: h6
+    text: 'Hören Sie von unseren Führungskräften'
+
+items:
+  - quote:
+      icon: quote
+      author:
+        name: Joseph Bradley
+        role: Head of Technology and Digital
+      quote:
+        '<p>NEOM is not about building a smart city, it is about building the first cognitive city,
+        where world-class technology is fueled with data and intelligence to interact seamlessly
+        with its population.</p>'
+    image:
+      src: 'image/joseph_bradley.jpg'
+      alt: 'Photo of Joseph Bradley'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        originalWidth: 512
+        originalHeight: 640
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+    thumbnail:
+      src: 'image/thumbnails/joseph-bradley-thumbnail.jpg'
+      alt: 'Photo of Joseph Bradley'
+    button:
+      label: Watch
+      eventTracking:
+        componentId: 'CTA id'
+      data:
+        play-button:
+
+  - quote:
+      icon: quote
+      author:
+        name: Dr. Maliha Hashmi
+        role: Executive Director of Health and Well-Being
+      quote:
+        '<p>NEOM offers a platform where health and well-being can be integrated into daily
+        life.</p>'
+    image:
+      src: 'image/maliha-hashmi-main.jpg'
+      alt: 'Photo of Dr. Maliha Hashmi'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        autoplay: false
+        originalWidth: 512
+        originalHeight: 640
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+    thumbnail:
+      src: 'image/thumbnails/maliha-hashmi-thumbnail.jpg'
+      alt: 'Photo of Dr. Maliha Hashmi'
+    button:
+      label: Watch
+      eventTracking:
+        componentId: 'CTA id'
+      data:
+        play-button:
+
+  - quote:
+      icon: quote
+      author:
+        name: Gavin van Tonder
+        role: Water Sector Head
+      quote: '<p>NEOM’s sustainable approach will have a global impact on the water sector.</p>'
+    image:
+      src: 'image/gavin-van-tonder-main.jpg'
+      alt: 'Photo of Gavin van Tonder'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        originalWidth: 512
+        originalHeight: 640
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+    thumbnail:
+      src: 'image/thumbnails/gavin-van-tonder-thumbnail.jpg'
+      alt: 'Photo of Gavin van Tonder'
+    button:
+      label: Watch
+      eventTracking:
+        componentId: 'CTA id'
+      data:
+        play-button:
+
+  - quote:
+      icon: quote
+      author:
+        name: Giovanna Carnevali
+        role: Executive Director for Urban Planning
+      quote:
+        '<p>NEOM keeps urbanization to a minimum, in favor of preserving and enhancing nature.</p>'
+    image:
+      src: 'image/giovanna-carnevali-main.jpg'
+      alt: 'Photo of Giovanna Carnevali'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        originalWidth: 512
+        originalHeight: 640
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+    thumbnail:
+      src: 'image/thumbnails/giovanna-carnevali-thumbnail.jpg'
+      alt: 'Photo of Giovanna Carnevali'
+    button:
+      label: Watch
+      eventTracking:
+        componentId: 'CTA id'
+      data:
+        play-button:

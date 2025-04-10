@@ -1,0 +1,186 @@
+scrollComponent: true
+
+overlapTopComponent: true
+
+header:
+  disableTransition: true
+  alignment: left
+  heading:
+    text: Youtube<br>Example
+    size: h3
+
+items:
+  - title: Rethinking Water
+    image:
+      src: 'image/c29-stories/stories_episodewater.jpg'
+      alt: Rethinking Water
+    video:
+      data:
+        main-video:
+      props:
+        youtube: xLN2Vu1iels
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+            title: 'A Vision of a New Future: Explainer video'
+            src: 'https://www.youtube.com/watch?v=xLN2Vu1iels'
+
+  - title: Where humanity and nature live in harmony
+    image:
+      src: 'image/c29-stories/humanity-harmony.jpg'
+      alt: Where humanity and nature live in harmony
+    video:
+      data:
+        main-video:
+      props:
+        youtube: xLN2Vu1iels
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+            title: 'A Vision of a New Future: Explainer video'
+            src: 'https://www.youtube.com/watch?v=xLN2Vu1iels'
+
+  - title: The Dreamers and Doers
+    image:
+      src: 'image/c29-stories/stories_settlers.jpg'
+      alt: The Dreamers and Doers
+    video:
+      data:
+        main-video:
+      props:
+        youtube: xLN2Vu1iels
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+            title: 'A Vision of a New Future: Explainer video'
+            src: 'https://www.youtube.com/watch?v=xLN2Vu1iels'
+
+  - title: Building the School of the Future
+    image:
+      src: 'image/c29-stories/stories_education.jpg'
+      alt: Building the School of the Future
+    video:
+      data:
+        main-video:
+      props:
+        youtube: xLN2Vu1iels
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+            title: 'A Vision of a New Future: Explainer video'
+            src: 'https://www.youtube.com/watch?v=xLN2Vu1iels'
+
+  - title: Powering NEOM
+    image:
+      src: 'image/c29-stories/stories_peterterium.jpg'
+      alt: Powering NEOM
+    video:
+      data:
+        main-video:
+      props:
+        youtube: xLN2Vu1iels
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+            title: 'A Vision of a New Future: Explainer video'
+            src: 'https://www.youtube.com/watch?v=xLN2Vu1iels'
+
+  - title: Putting Nature First
+    image:
+      src: 'image/c29-stories/stories_environment.jpg'
+      alt: Putting Nature First
+    video:
+      data:
+        main-video:
+      props:
+        youtube: xLN2Vu1iels
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+            title: 'A Vision of a New Future: Explainer video'
+            src: 'https://www.youtube.com/watch?v=xLN2Vu1iels'
+
+  - title: A Preventative Approach to Health
+    image:
+      src: 'image/c29-stories/stories_health.jpg'
+      alt: A Preventative Approach to Health
+    video:
+      data:
+        main-video:
+      props:
+        youtube: xLN2Vu1iels
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+            title: 'A Vision of a New Future: Explainer video'
+            src: 'https://www.youtube.com/watch?v=xLN2Vu1iels'

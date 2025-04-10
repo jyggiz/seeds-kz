@@ -1,0 +1,35 @@
+heading: 'Leading the world in'
+
+items:
+  - title: 'Innovative design-led form'
+    image:
+      alt: 'Globe image'
+      src: 'image/c71-facts-list/tourism/1.jpg'
+  - title: 'Authentic heritage and culture'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/tourism/2.jpg'
+  - title: 'Unique nature experiences '
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/tourism/3.jpg'
+  - title: 'Seamless travel'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/tourism/4.jpg'
+  - title: 'Arabian service culture'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/tourism/5.jpg'
+  - title: 'Luxury experiences '
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/tourism/6.jpg'
+  - title: 'Regenerative travel for good'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/tourism/7.jpg'
+  - title: 'Progressive tourism law & regulations'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/tourism/8.jpg'

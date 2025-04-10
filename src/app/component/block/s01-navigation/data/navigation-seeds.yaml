@@ -1,0 +1,66 @@
+navigationContent:
+  scrollComponent: true
+  logo: 'import!../../../molecule/m19-logo/data/default.yaml'
+  navigation:
+    mainAriaLabel: 'navigation menu'
+    main:
+      - label: 'Ассоциация'
+        href: '/seed_about.html'
+
+      - label: 'Формы'
+        type: 'menu'
+        items:
+          - label: 'Утвержденные формы'
+            href: '/seed_forms.html'
+            target: '_blank'
+          - label: 'НПА'
+            href: '/files.html#npa'
+            target: '_blank'
+
+      - label: 'Список участников'
+        href: '/companies.html#participants'
+
+      - label: 'Производство'
+        type: 'menu'
+        items:
+          - label: 'Фермы'
+            href: '/seed_filters.html'
+            target: '_blank'
+          - label: 'Сорта зерна'
+            href: '/seed_seeds.html'
+            target: '_blank'
+
+      - label: 'Вакансии'
+        href: 'https://hh.kz'
+        target: '_blank'
+
+      - label: 'Контакты'
+        href: '/contacts.html#contacts'
+
+      - label: 'Семинары'
+        href: '/gallery.html'
+
+    aside:
+      - type: CTA
+        button:
+          label: 'Вступить в ассоциацию'
+          size: 'small'
+          level: 'primary'
+          theme: 'white'
+          href: '/join.html#form'
+          target: '_blank'
+
+  isStickySearch: false
+  isDrawerNavigation: false
+
+  languages:
+    activeLanguageCode: ru
+    options:
+      - languageCode: ru
+        shortLabel: Рус
+        label: Русский
+        href: '/homepage'
+      - languageCode: kz
+        shortLabel: Қаз
+        label: Қазақша
+        href: '/homepage'

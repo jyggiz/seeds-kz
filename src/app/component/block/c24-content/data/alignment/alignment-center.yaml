@@ -1,0 +1,27 @@
+scrollComponent: true
+variant: 'triple'
+theme: 'dark'
+items:
+  - align:
+      horizontal: center
+      vertical: top
+    type: 'paragraph'
+    content:
+      copy:
+        content: 'align: center, top'
+
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      copy:
+        content: 'align: center, middle'
+
+  - align:
+      horizontal: center
+      vertical: bottom
+    type: 'paragraph'
+    content:
+      copy:
+        content: 'align: center, bottom'

@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="./m01-blockquote.scss">
+<script src="./M01Blockquote.ts"></script>
+
+<blockquote class="m-blockquote{{#if variant}} -{{variant}}{{/if}}" data-component="m01-blockquote">
+  {{#if (condition variant '===' 'royalAnnouncement')}}
+    <div class="m-blockquote__asset -royalAnnouncement" data-slide-in>
+      {{> atom/a02-icon name="royal" }}
+    </div>
+  {{else}}
+    {{#if (condition icon '||' image)}}
+      <div class="m-blockquote__asset{{#if image}} -image{{/if}}{{#if image.type}} -{{image.type}}{{/if}}" data-slide-in>
+        {{#if image}}
+          {{> atom/a01-image image variant="block" disableTransition=true }}
+        {{else if icon}}
+          {{> atom/a02-icon name=icon }}{{/if}}
+      </div>
+    {{/if}}
+  {{/if}}
+
+  {{#with eyebrow}}
+    {{> atom/a04-eyebrow}}
+  {{/with}}
+
+  <div class="m-blockquote__quote{{#with size}} -size-{{this}}{{^}} -size-medium{{/with}}" data-blockquote-quote data-slide-in>
+    {{{ quote }}}
+  </div>
+
+  {{#with author}}
+    <cite class="m-blockquote__cite" data-blockquote-cite>
+      {{#if prefix}}
+        <p class="m-blockquote__prefix" data-slide-in>{{prefix}}</p>
+      {{/if}}
+      {{#if name}}
+        <p class="m-blockquote__author" data-slide-in>{{name}}</p>
+      {{/if}}
+      {{#if role}}
+        <p class="m-blockquote__role" data-slide-in>{{role}}</p>
+      {{/if}}
+    </cite>
+  {{/with}}
+
+</blockquote>

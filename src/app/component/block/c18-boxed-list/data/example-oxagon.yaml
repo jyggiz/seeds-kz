@@ -1,0 +1,60 @@
+scrollComponent: true
+
+align: center
+theme: dark
+backgroundColor: dark-accent
+
+header:
+  heading:
+    text: Healthy Investors<br />Climate
+    size: h5
+
+items:
+  - heading:
+      text: WorLd-class facilities
+      bigSize: true
+    icon: 'facilities'
+    bigSizeAsset: true
+    copy: 4 sound stages with full production support spaces & backlots
+    link:
+      label: find out more
+      target: _blank
+      href: '#'
+      icon: plus-circle
+    modal: true
+    content:
+      heading:
+        text: WorLd-class facilities
+      copy: 'NEOM is home to the countrys largest sound stages and film production facilities.
+
+        Media Village A 2,400m² sound stage with make-up and green rooms, production offices and
+        three more stages being built, the Village can host 144 cast and crew, with great lifestyle
+        and retail offerings.
+
+        Bajdah Studios Two 3,000m² sound stages and four more opening soon, with production offices,
+        prop shops, wardrobe, SFX facilities, backlot spaces for custom builds and resort-style
+        living for 200 people.'
+      image:
+        alt: Ras Kulayb
+        src: 'image/c06-hotspots/coastal-image.jpg'
+      icon: 'plus-circle'
+
+  - heading:
+      text: Production incentives
+    icon: 'facilities'
+    copy: 40%++ cash rebate for all TV, Film and TVCs
+    link:
+      label: find out more
+      target: _blank
+      href: '#'
+      icon: plus-circle
+
+  - heading:
+      text: Production incentives
+    icon: 'facilities'
+    copy: 40%++ cash rebate for all TV, Film and TVCs
+    link:
+      label: find out more
+      target: _blank
+      href: '#'
+      icon: plus-circle

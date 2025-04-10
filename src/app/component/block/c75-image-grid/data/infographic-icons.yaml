@@ -1,0 +1,76 @@
+items:
+  - src: 'image/c75-image-grid/infographic-icons/info-01.png'
+    alt: 'Energy icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-01.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-02.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-02.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-03.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-03.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-04.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-04.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-05.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-05.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-06.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-06.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-07.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-07.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-08.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-08.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-09.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-09.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-10.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-10.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-11.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-11.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-12.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-12.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-13.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-13.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-14.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-14.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/infographic-icons/info-15.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/infographic-icons/info-15.png'
+        media: '(min-width: 480px)'

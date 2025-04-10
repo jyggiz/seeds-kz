@@ -1,0 +1,75 @@
+heading:
+  text: 'Brand typefaces'
+
+description:
+  '<p><strong>Brown</strong> is the primary Roman typeface for NEOM, to be used on both printed and
+  web based applications. Brown is a commercial typeface.</p> <p><strong>Bukra</strong> is the
+  primary headline typeface for Arabic communications to be used on both printed and web based
+  applications.</p> <p><strong>Zarid</strong> is the primary body copy typeface for Arabic
+  communications, to be used on both printed and web based applications. Both Bukra and Zarid are
+  commercial typefaces.</p>'
+
+items:
+  - heading:
+      text: 'Brown'
+    image:
+      src: 'image/c69-type-face/brown-font-example.svg'
+      alt: 'Brown font example icon'
+    description:
+      'Brown is a geometric sans-serif typeface designed by Aurèle Sack and released through Lineto.
+      One cool thing about Brown is that it includes several stylistic variants—a reclining version
+      that slopes backwards and an alternate version that includes additional unique characters.
+      Brown is available in four weights—thin, light, regular and bold—each with matching italics.'
+    table:
+      familyName: 'brown'
+      items:
+        - fontWeight: 'Brown Light'
+          fontExample: 'Lorem Ipsum Dolor Sit Amet'
+        - fontWeight: '<strong>Brown Regular</strong>'
+          fontExample: '<strong>Lorem Ipsum Dolor Sit Amet</strong>'
+  - heading:
+      text: 'Bukra'
+    image:
+      src: 'image/c69-type-face/bukra-font-example.svg'
+      alt: 'Bukra font example icon'
+    description:
+      '29LT Bukra is a contemporary geometric typeface drawn with sleek mono-linear structure that
+      unveils a futuristic and clean sensation. Its modern simplistic arrangement gives the typeface
+      suitability for corporate and bold content text. It is mainly a display type while the light
+      and book weights can be used for short body text. The Arabic letterforms were designed based
+      on the Kufic structure whereas the Latin character set was designed based on the Sans Serif
+      structures that lends a font a unique feel and a innovative structure.'
+    table:
+      familyName: 'bukra'
+      items:
+        - fontWeight: 'بوكرا'
+          fontExample: 'الثعلب البني السريع يقفز'
+  - heading:
+      text: 'Zarid'
+    image:
+      src: 'image/c69-type-face/zarid-font-example.svg'
+      alt: 'Zarid font example icon'
+    description:
+      '29LT Zarid Sans is direct and fresh. It is a combination of an Arabic Neo Naskh accompanied
+      with a unique Sans Latin counterpart. It respects and inspires from the calligraphic writing
+      systems while drawn with modern features and graphical qualities. The equilibrium between the
+      main body structure of the letters and their corresponding ascenders and descenders is
+      carefully studied to give the typeface a contemporary composition without affecting legibly.
+      It is modern-day low contrast typeface with strong charactersitics that distinguish it from
+      other sans serif fonts.'
+    table:
+      familyName: 'zarid'
+      items:
+        - fontWeight: 'بوكرا'
+          fontExample: 'الثعلب البني السريع يقفز'
+
+scale:
+  heading:
+    text: 'Typography scale'
+  subtitle: 'Perfect Fourth 1.333'
+  copy:
+    'The typographic scale has been used for centuries as a means of creating balanced and
+    harmonious font sizing. It is the bedrock of modern typography. A modular scale increases
+    readability and legibility. This makes your content easier to understand. A modular scale is
+    based off proportionate relationships. One of the most common proportions used when creating a
+    typographic scale, 3:4 (perfect fourth).'

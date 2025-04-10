@@ -1,0 +1,106 @@
+.m-mobileLanguageSelector {
+  position: relative;
+  z-index: zindex($zLayout, mobile-toggle-language);
+
+  &__container {
+    align-items: flex-start;
+    background-color: var(--color-mobile-language-selector-background);
+    display: flex;
+    height: 100%;
+    min-height: 60px;
+    position: relative;
+    width: 100%;
+    z-index: zindex($zLayout, mobile-toggle-language);
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+
+    .a-icon {
+      --icon-size: 12px;
+      color: transparent;
+    }
+  }
+
+  &__toggle {
+    --icon-size: 12px;
+    @include fluid-type(14px, 12px);
+
+    align-items: center;
+    color: var(--color-black-20);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.1em;
+    line-height: 120%;
+    padding: 28px 30px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    width: 100%;
+
+    .a-icon {
+      transition: transform 0.25s ease-in-out;
+    }
+
+    .-isActive & {
+      color: var(--color-white);
+
+      .a-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__languageList {
+    @include vh(100, height);
+    @include offset();
+
+    background-color: var(--color-black);
+    box-sizing: border-box;
+    position: absolute;
+    text-transform: uppercase;
+    transform: translateY(0);
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+    z-index: zindex($zLayout, content);
+
+    .-isActive & {
+      transform: translateY(-100%);
+    }
+  }
+
+  &__items {
+    @include size(100%, 100%);
+    @include fluid-type(14px, 12px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    letter-spacing: 0.1em;
+    line-height: 120%;
+    list-style: none;
+    overflow: auto;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    border-bottom: 1px solid var(--color-black-90);
+    color: var(--color-black-20);
+    padding: 25px 30px;
+
+    &:first-child {
+      border-top: 1px solid var(--color-black-90);
+    }
+
+    &.-isActive {
+      color: var(--color-white);
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &__toggle {
+      --icon-size: 14px;
+    }
+  }
+}

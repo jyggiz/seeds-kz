@@ -1,0 +1,30 @@
+
+
+
+<section
+  class="b-quote{{#if theme}} t-{{theme}}{{/if}}{{#if wide}} -wide{{/if}}{{#if fullMinHeight}} -fullMinHeight{{/if}}"
+  data-component="c04-quote"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+  style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+    {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component>
+
+  {{#with background}}{{> molecule/m34-component-background disableTransition=true }}{{/with}}
+
+  <div class="b-quote__container">
+    <div class="b-quote__blockquote" data-slide-in>
+      {{> molecule/m01-blockquote quote }}
+    </div>
+
+    {{#if callToActions}}
+      <div class="b-quote__buttons" data-slide-in>
+        {{#each callToActions}}
+          {{> molecule/m02-button this }}
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
+</section>

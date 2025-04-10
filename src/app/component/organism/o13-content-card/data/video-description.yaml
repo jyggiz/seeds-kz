@@ -1,0 +1,38 @@
+thumbnail:
+  aspectRatio: 'square'
+  image:
+    alt: null
+    src: './image/c16-carousel/updates_instagram.jpg'
+
+content:
+  description:
+    size: 'small'
+    copy: '<p>Highlights of the opening ceremony</p>'
+
+button:
+  icon: 'play-solid'
+  level: 'primary'
+  theme: 'white'
+
+meta:
+  year: 2022
+  month: November
+
+video:
+  props:
+    youtube: 'xLN2Vu1iels'
+    originalWidth: 16
+    originalHeight: 9
+    autoplay: true
+    muted: false
+    loop: true
+    controls:
+      playPause: true
+      fullscreen: true
+      seek: true
+    eventTracking:
+      event: 'video_start'
+      video:
+        src: foo/bar/baz.mp4
+        title: Test
+        titleInEnglish: Test

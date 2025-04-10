@@ -1,0 +1,209 @@
+{
+  "data": {
+    "scrollComponent": true,
+    "content": {
+      "items": [
+        {
+          "heading": "ТОО «EVS Group»",
+          "tag": "akmoly",
+          "image": {
+            "src": "/image/c46-media-list/evs-group.png"
+          },
+          "description": "<p>г. Астана</p>"
+        },
+        {
+          "heading": "АО «Акмола-Феникс»",
+          "datePublished": "April 26",
+          "image": {
+            "src": "/image/c46-media-list/no-image.webp"
+          },
+          "tag": "akmoly",
+          "description": "<p>Целиноградский район, с. Акмол</p>"
+        },
+        {
+          "heading": "ТОО «Құмқұдық»",
+          "datePublished": "April 5",
+          "image": {
+            "src": "/image/c46-media-list/no-image.webp"
+          },
+          "tag": "aktobe",
+          "description": "<p>Айтекебийский район, c. Кумкудык</p>"
+        },
+        {
+          "heading": "ТОО «Опытное хозяйство масличных культур»",
+          "datePublished": "May 22",
+          "image": {
+            "src": "/image/c46-media-list/too-ohmc.webp"
+          },
+          "tag": "vko",
+          "description": "<p>Глубоковский район, c. Солнечный</p>"
+        },
+        {
+          "heading": "ТОО «Астана-Бизнес»",
+          "datePublished": "April 26",
+          "image": {
+            "src": "/image/c46-media-list/too-astana-business.webp"
+          },
+          "tag": "vko",
+          "description": "<p>Г. Усть-Каменогорск</p>"
+        },
+        {
+          "heading": "ТОО «Милейко»",
+          "datePublished": "April 5",
+          "image": {
+            "src": "/image/c46-media-list/no-image.webp"
+          },
+          "tag": "vko",
+          "description": "<p>Глубоковский район, с. Винное</p>"
+        },
+        {
+          "heading": "ТОО «ТАЛДЫ- ЕКПІН»",
+          "datePublished": "May 22",
+          "image": {
+            "src": "/image/c46-media-list/no-image.webp"
+          },
+          "tag": "vko",
+          "description": "<p>Самарский район, с. Самарское</p>"
+        },
+        {
+          "heading": "ТОО «SBA-Agro Group»",
+          "datePublished": "April 26",
+          "image": {
+            "src": "/image/c46-media-list/sba-group.webp"
+          },
+          "tag": "vko",
+          "description": "<p>Глубоковский район, с. Секисовка</p>"
+        },
+        {
+          "heading": "ТОО «Найдоровское»",
+          "datePublished": "April 5",
+          "image": {
+            "src": "/image/c46-media-list/too-neudorf.webp"
+          },
+          "tag": "karaganda",
+          "description": "<p>Осакаровский район, с. Акпан</p>"
+        },
+        {
+          "heading": "ТОО «Trade Company Akseleu»",
+          "datePublished": "April 5",
+          "image": {
+            "src": "/image/c46-media-list/no-image.webp"
+          },
+          "tag": "kostanay",
+          "description": "<p>г. Костанай</p>"
+        },
+        {
+          "heading": "ТОО «Галицкое»",
+          "datePublished": "April 5",
+          "image": {
+            "src": "/image/c46-media-list/no-image.webp"
+          },
+          "tag": "pavlodar",
+          "description": "<p>Успенский район, с. Галицкое</p>"
+        },
+        {
+          "heading": "ТОО «ТҰҚЫМ»",
+          "datePublished": "April 5",
+          "image": {
+            "src": "/image/c46-media-list/no-image.webp"
+          },
+          "tag": "sko",
+          "description": "<p>Район Им.Габита Мусрепова, с. Рузаевка</p>"
+        },
+        {
+          "heading": "ТОО «АгроСервис-Батыс»",
+          "datePublished": "April 5",
+          "image": {
+            "src": "/image/c46-media-list/too-agro-service-batys.webp"
+          },
+          "tag": "zko",
+          "description": "<p>Район Бәйтерек</p>"
+        },
+        {
+          "heading": "SECOBRA RECHERCHES",
+          "datePublished": "April 5",
+          "image": {
+            "src": "/image/c46-media-list/secobra-recherches.webp"
+          },
+          "tag": "abroad",
+          "description": "<p>Франция, г. Мауле</p>"
+        }
+      ]
+    },
+    "filter": {
+      "secondary": {
+        "items": [
+          {
+            "label": "Местоположение",
+            "value": "location",
+            "active": false,
+            "items": [
+              {
+                "label": "Акмолинская область",
+                "value": "akmoly"
+              },
+              {
+                "label": "Актюбинская область",
+                "value": "aktobe"
+              },
+              {
+                "label": "Алматинская область",
+                "value": "almaty"
+              },
+              {
+                "label": "Атырауская область",
+                "value": "atyrau"
+              },
+              {
+                "label": "Восточно-Казахстанская область",
+                "value": "vko"
+              },
+              {
+                "label": "Жамбыльская область",
+                "value": "zhambyl"
+              },
+              {
+                "label": "Карагандинская область",
+                "value": "karaganda"
+              },
+              {
+                "label": "Костанайская область",
+                "value": "kostanay"
+              },
+              {
+                "label": "Кызылординская область",
+                "value": "kyzylorda"
+              },
+              {
+                "label": "Северо-Казахстанская область",
+                "value": "sko"
+              },
+              {
+                "label": "Павлодарская область",
+                "value": "pavlodar"
+              },
+              {
+                "label": "Туркестанская область",
+                "value": "turkestan"
+              },
+              {
+                "label": "Западно-Казахстанская область",
+                "value": "zko"
+              },
+              {
+                "label": "Мангистауская область",
+                "value": "mangystau"
+              },
+              {
+                "label": "Зарубежные",
+                "value": "abroad"
+              }
+            ]
+          }
+        ]
+      },
+      "searchField": false
+    }
+  },
+  "status": "success"
+}

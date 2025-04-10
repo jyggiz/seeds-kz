@@ -1,0 +1,214 @@
+.o-stories {
+  color: var(--component-text-color);
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+  }
+
+  &__heading {
+    margin: 0 0 45px;
+  }
+
+  &__list {
+    @include list-reset();
+  }
+
+  .swiper-container {
+    overflow: visible;
+  }
+
+  @include respond-to(MEDIUM) {
+    &__heading {
+      @include size(100%);
+      @include offset(0, 20px);
+
+      position: absolute;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+
+      .m-componentHeader {
+        flex-basis: 100%;
+      }
+    }
+
+    &__headingContainer {
+      @include offset(0, 0);
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 24px;
+      position: absolute;
+      width: 100%;
+
+      &.-has10Items {
+        top: -50px;
+      }
+    }
+
+    &__headingWrapper {
+      @include aspect-ratio(280, 360);
+
+      position: relative;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 24px;
+      list-style: none;
+    }
+
+    &__item {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+
+      &.-position-1 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / 9;
+      }
+
+      &.-position-2 {
+        grid-column: 3 / span 1;
+        grid-row: 5 / 12;
+      }
+
+      &.-position-3 {
+        grid-column: 1 / span 1;
+        grid-row: 7 / 14;
+      }
+
+      &.-position-4 {
+        grid-column: 2 / span 1;
+        grid-row: 9 / 15;
+      }
+
+      &.-position-5 {
+        grid-column: 3 / span 1;
+        grid-row: 12 / 17;
+      }
+
+      &.-position-6 {
+        grid-column: 1 / span 1;
+        grid-row: 14 / 18;
+      }
+
+      &.-position-7 {
+        grid-column: 2 / span 1;
+        grid-row: 15 / 25;
+      }
+
+      &.-position-8 {
+        grid-column: 3 / span 1;
+        grid-row: 17 / 26;
+      }
+    }
+
+    .-has9Items {
+      .o-stories {
+        &__item {
+          &.-position-2 {
+            grid-column: 3 / span 1;
+            grid-row: 5 / 14;
+          }
+
+          &.-position-3 {
+            grid-column: 2 / span 1;
+            grid-row: 9 / 16;
+          }
+
+          &.-position-4 {
+            grid-column: 1 / span 1;
+            grid-row: 13 / 17;
+          }
+
+          &.-position-5 {
+            grid-column: 3 / span 1;
+            grid-row: 14 / 18;
+          }
+
+          &.-position-6 {
+            grid-column: 2 / span 1;
+            grid-row: 16 / 21;
+          }
+
+          &.-position-7 {
+            grid-column: 1 / span 1;
+            grid-row: 17 / 24;
+          }
+
+          &.-position-8 {
+            grid-column: 3 / span 1;
+            grid-row: 18 / 25;
+          }
+
+          &.-position-9 {
+            grid-column: 2 / span 1;
+            grid-row: 23 / 27;
+          }
+        }
+      }
+    }
+
+    .-has10Items {
+      .o-stories {
+        &__item {
+          &.-position-2 {
+            grid-column: 3 / span 1;
+            grid-row: 5 / 14;
+          }
+
+          &.-position-3 {
+            grid-column: 1 / span 1;
+            grid-row: 13 / 7;
+          }
+
+          &.-position-4 {
+            grid-column: 2 / span 1;
+            grid-row: 9 / 21;
+          }
+
+          &.-position-5 {
+            grid-column: 3 / span 1;
+            grid-row: 12 / 18;
+          }
+
+          &.-position-6 {
+            grid-column: 1 / span 1;
+            grid-row: 13 / 21;
+          }
+
+          &.-position-7 {
+            grid-column: 2 / span 1;
+            grid-row: 15 / 24;
+          }
+
+          &.-position-8 {
+            grid-column: 3 / span 1;
+            grid-row: 18 / 25;
+          }
+
+          &.-position-9 {
+            grid-column: 1 / span 1;
+            grid-row: 20 / 27;
+          }
+
+          &.-position-10 {
+            grid-column: 2 / span 1;
+            grid-row: 23 / 27;
+          }
+        }
+      }
+    }
+
+    .a-pageIndicators {
+      display: none;
+    }
+  }
+}

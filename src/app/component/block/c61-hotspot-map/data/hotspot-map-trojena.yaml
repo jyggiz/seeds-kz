@@ -1,0 +1,180 @@
+scrollComponent: true
+
+static: false
+
+#intro:
+#  steps:
+#    - image:
+#        src: 'image/c57-region-hotspots/map-world.png'
+#        alt: 'map image'
+#        sources:
+#          - src: 'image/c57-region-hotspots/map-world.png'
+#            media: '(min-width: 480px)'
+#      caption: Explore TROJENA
+#    - image:
+#        src: 'image/c57-region-hotspots/map-mena.png'
+#        alt: 'map image'
+#        sources:
+#          - src: 'image/c57-region-hotspots/map-mena.png'
+#            media: '(min-width: 480px)'
+#      caption: Situated in the heart of NEOM
+#    - image:
+#        src: 'image/c57-region-hotspots/map-trojena.png'
+#        alt: 'map image'
+#        sources:
+#          - src: 'image/c57-region-hotspots/map-trojena.png'
+#            media: '(min-width: 480px)'
+#      caption: Situated in the heart of NEOM(2)
+
+intro:
+  type: video
+  video:
+    props:
+      sources:
+        - src: 'video/trojena-map-animation-no-text.mp4'
+          type: video/mp4
+      originalWidth: 16
+      originalHeight: 9
+      autoplay: true
+      muted: true
+      loop: false
+      playsinline: true
+  steps:
+    - caption: Explore TROJENA
+    - caption: Situated in the heart of NEOM
+
+overlayBackgrounds:
+  - src: 'image/c61-hotspot-map/cloud-1.png'
+  - src: 'image/c61-hotspot-map/cloud-3.png'
+  - src: 'image/c61-hotspot-map/cloud-4.png'
+
+mapBackground:
+  src: 'image/c61-hotspot-map/trojena-map.jpg'
+  alt: 'map image'
+
+items:
+  - content:
+      - heading:
+          text: 'Ski village'
+        copy:
+          'In the daytime, the high-altitude ski village includes outdoor runs down the mountain and
+          many other adventure sports besides. Then at night, the 2,300-meter-high village
+          transforms into a center for outdoor entertainment, events, elevated dining and
+          stargazing. A bespoke five-star hotel awaits those seeking an original retreat.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: 'Ski village'
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    active: false
+    offset:
+      y: 24
+      x: 22
+  - content:
+      - heading:
+          text: 'The vault'
+        copy:
+          'Our futuristic folded vertical village connects the physical and digital worlds. As the
+          main gateway into TROJENA  and the ‘brain’ of the region, it offers bespoke experiences
+          where reality and imagination are combined. This architectural and technology wonder is
+          set in a valley with its own microclimate, lush greenery, water features and
+          transformational architecture.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: 'The vault'
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 63
+      x: 29
+  - content:
+      - heading:
+          text: 'Lake'
+        copy:
+          'This precision-engineered mountain-top lake is the beating heart of TROJENA. It features
+          a large public realm and stunning outdoor water-edge spaces – ideal for events, family
+          fun, serene walks and water sports access. As the sculptural centerpiece of the mountain
+          region, it will provide unrivaled outdoors water sports and entertainment activities and
+          views – for residents and tourists alike.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: 'Lake'
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 40
+      x: 48
+  - content:
+      - heading:
+          text: 'Wildlife reserve'
+        copy:
+          'A serene and secluded natural habitat full of diverse wildlife – with high-end resorts
+          situated near to untouched heritage sites. A pristine environment combines digital
+          activations with augmented reality features. Nature and technology come together in
+          perfect symbiosis to deliver the ultimate mountain and desert outdoor edutainment
+          experience.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: 'Wildlife reserve'
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 31
+      x: 62
+  - content:
+      - heading:
+          text: 'Observatory'
+        copy:
+          'Just south of The Vault, this is where you will get the best views of the unique
+          surrounding region during the day and amazing views of the heavenly star-lit skies at
+          night. The panorama from the peak will display the mountain in all its glory. Enjoy the
+          iconic pavilion, mesmerizing vistas and entertainment – all while dining in style.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: 'Observatory'
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 75
+      x: 39
+  - content:
+      - heading:
+          text: 'Bow'
+        copy:
+          'The Bow is a hidden world underneath the lake with a large adaptable spaces hosting
+          conferences, concerts, sports, entertainment, art galleries, events, nightlife, weddings
+          and much more besides. It will also boast a five-star hotel, high-end residences and fine
+          dining – all driven by advanced technology and situated in the atriums of this
+          water-embedded structure.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: 'Bow'
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 31
+      x: 53
+  - content:
+      - heading:
+          text: 'Ultra-luxury mansions'
+        copy:
+          'Limited and exclusive iconic residences, tailored to their owner’s needs and set in
+          harmony with the surrounding landscape. Each is created by the world’s best architects.
+          The homes offer a transformative lifestyle. And all of the tech-enabled properties are
+          strategically placed in premium locations, providing incredible panoramic views of the
+          Lake and surrounding mountain scape.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: 'Ultra-luxury mansions'
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 28
+      x: 79

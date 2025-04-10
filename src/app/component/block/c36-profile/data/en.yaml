@@ -1,0 +1,23 @@
+scrollComponent: true
+
+sectorImage:
+  src: 'image/sectors/energy.png'
+  alt: Energy sector
+
+header:
+  eyebrow:
+    text: Our people
+    size: medium
+  moustache:
+    text:
+      NEOM is drawing knowledge from around the world to simulate financial innovation and drive
+      positive economic change. This expertise ensures NEOM can continue to innovate within the
+      Financial Services sector
+    size: small
+  alignment: left
+
+people:
+  - 'import!../../../molecule/m22-person-card/data/gavin.yaml'
+  - 'import!../../../molecule/m22-person-card/data/gavin.yaml'
+  - 'import!../../../molecule/m22-person-card/data/gavin.yaml'
+  - 'import!../../../molecule/m22-person-card/data/gavin.yaml'

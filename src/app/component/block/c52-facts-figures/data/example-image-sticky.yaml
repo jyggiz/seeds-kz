@@ -1,0 +1,26 @@
+scrollComponent: true
+
+header:
+  disableTransition: true
+  alignment: left
+  eyebrow:
+    text: Overline text
+  heading:
+    text: Heading text
+    size: h4
+
+background:
+  scrollComponent: true
+  solidOverlay: true
+  sticky: true
+  disableTransition: true
+  image:
+    src: './image/homepage-mountain-background.jpg'
+    alt: 'Something Something'
+    sources:
+      - src: 'image/c49-scroll-gallery/gallery-image-7.jpg'
+        media: '(max-width: 768px)'
+
+items:
+  - 'import!../../../organism/o58-facts-list/data/example-icons.yaml'
+  - 'import!../../../organism/o58-facts-list/data/example-figures.yaml'

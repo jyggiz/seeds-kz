@@ -1,0 +1,138 @@
+disableUI: true
+items:
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-1.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-1.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Regenerative wellnes programs'
+        size: 'h3'
+    alignment:
+      vertical: middle
+      horizontal: center
+    active: true
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-2.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-2.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Transformative experiences'
+        size: 'h3'
+    alignment:
+      vertical: middle
+      horizontal: center
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-3.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-3.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Architectural excellence'
+        size: 'h3'
+    active: false
+    alignment:
+      vertical: middle
+      horizontal: center
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-4.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-4.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Premium luxury'
+        size: 'h3'
+    active: false
+    alignment:
+      vertical: middle
+      horizontal: center
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-5.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-5.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Protected heritage sites'
+        size: 'h3'
+    alignment:
+      vertical: middle
+      horizontal: center
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-6.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-6.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Thriving wildlife reserves'
+        size: 'h3'
+    alignment:
+      vertical: middle
+      horizontal: center
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-7.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-7.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Advanced technology observatory'
+        size: 'h3'
+    alignment:
+      vertical: middle
+      horizontal: center
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-8.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-8.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Exclusive resorts, residences & events'
+        size: 'h3'
+    alignment:
+      vertical: middle
+      horizontal: center
+    active: false

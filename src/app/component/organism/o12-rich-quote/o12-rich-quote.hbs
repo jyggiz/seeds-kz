@@ -1,0 +1,38 @@
+
+<div class="o-richQuote{{#if theme}} t-{{theme}}{{/if}}{{#if variant}} -{{variant}}{{/if}}"
+  data-component="o12-rich-quote">
+  <div class="o-richQuote__container">
+    <div class="o-richQuote__authorAsset" data-author-asset>
+      <div class="o-richQuote__assetRatio {{#if landscape}}-landscape{{/if}}">
+        <div class="o-richQuote__assetMask" data-asset-mask>
+          <div class="o-richQuote__assetWrapper" data-asset-wrapper>
+            {{#if video}}
+              <div data-video="{{ toJson video }}" data-video-mobile>
+                {{> organism/o03-video-player  video=(setProperties video 'props.disablePreload' 'true') image=image }}
+              </div>
+            {{^}}
+              {{> atom/a01-image image disableTransition=true }}
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="o-richQuote__authorQuote">
+      <div class="o-richQuote__quote" data-quote>
+        {{> molecule/m01-blockquote quote }}
+
+        {{#with link}}
+          {{> molecule/m02-button size='small' }}
+        {{/with}}
+
+        {{#if video}}
+          {{#if (condition (condition theme '===' 'dark') '||' (condition theme '===' 'orange')) }}
+            {{> molecule/m02-button button icon="play-outline" level="secondary" size="small" theme="white" }}
+          {{^}}
+            {{> molecule/m02-button button theme="dark-gold" icon="play-outline" size="small" }}
+          {{/if}}
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

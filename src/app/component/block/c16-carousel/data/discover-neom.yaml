@@ -1,0 +1,103 @@
+scrollComponent: true
+
+header:
+  heading:
+    text: What's happening <br /> <span>at NEOM</span>
+    size: h4
+
+items:
+  - heading:
+      text:
+        NEOM and Volocopter establish joint venture to create the world’s first bespoke public eVTOL
+        mobility system
+    variant: article
+    link:
+      href: #
+      target: '_blank'
+    callToAction:
+      label: Read more
+      target: _blank
+      icon: arrow-right
+      iconAlign: right
+    image:
+      alt: 'Image'
+      src: 'image/c16-carousel/discover-neom-1.jpg'
+      sources:
+        - src: 'image/c16-carousel/discover-neom-1.jpg'
+          media: '(min-width: 768px)'
+
+  - heading:
+      text:
+        HRH Prince Mohammed Bin Salman announces the establishment of OXAGON, the largest floating
+        industrial complex in the world
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/discover-neom-2.jpg'
+    video:
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Welcome to THE LINE'
+            title: 'Welcome to THE LINE'
+            src: video/video-preview.mp4
+
+  - heading:
+      text:
+        NEOM and MBC Group form joint venture to establish first AAA games studio in the Middle East
+    variant: article
+    image:
+      alt:
+      src: 'image/c16-carousel/discover-neom-3.jpg'
+    link:
+      href: http://newsroom.neom.com/neom-moves-headquarters-to-northwest-of-the-kingdom
+      target: '_blank'
+    callToAction:
+      label: Read more
+      target: _blank
+      icon: arrow-right
+      iconAlign: right
+
+  - heading:
+      text:
+        HRH Prince Mohammed Bin Salman announces the establishment of OXAGON, the largest floating
+        industrial complex in the world
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/discover-neom-2.jpg'
+    video:
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Welcome to THE LINE'
+            title: 'Welcome to THE LINE'
+            src: video/video-preview.mp4

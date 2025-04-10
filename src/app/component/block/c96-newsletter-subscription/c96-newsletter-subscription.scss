@@ -1,0 +1,123 @@
+.b-newsletterSubscription {
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  .m-componentHeader {
+    --component-heading-color: var(--color-white);
+    --component-text-color: var(--color-white);
+
+    .a-eyebrow {
+      margin: 0;
+    }
+
+    .a-moustache {
+      margin: 0;
+    }
+  }
+
+  &__container {
+    padding: 240px var(--container-margin) 30px;
+    position: relative;
+
+    @include respond-to(MEDIUM) {
+      @include container();
+      margin-inline: unset;
+      padding-block: 80px;
+      width: 60%;
+    }
+  }
+
+  &__form {
+    --border-radius: 30px;
+
+    margin: 30px 0 0;
+    max-width: 430px;
+    position: relative;
+
+    .o-form__fieldset {
+      margin: 0;
+    }
+
+    .m-textField {
+      margin: 0;
+
+      &__textLabel {
+        display: none;
+      }
+
+      .a-input__input {
+        border-radius: var(--border-radius);
+        padding-inline-start: 25px;
+        padding-inline-end: 140px;
+      }
+    }
+
+    .m-button {
+      --button-border-radius: var(--border-radius);
+      --button-font-size: 12px;
+      --button-padding: 28px;
+      --button-size: 48px;
+
+      margin: 6px;
+      max-width: 130px;
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline-end: 0;
+
+      &:disabled {
+        --button-background-color-hover: var(--button-background-color);
+
+        .m-button__container {
+          background-color: var(--button-background-color);
+          border-color: var(--button-border-color);
+          color: var(--button-text-color);
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .a-formError {
+      color: var(--color-ui-error-dark);
+      margin: 5px 25px 0;
+    }
+
+    .o-form__response {
+      padding-block-start: 0;
+
+      &IconWrapper {
+        display: none;
+      }
+
+      .-error {
+        margin: 5px 25px 0;
+
+        .o-form__responseHeading,
+        .o-form__responseDescription {
+          @include type("body", "xsmall");
+          font-weight: 400;
+          text-transform: uppercase;
+          color: var(--color-ui-error-dark);
+          letter-spacing: normal;
+        }
+      }
+    }
+
+    .a-recaptcha {
+      margin: 0;
+    }
+  }
+
+  &.-center {
+    .b-newsletterSubscription__container {
+      margin: auto;
+
+      .b-newsletterSubscription__form {
+        margin-inline: auto;
+      }
+    }
+  }
+
+  .-isHidden {
+    display: none;
+  }
+}

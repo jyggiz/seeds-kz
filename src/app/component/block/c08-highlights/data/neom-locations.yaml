@@ -1,0 +1,28 @@
+scrollComponent: true
+fullMinHeight: true
+
+header:
+  eyebrow:
+    text: Our locations
+    size: medium
+  heading:
+    text: 'NEOM offices'
+    size: h4
+
+items:
+  - image:
+      alt: No cars
+      src: 'icon/c08-stats/no-cars.svg'
+    title:
+      text: NEOM OFFICE
+
+    link:
+      label: Learn more
+      href: '#'
+      target: _blank
+
+  - image:
+      alt: MAX 20 MINUTE COMMUTE
+      src: 'icon/c08-stats/commute.svg'
+    title:
+      text: NEOM HQ

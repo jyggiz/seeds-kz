@@ -1,0 +1,17 @@
+.b-navigationTiles {
+  @include neomThemes;
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  overflow: hidden;
+  padding-block: var(--component-block-padding, var(--container-margin));
+
+  &__container {
+    @include container;
+
+    display: grid;
+    padding: 0;
+    grid-gap: var(--grid-gap);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

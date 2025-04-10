@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="./o100-static-grid.scss">
+<script src="./O100StaticGrid.ts"></script>
+
+<div class="o-staticGrid{{#if fullWidth}} -fullWidth{{/if}}"
+  style="
+    {{#if (condition columnGap.smallScreen "||" (condition columnGap.smallScreen '===' 0))}}--column-gap-small: {{columnGap.smallScreen}};{{/if}}
+    {{#if (condition columnGap.mediumScreen "||" (condition columnGap.mediumScreen '===' 0))}}--column-gap-medium: {{columnGap.mediumScreen}};{{/if}}
+    {{#if (condition columnGap.largeScreen "||" (condition columnGap.largeScreen '===' 0))}}--column-gap-large: {{columnGap.largeScreen}};{{/if}}
+    {{#if (condition rowGap.smallScreen "||" (condition rowGap.smallScreen '===' 0))}}--row-gap-small: {{rowGap.smallScreen}};{{/if}}
+    {{#if (condition rowGap.mediumScreen "||" (condition rowGap.mediumScreen '===' 0))}}--row-gap-medium: {{rowGap.mediumScreen}};{{/if}}
+    {{#if (condition rowGap.largeScreen "||" (condition rowGap.largeScreen '===' 0))}}--row-gap-large: {{rowGap.largeScreen}};{{/if}}
+  "
+  data-component="o100-static-grid"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+>
+  {{#each items}}
+    {{> ./_static-grid-item.hbs this }}
+  {{/each}}
+</div>

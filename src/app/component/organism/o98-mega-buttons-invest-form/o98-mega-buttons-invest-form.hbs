@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="./o98-mega-buttons-invest-form.scss">
+<script src="./O98MegaButtonsInvestForm.ts"></script>
+
+<div class="o-megaButtonsInvestForm"
+  data-component="o98-mega-buttons-invest-form"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+>
+  <div class="o-megaButtonsInvestForm__grid" data-mega-buttons>
+    {{> organism/o99-dynamic-grid items=buttons columns=(object columnsM=2 columnsS=1) gap='20px'}}
+  </div>
+
+  <div class="o-megaButtonsInvestForm__drillDownControlsContainer" data-drilldown-container>
+    {{#each drilldownControls}}
+      <div class="o-megaButtonsInvestForm__drillDownControls"  data-for-button-id="{{forButtonWithId}}">
+          {{> atom/a26-fieldset-legend header required=true}}
+        <div class="o-megaButtonsInvestForm__drillDownControlsDesktop" data-desktop-control>
+          {{#with desktop.control}}
+            <div class="o-megaButtonsInvestForm__drillDownControl">
+              {{> (lookup . 'componentName') data }}
+            </div>
+          {{/with}}
+        </div>
+        <div class="o-megaButtonsInvestForm__drillDownControlsMobile" data-mobile-control>
+          {{#with mobile.control}}
+            <div class="o-megaButtonsInvestForm__drillDownControl" data-form-control-container>
+              {{> (lookup . 'componentName') data }}
+            </div>
+          {{/with}}
+          {{> molecule/m02-button mobile.submitButton type='submit' data=(object submit="")}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

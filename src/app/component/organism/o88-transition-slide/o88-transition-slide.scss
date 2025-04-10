@@ -1,0 +1,205 @@
+.o-transitionSlide {
+  &__content,
+  &__statistic {
+    position: relative;
+    z-index: zindex($zLayout, content);
+  }
+
+  &__container {
+    max-width: 1600px;
+    width: 100%;
+    padding-inline-start: var(--container-margin);
+    padding-inline-end: var(--container-margin);
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__statistic {
+    display: none;
+  }
+
+  &__content {
+    text-align: center;
+
+    .a-eyebrow {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    margin-block-start: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .o-regionSliderNavigation {
+    position: relative;
+    max-height: none;
+
+    .a-image__picture,
+    .a-image {
+      top: 0;
+
+      &__img {
+        object-position: 45% 50%;
+      }
+    }
+
+    &__map {
+      height: 100%;
+
+      &::after {
+        @include pseudo;
+        @include size(100%, 30px);
+
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0deg, var(--component-background-color) 0%, transparent 100%);
+        pointer-events: none;
+        transition: opacity 100ms ease;
+      }
+
+      .a-image__img {
+        &[src=""] {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+      & > .a-image {
+        transition: opacity 0.7s ease;
+      }
+
+      &.-isActive {
+        & > .a-image,
+        &::after {
+          opacity: 0;
+        }
+      }
+    }
+
+    &__pagination {
+      --box-shadow-pulse-color: var(--color-white-25a);
+
+      bottom: 0;
+      height: 100%;
+      transform: none;
+
+      .m-tooltip {
+        opacity: 0;
+        width: auto;
+        white-space: nowrap;
+        padding: 15px 30px;
+
+        .a-eyebrow {
+          display: flex;
+          align-items: center;
+
+          &:after {
+            @include pseudo(inline, static, "→");
+            margin-inline-start: 10px;
+            padding-bottom: 5px;
+            font-size: 20px;
+
+            [dir="rtl"] & {
+              content: "←";
+            }
+          }
+        }
+      }
+
+      .a-stepIndicator {
+        animation: box-shadow-pulse 2s infinite;
+        border-radius: 50%;
+        transition: background-color 250ms ease, opacity 250ms ease;
+
+        &__index {
+          display: none;
+        }
+
+        &.-isActive {
+          background-color: var(--color-white);
+
+          & ~ a > .m-tooltip {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+
+      &Line {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1023.5px) {
+    display: grid;
+
+    &__content {
+      display: grid;
+      height: 100%;
+    }
+
+    &__buttons {
+      align-self: end;
+    }
+  }
+
+  @include respond-to(LARGE) {
+    &__content,
+    &__statistic {
+      text-align: start;
+      max-width: 450px;
+      margin-left: auto;
+    }
+
+    &__buttons {
+      justify-content: start;
+    }
+
+    &__learnMoreButton {
+      display: none;
+    }
+
+    &__statistic {
+      display: block;
+    }
+
+    &__statistic + &__content {
+      margin-block-start: 40px;
+    }
+
+    .o-regionSliderNavigation {
+      @include offset(0);
+      @include size(100%);
+
+      position: absolute;
+      z-index: zindex($zLayout, content);
+      max-width: none;
+
+      &__map::after {
+        display: none;
+      }
+
+      &__pagination {
+        max-width: max(85vh, 37vw);
+        left: 45%;
+        transform: translateX(-50%);
+
+        .m-tooltip {
+          display: none;
+        }
+      }
+
+      .a-image__img {
+        object-position: center;
+      }
+    }
+  }
+
+  @import "styles/features";
+  @import "styles/places";
+  @import "styles/regions";
+}

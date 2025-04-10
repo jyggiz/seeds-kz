@@ -1,0 +1,234 @@
+scrollComponent: true
+
+static: false
+
+overlayBackgrounds:
+  - src: 'image/c61-hotspot-map/cloud-1.png'
+  - src: 'image/c61-hotspot-map/cloud-3.png'
+  - src: 'image/c61-hotspot-map/cloud-4.png'
+
+mapBackground:
+  src: image/c61-hotspot-map/tourism-map.jpg
+  alt: 'map image'
+
+items:
+  - content:
+      - heading:
+          text: Trojena
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba. '
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+
+        image:
+          alt: Trojena
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 37
+      x: 47
+  - content:
+      - heading:
+          text: Oxagon
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Oxagon
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 71
+      x: 49
+  - content:
+      - heading:
+          text: The Line
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: The Line
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 90
+      x: 52
+  - alternateHotspotStyle: true
+    icon: 'kitesurfing'
+    variant: 'event'
+    content:
+      - heading:
+          text: Kitesurfing
+        subTitle:
+          icon: 'marker'
+          label: Gayal Port Arena
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Kitesurfing
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 63
+      x: 32
+  - alternateHotspotStyle: true
+    icon: 'triathlon'
+    variant: 'event'
+    content:
+      - heading:
+          text: Triathlon
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Triathlon
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 70
+      x: 30
+  - alternateHotspotStyle: true
+    icon: 'basketball'
+    variant: 'event'
+    content:
+      - heading:
+          text: 3x3 basketball
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: 3x3 basketball
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 69
+      x: 40
+  - alternateHotspotStyle: true
+    icon: 'beach-soccer'
+    variant: 'event'
+    content:
+      - heading:
+          text: Beachsoccer
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Beachsoccer
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 71
+      x: 43
+
+itineraries:
+  - image:
+      src: './image/homepage-mountain-background.jpg'
+    heading: 'This is a trip 1'
+    description: 'This is a trip description 1'
+    path:
+      - 1
+      - 2
+      - 3
+    items:
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 1'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 1'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 1'
+
+  - image:
+      src: 'image/c26-hero-banner/homepage/teaser-homepage.jpg'
+    heading: 'This is a trip 2'
+    description: 'This is a trip description 2'
+    path:
+      - 3
+      - 4
+      - 5
+    items:
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 2'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 2'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 2'
+
+  - image:
+      src: 'image/c26-hero-banner/homepage/teaser-homepage.jpg'
+    heading: 'This is a trip 3'
+    description: 'This is a trip description 3'
+    items:
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 3'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 3'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 3'
+
+  - image:
+      src: 'image/c26-hero-banner/homepage/teaser-homepage.jpg'
+    heading: 'This is a trip 4'
+    description: 'This is a trip description 4'
+    path:
+      - 8
+      - '-' #this is to simulate what a content manager might pass to indicate that a stop in an itinerary is not part of the hotspots in map
+      - 9
+      - 10
+      - '-' #this is to simulate what a content manager might pass to indicate that a stop in an itinerary is not part of the hotspots in map
+      - 26
+
+    items:
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 4'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 4'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 4'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 4'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 4'
+      - title: '13:00 PM'
+        description: 'This is a stop during the trip 4'

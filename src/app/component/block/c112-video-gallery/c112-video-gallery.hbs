@@ -1,0 +1,26 @@
+
+
+<section class="b-videoGallery{{#if theme}} t-{{theme}}{{/if}}"
+  data-component="c112-video-gallery"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+    style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+    {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component
+>
+  <div class="b-videoGallery__container">
+    {{#with header}}
+      {{> molecule/m04-component-header }}
+    {{/with}}
+    <ul class="b-videoGallery__items">
+      {{#each items}}
+        <li class="b-videoGallery__item">
+          {{> organism/o32-gallery-card }}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

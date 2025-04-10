@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="./a08-page-indicators.scss">
+<script src="./A08PageIndicators.ts"></script>
+
+<div class="a-pageIndicators" data-component="a08-page-indicators" data-slider-pagination>
+  {{#each items}}
+    <span class="a-pageIndicators__item{{#if active}} -isActive{{/if}}"></span>
+  {{/each}}
+</div>

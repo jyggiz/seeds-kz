@@ -1,0 +1,20 @@
+
+
+<section class="b-factsAndFigures {{#if backgroundImage}}-hasBackgroundImage{{/if}}"
+  data-component="c28-facts-and-figures"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  data-lazy-component>
+  {{#if backgroundImage}}
+    {{> molecule/m03-sticky-media image=backgroundImage}}
+  {{/if}}
+  <div class="b-factsAndFigures__container">
+    <ul class="b-factsAndFigures__items">
+      {{#each figures}}
+        <li class="b-factsAndFigures__item" data-figure>
+          {{> ./figure }}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

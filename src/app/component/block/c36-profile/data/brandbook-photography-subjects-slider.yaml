@@ -1,0 +1,36 @@
+scrollComponent: true
+
+header:
+  eyebrow:
+    text: PHOTOGRAPHY SUBJECTS
+    size: medium
+  moustache:
+    text: The economic sectors are the foundations for everything we are creating within NEOM.
+    size: small
+  alignment: left
+
+people:
+  - image:
+      alt: Energy image
+      src: 'image/c36-profile/brandbook/subjects/01-energy.jpg'
+    biography: Show the foremost methods of capturing the power of the elements.
+  - image:
+      alt: Water image
+      src: 'image/c36-profile/brandbook/subjects/02-water.jpg'
+    biography: Show the foremost methods of capturing the power of the elements.
+  - image:
+      alt: Water image
+      src: 'image/c36-profile/brandbook/subjects/03-mobility.jpg'
+    biography: Show the foremost methods of capturing the power of the elements.
+  - image:
+      alt: Water image
+      src: 'image/c36-profile/brandbook/subjects/04-biotech.jpg'
+    biography: Show the foremost methods of capturing the power of the elements.
+  - image:
+      alt: Water image
+      src: 'image/c36-profile/brandbook/subjects/05-food.jpg'
+    biography: Show the foremost methods of capturing the power of the elements.
+  - image:
+      alt: Water image
+      src: 'image/c36-profile/brandbook/subjects/06-advanced-manufacturing.jpg'
+    biography: Show the foremost methods of capturing the power of the elements.

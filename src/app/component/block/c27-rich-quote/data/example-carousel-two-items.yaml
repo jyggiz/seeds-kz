@@ -1,0 +1,88 @@
+overlapTopComponent: true
+scrollComponent: true
+
+items:
+  - quote:
+      icon: quote
+      author:
+        name: Joseph Bradley
+        role: Head of Technology and Digital
+      quote:
+        '<p>NEOM is not about building a smart city, but building a cognitive one. The second we
+        started our recce, we were blown away by the scenery and the variety in the landscape of
+        NEOM. Bajdah caught our hearts and when we arrived there we knew immediately that this is
+        location where need to film the first season of Million Dollar Land especially with the
+        visual diversity it offered. In no time our production crews, technical teams and set
+        building teams were on the ground preparing for the start of one of the biggest reality
+        shows ever filmed in the region with the facilitation and support of the international
+        production team in NEOM. What an amazing adventure and experience!!! Can’t wait to film
+        again….</p>'
+    image:
+      src: 'image/joseph_bradley.jpg'
+      alt: 'Photo of Joseph Bradley'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        originalWidth: 512
+        originalHeight: 640
+        autoplay: false
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'The Future of Technology: Joseph Bradley'
+            title: 'The Future of Technology: Joseph Bradley'
+            src: 'video/quote-video-preview.mp4'
+    thumbnail:
+      src: 'image/thumbnails/joseph-bradley-thumbnail.jpg'
+      alt: 'Photo of Joseph Bradley'
+    button:
+      label: Watch
+      data:
+        play-button:
+
+  - quote:
+      icon: quote
+      author:
+        name: Dr. Maliha Hashmi
+        role: Executive Director of Health and Well-Being
+      quote:
+        '<p>NEOM offers a platform where health and well-being can be integrated into daily
+        life.</p>'
+    image:
+      src: 'image/maliha-hashmi-main.jpg'
+      alt: 'Photo of Dr. Maliha Hashmi'
+    video:
+      props:
+        sources:
+          - src: 'video/quote-video-preview.mp4'
+            type: video/mp4
+        autoplay: false
+        originalWidth: 512
+        originalHeight: 640
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'The Future of Health and Well-Being: Dr. Maliha Hashmi'
+            title: 'The Future of Health and Well-Being: Dr. Maliha Hashmi'
+            src: 'video/quote-video-preview.mp4'
+    thumbnail:
+      src: 'image/thumbnails/maliha-hashmi-thumbnail.jpg'
+      alt: 'Photo of Dr. Maliha Hashmi'
+    button:
+      label: Watch
+      data:
+        play-button:

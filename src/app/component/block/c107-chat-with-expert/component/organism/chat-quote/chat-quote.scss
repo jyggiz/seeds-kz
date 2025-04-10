@@ -1,0 +1,67 @@
+.o-chatQuote {
+  display: grid;
+  grid-auto-flow: row;
+  align-content: start;
+  justify-items: center;
+  justify-content: center;
+  row-gap: fluid-clamp-ideal(20px, 30px);
+  position: relative;
+  text-align: center;
+
+  &__iconWrapper {
+    --icon-size: 78px;
+    --icon-fill: var(--component-highlight-color);
+  }
+
+  &__textWrapper {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: fluid-clamp-ideal(10px, 20px);
+  }
+
+  &__title {
+    @include type("overline", "medium");
+    color: var(--component-highlight-color);
+  }
+
+  &__quote {
+    color: var(--color-white);
+
+    &.-small {
+      @include type("body", "small");
+    }
+
+    &.-medium {
+      @include type("body", "medium");
+    }
+
+    &.-large {
+      @include type("body", "large");
+    }
+
+    &.-xlarge {
+      @include type("body", "xlarge");
+    }
+  }
+
+  @include respond-to(XLARGE) {
+    justify-items: start;
+    text-align: start;
+  }
+
+  @media (min-width: 768px) and (max-height: 800px) {
+    &__iconWrapper {
+      --icon-size: 40px;
+    }
+
+    &__quote {
+      &.-large {
+        @include type("body", "medium");
+      }
+
+      &.-xlarge {
+        @include type("body", "large");
+      }
+    }
+  }
+}

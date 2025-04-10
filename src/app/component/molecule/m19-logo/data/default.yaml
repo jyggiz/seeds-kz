@@ -1,0 +1,8 @@
+link:
+  href: '/index.html'
+  label: 'NEOM.com homepage'
+  target: null
+image:
+  src: 'image/logo-header.webp'
+  alt: 'NEOM logo'
+  variant: contain

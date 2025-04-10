@@ -1,0 +1,54 @@
+.o-expertInformation {
+  @include size(100%, 270px);
+
+  z-index: zindex($zLayout, tooltip);
+  position: relative;
+  transition: 0.5s $easeInOutSine;
+
+  &.-isExpanded {
+    @include size(100%, 500px);
+  }
+
+  &__expertBio {
+    inset-block-end: 30px;
+    inset-inline-start: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__expertName {
+    color: var(--color-white);
+  }
+
+  &__expertRole {
+    @include type("body", "small");
+
+    margin-top: 15px;
+    color: var(--color-gold);
+  }
+
+  @include respond-to("XLARGE") {
+    @include size(100%);
+    @include vh(100);
+    @include offset();
+
+    z-index: zindex($zLayout, default);
+    position: absolute;
+    max-height: inherit;
+    background: var(--color-black);
+    pointer-events: none;
+
+    &.-isExpanded {
+      @include size(100%);
+      @include vh(100);
+    }
+
+    &__expertBio {
+      inset-inline-start: var(--containerMargin);
+      inset-block-end: 100px;
+      max-width: 340px;
+      text-align: start;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<ul class="o-dropdownNavigation__items"{{#if @root.navigation.mainAriaLabel}} aria-label="{{@root.navigation.mainAriaLabel}}"{{/if}} data-navigaton-menu-items>
+  {{#each this}}
+  <li class="o-dropdownNavigation__item{{#if active}} -isActive{{/if}}"
+  {{#if type}}{{#if (condition type '!==' 'CTA' )}}data-navigation-menu{{/if}}{{/if}} data-navigation-item>
+    {{#unless type}}
+    {{> ./_link.hbs}}
+    {{else}}
+    {{#if (condition type '===' 'CTA')}}
+    {{> molecule/m02-button button variant="CTA"}}
+    {{else}}
+    <button class="o-dropdownNavigation__button{{#if highlighted}} -highlighted{{/if}}" aria-expanded="false" aria-haspopup="true" data-navigation-menu-button>
+      <span class="o-dropdownNavigation__label">{{ label }}
+        {{> atom/a02-icon name="chevron-down" }}
+      </span>
+    </button>
+    {{> ../o31-dropdown-navigation-list }}
+    {{/if}}
+    {{/unless}}
+  </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,39 @@
+
+
+
+<section class="b-factsList{{#if theme}} t-{{theme}}{{/if}}{{#if variant}} -{{variant}}{{/if}}"
+         data-component="c71-facts-list"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         data-variant="{{variant}}"
+         data-heading="{{toJson heading}}"
+         data-eyebrow="{{toJson eyebrow}}"
+         data-lazy-component>
+  <div class="b-factsList__container">
+    <div class="b-factsList__content">
+      <div class="b-factsList__contentWrapper swiper-container" data-slider>
+        <ul class="b-factsList__items swiper-wrapper">
+          {{#each items}}
+            <li class="b-factsList__item swiper-slide{{#if @first}} -isActive{{/if}}" {{#if modal}}data-modal="{{toJson modal}}"{{/if}} data-item>
+              <div class="b-factsList__image" data-image>
+                {{> atom/a01-image image disableTransition="true" aria=(object hidden="true") }}
+              </div>
+              <div class="b-factsList__copy" >
+                {{#if ../eyebrow}}
+                  {{> atom/a04-eyebrow ../eyebrow }}
+                {{/if}}
+                <h2 class="b-factsList__heading">{{ ../heading }}</h2>
+                <{{#if modal}}button{{^}}p{{/if}} class="b-factsList__title" data-title>
+                  {{ title }}
+                </{{#if modal}}button{{^}}p{{/if}}>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="b-factsList__pagination" data-pagination>
+        {{> atom/a08-page-indicators items=null }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,103 @@
+.o-searchBar {
+  --search-form-padding: 35px 21px;
+  --search-form-justify-content: flex-start;
+  --input-width: calc(100% - 62px);
+  --input-placeholder-color: $colorBlack-50;
+  --input-max-width: calc(100% - 15vw);
+
+  &.desktop-only {
+    --search-form-padding: 20px;
+    --search-form-justify-content: space-between;
+    --input-placeholder-color: var(--color-white);
+    --search-icon-display: none;
+    --action-container-display: flex;
+    --input-max-width: 100%;
+
+    @include respond-to(MEDIUM) {
+      --search-form-padding: 30px 70px;
+    }
+  }
+
+  background: var(--gradient-navigation-open-search);
+
+  &__searchForm {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: var(--search-form-padding);
+    justify-content: var(--search-form-justify-content);
+
+    & > .a-icon {
+      --icon-size: 16px;
+      --icon-fill: var(--color-white);
+
+      display: var(--search-icon-display, inline-block);
+      margin-inline-end: 15px;
+    }
+  }
+
+  .a-input {
+    width: 100%;
+
+    &__input {
+      @include type("subTitle", "small");
+
+      background-color: transparent;
+      border: none;
+      color: var(--color-white);
+      max-width: var(--input-max-width);
+
+      &::-webkit-search-cancel-button {
+        display: none;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+
+      @include input-placeholder {
+        color: var(--input-placeholder-color);
+        overflow: visible;
+      }
+
+      &.-isPlaceholderHidden {
+        @include input-placeholder {
+          color: transparent;
+        }
+      }
+    }
+  }
+
+  .m-button {
+    &.-isDisabled {
+      cursor: not-allowed;
+      pointer-events: none;
+
+      .a-icon {
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &__actionContainer {
+    display: var(--action-container-display, none);
+
+    & > .m-button {
+      --button-size: 40px;
+      --button-icon-size: 16px;
+
+      margin-inline-start: fluid-clamp-ideal(20px, 30px, 360px, 1440px);
+
+      @include respond-to(MEDIUM) {
+        --button-size: 60px;
+        --button-icon-size: 24px;
+      }
+
+      &:hover {
+        --button-background-color-hover: var(--color-white, white);
+        --button-border-color-hover: transparent;
+        --icon-fill: var(--color-black, black);
+      }
+    }
+  }
+}

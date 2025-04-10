@@ -1,0 +1,25 @@
+scrollComponent: true
+variant: double
+theme: 'dark'
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        size: h3
+        text: 'the story of neom'
+  - align:
+      horizontal: starts
+      vertical: middle
+    type: 'paragraph'
+    content:
+      copy:
+        content:
+          '<p>It will challenge and shape the possibilities of global travel in the years to come.
+          Nurturing the raw, untouched landscapes, majestic TROJENA peaks and spectacular coastal
+          waters – this will be a new model for sustainable tourism. From the revolutionary urban
+          design of one of our flagship projects THE LINE – with no pollution and no traffic – to
+          the regenerated and rewilded natural wilderness. It will be a destination like no other,
+          enthralling and enticing the world’s travellers.</p>'

@@ -1,0 +1,42 @@
+scrollComponent: true
+
+header:
+  eyebrow:
+    text: 'mark misuses'
+    size: medium
+  moustache:
+    text:
+      'These missuses, although shown using the NEOM primary brand mark, also apply to all of the
+      secondary marks.'
+    size: small
+  alignment: left
+
+people:
+  - image:
+      alt: NEOM logo
+      src: 'image/c36-profile/brandbook/marks/1.jpg'
+    biography: Always use the patterns provided. Do not substitute or remove elements.
+  - image:
+      alt: NEOM logo
+      src: 'image/c36-profile/brandbook/marks/2.jpg'
+    biography: Always use the patterns provided. Do not substitute or remove elements.
+
+  - image:
+      alt: NEOM logo
+      src: 'image/c36-profile/brandbook/marks/3.jpg'
+    biography: Always use the patterns provided. Do not substitute or remove elements.
+
+  - image:
+      alt: NEOM logo
+      src: 'image/c36-profile/brandbook/marks/4.jpg'
+    biography: Always use the patterns provided. Do not substitute or remove elements.
+
+  - image:
+      alt: NEOM logo
+      src: 'image/c36-profile/brandbook/marks/5.jpg'
+    biography: Always use the patterns provided. Do not substitute or remove elements.
+
+  - image:
+      alt: NEOM logo
+      src: 'image/c36-profile/brandbook/marks/6.jpg'
+    biography: Always use the patterns provided. Do not substitute or remove elements.

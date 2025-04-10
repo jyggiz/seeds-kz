@@ -1,0 +1,245 @@
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    image:
+      src: image/c67-scroll-stories/story-1-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-1-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-1.jpg
+          media: '(min-width: 768px)'
+    content:
+      eyebrow:
+        size: medium
+        text: our purpose
+      heading:
+        text: An accelerator of human progress
+        size: h4
+
+  - align:
+      horizontal: left
+      vertical: top
+    image:
+      src: image/c67-scroll-stories/story-2-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-2-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-2.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: Our voice is assured
+        size: h3
+      copy:
+        content:
+          <p>We talk with conviction about the new future we are building. Our language has
+          self-confidence and belief without being overly grandiose or bombastic.</p>
+
+  - align:
+      horizontal: left
+      vertical: top
+    image:
+      src: image/c67-scroll-stories/story-3-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-3-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-3.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: Our voice is expert
+        size: h3
+      copy:
+        content:
+          <p>We are experts and know everything about our subject matter. We are not afraid of
+          detail, and we can talk with authority about the latest technologies which will find their
+          home at NEOM.</p>
+
+  - align:
+      horizontal: right
+      vertical: top
+    image:
+      src: image/c67-scroll-stories/story-4-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-4-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-4.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: We are inclusive
+        size: h3
+      copy:
+        content:
+          <p>We are building a community. So we talk about ourselves in the first person plural.
+          It’s always ‘we’, never ‘it’, when we talk about NEOM.</p>
+
+  - align:
+      horizontal: spread
+      vertical: middle
+    image:
+      src: image/c67-scroll-stories/story-5-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-5-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-5.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: Our voice is human
+        size: h3
+      copy:
+        content:
+          <p>Although NEOM has immense scale, we never lose sight of the people who will call NEOM
+          home. So we talk with empathy in a language that’s easy.</p>
+
+  - align:
+      horizontal: right
+      vertical: top
+    image:
+      src: image/c67-scroll-stories/story-6-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-6-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-6.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: The principle that guide us
+        size: h5
+      copy:
+        content:
+          '<p>At NEOM’s heart are five fundamentals and interconnecting principles: technology,
+          nature, sustainability, community and livability.</p> <p>They ensure anything you create
+          is intelligent, considered and conceived with true purpose, and set the standard we should
+          look to reach in all you create.</p>'
+
+  - align:
+      horizontal: left
+      vertical: bottom
+    image:
+      src: image/c67-scroll-stories/story-7-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-7-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-7.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: Technology
+        size: h4
+      copy:
+        content:
+          '<p>NEOM is a place where innovation happens faster than anywhere else. Giving people the
+          perfect environment to conceive and develop technology that’s simple, intuitive and
+          enriches the human experience.</p> <p>Working in harmony with nature to enhance, liberate
+          and empower people and serve humankind as a whole.</p>'
+
+  - align:
+      horizontal: right
+      vertical: bottom
+    image:
+      src: image/c67-scroll-stories/story-8-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-8-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-8.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: Nature
+        size: h4
+      copy:
+        content:
+          '<p>None of us are above nature. Our planet is our most precious treasure. It’s priceless
+          and we will respect and protect it. NEOM leads the shift in attitude our world sorely
+          needs. Nature must be entwined with all aspects of our live.</p> <p>Respect the natural
+          balance and diversity of the unique life within NEOM, and always enhancing it for the next
+          generation.</p>'
+
+  - align:
+      horizontal: left
+      vertical: top
+    image:
+      src: image/c67-scroll-stories/story-9-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-9-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-9.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: Community
+        size: h4
+      copy:
+        content:
+          '<p>NEOM must have a distinctive sense of place and purpose. Setting the stage for
+          NEOMeons to create an ever strengthening culture of difference, diversity and open
+          mindedness.</p> <p>Adaptable, inclusive and progressive – we encourage mutual respect and
+          a lively exchange of ideas. So the brightest minds of our generation can focus on what
+          really matters – living well together.</p>'
+
+  - align:
+      horizontal: left
+      vertical: middle
+    image:
+      src: image/c67-scroll-stories/story-10-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-10-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-10.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: Sustainability
+        size: h4
+      copy:
+        content:
+          '<p>Sustainability is not an optional extra or an item on a checklist. It’s not even a
+          duty. It will be the way of life in NEOM. We don’t just tread lightly.</p> <p>We give back
+          more than we take because we will leave this world in a better condition than we found it.
+          So, every step forward means a better future for us all.</p>'
+
+  - align:
+      horizontal: left
+      vertical: middle
+    image:
+      src: image/c67-scroll-stories/story-11-m.jpg
+      sources:
+        - src: image/c67-scroll-stories/story-11-m.jpg
+          media:
+            'only screen and (min-device-width: 768px) and (max-device-width: 1200px) and
+            (orientation:portrait)'
+        - src: image/c67-scroll-stories/story-11.jpg
+          media: '(min-width: 768px)'
+    content:
+      heading:
+        text: Livability
+        size: h4
+      copy:
+        content:
+          '<p>The environment we create, enriched with smart technology and the benefits that come
+          from sustainability, will work to enhance all aspects of life – physical, mental and
+          social.</p> <p>NEOM must offer an unrivalled quality of life. Setting the benchmark for
+          the perfect living environment.</p>'

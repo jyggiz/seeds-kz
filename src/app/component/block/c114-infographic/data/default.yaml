@@ -1,0 +1,94 @@
+scrollComponent: true
+padding:
+  start: 'regular'
+  end: 'regular'
+heading:
+  element: h2
+  size: h4
+  text: 'EXPLORE OUR <strong>FACTS & FIGURES</strong>'
+image:
+  src: 'image/c46-media-list/item1.jpg'
+  alt: ''
+lightbox: true
+
+items:
+  - variant: 'landscape'
+    image:
+      src: 'image/c46-media-list/item-landscape.jpg'
+    lightbox:
+      image:
+        src: 'image/c46-media-list/item-landscape.jpg'
+    download:
+      label: 'DOWNLOAD file 2MB'
+      href: 'image/c46-media-list/item-landscape.jpg'
+
+  - variant: 'landscape'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+    image:
+      src: 'image/c46-media-list/item1.jpg'
+    lightbox:
+      image:
+        src: 'image/c46-media-list/item1.jpg'
+    copy: '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+  - variant: 'landscape'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+    image:
+      src: 'image/c46-media-list/item2.jpg'
+    lightbox:
+      image:
+        src: 'image/c46-media-list/item2.jpg'
+    copy: '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+  - variant: 'landscape'
+    image:
+      src: 'image/c46-media-list/item3.jpg'
+    lightbox:
+      image:
+        src: 'image/c46-media-list/item3.jpg'
+    copy: '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+  - variant: 'landscape'
+    image:
+      src: 'image/c46-media-list/item4.jpg'
+    lightbox:
+      image:
+        src: 'image/c46-media-list/item4.jpg'
+    copy: '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+  - variant: 'landscape'
+    image:
+      src: 'image/c46-media-list/item5.jpg'
+    lightbox:
+      image:
+        src: 'image/c46-media-list/item5.jpg'
+    copy: '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+  - variant: 'landscape'
+    image:
+      src: 'image/c46-media-list/item6.jpg'
+    lightbox:
+      image:
+        src: 'image/c46-media-list/item6.jpg'
+    copy: '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'

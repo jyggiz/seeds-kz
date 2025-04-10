@@ -1,0 +1,46 @@
+scrollComponent: true
+theme: 'dark'
+
+grid:
+  rowGap:
+    smallScreen: 0
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              size: h5
+              text: 'NEOM Water <br />infrastructure'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 2 / 2 / 7
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            copy:
+              content:
+                '<p><small>NEOM will meet all its water needs through desalination. It is also
+                exploring using revolutionary, sustainable, and carbon-neutral “solar dome”
+                technology. High value chemicals and minerals for use in industry will be extracted
+                from the brine left behind by the desalination process and, in order to protect the
+                marine ecosystem, we are committed to Zero Liquid Discharge (ZLD) to the ocean - a
+                world-first.</small></p> <p><small>All waste water will be recycled and harvested
+                for cellulose, nutrients, grit and biogas. These will be used in landscaping,
+                agriculture, energy and construction. Seasonal storm water runoff will be retained
+                and allowed to return to the land through development of wetlands and other
+                retention methods.</small></p>'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 7 / 2 / 12

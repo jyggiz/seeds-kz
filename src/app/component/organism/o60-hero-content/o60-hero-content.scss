@@ -1,0 +1,359 @@
+.o-heroContent {
+  @include neomThemes;
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  min-height: inherit;
+
+  > .m-componentBackground {
+    transition: opacity 0.75s ease;
+
+    &.-isHidden {
+      opacity: 0;
+    }
+  }
+
+  &__backgroundImage {
+    opacity: 0;
+
+    transition: opacity 0.75s ease;
+
+    &.-isActive {
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    @include size(100%);
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+
+    .m-componentHeader {
+      margin-top: 180px;
+      text-shadow: 0 0 50px var(--color-black-30a);
+
+      .a-heading {
+        text-wrap: balance;
+      }
+    }
+
+    .m-link {
+      flex-direction: row-reverse;
+      gap: 15px;
+      position: absolute;
+      top: 180px;
+
+      .a-icon {
+        --icon-size: 24px;
+      }
+
+      .a-label {
+        transform: none;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--grid-gap) / 2);
+    margin-top: 30px;
+    width: 100%;
+
+    .a-icon svg {
+      fill-rule: evenodd;
+    }
+
+    .m-button {
+      flex-grow: 1;
+
+      &.-iconOnly {
+        flex-grow: 0;
+      }
+    }
+
+    &.-pillar,
+    &.-pillar-short {
+      display: grid;
+      grid-auto-columns: 1fr;
+      margin-top: 170px;
+    }
+
+    &.-pillar-short {
+      margin-top: 70px;
+    }
+
+    .o-heroContent__container.-center & {
+      align-items: center;
+      justify-content: center;
+
+      &.-pillar,
+      &.-pillar-short {
+        align-items: stretch;
+      }
+    }
+
+    &.-tile {
+      --grid-gap: 10px;
+
+      flex-direction: column;
+    }
+
+    .a-eyebrow {
+      text-align: start;
+    }
+  }
+
+  &__container {
+    @include container;
+
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    padding: var(--containerMargin);
+    flex: 1;
+
+    &.-bottom {
+      .o-heroContent__content {
+        justify-content: flex-end;
+      }
+    }
+
+    &.-center {
+      justify-content: center;
+      text-align: center;
+
+      .o-heroContent__content {
+        align-items: center;
+      }
+    }
+
+    &.-end {
+      justify-content: flex-end;
+      text-align: end;
+
+      .o-heroContent__content {
+        align-items: end;
+      }
+    }
+
+    &.-middle {
+      text-align: center;
+
+      .o-heroContent__content {
+        justify-content: center;
+      }
+    }
+
+    &.-start {
+      text-align: start;
+
+      .o-heroContent__content {
+        align-items: start;
+      }
+    }
+
+    &.-top {
+      .o-heroContent__content {
+        justify-content: start;
+      }
+    }
+
+    .m-scrollButton {
+      bottom: unset;
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    .m-componentHeader {
+      margin-top: 120px;
+      max-width: 50vw;
+    }
+
+    &__buttons {
+      gap: var(--grid-gap);
+      flex-direction: row;
+      align-items: center;
+
+      .m-button {
+        flex-grow: 0;
+      }
+
+      .a-eyebrow {
+        grid-column: 1 / 4;
+      }
+
+      &.-tile {
+        --grid-gap: clamp(16px, calc(1rem + ((1vw - 7.68px) * 2.8274)), 35px);
+
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      &.-row {
+        .m-tileCta {
+          flex-direction: row;
+          justify-content: flex-start;
+          gap: fluid-clamp-ideal(10px, 30px);
+          height: auto;
+          text-align: start;
+          padding-block: 30px;
+        }
+      }
+    }
+
+    &__container {
+      padding: var(--containerMargin);
+
+      .o-heroContent:not(.-fullHeight) & {
+        padding: calc(var(--containerMargin) * 2) var(--containerMargin) var(--containerMargin);
+      }
+
+      &.-centralized {
+        .o-heroContent__buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          .m-tileCta {
+            flex-basis: 31.7%;
+            min-width: 220px;
+            max-width: 420px;
+          }
+
+          .a-eyebrow {
+            flex-basis: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__buttons.-pillar-short {
+      .m-pillarCta {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 5px;
+
+        &__icon {
+          grid-area: 1 / 4 / 3 / -1;
+          text-align: end;
+        }
+
+        &__title {
+          grid-area: 1 / 1 / 2 / -2;
+        }
+
+        &__labelWrapper {
+          grid-area: 2 / 1 / 3 / 4;
+
+          .m-pillarCta__label {
+            display: block;
+          }
+        }
+
+        &__icon,
+        &__title,
+        &__labelWrapper {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  @include respond-to("XLARGE") {
+    &__buttons.-tile {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    &__buttons.-pillar {
+      grid-auto-flow: column;
+      margin-top: 100px;
+    }
+
+    &__buttons.-pillar-short {
+      display: flex;
+      gap: 30px;
+      margin-top: 70px;
+
+      .m-pillarCta {
+        align-self: stretch;
+        flex-basis: 23%;
+
+        &__title {
+          margin: 25px 0 15px;
+        }
+
+        &__labelWrapper {
+          color: var(--color-accent);
+        }
+      }
+    }
+
+    .a-eyebrow {
+      grid-column: 1 / 6;
+    }
+
+    &__container {
+      &.-middle {
+        .o-heroContent__buttons.-tile {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+        }
+      }
+
+      &.-centralized {
+        .o-heroContent__buttons {
+          &.-isExtended {
+            .m-tileCta {
+              flex-basis: 23%;
+            }
+          }
+
+          &.-tile {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+
+  @include theme("oxagon") {
+    &__buttons .m-pillarCta {
+      --background-color: var(--color-oxagon-white);
+      --component-highlight-color: var(--color-white);
+      --component-title-color: var(--color-dark-accent);
+
+      @include hover {
+        --background-opacity: 0.25;
+      }
+    }
+
+    .m-tileCta {
+      .a-icon {
+        color: var(--color-light-blue);
+      }
+
+      @media (pointer: fine) {
+        .a-icon {
+          color: var(--color-white);
+        }
+
+        @include hover {
+          .a-icon {
+            color: var(--color-light-blue);
+          }
+        }
+      }
+    }
+  }
+}

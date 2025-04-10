@@ -1,0 +1,30 @@
+:root {
+  --button-border-radius: var(--button-size);
+  --button-border-width: 1.5px;
+  --button-font-size: 16px;
+  --button-icon-size: 24px;
+  --button-padding: 40px;
+  --button-size: 60px;
+}
+
+@mixin neomThemeProperties() {
+  --color-accent: var(--color-gold);
+  --color-accent-25: var(--color-gold-25);
+  --color-accent-50: var(--color-gold-50);
+  --color-dark-accent: var(--color-dark-gold);
+  --color-dark-accent-00a: var(--color-dark-gold-00a);
+  --color-dark-accent-10a: var(--color-dark-gold-10a);
+  --color-dark-accent-20a: var(--color-dark-gold-20a);
+  --color-dark-accent-70a: var(--color-dark-gold-70a);
+  --color-page-background: #f9f7f2;
+  --color-accent-hover: var(--color-gold-hover);
+
+  --checkbox-group-background-color: var(--color-cream);
+
+  --progress-bar-background: var(--color-cream);
+  --progress-bar-current-background: var(--color-dark-accent);
+}
+
+@include theme("neom", true) {
+  @include neomThemeProperties;
+}

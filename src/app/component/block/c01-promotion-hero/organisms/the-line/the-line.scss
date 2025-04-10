@@ -1,0 +1,48 @@
+.o-theLine {
+  @include size(100%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--color-white);
+  position: relative;
+  align-items: flex-start;
+
+  .a-moustache {
+    text-transform: uppercase;
+    margin-block-end: 30px;
+  }
+
+  &__logo {
+    height: 40px;
+    margin-block: 20px;
+
+    svg {
+      @include size(100%);
+
+      width: auto;
+    }
+  }
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+
+    .m-button:not(.-iconOnly) {
+      flex-grow: 1;
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    .a-moustache {
+      margin-block-end: 70px;
+    }
+
+    &__buttons {
+      .m-button:not(.-iconOnly) {
+        flex-grow: initial;
+      }
+    }
+  }
+}

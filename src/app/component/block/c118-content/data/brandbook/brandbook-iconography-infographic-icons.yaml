@@ -1,0 +1,29 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              element: 'h3'
+              text: 'Infographic icons'
+              size: 'h5'
+            copy:
+              size: 'medium'
+              content:
+                <p>The infographic icons are not used on the website. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Pellentesque ut ullamcorper elit. Sed nec varius quam,
+                pharetra ornare nibh. Vestibulum sed tellus tortor.</p>
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

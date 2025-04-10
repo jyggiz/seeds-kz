@@ -1,0 +1,278 @@
+@use "sass:math";
+
+.b-boxedList {
+  @include fullMinHeight;
+
+  --icon-fill: var(--component-highlight-color);
+  --page-indicator-color: var(--color-black-20a);
+  --page-indicator-color-active: var(--component-highlight-color);
+  --page-indicators-padding: 40px 0;
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  overflow: hidden;
+  position: relative;
+  padding-block: var(--component-block-padding, var(--container-margin));
+
+  > .m-componentBackground {
+    @media (prefers-reduced-motion: no-preference) {
+      transition: opacity 0.75s ease;
+    }
+
+    &.-isHidden {
+      opacity: 0;
+    }
+  }
+
+  &.-singleRow {
+    .o-boxedCard {
+      &__asset,
+      &__copy {
+        height: 50%;
+      }
+
+      &__copy {
+        @include type("body", "large");
+      }
+    }
+  }
+
+  &__container {
+    @include container;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  &__header {
+    margin: 0 auto 80px;
+    max-width: 640px;
+    color: var(--component-text-color);
+
+    .a-eyebrow {
+      --eyebrow-text-color: var(--color-accent);
+    }
+  }
+
+  &__slider {
+    overflow: visible;
+  }
+
+  &__cards {
+    @include list-reset();
+  }
+
+  &__card {
+    @include size(auto);
+
+    &:not(:last-child) {
+      .o-boxedCard {
+        border-inline-end-width: 0;
+      }
+    }
+  }
+
+  .m-stickyMedia {
+    z-index: 1;
+
+    &::after {
+      @include offset();
+      @include size(100%);
+
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0.4) 100%
+      );
+      content: "";
+      pointer-events: none;
+      position: absolute;
+    }
+  }
+
+  &__background {
+    .m-componentBackground {
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.75s ease;
+    }
+  }
+
+  .m-componentBackground {
+    &.-isActive {
+      opacity: 1;
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__container {
+      max-width: 1380px;
+    }
+
+    &__cards {
+      align-items: stretch;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    &__card {
+      max-width: 310px;
+      width: math.div(100%, 2);
+
+      &:nth-child(even) {
+        .o-boxedCard {
+          border-inline-end-width: 1px;
+        }
+      }
+
+      &:nth-child(n + 3) {
+        .o-boxedCard {
+          border-top-width: 0;
+        }
+      }
+    }
+
+    .a-pageIndicators {
+      display: none;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__card {
+      margin-inline-end: 1px;
+      width: math.div(100%, 4);
+
+      &:nth-child(even) {
+        margin: 0;
+
+        .o-boxedCard {
+          border-inline-end-width: 0;
+        }
+      }
+
+      &:last-child {
+        .o-boxedCard {
+          border-inline-end-width: 1px;
+        }
+      }
+
+      &:nth-child(n + 3) {
+        .o-boxedCard {
+          border-top-width: 1px;
+        }
+      }
+
+      &:nth-child(n + 5) {
+        .o-boxedCard {
+          border-top-width: 0;
+        }
+      }
+
+      &:nth-child(4n + 4) {
+        .o-boxedCard {
+          border-inline-end-width: 1px;
+        }
+      }
+
+      &:not(:nth-child(4n + 1)) {
+        margin: 0 0 0 -1px;
+      }
+
+      .-singleRow & {
+        flex: 1 1 0;
+        margin: 0;
+
+        .o-boxedCard {
+          &__copy {
+            @include type("body", "medium");
+          }
+        }
+
+        &:nth-child(even) {
+          .o-boxedCard {
+            border-inline-end-width: 0;
+          }
+        }
+
+        &:nth-child(n + 3) {
+          .o-boxedCard {
+            border-top-width: 1px;
+          }
+        }
+      }
+    }
+
+    &__cards {
+      &.-has5Items,
+      &.-has6Items,
+      &.-has9Items,
+      &.-has15Items {
+        // TODO refactor: change class names or find solution independent from card number
+        .b-boxedList__card {
+          flex: 1 0 calc(100% / 3);
+
+          &:nth-child(n + 4) {
+            margin: 0 0 0 1px;
+
+            .o-boxedCard {
+              border-top-width: 0;
+              border-inline-end-width: 0;
+            }
+          }
+
+          &:nth-child(3n + 3) {
+            .o-boxedCard {
+              border-inline-end-width: 1px;
+            }
+          }
+
+          &:not(:nth-child(4n + 1)) {
+            margin: 0;
+          }
+
+          &:last-child {
+            .o-boxedCard {
+              border-inline-end-width: 1px;
+            }
+          }
+        }
+      }
+    }
+
+    &.-singleRow {
+      .b-boxedList__container {
+        max-width: var(--containerMaxWidth);
+      }
+
+      .b-boxedList__cards {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
+  @include neomThemes {
+    &.t-dark {
+      --boxed-card-background-color: transparent;
+      --boxed-card-border-color: var(--color-black-75);
+      --boxed-card-heading-color: var(--color-white);
+      --boxed-card-hover-background-color: var(--color-real-black);
+      --boxed-card-text-color: var(--color-white);
+      --page-indicator-color: var(--color-white-20a);
+    }
+
+    &.t-darkMono {
+      --boxed-card-background-color: transparent;
+      --boxed-card-border-color: var(--color-white-10a);
+      --boxed-card-heading-color: var(--color-white);
+      --boxed-card-hover-background-color: rgba(0, 0, 0, 0.4);
+      --boxed-card-text-color: var(--color-white);
+      --component-background-color: var(--color-black);
+      --component-highlight-color: var(--component-text-color);
+      --component-text-color: var(--color-white);
+      --page-indicator-color: var(--color-white-20a);
+    }
+  }
+}

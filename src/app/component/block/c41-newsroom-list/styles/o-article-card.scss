@@ -1,0 +1,50 @@
+&__item {
+  @include respond-to("MEDIUM") {
+    &.-highlighted {
+      grid-column: 1 / span var(--grid-column-count);
+    }
+  }
+
+  @include respond-to("XXLARGE") {
+    .o-articleCard {
+      &__image {
+        margin-bottom: 32px;
+      }
+
+      &__publicationDate {
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+
+      &__heading {
+        margin-bottom: 16px;
+      }
+
+      &__link {
+        margin: 32px 0;
+      }
+
+      &.-highlighted {
+        .o-articleCard__publicationDate {
+          margin-bottom: 8px;
+        }
+
+        .o-articleCard__image {
+          grid-row: 1 / span 1;
+        }
+
+        .o-articleCard__content {
+          padding: 64px 80px;
+          grid-column: 7 / span 6;
+          grid-row: 1 / span 1;
+          background-color: $colorCream-25;
+          z-index: zindex($zLayout, default);
+        }
+
+        .o-articleCard__link {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

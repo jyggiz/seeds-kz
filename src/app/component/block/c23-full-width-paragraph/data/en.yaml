@@ -1,0 +1,13 @@
+scrollComponent: true
+hasBackgroundPattern: true
+theme: 'darkMono'
+header:
+  alignment: left
+  heading:
+    text: neom is an accelerator of <strong>human progress</strong>
+    size: h2
+
+paragraphs:
+  - NEOM is an accelerator of human progress that will embody the future of innovation in business,
+    livability and sustainability.
+  - NEOM offers many unique investment opportunities of different sizes across multiple industries.

@@ -1,0 +1,27 @@
+scrollComponent: true
+variant: 'triple'
+
+items:
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'paragraph'
+    content:
+      copy:
+        content: 'align: start, bottom'
+
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      copy:
+        content: 'align: start, middle'
+
+  - align:
+      horizontal: start
+      vertical: bottom
+    type: 'paragraph'
+    content:
+      copy:
+        content: 'align: start, bottom'

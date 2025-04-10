@@ -1,0 +1,14 @@
+
+
+<section class="b-stories{{#if theme}} t-{{theme}}{{/if}}{{#if overlapTopComponent}} -overlapTopComponent{{/if}}"
+         data-component="c29-stories"
+         {{#if (condition backgroundColor '||' padding)}}
+         style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+           {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+           {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+         {{/if}}
+         {{#if scrollComponent}}data-scroll-component{{/if}} data-lazy-component>
+  <div class="b-stories__container">
+    {{> organism/o17-stories }}
+  </div>
+</section>

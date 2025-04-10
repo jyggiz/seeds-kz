@@ -1,0 +1,19 @@
+
+
+
+<div class="o-popoutCard"
+  data-component="o14-popout-card" 
+>
+  <div class="o-popoutCard__image">{{> atom/a01-image image variant="block" disableTransition=true }}</div>
+  {{#with content}}
+    <div class="o-popoutCard__content">
+      {{#with heading}}
+          <h3 class="o-popoutCard__heading" data-card-title>{{{ text }}}</h3>
+      {{/with}}
+      {{#with ../button}}
+        {{> molecule/m02-button }}
+      {{/with}}
+    </div>
+  {{/with}}
+  {{#with link}}<a href="{{ href }}" {{#with target}}target="{{ this }}"{{#if (condition this '===' '_blank')}} rel="noopener"{{/if}}{{/with}}class="o-popoutCard__link"><span class="o-contentCard__linkLabel u-srOnly">{{ label }}</span></a>{{/with}}
+</div>

@@ -1,0 +1,32 @@
+
+
+
+<div class="o-article-cta{{#if highlighted}} -isHighlighted{{/if}}">
+  <div class="o-article-cta__image">
+    {{> atom/a01-image image disableTransition=true}}
+  </div>
+  <div class="o-article-cta__info">
+    {{#with date}}
+      <div class="o-article-cta__date">
+        {{this}}
+      </div>
+    {{/with}}
+
+    <div class="o-article-cta__heading">
+      {{heading}}
+    </div>
+    <div class="o-article-cta__description">
+      {{description}}
+    </div>
+    <div class="o-article-cta__button">
+      {{> molecule/m02-button
+        cta
+        icon="arrow-right"
+        iconAlignment="right"
+        level="tertiary"
+        size="small"
+        theme="black"
+      }}
+    </div>
+  </div>
+</div>

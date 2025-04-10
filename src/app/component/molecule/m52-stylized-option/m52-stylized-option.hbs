@@ -1,0 +1,28 @@
+
+
+
+<div class="m-stylizedOption"
+         data-component="m52-stylized-option"
+         data-dependent-dropdown="{{dependentDropdown.componentName}}" data-lazy-component>
+  <label class="m-stylizedOption__label" tabindex="0" data-label>
+    <input
+      type="{{type}}"
+      {{#with id}}id="{{this}}" data-{{this}}{{/with}}
+      {{#with name}}name="{{this}}"{{/with}}
+      {{#with titleInEnglish}}data-title-in-english="{{this}}"{{/with}}
+      {{#with value}}value="{{this}}"{{/with}}
+      class="m-stylizedOption__input"
+      data-stylized-input
+    >
+    <span class="m-stylizedOption__textLabel">{{label}}</span>
+    <div class="m-stylizedOption__imageWrapper">
+      {{> atom/a01-image image disableTransition=true }}
+    </div>
+  </label>
+
+  {{#with dependentDropdown}}
+    {{#if (condition componentName '===' 'm31-dropdown-field')}}
+      {{> molecule/m31-dropdown-field data blockValidation=true disabled=true }}
+    {{/if}}
+  {{/with}}
+</div>

@@ -1,0 +1,52 @@
+.o-expertCard {
+  --component-text-color: var(--color-dark-accent);
+
+  align-items: center;
+  background-color: var(--color-cream-50);
+  color: var(--color-black);
+  display: flex;
+  gap: 15px;
+  height: 100%;
+  min-height: 140px;
+  padding: 25px 15px;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+  user-select: none;
+
+  &__question {
+    @include type("body", "medium");
+
+    pointer-events: none;
+  }
+
+  .a-index {
+    pointer-events: none;
+  }
+
+  .a-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: var(--component-text-color);
+
+    [dir="rtl"] & {
+      right: initial;
+      left: 20px;
+    }
+  }
+
+  @include respond-to("XLARGE") {
+    align-items: start;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 300px;
+    min-height: 375px;
+    padding: 35px;
+  }
+
+  @include theme("oxagon") {
+    --component-text-color: var(--color-accent);
+
+    background-color: var(--color-white);
+  }
+}

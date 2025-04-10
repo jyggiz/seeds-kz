@@ -1,0 +1,36 @@
+items:
+  - theme: 'dark'
+    image:
+      src: 'image/c77-content-slider/small-viewport/01.jpg'
+      alt: 'alt text'
+      sources:
+        - src: 'image/c77-content-slider/large-viewport/01.jpg'
+          media: '(min-width: 480px)'
+  - theme: 'dark'
+    image:
+      src: 'image/c77-content-slider/small-viewport/02.jpg'
+      alt: 'alt text'
+      sources:
+        - src: 'image/c77-content-slider/large-viewport/02.jpg'
+          media: '(min-width: 480px)'
+  - theme: 'dark'
+    image:
+      src: 'image/c77-content-slider/small-viewport/03.jpg'
+      alt: 'alt text'
+      sources:
+        - src: 'image/c77-content-slider/large-viewport/03.jpg'
+          media: '(min-width: 480px)'
+  - theme: 'dark'
+    image:
+      src: 'image/c77-content-slider/small-viewport/04.jpg'
+      alt: 'alt text'
+      sources:
+        - src: 'image/c77-content-slider/large-viewport/04.jpg'
+          media: '(min-width: 480px)'
+  - theme: 'dark'
+    image:
+      src: 'image/c77-content-slider/small-viewport/05.jpg'
+      alt: 'alt text'
+      sources:
+        - src: 'image/c77-content-slider/large-viewport/05.jpg'
+          media: '(min-width: 480px)'

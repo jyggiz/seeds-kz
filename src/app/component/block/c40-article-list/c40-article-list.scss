@@ -1,0 +1,57 @@
+.b-articleList {
+  padding: 110px 0 0;
+
+  &.-isFirstBlock {
+    padding: calc(140px + 80px + 110px) 0 0;
+  }
+
+  &__container {
+    @include container();
+  }
+
+  &__header {
+    display: grid;
+    grid-gap: var(--grid-gap);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 0 0 100px;
+    text-align: center;
+
+    .m-paragraph {
+      grid-column: 1 / span 4;
+    }
+  }
+
+  &__items {
+    @include list-reset(0 0 80px);
+  }
+
+  @include respond-to("MEDIUM") {
+    --grid-column-count: 2;
+
+    &__items {
+      display: grid;
+      grid-gap: 80px;
+      grid-template-columns: repeat(var(--grid-column-count, 12), minmax(0, 1fr));
+    }
+
+    &__item {
+      &.-highlighted {
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+
+  @include respond-to("LARGE") {
+    --grid-column-count: var(--article-list-columns, 3);
+
+    &__item {
+      &.-highlighted {
+        grid-column: 1 / span var(--grid-column-count);
+      }
+    }
+
+    .m-paragraph {
+      grid-column: 2 / span 2;
+    }
+  }
+}

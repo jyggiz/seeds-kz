@@ -1,0 +1,105 @@
+scrollComponent: true
+
+padding:
+  start: 'large'
+  end: 'large'
+
+backgroundColor: 'cream'
+
+title:
+  heading:
+    text: 'default theme with bgcolor'
+    size: 'h5'
+  copy:
+    content:
+      Select from these options to make an inquiry, send an application, or find out more about
+      NEOM.
+items:
+  - - label: 'What is THE LINE?'
+      eventTracking:
+        componentId: 'FAQ id'
+      content:
+        '<p>THE LINE is a never-before-seen approach to urbanization – a 170km-long linear urban
+        development of multiple, hyper-connected communities, with walkable neighborhoods integrated
+        with public parks and the natural landscape. It is a model of urban design and livability in
+        harmony with nature for the 21st century and beyond.</p><p>THE LINE will reshape the
+        traditional concept of urban life, enabling NEOM to become an economic engine for the
+        Kingdom of Saudi Arabia, the region, and the world.</p><p>THE LINE will create 380,000 new
+        jobs, spur economic diversification and contribute SAR 180bn to domestic GDP by
+        2030.</p><ul><li>Powered by 100% renewable energy, the principles of environmental
+        responsibility will be enshrined in business regulations to promote sustainable and
+        regenerative development practices.</li><li>All essential daily needs will be within a
+        five-minute walk.</li><li>Communities will be built around people, not cars, easily
+        accessible and designed for convenience and walkability, creating vistas of beauty and
+        tranquility. </li><li>THE LINE is supported by a physical and digital infrastructure layer
+        seamlessly integrated beneath the surface and containing essential utilities and
+        transportation services.</li><li>The infrastructure spine will include ultra-high-speed mass
+        transit access to the communities along THE LINE.</li><li>Communities will live in harmony
+        with nature, where open space, parks, gardens, the natural environment and sustainable food
+        production are mixed seamlessly.</li><li>All businesses and communities on THE LINE are
+        hyper-connected through a digital framework incorporating Artificial Intelligence and
+        robotics that continuously learn and grow – over 90% of the data in NEOM will be analyzed to
+        provide a predictive system with ever-improving services to residents and businesses.
+        </li><li>The communities will be self-sufficient and reflect the personality of their
+        residents, the region and the industries within them.</li></ul>'
+
+    - label: 'Where is THE LINE located?'
+      content:
+        '<p>THE LINE is located in NEOM, linking the coast of the Red Sea with the mountains and
+        upper valleys of the north-west of Saudi Arabia. The location is at the crossroads of the
+        world, making it a natural choice for a global innovation hub. More than 40% of the global
+        population will be able to reach NEOM’s breathtaking terrain in less than a four-hour
+        flight, while 13% of the world’s trade already flows through the Red Sea.</p>'
+
+    - label:
+        'Why is the design of THE LINE so unique? How will it make a difference in everyday life?'
+      content:
+        '<p>THE LINE’s future communities will be home to more than 1 million people from all over
+        the world, creating a platform for innovation and prosperous businesses, addressing some of
+        the world’s most pressing challenges.</p><p>THE LINE revitalizes urban living by
+        reintroducing walkability as the cornerstone of urban design. It will create a sense of
+        community by having nature, commerce, business and innovation at the heart. Powered by
+        100%   renewable energy, with a digital framework incorporating AI and robotics, everything
+        is built to serve human needs. </p><p>Walkability and livability are in the DNA of THE LINE.
+        This pedestrian-first design approach defines THE LINE because of its ubiquitous
+        relationship with nature, its comfort and flexibility placing everything you need within
+        each community never more than a short walk away. Living, working and enjoying life without
+        compulsory commuting is in the soul of the NEOM livability model.</p>'
+
+  - - label: 'How can you create a city without roads and cars?'
+      content:
+        '<p>The project highlights NEOM’s never-before-seen approach to 21st century urban design.
+        People and nature will reclaim the space once occupied by the car and congested roads
+        through infrastructure that works in harmony with the environment, creating vistas of beauty
+        and tranquility.</p><p>Communities will be powered by various types of renewable energy,
+        allowing industry back into the heart of communities and creating an environment free from
+        pollution. This pedestrian-first approach ensures the communities are built around people,
+        not cars, easily accessible and designed for convenience and walkability. Essential services
+        and amenities will be accessible within a five-minute walk.</p><p>Infrastructure and
+        supporting services - including transportation, utilities, digital infrastructure, and
+        logistics - will be seamlessly integrated in dedicated spaces running in an invisible layer
+        along THE LINE. High-speed transportation will make long commutes a thing of the past,
+        making life simple and stress-free.</p>'
+
+    - label: 'What is the environmental impact of a project of this size and scale?'
+      content:
+        '<p>The majority of NEOM land will be preserved to enhance livability for residents and
+        environmental protection. The design of THE LINE provides a seamless way of living in
+        harmony with nature.</p><p>During development, strict environmental controls are in place to
+        preserve NEOM’s natural environment and rich heritage. No construction activity is possible
+        unless it has met stringent international sustainability criteria, which have been built
+        around the standards expected for a Circular Carbon Economy.</p><p>While caring for the
+        environment is a guiding principle, the plan allows NEOM to accomplish this without
+        compromising NEOM’s ability to attract business and entrepreneurs to the region.</p>'
+
+    - label: 'How will THE LINE enable advanced industry and the future of business to develop?'
+      content:
+        '<p>THE LINE will power NEOM as it becomes a hub for innovation where global business and
+        emerging players can research, incubate and commercialize groundbreaking technologies to
+        accelerate human progress.</p><p>By integrating commerce and industry into the heart of
+        future communities, THE LINE will help reimagine supply chains and facilitate new and better
+        ways of working. It will foster innovation and empower entrepreneurs.</p><p>THE LINE
+        utilizes human-centric design, advanced infrastructure and manufacturing and cutting-edge
+        technology to solve the world’s greatest challenges. It will reshape industries such as
+        mobility, clean energy, AI and robotics, with a focus on the environment and
+        sustainability.</p>'

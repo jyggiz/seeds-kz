@@ -1,0 +1,9 @@
+theme: 'light'
+items:
+  - label: 'NEOM made to change'
+    href: '/home'
+  - label: 'Regions'
+    href: '/regions'
+  - label: 'Sindalah'
+    href: '/sindalah'
+divider: 'withPadding'

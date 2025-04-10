@@ -1,0 +1,81 @@
+items:
+  - src: 'image/c75-image-grid/general-icons/general-01.png'
+    alt: 'Energy icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-01.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-02.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-02.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-03.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-03.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-04.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-04.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-05.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-05.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-06.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-06.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-07.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-07.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-08.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-08.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-09.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-09.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-10.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-10.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-11.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-11.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-12.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-12.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-13.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-13.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-14.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-14.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-15.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-15.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/general-icons/general-16.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/general-icons/general-16.png'
+        media: '(min-width: 480px)'

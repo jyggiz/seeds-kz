@@ -1,0 +1,25 @@
+image:
+  alt: Gavin van Tonder portrait
+  src: 'image/c36-profile/gavin-van-tonder.jpg'
+name: Gavin van Tonder
+role: CEO of Oxagon
+subrole: Executive Director Future of Water Sector
+biography:
+  Gavin Van Tonder, the Executive Director of the Water sector at NEOM, has almost 30 years’
+  experience in the global water industry. Having held senior positions in several leading
+  international water organizations, including Itron, Schlumberger and Sasol, he has a proven track
+  record in achieving very challenging milestones.
+email:
+  href: '#'
+i18n:
+  sendEmail: 'send email'
+social:
+  items:
+    - icon: instagram-gold
+      href: 'https://www.instagram.com/discoverneom/?hl=en'
+      target: _blank
+      label: Twitter
+    - icon: facebook-gold
+      href: 'https://www.facebook.com/discoverneom/'
+      target: _blank
+      label: Facebook

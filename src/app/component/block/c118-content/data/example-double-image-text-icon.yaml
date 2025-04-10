@@ -1,0 +1,53 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m16-figure
+          data:
+            variant: portrait
+            image:
+              src: 'image/c24-content/c24-portrait-placeholder.jpg'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 1 / 2 / 5
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            image:
+              src: 'image/logo-mark-neom.png'
+              alt: 'NEOM logo mark'
+            heading:
+              size: h3
+              text: 'About GKA'
+            copy:
+              size: 'medium'
+              content:
+                '<p>GKA is the premier kitesurfing community.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam.</p>'
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                level: primary
+                theme: black
+                label: 'Primary button'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 6 / 2 / 12

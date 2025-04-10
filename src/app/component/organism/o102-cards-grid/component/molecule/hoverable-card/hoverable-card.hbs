@@ -1,0 +1,17 @@
+<a class="m-hoverableCard" data-component="m-hoverable-card"
+   {{#if id}}id="{{id}}"{{/if}}
+   href="{{ href }}"
+   {{#if target }}
+     target="{{ target }}"
+     {{#if (condition target '===' '_blank' )}}rel="noopener"{{/if}}
+   {{/if}}
+   data-lazy-component
+>
+  {{> atom/a01-image image disableTransition=true}}
+
+  <div class="m-hoverableCard__label" data-label>{{{ title }}}</div>
+  <span class="m-hoverableCard__description" data-description>{{ description }}</span>
+  <div class="m-hoverableCard__icon" data-icon>
+    {{> atom/a02-icon name='arrow-right'}}
+  </div>
+</a>

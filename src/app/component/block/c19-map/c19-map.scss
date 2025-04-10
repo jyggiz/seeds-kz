@@ -1,0 +1,61 @@
+.b-map {
+  background: var(--color-black);
+  position: relative;
+
+  &.-isLoading {
+    @include vh(100, min-height);
+  }
+
+  &::before {
+    @include offset();
+    @include size(100%, 70px);
+
+    background: var(--gradient-map-top);
+    content: "";
+    position: absolute;
+    z-index: zindex($zLayout, content);
+  }
+
+  &::after {
+    @include size(100%, 200px);
+
+    background: var(--gradient-map-bottom);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+  }
+
+  &__animation {
+    &.-mobile {
+      display: block;
+    }
+
+    &.-desktop {
+      display: none;
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    padding: 0 0 30px;
+
+    &.-isLoading {
+      min-height: 56.5vw;
+    }
+
+    &::before {
+      height: 100px;
+    }
+
+    &__animation {
+      &.-mobile {
+        display: none;
+      }
+
+      &.-desktop {
+        display: block;
+      }
+    }
+  }
+  @include neomThemes;
+}

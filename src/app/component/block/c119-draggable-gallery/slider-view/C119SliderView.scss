@@ -1,0 +1,88 @@
+.b-draggableGallery__sliderView {
+  @include vh(100);
+
+  overflow: hidden;
+  position: relative;
+
+  &__swiperContainer {
+    height: 100%;
+  }
+
+  &__items {
+    @include list-reset;
+  }
+
+  &__content {
+    @include size(100%);
+
+    --eyebrow-text-color: var(--color-accent);
+    --component-heading-color: var(--color-white);
+
+    padding: 60px var(--containerMargin);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-end;
+
+    .m-button {
+      width: fit-content;
+    }
+  }
+
+  &__controls {
+    display: none;
+  }
+
+  &__pagination {
+    .m-sliderPagination__title {
+      display: none;
+    }
+
+    .m-sliderPagination {
+      &__paginationBar {
+        transition: background-color 0.2s ease-in;
+        background-color: var(--color-white-20a);
+
+        &.-isActive {
+          background-color: var(--color-white);
+        }
+      }
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__controls {
+      @include size(100%, 60px);
+
+      display: block;
+      padding: 0 var(--containerMargin);
+      position: absolute;
+      top: 50%;
+      translate: 0 -50%;
+      z-index: zindex($zLayout, content);
+
+      .o-sliderControls {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .m-button.-isDisabled {
+          --button-border-color: var(--color-white-20a);
+          --button-text-color: var(--color-white-20a);
+        }
+      }
+    }
+
+    &__content {
+      align-items: end;
+      justify-content: space-between;
+      flex-direction: row;
+      padding-block: 100px;
+    }
+
+    &__copy {
+      flex-grow: 1;
+    }
+  }
+}

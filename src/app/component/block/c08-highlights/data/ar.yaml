@@ -1,0 +1,47 @@
+scrollComponent: true
+
+header:
+  eyebrow:
+    text: تفتقر المدن الحديثة للاستدامة
+  heading:
+    text: المستقبل الجديد<br/>اسمه "ذا لاين"
+    size: h4
+
+items:
+  - image:
+      alt: بلا مركبات
+      src: 'icon/c08-stats/no-cars.svg'
+    title:
+      text: بلا مركبات
+    description:
+      text:
+        مجتمعات صُممت لخدمة الإنسان، والوصول في 5 خمس دقائق مشياً إلى كل مرافق الحياة والعمل
+        والترفيه
+  - image:
+      alt: 20 دقيقة كحد أقصى للتنقل
+      src: 'icon/c08-stats/commute.svg'
+    title:
+      text: 20 دقيقة كحد أقصى للتنقل
+    description:
+      text: وقت أقصر للتنقل بين المجتمعات
+  - image:
+      alt: تناغم وانسجام بين المدينة والطبيعة
+      src: 'icon/c08-stats/nature.svg'
+    title: تناغم وانسجام بين المدينة والطبيعة
+    description:
+      استعادة العلاقة الأصيلة بين الإنسان والطبيعة سعياً لصحة ورفاهية أفضل وتحقيقاً لمعيشة تغمرها
+      السعادة
+  - image:
+      alt: طاقة نظيفة مستمدة من مصادر متجددة
+      src: 'icon/c08-stats/clean-energy.svg'
+    title:
+      text: طاقة نظيفة مستمدة من مصادر متجددة
+    description:
+      text: وفرة في الطاقة المتجددة لمستقبل مستدام
+  - image:
+      alt: اعتماد أحدث تقنيات الذكاء الاصطناعي
+      src: 'icon/c08-stats/tech.svg'
+    title:
+      text: اعتماد أحدث تقنيات الذكاء الاصطناعي
+    description:
+      text: تقنيات إدراكية وذكية تتطور باستمرار لتمكين الإنسان وتسهيل حياته

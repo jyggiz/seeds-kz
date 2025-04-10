@@ -1,0 +1,39 @@
+scrollComponent: true
+
+header:
+  eyebrow:
+    text: 'PEOPLE: WHAT TO AVOID'
+    size: medium
+  moustache:
+    text:
+      'The wrong style of lighting, expression and composition will give the wrong impression. Here
+      is what to avoid: we want to avoid anything that looks fake, overly styled or retouched and
+      trying too hard to be futuristic or fashionable.'
+    size: small
+  alignment: left
+
+people:
+  - image:
+      alt: Man portrait
+      src: 'image/c36-profile/brandbook/people/people-01.jpg'
+    biography: Too much contrast.
+  - image:
+      alt: Lady portrait
+      src: 'image/c36-profile/brandbook/people/people-02.jpg'
+    biography: Strange colour combination.
+  - image:
+      alt: Man portrait
+      src: 'image/c36-profile/brandbook/people/people-03.jpg'
+    biography: Too much contrast.
+  - image:
+      alt: Lady portrait
+      src: 'image/c36-profile/brandbook/people/people-04.jpg'
+    biography: Strange colour combination.
+  - image:
+      alt: Lady portrait
+      src: 'image/c36-profile/brandbook/people/people-05.jpg'
+    biography: Strange colour combination.
+  - image:
+      alt: Lady portrait
+      src: 'image/c36-profile/brandbook/people/people-06.jpg'
+    biography: Strange colour combination.

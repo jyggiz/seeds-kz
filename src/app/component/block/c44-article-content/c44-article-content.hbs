@@ -1,0 +1,67 @@
+
+
+
+<section class="b-articleContent -hasBackgroundImage"
+  data-component="c44-article-content"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  data-lazy-component>
+  <div class="b-articleContent__banner" data-article-banner>
+    {{#with bannerInfo}}
+      <div class="b-articleContent__bannerInfo">
+        {{> molecule/m04-component-header disableTransition=true}}
+      </div>
+    {{/with}}
+    {{> atom/a01-image image disableTransition=true }}
+  </div>
+  <div class="b-articleContent__container" data-article-container>
+    <div class="b-articleContent__page">
+      <div class="b-articleContent__content" data-article-content>
+        {{#if (condition publicationDate '||' heading)}}
+          <header class="b-articleContent__header" data-article-header>
+            {{#with publicationDate}}<p class="b-articleContent__datePublished">{{ this }}</p>{{/with}}
+            {{#with heading}}{{> atom/a03-heading element="h1" }}{{/with}}
+          </header>
+        {{/if}}
+        {{#each items}}
+          <div class="s-content{{#if size}} -{{size}}{{/if}}">
+            {{{ content }}}
+          </div>
+        {{/each}}
+        <footer class="b-articleContent__footer" data-article-footer>
+          {{#with author}}
+            <p class="b-articleContent__author">Written by <span>{{ name }}</span></p>
+          {{/with}}
+          <div class="b-articleContent__buttons">
+            {{#if backButton}}
+              {{> molecule/m02-button
+              href=overviewLink.href
+                icon="arrow-left"
+                iconAlignment="left"
+                label=@root.i18n.backToOverview
+                level="secondary"
+                size="small"
+                theme="black"
+            }}
+            {{/if}}
+
+            {{#if share}}
+              {{> molecule/m02-button
+                data=(object
+                  share-button=null
+                  share=(toJson share)
+                  success-message=@root.i18n.copied
+                )
+                icon="share"
+                label=@root.i18n.shareArticle
+                level="secondary"
+                size="small"
+                theme="black"
+              }}
+            {{/if}}
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</section>
+

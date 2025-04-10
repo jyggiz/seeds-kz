@@ -1,0 +1,153 @@
+.b-new-article {
+  $content-padding-inline-fluid: #{fluid-clamp-ideal(20px, 70px)};
+
+  position: relative;
+
+  &__toTopButton {
+    @include size(60px);
+
+    align-items: center;
+    background: var(--color-cream);
+    border: 1.5px solid var(--color-dark-gold);
+    border-radius: 30px;
+    bottom: 40px;
+    display: flex;
+    opacity: 0;
+    position: fixed;
+    right: 20px;
+    justify-content: center;
+
+    @include hover {
+      cursor: pointer;
+    }
+
+    .a-icon {
+      --icon-fill: var(--color-dark-gold);
+    }
+  }
+
+  &__content {
+    @include padding-block(fluid-clamp-ideal(40px, 70px));
+    @include padding-inline($content-padding-inline-fluid);
+
+    background: var(--color-white);
+    grid-column: 1 / span 6;
+  }
+
+  &__authorImage {
+    @include size(40px);
+
+    position: relative;
+
+    .a-image {
+      border-radius: 20px;
+    }
+  }
+
+  &__metaString {
+    @include type("overline", "small");
+
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    margin-block-start: fluid-clamp-ideal(7px, 20px);
+    width: max-content;
+
+    .isHighlighted {
+      color: var(--component-highlight-color);
+    }
+  }
+
+  &__banner {
+    @include margin-inline(calc(-1 * #{$content-padding-inline-fluid}));
+    @include size(100%, fluid-clamp-ideal(240px, 400px));
+
+    margin-block-start: fluid-clamp-ideal(30px, 40px);
+    position: relative;
+    width: calc(100% + (2 * #{$content-padding-inline-fluid}));
+  }
+
+  &__contentTableMobile {
+    @include margin-inline(calc(-1 * #{$content-padding-inline-fluid}));
+    @include padding-block(30px, 40px);
+    @include padding-inline(fluid-clamp-ideal(20px, 40px));
+
+    background: var(--color-page-background);
+    width: calc(100% + (2 * #{$content-padding-inline-fluid}));
+  }
+
+  &__body {
+    @include padding-block(40px, 30px);
+
+    display: grid;
+    gap: 40px;
+    grid-auto-flow: row;
+  }
+
+  &__info {
+    display: none;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &,
+    .m-button {
+      @include size(100%, auto);
+    }
+  }
+
+  @include respond-to("XLARGE") {
+    &__page {
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      padding-block-start: 50px;
+      padding-inline-start: fluid-clamp-ideal(0px, 180px);
+    }
+
+    &__info {
+      display: grid;
+      gap: 50px;
+      grid-auto-flow: row;
+      grid-column: 7 / -1;
+      height: min-content;
+      position: static;
+      right: 0;
+      margin-bottom: 20px;
+      align-content: start;
+
+      [dir="rtl"] & {
+        left: 0;
+        right: unset;
+      }
+    }
+
+    &__banner {
+      @include margin-inline;
+
+      width: 100%;
+    }
+
+    &__content {
+      grid-column: 1 / span 6;
+    }
+
+    &__buttons {
+      &,
+      .m-button {
+        @include size(auto, auto);
+      }
+    }
+
+    &__authorImage,
+    &__contentTableMobile,
+    &__toTopButton,
+    &__buttons .m-button:last-child {
+      display: none;
+    }
+  }
+}

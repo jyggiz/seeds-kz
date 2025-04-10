@@ -1,0 +1,25 @@
+scrollComponent: true
+
+sectorImage:
+  src: 'image/sectors/energy.png'
+  alt: Energy sector
+
+header:
+  eyebrow:
+    text: عدم الإفصا
+    size: medium
+  moustache:
+    text: دليل تسجيل المورّدين الجدد، قواعد السلوك الخاصة بالمورّدين، اتفاقية عدم الإفصاح
+  alignment: left
+
+people:
+  - image:
+      alt: Gavin van Tonder portrait
+      src: 'image/c36-profile/gavin-van-tonder.jpg'
+    name: عدم الإفصاعدم الإفصا
+    role: الخاصة بالمورّدين، اتفاقية
+  - image:
+      alt: Greg Welch
+      src: 'image/c36-profile/greg-welch.jpg'
+    name: عدم الإفصاعدم الإفصا
+    role: الخاصة بالمورّدين، اتفاقية

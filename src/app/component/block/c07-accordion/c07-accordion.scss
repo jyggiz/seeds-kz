@@ -1,0 +1,74 @@
+.b-accordion {
+  background: white;
+  color: var(--component-text-color);
+  overflow: hidden;
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+  flex-direction: column;
+
+  &.-fullMinHeight {
+    @include fullMinHeight();
+  }
+
+  & .b-contacts__title {
+    --component-heading-color: var(--color-black);
+
+    text-align: center;
+  }
+
+  @include neomThemes() {
+    --accordion-background-color: var(--color-cream);
+    --accordion-item-background-active-color: var(--color-white);
+    --accordion-item-background-color: rgba(255, 255, 255, 0.7);
+    --accordion-item-border-color: var(--color-black-10);
+    --accordion-item-chevron-color: var(--component-highlight-color);
+    --accordion-item-text-color: rgba(0, 0, 0, 0.75);
+    --accordion-text-color: var(--component-text-color);
+    --content-marker-color: var(--component-highlight-color);
+
+    &.t-dark,
+    &.t-darkMono {
+      --accordion-background-color: var(--color-black);
+      --accordion-item-background-active-color: rgba(0, 0, 0, 1);
+      --accordion-item-background-color: rgba(0, 0, 0, 0.6);
+      --accordion-item-border-color: var(--color-white-20a);
+      --accordion-item-border-color-expanded: rgba(255, 255, 255, 0.6);
+      --accordion-item-text-color: var(--color-black-10);
+    }
+  }
+
+  &__container {
+    @include container();
+
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    &.-linkArrows {
+      > a:after {
+        @include pseudo(inline-block, static, "→");
+
+        margin-inline-start: 10px;
+
+        [dir="rtl"] & {
+          content: "←";
+        }
+      }
+    }
+  }
+
+  .m-paragraph {
+    &__content {
+      margin: 10px 0 30px;
+      color: var(--color-black-75);
+
+      @include respond-to(MEDIUM) {
+        margin: 45px 0;
+      }
+    }
+  }
+
+  .s-content {
+    --content-link-color: var(--color-dark-accent);
+  }
+}

@@ -1,0 +1,33 @@
+.o-radioGroup {
+  --grid-gap: 30px;
+  @include fieldsetStyling();
+
+  &__radioGroupCopy {
+    @include type("body", "small");
+
+    a {
+      color: var(--color-dark-accent);
+
+      @include theme("oxagon") {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__dependentInputs {
+    @include list-reset();
+
+    margin-top: 20px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--grid-gap);
+
+    .-hasError & {
+      border-radius: 5px;
+      border: 1px var(--form-error-color) solid;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+scrollComponent: true
+
+header:
+  heading:
+    element: h2
+    text: ثورة في التنمية الحضرية
+    size: h4
+
+items:
+  - heading:
+      text: معيشة تضع الإنسان على رأس أولوياتها
+    description:
+      text:
+        تُعيد نيوم تعريف التنمية الحضرية من خلال التركيز على الإنسان، إذ يُسهم "ذا لاين" في وضع حلول
+        مبتكرة لمعالجة تحديات التوسع الحضري التي تعترض تقدم البشرية.
+    image:
+      alt: معيشة تضع الإنسان على رأس أولوياتها
+      src: 'image/c03-blinds/key-feature-image-01.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Urban Architecture: Giovanna Carnevali'
+            title: 'Urban Architecture: Giovanna Carnevali'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: مجتمعات جميع مرافقها على بُعد 5 دقائق مشياً
+    description:
+      text:
+        سيخلق "ذا لاين" مجتمعات إدراكية مترابطة فيما بينها، بلا مركبات أو طرق، تشجع السير على
+        الأقدام، وتُتيح فيها المواصلات فائقة السرعة للجميع إمكانية الوصول إلى طرفَيْ المشروع في غضون
+        20 دقيقة على أبعد تقدير، مما يوفر جودة حياة استثنائية للسكان.
+    image:
+      alt: مجتمعات جميع مرافقها على بُعد 5 دقائق مشياً
+      src: 'image/c03-blinds/key-feature-image-02.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Mobility: Florian Lennert'
+            title: 'Mobility: Florian Lennert'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: معيشة تتناغم مع الطبيعة
+    description:
+      text:
+        سيُسهم "ذا لاين" في حماية الطبيعة الخلابة من خلال تصميم فريد يدمجها في قلب مجتمعاته
+        الإدراكية، لنمط حياة ورفاهية لا مثيل لهما.
+    image:
+      alt: معيشة تتناغم مع الطبيعة
+      src: 'image/c03-blinds/key-feature-image-03.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'The Future of Environment: Dr. Paul Marshall'
+            title: 'The Future of Environment: Dr. Paul Marshall'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: حياة هادئة تعززها تقنيات إدراكية
+    description:
+      text:
+        ستُدار مرافق مجتمعات "ذا لاين" بالاعتماد الكامل على تقنيات الذكاء الاصطناعي لتسهيل عملية
+        التواصل مع الإنسان بطريقة تمكنها من التوقّع والتفاعل بقدرات غير مسبوقة.
+    image:
+      alt: حياة هادئة تعززها تقنيات إدراكية
+      src: 'image/c03-blinds/key-feature-image-04.jpg'
+
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish:
+              'Cognitive cities: how NEOM will fully utilize data to fundamentally improve life'
+            title:
+              'Cognitive cities: how NEOM will fully utilize data to fundamentally improve life'
+            src: video/video-preview.mp4

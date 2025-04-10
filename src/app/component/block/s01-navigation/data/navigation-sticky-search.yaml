@@ -1,0 +1,175 @@
+navigationContent:
+  scrollComponent: true
+  logo: 'import!../../../molecule/m19-logo/data/default.yaml'
+  navigation:
+    main:
+      - label: 'Home'
+        href: './'
+      - label: 'Discover NEOM'
+        type: 'menu'
+        items:
+          - label: 'Regular menu link'
+            href: '#'
+          - label: 'External menu link'
+            href: '#'
+            target: '_blank'
+
+      - label: 'Regions'
+        type: 'projectMenu'
+        items:
+          - label: Solar Dome
+            image:
+              src: 'image/s01-navigation/solar-dome.jpg'
+              alt: Solar Dome
+            href: '#'
+            copy:
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus est id architecto
+              magnam dignissimos.
+          - label: The Spine
+            image:
+              src: 'image/s01-navigation/the-spine.jpg'
+              alt: The Spine
+            href: '#'
+            copy:
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus est id architecto
+              magnam dignissimos.
+          - label: Project X
+            image:
+              src: 'image/s01-navigation/project-x.jpg'
+              alt: Project X
+            href: '#'
+            copy:
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus est id architecto
+              magnam dignissimos.
+
+      - label: 'Sector'
+        type: 'sectorMenu'
+        items:
+          - label: 'Energy'
+            href: '#'
+            icon: 'energy'
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: 'Energy'
+          - label: 'Water'
+            href: '#'
+            icon: 'water'
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Mobility
+            href: '#'
+            icon: mobility
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Entertainment & Culture
+            href: '#'
+            icon: entertainment-culture
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Food
+            href: '#'
+            icon: food
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Manufacturing
+            href: '#'
+            icon: manufacturing
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Media
+            href: '#'
+            icon: media
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Tourism
+            href: '#'
+            icon: tourism
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Sport
+            href: '#'
+            icon: sport
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Design & Construction
+            href: '#'
+            icon: design-construction
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Services
+            href: '#'
+            icon: services
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Health, Well-Being & biotech
+            href: '#'
+            icon: health-wellbeing-biotech
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Education
+            href: '#'
+            icon: education
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+          - label: Technology & Digital
+            href: '#'
+            icon: technology-digital
+            image:
+              src: 'image/c17-sectors/energy.jpg'
+              alt: Energy
+
+      - label: 'News'
+        type: 'menu'
+        items:
+          - label: 'Regular menu link'
+            href: '#'
+          - label: 'External menu link'
+            href: '#'
+            target: '_blank'
+
+    aside:
+      - label: 'Be part of NEOM'
+        highlighted: true
+        type: 'menu'
+        items:
+          - label: 'Invest'
+            href: '#'
+          - label: 'Start a business'
+            href: '#'
+          - label: 'Become a supplier'
+            href: '#'
+          - label: 'Partner'
+            href: '#'
+          - label: 'Work'
+            href: '#'
+
+  languages:
+    activeLanguageCode: en
+    options:
+      - languageCode: en
+        label: English
+        href: '/homepage.html'
+      - languageCode: nl
+        label: Nederlands
+        href: '/homepage.html'
+      - languageCode: ar
+        shortLabel: عربي
+        label: العربية
+        href: '/homepage-ar.html'
+
+  isStickySearch: true
+  search:
+    placeholder: 'Traveling to NEOM'
+    redirectUrl: '#'

@@ -1,0 +1,16 @@
+scrollComponent: true
+theme: 'darkMono'
+
+lottieMobile:
+  jsonFilePath: './json/c19-map/neom_staticHTML_map_MOBILE_en.json'
+  assetsFolderPath: './image/c19-map/neom_staticHTML_map_MOBILE_en/'
+  alt: 'Neom map test desktop'
+  loop: true
+  autoplay: false
+
+lottieDesktop:
+  jsonFilePath: './json/c19-map/neom_staticHTML_map_FHD_en.json'
+  assetsFolderPath: './image/c19-map/neom_staticHTML_map_FHD_en/'
+  alt: 'Neom map test mobile'
+  loop: true
+  autoplay: false

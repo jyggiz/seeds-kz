@@ -1,0 +1,55 @@
+scrollComponent: true
+optimizeForLCP: true
+items:
+  - align:
+      horizontal: start
+      vertical: bottom
+
+    topic: slide-1
+
+    background:
+      transitionDirection: 'left'
+      image:
+        src: 'image/c12-hero-slider/theline-hero.jpg'
+        alt: 'Homepage teaser image'
+
+    content:
+      header:
+        heading:
+          element: h1
+          size: h4
+          text: The line
+        eyebrow:
+          text: new wonders for the world
+
+      buttons:
+        - level: primary
+          icon: play-solid
+          theme: white
+          variant: play
+          video:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: video/mp4
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: false
+            muted: false
+            loop: false
+            disablePreload: true
+            controls:
+              fullscreen: true
+              playPause: true
+              seek: true
+            eventTracking:
+              event: 'video_start'
+              video:
+                src: 'video/video-preview.mp4'
+                title: 'A Vision of a New Future: Explainer video'
+                titleInEnglish: 'A Vision of a New Future: Explainer video'
+        - level: primary
+          label: get in touch
+          theme: white
+          href: www.neom.com
+
+    scrollButton: true

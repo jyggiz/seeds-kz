@@ -1,0 +1,13 @@
+
+<div class="o-mobileInstructions{{#if notice}} -hasNotice{{/if}}"
+  data-component="o65-mobile-instructions"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+>
+  <div class="o-mobileInstructions__content">
+    {{> atom/a03-heading heading}}
+    {{#if content}}<p class="o-mobileInstructions__description">{{content}}</p>{{/if}}
+    {{> molecule/m02-button button}}
+  </div>
+  {{#if notice}}<p class="o-mobileInstructions__notice">{{notice}}</p>{{/if}}
+</div>

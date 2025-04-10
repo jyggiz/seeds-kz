@@ -1,0 +1,13 @@
+<button class="o-dropdownNavigationList__button"
+    aria-expanded="false"
+    aria-haspopup="true"
+    data-navigation-menu-item
+    data-side-menu-button
+>
+    <span class="o-dropdownNavigationList__index">
+    {{#if (condition @index '<' 9)}}0{{/if}}{{ arithmetic @index '+' 1}}
+    </span>
+    <span class="o-dropdownNavigationList__label">{{ label }}
+    {{> atom/a02-icon name="chevron-right" }}
+    </span>
+</button>

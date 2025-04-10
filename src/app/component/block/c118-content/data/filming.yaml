@@ -1,0 +1,28 @@
+scrollComponent: true
+id: 'c118-filming'
+
+background:
+  mask:
+    opacity: 0
+  image:
+    src: 'image/filming_pattern@2x.png'
+
+padding:
+  start: 'large'
+  end: 'large'
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data: 'import!../../../molecule/m18-paragraph/data/filming.yaml'
+      alignment:
+        vertical:
+          - center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

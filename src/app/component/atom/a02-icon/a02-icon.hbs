@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="./a02-icon.scss">
+<script src="./A02Icon.ts"></script>
+
+<span class="a-icon{{#if variant}} -{{variant}}{{/if}}{{#if className}} {{className}}{{/if}}"
+      data-component="a02-icon"
+      data-icon="{{name}}"
+      {{#if aria.label}}aria-label="{{aria.label}}"{{^}}aria-hidden="true"{{/if}}
+></span>

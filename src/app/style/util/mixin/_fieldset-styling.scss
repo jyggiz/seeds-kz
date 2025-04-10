@@ -1,0 +1,22 @@
+@mixin fieldsetStyling() {
+  border: none;
+
+  &__fieldset {
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+
+  &__container {
+    @include container();
+  }
+
+  &__items {
+    @include list-reset();
+
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

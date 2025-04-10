@@ -1,0 +1,5 @@
+image:
+  src: 'image/c20-test-image.jpg'
+  alt: 'text image'
+heading: 'string'
+description: 'description'

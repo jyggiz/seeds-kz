@@ -1,0 +1,10 @@
+<ul class="b-journey__timeline" data-timeline>
+    {{#each timelinePoints}}
+    <li class="b-journey__timelinePoint" data-timeline-point-id="{{id}}">
+        <div class="b-journey__timelinePointDescription" data-timeline-point-description>
+            {{> atom/a05-moustache text=description size='small'}}
+        </div>
+        <span class="b-journey__timelineDot"></span>
+    </li>
+    {{/each}}
+</ul>

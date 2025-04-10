@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="./o04-language-selector.scss">
+<script src="./O04LanguageSelector.ts"></script>
+
+<div data-component="o04-language-selector" class="o-languageSelector">
+
+  {{#each languages.options }}
+    {{#if (condition languageCode '===' ../languages.activeLanguageCode)}}
+      <button
+        class="o-languageSelector__toggle{{#if shortLabel}} -{{languageCode}}{{/if}}"
+        {{#if ../languageListId}}aria-controls="{{../languageListId}}"{{/if}}
+        {{#if ../languageButtonLabel}}aria-label="{{../languageButtonLabel}}"{{/if}}
+        aria-expanded="false"
+        aria-haspopup="true"
+        data-language="{{languageCode}}"
+        data-toggle
+      >
+        <span class="o-languageSelector__code">{{#if shortLabel}}{{shortLabel}}{{^}}{{ languageCode }}{{/if}}</span>
+        {{> atom/a02-icon name="chevron-up" }}
+      </button>
+    {{/if}}
+  {{/each}}
+
+  <div class="o-languageSelector__list">
+    <div class="o-languageSelector__wrapper">
+      <ul
+        class="o-languageSelector__items"
+        {{#if languageListId}}id="{{languageListId}}"{{/if}}
+        role="listbox"
+        data-language-list
+      >
+        {{#each languages.options }}
+          <li class="o-languageSelector__item{{#if (condition languageCode '===' ../languages.activeLanguageCode)}} -isActive{{/if}}"
+              data-language="{{languageCode}}"
+              {{#if title}}title="{{title}}"{{/if}}
+          >
+            <a
+              href="{{ href }}"
+              class="o-languageSelector__link{{#if languageCode}} -{{languageCode}}{{/if}}"
+              role="option"
+              {{#if (condition languageCode '===' ../languages.activeLanguageCode)}}aria-selected="true"{{/if}}
+              lang="{{languageCode}}"
+              >
+              {{ label }}
+              {{#if (condition languageCode '===' ../languages.activeLanguageCode)}}
+                {{> atom/a02-icon name="checkmark" className="checkmark" }}
+              {{/if}}
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+scrollComponent: true
+
+heading:
+  text: 'Reshaping the way we live'
+  size: h4
+
+buttons:
+  - theme: white
+    level: secondary
+    icon: play-solid
+    size: large
+    prefix: play
+    suffix: video
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+image:
+  alt: null
+  src: 'image/homepage-mountain-background.jpg'

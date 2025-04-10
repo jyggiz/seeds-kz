@@ -1,0 +1,73 @@
+scrollComponent: true
+
+backgroundColor: black
+theme: dark
+
+header:
+  alignment: center
+  eyebrow:
+    text: Explore to see
+    size: small
+  heading:
+    text: <strong>The line VS.</strong> other cities
+    size: h3
+    element: h4
+
+items:
+  - image:
+      src: 'image/c46-media-list/item2.jpg'
+    copy: '<p>MANHATTAN</p>'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - image:
+      src: 'image/c46-media-list/item2.jpg'
+    copy: '<p>RIYADH</p>'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - preview:
+      props:
+        poster: 'image/c16-carousel/neom-heritage.jpg'
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+    copy: '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true

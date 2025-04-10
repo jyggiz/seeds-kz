@@ -1,0 +1,52 @@
+scrollComponent: true
+
+align:
+  horizontal: start
+  vertical: bottom
+
+background:
+  image:
+    src: './image/homepage-mountain-background.jpg'
+    alt: 'Mountain background'
+
+content:
+  header:
+    heading:
+      element: h1
+      size: h3
+      text: Welcome to Trojena
+    eyebrow:
+      text: A new mesmerizing experience
+      size: medium
+
+  buttons:
+    - level: primary
+      theme: white
+      icon: play-solid
+      variant: play
+      video:
+        props:
+          sources:
+            - src: 'video/video-preview.mp4'
+              type: video/mp4
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: false
+          loop: false
+          disablePreload: true
+          controls:
+            playPause: true
+            fullscreen: true
+            seek: true
+          eventTracking:
+            event: 'video_start'
+            video:
+              titleInEnglish: 'A Vision of a New Future: Explainer video'
+              title: 'A Vision of a New Future: Explainer video'
+              src: 'video/video-preview.mp4'
+
+      data:
+        video-button: null
+
+scrollButton: true

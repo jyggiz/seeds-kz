@@ -1,0 +1,37 @@
+scrollComponent: true
+
+grid:
+  alignment:
+    vertical: center
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: NEOM
+            heading:
+              text: 'is a new vision of what the future could be'
+              size: h4
+              element: h2
+            copy:
+              '<p>It’s an attempt to do something that’s never been done before and it’s coming at a
+              time when the world needs fresh thinking and new solutions. Put simply, NEOM will not
+              only be a destination, but a home for people who dream big and who want to be part of
+              building a new model for sustainable living.</p>'
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                level: primary
+                theme: white
+                label: 'view program'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

@@ -1,0 +1,59 @@
+scrollComponent: true
+
+align:
+  horizontal: center
+  vertical: middle
+
+background:
+  image:
+    src: 'image/c26-hero-banner/oxagon-mobile-bg.jpg'
+    alt: 'Mountain background'
+    sources:
+      - src: 'image/c26-hero-banner/oxagon-desktop-bg.jpg'
+        media: '(min-width: 768px)'
+
+content:
+  header:
+    heading:
+      element: h1
+      size: h2
+      text: OXAGON
+    moustache:
+      text: An industrial city redefining how we live and work
+      size: small
+  buttonType: pillar
+  buttons:
+    - icon: windmill
+      title: Advanced & clean industries
+      label: Creating a new paradigm
+      href: '#'
+      backgroundImage:
+        src: './image/c26-hero-banner/formula-e-modal.jpg'
+        alt: ''
+        disableTransition: true
+    - icon: dna
+      title: Research & innovation
+      label: Transform your business
+      href: '#'
+      backgroundImage:
+        src: './image/c26-hero-banner/formula-e-modal.jpg'
+        alt: ''
+        disableTransition: true
+    - icon: ship
+      title: Port, supply chain & logistics
+      label: Fully-integrated ecosystem
+      href: '#'
+      backgroundImage:
+        src: './image/c26-hero-banner/formula-e-modal.jpg'
+        alt: ''
+        disableTransition: true
+    - icon: people
+      title: Thriving communities
+      label: In harmony with nature
+      href: '#'
+      backgroundImage:
+        src: './image/c26-hero-banner/formula-e-modal.jpg'
+        alt: ''
+        disableTransition: true
+
+scrollButton: true

@@ -1,0 +1,53 @@
+scrollComponent: true
+theme: 'dark'
+
+grid:
+  fullWidth: true
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            copy:
+              content: 'align: center, top'
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 1 / 2 / 5
+      alignment:
+        vertical: start
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            copy:
+              content: 'align: center, middle'
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 5 / 2 / 9
+      alignment:
+        vertical: center
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            copy:
+              content: 'align: center, bottom'
+      gridArea:
+        smallScreen: 3 / 1 / 4 / 5
+        mediumScreen: 1 / 9 / 2 / 13
+      alignment:
+        vertical: end

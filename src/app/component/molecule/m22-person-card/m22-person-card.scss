@@ -1,0 +1,75 @@
+.m-personCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__content {
+    flex-basis: 50%;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    @include size(100%);
+    @include aspect-ratio(1, 1);
+    flex-basis: 50%;
+    position: relative;
+    transition: opacity 0.3s ease;
+  }
+
+  &__name {
+    @include type("body", "large");
+
+    color: var(--component-heading-color);
+    margin: 15px 0 5px;
+  }
+
+  &__role {
+    @include type("body", "small");
+    margin-bottom: 8px;
+    color: var(--component-highlight-color);
+  }
+
+  &__biography {
+    @include type("body", "small");
+
+    color: var(--component-text-color);
+    margin-block-start: 16px;
+  }
+
+  &__email {
+    display: flex;
+    align-items: center;
+    margin-block-start: 16px;
+    color: var(--component-highlight-color);
+
+    .a-icon {
+      margin-inline-end: 14px;
+    }
+
+    .a-label {
+      @include type("body", "small");
+      text-transform: lowercase;
+    }
+  }
+
+  &__icon {
+    color: var(--component-highlight-color);
+    margin-top: auto;
+    margin-inline-end: auto;
+    [dir="rtl"] & {
+      transform: scaleX(-1);
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__image {
+      max-width: inherit;
+    }
+
+    &__name {
+      margin: 25px 0 10px;
+    }
+  }
+}

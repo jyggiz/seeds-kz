@@ -1,0 +1,225 @@
+.b-flipCards {
+  @include neomThemes;
+
+  background-color: var(--component-background-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  .-isHidden {
+    display: none;
+    opacity: 0;
+  }
+
+  &__container {
+    @include container;
+  }
+
+  &__header {
+    margin-block-end: 30px;
+  }
+
+  &__description {
+    display: block;
+    color: var(--component-text-color);
+    margin-block-start: 10px;
+
+    &.-small {
+      @include type("body", "small");
+    }
+
+    &.-medium {
+      @include type("body", "medium");
+    }
+
+    &.-large {
+      @include type("body", "large");
+    }
+  }
+
+  &__items {
+    @include list-reset;
+
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  &__item {
+    @include aspect-ratio(2, 1);
+
+    .a-image {
+      &::after {
+        @include pseudo;
+        @include size(100%);
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+      }
+    }
+  }
+
+  &__itemContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > .m-button {
+      --button-font-size: 18px;
+
+      flex-shrink: 0;
+    }
+
+    &__title {
+      color: var(--color-white);
+    }
+  }
+
+  &__itemContent,
+  &__itemFlip {
+    &__title {
+      @include type("body", "xlarge");
+    }
+  }
+
+  &__itemFlip {
+    @include offset;
+    @include size(100%);
+
+    background-color: var(--color-white);
+    display: grid;
+    gap: 0 5px;
+    padding: 20px;
+    position: absolute;
+
+    &__title {
+      color: var(--color-black);
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+    &__copy {
+      @include type("body", "xsmall");
+
+      grid-area: 2 / 1 / 3 / 2;
+    }
+
+    & > .m-button {
+      align-self: end;
+      grid-area: 2 / 2 / 3 / 3;
+    }
+  }
+
+  &__itemContentWrapper {
+    @include size(100%);
+    @include offset;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: absolute;
+    padding: 20px;
+
+    & > .a-icon {
+      --icon-size: 40px;
+      --icon-fill: var(--component-highlight-color);
+
+      color: var(--icon-fill);
+      margin-block-end: auto;
+    }
+
+    &:after {
+      @include size(100%, 4px);
+      @include pseudo;
+
+      transform: scaleX(0);
+      background-color: var(--color-white);
+      bottom: 0;
+      left: 0;
+      transform-origin: left center;
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition: transform 250ms linear;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &:after {
+        transform: scaleX(1);
+      }
+
+      .m-button {
+        --button-background-color-hover: var(--color-white, white);
+        --button-text-color-hover: var(--color-black, black);
+
+        &__container {
+          background: var(--button-background-color-hover);
+          color: var(--button-text-color-hover);
+        }
+      }
+    }
+  }
+
+  &__loadMoreButtonWrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @include respond-to(LARGE) {
+    &__header {
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin: auto;
+      margin-block-end: 140px;
+      width: 80%;
+    }
+
+    &__items {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    &__item {
+      @include aspect-ratio(1, 1);
+    }
+
+    &__itemContentWrapper,
+    &__itemFlip {
+      padding: 40px;
+    }
+
+    &__itemContentWrapper,
+    &__itemContent {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__itemContent {
+      align-items: start;
+    }
+
+    &__itemFlip {
+      display: flex;
+      flex-direction: column;
+
+      &__copy {
+        @include type("body", "small");
+      }
+
+      & > .m-button {
+        align-self: start;
+        margin-block-start: auto;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__loadMoreButtonWrapper {
+      margin-top: 70px;
+    }
+  }
+}

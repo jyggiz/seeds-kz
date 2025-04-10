@@ -1,0 +1,26 @@
+scrollComponent: false
+
+items:
+  - id: 'o53'
+    data:
+      assetPull: false
+      assetFirst: true
+      type: 'paragraph'
+      text:
+        content:
+          eyebrow:
+            text: 'NEOM'
+            size: 'small'
+          heading:
+            text: 'is a vision of what the future might look like'
+            size: h6
+            element: h2
+          copy:
+            '<p><small>It’s an attempt to do something that’s never been done before and it’s coming
+            at a time when the world needs fresh thinking and new solutions. Simply put, NEOM will
+            be a destination, a home for people who dream big and want to be part of building a new
+            model for sustainable living, working and prospering.</small></p>'
+          buttons: 'import!../../../block/c20-image-text/data/partial-buttons-small.yaml'
+
+      asset:
+        content: 'import!../../../molecule/m16-figure/data/example-asset-image.yaml'

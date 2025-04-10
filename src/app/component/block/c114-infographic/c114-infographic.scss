@@ -1,0 +1,110 @@
+.b-infographic {
+  --component-heading-color: var(--color-black);
+
+  position: relative;
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  overflow: hidden;
+
+  &__header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .a-heading {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__container {
+    @include container;
+
+    position: relative;
+    margin-block: var(--component-block-padding, var(--container-margin));
+    padding-bottom: 80px;
+  }
+
+  &__swiper {
+    @include list-reset;
+
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .swiper-container {
+    overflow: visible;
+  }
+
+  .swiper-slide {
+    width: auto;
+    max-width: 540px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  &__controls {
+    display: none;
+  }
+
+  &__pagination {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+  }
+
+  @include respond-to("MEDIUM") {
+    &__header {
+      .a-heading {
+        margin-bottom: 0;
+      }
+    }
+
+    &__swiperContainer {
+      overflow-x: visible;
+    }
+
+    &__item {
+      flex-shrink: 0;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__header {
+      justify-content: space-between;
+      flex-direction: row-reverse;
+
+      &.startAlignment {
+        flex-direction: row;
+      }
+    }
+
+    &__controls {
+      @include size(140px, 60px);
+
+      display: block;
+
+      &.-isHidden {
+        display: none;
+      }
+    }
+  }
+
+  @include neomThemes {
+    &.t-gold {
+      .a-heading {
+        --component-heading-color: var(--color-gold);
+      }
+    }
+
+    &.t-dark,
+    &.t-darkMono {
+      .a-heading {
+        --component-heading-color: var(--color-black);
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+
+
+
+<div class="o-genericSlider"
+  data-component="o82-generic-slider"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  
+>
+  {{#with header}}
+    <header class="o-genericSlider__header" data-header>
+      {{#if eyebrow }}{{> atom/a04-eyebrow eyebrow }}{{/if}}
+      <div class="o-genericSlider__titleWrapper">
+        {{> atom/a03-heading heading }}
+        {{#with articleIndicator }}
+          {{> atom/a04-eyebrow size="small" }}
+        {{/with}}
+        <div class="o-genericSlider__controls" data-controls>
+          {{> organism/o42-slider-controls theme=../theme }}
+        </div>
+      </div>
+      {{#if moustache }}{{> atom/a05-moustache moustache }}{{/if}}
+    </header>
+  {{/with}}
+
+  {{#with listSorter}}
+    <div class="o-genericSlider__sorter" data-sorter>
+      <div class="o-genericSlider__sorterWrapper">
+        <ul class="o-genericSlider__sorterList -primary">
+          {{#each items}}
+            <li class="o-genericSlider__sorterListItem -primary {{#if active}} -isActive{{/if}}" data-sorter-item data-category="{{value}}"
+                data-value="{{value}}" data-option="{{toJson this}}">
+              <a class="o-genericSlider__sorterListLink" {{#if href}}href="{{href}}" {{/if}}>
+                {{ label }}
+              </a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  {{/with}}
+
+  <div class="o-genericSlider__content" data-slider-container>
+    <div class="swiper__container" data-slider>
+      <ul class="swiper-wrapper" data-slider-items>
+        {{#each items}}
+          <li class="swiper-slide" data-slider-item>
+            {{#if (condition ../componentId '===' 'o13')}}
+              {{> organism/o13-content-card theme=../theme }}
+            {{/if}}
+            {{#if (condition ../componentId '===' 'o14')}}
+              {{> organism/o14-popout-card theme= ../theme }}
+            {{/if}}
+            {{#if (condition ../componentId '===' 'o19')}}
+              {{> organism/o19-update-card }}
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+      {{> atom/a08-page-indicators items=null }}
+    </div>
+  </div>
+</div>

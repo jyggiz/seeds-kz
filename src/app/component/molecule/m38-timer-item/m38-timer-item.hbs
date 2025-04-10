@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="./m38-timer-item.scss">
+<script src="./M38TimerItem.ts"></script>
+
+
+<div class="m-timerItem"
+  data-component="m38-timer-item"
+  {{#if id}} id="{{id}}"{{/if}}>
+
+  <div class="m-timerItem__digit {{#if variant}} -{{variant}}{{/if}}" data-{{@key}}>00</div>
+  {{#if (condition @key '===' 'days')}}
+    {{> atom/a07-label text=@root.i18n.days variant=variant }}
+  {{else if (condition @key '===' 'hours') }}
+    {{> atom/a07-label text=@root.i18n.hours variant=variant }}
+  {{else if (condition @key '===' 'minutes') }}
+    {{> atom/a07-label text=@root.i18n.minutes variant=variant }}
+  {{else if (condition @key '===' 'seconds') }}
+    {{> atom/a07-label text=@root.i18n.seconds variant=variant }}
+  {{/if}}
+</div>

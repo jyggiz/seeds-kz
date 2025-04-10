@@ -1,0 +1,10 @@
+image:
+  src: 'image/logo-mark-neom.png'
+  alt: 'Media.Monks logo'
+author:
+  prefix: 'Author Prefix'
+  name: 'Author Name'
+  role: 'Author Suffix, role'
+quote:
+  '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus, ligula id bibendum
+  facilisis, massa erat tincidunt sem, nec fermentum sapien libero et ante.”'

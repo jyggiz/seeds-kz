@@ -1,0 +1,325 @@
+apiUrl: 'http://localhost:4503/bin/api/forms'
+form_id: 'trojena-form_id'
+id: 'trojena-form-id'
+
+submitView:
+  background:
+    disableTransition: true
+    image:
+      alt: '#'
+      src: 'image/c54-countdown-timer/oxagon.jpeg'
+  success:
+    eyebrow:
+      text: success eyebrow
+      size: medium
+    heading:
+      text: Success heading
+      size: h4
+      element: h4
+    copy:
+      size: medium
+      content:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex magni dolorem officia iste
+        obcaecati vel cum impedit ut mollitia?
+  error:
+    eyebrow:
+      text: Error eyebrow
+    heading:
+      text: Error heading
+      size: h4
+      element: h4
+  buttons:
+    done:
+      label: Done
+      href: trojena
+      target: _blank
+    retry:
+      label: Please try again
+
+  social:
+    cta: Please follow us
+    items:
+      - icon: youtube-gold
+        href: 'https://www.youtube.com/channel/UCl0eCJPupCsTrobb_0bprhw'
+        target: _blank
+        label: Youtube
+      - icon: twitter-gold
+        href: 'https://twitter.com/NEOM'
+        target: _blank
+        label: Twitter
+      - icon: instagram-gold
+        href: 'https://www.instagram.com/discoverneom/?hl=en'
+        target: _blank
+        label: Instagram
+      - icon: facebook-gold
+        href: 'https://www.facebook.com/NEOM'
+        target: _blank
+        label: Facebook
+      - icon: linkedin-gold
+        href: 'https://www.linkedin.com/NEOM'
+        target: _blank
+        label: LinkedIn
+      - icon: tiktok-gold
+        href: 'https://www.tiktook.com/NEOM'
+        target: _blank
+        label: TikTok
+
+recaptcha:
+  sitekey: '6Lf4Aw8cAAAAANeB20rZn037kPCGjImQzsqm8aYK'
+  statement:
+    'This site is protected by reCAPTCHA and the Google <a
+    href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+    href="https://policies.google.com/terms">Terms of Service</a> apply.'
+titleInEnglish: 'Trojena Form title in english'
+
+dir: 'ltr'
+
+background:
+  image:
+    alt: '#'
+    src: 'image/c71-facts-list/tourism/1-mobile.jpg'
+    sources:
+      - src: 'image/c71-facts-list/tourism/1.jpg'
+        media: '(min-width: 768px)'
+
+steps:
+  - groups:
+      - type: grid
+        legend:
+          text: We need your contact details
+          variant: heading
+        items:
+          - type: text
+            name: FNAME
+            id: first-name
+            placeholder: Type here
+            label: 'First Name'
+            maxlength: 20
+            required: true
+            titleInEnglish: 'First Name'
+            validate:
+              presence:
+                message: '^Please enter your first name'
+                allowEmpty: false
+              format:
+                pattern: "[^0-9!-\/:-@\\[-`{-~]+"
+                message: '^Please only use letters'
+          - type: text
+            name: LNAME
+            id: last-name
+            placeholder: Type here
+            label: 'Last Name'
+            required: true
+            titleInEnglish: 'Last Name'
+            validate:
+              presence:
+                message: '^Please enter your last name'
+                allowEmpty: false
+              format:
+                pattern: "[^0-9!-\/:-@\\[-`{-~]+"
+                message: '^Please only use letters'
+          - type: email
+            name: Email
+            id: email
+            placeholder: 'name@mail.com'
+            label: 'Email address'
+            required: true
+            titleInEnglish: 'Email Address'
+            validate:
+              presence:
+                message: '^Please enter your email address'
+              email:
+                message: '^Please enter a correct email address'
+              format:
+                pattern: '^[-\.\w]+@(?!(gmail|hotmail|yahoo|outlook|msn|live|aol|aim|wanadoo|rediffmail|free|gmx|wed|yandex|ymail|libero|googlemail))[-\.\w]+\.\w{2,4}$'
+                flags: 'i' # any flags need to be passed as a property to validate.js
+                message: '^Please enter a correct business email'
+          - type: phone
+            countryDropdown:
+              flagsPath: 'image/flags/'
+              placeholder: 'Choose one...'
+              titleInEnglish: 'country'
+              showRawValue: true
+              isWideDropdown: true
+              items:
+                - value: '+31'
+                  label: 'Netherlands'
+                  countryCode: 'NL'
+                - value: '+54'
+                  label: 'Argentina'
+                  countryCode: 'AR'
+                - value: '+1'
+                  label: 'United States of America'
+                  countryCode: 'US'
+                - value: '+966'
+                  label: 'Saudi Arabia'
+                  countryCode: 'SA'
+                - value: '+41'
+                  label: 'United Kingdom'
+                  countryCode: 'GB'
+                - value: '+49'
+                  label: 'Germany'
+                  countryCode: 'DE'
+              name: COUNTRY
+              id: country
+              validate:
+                presence:
+                  message: '^Please choose country'
+                  allowEmpty: false
+            name: PHONE
+            id: phone-number
+            placeholder: 'Type here'
+            label: 'Phone number'
+            titleInEnglish: 'Phone number'
+            required: true
+            validate:
+              presence:
+                message: '^Please add phone'
+                allowEmpty: false
+              format:
+                pattern: '[0-9]+'
+                message: '^Please use digits only'
+              length:
+                minimum: 5
+                tooShort: '^Please use a phone number at least 5 digits long'
+                maximum: 12
+                tooLong: '^Please use a phone number at most 12 digits long'
+          - type: select
+            label: 'Your location'
+            name: 'LOCATION'
+            id: location
+            placeholder: 'Select'
+            required: true
+            items:
+              - label: 'Foo'
+                value: 'foo-1'
+              - label: 'Bar'
+                value: 'bar-1'
+              - label: 'Baz'
+                value: 'baz-1'
+            validate:
+              presence:
+                message: '^Please choose your location'
+                allowEmpty: false
+
+          - type: select
+            label: 'Preferred language'
+            placeholder: 'Select'
+            name: 'LANGUAGE'
+            id: 'language'
+            items:
+              - type: select
+                value: english
+                label: 'English'
+                selected: true
+              - type: select
+                value: chinese (traditional)
+                label: 'Chinese (Traditional)'
+              - type: select
+                value: chinese (simplified)
+                label: 'Chinese (Simplified)'
+              - type: select
+                value: russian
+                label: 'Russian'
+              - type: select
+                value: arabic
+                label: 'Arabic'
+              - type: select
+                value: japanese
+                label: 'Japanese'
+              - type: select
+                value: french
+                label: 'French'
+              - type: select
+                value: german
+                label: 'German'
+
+      - type: checkbox
+        legend:
+          text: 'Can we stay in touch'
+        name: contact-permissions
+        id: contact-permissions
+        required: true
+        items:
+          - name: contact-permissions
+            value: 'yes'
+            id: contact-permissions
+            copy:
+              '<p>I agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.  All
+              your information will be treated carefully.</p>'
+        validate:
+          presence:
+            message: '^Please select at least one'
+
+  - header:
+      eyebrow:
+        text: 'Research or innovate'
+      heading:
+        text: 'OXAGON 3.0'
+        element: h5
+        size: h5
+
+    groupsHeading:
+      text: What is your area of interest?
+
+    groups:
+      - type: checkbox
+        legend:
+          variant: subgroup
+          text: 'Industry(ies) which your business most closely aligns with'
+        hint: Select all that apply
+        name: 'contact-permissions'
+        id: 'contact-permissions'
+        required: false
+        validate:
+          presence:
+            message: '^Please select at least one'
+        items:
+          - type: checkbox
+            name: 'contact-permissions'
+            id: 'contact-permissions'
+            label: 'Autonomous & sustainable mobility'
+            value: 1
+            titleInEnglish: 'Contact permissions'
+          - type: checkbox
+            name: 'contact-permissions'
+            id: 'contact-permissions'
+            label: 'Health & wellbeing'
+            value: 2
+            titleInEnglish: 'Contact permissions'
+          - type: checkbox
+            name: 'contact-permissions'
+            id: 'contact-permissions'
+            label: 'Modern construction'
+            value: 3
+            titleInEnglish: 'Contact permissions'
+          - type: checkbox
+            name: 'contact-permissions'
+            id: 'contact-permissions'
+            label: 'Renewable energy'
+            value: 4
+            titleInEnglish: 'Contact permissions'
+          - type: checkbox
+            name: 'contact-permissions'
+            id: 'contact-permissions'
+            label: 'Sustainable food production'
+            value: 5
+            titleInEnglish: 'Contact permissions'
+          - type: checkbox
+            name: 'contact-permissions'
+            id: 'contact-permissions'
+            label: 'Technology & digital'
+            value: 6
+            titleInEnglish: 'Contact permissions'
+          - type: checkbox
+            name: 'contact-permissions'
+            id: 'contact-permissions'
+            label: 'Water innovation'
+            value: 7
+            titleInEnglish: 'Contact permissions'
+          - type: checkbox
+            name: 'contact-permissions'
+            id: 'contact-permissions'
+            label: 'Other'
+            value: 8
+            titleInEnglish: 'Contact permissions'

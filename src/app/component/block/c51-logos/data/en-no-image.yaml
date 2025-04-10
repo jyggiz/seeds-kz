@@ -1,0 +1,32 @@
+scrollComponent: true
+
+header:
+  alignment: center
+  eyebrow:
+    text: Our Partners
+
+items:
+  - image:
+      alt: MediaMonks
+      src: 'image/c51-logos/mediamonks-logo-navy.svg'
+    link:
+      href: 'https://media.monks.com/'
+      target: '_blank'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo-neom-navy.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'
+  - image:
+      alt: Logo
+      src: 'image/c51-logos/logo.svg'

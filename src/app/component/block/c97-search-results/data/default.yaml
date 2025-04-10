@@ -1,0 +1,233 @@
+heading:
+  text: Search Results
+  size: h5
+  element: h1
+
+showButtonCopy: view all results
+hideButtonCopy: show less results
+
+results:
+  - heading: our business
+    items:
+      - image:
+          src: 'image/c20-test-image.jpg'
+        heading:
+          text: '1 Company page'
+        headingInEnglish:
+          text: '1 Company page'
+        copy: ''
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c01-promotion-hero/the-line.jpg'
+        heading:
+          text: '2 Partner page'
+        headingInEnglish:
+          text: '2 Partner page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/key-feature-image-01.jpg'
+        heading:
+          text: '3 Supplier page'
+        headingInEnglish:
+          text: '3 Supplier page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/key-feature-image-02.jpg'
+        heading:
+          text: '4 Sector page'
+        headingInEnglish:
+          text: '4 Sector page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/key-feature-image-03.jpg'
+        heading:
+          text: '5 Sector page'
+        headingInEnglish:
+          text: '5 Sector page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+  - heading: newsroom
+    items:
+      - image:
+          src: 'image/c03-blinds/key-feature-image-04.jpg'
+        heading:
+          text: '1 Newsroom 1'
+        headingInEnglish:
+          text: '1 Newsroom 1'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/homepage/home-key-feature-image-01.jpg'
+        heading:
+          text: '2 Newsroom 2'
+        headingInEnglish:
+          text: '2 Newsroom 2'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/key-feature-image-04.jpg'
+        heading:
+          text: '3 Newsroom 1'
+        headingInEnglish:
+          text: '3 Newsroom 1'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+  - heading: new section
+    items:
+      - image:
+          src: 'image/c03-blinds/homepage/home-key-feature-image-02.jpg'
+        heading:
+          text: '1 Newsroom'
+        headingInEnglish:
+          text: '1 Newsroom'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c20-test-image.jpg'
+        heading:
+          text: '2 Newsroom 2'
+        headingInEnglish:
+          text: '2 Newsroom 2'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/homepage/home-key-feature-image-03.jpg'
+        heading:
+          text: '3 Company page'
+        headingInEnglish:
+          text: '3 Company page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/homepage/home-key-feature-image-04.jpg'
+        heading:
+          text: '4 Company page'
+        headingInEnglish:
+          text: '4 Company page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c20-test-image.jpg'
+        heading:
+          text: '5 Company page'
+        headingInEnglish:
+          text: '5 Company page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/the-line/01.jpg'
+        heading:
+          text: '6 Company page'
+        headingInEnglish:
+          text: '6 Company page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/the-line/02.jpg'
+        heading:
+          text: '7 Company page'
+        headingInEnglish:
+          text: '7 Company page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/the-line/03.jpg'
+        heading:
+          text: '8 Company page'
+        headingInEnglish:
+          text: '8 Company page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'
+
+      - image:
+          src: 'image/c03-blinds/the-line/04.jpg'
+        heading:
+          text: '9 Company page'
+        headingInEnglish:
+          text: '9 Company page'
+        copy:
+          'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti quos dolores et quas.'
+        link:
+          label: Learn more
+          href: '#'

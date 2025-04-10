@@ -1,0 +1,24 @@
+
+
+<div class="o-downloadDrawer"
+  data-component="o47-download-drawer"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  data-lazy-component
+  style="display: none;"
+>
+  <div class="o-downloadDrawer__drawer" data-download-drawer>
+    <div class="o-downloadDrawer__container">
+      <div class="o-downloadDrawer__content">
+        <p class="o-downloadDrawer__messages">
+          <span class="o-downloadDrawer__countMessage" data-count-message data-message="{{toJson @root.i18n.downloadMessages}}"></span>
+          {{!-- TODO --}}
+          {{!-- <br /> <span class="o-downloadDrawer__fileTypeMessage" data-message="{{messages.downloadCount}}"></span> --}}
+        </p>
+      </div>
+      <div class="o-downloadDrawer__buttons">
+        {{> molecule/m02-button level="secondary" theme="black" size="small" label=@root.i18n.clearAll data=(object clear-button=null)}}
+        {{> molecule/m02-button level="primary" theme="dark-gold"  size="small" label=@root.i18n.downloadAll data=(object download-all-button=null)}}
+      </div>
+    </div>
+  </div>
+</div>

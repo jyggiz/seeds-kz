@@ -1,0 +1,97 @@
+title: 'c33-grouped-content-slider'
+fullMinHeight: true
+scrollComponent: true
+id: 'c33-no-timeline'
+
+background:
+  video:
+    props:
+      sources:
+        - src: video/hackathon.mov
+          type: video/mp4
+
+eyebrow:
+  text: HACKATHON TIMELINE
+  size: small
+
+groups:
+  - label:
+      text: July & August
+    items:
+      - heading:
+          size: h6
+          element: h2
+          text: 'REGISTRATION'
+        copy:
+          content:
+            '<ul><li>Futurology Futurology Futurology Futurology Futurology</li><li> Idea
+            Generation</li><li>Predictive Analysis</li><li>Founder Series</li></ul>'
+          size: 'small'
+        button:
+          href: '/content/neom/en-us'
+          target: '_blank'
+          size: small
+          theme: dark-gold
+          label: sign us
+      - heading:
+          size: h6
+          element: h2
+          text: 'REGISTRATION'
+        copy:
+          content:
+            '<ul><li>Futurology Futurology Futurology Futurology Futurology</li><li> Idea
+            Generation</li><li>Predictive Analysis</li><li>Founder Series</li></ul>'
+          size: 'small'
+        button:
+          href: '/content/neom/en-us'
+          target: '_blank'
+          size: small
+          theme: dark-gold
+          label: sign us
+      - heading:
+          size: h6
+          element: h2
+          text: 'REGISTRATION'
+        copy:
+          content:
+            '<ul><li>Futurology</li><li> Idea Generation</li><li>Predictive Analysis</li><li>Founder
+            Series</li></ul>'
+          size: 'small'
+        button:
+          href: '/content/neom/en-us'
+          target: '_blank'
+          size: small
+          theme: dark-gold
+          label: sign us
+  - label:
+      text: July & August
+    items:
+      - heading:
+          size: h6
+          element: h2
+          text: 'REGISTRATION'
+        copy:
+          content: 'Submit your teams Hackathon application.'
+          size: 'small'
+        button:
+          href: '/content/neom/en-us'
+          target: '_blank'
+          size: small
+          theme: dark-gold
+          label: sign us
+  - label:
+      text: July & August
+    items:
+      - heading:
+          size: h6
+          element: h2
+          text: 'REGISTRATION'
+        copy:
+          content: 'Submit your teams Hackathon application.'
+          size: 'small'
+        button:
+          href: '/content/neom/en-us'
+          target: '_blank'
+          size: small
+          theme: dark-gold
+          label: sign us

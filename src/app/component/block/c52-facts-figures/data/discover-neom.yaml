@@ -1,0 +1,5 @@
+scrollComponent: true
+
+items:
+  - 'import!../../../organism/o58-facts-list/data/discover-neom-figures-first.yaml'
+  - 'import!../../../organism/o58-facts-list/data/discover-neom-figures-second.yaml'

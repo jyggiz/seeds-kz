@@ -1,0 +1,68 @@
+scrollComponent: true
+
+align:
+  horizontal: start
+  vertical: bottom
+
+background:
+  image:
+    src: 'image/c26-hero-banner/teaser-investor.jpg'
+    alt: Invest in Neom
+  video:
+    props:
+      sources:
+        - src: './video/background-video-preview.mp4'
+          type: 'video/mp4'
+
+content:
+  header:
+    flipHeading:
+      prefix: استثمر في مستقبل
+      labels:
+        - التصميم والبناء
+        - التعليم
+        - الطاقة
+        - الترفيه والثقافة
+        - الغذاء
+        - الصحة والرفاهية والتقنيات الحيوية
+        - التصنيع
+        - الإعلام
+        - التنقل
+        - الخدمات
+        - الرياضة
+        - العلوم التقنية والرقمية
+        - السياحة
+        - الماء
+      size: h3
+
+  buttons:
+    - icon: play-solid
+      theme: white
+      variant: play
+      video:
+        props:
+          sources:
+            - src: 'video/video-preview.mp4'
+              type: video/mp4
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: false
+          loop: false
+          disablePreload: true
+          controls:
+            fullscreen: true
+            playPause: true
+            seek: true
+          eventTracking:
+            event: 'Video Play'
+            video:
+              src: 'video/video-preview.mp4'
+              title: 'A Vision of a New Future: Explainer video'
+              titleInEnglish: 'A Vision of a New Future: Explainer video'
+    - level: primary
+      theme: white
+      label: 'Learn more'
+      icon: 'arrow-right'
+
+scrollButton: true

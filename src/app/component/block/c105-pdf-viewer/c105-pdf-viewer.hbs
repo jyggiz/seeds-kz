@@ -1,0 +1,65 @@
+
+
+
+<section class="b-pdfViewer"
+  data-component="c105-pdf-viewer"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  data-url={{ pdfUrl }}
+  {{#if (condition backgroundColor '||' padding)}}
+    style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+    {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component
+>
+  <div class="b-pdfViewer__minimap">
+    <div class="b-pdfViewer__minimapLabel">
+      {{> atom/a02-icon name="square-menu" }}
+      {{> atom/a04-eyebrow size='small' text=minimapLabel }}
+      <button class="b-pdfViewer__minimapCloseButton">
+        {{> atom/a02-icon name="close" }}
+      </button>
+    </div>
+    <!-- Canvas with every page -->
+  </div>
+  <div class="b-pdfViewer__container" data-pdf-container>
+    <div class="b-pdfViewer__loader"></div>
+    <div class="b-pdfViewer__topToolbar" data-pdf-top-toolbar>
+      {{#with eyebrow}}
+        {{> atom/a04-eyebrow size='small' }}
+      {{/with}}
+      <div class="b-pdfViewer__divider"></div>
+      <div class="b-pdfViewer__pagination">
+        <span class="b-pdfViewer__paginationLabel">{{ paginationLabel }}</span>
+        {{> atom/a14-input
+          type='search'
+          name='search'
+          id='search'
+        }} / <span class="b-pdfViewer__paginationPageCount"></span>
+      </div>
+    </div>
+    <div class="b-pdfViewer__book">
+      <button id="b-pdfViewer__previousButton">
+        {{> atom/a02-icon name="chevron-left"}}
+      </button>
+      <div id="canvas-container" class="-isFirstPage"></div>
+      <button id="b-pdfViewer__nextButton">
+        {{> atom/a02-icon name="chevron-right"}}
+      </button>
+    </div>
+    <div class="b-pdfViewer__toolbar" data-pdf-bottom-toolbar>
+      <button class="b-pdfViewer__minimapToggle">
+        {{> atom/a02-icon name="square-menu" }}
+      </button>
+      <div class="b-pdfViewer__divider"></div>
+      <a class="b-pdfViewer__download" href="{{ pdfUrl }}" download>
+        {{> atom/a02-icon name="download" }}
+      </a>
+      <div class="b-pdfViewer__divider"></div>
+      <button class="b-pdfViewer__fullscreenToggle">
+        {{> atom/a02-icon name="open-full-screen" }}
+      </button>
+    </div>
+  </div>
+</section>

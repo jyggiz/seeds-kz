@@ -1,0 +1,23 @@
+dir: ltr
+language: ru
+head: 'import!../app/data/yaml/seeds-companies.yaml'
+
+navigation: 'import!../app/component/organism/o97-navigation-placeholder/data/default.yaml'
+
+meta:
+  id: 'p01'
+  status: 'done'
+  notes: ''
+  category: 'Pages'
+
+blocks:
+  - name: 'c26-hero-banner'
+    data: 'import!../app/component/block/c26-hero-banner/data/seeds-companies.yaml'
+
+  - name: 'c46-media-list'
+    data: 'import!../app/component/block/c46-media-list/data/seeds-company.yaml'
+
+  - name: 's02-footer'
+    data: 'import!../app/component/block/s02-footer/data/seeds-index.yaml'
+
+scrollToTop: true

@@ -1,0 +1,15 @@
+
+
+<section class="b-imageText
+  {{#if variant}} -{{variant}}{{/if}}
+  {{#if assetPull}} -assetPull{{/if}}
+  {{#if (condition items.[0].type '===' 'asset' )}} -assetFirst{{^}} -assetLast{{/if}}
+  {{#if fullMinHeight}} -fullMinHeight{{/if}}"
+  data-component="c20-image-text"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#with id}}id="{{this}}"{{/with}}
+  data-lazy-component
+>
+  {{> organism/o30-content-grid }}
+</section>
+

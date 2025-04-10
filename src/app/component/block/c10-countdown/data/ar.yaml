@@ -1,0 +1,21 @@
+logo:
+  src: 'image/logo-neom-ar.png'
+  href: 'homepage-ar.html'
+  label: 'NEOM logo'
+
+heading: آن الأوان... لنطلق “ذا لاين”
+
+countdown:
+  date: ${countdown}
+  days: أيام
+  hours: ساعات
+  minutes: دقائق
+  seconds: ثواني
+
+languages:
+  activeLanguageCode: ar
+  href: 'the-line'
+  options: 'import!../../../organism/o04-language-selector/data/languages.yaml'
+
+video:
+  src: 'video/the-line-background-video.mp4'

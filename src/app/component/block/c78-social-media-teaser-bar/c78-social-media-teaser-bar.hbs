@@ -1,0 +1,22 @@
+
+
+
+<section class="b-socialMediaTeaserBar{{#if theme}} t-{{theme}}{{/if}}{{#if variant}} -{{variant}}{{/if}}"
+  data-component="c78-social-media-teaser-bar"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  data-lazy-component>
+  <div class="b-socialMediaTeaserBar__container">
+    <div class="b-socialMediaTeaserBar__content">
+    <h2 class="b-socialMediaTeaserBar__heading">{{ heading }}</h2>
+    {{#with link}}
+      <p class="b-socialMediaTeaserBar__link">
+        <a href="{{ href }}" target="_blank">{{ label }}</a>
+      </p>
+    {{/with}}
+    <div class="b-socialMediaTeaserBar__social">
+      {{> molecule/m12-social social}}
+    </div>
+  </div>
+  </div>
+</section>

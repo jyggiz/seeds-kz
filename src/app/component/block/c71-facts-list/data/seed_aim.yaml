@@ -1,0 +1,31 @@
+heading: 'Цель палаты'
+
+items:
+  - title:
+      'Создание условий для внедрения современных технологий производства семян сельскохозяйственных
+      растений'
+    image:
+      alt: 'Globe image'
+      src: 'image/c71-facts-list/seeds/1.webp'
+  - title: 'Контроль за технологией производства семян'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/seeds/2.webp'
+  - title:
+      'Обеспечение отечественных сельскохозяйственных товаропроизводителей высококачественными
+      семенами'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/seeds/3.webp'
+  - title: 'Обеспечение роста объема экспорта семян'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/seeds/4.webp'
+  - title: 'Снижение импортозависимости'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/seeds/5.webp'
+  - title: 'Решение проблемных вопросов в области семеноводстве'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/seeds/6.webp'

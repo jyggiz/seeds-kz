@@ -1,0 +1,65 @@
+padding:
+  start: 'large'
+  end: 'none'
+
+heading:
+  text: 'Proudly Hosting'
+  size: 'h5'
+
+items:
+  - equalContentWidth: true
+    image:
+      src: 'image/c57-motion-slider/mobile/1.png'
+      alt: 'test image'
+      sources:
+        - src: 'image/c12-hero-slider/theline-hero.jpg'
+          media: '(min-width: 768px)'
+    eyebrow:
+      text: 'GKA FREESTYLE WORLD CUP'
+    content:
+      image:
+        src: 'image/c57-motion-slider/logo-1.png'
+        alt: 'Hello world'
+      eyebrow:
+        text: 'NOV 4-5'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        element: 'h2'
+        text: 'GKA FREESTYLE WORLD CUP'
+      copy:
+        size: 'small'
+        content:
+          'Following the announcement by His Royal Highness Mohammed bin Salman, Crown Prince and
+          Chairman of the NEOM Company Board of Directors, on the city of the future – you now have
+          the chance to see it for yourself. Our public exhibition at the Diriyah Biennale
+          Foundation - Jax district is open for visitors. You will get to experience detailed
+          designs, architectural models and informative films explaining the project in all its
+          glory. Tickets are free, but you must register online in advance – using the link below –
+          as spaces are limited. Visiting hours are 9am to 11pm from Sunday to Wednesday, 9am to 12
+          midnight on Thursday and Saturday – and 3pm to 12 midnight on Friday. You must be aged 12
+          years and over to participate.'
+  - image:
+      src: 'image/c57-motion-slider/mobile/1.png'
+      alt: 'test image'
+      sources:
+        - src: 'image/c57-motion-slider/desktop/1.png'
+          media: '(min-width: 768px)'
+    eyebrow:
+      text: 'GKA FREESTYLE WORLD CUP'
+    content:
+      image:
+        src: 'image/c57-motion-slider/logo-1.png'
+        alt: 'Hello world'
+      eyebrow:
+        text: 'NOV 4-5'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        element: 'h2'
+        text: 'GKA FREESTYLE WORLD CUP'
+      copy:
+        size: 'small'
+        content:
+          'Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget lacus
+          eget semper. Ante tempor, tempus mauris et, consectetur.'

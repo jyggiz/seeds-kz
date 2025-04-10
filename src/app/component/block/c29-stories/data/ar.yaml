@@ -1,0 +1,193 @@
+scrollComponent: true
+
+overlapTopComponent: true
+
+header:
+  disableTransition: true
+  alignment: left
+  heading:
+    text: من داخل نيوم
+    size: h3
+
+items:
+  - title: الحالمون والمنجزون
+    image:
+      src: 'image/c29-stories/stories_settlers.jpg'
+      alt: الحالمون والمنجزون
+    gridPosition: 3
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: The Dreamers and Doers
+            title: الحالمون والمنجزون
+            src: video/video-preview.mp4
+
+  - title: الطبيعة أولويتُنا
+    image:
+      src: 'image/c29-stories/stories_environment.jpg'
+      alt: الطبيعة أولويتُنا
+    gridPosition: 6
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Putting Nature First
+            title: الطبيعة أولويتُنا
+            src: video/video-preview.mp4
+
+  - title: الماء... بنظرة جديدة
+    image:
+      src: 'image/c29-stories/stories_episodewater.jpg'
+      alt: الماء... بنظرة جديدة
+    gridPosition: 1
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Rethinking Water
+            title: الماء... بنظرة جديدة
+            src: video/video-preview.mp4
+
+  - title: مدرسة المستقبل... ستُبنى هنا
+    image:
+      src: 'image/c29-stories/stories_education.jpg'
+      alt: مدرسة المستقبل... ستُبنى هنا
+    gridPosition: 4
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Building the School of the Future
+            title: مدرسة المستقبل... ستُبنى هنا
+            src: video/video-preview.mp4
+
+  - title: نهج وقائي لصحة مستدامة
+    image:
+      src: 'image/c29-stories/stories_health.jpg'
+      alt: نهج وقائي لصحة مستدامة
+    gridPosition: 7
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: A Preventative Approach to Health'
+            title: نهج وقائي لصحة مستدامة
+            src: video/video-preview.mp4
+
+  - title: عندما يتناغم الإنسان مع الطبيعة
+    image:
+      src: 'image/c29-stories/humanity-harmony.jpg'
+      alt: عندما يتناغم الإنسان مع الطبيعة
+    gridPosition: 2
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Where humanity and nature live in harmony
+            title: عندما يتناغم الإنسان مع الطبيعة
+            src: video/video-preview.mp4
+
+  - title: إمداد الطاقة في نيوم
+    image:
+      src: 'image/c29-stories/stories_peterterium.jpg'
+      alt: إمداد الطاقة في نيوم
+    gridPosition: 5
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: Powering NEOM
+            title: إمداد الطاقة في نيوم
+            src: video/video-preview.mp4

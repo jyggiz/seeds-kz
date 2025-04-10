@@ -1,0 +1,19 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m17-list
+          data: 'import!../../../../molecule/m17-list/data/brandbook-photography-ratios-list.yaml'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

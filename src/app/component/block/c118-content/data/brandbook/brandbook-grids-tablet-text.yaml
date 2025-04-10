@@ -1,0 +1,25 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              element: 'h3'
+              text: 'M - Tablet'
+              size: 'h5'
+            copy:
+              size: 'medium'
+              content: <p>768px, 6 columns, 20px baseline.</p>
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

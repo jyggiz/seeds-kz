@@ -1,0 +1,196 @@
+scrollComponent: true
+
+headerPosition: center
+header:
+  asset:
+    alt: 'A road leading to a mountain range'
+    src: './image/logo-tonomus.png'
+  eyebrow:
+    text: 'Optional Eyebrow'
+  heading:
+    text: What's happening <br /> <span>at NEOM</span>
+    size: h4
+  alignment: start
+theme: 'darkMono'
+backgroundColor: 'black'
+items:
+  - heading:
+      title:
+        copy: Welcome to THE LINE
+        size: medium
+        transform: uppercase
+      text: Welcome to THE LINE
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_thelinelaunch.jpg'
+    video:
+      props:
+        playButtonEventTracking:
+          componentId: 'CTA id'
+        label: Watch video
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Welcome to THE LINE'
+            title: 'Welcome to THE LINE'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: NEOM Moves Headquarters to the Northwest of the Kingdom
+    variant: article
+    link:
+      href: http://newsroom.neom.com/neom-moves-headquarters-to-northwest-of-the-kingdom
+      target: '_blank'
+    callToAction:
+      label: Read more
+      target: _blank
+      icon: arrow-right
+      iconAlign: right
+      eventTracking:
+        componentId: 'CTA id'
+
+  - heading:
+      text: A Promise to Revolutionize Water Desalination
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_solardome.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_solardome.jpg'
+          media: '(min-width: 768px)'
+    video:
+      props:
+        playButtonEventTracking:
+          componentId: 'CTA id'
+        label: Watch video
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Promise to Revolutionize Water Desalination'
+            title: 'A Promise to Revolutionize Water Desalination'
+            src: video/video-preview.mp4
+
+  - heading:
+      text:
+        As NEOM works towards 'accelerating human progress', it is providing investors with a
+        destination to combine business and conservation in Saudi Arabia.
+      title:
+        copy: Creating investments of the future
+        size: medium
+        transform: uppercase
+    variant: article
+    link:
+      href: https://newsroom.neom.com/neom-named-as-principal-partner-of-mercedes-benz-eq-formula-e-team-296622
+      target: '_blank'
+    callToAction:
+      label: Read more
+      target: _blank
+      icon: arrow-right
+      iconAlign: right
+      eventTracking:
+        componentId: 'CTA id'
+    image:
+      alt: 'Image'
+      src: 'image/c16-carousel/updates_mercedes.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_mercedes.jpg'
+          media: '(min-width: 768px)'
+
+  - heading:
+      text:
+        As NEOM works towards 'accelerating human progress', it is providing investors with a
+        destination to combine business and conservation in Saudi Arabia wedwedwedwedewdewdewdewd
+        wedwedewdwedewdewdewdwedwedewdewd wfwedfewdwedwedwedewdwedwedwe wdwedwedwedwedewdwedwedwed
+        wedwedwedwedwe.
+      title:
+        copy: Creating investments of the future
+    variant: article
+    link:
+      href: https://newsroom.neom.com/neom-named-as-principal-partner-of-mercedes-benz-eq-formula-e-team-296622
+      target: '_blank'
+    callToAction:
+      label: Read more
+      target: _blank
+      icon: arrow-right
+      iconAlign: right
+      eventTracking:
+        componentId: 'CTA id'
+    image:
+      alt: 'Image'
+      src: 'image/c16-carousel/updates_mercedes.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_mercedes.jpg'
+          media: '(min-width: 768px)'
+
+  - heading:
+      text: Discover NEOM's Heritage
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/neom-heritage.jpg'
+      sources:
+        - src: 'image/c16-carousel/neom-heritage.jpg'
+          media: '(min-width: 768px)'
+    video:
+      props:
+        label: Watch video
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: "Discover NEOM's Heritage"
+            title: "Discover NEOM's Heritage"
+            src: video/video-preview.mp4
+
+  - heading:
+      text: Live in Harmony with Nature
+    variant: social
+    link:
+      href: https://www.instagram.com/p/CHfdnyHgz0L/
+      target: '_blank'
+    authorInfo:
+      writtenBy: 'DISCOVERNEOM'
+      date: 'November 12, 2020'
+    socialMediaIcon: instagram-gold
+    image:
+      alt: 'Image'
+      src: 'image/c16-carousel/updates_instagram.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_instagram.jpg'
+          media: '(min-width: 768px)'

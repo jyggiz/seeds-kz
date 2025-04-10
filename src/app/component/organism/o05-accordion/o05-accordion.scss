@@ -1,0 +1,26 @@
+.o-accordion {
+  --accordion-item-margin: 0;
+  --component-text-color: #000;
+
+  position: relative;
+
+  &__items {
+    @include list-reset;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--accordion-item-margin);
+    height: fit-content;
+    margin: var(--accordion-item-margin) 0 0;
+  }
+
+  &__item {
+    width: 100%;
+    border-top: 1px solid #27277b;
+
+    &:last-child {
+      border-bottom: 1px solid #27277b;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+scrollComponent: true
+
+header:
+  eyebrow:
+    text: 'Winning criteria'
+    size: 'medium'
+  heading:
+    text: "Here's what we're<br /> looking for"
+    size: 'h4'
+
+items:
+  - image:
+      alt: null
+      src: 'icon/c08-stats/no-cars.svg'
+    description:
+      text: 'A clearly defined problem<br />& potential to scale'
+  - image:
+      alt: null
+      src: 'icon/c08-stats/commute.svg'
+    description:
+      text: 'A potential market identified<br />& commercial viability'
+  - image:
+      alt: null
+      src: 'icon/c08-stats/nature.svg'
+    description:
+      text: 'A creative solution, design quality<br /> & working prototype'
+  - image:
+      alt: null
+      src: 'icon/c08-stats/clean-energy.svg'
+    description:
+      text: 'A customer segment & Early Adopter<br /> (target audience) '
+  - image:
+      alt: null
+      src: 'icon/c08-stats/tech.svg'
+    description:
+      text: 'A Business Model & Go-To-Market<br />(GTM) Strategy'

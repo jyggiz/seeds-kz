@@ -1,0 +1,18 @@
+{{!-- This template is being injected dynamically via JS, AEM is not required --}}
+
+<div class="o-filtersModal" data-component="filters-modal">
+    {{> atom/a03-heading text=label size="h6" }}
+    <div class="o-filtersModal__itemsWrapper">
+        {{#each items}}
+            <label class="-{{color}}">
+                <input type="checkbox" name="tag" value="{{id}}"{{#if active}} checked{{/if}} data-tag-button>
+                {{> atom/a02-icon name=icon }}
+                {{name}}
+                <div class="o-filtersModal__customCheckbox"></div>
+            </label>
+        {{/each}}
+    </div>
+    <div class="o-filtersModal__closeModalButton">
+        {{> molecule/m02-button icon="arrow-left" label=returnButtonLabel level="primary" theme="white" data=(object close-modal="") }}
+    </div>
+</div>

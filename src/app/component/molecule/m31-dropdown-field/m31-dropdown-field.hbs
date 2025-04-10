@@ -1,0 +1,30 @@
+<div class="m-dropdownField" data-component="m31-dropdown-field" data-lazy-component>
+  <label class="m-dropdownField__label">
+    <div class="m-dropdownField__textLabel{{#if required}} -isRequired{{/if}}">
+      {{> atom/a07-label text=label size="small" }}
+    </div>
+    {{#if blockValidation}}
+    {{> atom/a15-select dataAttribute="block-validation"}}
+    {{^}}
+    {{> atom/a15-select }}
+    {{/if}}
+    
+    {{> atom/a25-form-error }}
+  </label>
+
+  {{#with showTextareaForOtherChoice}}
+  <div class="m-dropdownField__optionalTextarea{{#if wide}} -wide{{/if}}" data-m31-optional-textarea>
+    {{>molecule/m30-text-field type='textarea' blockValidation=true disabled=true}}
+  </div>
+  {{/with}}
+
+  {{#each dependentInputs}}
+  <div class="m-dropdownField__dependentDropdown" data-dependent-input-for="{{toJson values}}">
+    {{#with input}}
+    {{#if (condition componentName '===' 'm31-dropdown-field')}}
+    {{> molecule/m31-dropdown-field data blockValidation=true disabled=true }}
+    {{/if}}
+    {{/with}}
+  </div>
+  {{/each}}
+</div>

@@ -1,0 +1,30 @@
+scrollComponent: true
+variant: double-2-1
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: paragraph
+    content:
+      heading:
+        size: h4
+        text: ҚАЗАҚСТАННЫҢ ТҰҚЫМ ӨСІРУШІЛЕР ҚАУЫМДАСТЫҒЫ
+      copy:
+        content: >-
+          <p>"Қазақстанның тұқым өсірушілер қауымдастығы" ЗТБ 2021 жылғы 29
+          қыркүйекте Қазақстан Республикасының аумағында тұқым шаруашылығын
+          тұрақты тиімді дамыту мүддесінде тұқым шаруашылықтарын үйлестіру
+          мақсатында құрылды.<br><br>"Қазақстанның тұқым өсірушілер
+          қауымдастығы" ЗТБ "Атамекен" Қазақстан Республикасының Ұлттық
+          кәсіпкерлер палатасында аккредиттеу рәсімін өткен және аккредиттеу
+          туралы куәлік алған коммерциялық емес, өзін-өзі қаржыландыратын ұйым
+          болып табылады.</p>
+  - align:
+      horizontal: start
+      vertical: top
+    type: asset
+    content:
+      variant: portrait
+      image:
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZOY3dAxsiBwepp_about.webp?auto=format,compress

@@ -1,0 +1,190 @@
+items:
+  - theme: 'dark'
+    uppercaseCopy: true
+    gridContent:
+      theme: 'dark'
+      variant: 'single'
+      items:
+        - align:
+            horizontal: center
+            vertical: top
+          type: 'paragraph'
+          content:
+            heading:
+              text: '<span>Et harum</span><br />quidem rerum distinctio'
+              size: h2
+              element: h1
+            copy:
+              content:
+                '<p>NEOM will showcase the future of innovation in business, livability and
+                environmental sustainability.</p>'
+  - gridContent:
+      variant: 'single'
+      items:
+        - align:
+            horizontal: center
+            vertical: top
+          type: 'paragraph'
+          content:
+            icon: 'health-wellbeing-biotech'
+            heading:
+              text: 'world-class water infrastructures'
+              size: h4
+              element: h2
+            copy:
+              content:
+                '<p>NEOM has an unprecedented opportunity to become a global leader in water
+                production, distribution, treatment and reuse by constantly innovating to find
+                better ways to use and protect this valuable resource.</p>'
+            buttons:
+              - level: primary
+                theme: black
+                label: 'Find out more'
+  - gridContent:
+      backgroundImage:
+        alt: 'alt'
+        src: 'image/c07-accordion/background-image.jpg'
+      backgroundImageSmall:
+        alt: 'alt'
+        src: 'image/c07-accordion/background-image.jpg'
+      variant: 'single'
+      items:
+        - align:
+            horizontal: center
+            vertical: middle
+          type: 'paragraph'
+          content:
+            eyebrow:
+              text: About NEOM
+            heading:
+              text: 'The story of NEOM'
+              size: h3
+              element: h2
+            copy:
+              content:
+                '<p> NEOM is not just a place – it is a mindset.<br /> Citizens will embody an
+                international ethos and embrace a culture of exploration, risk-taking and diversity
+                - all supported by a progressive legal system compatible with international norms
+                and conducive to economic growth.</p>'
+            buttons:
+              - level: primary
+                theme: white
+                label: 'Primary button'
+              - level: secondary
+                theme: white
+                label: 'Secondary button'
+  - gridContent:
+      variant: 'single'
+      items:
+        - align:
+            horizontal: left
+            vertical: middle
+          type: 'paragraph'
+          content:
+            eyebrow:
+              text: About NEOM
+            heading:
+              text: 'The story of NEOM'
+              size: h3
+              element: h2
+            copy:
+              content:
+                '<p> NEOM is not just a place – it is a mindset.<br /> Citizens will embody an
+                international ethos and embrace a culture of exploration, risk-taking and diversity
+                - all supported by a progressive legal system compatible with international norms
+                and conducive to economic growth. </p>'
+            buttons:
+              - level: primary
+                theme: black
+                label: 'Primary button'
+              - level: primary
+                theme: white
+                label: 'Secondary button'
+  - theme: 'dark'
+    gridContent:
+      theme: 'dark'
+      variant: 'single'
+      items:
+        - align:
+            horizontal: center
+            vertical: middle
+          type: 'paragraph'
+          content:
+            eyebrow:
+              text: About NEOM
+            heading:
+              text: 'The story of NEOM'
+              size: h3
+              element: h2
+            copy:
+              content:
+                '<p> NEOM is not just a place – it is a mindset.<br /> Citizens will embody an
+                international ethos and embrace a culture of exploration, risk-taking and diversity
+                - all supported by a progressive legal system compatible with international norms
+                and conducive to economic growth.</p>'
+  - gridContent:
+      variant: 'double-1-2'
+      items:
+        - align:
+            horizontal: start
+            vertical: top
+          type: 'asset'
+          content:
+            variant: portrait
+            image:
+              src: 'image/c24-content/c24-portrait-placeholder.jpg'
+        - align:
+            horizontal: start
+            vertical: middle
+          type: 'paragraph'
+          content:
+            eyebrow:
+              text: 'What to do at'
+              size: 'medium'
+            heading:
+              size: h3
+              text: 'Haddah beach'
+            copy:
+              content:
+                '<p>NEOM is not just a place – it is a mindset.<br /> Citizens will embody an
+                international ethos and embrace a culture of exploration, risk-taking and diversity,
+                all supported by a progressive legal system compatible with international norms &
+                conducive to economic growth.</p>'
+  - multipleCopy:
+      heading:
+        text: 'Remarkable'
+        size: h1
+        element: h1
+      copy:
+        - highlight: true
+          content: 'NEOM is a remarkable concept.'
+        - content:
+            '<p>It will never be everyday or mundane, so when selecting photography look for content
+            and perspectives that are unique and aspirational. Avoid staged shots and the
+            conventional.</p>'
+  - theme: 'dark'
+    multipleCopy:
+      heading:
+        text: 'Real'
+        size: h1
+        element: h1
+      copy:
+        - highlight: true
+          content:
+            'NEOM is a sophisticated brand, intelligent and clear in what it wants to communicate.'
+        - content:
+            '<p>So we keep it clean, high in quality and appealing.  Avoid cluttering the image with
+            lots of unnecessary elements.</p>'
+  - cream: true
+    multipleCopy:
+      heading:
+        text: 'Sophisticated'
+        size: h1
+        element: h1
+      copy:
+        - highlight: true
+          content:
+            'NEOM is a sophisticated brand, intelligent and  clear in what it wants to communicate.'
+        - content:
+            '<p>So we keep it clean, high in quality and appealing.  Avoid cluttering the image with
+            lots of unnecessary elements.</p>'

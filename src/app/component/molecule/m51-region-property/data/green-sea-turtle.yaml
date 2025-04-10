@@ -1,0 +1,8 @@
+heading: 'Green Sea Turtle'
+description: 'Endangered sea turtles feed in the waters off Al Muwaylih.'
+image:
+  src: 'image/m51-region-property/turtle@2x.jpg'
+  alt: 'Green Sea Turtle'
+  sources:
+    - src: 'image/m51-region-property/turtle@2x.webp'
+      type: 'image/webp'

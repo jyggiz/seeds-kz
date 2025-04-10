@@ -1,0 +1,53 @@
+scrollComponent: true
+
+background:
+  image:
+    alt: 'alt'
+    src: 'image/c24-content/intro-bg.jpg'
+    sources:
+      - src: 'image/c24-content/intro-bg.jpg'
+        media: '(min-width: 768px)'
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: end
+        content:
+          componentName: m16-figure
+          data:
+            variant: square
+            image:
+              variant: contain
+              src: 'image/c24-content/brandbook-grids-intro-image.png'
+              alt: 'Intro icon'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 1 / 2 / 5
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            copy:
+              size: 'medium'
+              content:
+                '<p>One of the easiest ways to achieve an organized design is to apply a grid
+                system. Grids in interactive design can also help provide a consistent experience
+                across multiple devices with different screen sizes.<br><br>We use this column-based
+                structure to place text, images, and functions in a consistent way throughout the
+                design.</p>'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 6 / 2 / 12

@@ -1,0 +1,22 @@
+
+
+<div class="o-motionSlide{{#if variant}} -{{variant}}{{/if}}{{#if equalContentWidth}} -equalContentWidth{{/if}}"
+  data-component="o81-motion-slide"
+  data-scroll-component
+  {{#if id}} id="{{id}}"{{/if}}
+  data-lazy-component
+>
+  <div class="o-motionSlide__image" data-image>
+    {{> atom/a01-image image disableTransition=true }}
+  </div>
+  <div class="o-motionSlide__copy{{#if content.align}} -{{content.align}}{{/if}}">
+    {{> molecule/m18-paragraph content }}
+    {{#with buttons}}
+      <div class="o-motionSlide__buttons">
+        {{#each this}}
+          {{> molecule/m02-button this}}
+        {{/each}}
+      </div>
+    {{/with}}
+  </div>
+</div>

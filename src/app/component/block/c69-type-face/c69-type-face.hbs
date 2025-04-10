@@ -1,0 +1,57 @@
+
+
+
+<section class="b-typeFace"
+         data-component="c69-type-face"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         data-lazy-component>
+        <div class="b-typeFace__grid">
+              <div class="b-typeFace__hero">
+                <div class="b-typeFace__heroCopyWrapper">
+                  {{> atom/a03-heading size="h5" element="h2" text=heading.text }}
+                  <div class="s-content -small">
+                    {{{ description }}}
+                  </div>
+                </div>
+              </div>
+              <div class="b-typeFace__fontDisplay">
+                <div class="b-typeFace__fontDisplayWrapper">
+                  {{#each items}}
+                  <div class="b-typeFace__fontDisplayImage">
+                    <img src={{image.src}} alt={{image.alt}} />
+                  </div>
+                  <div class="b-typeFace__fontDisplayCopy s-content -small">
+                    {{> atom/a03-heading size="h6" element="h3" text=heading.text }}
+                    <p class="b-typeFace__fontDisplayDescription" >{{ description }}</p>
+                    {{#with table}}
+                    <table class="b-typeFace__fontDisplayTable">
+                        <thead>
+                            <tr>
+                              <th>{{@root.i18n.font}}</th><th>{{@root.i18n.example}}</th>
+                            </tr>
+                        </thead>
+                        <tbody class="{{#if familyName }} -{{familyName}}{{/if}}">
+                          {{#each items}}
+                          <tr>
+                            <td>{{{ fontWeight }}}</td><td>{{{ fontExample }}}</td>
+                          </tr>
+                        {{/each}}
+                        </tbody>
+                    </table>
+                    {{/with}}
+                  </div>
+                  {{/each}}
+                </div>
+              </div>
+              {{#with scale}}
+                <div class="b-typeFace__scale">
+                  <div class="b-typeFace__scaleWrapper">
+                    {{> atom/a03-heading size="h5" element="h2" text=heading.text }}
+                    <p class="b-typeFace__scaleCopySubtitle s-content -large">{{ subtitle }} </p>
+                    <p class="b-typeFace__scaleCopy s-content -small">{{ copy }}</p>
+                  </div>
+                </div>
+              {{/with}}
+        </div>
+</section>

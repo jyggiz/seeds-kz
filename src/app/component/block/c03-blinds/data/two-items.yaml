@@ -1,0 +1,90 @@
+scrollComponent: true
+
+fullHeight: true
+
+title:
+  eyebrow:
+    text: A PARTNERSHIP WITH PURPOSE
+  heading:
+    element: 'h2'
+    size: 'h5'
+    text: OUR THREE PILLARS
+
+header:
+  heading:
+    element: h2
+    text: A revolution in urban living
+    size: h4
+
+items:
+  - heading:
+      text: 'winter season<br>dec-mar<br>-5 to +10°c'
+    textContent:
+      items:
+        - Skiing
+        - Snowboarding
+        - Winter Fashion Week
+        - Ice Skating
+        - Music Festival
+        - Film Festival
+    image:
+      alt: Live where people come first
+      src: 'image/c03-blinds/key-feature-image-01.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Urban Architecture: Giovanna Carnevali'
+            title: 'Urban Architecture: Giovanna Carnevali'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: Walk anywhere -<br /> everything is 5<br /> minutes away
+    description:
+      text:
+        'NEOM Media offers the biggest state-of-the-art facilities in the region, with a total of
+        four operational sound stages offering 12,000 sqm of production space in addition to support
+        and backlot facilities. A further six stages offering 10,000 sqm of production space,
+        including a volumetric stage, are under development and set to open by the end of 2023. Our
+        end-state media hub will be a single, fully integrated, creative campus of over 1 million
+        square meters situated on The Line. That will encompass 50 stages & studios, backlots, post
+        and VFX, gaming studios, tenancy space, vocational learning facilities, industry incubation,
+        and start-up space.<br /> <br /> <a>Learn more</a>'
+    image:
+      alt: Walk anywhere - everything is 5 minutes away
+      src: 'image/c03-blinds/key-feature-image-02.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Mobility: Florian Lennert'
+            title: 'Mobility: Florian Lennert'
+            src: video/video-preview.mp4

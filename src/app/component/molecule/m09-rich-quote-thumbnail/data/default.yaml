@@ -1,0 +1,9 @@
+items:
+  - direction: next
+    quote:
+      author:
+        name: 'Joseph Bradley'
+        role: 'Head of Technology and Digital'
+    thumbnail:
+      src: 'image/thumbnails/maliha-hashmi-thumbnail.jpg'
+      alt: 'Photo of Dr. Maliha Hashmi'

@@ -1,0 +1,36 @@
+.m-stepIndicators {
+  --step-indicator-border-color: var(--color-black-10);
+  --step-indicator-border-width: 2px;
+  --step-indicator-color: var(--color-black-75);
+
+  @include list-reset();
+
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+
+  &__progressBar {
+    background: var(--step-indicator-border-color);
+    content: "";
+    height: var(--step-indicator-border-width);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    z-index: 1;
+  }
+
+  &__progressIndicator {
+    background: var(--color-gold);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+
+    [dir="rtl"] & {
+      left: initial;
+      right: 0;
+    }
+  }
+}

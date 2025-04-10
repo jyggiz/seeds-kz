@@ -1,0 +1,31 @@
+<script src="./C119GridView.ts"></script>
+
+<div class="b-draggableGallery__gridView" data-component="c119-grid-view">
+  <div class="b-draggableGallery__gridViewDragContainer" data-drag-container>
+    {{#each items}}
+      <button class="b-draggableGallery__gridViewDragItem" data-drag-item tabindex="-1" data-modal="{{toJson this}}">
+        {{> atom/a01-image image disableTransition=true }}
+      </button>
+    {{/each}}
+  </div>
+
+  <div class="b-draggableGallery__gridViewHeadingContainer">
+    {{#each items}}
+      <div class="b-draggableGallery__gridViewHeadingItem" data-heading-item>
+        {{#with eyebrow}}
+          {{> atom/a04-eyebrow this }}
+        {{/with}}
+        {{> atom/a03-heading title }}
+      </div>
+    {{/each}}
+  </div>
+
+  <div class="b-draggableGallery__gridViewCursor" data-cursor>
+    <div class="b-draggableGallery__gridViewCursorVectorWrapper" data-vector-wrapper></div>
+
+    <div class="b-draggableGallery__gridViewCursorCopyWrapper">
+      <span class="b-draggableGallery__gridViewCursorCopy -drag">{{copy.drag}}</span>
+      <span class="b-draggableGallery__gridViewCursorCopy -click">{{copy.click}}</span>
+    </div>
+  </div>
+</div>

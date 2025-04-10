@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="./o93-block-cta.scss">
+<script src="./O93BlockCta.ts"></script>
+
+
+<{{#if (condition type '===' 'link')}}a
+  {{#if href}}href="{{href}}"
+  {{#if (condition target '===' '_blank' )}}rel="noopener"{{/if}}
+  {{#if target}}target="{{target}}"{{/if}}
+  {{/if}}
+ {{else if (condition type '===' 'modal')}}button
+ {{^}}div{{/if}}
+  class="o-blockCta"
+  data-component="o93-block-cta"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  data-payload="{{toJson this}}"
+>
+  <div class="o-blockCta__background">
+    {{#with background }}
+      {{> molecule/m34-component-background }}
+    {{/with}}
+  </div>
+  <div class="o-blockCta__heading{{#unless icon}} -center{{/unless}}">
+    {{{heading}}}
+  </div>
+  {{#with icon }}
+    {{> atom/a02-icon name=this }}
+  {{/with}}
+  <div class="o-blockCta__label" data-action-indicator>
+    <span class="o-blockCta__labelCopy">{{label}}</span>
+    {{> atom/a02-icon name="plus-in-circle" }}
+  </div>
+</{{#if (condition type '===' 'link')}}a{{else if (condition type '===' 'modal')}}button{{^}}div{{/if}}>

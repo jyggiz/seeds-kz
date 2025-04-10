@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="./o31-dropdown-navigation-list.scss">
+<script src="./O31DropdownNavigationList.ts"></script>
+
+
+<div class="o-dropdownNavigationList" data-component="o31-dropdown-navigation-list">
+
+  <div class="o-dropdownNavigationList__container{{#with type}} -{{this}}{{/with}}">
+    {{> ./_items.hbs this }}
+    {{#if (condition type '===' 'menu')}}
+    {{#each items}}
+    {{#if items}}
+    <div class="o-dropdownNavigationList__sideMenu" data-side-menu="{{@index}}">
+      {{> ./_items.hbs this }}
+      {{#with viewAllButton}}
+      {{> molecule/m02-button }}
+      {{/with}}
+    </div>
+    {{/if}}
+    {{/each}}
+    {{/if}}
+  </div>
+</div>

@@ -1,0 +1,38 @@
+
+<div class="o-filter" data-component="o43-filter" data-api-url="{{filterApiUrl}}" data-dev-url="{{devEnvironmentUrl}}" >
+  <div class="o-filter__container{{#unless (condition primary '||' secondary)}} -searchOnly{{/unless}}">
+    {{#with title}}
+      {{> atom/a03-heading }}
+    {{/with}}
+    {{#with primary}}
+      <ul class="o-filter__list -primary">
+        {{#each items}}
+        <li class="o-filter__item -primary {{#if active}} -isActive{{/if}}" data-primary-item data-category="{{value}}"
+          data-value="{{value}}" data-option="{{toJson this}}">
+          <a class="o-filter__link" {{#if href}}href="{{href}}" {{/if}}>
+            {{ label }}
+          </a>
+        </li>
+        {{/each}}
+        <span class="o-filter__indicator" data-primary-filter-indicator></span>
+      </ul>
+    {{/with}}
+    {{#with secondary}}
+      <ul class="o-filter__list -secondary" data-secondary-list>
+        {{#each items}}
+          <li class="o-filter__itemWrapper">
+            <button class="o-filter__item -secondary" data-secondary-item>
+              {{> atom/a07-label text=label }}
+              {{> atom/a02-icon name="chevron-down" }}
+            </button>
+            {{> organism/o44-filter-option-list }}
+          </li>
+        {{/each}}
+      </ul>
+    {{/with}}
+    {{#with searchField}}
+      {{> molecule/m50-search-field}}
+    {{/with}}
+  </div>
+  <div class="o-filter__selectedFilterList" data-selected-filters></div>
+</div>

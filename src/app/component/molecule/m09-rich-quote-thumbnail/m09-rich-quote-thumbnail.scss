@@ -1,0 +1,209 @@
+.m-richQuoteThumbnail {
+  display: none;
+  color: var(--component-text-color);
+
+  &__container {
+    position: absolute;
+    top: 0;
+    height: fluid-clamp-ideal(363px, 441px);
+
+    .-next & {
+      right: 0;
+    }
+    .-previous & {
+      left: 0;
+    }
+  }
+
+  &__item {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__author {
+    @include type("body", "small");
+
+    font-weight: 400;
+  }
+
+  &__role {
+    @include type("body", "xsmall");
+
+    color: var(--rich-quote-role-color);
+    font-weight: 100;
+    white-space: nowrap;
+  }
+
+  &__image {
+    @include aspect-ratio(200, 120);
+
+    display: flex;
+    margin-top: 120px;
+    position: relative;
+  }
+
+  &__mask {
+    overflow: hidden;
+  }
+
+  &__mask, // Provides masking for image transition.
+  &__wrapper {
+    // Provides horizontal wobble motion of masked image during transition.
+    @include position(0);
+    position: absolute;
+  }
+
+  &__arrow {
+    --icon-size: 21px;
+    --icon-fill: var(--component-highlight-color);
+
+    svg {
+      fill: var(--component-highlight-color);
+    }
+  }
+
+  &__iconContainer {
+    border-radius: 50%;
+    border: 1px solid var(--rich-quote-border-color);
+    padding: 20px;
+    display: inline-block;
+
+    .-next &,
+    .-previous & {
+      position: absolute;
+      bottom: 15%;
+    }
+
+    .-next & {
+      margin: 30px 20px 30px 50px;
+      right: 0;
+    }
+
+    .-previous & {
+      margin: 30px 50px 30px 20px;
+      left: 0;
+    }
+
+    &:hover {
+      background-color: var(--rich-quote-background-hover);
+
+      .m-richQuoteThumbnail__arrow {
+        --icon-fill: var(--richt-quote-icon-hover);
+
+        svg {
+          fill: var(--richt-quote-icon-hover);
+        }
+      }
+    }
+  }
+
+  &.-next {
+    text-align: right;
+
+    .m-richQuoteThumbnail {
+      // stylelint-disable-next-line
+      &__image {
+        transform: translateX(70px);
+        justify-content: flex-end;
+        width: 200px;
+        margin-inline-start: auto;
+
+        [dir="rtl"] & {
+          margin-inline-end: auto;
+          margin-inline-start: 0;
+        }
+      }
+
+      &__information {
+        position: absolute;
+        right: 0;
+        height: 57px;
+        margin: 38px 30px 25px 0;
+      }
+    }
+  }
+
+  &.-previous {
+    .m-richQuoteThumbnail {
+      // stylelint-disable-next-line
+      &__image {
+        transform: translateX(-70px);
+        justify-content: flex-start;
+        width: 200px;
+        margin-inline-end: auto;
+
+        [dir="rtl"] & {
+          margin-inline-start: auto;
+          margin-inline-end: 0;
+        }
+      }
+
+      &__information {
+        position: absolute;
+        left: 0;
+        height: 57px;
+        margin: 38px 0 25px 30px;
+      }
+    }
+  }
+
+  @include respond-to(XLARGE) {
+    display: block;
+  }
+
+  @include respond-to(XXXLARGE) {
+    &.-next {
+      .m-richQuoteThumbnail {
+        &__image {
+          width: 330px;
+          transform: translateX(140px);
+        }
+      }
+    }
+
+    &.-previous {
+      .m-richQuoteThumbnail {
+        &__image {
+          width: 330px;
+          transform: translateX(-140px);
+        }
+      }
+    }
+
+    &__iconContainer {
+      .-next &,
+      .-previous & {
+        bottom: 5%;
+      }
+
+      .-next & {
+        right: 0;
+      }
+
+      .-previous & {
+        left: 0;
+      }
+    }
+  }
+
+  @include neomThemes() {
+    --rich-quote-role-color: var(--color-black-75);
+    --rich-quote-border-color: var(--color-dark-gold-20a);
+    --rich-quote-background-hover: var(--color-dark-gold);
+    --richt-quote-icon-hover: var(--color-white);
+
+    .t-dark &,
+    .t-darkMono & {
+      --rich-quote-role-color: var(--component-highlight-color);
+      --rich-quote-border-color: var(--color-white-10a);
+      --rich-quote-background-hover: var(--color-gold);
+      --richt-quote-icon-hover: var(--color-white);
+    }
+
+    .t-orange & {
+      --rich-quote-background-hover: var(--color-accent);
+    }
+  }
+}

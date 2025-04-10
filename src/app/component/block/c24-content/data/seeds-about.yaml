@@ -1,0 +1,30 @@
+scrollComponent: true
+variant: double-2-1
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: paragraph
+    content:
+      heading:
+        size: h4
+        text: Ассоциация семеноводов Казахстана
+      copy:
+        content: >-
+          <p>ОЮЛ "Ассоциация семеноводов Казахстана" создана 29 сентября 2021
+          года в целях координации семеноводческих хозяйств в интересах
+          стабильного эффективного развития семеноводства на территории
+          Республики Казахстан.<br><br>ОЮЛ "Ассоциация семеноводов Казахстана"
+          является некоммерческой, самофинансируемой организацией, которая
+          прошла процедуру аккредитации в Национальной палате предпринимателей
+          Республики Казахстан «Атамекен» и получила Свидетельство об
+          аккредитации.</p>
+  - align:
+      horizontal: start
+      vertical: top
+    type: asset
+    content:
+      variant: portrait
+      image:
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZOY3dAxsiBwepp_about.webp?auto=format,compress

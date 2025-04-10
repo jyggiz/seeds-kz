@@ -1,0 +1,33 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              element: 'h3'
+              text: 'Sector icons'
+              size: 'h5'
+            copy:
+              size: 'medium'
+              content:
+                <p>Our economic sector icons represent a broad range of different subjects and
+                should only be used when communicating specifically about these subjects. They are
+                only used in the full color versions shown here. When talking about a specific
+                economic sector, the icon can be a hero element. When talking about all of the
+                economic sectors, the sector icons must be arranged and sized in a way that shows
+                them as equal. Do not alter or create alternate versions of the economic sector
+                icons. Use the ones provided.</p>
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

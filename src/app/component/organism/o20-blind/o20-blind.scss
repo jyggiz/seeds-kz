@@ -1,0 +1,206 @@
+@mixin paragraph-sizes {
+  &.-small {
+    @include type("body", "small");
+  }
+
+  &.-medium {
+    @include type("body", "medium");
+  }
+
+  &.-large {
+    @include type("body", "large");
+  }
+}
+
+.o-blind {
+  @include size(100%);
+
+  position: relative;
+
+  &__title {
+    @include type("overline", "medium");
+
+    border: solid var(--color-accent);
+    min-height: 90px;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: start;
+    top: 50%;
+    transform: translateY(-50%);
+
+    [dir="ltr"] & {
+      border-width: 0 0 0 3px;
+      left: 31px;
+      padding: 0 0 0 20px;
+    }
+
+    [dir="rtl"] & {
+      border-width: 0 3px 0 0;
+      max-width: 186px;
+      padding: 0 20px 0 0;
+      right: 31px;
+    }
+  }
+
+  &__items {
+    @include list-reset;
+    @include paragraph-sizes;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    flex-grow: 1;
+    width: 100%;
+
+    &::before {
+      color: var(--color-accent);
+      content: "\2022";
+      padding: 0 18px 0 0;
+
+      [dir="rtl"] & {
+        padding: 0 0 0 18px;
+      }
+    }
+  }
+
+  &__itemContent {
+    @include aspect-ratio(360px, 160px);
+
+    background: var(--color-black);
+    color: currentColor;
+    overflow: hidden;
+    width: 100%;
+
+    .a-icon {
+      --icon-size: 14px;
+
+      position: absolute;
+      top: calc(50% - 7px);
+      transform-origin: center center;
+      transition: transform 0.8s $easeOutExpo;
+
+      [dir="ltr"] & {
+        right: 20px;
+      }
+
+      [dir="rtl"] & {
+        left: 20px;
+      }
+    }
+
+    .a-image {
+      opacity: 0.4;
+    }
+
+    &::after {
+      @include pseudo;
+      @include size(0);
+
+      left: 41px;
+      bottom: 0;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent var(--color-cream) transparent;
+      transition: transform 0.8s $easeOutExpo;
+      transform: translateY(100%);
+    }
+  }
+
+  &__contentWrapper {
+    color: var(--color-black);
+    position: relative;
+    height: 60%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &__content {
+    padding: 42px 28px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__description {
+    @include paragraph-sizes;
+
+    white-space: pre-line;
+  }
+
+  .m-button.-play {
+    margin: 15px 0 0;
+  }
+
+  @include respond-to("MEDIUM") {
+    &__title {
+      top: 32px;
+      transform: none;
+      transition: opacity 0.4s $easeOutCubic;
+      max-width: 80%;
+      width: 16em;
+    }
+
+    &__items {
+      gap: 40px;
+    }
+
+    &__itemContent {
+      height: 100%;
+
+      &::before,
+      &::after,
+      .a-icon {
+        display: none;
+      }
+
+      .a-image {
+        transition: opacity 0.4s $easeOutCubic;
+      }
+    }
+
+    &__contentWrapper {
+      color: currentColor;
+      inset-inline: 28px 40px;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 160px;
+      transition: opacity 0.4s $easeOutCubic;
+    }
+
+    &__content {
+      padding: 0;
+    }
+
+    .m-button.-play {
+      margin: 40px 0 0;
+      margin-inline-start: 20px;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__contentWrapper {
+      min-width: 280px;
+    }
+  }
+
+  @include respond-to("XLARGE") {
+    &__contentWrapper {
+      min-width: 350px;
+    }
+  }
+
+  @include respond-to("XXXLARGE") {
+    &__description {
+      @include type("body", "medium");
+    }
+  }
+}

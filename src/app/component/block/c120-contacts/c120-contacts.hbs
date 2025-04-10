@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="./c120-contacts.scss">
+
+<div class="b-contacts" data-component="c120-contacts" id="contacts">
+  {{#with title}}
+    <div class="b-contacts__title">
+      {{> atom/a03-heading }}
+     </div>
+  {{/with}}
+  <div class="b-contacts__info-container" data-info-container>
+    <div class="b-contacts__content">
+      {{#with address}}
+        {{> molecule/m18-paragraph }}
+      {{/with}}
+      {{#with tel}}
+        {{> molecule/m18-paragraph }}
+      {{/with}}
+      {{#with fax}}
+        {{> molecule/m18-paragraph }}
+      {{/with}}
+      {{#with email}}
+        {{> molecule/m18-paragraph }}
+      {{/with}}
+      {{#with schedule}}
+        {{> molecule/m18-paragraph }}
+      {{/with}}
+    </div>
+    <div style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps/kz/163/astana/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Астана</a><a href="https://yandex.kz/maps/kz/163/astana/house/syghanaq_koshesi_64_1/Y0gYcgRhTkQDQFtrfX1zcH5gYw==/?indoorLevel=1&ll=71.431714%2C51.121237&utm_medium=mapframe&utm_source=maps&z=17.21" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Сыганак, 64/1 — Яндекс Карты</a><iframe src="https://yandex.kz/map-widget/v1/?indoorLevel=1&ll=71.431714%2C51.121237&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo1MjkxMzEzOTY2EkPSmtCw0LfQsNKb0YHRgtCw0L0sINCQ0YHRgtCw0L3QsCwg0KHRi9KT0LDQvdCw0psg0LrTqdGI0LXRgdGWLCA2NC8xIgoNCd2OQhUmfExC&z=17.21{{#if lang }}&lang=kk_KZ{{/if}}" id="map" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+  </div>
+</div>
+

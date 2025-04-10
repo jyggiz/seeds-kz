@@ -1,0 +1,66 @@
+filter:
+  filterApiUrl: '/bin/api/newsroom/gallery?componentResourcePath=/content/neom/en-us/newsroom/gallery/jcr:content/root/responsivegrid/c46_media_list&' # Not disclosed for authors
+  # filterApiUrl needs to be updated once backend creates an endpoint for querying the employees database entries
+  devEnvironmentUrl: 'https://dev.neom.com' # Not disclosed for authors
+  searchField: true
+  secondary:
+    items:
+      - label: 'Sector'
+        value: sectors
+        items:
+          - label: 'Energy'
+            value: neom:sectors/energy
+            # disabled: true
+          - label: 'Water'
+            value: neom:sectors/water
+          - label: 'Mobility'
+            value: neom:sectors/mobility
+          - label: Food
+            value: neom:sectors/food
+          - label: 'Health, well-being & biotech'
+            value: neom:sectors/health-well-being-&-biotech
+      - label: 'Region'
+        value: regions
+        items:
+          - label: 'Trojena'
+            value: neom:regions/trojena
+            # disabled: true
+          - label: 'Oxagon'
+            value: neom:regions/oxagon
+          - label: 'The line'
+            value: neom:regions/the-line
+
+items:
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+  - 'import!./person-card-1.yaml'
+
+pagination:
+  total: 29
+  limit: 2
+  offset: 0
+  pages:
+    - pageNumber: 1
+      offset: 0
+      active: true
+    - pageNumber: 2
+      offset: 2
+    - pageNumber: 3
+      offset: 4

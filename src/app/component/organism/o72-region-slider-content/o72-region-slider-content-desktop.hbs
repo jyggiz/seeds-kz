@@ -1,0 +1,39 @@
+<ul class="o-regionSliderContent__propertyList">
+  {{#each properties}}
+    <li class="o-regionSliderContent__property">
+      <ol class="o-regionSliderContent__propertySubList">
+        <li class="o-regionSliderContent__propertyMarker" data-index="{{@index}}">
+          {{#if (condition @index '===' 0)}}
+            <div class="o-regionSliderContent__propertyMarkerIcon">
+              {{> atom/a02-icon name="mountain"}}
+            </div>
+            <span class="o-regionSliderContent__propertyMarkerCopy">{{../landscapesVistas}}</span>
+          {{/if}}
+          {{#if (condition @index '===' 1)}}
+            <div class="o-regionSliderContent__propertyMarkerIcon">
+              {{> atom/a02-icon name="wildlife"}}
+            </div>
+            <span class="o-regionSliderContent__propertyMarkerCopy">{{../speciesHabitats}}</span>
+          {{/if}}
+          {{#if (condition @index '===' 2)}}
+            <div class="o-regionSliderContent__propertyMarkerIcon">
+              {{> atom/a02-icon name="people"}}
+            </div>
+            <span class="o-regionSliderContent__propertyMarkerCopy">{{../cultureHistory}}</span>
+          {{/if}}
+        </li>
+        {{#each items}}
+          <li class="o-regionSliderContent__propertySubItem" data-swiper-slide>
+            {{#with image}}
+              <div class="o-regionSliderContent__propertyImageWrapper">
+                {{> atom/a01-image disableTransition=true}}
+              </div>
+            {{/with}}
+            <h6 class="o-regionSliderContent__propertySubItemHeading">{{heading}}</h6>
+            <p class="o-regionSliderContent__propertySubItemDescription">{{{description}}}</p>
+          </li>
+        {{/each}}
+      </ol>
+    </li>
+  {{/each}}
+</ul>

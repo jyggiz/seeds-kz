@@ -1,0 +1,13 @@
+.a-moustache {
+  @include textTransform;
+
+  color: var(--moustache-text-color);
+
+  &.-small {
+    @include type("subTitle", "small");
+  }
+
+  &.-large {
+    @include type("subTitle", "large");
+  }
+}

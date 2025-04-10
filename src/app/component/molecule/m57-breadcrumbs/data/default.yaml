@@ -1,0 +1,8 @@
+items:
+  - label: 'Home'
+    href: '/home'
+  - label: 'Regions'
+    href: '/regions'
+    unclickable: true
+  - label: 'Sindalah'
+    href: '/sindalah'

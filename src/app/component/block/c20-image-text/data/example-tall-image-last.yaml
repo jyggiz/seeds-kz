@@ -1,0 +1,30 @@
+variant: 'tallAsset'
+theme: 'dark'
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: 'is a vision of the future'
+        size: 'medium'
+      copy:
+        size: 'small'
+        content:
+          '<p><big>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+          minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</big></p>'
+      buttons:
+        - theme: white
+          level: secondary
+          label: 'Find out more'
+          size: small
+
+  - align:
+      horizontal: start
+      vertical: top
+    type: asset
+    content:
+      variant: 'portrait'
+      image:
+        src: 'image/c24-content/c24-portrait-placeholder.jpg'

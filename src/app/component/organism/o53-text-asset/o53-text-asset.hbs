@@ -1,0 +1,35 @@
+
+
+<div class="o-textAsset{{#if assetFirst}} -assetFirst{{/if}}{{#if assetPull}} -assetPull{{/if}}"
+         data-component="o53-text-asset"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         >
+  {{#with text}}
+    <div class="o-textAsset__item -content
+      {{#with align}}
+        {{#if block}} -alignBlock{{capitalize block}}{{^}}Center{{/if}}
+        {{#if inline}} -alignInline{{capitalize inline}}{{^}}Start{{/if}}
+      {{/with}}" data-text-item>
+      {{#if (condition ../type '===' 'paragraph')}}{{> molecule/m18-paragraph content }}{{/if}}
+      {{#if (condition ../type '===' 'list')}}{{> molecule/m17-list content }}{{/if}}
+      {{#with content.buttons}}
+        <div class="o-textAsset__buttons" data-content-buttons>
+          {{#each this}}
+            {{> molecule/m02-button this }}
+          {{/each}}
+        </div>
+      {{/with}}
+  </div>
+  {{/with}}
+  {{#with asset}}
+    <div class="o-textAsset__item -asset
+      {{#with align}}
+        {{#if block}} -block{{capitalize block}}{{^}}Center{{/if}}
+        {{#if inline}} -inline{{capitalize inline}}{{^}}Start{{/if}}
+      {{/with}}" data-asset-item>
+      {{#if content.props.video}}<div class="o-textAsset__video -{{content.variant}}"{{> atom/a19-video content }}</div>
+      {{else if content.image}}{{> molecule/m16-figure content }}{{/if}}
+    </div>
+  {{/with}}
+</div>

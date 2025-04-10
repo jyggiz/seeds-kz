@@ -1,0 +1,214 @@
+id: 'example-form-id-media'
+action: '#url-news'
+method: 'post'
+form_id: 'media_page_contact_form'
+heading:
+  element: h1
+  size: h1
+  text: 'Get in touch'
+recaptcha:
+  sitekey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+  statement:
+    This site is protected by reCAPTCHA and the Google <a
+    href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+    href="https://policies.google.com/terms">Terms of Service</a> apply.
+groups:
+  - id: 'example-form-group-id-media'
+    items:
+      - type: 'text'
+        label: 'First Name'
+        name: 'name'
+        id: 'name'
+        placeholder: 'First Name'
+        required: true
+        titleInEnglish: 'Name'
+        validate:
+          presence:
+            message: '^Please enter your name'
+            allowEmpty: false
+      - type: 'text'
+        label: 'Last Name'
+        name: 'lastname'
+        id: 'lastname'
+        placeholder: 'Last Name'
+        required: true
+        titleInEnglish: 'Last name'
+        validate:
+          presence:
+            message: '^Please enter your last name'
+            allowEmpty: false
+      - type: 'email'
+        label: 'Email Address'
+        name: 'email'
+        id: 'email'
+        placeholder: 'example@example.com'
+        required: true
+        titleInEnglish: 'Email'
+        validate:
+          presence:
+            message: '^Please enter your email address'
+          email:
+            message: '^Please enter a correct email address'
+      - type: 'phone'
+        label: 'Phone number'
+        name: 'Phone number'
+        id: 'phone-number'
+        placeholder: 'Type here'
+        titleInEnglish: 'Phone number'
+        required: false
+        countryDropdown:
+          flagsPath: 'image/flags/'
+          placeholder: 'Code'
+          showRawValue: true
+          isWideDropdown: true
+          name: COUNTRY
+          id: country
+          titleInEnglish: 'Country'
+          items:
+            - value: '+00'
+              label: 'NL'
+              countryCode: 'NL'
+            - value: '+01'
+              label: 'AR'
+              countryCode: 'AR'
+        validate:
+          numericality:
+            numericality: true
+            message: '^Please use only numbers'
+      - type: select
+        label: 'Area of Interest:'
+        id: 'areaofinterest'
+        placeholder: 'Choose one...'
+        name: 'AREAINTEREST'
+        titleInEnglish: 'area of interest'
+        items:
+          - value: 'interest-1'
+            label: 'First interest'
+          - value: 'interest-2'
+            label: 'Second interest'
+          - value: 'interest-3'
+            label: 'Third interest'
+          - value: 'interest-4'
+            label: 'Fourth interest'
+        validate:
+          presence:
+            message: '^Please select one'
+      - type: dynamic-dropdown
+        label: 'I am part of a(n) / I am a(n) *:'
+        id: 'partof'
+        placeholder: 'Choose one...'
+        name: 'PARTOF'
+        titleInEnglish: 'dynamic dropdown'
+        items:
+          - value: 'option-1'
+            label: 'First option'
+          - value: 'option-2'
+            label: 'Second option'
+          - value: 'option-3'
+            label: 'Third option'
+          - value: 'option-4'
+            label: 'Fourth option'
+        validate:
+          presence:
+            message: '^Please select one'
+        mapValue:
+          fieldName: 'AREAINTEREST'
+          map:
+            - key: 'interest-1'
+              value:
+                - 'option-1'
+                - 'option-2'
+            - key: 'interest-2'
+              value:
+                - 'option-2'
+                - 'option-3'
+            - key: 'interest-3'
+              value:
+                - 'option-1'
+                - 'option-4'
+      - type: 'text'
+        label: 'Job title'
+        name: 'job'
+        id: 'job'
+        placeholder: 'Job title'
+        required: true
+        titleInEnglish: 'job'
+        validate:
+          presence:
+            message: '^Please enter job title'
+            allowEmpty: false
+      - type: 'text'
+        label: 'Company name'
+        name: 'company'
+        id: 'company'
+        placeholder: 'Company name'
+        required: false
+        titleInEnglish: 'company'
+      - type: 'text'
+        label: 'Company website'
+        name: 'website'
+        id: 'website'
+        placeholder: 'Company website'
+        required: false
+        titleInEnglish: 'website'
+      - type: 'select'
+        label: 'Country'
+        name: 'select-3'
+        id: 'select-3'
+        placeholder: 'Please select'
+        required: true
+        titleInEnglish: 'country'
+        validate:
+          presence:
+            message: '^Please select'
+        items:
+          - value: 'option 1'
+            label: 'option 1'
+          - value: 'option 2'
+            label: 'option 2'
+          - value: 'option 3'
+            label: 'option 3'
+    type: 'double'
+  - items:
+      - type: 'textarea'
+        label: 'Additional comments'
+        name: 'name'
+        id: 'name'
+        placeholder: 'Type here'
+        required: false
+        titleInEnglish: 'Name'
+        maxlength: 254
+        validate:
+          length:
+            maximum: 254
+            tooLong: '^Comment is too long'
+  - type: radioGroup
+    legend: 'Contact permissions'
+    name: 'contact-permissions'
+    id: 'contact-permissions'
+    required: true
+    copy:
+      '<p>We would like to stay in touch to tell you about news and opportunities at NEOM. We will
+      treat your information carefully. See our <a href="#">Terms of Use</a> and <a href="#">Privacy
+      Policy</a>.</p>'
+    validate:
+      presence:
+        message: '^Please select at least one'
+    items:
+      - type: radio
+        name: 'contact-permissions'
+        id: 'contact-permissions'
+        label: 'Yes'
+        value: yes
+        titleInEnglish: 'Contact permissions'
+      - type: radio
+        name: 'contact-permissions'
+        id: 'contact-permissions'
+        label: 'No'
+        value: no
+        titleInEnglish: 'Contact permissions'
+buttons:
+  - label: 'Submit'
+    size: 'small'
+    theme: 'dark-gold'
+    type: 'submit'

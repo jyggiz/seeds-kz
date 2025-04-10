@@ -1,0 +1,37 @@
+scrollComponent: true
+forceBlackText: true
+
+intro:
+  background:
+    image:
+      src: 'image/c63-about-trojena/the-line-top.jpg'
+      alt: ''
+      sources:
+        src: 'image/c63-about-trojena/the-line-top.jpg'
+        media: '(min-width: 768px)'
+
+  content:
+    - copy:
+        size: 'large'
+        content:
+          'However, the true wonder is not this incredible city – but what it delivers. A city with
+          no cars means no traffic jams, which means more time to spend with loved ones. A city with
+          a diverse collection of open spaces suspended on multiple levels means no one is ever more
+          than a two-minute walk from nature.'
+    - copy:
+        size: 'medium'
+        content:
+          'A city that creates no pollution and uses only 100% renewable energy can provide nothing
+          but clean air for all. And a city built in NEOM, the most temperate part of Saudi Arabia –
+          coupled with the fact that the city utilises advanced ventilation technology – means THE
+          LINE can guarantee ideal weather 24/7, 365 days a year. The pioneering solutions to the
+          challenges of urbanisation that we are are developing on THE LINE will be able to help
+          change the future not just for its citizens, but for everyone. That’s why we believe we
+          are creating new wonders for the whole world.'
+
+image:
+  src: 'image/c63-about-trojena/the-line-bottom.jpg'
+  alt: ''
+  sources:
+    src: 'image/c63-about-trojena/the-line-top.jpg'
+    media: '(min-width: 768px)'

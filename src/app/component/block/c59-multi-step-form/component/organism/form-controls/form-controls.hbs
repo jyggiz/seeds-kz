@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="./form-controls.scss">
+<script src="./FormControls.ts"></script>
+
+{{!-- we don't dynamically render the buttons in the controls container because
+we need access to the i18n dictionary which is available when the page is
+built on the BE --}}
+<div class="o-formControls__container" data-component="form-controls" {{#if
+    scrollComponent}}data-scroll-component{{/if}} {{#if id}} id="{{id}}" {{/if}}>
+    <div class="o-formControls__controls" data-form-controls>
+        {{> molecule/m02-button
+        data=(object previous-button=null)
+        iconAlignment="left"
+        icon="arrow-left"
+        level="secondary"
+        label=@root.i18n.back
+        theme="black"
+        size="small"
+        type="button"
+        }}
+        {{> molecule/m02-button
+        data=(object next-button=null)
+        icon="arrow-right"
+        level="primary"
+        label=@root.i18n.next
+        theme="dark-accent"
+        size="small"
+        type="button"
+        }}
+        {{> molecule/m02-button
+        data=(object submit-button=null)
+        level="primary"
+        label=@root.i18n.submit
+        theme="dark-accent"
+        type="button"
+        size="small"
+        }}
+    </div>
+</div>

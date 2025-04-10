@@ -1,0 +1,20 @@
+items:
+  - theme: 'dark'
+    image:
+      src: 'image/c77-content-slider/small-viewport/photography/01.jpg'
+      alt: 'alt text'
+      sources:
+        - src: 'image/c77-content-slider/large-viewport/photography/01.jpg'
+          media: '(min-width: 480px)'
+  - image:
+      src: 'image/c77-content-slider/small-viewport/photography/02.jpg'
+      alt: 'alt text'
+      sources:
+        - src: 'image/c77-content-slider/large-viewport/photography/02.jpg'
+          media: '(min-width: 480px)'
+  - image:
+      src: 'image/c77-content-slider/small-viewport/photography/03.jpg'
+      alt: 'alt text'
+      sources:
+        - src: 'image/c77-content-slider/large-viewport/photography/03.jpg'
+          media: '(min-width: 480px)'

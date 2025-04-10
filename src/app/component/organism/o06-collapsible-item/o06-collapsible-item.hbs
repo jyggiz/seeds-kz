@@ -1,0 +1,14 @@
+
+<div class="o-collapsibleItem" data-component="o06-collapsible-item"
+     {{#if eventTracking}}data-event-tracking="{{ toJson eventTracking }}"{{/if}} data-label="{{label}}">
+  {{> molecule/m14-toggle-button variant="accordion" aria=(object controls=@index)}}
+  <div class="o-collapsibleItem__container" aria-live="polite" id={{@index}} data-collapsible-item-content>
+    <div class="o-collapsibleItem__content">
+      <div class="o-collapsibleItem__body s-content -collapsible">
+        {{#each content}}
+            {{> molecule/m05-download-item }}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

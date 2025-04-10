@@ -1,0 +1,23 @@
+dir: ltr
+language: kk
+head: 'import!../app/data/yaml/seeds-gallery-kz.yaml'
+
+navigation: 'import!../app/component/organism/o97-navigation-placeholder/data/default.yaml'
+
+meta:
+  id: 'p01'
+  status: 'done'
+  notes: ''
+  category: 'Pages'
+
+blocks:
+  - name: 'c26-hero-banner'
+    data: 'import!../app/component/block/c26-hero-banner/data/seeds-seminars-kz.yaml'
+
+  - name: 'c114-infographic'
+    data: 'import!../app/component/block/c114-infographic/data/gallery-video-kz.yaml'
+
+  - name: 's02-footer'
+    data: 'import!../app/component/block/s02-footer/data/seeds-index-kz.yaml'
+
+scrollToTop: true

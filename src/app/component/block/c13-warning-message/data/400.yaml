@@ -1,0 +1,27 @@
+logo:
+  href: 'homepage.html'
+  image:
+    src: 'image/logo-neom.png'
+    alt: 'NEOM logo'
+theme: 'darkMono'
+items:
+  - eyebrow:
+      size: small
+      text: Our Apologies
+    heading:
+      element: h1
+      size: h6
+      text:
+        'The NEOM website is currently experiencing technical issues. <br/> We are working to
+        restore normal service as soon as possible.'
+    description: 'We appreciate your understanding and patience.'
+  - language: ar
+    direction: rtl
+    eyebrow:
+      size: small
+      text: نأسف
+    heading:
+      element: h2
+      size: h6
+      text: يعمل فريقنا حالياً على إصلاح بعض التحديات التقنية المتعلقة بموقع نيوم الإلكتروني.
+    description: نقدّر لكم تفهّمكم وصبركم لحين عودة الموقع لوضعه الطبيعي قريباً.

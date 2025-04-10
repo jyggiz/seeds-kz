@@ -1,0 +1,178 @@
+scrollComponent: true
+
+align:
+  horizontal: center
+  vertical: top
+
+background:
+  image:
+    src: './image/homepage-mountain-background.jpg'
+    alt: 'Mountain background'
+
+content:
+  header:
+    eyebrow:
+      text: Investing in NEOM
+      size: small
+    heading:
+      element: h1
+      size: h5
+      text: How interested are you in investing in NEOM?
+    moustache:
+      text: How interested are you in investing in NEOM?
+      size: small
+
+  buttonType: mega-buttons-invest-form
+  buttons:
+    - componentName: m53-tile-cta
+      data:
+        label: I'm a financial investor
+        href: '#'
+        id: button-1
+    - componentName: m53-tile-cta
+      data:
+        label: I want to set up a business
+        href: '#'
+        id: button-2
+    - componentName: m53-tile-cta
+      data:
+        label: I'm interested in becoming a supplier
+        href: '#'
+        id: button-3
+    - componentName: m53-tile-cta
+      data:
+        label: I'm interested in a specific region or company
+        href: '#'
+        id: button-4
+
+  drilldownControls:
+    - forButtonWithId: button-2
+      header:
+        legend: Some question
+        variant: heading
+      mobile:
+        control:
+          componentName: m31-dropdown-field
+          data:
+            name: region-company
+            placeholder: 'Please choose one'
+            required: false
+            id: region-company
+            items:
+              - label: 'Oxagon'
+                value: 'oxagon'
+              - label: 'Trojena'
+                value: 'trojena'
+              - label: 'Tonomus'
+                value: 'tonomus'
+            validate:
+              presence:
+                message: '^Please make your choice before submitting'
+                allowEmpty: false
+        submitButton:
+          label: 'Continue'
+          theme: gold
+          size: small
+      desktop:
+        control:
+          componentName: o99-dynamic-grid
+          data:
+            columns:
+              columnsS: 1
+              columnsM: 5
+            items:
+              - componentName: m53-tile-cta
+                data:
+                  href: '#'
+                  image:
+                    variant: contain
+                    disableTransition: true
+                    alt: 'neom logo'
+                    src: './image/logo-neom.png'
+                    sources:
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 414px)'
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 834px)'
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 1024px)'
+              - componentName: m53-tile-cta
+                data:
+                  image:
+                    variant: contain
+                    disableTransition: true
+                    alt: 'neom logo'
+                    src: './image/logo-neom.png'
+                    sources:
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 414px)'
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 834px)'
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 1024px)'
+                  href: '#'
+    - forButtonWithId: button-4
+      header:
+        legend: Which region or company?
+        variant: heading
+      mobile:
+        control:
+          componentName: m31-dropdown-field
+          data:
+            name: region-company
+            placeholder: 'Please choose one'
+            required: false
+            id: region-company
+            items:
+              - label: 'homepage'
+                value: 'homepage.html'
+              - label: 'Trojena'
+                value: 'trojena'
+              - label: 'Tonomus'
+                value: 'tonomus'
+            validate:
+              presence:
+                message: '^Please make your choice before submitting'
+                allowEmpty: false
+        submitButton:
+          label: 'Continue'
+          theme: gold
+          size: small
+      desktop:
+        control:
+          componentName: o99-dynamic-grid
+          data:
+            columns:
+              columnsS: 1
+              columnsM: 5
+            items:
+              - componentName: m53-tile-cta
+                data:
+                  href: '#'
+                  image:
+                    variant: contain
+                    disableTransition: true
+                    alt: 'neom logo'
+                    src: './image/logo-neom.png'
+                    sources:
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 414px)'
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 834px)'
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 1024px)'
+              - componentName: m53-tile-cta
+                data:
+                  image:
+                    variant: contain
+                    disableTransition: true
+                    alt: 'neom logo'
+                    src: './image/logo-neom.png'
+                    sources:
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 414px)'
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 834px)'
+                      - src: './image/logo-neom.png'
+                        media: '(min-width: 1024px)'
+                  href: '#'

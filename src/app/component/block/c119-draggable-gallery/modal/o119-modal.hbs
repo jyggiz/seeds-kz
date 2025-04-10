@@ -1,0 +1,70 @@
+{{! frontend only - no backend rendering required}}
+
+<div class="o-draggableGallery__modal" data-component="o119-modal">
+   {{> molecule/m34-component-background image=image scrollComponent=false disableTransition=true }}
+
+  <div class="o-draggableGallery__modal__header">
+    {{#with about}}
+      {{> atom/a05-moustache text=date }}
+      {{> atom/a03-heading ../title element='h6' size='h6' }}
+    {{/with}}
+  </div>
+
+  <div class="o-draggableGallery__modal__mobile" data-mobile-content>
+    <div class="o-draggableGallery__modal__sliderPaginationMobile">
+      {{> molecule/m48-slider-pagination isSlider=true items=(appendObject (object eyebrow=(object text="About")) tabs) autoplay=false }}
+    </div>
+
+    <div class="o-draggableGallery__modal__swiperContainerMobile" data-slider-mobile>
+      <ul class="o-draggableGallery__modal__items swiper-wrapper">
+        <li class="o-draggableGallery__modal__item swiper-slide" data-item-mobile>
+          <div class="o-draggableGallery__modal__itemAbout">
+            {{> atom/a05-moustache text=about.description variant=moustache.variant }}
+            {{> atom/a01-image about.image disableTransition=true }}
+          </div>
+        </li>
+        {{#each tabs}}
+          <li class="o-draggableGallery__modal__item swiper-slide" data-item-mobile>
+            {{#each details}}
+              <div class="o-draggableGallery__modal__item__field">
+                <p class="o-draggableGallery__modal__item__label">{{label}}</p>
+                <p class="o-draggableGallery__modal__item__copy">{{copy}}</p>
+              </div>
+            {{/each}}
+          </li>
+        {{/each}}
+      </ul>
+      {{#if tabs}}
+        {{> atom/a08-page-indicators items=null }}
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="o-draggableGallery__modal__desktop" data-desktop-content>
+    <div class="o-draggableGallery__modal__about">
+      {{> atom/a04-eyebrow text=about.title }}
+      {{> atom/a05-moustache text=about.description variant=moustache.variant }}
+      {{> atom/a01-image about.image disableTransition=true }}
+    </div>
+
+    <div class="o-draggableGallery__modal__sliderDesktop">
+      <div class="o-draggableGallery__modal__swiperContainerDesktop" data-slider-desktop>
+        <ul class="o-draggableGallery__modal__items swiper-wrapper">
+          {{#each tabs}}
+            <li class="o-draggableGallery__modal__item swiper-slide" data-item-desktop>
+              {{#each details}}
+                <div class="o-draggableGallery__modal__item__field">
+                  <p class="o-draggableGallery__modal__item__label">{{label}}</p>
+                  <p class="o-draggableGallery__modal__item__copy">{{copy}}</p>
+                </div>
+              {{/each}}
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="o-draggableGallery__modal__sliderPaginationDesktop">
+        {{> molecule/m48-slider-pagination items=tabs autoplay=false }}
+      </div>
+    </div>
+  </div>
+</div>

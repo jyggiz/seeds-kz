@@ -1,0 +1,44 @@
+<section
+  class="b-chatWithExpert
+    {{#if eyebrow}}-hasEyebrow{{/if}}
+    {{#if (condition slides.length '>' '1')}}-hasPagination{{/if}}
+  "
+  data-component="c107-chat-with-expert"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  data-lazy-component
+>
+  {{#with eyebrow}}
+    <div class="b-chatWithExpert__eyebrowWrapper">
+      {{> atom/a04-eyebrow }}
+    </div>
+  {{/with}}
+
+  {{#if (condition slides.length '>' '1')}}
+    <div class="b-chatWithExpert__sliderPagination">
+      {{> molecule/m48-slider-pagination items=slides autoplay=false }}
+      {{> organism/o42-slider-controls level="primary" dark=true}}
+      <div class="b-chatWithExpert__indicators">
+        {{#each slides}}
+          <div class="b-chatWithExpert__indicator" data-indicator></div>
+        {{/each}}
+      </div>
+    </div>
+  {{/if}}
+
+  <div data-expert-grid-outer-container>
+    <ul class="b-chatWithExpert__slides" data-slider>
+      {{#each slides}}
+        <li class="b-chatWithExpert__slide" data-slide data-item="{{toJson this}}">
+          {{> organism/o89-expert-information expert }}
+          <div class="b-chatWithExpert__slideGrid">
+            <div class="b-chatWithExpert__slideGridContent">
+              {{> ./component/organism/chat-quote title=title quote=quote buttonLabel=buttonLabel }}
+              {{> ./component/organism/chat-details headingText=headingText items=items }}
+            </div>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

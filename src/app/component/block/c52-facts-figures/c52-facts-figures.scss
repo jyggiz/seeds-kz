@@ -1,0 +1,63 @@
+.b-factsFigures {
+  @include fullMinHeight();
+
+  --fact-unit-color: var(--color-black-75);
+  --fact-divider-color: var(--color-black-10);
+
+  padding-block: var(--component-block-padding, var(--container-margin));
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  position: relative;
+
+  &.-double {
+    .o-factsList {
+      margin: 0;
+    }
+  }
+
+  &__container {
+    @include container();
+
+    position: relative;
+  }
+
+  &__columns {
+    grid-gap: var(--component-grid-gap, 0);
+    grid-template-columns: repeat(var(--component-grid-columns, 1), minmax(0, 1fr));
+  }
+
+  .m-componentHeader {
+    margin: 0 0 40px;
+  }
+
+  @include respond-to("LARGE") {
+    --component-grid-gap: 100px;
+
+    &__columns {
+      display: grid;
+    }
+
+    .m-componentHeader {
+      margin: 0 0 60px;
+    }
+  }
+
+  @include neomThemes() {
+    --component-background-color: var(--color-cream);
+    --component-text-color: var(--color-black-75);
+
+    &.t-dark,
+    &.t-darkMono {
+      --fact-unit-color: var(--color-white);
+      --fact-divider-color: var(--color-white-10a);
+    }
+
+    &.-backgroundAsset {
+      --component-background-color: var(--color-black);
+      --component-highlight-color: var(--color-white);
+      --component-text-color: var(--color-white);
+      --fact-unit-color: var(--color-black-20);
+      --fact-divider-color: var(--color-white-10a);
+    }
+  }
+}

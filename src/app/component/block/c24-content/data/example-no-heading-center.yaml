@@ -1,0 +1,16 @@
+scrollComponent: true
+variant: 'single'
+items:
+  - align:
+      horizontal: center
+      vertical: top
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: 'health-wellbeing-biotech'
+      copy:
+        content:
+          '<p><span class="s-paragraph -xlarge">Nam libero tempore, cum soluta nobis est eligendi
+          optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
+          voluptas assumenda est.</span></p>'
+      buttons: 'import!./partial-buttons.yaml'

@@ -1,0 +1,71 @@
+id: 'example-form-id-1'
+action: '#'
+method: 'post'
+form_id: 'newsroom_contact_form'
+heading:
+  text: 'Contact Media Team'
+
+recaptcha:
+  sitekey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+  statement:
+    This site is protected by reCAPTCHA and the Google <a
+    href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+    href="https://policies.google.com/terms">Terms of Service</a> apply.
+
+groups:
+  - id: 'example-form-group-id-1'
+    # legend: 'Heading-like element'
+    items:
+      - type: 'text'
+        label: 'Name'
+        name: 'name'
+        id: 'name'
+        placeholder: 'Example placeholder'
+        required: true
+        titleInEnglish: 'Name'
+        validate:
+          presence:
+            message: '^Please enter your name'
+            allowEmpty: false
+      - type: 'text'
+        label: 'Organization name'
+        name: 'organization-name'
+        id: 'organization-name'
+        placeholder: 'e.g. Acme Co.'
+        required: true
+        titleInEnglish: 'Organization name'
+        validate:
+          presence:
+            message: '^Please enter your organization name'
+            allowEmpty: false
+      - type: 'email'
+        label: 'Email'
+        name: 'email'
+        id: 'email'
+        placeholder: 'example@example.com'
+        required: true
+        titleInEnglish: 'Email'
+        validate:
+          presence:
+            message: '^Please enter your email address'
+          email:
+            message: '^Please enter a correct email address'
+      - type: 'textarea'
+        label: 'Inquiry'
+        name: 'inquiry'
+        id: 'inquiry'
+        placeholder: 'Message'
+        required: true
+        titleInEnglish: 'Inquiry'
+        validate:
+          presence:
+            message: '^Please enter your inquiry'
+            allowEmpty: false
+          length:
+            maximum: 254
+            tooLong: '^Inquiry is too long'
+buttons:
+  - label: 'Send inquiry'
+    size: 'small'
+    theme: 'dark-gold'
+    type: 'submit'

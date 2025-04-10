@@ -1,0 +1,31 @@
+
+
+
+<section class="b-cardGrid" data-component="c70-card-grid" data-items="{{ toJson items}}"
+  data-limit="{{pagination.limit}}" {{#if scrollComponent}}data-scroll-component{{/if}} {{#if id}}
+  id="{{id}}" {{/if}} data-try-again="{{@root.i18n.tryAgain}}" data-no-results="{{@root.i18n.noResults}}"
+  data-lazy-component>
+
+  <div class="b-cardGrid__filters">
+    {{#with filter}}
+    {{> organism/o43-filter }}
+    {{/with}}
+  </div>
+
+  <div class="b-cardGrid__containerItems" data-grid-container >
+    <ul class="b-cardGrid__items" data-grid-list>
+      {{#each items}}
+      <li class="b-cardGrid__item" data-grid-item>
+        {{> molecule/m22-person-card}}
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="b-cardGrid__controls" data-grid-controls>
+    {{#if (condition pagination.pages.length '>' 1)}}
+    {{> organism/o55-pagination pagination}}
+    {{/if}}
+  </div>
+
+</section>

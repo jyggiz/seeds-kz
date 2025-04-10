@@ -1,0 +1,17 @@
+scrollComponent: true
+
+sectorImage:
+  src: 'image/sectors/entertainment-culture-fashion.png'
+  alt: entertainment sector
+
+header:
+  eyebrow:
+    text: 'MEET THE MENTORS'
+    size: medium
+  moustache:
+    text: "Here are the NEOM & OXAGON experts you'll be working with:"
+    size: small
+  alignment: left
+
+people:
+  - 'import!../../../molecule/m22-person-card/data/vishal-wanchoo.yaml'

@@ -1,0 +1,68 @@
+.b-quote {
+  @include fullMinHeight();
+
+  --quote-max-width: 770px;
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+  text-align: center;
+
+  &__container {
+    @include container();
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__blockquote {
+    --icon-fill: var(--component-highlight-color);
+
+    margin: 0 auto;
+    max-width: var(--quote-max-width);
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    font-size: 0;
+  }
+
+  &.-wide {
+    --quote-max-width: 860px;
+  }
+
+  .m-button {
+    margin: 20px 0 0;
+  }
+
+  @include respond-to("MEDIUM") {
+    &__blockquote {
+      margin: 0 auto;
+    }
+
+    &__buttons {
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      margin: 50px 20px 0 10px;
+    }
+
+    .m-button {
+      margin: 0 10px;
+    }
+
+    .m-blockquote {
+      margin: 0;
+    }
+  }
+
+  @include neomThemes() {
+    &.t-dark {
+      .m-blockquote__prefix {
+        color: var(--component-highlight-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+scrollComponent: true
+overlapTopComponent: false
+
+header:
+  disableTransition: true
+  alignment: left
+  heading:
+    text: 'Your challenge topics & focus categories'
+    size: 'h6'
+
+items:
+  - title: Rethinking Water
+    image:
+      src: 'image/c29-stories/stories_episodewater.jpg'
+      alt: Rethinking Water
+
+  - title: Where humanity and nature live in harmony
+    image:
+      src: 'image/c29-stories/humanity-harmony.jpg'
+      alt: Where humanity and nature live in harmony
+
+  - title: The Dreamers and Doers
+    image:
+      src: 'image/c29-stories/stories_settlers.jpg'
+      alt: The Dreamers and Doers
+
+  - title: Building the School of the Future
+    image:
+      src: 'image/c29-stories/stories_education.jpg'
+      alt: Building the School of the Future

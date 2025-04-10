@@ -1,0 +1,33 @@
+scrollComponent: true
+variant: 'large'
+
+header:
+  heading:
+    text: 'Our Pillars'
+    size: 'h4'
+
+description:
+  'Credibility, relevance, differentiation and excitement are the three pillars that support our
+  approach. NIF has the risk appetite, ingenuity and investing power to test and learn – ensuring
+  NEOM is a commercial powerhouse at the forefront of change, with a diverse portfolio and effective
+  use of land.'
+
+items:
+  - image:
+      alt: null
+      src: 'icon/c08-stats/nif-credibility.png'
+    title:
+      text: 'Credibility'
+      size: large
+  - image:
+      alt: null
+      src: 'icon/c08-stats/nif-relevance.png'
+    title:
+      text: 'Relevance'
+      size: large
+  - image:
+      alt: null
+      src: 'icon/c08-stats/nif-differentiation.png'
+    title:
+      text: 'Differentiation'
+      size: large

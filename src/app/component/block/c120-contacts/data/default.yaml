@@ -1,0 +1,13 @@
+title:
+  element: h1
+  text: Контактная информация
+  size: h5
+address:
+  copy:
+    content: 'г. Астана, район Есиль, ул. Сығанақ, дом 64/1, н.п. 13'
+tel:
+  copy:
+    content: '<a href="tel:+77761235556">+7-776-123-55-56</a>'
+email:
+  copy:
+    content: '<a href="mailto:associationseeds@yandex.ru">associationseeds@yandex.ru</a>'

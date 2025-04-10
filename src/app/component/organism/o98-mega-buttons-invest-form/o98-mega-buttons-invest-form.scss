@@ -1,0 +1,47 @@
+.o-megaButtonsInvestForm {
+  --component-highlight-color: var(--color-dark-gold);
+
+  width: 100%;
+  text-align: start;
+
+  .m-tileCta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .a-image {
+      position: relative;
+      width: 50%;
+    }
+
+    @include hover {
+      .m-tileCta__label {
+        color: var(--color-dark-gold);
+      }
+    }
+  }
+
+  .m-tileCta__label {
+    font-weight: 400;
+  }
+
+  &__drillDownControlsContainer {
+    position: relative;
+  }
+
+  &__drillDownControls {
+    padding-top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+  }
+
+  &__drillDownControlsDesktop,
+  &__drillDownControlsMobile {
+    width: 100%;
+    position: absolute;
+  }
+}

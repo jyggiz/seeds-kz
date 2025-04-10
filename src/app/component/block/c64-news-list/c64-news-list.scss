@@ -1,0 +1,45 @@
+.b-newsList {
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-basis: 100%;
+  }
+
+  &__items {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 910px;
+  }
+
+  &__container {
+    @include container();
+
+    position: relative;
+  }
+
+  .m-componentHeader {
+    margin: 0 auto 60px;
+  }
+
+  @include respond-to("MEDIUM") {
+    &__items {
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 0 70px;
+    }
+
+    &__column {
+      gap: 60px;
+    }
+  }
+
+  @include neomThemes();
+}

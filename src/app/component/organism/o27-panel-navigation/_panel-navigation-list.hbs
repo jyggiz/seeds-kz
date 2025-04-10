@@ -1,0 +1,35 @@
+{{#unless (condition type "===" "CTA")}}
+  <li class="o-panelNavigation__item{{#if active}} -isActive{{/if}}" data-panel-item>
+    {{#unless type}}
+      {{>./_link.hbs className="o-panelNavigation__link" data=(object panel-link=null)}}
+    {{else}}
+        {{> molecule/m23-panel-menu-button data=(object panel-menu-button=null)}}
+        <div class="o-panelNavigation__menu" data-panel-menu>
+          {{> molecule/m23-panel-menu-button back=true data=(object panel-back-button=null)}}
+          <div class="o-panelNavigation__menuContainer">
+            <ul class="o-panelNavigation__menuItems" data-panel-menu-items>
+              {{#each items}}
+                <li class="o-panelNavigation__menuItem -{{../type}}" data-panel-menu-item>
+                  {{#if (condition ../type '===' 'menu')}}
+                    {{#if items}}
+                      <ul class="o-panelNavigation__items" data-panel-items>
+                          {{> ./_panel-navigation-list.hbs }}
+                      </ul>
+                    {{else}}
+                      {{>./_link.hbs className="o-panelNavigation__menuLink" data=(object panel-menu-link=null)}}
+                    {{/if}}
+                  {{/if}}
+                  {{#if (condition ../type '===' 'projectMenu')}}
+                    {{> molecule/m20-project-menu-item }}
+                  {{/if}}
+                  {{#if (condition ../type '===' 'sectorMenu')}}
+                    {{> molecule/m21-sector-menu-item variant="panel" }}
+                  {{/if}}
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+    {{/unless}}
+  </li>
+{{/unless}}

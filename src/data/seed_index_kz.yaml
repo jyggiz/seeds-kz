@@ -1,0 +1,29 @@
+dir: ltr
+language: kk
+head: 'import!../app/data/yaml/seeds-index-kz.yaml'
+
+navigation: 'import!../app/component/organism/o97-navigation-placeholder/data/default.yaml'
+
+meta:
+  id: 'p01'
+  status: 'done'
+  notes: ''
+  category: 'Pages'
+
+blocks:
+  - name: 'c26-hero-banner'
+    data: 'import!../app/component/block/c26-hero-banner/data/seeds-main-kz.yaml'
+
+  - name: 'c24-content'
+    data: 'import!../app/component/block/c24-content/data/seeds-about-kz.yaml'
+
+  - name: 'c38-windows'
+    data: 'import!../app/component/block/c38-windows/data/seeds-kz.yaml'
+
+  - name: 'c114-infographic'
+    data: 'import!../app/component/block/c114-infographic/data/seeds.yaml'
+
+  - name: 's02-footer'
+    data: 'import!../app/component/block/s02-footer/data/seeds-index-kz.yaml'
+
+scrollToTop: true

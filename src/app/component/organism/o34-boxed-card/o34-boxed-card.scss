@@ -1,0 +1,180 @@
+.o-boxedCard {
+  --icon-size: 60px;
+
+  background-color: var(--boxed-card-background-color, var(--color-cream-25));
+  border: 1px solid var(--boxed-card-border-color, var(--color-black-20));
+  color: var(--boxed-card-text-color, var(--color-black-75));
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 310px;
+  min-height: 460px;
+  padding: 60px var(--grid-gap) 50px;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+
+  @include hover {
+    --component-highlight-color: var(--boxed-card-heading-color);
+    --icon-fill: var(--boxed-card-heading-color);
+
+    background-color: var(--boxed-card-hover-background-color, var(--color-white));
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    @include size(100%);
+    @include offset;
+
+    content: "";
+    opacity: 0;
+    outline: 1px solid var(--component-text-color);
+    pointer-events: none;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out;
+    z-index: zindex($zLayout, content);
+  }
+
+  &__heading {
+    @include type("overline", "medium");
+
+    color: var(--boxed-card-heading-color, var(--color-black));
+    margin: 0 0 22px;
+    min-height: 66px;
+    width: 100%;
+
+    &.-bigSize {
+      @include type("overline", "large");
+    }
+
+    &.-hasLink {
+      @include hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__asset {
+    align-items: flex-end;
+    display: flex;
+    height: var(--icon-size);
+    justify-content: center;
+    margin: 0 auto 30px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &.-bigSizeAsset {
+      --icon-size: 120px;
+    }
+
+    &.-image {
+      .a-image {
+        height: auto;
+
+        &__img {
+          @include size(auto, 100%);
+
+          margin: auto;
+          max-height: var(--icon-size);
+        }
+      }
+    }
+
+    &__icon {
+      --icon-size: 60px;
+
+      margin: 0 0 22px;
+    }
+
+    & > .a-icon {
+      color: var(--icon-fill, currentColor);
+    }
+  }
+
+  &__copy {
+    @include type("body", "small");
+
+    margin: 0 0 60px;
+    width: 100%;
+  }
+
+  &__link {
+    --icon-size: 15px;
+    --icon-fill: var(--link-icon-color);
+
+    align-items: center;
+    display: inline-flex;
+    transition: color 0.2s ease-in-out;
+
+    align-self: flex-start;
+    color: var(--component-highlight-color);
+    margin: auto 0 0;
+    pointer-events: none;
+
+    .a-label {
+      flex: 0 0 auto;
+      transform: translateY(-0.25ex);
+    }
+
+    .a-icon {
+      flex: 0 0 auto;
+      transition: color 0.2s ease-in-out;
+
+      [dir="rtl"] & {
+        transform: rotate(180deg);
+      }
+
+      &[data-icon="plus-circle"] {
+        margin-inline-start: 10px;
+      }
+    }
+
+    @include hover {
+      --link-text-color: var(--color-accent);
+      --link-icon-color: var(--color-accent);
+    }
+
+    &.-small {
+      .a-label {
+        transform: translateY(-0.225ex);
+      }
+
+      --icon-size: 16px;
+    }
+  }
+
+  .a-index {
+    margin: 0 0 22px;
+  }
+
+  &.-center {
+    text-align: center;
+
+    .o-boxedCard__link {
+      margin: auto auto 0;
+    }
+  }
+
+  &.-hasLink {
+    cursor: pointer;
+  }
+
+  @include theme("oxagon") {
+    .o-boxedCard__link {
+      --component-highlight-color: var(--component-text-color);
+    }
+  }
+
+  @include respond-to(SMALL) {
+    --icon-size: 60px;
+  }
+
+  @include respond-to(MEDIUM) {
+    --icon-size: 80px;
+  }
+}

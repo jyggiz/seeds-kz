@@ -1,0 +1,22 @@
+scrollComponent: true
+
+eyebrow:
+  text: The Line is
+
+heading:
+  text: 'the enabler for futureproof urbanization'
+  size: h4
+
+moustache:
+  text:
+    'One of the main projects for NEOM is the realisation of THE LINE. The core for urban living in
+    NEOM.'
+
+buttons:
+  - theme: white
+    label: More about The Line
+    href: '#'
+
+image:
+  alt: null
+  src: 'image/homepage-mountain-background.jpg'

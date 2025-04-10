@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="./o91-modal-statistic.scss">
+<script src="./O91ModalStatistic.ts"></script>
+
+
+<div class="o-modalStatistic"
+  data-component="o91-modal-statistic"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  
+>
+  {{#with content}}
+    {{> molecule/m56-statistic-card }}
+  {{/with}}
+</div>

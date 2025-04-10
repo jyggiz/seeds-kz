@@ -1,0 +1,54 @@
+.b-hotspotMap {
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+  --start: 0;
+
+  &.-hasIntro {
+    .b-hotspotMap__map {
+      position: relative;
+      z-index: zindex($zLayout, navigation-mask);
+      mask-image: radial-gradient(
+        circle at 50% 50%,
+        black calc(var(--start, 0) * 90%),
+        transparent calc(min(1, var(--start) + 0) * 100%)
+      );
+    }
+  }
+
+  @include respond-to("SMALL") {
+    height: 100%;
+  }
+
+  [data-stop-exploring-button] {
+    position: absolute;
+    z-index: zindex($zLayout, navigation-mask);
+    opacity: 0;
+    right: 20px;
+    transition: opacity 250ms ease, visibility 250ms ease;
+    top: 20px;
+    visibility: hidden;
+
+    &.-isVisible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .a-label {
+      @include type("link", "s");
+    }
+
+    .a-icon {
+      --icon-size: 20px;
+    }
+
+    &.-leftIcon {
+      .a-label ~ .a-icon {
+        margin-inline-end: 12px;
+      }
+
+      .m-button__container {
+        padding-inline: 24px;
+      }
+    }
+  }
+}

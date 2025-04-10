@@ -1,0 +1,39 @@
+name: Deploy to PS.kz
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build project
+        run: yarn build
+
+      # Optional: Run a custom script (e.g. fetch external data)
+      # - name: Run fetch script
+      #   run: node scripts/fetch-content.js
+
+      - name: Deploy to PS.kz via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist                  # change if your build folder is different
+          server-dir: ${{ secrets.FTP_TARGET_DIR }}
+          delete: false                      # keeps existing remote files

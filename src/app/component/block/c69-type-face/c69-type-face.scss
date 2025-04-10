@@ -1,0 +1,97 @@
+@mixin typefaceGrid {
+  display: grid;
+  grid-column-gap: var(--grid-gap);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+}
+
+.b-typeFace {
+  --brand-book-grid-max-width: 1440px;
+  --brand-book-grid-padding: 30px;
+
+  background-color: var(--color-page-background);
+
+  .a-heading,
+  .m-paragraph {
+    margin: 0 0 20px;
+  }
+
+  &__grid {
+    padding: 100px var(--brand-book-grid-padding);
+    margin: 0 auto;
+    max-width: var(--brand-book-grid-max-width);
+  }
+
+  &__heading {
+    @include type("overline", "large");
+  }
+
+  &__hero {
+    padding: 0 0 70px;
+  }
+
+  &__fontDisplay {
+    .s-content {
+      .-brown {
+        font-family: "Brown", Arial, sans-serif;
+      }
+      .-bukra {
+        font-family: "Bukra", Arial, sans-serif;
+      }
+      .-zarid {
+        font-family: "Zarid", Arial, sans-serif;
+      }
+    }
+  }
+
+  &__fontDisplayImage {
+    margin: 0 0 30px;
+  }
+
+  &__fontDisplayCopy {
+    padding: 0 0 100px;
+
+    .a-heading {
+      @include type("overline", "medium");
+
+      color: var(--color-dark-gold);
+    }
+  }
+
+  &__fontDisplayTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__scaleCopySubtitle {
+    color: var(--color-dark-gold);
+    margin: 0 0 30px;
+  }
+
+  @include respond-to(LARGE) {
+    &__hero {
+      @include typefaceGrid;
+    }
+
+    &__heroCopyWrapper {
+      grid-column-start: 2;
+      padding: 0 0 100px;
+    }
+
+    &__fontDisplayWrapper {
+      @include typefaceGrid;
+    }
+
+    &__fontDisplayImage {
+      justify-self: center;
+      grid-column-start: 1;
+    }
+
+    &__scale {
+      @include typefaceGrid;
+    }
+
+    &__scaleWrapper {
+      grid-column-start: 2;
+    }
+  }
+}

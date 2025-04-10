@@ -1,0 +1,104 @@
+.o-cardWaterfall {
+  @include container;
+
+  &__items {
+    width: 100%;
+    list-style: none;
+    padding: 0 0 40px;
+  }
+
+  &__item {
+    transition: opacity 0.3s linear;
+
+    &:not(:first-child) {
+      margin: 10px 0 0;
+    }
+
+    &.-isExpanded {
+      opacity: 0;
+    }
+
+    &.-isDisabled {
+      opacity: 0.25;
+    }
+  }
+
+  @include respond-to(XLARGE) {
+    &__items {
+      @include list-reset(0, 70px 0);
+
+      display: grid;
+      grid-gap: var(--grid-gap);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      margin-inline-start: auto;
+      max-width: 940px;
+      width: 73%;
+    }
+
+    &__item {
+      grid-column-end: span 1;
+      grid-row-end: span 5;
+      position: relative;
+
+      .o-expertCard {
+        pointer-events: none;
+      }
+
+      &:not(:first-child) {
+        margin: 0;
+      }
+
+      &:nth-child(3n) {
+        grid-column-start: 1;
+        grid-row-start: calc(3 + var(--card-grid-offset, 0));
+      }
+
+      &:nth-child(3n + 1) {
+        grid-column-start: 2;
+        grid-row-start: calc(1 + var(--card-grid-offset, 0));
+      }
+
+      &:nth-child(3n + 2) {
+        grid-column-start: 3;
+        grid-row-start: calc(2 + var(--card-grid-offset, 0));
+      }
+
+      &.-position-4,
+      &.-position-5,
+      &.-position-6 {
+        --card-grid-offset: 5;
+      }
+
+      &.-position-7,
+      &.-position-8,
+      &.-position-9 {
+        --card-grid-offset: 10;
+      }
+
+      &.-position-10,
+      &.-position-11,
+      &.-position-12 {
+        --card-grid-offset: 15;
+      }
+
+      &.-position-13,
+      &.-position-14,
+      &.-position-15 {
+        --card-grid-offset: 20;
+      }
+
+      &.-position-16,
+      &.-position-17,
+      &.-position-18 {
+        --card-grid-offset: 25;
+      }
+
+      &.-position-19,
+      &.-position-20,
+      &.-position-21 {
+        --card-grid-offset: 30;
+      }
+    }
+  }
+}

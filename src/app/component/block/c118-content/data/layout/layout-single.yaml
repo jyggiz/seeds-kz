@@ -1,0 +1,26 @@
+scrollComponent: true
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              text: 'Single column'
+              size: h3
+              element: h2
+            copy:
+              content:
+                'A competition led by NEOM OXAGON that challenges you to solve issues related to the
+                tech industries, water, e-fuel and green hydrogen. If youre a team of talented tech
+                wizards looking to make an impact, sign up now and show your critical thinking
+                skills.Who can apply?'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

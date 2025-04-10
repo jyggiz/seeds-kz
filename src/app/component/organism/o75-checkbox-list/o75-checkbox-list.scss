@@ -1,0 +1,42 @@
+.o-checkboxList {
+  @include fieldsetStyling;
+  @include type("exception", "small-description");
+
+  font-weight: 300;
+
+  a {
+    color: var(--color-dark-gold);
+    text-decoration: underline;
+
+    @include hover {
+      color: var(--color-gold);
+    }
+  }
+
+  .m-checkboxOption__textLabel {
+    color: var(--color-black); //todo move this to molecule style when other forms are approved
+  }
+
+  &__hint {
+    @include type("body", "small");
+
+    color: var(--color-black-75);
+  }
+
+  &__hint,
+  .a-fieldsetLegend {
+    margin-block-end: 8px;
+  }
+
+  &__options {
+    --checkbox-checkmark-color: var(--checkbox-group-background-color);
+
+    background-color: var(--checkbox-group-background-color);
+    border-radius: 4px;
+    padding: 20px;
+
+    .m-checkboxOption:last-child {
+      margin: 0;
+    }
+  }
+}

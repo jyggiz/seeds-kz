@@ -1,0 +1,65 @@
+scrollComponent: true
+
+fullHeight: 'false'
+
+align:
+  horizontal: start
+  vertical: middle
+
+centralizedButtons: true
+
+optimizeForLCP: false
+
+background:
+  image:
+    src: './image/homepage-mountain-background.jpg'
+    alt: 'Mountain background'
+
+content:
+  header:
+    heading:
+      element: h1
+      size: h5
+      text: Let's start by finding out a bit more about you
+    eyebrow:
+      text: Thank you for your interest
+
+  buttonEyebrow: "I'd like to:"
+  buttonType: tile
+  buttonContentDirection: row
+  buttons:
+    - icon: resident
+      label: Set up manufacturing
+      href: '#'
+      heroBackgroundImageOnHover:
+        image:
+          src: './image/c26-hero-banner/hero-banner-brandbook-downloads.jpg'
+          alt: ''
+    - icon: people
+      label: Invest in OXAGON
+      href: '#'
+      heroBackgroundImageOnHover:
+        image:
+          src: './image/c26-hero-banner/hero-banner-brandbook.jpg'
+          alt: ''
+    - icon: technology
+      label: Provide product or service
+      href: '#'
+      heroBackgroundImageOnHover:
+        image:
+          src: './image/c26-hero-banner/teaser-homepage.jpg'
+          alt: ''
+    - icon: communication
+      label: Receive updates
+      href: '#'
+      heroBackgroundImageOnHover:
+        image:
+          src: './image/c26-hero-banner/teaser-investor.jpg'
+          alt: ''
+    - icon: calendar
+      label: Explore job opportunity
+      href: '#'
+      heroBackgroundImageOnHover:
+        image:
+          src: './image/c26-hero-banner/the-line-hero-image.jpg'
+          alt: ''

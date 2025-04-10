@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="./o95-dynamic-carousel.scss">
+<script src="./O95DynamicCarousel.ts"></script>
+
+<div class="o-dynamicCarousel" data-component="o95-dynamic-carousel"{{#if id}} id="{{id}}" {{/if}}>
+  <div class="o-dynamicCarousel__controls" data-controls>
+    {{> organism/o42-slider-controls }}
+  </div>
+  <div class="o-dynamicCarousel__swiperContainer swiper-container" data-slider>
+    <ul class="o-dynamicCarousel__swiperWrapper swiper-wrapper">
+      {{#each items}}
+        <div class="o-dynamicCarousel__slide swiper-slide" data-dynamic-slide>
+          {{> (lookup . 'componentName') data disableTransition=true }}
+        </div>
+      {{/each}}
+    </ul>
+    {{> atom/a08-page-indicators items=null }}
+  </div>
+</div>

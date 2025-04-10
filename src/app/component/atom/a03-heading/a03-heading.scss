@@ -1,0 +1,51 @@
+.a-heading {
+  @include textTransform;
+
+  color: var(--component-heading-color);
+  font-weight: 400;
+
+  &.-h1 {
+    @include type("heading", "h1");
+  }
+
+  &.-h2 {
+    @include type("heading", "h2");
+  }
+
+  &.-h3 {
+    @include type("heading", "h3");
+  }
+
+  &.-h4 {
+    @include type("heading", "h4");
+  }
+
+  &.-h5 {
+    @include type("heading", "h5");
+  }
+
+  &.-h6 {
+    @include type("heading", "h6");
+  }
+
+  &.-h7 {
+    @include type("heading", "h7");
+  }
+
+  &.-center {
+    text-align: center;
+  }
+
+  &.-end {
+    text-align: end;
+  }
+
+  strong {
+    color: var(--component-highlight-color);
+    font-weight: 400;
+  }
+
+  span {
+    font-weight: 100;
+  }
+}

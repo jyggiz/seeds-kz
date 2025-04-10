@@ -1,0 +1,182 @@
+scrollComponent: true
+
+heading:
+  size: h4
+  text: NEOM.COM
+  element: h1
+
+sections:
+  - label: ABOUT
+    href: '#'
+    columns:
+      - items:
+          - label: WHAT IS NEOM
+            href: '#'
+            variant: heading
+          - label: NEOM INVESTMENT FUND
+            href: '#'
+            variant: heading
+          - label: NEOM LEADERSHIP TEAM
+            href: '#'
+            variant: heading
+  - label: REGION
+    href: '#'
+    columns:
+      - items:
+          - label: SINDALAH
+            href: '#'
+            variant: heading
+          - label: Sindalah form
+            href: '#'
+      - items:
+          - label: THE LINE
+            href: '#'
+            variant: heading
+          - label: the LINE form
+            href: '#'
+      - items:
+          - label: TROJENA
+            href: '#'
+            variant: heading
+          - label: Trojena form
+            href: '#'
+      - items:
+          - label: OXAGON
+            href: '#'
+            variant: heading
+          - label: Oxagon form
+            href: '#'
+          - label: Oxagon Hackathon
+            href: '#'
+          - label: Oxagon Accelerator
+            href: '#'
+  - label: OUR BUSINESS
+    href: '#'
+    columns:
+      - items:
+          - label: SECTORS
+            href: '#'
+            variant: heading
+          - label: Design & Construction
+            href: '#'
+          - label: Education
+            href: '#'
+          - label: Energy
+            href: '#'
+          - label: Entertainment & Culture
+            href: '#'
+          - label: Financial Services
+            href: '#'
+          - label: Food
+            href: '#'
+            subitems:
+              - label: Agri-food accelerator
+                href: '#'
+      - items:
+          - label: Health, Well-being & Biotech
+            href: '#'
+          - label: Manufacturing
+            href: '#'
+          - label: Media
+            href: '#'
+            subitems:
+              - label: Gaming
+                href: '#'
+              - label: Screen Production
+                href: '#'
+          - label: Mobility
+            href: '#'
+      - items:
+          - label: Sport
+            href: '#'
+            subitems:
+              - label: Beach Games
+                href: '#'
+              - label: GKA Kitesurfing
+                href: '#'
+              - label: SUPER LEAGUE TRIATHLON
+                href: '#'
+              - label: 3x3 SUPER QUEST BASKETBALL
+                href: '#'
+              - label: Beach Soccer
+                href: '#'
+              - label: TITAN - MOUNTAIN BIKING
+                href: '#'
+          - label: Technology & Digital
+            href: '#'
+          - label: Tourism
+            href: '#'
+            subitems:
+              - label: Tourism form
+                href: '#'
+      - items:
+          - label: Water
+            href: '#'
+            subitems:
+              - label: NEOM’s Brine Processing Plant
+                href: '#'
+              - label: NEOM’s Potable Water Storage
+                href: '#'
+              - label: The future of resource recovery
+                href: '#'
+              - label: NEOM’s Seawater Desalination Plant
+                href: '#'
+              - label: The future of water transmission and storage
+                href: '#'
+              - label: At NEOM, every drop of water counts
+                href: '#'
+              - label: NEOM’s Innovation Hub
+                href: '#'
+              - label: NEOM’s Innovation Hub
+                href: '#'
+              - label: NEOM’s Innovation Hub
+                href: '#'
+      - items:
+          - label: OUR PARTNERS
+            href: '#'
+            variant: heading
+          - label: NEOM x MCLAREN RACING
+            href: '#'
+          - label: NEOM x AFC
+            href: '#'
+          - label: NEOM x MERCEDES-EQ FORMULA E TEAM
+            href: '#'
+      - items:
+          - label: OUR SUPPLIERS
+            href: '#'
+            variant: heading
+      - items:
+          - label: neom hotel development
+            href: '#'
+            variant: heading
+          - label: Neom Hotel Development form
+            href: '#'
+  - label: INVEST
+    href: '#'
+    columns:
+      - items:
+          - label: INVEST
+            href: '#'
+            variant: heading
+          - label: Invest form
+            href: '#'
+  - label: NEWS
+    href: '#'
+    columns:
+      - items:
+          - label: NEWSROOM
+            href: '#'
+            variant: heading
+          - label: MEDIA GALLERY
+            href: '#'
+            variant: heading
+  - label: CAREERS
+    href: '#'
+    columns:
+      - items:
+          - label: WORKING AT NEOM
+            href: '#'
+            variant: heading
+          - label: JOB SEARCH
+            href: '#'
+            variant: heading

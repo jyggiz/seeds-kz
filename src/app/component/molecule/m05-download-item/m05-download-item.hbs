@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="./m05-download-item.scss">
+<script src="./M05DownloadItem.ts"></script>
+
+
+<div class="m-downloadItem{{#if variant}} -{{variant}}{{/if}}" data-component="m05-download-item" {{#if eventTracking}}data-event-tracking="{{ toJson eventTracking }}"{{/if}}>
+  {{#if image}}
+   <div class="m-downloadItem__image">
+      {{> atom/a01-image image disableTransition=true}}
+    </div>
+  {{/if}}
+  <div class="m-downloadItem__content">
+    {{> atom/a03-heading heading}}
+    {{#with description}}
+      <p class="m-downloadItem__description">{{{ this }}}</p>
+    {{/with}}
+    {{#with link}}
+      <a href="{{ href }}" class="m-downloadItem__link" target="_blank" data-title="{{../heading.text}}">
+        {{ label }}
+        {{> atom/a02-icon name="link-gold" }}
+      </a>
+    {{/with}}
+  </div>
+</div>

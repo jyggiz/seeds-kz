@@ -1,0 +1,16 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        element: 'h3'
+        text: 'XL - Big screen'
+        size: 'h5'
+      copy:
+        size: 'medium'
+        content: <p>1920px, 12 columns, 40px baseline.</p>

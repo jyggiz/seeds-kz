@@ -1,0 +1,205 @@
+theme: 'dark'
+
+scrollComponent: false
+
+padding:
+  start: large
+  end: large
+
+header:
+  heading:
+    size: h4
+    element: h4
+    text: Our journey
+
+initialSlideIndex: '0'
+
+timelinePoints:
+  - id: '2022'
+    description: '2022'
+  - id: '2021'
+    description: '2021'
+  - id: '2020'
+    description: '2020'
+  - id: '2019'
+    description: '2019'
+  - id: '2018'
+    description: '2018'
+  - id: '2017'
+    description: '2017'
+
+items:
+  - componentName: journey-card
+    data:
+      timelinePointId: '2022'
+      eyebrow:
+        text: 'November'
+        size: 'large'
+      moustache:
+        text: 'Some text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2022'
+      eyebrow:
+        text: 'March'
+        size: 'large'
+      moustache:
+        text: 'Completely different text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2022'
+      eyebrow:
+        text: 'November'
+        size: 'large'
+      moustache:
+        text: 'Some text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2022'
+      eyebrow:
+        text: 'November'
+        size: 'large'
+      moustache:
+        text: 'Completely different text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2021'
+      eyebrow:
+        text: 'November'
+        size: 'large'
+      moustache:
+        text: 'Some text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2021'
+      eyebrow:
+        text: 'November'
+        size: 'large'
+      moustache:
+        text: 'Completely different text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2020'
+      eyebrow:
+        text: 'November'
+        size: 'large'
+      moustache:
+        text: 'Some text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2019'
+      eyebrow:
+        text: 'March'
+        size: 'large'
+      moustache:
+        text: 'Completely different text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2019'
+      eyebrow:
+        text: 'November'
+        size: 'large'
+      moustache:
+        text: 'Some text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2018'
+      eyebrow:
+        text: 'November'
+        size: 'large'
+      moustache:
+        text: 'Completely different text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2017'
+      eyebrow:
+        text: 'March'
+        size: 'large'
+      moustache:
+        text: 'Some text'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2017'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'

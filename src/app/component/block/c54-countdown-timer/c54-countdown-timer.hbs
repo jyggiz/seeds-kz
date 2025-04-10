@@ -1,0 +1,45 @@
+
+
+
+<section class="b-countdownTimer -hasBackgroundImage{{#if alignment}} -{{alignment}}{{^}} -center{{/if}}"
+  data-component="c54-countdown-timer"  {{#if scrollComponent}}data-scroll-component{{/if}} {{#if id}}
+  id="{{id}}" {{/if}} data-lazy-component>
+
+  {{> molecule/m34-component-background background }}
+  <div class="b-countdownTimer__container">
+    {{#with logo}}
+    {{> molecule/m19-logo }}
+    {{/with}}
+    {{#with header}}
+    <div class="b-countdownTimer__header">
+      {{#if this.flipHeading }}
+        {{> molecule/m04-component-header moustache=(object size="small" text=this.moustache.text) flipHeading=(object
+          prefix=null element=this.flipHeading.element size=this.flipHeading.size labels=this.flipHeading.labels) }}
+      {{^}}
+        {{#if this.moustache}}
+        {{> molecule/m04-component-header moustache=(object size="small" text=this.moustache.text) heading=this.heading }}
+          {{^}}
+        {{> molecule/m04-component-header heading=this.heading }}
+        {{/if}}
+      {{/if}}
+    </div>
+    {{/with}}
+    {{#with subheader}}
+    <div class="b-countdownTimer__subheader">
+      {{> atom/a04-eyebrow size="large"}}
+    </div>
+    {{/with}}
+    {{> organism/o61-timer timer}}
+    {{#if buttons}}
+    <ul class="b-countdownTimer__buttons">
+    {{#each buttons}}
+      <li class="b-countdownTimer__button">
+        {{> molecule/m02-button }}
+      </li>
+    {{/each}}
+    </ul>
+    {{/if}}
+
+  </div>
+
+</section>

@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="./m23-panel-menu-button.scss">
+<script src="./M23PanelMenuButton.ts"></script>
+
+
+<button class="m-panelMenuButton{{#if back}} -back{{/if}}"
+        data-component="m23-panel-menu-button" {{#each data}}data-{{@key}}="{{this}}" {{/each}}
+        aria-expanded="{{#if back}}true{{^}}false{{/if}}"
+        {{#unless back}}aria-haspopup="true"{{/unless}}
+>
+  {{#if back}}{{> atom/a02-icon name="chevron-left" }}{{/if}}
+  {{> atom/a07-label text=label }}
+  {{#unless back}}{{> atom/a02-icon name="chevron-right" }}{{/unless}}
+</button>

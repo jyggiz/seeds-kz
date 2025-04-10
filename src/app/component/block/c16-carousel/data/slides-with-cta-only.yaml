@@ -1,0 +1,82 @@
+scrollComponent: true
+
+headerPosition: center
+header:
+  asset:
+    alt: 'A road leading to a mountain range'
+    src: './image/logo-tonomus.png'
+  eyebrow:
+    text: 'Optional Eyebrow'
+  heading:
+    text: What's happening <br /> <span>at NEOM</span>
+    size: h4
+  alignment: start
+theme: 'darkMono'
+backgroundColor: 'black'
+items:
+  - heading:
+      text: As NEOM works towards 'accelerating human progress'.
+      title: Creating investments of the future
+    variant: article
+    link:
+      href: https://newsroom.neom.com/neom-named-as-principal-partner-of-mercedes-benz-eq-formula-e-team-296622
+      target: '_blank'
+    callToAction:
+      label: Read more
+      target: _blank
+      icon: arrow-right
+      iconAlign: right
+      eventTracking:
+        componentId: 'CTA id'
+    image:
+      alt: 'Image'
+      src: 'image/c16-carousel/updates_mercedes.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_mercedes.jpg'
+          media: '(min-width: 768px)'
+  - heading:
+      text:
+        As NEOM works towards 'accelerating human progress', it is providing investors with a
+        destination to combine business and conservation in Saudi Arabia.
+      title: Creating investments of the future
+    variant: article
+    link:
+      href: https://newsroom.neom.com/neom-named-as-principal-partner-of-mercedes-benz-eq-formula-e-team-296622
+      target: '_blank'
+    callToAction:
+      label: Read more
+      target: _blank
+      icon: arrow-right
+      iconAlign: right
+      eventTracking:
+        componentId: 'CTA id'
+    image:
+      alt: 'Image'
+      src: 'image/c16-carousel/updates_mercedes.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_mercedes.jpg'
+          media: '(min-width: 768px)'
+  - heading:
+      text:
+        As NEOM works towards 'accelerating human progress', it is providing investors with a
+        destination to combine business and conservation in Saudi Arabia. As NEOM works towards
+        'accelerating human progress', it is providing investors with a destination to combine
+        business and conservation in Saudi Arabia.
+      title: Creating investments of the future
+    variant: article
+    link:
+      href: https://newsroom.neom.com/neom-named-as-principal-partner-of-mercedes-benz-eq-formula-e-team-296622
+      target: '_blank'
+    callToAction:
+      label: Read more
+      target: _blank
+      icon: arrow-right
+      iconAlign: right
+      eventTracking:
+        componentId: 'CTA id'
+    image:
+      alt: 'Image'
+      src: 'image/c16-carousel/updates_mercedes.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_mercedes.jpg'
+          media: '(min-width: 768px)'

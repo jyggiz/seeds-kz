@@ -1,0 +1,19 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: left
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        element: 'h3'
+        text: 'L - Desktop'
+        size: 'h5'
+      copy:
+        size: 'medium'
+        content:
+          <p>1440px and above. 12 columns, 20px baseline. Using a baseline  allows elements across
+          columns to line up visually. It helps to unify scale. It's a quick way to consistently
+          line things up across pages. </p>

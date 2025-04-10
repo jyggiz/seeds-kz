@@ -1,0 +1,82 @@
+.b-regionSlider {
+  --component-background-color: var(--colorPageBackground);
+  --component-highlight-color: var(--color-dark-gold);
+  --component-heading-color: var(--color-black);
+  --component-text-color: var(--color-black-75);
+
+  overflow: hidden;
+  position: relative;
+
+  &__intro {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__introHeader {
+    margin-inline-start: auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: var(--containerMaxWidth);
+    margin: 0 auto;
+    padding: 0 clamp(20px, 4.8611111111vw, 70px);
+    margin-block: 30px;
+    text-align: center;
+    min-height: 150px;
+
+    .m-paragraph__content {
+      color: var(--component-text-color);
+    }
+  }
+
+  &__introBackground {
+    @include size(100%, calc((13 / 18) * 100vw));
+    position: relative;
+  }
+
+  @include respond-to("LARGE_LANDSCAPE") {
+    .o-regionSliderNavigation {
+      @include offset(25%, 50%);
+
+      transform: translateY(-50%) translateX(-50%);
+
+      &.-properties {
+        @include offset(25%, 63%);
+      }
+
+      [dir="rtl"] & {
+        @include offset(75%, 50%);
+
+        &.-properties {
+          @include offset(75%, 63%);
+        }
+      }
+    }
+
+    &__intro {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__introHeader {
+      flex: 50%;
+      text-align: left;
+    }
+
+    &__introBackground {
+      position: relative;
+      height: 100%;
+      flex: 50%;
+    }
+  }
+
+  @include neomThemes() {
+    &.t-dark,
+    &.t-darkMono {
+      --component-heading-color: var(--color-white);
+      --component-text-color: var(--color-white-70a);
+    }
+  }
+}

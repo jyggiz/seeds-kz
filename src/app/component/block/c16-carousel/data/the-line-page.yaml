@@ -1,0 +1,164 @@
+scrollComponent: true
+
+header:
+  heading:
+    text: Hear from <br /> <span>the creators of the line</span>
+    size: h4
+
+items:
+  - heading:
+      text: 'Nadhmi Nasr: NEOM CEO'
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/the-line/01.jpg'
+    video:
+      playButtonEventTracking:
+        componentId: 'CTA id'
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Welcome to THE LINE'
+            title: 'Welcome to THE LINE'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: 'Antoni Vives: Chief Urban Planning Officer'
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/the-line/02.jpg'
+    video:
+      playButtonEventTracking:
+        componentId: 'CTA id'
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Welcome to THE LINE'
+            title: 'Welcome to THE LINE'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: 'Tarek Qaddumi: Executive Director - Urban Planning'
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/the-line/03.jpg'
+      sources:
+        - src: 'image/c16-carousel/the-line/03.jpg'
+          media: '(min-width: 768px)'
+    video:
+      playButtonEventTracking:
+        componentId: 'CTA id'
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Promise to Revolutionize Water Desalination'
+            title: 'A Promise to Revolutionize Water Desalination'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: 'Tarek Qaddumi: Executive Director - Urban Planning'
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/the-line/04.jpg'
+      sources:
+        - src: 'image/c16-carousel/the-line/04.jpg'
+          media: '(min-width: 768px)'
+    video:
+      playButtonEventTracking:
+        componentId: 'CTA id'
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Promise to Revolutionize Water Desalination'
+            title: 'A Promise to Revolutionize Water Desalination'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: 'Sir Peter Cook: THE LINE Architect'
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/the-line/05.jpg'
+      sources:
+        - src: 'image/c16-carousel/the-line/05.jpg'
+          media: '(min-width: 768px)'
+    video:
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: "Discover NEOM's Heritage"
+            title: "Discover NEOM's Heritage"
+            src: video/video-preview.mp4

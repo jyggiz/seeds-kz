@@ -1,0 +1,58 @@
+.b-contentGroup {
+  @include fullMinHeight();
+
+  color: var(--component-text-color);
+  background-color: var(--component-background-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--grid-gap);
+    justify-content: center;
+  }
+
+  &:not(.-fullMinHeight) {
+    .b-contentGroup__header {
+      @include container;
+
+      .m-componentHeader {
+        @include respond-to("MEDIUM") {
+          max-width: 100%;
+        }
+      }
+
+      @include respond-to("LARGE") {
+        display: grid;
+        gap: var(--grid-gap);
+        grid-template-areas: var(--component-grid-areas);
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+
+        .m-componentHeader {
+          grid-area: 1 / 2 / auto / -2;
+        }
+      }
+    }
+  }
+
+  &__items {
+    @include list-reset();
+
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--container-margin) * 2);
+    width: 100%;
+
+    .b-contentGroup__header + &,
+    & + .b-contentGroup__buttons {
+      margin-block: calc(var(--container-margin) * 2) 0;
+    }
+
+    .o-textAsset__item {
+      z-index: 1;
+    }
+  }
+
+  @include neomThemes();
+}

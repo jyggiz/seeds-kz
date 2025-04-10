@@ -1,0 +1,37 @@
+images:
+  region:
+    src: 'image/c05-region-slider/map-borders-square.png'
+    alt:
+    sources:
+      - src: 'image/c05-region-slider/map-borders-square.png'
+        media: '(min-width: 768px)'
+
+items:
+  - images:
+      region:
+        src: 'image/c05-region-slider/map-coastal-square.png'
+        alt: 'Region #1 highlight layer image here'
+        sources:
+          - src: 'image/c05-region-slider/map-coastal-square.png'
+            media: '(min-width: 768px)'
+  - images:
+      region:
+        src: 'image/c05-region-slider/map-coastal-desert-square.png'
+        alt: 'Region #2 highlight layer image here'
+        sources:
+          src: 'image/c05-region-slider/map-coastal-desert-square.png'
+          media: '(min-width: 768px)'
+  - images:
+      region:
+        src: 'image/c05-region-slider/map-mountains-square.png'
+        alt: 'Region #3 highlight layer image here'
+        sources:
+          src: 'image/c05-region-slider/map-mountains-square.png'
+          media: '(min-width: 768px)'
+  - images:
+      region:
+        src: 'image/c05-region-slider/map-upper-valley-square.png'
+        alt: 'Region #4 highlight layer image here'
+        sources:
+          src: 'image/c05-region-slider/map-upper-valley-square.png'
+          media: '(min-width: 768px)'

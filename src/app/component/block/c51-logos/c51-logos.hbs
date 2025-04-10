@@ -1,0 +1,30 @@
+
+{{!--
+  Note: For future expansion: title, description and testimonial
+--}}
+<section class="b-logos{{#if theme}} t-{{theme}}{{/if}}{{#if background}} -backgroundAsset{{/if}} {{#if fullMinHeight}} -fullMinHeight{{/if}}" data-component="c51-logos" {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+         style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+           {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+           {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+data-lazy-component>
+  {{#if background}}
+    {{> molecule/m34-component-background background }}
+  {{/if}}
+
+  <div class="b-logos__container">
+    {{#with header}}{{> molecule/m04-component-header this}}{{/with}}
+    {{#if items}}
+      <ul class="b-logos__items">
+        {{#each items}}
+          <li class="b-logos__item">
+            {{#with link}}<a class="b-logos__link" href="{{href}}" {{#if target}}target="{{target}}"{{/if}}>{{/with}}
+            {{> atom/a01-image image disableTransition=true }}
+            {{#if link}}</a>{{/if}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+</section>

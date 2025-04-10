@@ -1,0 +1,5 @@
+id: 'overlay-1'
+overlayBackgrounds:
+  - src: 'image/c46-media-list/item1.jpg'
+  - src: 'image/c46-media-list/item2.jpg'
+  - src: 'image/c46-media-list/item3.jpg'

@@ -1,0 +1,5 @@
+items: 'import!../../../molecule/m12-social/data/default.yaml'
+eyebrow:
+  size: medium
+  text: 'Follow Oxagon on social media'
+iconsSize: 'large'

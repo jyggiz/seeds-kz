@@ -1,0 +1,13 @@
+scrollComponent: true
+
+items:
+  previous:
+    heading:
+      text: 'Visual Guidelines: Forms'
+    link:
+      href: './page-brandbook-forms.html'
+  next:
+    heading:
+      text: 'Visual Guidelines: Brand story'
+    link:
+      href: './page-brandbook-brand-story.html'

@@ -1,0 +1,44 @@
+scrollComponent: true
+
+align: center
+theme: dark
+
+header:
+  eyebrow:
+    text: pick the challenge
+    size: small
+  heading:
+    text: Your business will address
+    size: h5
+
+variant: 'singleRow'
+
+items:
+  - icon: 'dna'
+    copy: Material handling units and asset tracking capabilities
+    background:
+      image:
+        alt: 'Water'
+        src: 'image/c18-boxed-list/hackathon-water.jpg'
+      mask:
+        opacity: 1
+
+  - icon: 'dna-string'
+    copy: Pick and pack robotics
+    background:
+      video:
+        props:
+          sources:
+            - src: video/background-video-preview.mp4
+              type: video/mp4
+      mask:
+        opacity: 1
+
+  - icon: 'facilities'
+    copy: Freight loading and unloading capabilities
+
+  - icon: 'sport'
+    copy: Autonomous mobile robotics and vertical distribution
+
+  - icon: 'tourism'
+    copy: Smart lockers and last mile delivery

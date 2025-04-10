@@ -1,0 +1,27 @@
+id: c24-hackathon
+scrollComponent: true
+fullMinHeight: true
+variant: single
+contentWidth: full
+padding:
+  start: large
+  end: large
+
+items:
+  - align:
+      horizontal: start
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: 'MAY THE BEST TEAM WIN'
+        size: medium
+      heading:
+        size: h3
+        element: h2
+        text: 'SINGLE COLUMN FULL WIDTH'
+      copy:
+        content:
+          'A competition led by NEOM OXAGON that challenges you to solve issues related to the tech
+          industries, water, e-fuel and green hydrogen. If youre a team of talented tech wizards
+          looking to make an impact, sign up now and show your critical thinking skills.Who can
+          apply?'

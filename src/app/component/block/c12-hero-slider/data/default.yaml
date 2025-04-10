@@ -1,0 +1,140 @@
+scrollComponent: true
+theme: 'darkMono'
+optimizeForLCP: true
+earlyDisplay: true
+sliderAriaLabel: 'Carousel of NEOM videos'
+clip: false
+items:
+  - align:
+      horizontal: start
+      vertical: bottom
+
+    topic: slide-1
+
+    background:
+      transitionDirection: 'left'
+      image:
+        src: 'image/c26-hero-banner/teaser-homepage.jpg'
+        alt: 'First image'
+
+      video:
+        props:
+          enhancedPoster:
+            image:
+              src: 'image/c26-hero-banner/teaser-homepage.jpg'
+              alt: 'First teaser image'
+              sources:
+                - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+                  media: '(min-width: 1024px)'
+                - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+                  media: '(min-width: 768px)'
+          sources:
+            - src: './video/background-video-preview.mp4'
+              type: 'video/mp4'
+
+    content:
+      header:
+        heading:
+          element: h1
+          size: h3
+          text: Hello world
+        eyebrow:
+          text: Test
+
+      buttons:
+        - level: primary
+          icon: play-solid
+          theme: white
+          variant: play
+          aria:
+            label: 'play video'
+          video:
+            props:
+              sources:
+                - src: 'video/video-preview.mp4'
+                  type: video/mp4
+              originalWidth: 16
+              originalHeight: 9
+              autoplay: false
+              muted: false
+              loop: false
+              disablePreload: true
+              controls:
+                fullscreen: true
+                playPause: true
+                seek: true
+              eventTracking:
+                event: 'video_start'
+                video:
+                  src: 'video/video-preview.mp4'
+                  title: 'A Vision of a New Future: Explainer video'
+                  titleInEnglish: 'A Vision of a New Future: Explainer video'
+        - level: primary
+          theme: white
+          label: Learn more
+
+  - align:
+      horizontal: start
+      vertical: bottom
+
+    topic: slide-2
+
+    background:
+      transitionDirection: 'left'
+
+      image:
+        src: 'image/c26-hero-banner/teaser-homepage.jpg'
+        alt: 'Second image'
+
+      video:
+        props:
+          enhancedPoster:
+            image:
+              src: 'image/c26-hero-banner/teaser-homepage.jpg'
+              alt: 'Second teaser image'
+              sources:
+                - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+                  media: '(min-width: 1024px)'
+                - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+                  media: '(min-width: 768px)'
+          sources:
+            - src: './video/background-video-preview.mp4'
+              type: 'video/mp4'
+
+    content:
+      header:
+        heading:
+          element: h1
+          size: h3
+          text: Hello world
+        eyebrow:
+          text: Test
+
+      buttons:
+        - level: primary
+          icon: play-solid
+          theme: white
+          variant: play
+          aria:
+            label: 'play this video'
+          video:
+            props:
+              sources:
+                - src: 'video/video-preview.mp4'
+                  type: video/mp4
+              originalWidth: 16
+              originalHeight: 9
+              autoplay: false
+              muted: false
+              loop: false
+              disablePreload: true
+              controls:
+                fullscreen: true
+                playPause: true
+                seek: true
+              eventTracking:
+                event: 'video_start'
+                video:
+                  src: 'video/video-preview.mp4'
+                  title: 'A Vision of a New Future: Explainer video'
+                  titleInEnglish: 'A Vision of a New Future: Explainer video'

@@ -1,0 +1,30 @@
+.o-modalListViewer {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+
+  &.-isActive {
+    opacity: 1;
+  }
+
+  @include respond-to(MEDIUM) {
+    width: auto;
+    opacity: 1;
+    transform: translateX(0);
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    bottom: auto;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .m-button {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="./m20-project-menu-item.scss">
+<script src="./M20ProjectMenuItem.ts"></script>
+
+<div class="m-projectMenuItem{{#if variant}} -{{variant}}{{/if}}" data-component="m20-project-menu-item">
+  <div class="m-projectMenuItem__image">
+    {{> atom/a01-image image disableTransition=true}}
+  </div>
+  <a href="{{ href }}" class="m-projectMenuItem__link"
+    {{#with target}}target="{{this}}"{{#if (condition this '===' '_blank')}} rel="noopener"{{/if}}{{/with}}
+    data-link>
+    <h4 class="m-projectMenuItem__title">
+      <span class="m-projectMenuItem__label">{{ label }}</span>
+      {{> atom/a02-icon name="chevron-right" }}
+    </h4>
+    <div class="m-projectMenuItem__copy">
+      <p>{{copy}}</p>
+    </div>
+  </a>
+</div>
+

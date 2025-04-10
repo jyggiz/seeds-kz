@@ -1,0 +1,168 @@
+scrollComponent: true
+fullMinHeight: true
+
+header:
+  eyebrow:
+    text: 'Our Partners'
+
+items:
+  - images:
+      default:
+        alt: neom logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+      active:
+        alt: neom logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+      buttons:
+        - level: primary
+          icon: play-solid
+          theme: black
+          variant: play
+          label: play video
+          video:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: video/mp4
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: false
+            muted: false
+            loop: false
+            disablePreload: true
+            controls:
+              fullscreen: true
+              playPause: true
+              seek: true
+            eventTracking:
+              event: 'video_start'
+              video:
+                src: 'video/video-preview.mp4'
+                title: 'A Vision of a New Future: Explainer video'
+                titleInEnglish: 'A Vision of a New Future: Explainer video'
+        - label: Visit NEOM.com
+          href: '#'
+          level: secondary
+          icon: globe
+        - label: Contact James Dyson
+          level: tertiary
+          href: '#'
+      ariaLabel: Neom
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+    ariaLabel: Mediamonks
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder

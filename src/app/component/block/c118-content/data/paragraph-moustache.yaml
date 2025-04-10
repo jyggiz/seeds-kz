@@ -1,0 +1,42 @@
+id: c118-moustache
+scrollComponent: true
+theme: 'darkMono'
+padding:
+  start: large
+  end: large
+
+background:
+  image:
+    src: 'image/c24-content/c24-portrait-placeholder.jpg'
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            image:
+              src: 'image/c24-content/c24-portrait-placeholder.jpg'
+            alignAsset: start
+            heading:
+              size: h5
+              element: h2
+              text: 'Connect with us'
+            moustache:
+              text: 'Get in touch with the team at the NEOM Investment Fund.'
+              size: small
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                level: primary
+                theme: white
+                label: 'contact us'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

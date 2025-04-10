@@ -1,0 +1,489 @@
+scrollComponent: true
+
+static: false
+
+overlayBackgrounds:
+  - src: 'image/c61-hotspot-map/cloud-1.png'
+  - src: 'image/c61-hotspot-map/cloud-3.png'
+  - src: 'image/c61-hotspot-map/cloud-4.png'
+
+mapBackground:
+  src: image/c61-hotspot-map/tourism-map.jpg
+  alt: 'map image'
+
+mobileInstructions: 'import!../../../organism/o65-mobile-instructions/data/without-description.yaml'
+stopExploringButton:
+  icon: exit
+  size: small
+  theme: black
+  label: EXIT
+  variant: leftIcon
+
+items:
+  - content:
+      - heading:
+          text: Catalina Seaplane Wreckage
+
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.Tayeb Al-Ism is one of the magical
+          natural wonders of Saudi Arabia that takes visitors by surprise. This incredible natural
+          feature of Tabuk Province is located on the Gulf of Aqaba, just 15 kilometers north of the
+          coastal town of Maqna. When approaching by the road that runs along the turquoise waters
+          and white beaches of the Gulf of Aqaba, what strikes people first is the imposing shape of
+          the 600-meter-high granite massif of the Tayeb Al-Ism, whose sharp edges fall into the
+          Gulf of Aqaba.Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that
+          takes visitors by surprise. This incredible natural feature of Tabuk Province is located
+          on the Gulf of Aqaba, just 15 kilometers north of the coastal town of Maqna. When
+          approaching by the road that runs along the turquoise waters and white beaches of the Gulf
+          of Aqaba, what strikes people first is the imposing shape of the 600-meter-high granite
+          massif of the Tayeb Al-Ism, whose sharp edges fall into the Gulf of Aqaba.Tayeb Al-Ism is
+          one of the magical natural wonders of Saudi Arabia that takes visitors by surprise. This
+          incredible natural feature of Tabuk Province is located on the Gulf of Aqaba, just 15
+          kilometers north of the coastal town of Maqna. When approaching by the road that runs
+          along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes people
+          first is the imposing shape of the 600-meter-high granite massif of the Tayeb Al-Ism,
+          whose sharp edges fall into the Gulf of Aqaba.'
+
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 74
+      x: 29
+    icon: binoculars
+    iconTheme: dark-blue
+
+  - content:
+      - heading:
+          text: Maqna
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        preview:
+          props:
+            poster: './image/c16-carousel/neom-heritage.jpg'
+            sources:
+              - src: './video/video-preview.mp4'
+                type: 'video/mp4'
+        video:
+          props:
+            sources:
+              - src: './video/video-preview.mp4'
+                type: 'video/mp4'
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: false
+            muted: false
+            loop: true
+            controls:
+              playPause: true
+              fullscreen: true
+              seek: true
+
+    active: false
+    offset:
+      y: 51
+      x: 35
+    icon: mountain
+    iconTheme: gray
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        preview:
+          props:
+            poster: './image/c16-carousel/neom-heritage.jpg'
+            sources:
+              - src: './video/video-preview.mp4'
+                type: 'video/mp4'
+        video:
+          props:
+            sources:
+              - src: './video/video-preview.mp4'
+                type: 'video/mp4'
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: false
+            muted: false
+            loop: true
+            controls:
+              playPause: true
+              fullscreen: true
+              seek: true
+
+    active: false
+    offset:
+      y: 20
+      x: 49
+    icon: binoculars
+    iconTheme: dark-blue
+  - content:
+      - heading:
+          text: Wadi Tayyib
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 49
+      x: 35.4
+    icon: beach
+    iconTheme: light-blue
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 68.5
+      x: 30.4
+    icon: beach
+    iconTheme: light-blue
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 71.5
+      x: 34.4
+    icon: beach
+    iconTheme: light-blue
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 79.5
+      x: 41
+    icon: beach
+    iconTheme: light-blue
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 70.5
+      x: 43
+    icon: camera
+    iconTheme: orange
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 81
+      x: 48.5
+    icon: plane
+    iconTheme: green
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 79
+      x: 53.5
+    icon: dunes
+    iconTheme: dark-gold
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 68
+      x: 56.5
+    icon: dunes
+    iconTheme: dark-gold
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 50
+      x: 52.5
+    icon: dunes
+    iconTheme: dark-gold
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 48
+      x: 51.3
+    icon: dunes
+    iconTheme: dark-gold
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 62
+      x: 65.5
+    icon: plane
+    iconTheme: green
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 59
+      x: 58.5
+    icon: camera
+    iconTheme: orange
+
+  - content:
+      - heading:
+          text: lorem
+        copy: 'lorem ipsum'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 95
+      x: 53.5
+    icon: binoculars
+    iconTheme: dark-blue
+
+  - content:
+      - heading:
+          text: Georgios G Shipwreck
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 39
+      x: 36
+    icon: binoculars
+    iconTheme: dark-blue
+
+  - content:
+      - heading:
+          text: lorem
+        icon: royal
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 49.5
+      x: 39.5
+    icon: binoculars
+    iconTheme: dark-blue
+
+  - content:
+      - heading:
+          text: Split Rock of Horeb
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Midian Tombs Province is located on the Gulf
+          of Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the
+          road that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what
+          strikes people first is the imposing shape of the 600-meter-high granite massif of the
+          Tayeb Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Midian Tombs
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+
+    offset:
+      y: 47
+      x: 46
+    icon: mountain
+    iconTheme: gray
+
+modalList:
+  type: 'groupedHotspots'
+  button:
+    label: 'View locations'
+  heading:
+    text: 'Locations'
+  items:
+    - icon: royal
+      heading:
+        text: 'Group 1'
+      items:
+        - heading:
+            button:
+              label: 'This is a location'
+          description: 'This is a description'
+
+        - heading:
+            button:
+              label: 'This is a location'
+          description: 'This is a description'
+
+        - heading:
+            button:
+              label: 'This is a location'
+          description: 'This is a description'
+
+        - heading:
+            button:
+              label: 'This is a location'
+          description: 'This is a description'
+    - icon: research
+      heading:
+        text: 'Group 2'
+      items:
+        - heading:
+            button:
+              label: 'This is a location'
+          description: 'This is a description'
+
+        - heading:
+            button:
+              label: 'This is a location'
+          description: 'This is a description'
+
+        - heading:
+            button:
+              label: 'This is a location'
+          description: 'This is a description'
+
+        - heading:
+            button:
+              label: 'This is a location'
+          description: 'This is a description'

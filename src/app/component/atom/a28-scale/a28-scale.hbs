@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="./a28-scale.scss">
+
+<div class="a-scale"
+  data-component="a28-scale"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+     style="--cell-count: {{scaleCell.length}}"
+  >
+  {{#each scaleCell}}
+    <div class="a-scale__scaleCell">
+      {{#with startValue}}
+      <span class="a-scale__startValue">{{this}}</span>
+      {{/with}}
+      <span class="a-scale__value">{{value}}</span>
+    </div>
+  {{/each}}
+</div>

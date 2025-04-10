@@ -1,0 +1,24 @@
+scrollComponent: true
+
+image:
+  src: 'image/c26-hero-banner/teaser-homepage.jpg'
+  alt: Neom launches the Line
+
+overviewLink:
+  href: './'
+
+author:
+  name: 'John Doe'
+
+items:
+  - size: large
+    content:
+      '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet ac neque quis ultrices nibh.
+      Aliquam mi in ut eu id nec nisi. Nisi lectus vitae vitae, eu urna risus quis pretium
+      malesuada. Lectus semper aenean ornare ornare. Eget vel accumsan tellus venenatis sapien
+      mattis arcu ut ut. Lobortis nunc diam amet, malesuada sed a. Dapibus pellentesque platea et et
+      ut nulla sit est venenatis. Nibh viverra ut dui vitae condimentum sed gravida nibh. Congue mi
+      eu aliquet nisl tincidunt porta elementum.</p>'
+
+share: 'import!./share.yaml'
+backButton: true

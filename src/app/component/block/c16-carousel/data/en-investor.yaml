@@ -1,0 +1,55 @@
+scrollComponent: true
+
+header:
+  heading:
+    text: <span>articles</span>
+    size: h4
+  alignment: center
+
+items:
+  - heading:
+      text: NEOM launches THE LINE
+    variant: video
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_thelinelaunch.jpg'
+    video:
+      label: Watch video
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Welcome to THE LINE'
+            title: 'Welcome to THE LINE'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: Home of the world’s largest renewable hydrogen plant
+    variant: type
+    link:
+      href: https://newsroom.neom.com/neom-will-be-the-home-to-worlds-largest-renewable-hydrogen-project
+      target: '_blank'
+    callToAction:
+      label: Read more
+      target: _blank
+      icon: arrow-right
+      iconAlign: right
+    # Update below image once the images sent by design
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_hydrogen.jpg'
+      sources:
+        - src: 'image/c16-carousel/updates_hydrogen.jpg'
+          media: '(min-width: 768px)'

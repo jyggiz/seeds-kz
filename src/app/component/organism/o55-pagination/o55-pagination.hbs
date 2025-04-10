@@ -1,0 +1,19 @@
+
+
+<div class="o-pagination" data-component="o55-pagination" data-limit="{{limit}}" >
+  <div class="o-pagination__container" data-pagination-container>
+    <div class="o-pagination__paginationControl -isDisabled" data-pagination-previous>
+      {{> molecule/m02-button theme="white" level="primary" icon="arrow-left" aria=(object label=@root.i18n.previous) }}
+    </div>
+    <ul class="o-pagination__list" data-pagination-items>
+    {{#each pages}}
+      <li class="o-pagination__item">
+        {{> organism/o57-pagination-item }}
+      </li>
+    {{/each}}
+    </ul>
+    <div class="o-pagination__paginationControl {{#if disabled}}-isDisabled{{/if}}" data-pagination-next>
+      {{> molecule/m02-button theme="white" level="primary" icon="arrow-right" aria=(object label=@root.i18n.next) }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,212 @@
+navigationContent:
+  scrollComponent: true
+  logo: 'import!../../../molecule/m19-logo/data/default.yaml'
+  navigation:
+    mainAriaLabel: 'navigation menu'
+    main:
+      - label: 'About us'
+        href: '#'
+      - label: 'Regions'
+        type: 'projectMenu'
+        items:
+          - label: Sindalah
+            image:
+              src: 'image/s01-navigation/solar-dome.jpg'
+              alt: Sindalah
+            href: '#'
+            copy: Lorem ipsum dolor sit amet
+          - label: The Line
+            image:
+              src: 'image/s01-navigation/the-spine.jpg'
+              alt: The Line
+            href: '#'
+            copy: New wonders for the world
+          - label: Trojena
+            image:
+              src: 'image/s01-navigation/project-x.jpg'
+              alt: Trojena
+            href: '#'
+            copy: The mountains of NEOM
+          - label: Trojena
+            image:
+              src: 'image/s01-navigation/project-x.jpg'
+              alt: Trojena
+            href: '#'
+            copy: The mountains of NEOM
+
+      - label: 'Our business'
+        type: 'menu'
+        items:
+          - label: 'Our Suppliers'
+            href: '#'
+            target: '_blank'
+          - label: 'Sector'
+            type: 'sectorMenu'
+
+            viewAllButton:
+              label: 'edit your text here'
+              icon: 'arrow-right'
+              size: 'small'
+              level: 'tertiary'
+              theme: 'gold'
+            items:
+              - label: 'Design & Construction'
+                href: '#'
+                icon: 'design-construction'
+              - label: 'Health, Well-Being and biotech'
+                href: '#'
+                icon: 'health-wellbeing-biotech'
+              - label: Tourism
+                href: '#'
+                icon: tourism
+              - label: Education
+                href: '#'
+                icon: education
+              - label: Manufacturing
+                href: '#'
+                icon: manufacturing
+              - label: Water
+                href: '#'
+                icon: water
+              - label: Energy
+                href: '#'
+                icon: energy
+              - label: Media
+                href: '#'
+                icon: media
+              - label: Mobility
+                href: '#'
+                icon: mobility
+              - label: Entertainment & Culture
+                href: '#'
+                icon: entertainment-culture
+              - label: Sport
+                href: '#'
+                icon: sport
+              - label: Financial services
+                href: '#'
+                icon: services
+              - label: Food
+                href: '#'
+                icon: food
+              - label: Technology & Digital
+                href: '#'
+                icon: technology-digital
+          - label: 'Our Suppliers'
+            href: '#'
+            target: '_blank'
+          - label: 'Our Partners'
+            href: '#'
+            target: '_blank'
+
+      - label: 'Invest'
+        type: 'menu'
+        items:
+          - label: 'Neom investment office'
+            href: '#'
+          - label: 'Invest in NEOM'
+            href: '#'
+            target: '_blank'
+
+      - label: 'Newsroom'
+        type: 'menu'
+        items:
+          - label: 'Press release'
+            href: '#'
+          - label: 'Media resources'
+            href: 'careers.neom.com'
+            target: '_blank'
+          - label: 'News & updates'
+            href: '#'
+            target: '_blank'
+
+      - label: 'Careers'
+        type: 'menu'
+        items:
+          - label: 'Working at NEOM'
+            href: '#'
+          - label: 'Search jobs'
+            href: '#'
+            target: '_blank'
+
+    aside:
+      - type: CTA
+        button:
+          label: 'Be part of NEOM'
+          size: 'small'
+          level: 'primary'
+          theme: 'white'
+          href: './'
+          target: '_blank'
+
+  secondaryNavigation:
+    parent:
+      label: 'Regular active link'
+      href: '#'
+      active: true
+    items:
+      - label: 'Regular menu link'
+        href: '#'
+      - label: 'Regular menu link'
+        href: '#'
+
+    hamburgerMenuLabel: 'Open the menu'
+
+    languageButtonLabel: 'Current language is English. Choose your preferred language.'
+    languageListId: language-menu
+    languages:
+      activeLanguageCode: en
+      options:
+        - languageCode: en
+          label: English
+          href: '/homepage.html'
+          title: English
+        - languageCode: nl
+          label: Nederlands
+          href: '/homepage.html'
+          title: Dutch
+        - languageCode: ar
+          shortLabel: عربي
+          label: العربية
+          href: '/homepage-ar.html'
+          title: Arabic
+
+  search:
+    redirectUrl: '#'
+    inputId: 'search-input-id'
+    placeholder: 'Traveling to Neom'
+
+  isStickySearch: false
+  isDrawerNavigation: false
+
+  languages:
+    activeLanguageCode: en
+    options:
+      - languageCode: en
+        label: English
+        href: '/homepage'
+      - languageCode: ar
+        shortLabel: عربي
+        label: العربية
+        href: '/homepage'
+      - languageCode: zh-cn
+        label: 简体中文
+        href: '/homepage'
+      - languageCode: zh-hk
+        label: 繁体中文
+        href: '/homepage'
+      - languageCode: jp
+        label: 日本語
+        href: '/homepage'
+      - languageCode: it
+        label: ITALIANO
+        href: '/homepage'
+      - languageCode: es
+        label: ESPAÑOL
+        href: '/homepage'
+      - languageCode: de
+        label: DEUTSCH
+        href: '/homepage'
+      - languageCode: fr
+        label: FRANÇAIS
+        href: '/homepage'

@@ -1,0 +1,187 @@
+.b-draggableGallery__gridView {
+  @include vh(100);
+
+  --component-text-color: var(--color-white);
+  --component-heading-color: var(--component-text-color);
+  --eyebrow-text-color: var(--color-accent);
+
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-deep-black);
+  overflow: hidden;
+  cursor: none;
+
+  &DragContainer {
+    @include size(100%, fit-content);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 30px;
+    will-change: transform;
+    inset-inline-start: calc(-60vw + 60px);
+    position: relative;
+  }
+
+  &DragItem {
+    all: unset;
+    position: relative;
+    aspect-ratio: 3 / 2;
+    width: 70vw;
+    opacity: 0.4;
+    transition: opacity 0.6s ease;
+    background: var(--color-real-black);
+
+    &.-isActive {
+      opacity: 1;
+    }
+  }
+
+  &HeadingContainer {
+    position: absolute;
+    padding: 96px 70px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: end;
+    pointer-events: none;
+  }
+
+  &HeadingItem {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s ease;
+    transition-property: opacity, visibility;
+    pointer-events: auto;
+
+    .a-eyebrow {
+      margin-block-end: 32px;
+    }
+
+    .a-heading {
+      text-wrap: balance;
+    }
+
+    &.-isActive {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &Cursor {
+    @include size(60px);
+
+    position: fixed;
+    display: flex;
+    aspect-ratio: 1;
+    gap: 24px;
+    align-items: center;
+    inset-block-start: -30px;
+    inset-inline-start: -30px;
+    pointer-events: none;
+
+    @media (pointer: coarse) {
+      display: none;
+    }
+
+    &VectorWrapper {
+      display: contents;
+    }
+
+    &Vector {
+      @include size(60px);
+
+      aspect-ratio: 1;
+      overflow: visible;
+      color: var(--color-white);
+
+      &InnerCircle,
+      &OuterCircle {
+        transition: 0.3s ease;
+      }
+
+      &InnerCircle {
+        fill: var(--color-accent);
+      }
+
+      &OuterCircle {
+        opacity: 0;
+        scale: 0.5;
+        transform-origin: center;
+      }
+
+      &Arrows {
+        scale: 0.7;
+        transform-origin: center;
+        transition: 0.3s ease;
+      }
+
+      &Arrow {
+        fill: var(--color-accent);
+      }
+    }
+
+    &CopyWrapper {
+      display: grid;
+
+      .b-draggableGallery__gridViewCursorCopy {
+        @include type("button", "large");
+
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        transition: opacity 0.3s ease;
+        white-space: nowrap;
+      }
+
+      .-click {
+        opacity: 0;
+        color: var(--color-white);
+      }
+
+      .-drag {
+        color: var(--color-accent);
+      }
+    }
+
+    &.-hover {
+      .b-draggableGallery__gridViewCursor {
+        &Vector {
+          &InnerCircle {
+            fill: transparent;
+          }
+
+          &OuterCircle {
+            opacity: 1;
+            scale: 1;
+          }
+
+          &InnerCircle,
+          &OuterCircle {
+            stroke: var(--color-white);
+          }
+
+          &Arrows {
+            scale: 0;
+            opacity: 0;
+          }
+        }
+
+        &CopyWrapper {
+          .-click {
+            opacity: 1;
+          }
+
+          .-drag {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

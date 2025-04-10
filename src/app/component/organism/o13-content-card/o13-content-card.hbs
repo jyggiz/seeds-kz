@@ -1,0 +1,53 @@
+
+
+
+<div class="o-contentCard{{#with variant}} -{{this}}{{/with}}{{#with theme}} t-{{this}}{{/with}}{{#unless thumbnail}} -textOnly{{/unless}}{{#unless (condition video '||' link)}} -passive{{/unless}}"
+     data-component="o13-content-card"
+     {{#if video}}data-video={{toJson video}}{{/if}}
+     {{#if scrollComponent}}data-scroll-component{{/if}}
+     {{#if id}}id="{{id}}"{{/if}}
+>
+  {{#with thumbnail}}
+    <div class="o-contentCard__preview{{#with aspectRatio}} -{{this}}{{/with}}" data-card-preview>
+      {{> atom/a01-image image disableTransition=true }}
+      {{#if video}}{{> atom/a19-video video autoloop=true}}{{/if}}
+      {{#if ../video}}{{> molecule/m02-button ../button }}{{/if}}
+      {{#if (condition ../type '===' 'social')}}{{> atom/a02-icon name=../icon }}{{/if}}
+    </div>
+  {{/with}}
+  {{#if (condition meta '||' content)}}
+    <div class="o-contentCard__container">
+      {{#with meta}}
+        <div class="o-contentCard__meta">
+          {{#each this}}
+            <span class="o-contentCard__metaItem -{{@key}}">{{ this }}</span>
+            {{#unless @last}}
+              <span class="o-contentCard__metaItem -{{@key}}">·</span>
+            {{/unless}}
+          {{/each}}
+        </div>
+      {{/with}}
+      {{#with content}}
+        <div class="o-contentCard__content" data-card-content>
+          {{#with heading}}
+            <h3 class="o-contentCard__heading" data-card-title>{{{ text }}}</h3>
+          {{/with}}
+          {{#with description}}
+            <div class="o-contentCard__description s-content{{#with size}} -{{this}}{{/with}}" data-card-description>
+              {{{ copy }}}
+            </div>
+          {{/with}}
+          {{#unless ../video}}
+            {{#with ../button}}{{> molecule/m02-button }}{{/with}}
+          {{/unless}}
+          {{#unless ../thumbnail}}
+            {{#if (condition ../type '===' 'social')}}{{> atom/a02-icon name=../icon }}{{/if}}
+          {{/unless}}
+        </div>
+      {{/with}}
+    </div>
+  {{/if}}
+  {{#unless video}}
+    {{#with link}}<a href="{{ href }}" {{#with target}}target="{{ this }}"{{#if (condition this '===' '_blank')}} rel="noopener"{{/if}}{{/with}}class="o-contentCard__link"><span class="o-contentCard__linkLabel u-srOnly">{{ label }}</span></a>{{/with}}
+  {{/unless}}
+</div>

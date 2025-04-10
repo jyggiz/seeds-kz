@@ -1,0 +1,83 @@
+&__places {
+  .o-regionSliderNavigation__paginationItem {
+    --pagination-item-size: 30px;
+
+    @include size(var(--pagination-item-size));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--color-white-25a);
+
+    &:nth-child(1) {
+      @include offset(43%, 42%);
+    }
+
+    &:nth-child(2) {
+      left: 47%;
+      top: 61.5%;
+    }
+
+    &:nth-child(3) {
+      left: 50%;
+      top: 79%;
+    }
+
+    &:nth-child(4) {
+      left: 27%;
+      top: 63%;
+    }
+  }
+
+  .a-stepIndicator {
+    --step-indicator-size: 12px;
+
+    background-color: var(--color-accent);
+
+    &.-isActive {
+      --step-indicator-size: 12px;
+    }
+
+    &__label {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -30px);
+      width: max-content;
+
+      [lang="ar"] & {
+        font-size: 12px;
+      }
+    }
+
+    @include hover {
+      background-color: var(--color-white);
+    }
+  }
+
+  @include respond-to(LARGE) {
+    .o-regionSliderNavigation__paginationItem {
+      --pagination-item-size: 42px;
+
+      &:nth-child(1) {
+        left: 47%;
+      }
+
+      &:nth-child(2) {
+        left: 51%;
+      }
+
+      &:nth-child(3) {
+        left: 56%;
+      }
+    }
+
+    .a-stepIndicator {
+      --step-indicator-size: 24px;
+
+      &.-isActive {
+        --step-indicator-size: 24px;
+      }
+    }
+  }
+}

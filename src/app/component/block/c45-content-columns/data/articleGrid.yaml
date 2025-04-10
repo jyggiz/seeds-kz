@@ -1,0 +1,48 @@
+theme: 'dark'
+variant: 'articleGrid'
+
+columns:
+  - componentId: m04
+    data:
+      alignment: left
+      heading:
+        element: h2
+        size: h2
+        text: 'The project'
+      moustache:
+        variant: 'large'
+        size: 'large'
+        text:
+          'TROJENA will offer year-round outdoor skiing and adventure sports to be completed in
+          2026,an unrivalled experience and a global landmark for the Kingdom of Saudi Arabia.
+          Highlights include a stunning man-made freshwater lake and ‘The Vault’. It is a folded
+          village fusing technology, entertainment and hospitality – as the main gateway into
+          TROJENA.'
+    double: true
+  - componentId: m18
+    data:
+      copy:
+        size: 'medium'
+        content:
+          '<p>On completion, the development will also contain a broad range of homes. Including
+          apartments, chalets and mansions plus hotels ranging from the ultra-luxury and
+          experiential to wellness and family resorts. In addition, there will be a wide range of
+          retail, leisure and dining options. Activities including year-round skiing, water sports,
+          hiking and mountain biking will sit side by side with an interactive nature reserve.</p>'
+    align:
+      horizontal: start
+      vertical: top
+  - componentId: m18
+    data:
+      copy:
+        size: 'medium'
+        content:
+          '<p>TROJENA will become one of the most dazzling destinations in NEOM and across the
+          world. Infused with the ethos of NEOM with its bold ambition, built around technology and
+          innovation. It will follow the principles of sustainability, state-of-the-art technology
+          and astonishing design. It will provide extraordinary opportunities for residents and
+          visitors looking for luxury, adventure, entertainment, livability and escape from the
+          everyday.</p>'
+    align:
+      horizontal: start
+      vertical: top

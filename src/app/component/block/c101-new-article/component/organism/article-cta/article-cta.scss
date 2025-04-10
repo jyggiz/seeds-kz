@@ -1,0 +1,43 @@
+.o-article-cta {
+  display: flex;
+  height: max-content;
+  position: relative;
+
+  &.-isHighlighted {
+    background-color: var(--color-page-background);
+  }
+
+  &__info {
+    @include padding-block(25px);
+    @include padding-inline(40px);
+
+    display: grid;
+    gap: 15px;
+    grid-auto-flow: row;
+  }
+
+  &__image {
+    height: auto;
+    min-width: 177px;
+    position: relative;
+  }
+
+  &__date {
+    @include type("body", "xsmall");
+
+    color: var(--color-black-75);
+  }
+
+  &__heading {
+    @include type("overline", "small");
+
+    color: var(--component-highlight-color);
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @include type("body", "small");
+
+    color: var(--color-black-75);
+  }
+}

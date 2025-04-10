@@ -1,0 +1,30 @@
+
+<ul class="o-circlesGrid"
+  data-component="o103-circles-grid"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#each data}}data-{{@key}}="{{this}}"{{/each}}
+  data-lazy-component
+>
+  {{#each items}}
+    {{#with background}}
+      {{> molecule/m34-component-background disableTransition=true }}
+    {{/with}}
+    <li class="o-circlesGrid__item" data-circle-item>
+      <a class="o-circlesGrid__link"
+         href="{{ href }}"
+        {{#if target }}
+         target="{{ target }}"
+         {{#if (condition target '===' '_blank' )}}rel="noopener"{{/if}}
+        {{/if}}
+      >
+        {{> atom/a01-image image disableTransition=true}}
+
+        <div class="o-circlesGrid__itemLabel">
+          <span class="o-circlesGrid__itemCopy">{{{ title }}}</span>
+        </div>
+      </a>
+    </li>
+    {{#if (condition (arithmetic (arithmetic @index '+' 1) '%' (defaultProp ../maxItemsPerRow 7)) '===' 0)}}<li class="o-circlesGrid__item -line-break"></li>{{/if}}
+  {{/each}}
+</ul>

@@ -1,0 +1,28 @@
+<section class="b-draggableGallery"
+         data-component="c119-draggable-gallery"
+  {{#if id}} id="{{id}}"{{/if}}
+         data-lazy-component
+>
+  <div class="b-draggableGallery__viewControls" data-view-controls>
+    <span class="b-draggableGallery__viewCopy">{{copy.view}}</span>
+    {{> molecule/m02-button
+      label=copy.grid
+      theme="white"
+      level="secondary"
+      size="small"
+      data=(object view='grid')
+    }}
+    {{> molecule/m02-button
+      label=copy.slider
+      theme="white"
+      level="secondary"
+      size="small"
+      data=(object view='slider')
+    }}
+  </div>
+
+  <div class="b-draggableGallery__viewContainer">
+    {{> slider-view/c119-slider-view }}
+    {{> grid-view/c119-grid-view }}
+  </div>
+</section>

@@ -1,0 +1,117 @@
+.o-genericSlider {
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .swiper-container {
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    @include list-reset;
+  }
+
+  .swiper-slide {
+    width: var(--card-size);
+    height: auto;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 35px;
+
+    .a-heading span {
+      color: var(--component-highlight-color);
+    }
+  }
+
+  .a-pageIndicators {
+    padding-bottom: 0;
+  }
+
+  &__sorter {
+    grid-column: 2 / span 6;
+    grid-row-start: 2;
+  }
+
+  &__sorterList {
+    @include list-reset;
+
+    align-items: center;
+    display: flex;
+    margin: 0 0 30px;
+
+    &.-primary,
+    &.-secondary {
+      @include size(100%);
+
+      overflow: auto hidden;
+      margin-inline-end: auto;
+    }
+  }
+
+  &__sorterListItem {
+    @include type("overline", "small");
+
+    --icon-fill: var(--color-dark-gold);
+
+    cursor: pointer;
+    position: relative;
+    color: var(--color-black-75);
+
+    .a-label {
+      @include type("overline", "medium");
+    }
+
+    &.-primary {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-block: 0;
+      margin-inline: 30px 0;
+
+      &.-isActive {
+        pointer-events: none;
+        color: var(--color-dark-gold);
+      }
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    .a-pageIndicators {
+      display: none;
+    }
+
+    &__header {
+      margin: 0 0 60px;
+    }
+
+    &__titleWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .a-heading {
+        width: 75%;
+      }
+    }
+
+    &__controls {
+      @include size(160px, 60px);
+
+      display: flex;
+      z-index: zindex($zLayout, content);
+
+      [dir="rtl"] & {
+        left: var(--containerMargin);
+        right: inherit;
+      }
+
+      &.-isHidden {
+        display: none;
+      }
+    }
+  }
+}

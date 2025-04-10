@@ -1,0 +1,13 @@
+scrollComponent: true
+
+items:
+  previous:
+    heading:
+      text: 'Visual Guidelines: Grids'
+    link:
+      href: './page-brandbook-grids.html'
+  next:
+    heading:
+      text: 'Visual Guidelines: Photography'
+    link:
+      href: './page-brandbook-photography.html'

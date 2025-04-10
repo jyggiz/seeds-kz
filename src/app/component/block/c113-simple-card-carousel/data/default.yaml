@@ -1,0 +1,82 @@
+scrollComponent: true
+backgroundColor: black
+theme: dark
+items:
+  - componentName: 'text-card'
+    data:
+      id: 'text-card'
+      eyebrow:
+        text: EYEBROW
+        size: medium
+      heading:
+        text: COME AND SEE <strong>THE LINE</strong> DESIGNS FOR YOURSELF IN JEDDAH
+        size: h6
+        alignment: center
+      copy:
+        content:
+          Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum
+          est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
+          lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet
+          feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
+      buttons:
+        - href: '#'
+          label: REGISTER NOW
+          level: primary
+          theme: dark-gold
+      size: small
+  - componentName: 'o32-gallery-card'
+    data:
+      id: joseph_bradley
+      variant: 'portrait'
+      image:
+        src: 'image/joseph_bradley.jpg'
+      lightbox:
+        image:
+          src: 'image/joseph_bradley.jpg'
+      copy: 'A portrait of Joseph Bradley, giving an example of the portrait image variant.'
+  - componentName: 'o32-gallery-card'
+    data:
+      variant: 'landscape'
+      image:
+        src: 'image/c46-media-list/item1.jpg'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item1.jpg'
+      copy:
+        '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+  - componentName: 'o32-gallery-card'
+    data:
+      variant: 'landscape'
+      image:
+        src: 'image/c46-media-list/item1.jpg'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item1.jpg'
+      copy:
+        '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+  - componentName: 'o32-gallery-card'
+    data:
+      variant: 'landscape'
+      image:
+        src: 'image/c46-media-list/item1.jpg'
+      lightbox:
+        image:
+          src: 'image/c46-media-list/item1.jpg'
+      copy:
+        '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'
+      video:
+        label: Watch video
+        props:
+          sources:
+            - src: 'video/video-preview.mp4'
+              type: 'video/mp4'
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: false
+          loop: false
+          controls:
+            playPause: true
+            fullscreen: true
+            seek: true

@@ -1,0 +1,26 @@
+
+
+
+<div class="m-author-info">
+  <div class="m-author-info__image">
+    {{> atom/a01-image image disableTransition=true}}
+  </div>
+  <div class="m-author-info__mainInfo">
+    <div class="m-author-info__name">
+      {{ name }}
+    </div>
+    <div class="m-author-info__position">
+      {{ position }}
+    </div>
+  </div>
+  {{#with description}}
+    <div class="m-author-info__description">
+      {{ this }}
+    </div>
+  {{/with}}
+  {{#with social}}
+    <div class="m-author-info__social">
+      {{>molecule/m12-social}}
+    </div>
+  {{/with}}
+</div>

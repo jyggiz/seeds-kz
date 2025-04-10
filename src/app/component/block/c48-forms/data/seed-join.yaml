@@ -1,0 +1,110 @@
+id: form
+action: '#'
+method: post
+form_id: newsroom_contact_form
+heading:
+  size: h4
+  text: Подать заявку на вступление в ассоциацию
+messages:
+  success: Ваша заявка успешно отправлена!
+  error: 'Произошла ошибка на сервере, попробуйте позже'
+groups:
+  - items:
+      - type: text
+        label: Полное имя
+        name: full-name
+        id: full-name
+        placeholder: Введите ваше полное имя
+        required: true
+        validate:
+          presence:
+            message: ^Пожалуйста введите ваше полное имя
+            allowEmpty: false
+      - type: phone
+        label: Номер телефона
+        name: Phone number
+        id: phone-number
+        placeholder: Введите ваш номер телефона
+        titleInEnglish: Phone number
+        required: false
+        countryDropdown:
+          flagsPath: image/flags/
+          placeholder: Код
+          showRawValue: true
+          isWideDropdown: true
+          name: COUNTRY
+          id: country
+          titleInEnglish: Country
+          items:
+            - value: '+7'
+              label: KZ
+              countryCode: KZ
+        validate:
+          numericality:
+            numericality: true
+            message: ^Пожалуйста используйте только цифры
+      - type: select
+        label: Регион
+        id: region
+        placeholder: Выберите ваш регион
+        name: region
+        titleInEnglish: Регион
+        items:
+          - value: Абайская область
+            label: Абайская область
+          - value: Акмолинская область
+            label: Акмолинская область
+          - value: Актюбинская область
+            label: Актюбинская область
+          - value: Алматинская область
+            label: Алматинская область
+          - value: Атырауская область
+            label: Атырауская область
+          - value: Восточно-Казахстанская область
+            label: Восточно-Казахстанская область
+          - value: Жамбылская область
+            label: Жамбылская область
+          - value: Жетысуская область
+            label: Жетысуская область
+          - value: Западно-Казахстанская область
+            label: Западно-Казахстанская область
+          - value: Карагандинская область
+            label: Карагандинская область
+          - value: Костанайская область
+            label: Костанайская область
+          - value: Кызылординская область
+            label: Кызылординская область
+          - value: Мангистауская область
+            label: Мангистауская область
+          - value: Павлодарская область
+            label: Павлодарская область
+          - value: Северо-Казахстанская область
+            label: Северо-Казахстанская область
+          - value: Туркестанская область
+            label: Туркестанская область
+          - value: Улытауская область
+            label: Улытауская область
+          - value: Астана
+            label: Астана
+          - value: Алматы
+            label: Алматы
+          - value: Шымкент
+            label: Шымкент
+        validate:
+          presence:
+            message: ^Пожалуйста выберите ваш регион
+      - type: text
+        label: Наименование компании/хозяйства
+        name: company
+        id: company
+        placeholder: Введите наименование вашей компании/хозяйства
+        required: true
+        validate:
+          presence:
+            message: ^Пожалуйста введите наименование вашей компании/хозяйства
+            allowEmpty: false
+buttons:
+  - label: Отправить
+    size: small
+    theme: gold
+    type: submit

@@ -1,0 +1,102 @@
+action: 'http://localhost:4503/bin/api/forms'
+form_id: 'keep-me-informed-form_id'
+id: 'keep-me-informed-id'
+method: 'post'
+titleInEnglish: 'Keep me informed title in english'
+
+messages:
+  success: 'Form successfully submitted'
+  error: 'Error occurred while submitting the form'
+
+recaptcha:
+  sitekey: '6LcYTwwcAAAAAD6B-Nge1Va-9OrBt1ohmcEsfK7f'
+
+heading:
+  text: 'Keep me informed'
+description: '<p>Just a string of text.</p>'
+groups:
+  - type: 'double'
+    items:
+      - type: text
+        label: 'First Name'
+        name: 'FIRSTNAME'
+        id: 'firstname'
+        required: true
+        titleInEnglish: 'first name'
+        validate:
+          presence:
+            message: '^Please enter your first name'
+            allowEmpty: false
+          format:
+            pattern: "[^0-9!-\/:-@\\[-`{-~]+"
+            message: '^Please only use letters'
+      - type: text
+        label: 'Last Name'
+        name: 'LASTNAME'
+        id: 'lastname'
+        required: true
+        titleInEnglish: 'last name'
+        validate:
+          presence:
+            message: '^Please enter your last name'
+            allowEmpty: false
+          format:
+            pattern: "[^0-9!-\/:-@\\[-`{-~]+"
+            message: '^Please only use letters'
+      - type: email
+        label: 'Business mail address'
+        name: 'EMAIL'
+        id: 'email'
+        placeholder: 'example@example.com'
+        required: true
+        titleInEnglish: 'email'
+        validate:
+          presence:
+            message: '^Please enter your email address'
+          email:
+            message: '^Please enter a correct email address'
+      - type: select
+        label: 'Area of Interest:'
+        id: 'areaofinterest'
+        placeholder: 'Choose one...'
+        name: 'AREAINTEREST'
+        titleInEnglish: 'area of interest'
+        items:
+          - value: 'interest-1'
+            label: 'First interest'
+          - value: 'interest-2'
+            label: 'Second interest'
+        validate:
+          presence:
+            message: '^Please select one'
+  - type: radioGroup
+    legend: 'Contact permissions'
+    name: 'contact-permissions'
+    id: 'contact-permissions'
+    required: true
+    copy:
+      '<p>We would like to stay in touch to tell you about news and opportunities at NEOM. We will
+      treat your information carefully. See our <a href="#">Terms of Use</a> and <a href="#">Privacy
+      Policy</a>.</p>'
+    validate:
+      presence:
+        message: '^Please select at least one'
+    items:
+      - type: radio
+        name: 'contact-permissions'
+        id: 'contact-permissions'
+        label: 'Yes'
+        value: yes
+        titleInEnglish: 'Contact permissions'
+      - type: radio
+        name: 'contact-permissions'
+        id: 'contact-permissions'
+        label: 'No'
+        value: no
+        titleInEnglish: 'Contact permissions'
+
+buttons:
+  - type: submit
+    label: 'Submit'
+    theme: gold
+    size: small

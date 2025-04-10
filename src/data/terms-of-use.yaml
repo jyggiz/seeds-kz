@@ -1,0 +1,14 @@
+navigation: 'import!../app/component/block/s01-navigation/data/navigation-en-blank.yaml'
+language: ru
+
+meta:
+  id: '0.4.2'
+  status: 'done'
+  notes: ''
+  category: 'Pages'
+
+blocks:
+  - name: 'c37-legal-content'
+    data: 'import!../app/component/block/c37-legal-content/data/terms-of-use.yaml'
+  - name: 's02-footer'
+    data: 'import!../app/component/block/s02-footer/data/seeds-index.yaml'

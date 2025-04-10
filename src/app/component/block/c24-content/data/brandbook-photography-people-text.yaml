@@ -1,0 +1,33 @@
+scrollComponent: true
+variant: 'double-1-2'
+
+items:
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'asset'
+    content:
+      variant: square
+      image:
+        variant: contain
+        src: 'image/c24-content/brandbook-photography-people-text.jpg'
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: 'PEOPLE PHOTOGRAPHY'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        text:
+          'The subject should be posed and cropped in close to look confident, natural and personal.'
+      copy:
+        size: 'medium'
+        content:
+          '<p>NEOM portraits shot in color should feel real and natural – Skin tones, lighting and
+          saturation are controlled to feel honest and sympathetic to the subject. Expressions are
+          natural, relaxed and confidently looking direct to camera. The photographers Jody Rogac or
+          Abdullah Alshehri would be a good choice for this style.<br><br>NEOM black and white
+          portraits are shot with the same expectations but we allow for more contrast.</p>'

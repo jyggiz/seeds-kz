@@ -1,0 +1,21 @@
+scrollComponent: true
+
+align:
+  horizontal: center
+  vertical: middle
+
+background:
+  image:
+    src: 'image/c26-hero-banner/hero-banner-brandbook-downloads.jpg'
+    alt: 'Brandbook downloads hero image'
+
+content:
+  header:
+    heading:
+      element: h1
+      size: h3
+      text: downloads
+    eyebrow:
+      text: neom brand
+
+scrollButton: true

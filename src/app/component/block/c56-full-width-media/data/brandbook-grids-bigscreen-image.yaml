@@ -1,0 +1,7 @@
+disableTransition: true # default
+
+image:
+  src: 'image/c56-full-width-media/brandbook-grids-tabs-bigscreen-mobile.png'
+  sources:
+    - src: 'image/c56-full-width-media/brandbook-grids-tabs-bigscreen.png'
+      media: '(min-width: 768px)'

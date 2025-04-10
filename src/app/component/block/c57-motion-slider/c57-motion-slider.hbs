@@ -1,0 +1,36 @@
+
+
+<section class="b-motionSlider{{#with theme}} t-{{this}}{{/with}}"
+  data-component="c57-motion-slider"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+  style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+           {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+           {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component
+>
+  <div class="b-motionSlider__content">
+    {{#with heading}}
+      <div class="b-motionSlider__heading">
+      {{> atom/a03-heading }}
+      </div>
+    {{/with}}
+    <div class="b-motionSlider__sliderPagination">
+      {{> molecule/m48-slider-pagination items=items autoplay=false }}
+    </div>
+    <div class="b-motionSlider__contentWrapper swiper-container" data-slider>
+      <ul class="b-motionSlider__items swiper-wrapper">
+        {{#each items}}
+          <li class="b-motionSlider__item swiper-slide {{#if @first}} -isActive{{/if}}" data-item>
+            {{> organism/o81-motion-slide this}}
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="b-motionSlider__pagination" data-pagination>
+      {{> atom/a08-page-indicators items=null }}
+    </div>
+  </div>
+</section>

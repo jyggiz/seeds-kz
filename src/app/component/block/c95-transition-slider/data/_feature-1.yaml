@@ -1,0 +1,8 @@
+images:
+  background:
+    src: 'image/c17-sectors/tourism.jpg'
+    alt: 'Pretty reef picture'
+label: SUSTAINABLE ENERGY
+mask:
+  opacity: 1
+  solid: true

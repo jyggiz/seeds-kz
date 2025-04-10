@@ -1,0 +1,40 @@
+
+
+
+<section class="b-groupedContentSlider{{#if fullMinHeight}} -fullMinHeight{{/if}} {{#if timeline}} -timeline{{/if}}"
+         data-component="c33-grouped-content-slider"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}}id="{{id}}"{{/if}}
+         {{#with padding}}
+            style="--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+            {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};"
+          {{/with}}
+         data-lazy-component>
+    {{> molecule/m34-component-background background }}
+    <div class="b-groupedContentSlider__wrapper">
+      <div class="b-groupedContentSlider__eyebrow">{{> atom/a04-eyebrow eyebrow size="medium"}}</div>
+      <div class="b-groupedContentSlider__controls" data-controls>
+        {{> organism/o42-slider-controls level="secondary" dark=true }}
+      </div>
+      <div class="b-groupedContentSlider__sliderWrapper" data-hero-slider-container>
+        <div class="swiper__container b-groupedContentSlider__swiperContainer" data-slider>
+          <div class="swiper-wrapper b-groupedContentSlider__items" style="--items-count: {{groups.length}}">
+            {{#each groups}}
+              {{#with label}}
+                <div class="b-groupedContentSlider__itemLabel">{{> atom/a03-heading size="h6" }}</div>
+              {{/with}}
+              {{#each items}}
+                  <div class="swiper-slide b-groupedContentSlider__item" data-slide>
+                  {{> organism/o78-timeline-card this }}
+                  </div>
+              {{/each}}
+            {{/each}}
+          </div>
+          {{> atom/a08-page-indicators items=null }}
+          <div class="swiper-pagination b-groupedContentSlider__pagination" data-slider-pagination-desktop>
+            <span class="swiper-pagination-progressbar-fill b-groupedContentSlider__paginationProgress"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

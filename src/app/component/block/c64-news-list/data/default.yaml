@@ -1,0 +1,87 @@
+scrollComponent: true
+
+header:
+  alignment: 'center'
+  heading:
+    element: h4
+    size: h4
+    text: "What's happening<br /><span>at NEOM</span>"
+
+items:
+  - title: 'NEOM is implementing major sustainable ocean initiatives'
+    cta:
+      label: 'Find out more'
+      target: '_blank'
+      href: 'https://www.neom.com/en-us'
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_solardome.jpg'
+    variant: 'widescreen'
+  - title: 'Welcome to THE LINE'
+    variant: 'landscape'
+    cta:
+      label: 'Find out more'
+      target: '_blank'
+      href: 'https://www.neom.com/en-us'
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_solardome.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Promise to Revolutionize Water Desalination'
+            title: 'A Promise to Revolutionize Water Desalination'
+            src: 'video/video-preview.mp4'
+  - title: 'NEOM is implementing major sustainable ocean initiatives'
+    cta:
+      label: 'Find out more'
+      target: '_blank'
+      href: 'https://www.neom.com/en-us'
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_solardome.jpg'
+    variant: 'portrait'
+  - title: 'NEOM is implementing major sustainable ocean initiatives'
+    cta:
+      label: 'Find out more'
+      target: '_blank'
+      href: 'https://www.neom.com/en-us'
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_solardome.jpg'
+    variant: 'landscape'
+  - title: 'NEOM is implementing major sustainable ocean initiatives'
+    cta:
+      label: 'Find out more'
+      target: '_blank'
+      href: 'https://www.neom.com/en-us'
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_solardome.jpg'
+    variant: 'square'
+  - meta:
+      date: 'September 16, 2021'
+      section: 'Project news'
+    title: 'NEOM is implementing major sustainable ocean initiatives'
+    cta:
+      label: 'Find out more'
+      target: '_blank'
+      href: 'https://www.neom.com/en-us'
+    image:
+      alt:
+      src: 'image/c16-carousel/updates_solardome.jpg'
+    variant: 'widescreen'

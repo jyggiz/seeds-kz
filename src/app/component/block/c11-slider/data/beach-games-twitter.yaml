@@ -1,0 +1,23 @@
+scrollComponent: true
+
+background:
+  mask:
+    opacity: 0
+  image:
+    src: 'image/c11-slider/twitter-ribbon.jpg'
+
+header:
+  heading:
+    element: 'h2'
+    size: 'h4'
+    text: "What's happening<br /><span>on Twitter</span>"
+
+componentId: 'o13'
+
+items:
+  - 'import!../../../organism/o13-content-card/data/twitter-image-link.yaml'
+  - 'import!../../../organism/o13-content-card/data/twitter-description-link.yaml'
+  - 'import!../../../organism/o13-content-card/data/twitter-image-link.yaml'
+  - 'import!../../../organism/o13-content-card/data/twitter-description-link.yaml'
+  - 'import!../../../organism/o13-content-card/data/twitter-image-link.yaml'
+  - 'import!../../../organism/o13-content-card/data/twitter-description-link.yaml'

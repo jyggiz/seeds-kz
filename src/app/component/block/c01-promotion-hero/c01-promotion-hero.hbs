@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="./c01-promotion-hero.scss">
+<script src="./C01PromotionHero.ts"></script>
+
+<section class="b-promotionHero -hasBackgroundImage"
+         data-component="c01-promotion-hero"
+         data-scroll-component
+         data-promotion-id="{{promotionID}}"
+>
+  {{> molecule/m34-component-background background scrollComponent=false }}
+  <div class="b-promotionHero__container">
+    {{#with content}}
+      {{> ./organisms/the-line }}
+    {{/with}}
+    {{#if scrollButton}}
+      {{> molecule/m10-scroll-button }}
+    {{/if}}
+  </div>
+</section>

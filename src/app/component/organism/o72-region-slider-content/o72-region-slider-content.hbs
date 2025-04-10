@@ -1,0 +1,45 @@
+
+
+<div class="o-regionSliderContent{{#if variant}} -{{variant}}{{/if}}"
+     data-component="o72-region-slider-content"
+     
+>
+  <ol class="o-regionSliderContent__mapItemList">
+    {{#each items}}
+      <li class="o-regionSliderContent__mapItem" data-map-item>
+        <div class="o-regionSliderContent__primaryContent">
+          <div class="o-regionSliderContent__backgroundWrapper">
+            {{#with images.background}}
+              {{> atom/a01-image disableTransition=true}}
+            {{/with}}
+          </div>
+          {{#if (condition ../variant '===' 'properties')}}
+            {{#with header}}
+              <div class="o-regionSliderContent__mapItemHeader">
+                {{> atom/a04-eyebrow text=eyebrow.text size="small" }}
+                {{> atom/a03-heading (object text=heading.text size="h6" element="h2") }}
+                <p class="o-regionSliderContent__mapItemDescription">{{../description}}</p>
+              </div>
+            {{/with}}
+          {{/if}}
+        </div>
+      {{#if (condition ../variant '===' 'properties')}}
+        <div class="o-regionSliderContent__secondaryContent swiper__container -properties"
+             data-swiper-slider
+             data-map-item-data="{{toJson this}}"
+             data-landscapes-vistas="{{@root.i18n.landscapesVistas}}"
+             data-species-habitats="{{@root.i18n.speciesHabitats}}"
+             data-culture-history="{{@root.i18n.cultureHistory}}"></div>
+      {{else}}
+        <div class="o-regionSliderContent__secondaryContent" data-map-secondaryContent>
+          {{#with content}}
+            <div class="o-regionSliderContent__secondaryContentHeader">
+              {{> molecule/m18-paragraph}}
+            </div>
+          {{/with}}
+        </div>
+      {{/if}}
+      </li>
+    {{/each}}
+  </ol>
+</div>

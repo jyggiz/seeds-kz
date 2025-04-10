@@ -1,0 +1,25 @@
+scrollComponent: true
+theme: 'dark'
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              text: '<span>Et harum</span><br />quidem rerum distinctio'
+              size: h2
+              element: h1
+            copy:
+              content:
+                '<p>NEOM will showcase the future of innovation in business, livability and
+                environmental sustainability.</p>'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

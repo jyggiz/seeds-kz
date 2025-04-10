@@ -1,0 +1,10 @@
+label: 'Table of contents'
+items:
+  - paragraphId: 'first-paragraph'
+    label: 'First paragraph'
+  - paragraphId: 'second-paragraph'
+    label: 'Second paragraph'
+  - paragraphId: 'third-paragraph'
+    label: 'Third paragraph very very very long text'
+  - paragraphId: 'fourth-paragraph'
+    label: 'Fourth paragraph very very very long text'

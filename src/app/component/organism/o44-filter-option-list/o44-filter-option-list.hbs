@@ -1,0 +1,25 @@
+
+
+<div class="o-filterOptionList" data-component="o44-filter-option-list" >
+  {{#if items}}
+  <div class="o-filterOptionList__container">
+    <ul class="o-filterOptionList__items">
+      {{#each items}}
+        <li class="o-filterOptionList__item" data-option-item data-option="{{toJson this}}" data-category="{{../value}}" data-value="{{value}}">
+          {{> molecule/m02-button size="small" theme="white" level="primary" }}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+    <div class="o-filterOptionList__submitContainer" data-submit-container>
+      <div class="o-filterOptionList__submitWrapper">
+        <div class="o-filterOptionList__submitButton" data-clear-button>
+          {{> molecule/m02-button size="small" level="tertiary" label=@root.i18n.clearAll icon="close" }}
+        </div>
+        <div class="o-filterOptionList__submitButton" data-submit-button>
+          {{> molecule/m02-button size="small" level="primary" label=@root.i18n.applyFilters }}
+        </div>
+      </div>
+    </div>
+  {{/if}}
+</div>

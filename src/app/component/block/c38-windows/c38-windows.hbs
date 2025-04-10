@@ -1,0 +1,21 @@
+
+
+<section class="b-windows" data-component="c38-windows" {{#if scrollComponent}}data-scroll-component{{/if}}{{#if id}} id="{{id}}"{{/if}} data-lazy-component>
+  <div class="b-windows__container{{#if sectorTheme}} -{{sectorTheme}}{{/if}}">
+    <div class="b-windows__heading">
+      {{> atom/a04-eyebrow eyebrow }}
+    </div>
+    <ul class="b-windows__items" style="--blinds-count: {{items.length}}">
+      {{#each items}}
+        <li class="b-windows__item" data-window-item>
+          {{> organism/o33-window index=(arithmetic @index '+' 1)}}
+        </li>
+      {{/each}}
+    </ul>
+    {{#if background}}
+      <div class="b-windows__background">
+        {{> molecule/m34-component-background background }}
+      </div>
+    {{/if}}
+  </div>
+</section>

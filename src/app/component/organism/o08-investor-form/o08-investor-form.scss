@@ -1,0 +1,231 @@
+.o-newsletterForm,
+.o-investorForm {
+  @include type("body", "medium");
+  --input-height: 60px;
+  padding: 30px 0;
+
+  input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    outline: none !important;
+    content: none;
+    border: none;
+  }
+
+  input[type="checkbox"]:before {
+    content: url("../../../../app/svg/icon/check.svg");
+    font-size: 13px;
+    border-radius: 4px;
+    color: transparent !important;
+    background: var(--color-white);
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid transparent;
+    padding-inline-start: 3px;
+  }
+
+  input[type="checkbox"]:checked:before {
+    background-color: var(--color-dark-gold);
+    color: var(--color-white) !important;
+    border-radius: 4px;
+  }
+
+  input.mce_inline_error {
+    letter-spacing: normal !important;
+  }
+
+  &__container {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  &__inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__inputGroupContainer {
+    width: 100%;
+  }
+
+  &__checkBoxGroup {
+    background-color: var(--color-cream);
+    padding: 24px;
+  }
+
+  &__checkBoxList {
+    list-style: none;
+  }
+
+  &__checkBoxListItem {
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    @include type("body", "xlarge");
+    color: var(--color-black);
+    font-weight: 100;
+    text-transform: none;
+    margin-bottom: 36px;
+    width: 100%;
+  }
+
+  &__label {
+    @include type("overline", "small");
+    display: block;
+    margin-bottom: 8px;
+
+    .asterisk {
+      color: var(--color-dark-gold);
+    }
+
+    &.-checkBoxGroupTitle {
+      margin-bottom: 10px;
+    }
+
+    &.-checkboxLabel {
+      @include type("body", "small");
+      text-transform: initial;
+      display: inline;
+      margin-inline-start: 12px;
+    }
+  }
+
+  .mc-field-group {
+    min-height: 100px;
+    margin-bottom: 14px;
+  }
+
+  .mce_inline_error {
+    @include type("overline", "small");
+    color: var(--color-ui-error);
+    margin: 4px 0 0 !important;
+  }
+
+  #mce-error-response {
+    color: var(--color-ui-error);
+  }
+
+  #mce-success-response {
+    color: var(--color-ui-success);
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: 1.5px solid var(--color-border-grey);
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: var(--color-black) !important;
+    background-color: var(--color-white);
+    text-transform: none !important;
+    font-family: var(--font-base) !important;
+    font-weight: font-weight(light);
+    line-height: var(--input-height);
+
+    &.mce_inline_error {
+      font-size: 16px;
+    }
+  }
+
+  select {
+    appearance: none;
+    background: url("../../../image/chevron-down-gold.svg") no-repeat right var(--color-white);
+    background-position-x: 97%;
+    color: var(--input-placeholder-color) !important;
+    line-height: 1.5;
+
+    [dir="rtl"] & {
+      background-position-x: 3%;
+    }
+
+    &.-isSelected {
+      color: var(--color-black) !important;
+    }
+  }
+
+  &__submit {
+    @include type("overline", "small");
+    width: 137px;
+    height: 40px;
+    margin: 33px 0 0;
+    background-color: var(--color-dark-gold);
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: background-color 0.2s ease-in-out;
+
+    @include hover {
+      background-color: var(--color-gold);
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    color: var(--input-placeholder-color);
+    font-size: 16px;
+  }
+
+  ::-ms-input-placeholder {
+    color: var(--input-placeholder-color);
+    font-size: 16px;
+  }
+
+  ::-moz-placeholder {
+    color: var(--input-placeholder-color);
+    font-size: 16px;
+  }
+
+  :-ms-input-placeholder {
+    color: var(--input-placeholder-color);
+    font-size: 16px;
+  }
+
+  :-moz-placeholder {
+    color: var(--input-placeholder-color);
+    font-size: 16px;
+  }
+
+  ::placeholder {
+    color: var(--input-placeholder-color);
+    font-size: 16px;
+  }
+
+  @include respond-to(MEDIUM) {
+    padding: 60px 80px;
+
+    &.-checkboxLabel {
+      margin-inline-start: 8px;
+    }
+
+    &__checkBoxGroup {
+      padding: 34px;
+    }
+  }
+
+  @include respond-to(LARGE) {
+    @include type("body", "medium");
+
+    padding: 60px 100px;
+
+    &__inputContainer {
+      flex-direction: row;
+    }
+
+    &__inputGroupContainer {
+      &:first-child {
+        margin-inline-end: 46px;
+      }
+    }
+
+    &__checkBoxList {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+  }
+}

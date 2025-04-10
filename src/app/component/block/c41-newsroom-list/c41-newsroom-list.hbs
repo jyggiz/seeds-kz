@@ -1,0 +1,27 @@
+
+
+<section class="b-newsroomList{{#if firstBlock}} -isFirstBlock{{/if}}" data-component="c41-newsroom-list" {{#if
+  scrollComponent}}data-scroll-component{{/if}} {{#if columnCount}}style="--article-list-columns: {{columnCount}}"
+  {{/if}} data-lazy-component>
+  <div class="b-newsroomList__container">
+    {{#with header}}
+      <header class="b-newsroomList__header">
+        {{> molecule/m18-paragraph this }}
+      </header>
+    {{/with}}
+    {{!-- filter functionality --}}
+    <ul class="b-newsroomList__items">
+      {{#each items}}
+        <li
+          class="b-newsroomList__item{{#if (condition ../hasHighlight '&&' (condition @index '===' 0))}} -highlighted{{/if}}" data-list-item>
+          {{> organism/o35-article-card this highlighted=(condition ../hasHighlight '&&' (condition @index '===' 0))}}
+        </li>
+      {{/each}}
+    </ul>
+    {{#if (condition items.length '>' 7)}}
+      <footer class="b-newsroomList__footer" data-footer>
+        {{> molecule/m02-button label=@root.i18n.loadMore size="small" theme="black" level="secondary" }}
+      </footer>
+    {{/if}}
+  </div>
+</section>

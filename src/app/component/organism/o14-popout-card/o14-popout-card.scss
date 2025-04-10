@@ -1,0 +1,56 @@
+.o-popoutCard {
+  aspect-ratio: 1/1;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  margin-block: 40px 0;
+  min-width: 280px;
+  position: relative;
+  width: clamp(280px, calc((28 / 36) * 100vw), 420px);
+
+  @include hover() {
+    --component-image-scale: 1.125;
+  }
+
+  &__link {
+    @include position(0);
+
+    background: transparent;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__image {
+    inset-block: -40px 0;
+    inset-inline: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+
+    .a-image {
+      transform: scale(var(--component-image-scale, 1));
+      transform-origin: left center;
+      transition: transform 0.24s ease-out;
+    }
+  }
+
+  &__heading {
+    @include type("overline", "large");
+
+    color: var(--component-heading-color);
+  }
+
+  &__content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: auto;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+}

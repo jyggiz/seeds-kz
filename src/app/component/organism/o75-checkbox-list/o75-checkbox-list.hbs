@@ -1,0 +1,47 @@
+
+
+<div class="o-checkboxList" data-component="o75-checkbox-list" {{#if scrollComponent}}data-scroll-component{{/if}} {{#if
+  id}} id="{{id}}" {{/if}} data-lazy-component>
+  <fieldset class="o-checkboxList__fieldset" {{#if validate}} data-validate="{{toJson validate}}" {{/if}} {{#with
+    id}}id="{{this}}" {{/with}}>
+    <div class="o-checkboxList__container">
+      {{#if legend}}
+      {{> atom/a26-fieldset-legend legend=legend.text variant=legend.variant required=required}}
+      {{/if}}
+      {{#if hint}}
+        <p class="o-checkboxList__hint">{{ hint }}</p>
+      {{/if}}
+
+      {{#if items}}
+        <div class="{{#if (condition items.length '>' 1)}}o-checkboxList__options{{/if}}">
+          {{#each items}}
+            {{> molecule/m27-checkbox-option }}
+          {{/each}}
+        </div>
+      {{/if}}
+
+      {{#with showDropdownForMultipleChoice}}
+      {{#unless multiselect}}
+      <li class="o-checkboxList__optionalSelect{{#if wide}} -wide{{/if}}">
+        {{>molecule/m31-dropdown-field blockValidation=true}}</li>
+      {{/unless}}
+      {{/with}}
+
+      {{#with showTextareaForOtherChoice}}<div class="o-checkboxList__optionalTextarea{{#if wide}} -wide{{/if}}">
+        {{>molecule/m30-text-field type='textarea' blockValidation=true disabled=true }}</div>
+      {{/with}}
+
+      {{> atom/a25-form-error }}
+
+    </div>
+  </fieldset>
+  {{#with showDropdownForMultipleChoice}}
+  {{#if multiselect}}
+  <div class="o-checkboxList__optionalMultiSelect{{#if wide}} -wide{{/if}}">
+    {{> organism/o80-multiselect-dropdown blockValidation=true }}</div>
+  {{/if}}
+  {{/with}}
+
+  {{#if (condition variant "===" "subgroup")}} {{>
+  ../../block/c59-multi-step-form/component/atom/form-group-divider.hbs }} {{/if}}
+</div>

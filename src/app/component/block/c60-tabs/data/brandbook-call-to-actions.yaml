@@ -1,0 +1,16 @@
+scrollComponent: true
+disableTransition: false
+
+items:
+  - label: 'Large buttons'
+    content:
+      - componentId: 'c76'
+        data: 'import!../../c76-button-reference/data/button-reference-large.yaml'
+  - label: 'Small buttons'
+    content:
+      - componentId: 'c76'
+        data: 'import!../../c76-button-reference/data/button-reference-small.yaml'
+  - label: 'Other'
+    content:
+      - componentId: 'c76'
+        data: 'import!../../c76-button-reference/data/button-reference-other.yaml'

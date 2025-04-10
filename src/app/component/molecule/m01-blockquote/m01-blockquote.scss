@@ -1,0 +1,152 @@
+.m-blockquote {
+  --blockquote-asset-size: 60px;
+  --blockquote-asset-margin: 30px;
+
+  font-family: var(--font-base);
+  margin: 40px 0 30px;
+  padding: 0;
+  position: relative;
+
+  &__asset {
+    --icon-fill: var(--component-highlight-color);
+    --icon-size: var(--blockquote-asset-size);
+
+    align-items: flex-end;
+    display: flex;
+    height: var(--blockquote-asset-size);
+    justify-content: center;
+    margin: 0 auto var(--blockquote-asset-margin);
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &.-image {
+      .a-image {
+        height: auto;
+
+        &__img {
+          @include size(auto, 100%);
+
+          margin: auto;
+          max-height: var(--blockquote-asset-size);
+        }
+      }
+    }
+
+    &.-photo {
+      --blockquote-asset-size: 60px;
+
+      border-radius: var(--blockquote-asset-size);
+      overflow: hidden;
+      width: var(--blockquote-asset-size);
+    }
+  }
+
+  .a-eyebrow {
+    --eyebrow-text-color: var(--component-highlight-color);
+
+    margin-block-end: 20px;
+  }
+
+  &__quote {
+    margin: 0 0 1em 0;
+
+    &.-size-small {
+      @include type("body", "small");
+    }
+
+    &.-size-medium {
+      @include type("body", "medium");
+    }
+
+    &.-size-large {
+      @include type("body", "large");
+    }
+  }
+
+  &__cite {
+    font-style: normal;
+  }
+
+  &__author {
+    @include type("body", "medium");
+
+    font-weight: 400;
+    line-height: 1.66;
+  }
+
+  &__role {
+    @include type("body", "small");
+
+    color: var(--blockquote-color-highlight, var(--color-black-75));
+    font-weight: 100;
+    line-height: 1.66;
+  }
+
+  &__prefix {
+    @include type("body", "small");
+
+    color: var(--color-black-50);
+  }
+
+  &.-generic,
+  &.-royalAnnouncement {
+    .m-blockquote {
+      &__quote {
+        @include type("body", "xlarge");
+
+        &.-small {
+          @include type("body", "medium");
+        }
+      }
+
+      &__author {
+        @include type("body", "small");
+
+        font-weight: 400;
+      }
+    }
+  }
+
+  &.-testimonial {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 640px;
+    text-align: center;
+    font-weight: 400;
+
+    .m-blockquote {
+      &__quote,
+      &__author,
+      &__role {
+        @include type("body", "small");
+      }
+
+      &__quote,
+      &__role {
+        color: var(--component-text-color);
+      }
+
+      &__quote {
+        margin: 20px auto;
+      }
+
+      &__author {
+        color: var(--component-highlight-color);
+      }
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    --blockquote-asset-size: 80px;
+    --blockquote-asset-margin: 40px;
+
+    &__asset.-photo {
+      --blockquote-asset-size: 120px;
+    }
+  }
+
+  @include respond-to("XLARGE") {
+    margin: 0 0 30px;
+  }
+}

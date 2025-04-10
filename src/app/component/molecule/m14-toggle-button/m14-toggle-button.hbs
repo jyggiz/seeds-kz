@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="./m14-toggle-button.scss">
+<script src="./M14ToggleButton.ts"></script>
+
+<button
+  class="m-toggleButton {{#if variant}} -{{variant}}{{/if}}"
+  data-component="m14-toggle-button"
+  aria-expanded="false"
+  {{#with aria}}aria-controls={{controls}}{{/with}}
+>
+  <span class="m-toggleButton__chevron"></span>
+  <span class="m-toggleButton__label">{{> atom/a07-label text=label}}</span>
+</button>

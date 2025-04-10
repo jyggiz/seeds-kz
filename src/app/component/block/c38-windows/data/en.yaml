@@ -1,0 +1,47 @@
+scrollComponent: true
+
+eyebrow:
+  text: our goals & objectives
+  size: medium
+
+sectorTheme: color-atoll
+
+items:
+  - heading: Become global leaders
+    image:
+      alt:
+      src: 'image/c29-stories/stories_environment.jpg'
+    description:
+      NEOM's vision of a financial ecosystem is as advanced and ethical as it gets. By targeting
+      clean technologies and socially sustainable actions, the city encourages economic growth while
+      protecting the environment and its people.
+
+  - heading: Design and implement a smart network that distributes
+    image:
+      alt:
+      src: 'image/c29-stories/stories_episodewater.jpg'
+    description:
+      NEOM's vision of a financial ecosystem is as advanced and ethical as it gets. By targeting
+      clean technologies and socially sustainable actions, the city encourages economic growth while
+      protecting the environment and its people. <br><br> NEOM's vision of a financial ecosystem is
+      as advanced and ethical as it gets. ecosystem is as advanced and ethical as it gets. By
+      targeting clean technologies and socially sustainable oui.
+
+  - heading: Pioneer water recycling and stewardship, recycling every drop and treating
+    image:
+      alt:
+      src: 'image/c29-stories/stories_health.jpg'
+    description:
+      NEOM's vision of a financial ecosystem is as advanced and ethical as it gets. By targeting
+      clean technologies and socially sustainable actions, the city encourages economic growth while
+      protecting the environment and its people.
+
+  - heading: Create a global innovation hub for the research and development
+    image:
+      alt:
+      src: 'image/c29-stories/stories_education.jpg'
+    description:
+      NEOM’s Innovation Hub will house Centers of Excellence focused on the investigation of water
+      usage and management, attracting the world’s greatest minds. By exporting technology,
+      knowledge and expertise, NEOM’s Water Solution Company will become the global leader in water
+      technology.

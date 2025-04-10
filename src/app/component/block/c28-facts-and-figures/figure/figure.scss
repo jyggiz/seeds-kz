@@ -1,0 +1,47 @@
+.o-figure {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 0;
+  flex-direction: column;
+
+  &__value {
+    @include type("exception", "factsNumber");
+
+    color: var(--component-highlight-color);
+
+    [dir="rtl"] & {
+      font-weight: 400;
+    }
+  }
+
+  &__label {
+    @include type("capsCopy", "xsmall");
+
+    color: var(--color-black);
+    text-transform: uppercase;
+
+    .-hasBackgroundImage & {
+      color: var(--color-white);
+    }
+  }
+
+  @include respond-to(LARGE) {
+    flex-direction: row;
+
+    &__label {
+      max-width: 128px;
+      margin-left: 0.5em;
+
+      [dir="rtl"] & {
+        margin-left: 0;
+      }
+    }
+
+    &__value {
+      [dir="rtl"] & {
+        font-size: 65px;
+      }
+    }
+  }
+}

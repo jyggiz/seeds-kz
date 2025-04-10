@@ -1,0 +1,8 @@
+items:
+  - eyebrow:
+      text: 'eyebrow 1'
+  - eyebrow:
+      text: 'eyebrow 2'
+  - eyebrow:
+      text: 'eyebrow 3'
+id: pagination-1

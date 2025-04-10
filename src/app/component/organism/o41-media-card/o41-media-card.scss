@@ -1,0 +1,100 @@
+.o-mediaCard {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 20px;
+
+  &__content {
+    cursor: pointer;
+
+    p {
+      @include type("body", "small");
+      color: dimgrey;
+    }
+  }
+
+  &__image {
+    @include aspect-ratio(3, 2);
+
+    position: relative;
+    margin: 0 0 10px;
+
+    .a-image__img {
+      object-fit: initial;
+    }
+
+    .m-button {
+      --button-size: 60px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: zindex($zLayout, default);
+      pointer-events: none;
+    }
+  }
+
+  &__publicationDate {
+    @include type("navigation", "secondary");
+
+    color: var(--color-black-75);
+  }
+
+  &__heading {
+    @include type("body", "large");
+
+    text-transform: initial;
+    font-weight: 400;
+    margin: 0 0 20px;
+  }
+
+  &__copy {
+    @include type("body", "small");
+  }
+
+  // TODO Create new molecule
+  &__checkboxLabel {
+    @include type("body", "xsmall");
+
+    margin-inline-start: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--color-dark-gold);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &__checkboxInput {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    outline: none !important;
+    content: none;
+    cursor: pointer;
+  }
+
+  &__checkboxInput::before {
+    content: url("../../../../app/svg/icon/check.svg");
+    font-size: 13px;
+    border-radius: 4px;
+    color: transparent !important;
+    background: var(--color-white);
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--color-black-10);
+    padding-inline-start: 3px;
+  }
+
+  &__checkboxInput:checked::before {
+    background-color: var(--color-dark-gold);
+    color: var(--color-white) !important;
+    border-radius: 4px;
+    border: 2px solid transparent;
+  }
+
+  @include respond-to("MEDIUM") {
+    margin: 0;
+  }
+}

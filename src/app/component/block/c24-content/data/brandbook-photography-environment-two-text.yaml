@@ -1,0 +1,31 @@
+scrollComponent: true
+variant: 'double-1-2'
+
+items:
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'asset'
+    content:
+      variant: square
+      image:
+        variant: contain
+        src: 'image/c24-content/brandbook-photography-environment-two.png'
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: 'Environment Photography'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        text:
+          'Framing a powerful focal point, such as an island, a mountain range, a majestic ridge or
+          a river with exquisite attention to detail, elevates that element to an art form.'
+      copy:
+        size: 'medium'
+        content:
+          '<p>Worthy of addition to any gallery. By focusing on the epic nature of NEOM we can show
+          the incredible scale of the NEOM project.</p>'

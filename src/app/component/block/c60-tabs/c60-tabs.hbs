@@ -1,0 +1,43 @@
+
+
+
+<section class="b-tabs {{#if theme}} t-{{theme}}{{/if}}"
+         data-component="c60-tabs"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         data-lazy-component>
+
+  <div class="b-tabs__container">
+    <ul class="b-tabs__items" data-tab-list>
+    {{#each items}}
+      <li class="b-tabs__item" data-tab-item>
+        <div class="b-tabs__itemLabel">{{{label}}}</div>
+      </li>
+    {{/each}}
+    </ul>
+  </div>
+
+  {{#each items }}
+      <div class="b-tabs__content" data-tab-content>
+        <div class="b-tabs__contentContainer" data-tab-content-container>
+          {{#each content }}
+            {{#if (condition componentId '===' 'c24')}}
+              {{> block/c24-content data disableTransition=false }}
+            {{/if}}
+            {{#if (condition componentId '===' 'c56')}}
+              {{> block/c56-full-width-media data disableTransition=false }}
+            {{/if}}
+            {{#if (condition componentId '===' 'c66')}}
+              {{> block/c66-color-swatches data disableTransition=false }}
+            {{/if}}
+            {{#if (condition componentId '===' 'c68')}}
+              {{> block/c68-font-styles data disableTransition=false }}
+            {{/if}}
+            {{#if (condition componentId '===' 'c76')}}
+              {{> block/c76-button-reference data disableTransition=false }}
+            {{/if}}
+          {{/each}}
+        </div>
+      </div>
+  {{/each}}
+</section>

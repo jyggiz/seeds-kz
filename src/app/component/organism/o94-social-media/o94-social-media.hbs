@@ -1,0 +1,17 @@
+
+
+<div class="o-socialMedia{{#with alignment}} -{{this}}{{/with}}{{#with iconsSize}} -{{this}}Icons{{/with}}"
+  data-component="o94-social-media"
+>
+  {{#with eyebrow}}
+    {{> atom/a04-eyebrow }}
+  {{/with}}
+
+  {{#with link}}
+    {{> molecule/m06-link }}
+  {{/with}}
+
+  {{#with items}}
+    {{> molecule/m12-social items=this}}
+  {{/with}}
+</div>

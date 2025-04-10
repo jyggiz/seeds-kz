@@ -1,0 +1,230 @@
+scrollComponent: true
+
+id: categories
+
+heading:
+  text: Categories
+  size: h4
+
+description:
+  copy:
+    size: 'small'
+    content:
+      '<p>BidNet provides you with targeted government bid opportunities that precisely match your
+      business needs, no matter what product or service your business specializes in</p>'
+
+items:
+  - heading:
+      text: construction
+      size: h5
+    icon: construction
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: construction
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: construction
+        title: construction
+
+  - heading:
+      text: equipment & materials
+      size: h5
+    icon: equipment
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: equipment & materials
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: equipment & materials
+        title: equipment & materials
+
+  - heading:
+      text: facilities
+      size: h5
+    icon: facilities
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: Technology & digital
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: facilities
+        title: facilities
+
+  - heading:
+      text: Human Capital
+      size: h5
+    icon: human-capital
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: Human Capital
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: Human Capital
+        title: Human Capital
+
+  - heading:
+      text: marketing
+      size: h5
+    icon: marketing
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: marketing
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: marketing
+        title: marketing
+
+  - heading:
+      text: events
+      size: h5
+    icon: events
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: events
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: events
+        title: events
+
+  - heading:
+      text: sponsorship
+      size: h5
+    icon: sponsorship
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: sponsorship
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: sponsorship
+        title: sponsorship
+
+  - heading:
+      text: communication
+      size: h5
+    icon: communication
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: communication
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: communication
+        title: communication
+
+  - heading:
+      text: mobility, fleet & logistics
+      size: h5
+    icon: transport
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: mobility, fleet & logistics
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: mobility, fleet & logistics
+        title: mobility, fleet & logistics
+
+  - placeholder: true
+
+  - heading:
+      text: professional services
+      size: h5
+    icon: professional-services
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: professional services
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: professional services
+        title: professional services
+
+  - placeholder: true
+
+  - heading:
+      text: technology
+      size: h5
+    icon: technology
+    copy:
+      <p>NEOM will be the first region to host hyper-connected cognitive cities, where world-class
+      technology uses real-time data and intelligence. We will provide a higher quality of life for
+      individuals and shorten the time from idea to viable business for enterprises. Through early
+      deployment of robotics, human-machine interface and artificial intelligence, we will ignite
+      growth and facilitate adoption of leading-edge solutions.</p>
+    image:
+      alt: technology
+      src: 'image/c17-sectors/technology-digital.jpg'
+    eventTracking:
+      event: 'Sector Click'
+      sector:
+        titleInEnglish: technology
+        title: technology
+
+  - placeholder: true

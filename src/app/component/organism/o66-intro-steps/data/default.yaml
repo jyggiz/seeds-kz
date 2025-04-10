@@ -1,0 +1,38 @@
+#  steps:
+#    - image:
+#        src: 'image/c57-region-hotspots/map-world.png'
+#        alt: 'map image'
+#        sources:
+#          - src: 'image/c57-region-hotspots/map-world.png'
+#            media: '(min-width: 480px)'
+#      caption: Explore TROJENA
+#    - image:
+#        src: 'image/c57-region-hotspots/map-mena.png'
+#        alt: 'map image'
+#        sources:
+#          - src: 'image/c57-region-hotspots/map-mena.png'
+#            media: '(min-width: 480px)'
+#      caption: Situated in the heart of NEOM
+#    - image:
+#        src: 'image/c57-region-hotspots/map-trojena.png'
+#        alt: 'map image'
+#        sources:
+#          - src: 'image/c57-region-hotspots/map-trojena.png'
+#            media: '(min-width: 480px)'
+#      caption: Situated in the heart of NEOM(2)
+
+type: video
+video:
+  props:
+    sources:
+      - src: 'video/trojena-map-animation-no-text.mp4'
+        type: video/mp4
+    originalWidth: 16
+    originalHeight: 9
+    autoplay: true
+    muted: true
+    loop: false
+    playsinline: true
+steps:
+  - caption: Explore TROJENA
+  - caption: Situated in the heart of NEOM

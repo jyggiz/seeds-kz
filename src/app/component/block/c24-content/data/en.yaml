@@ -1,0 +1,24 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: center # start | center | end
+      vertical: middle # top | middle | bottom
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: NEOM
+      heading:
+        text: 'is a new vision of what the future could be'
+        size: h4
+        element: h2
+      copy:
+        '<p>It’s an attempt to do something that’s never been done before and it’s coming at a time
+        when the world needs fresh thinking and new solutions. Put simply, NEOM will not only be a
+        destination, but a home for people who dream big and who want to be part of building a new
+        model for sustainable living.</p>'
+      buttons:
+        - level: primary
+          theme: white
+          label: 'view program'

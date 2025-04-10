@@ -1,0 +1,66 @@
+.o-socialMedia {
+  --label-color: var(--color-black);
+
+  align-items: center;
+  position: relative;
+  padding-block: 40px;
+  margin-inline: var(--containerMargin);
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  gap: 30px;
+
+  .a-eyebrow {
+    --eyebrow-text-color: var(--label-color);
+
+    text-align: center;
+  }
+
+  .m-social {
+    --social-item-gap: 28px;
+    --icon-size: 30px;
+  }
+
+  .m-link {
+    color: var(--component-highlight-color, var(--color-dark-accent));
+    transition: color 0.2s ease-in-out;
+
+    @include hover {
+      color: var(--component-highlight-color-hover, var(--color-accent));
+    }
+
+    .a-label {
+      @include type("body", "xlarge");
+
+      transform: none;
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    padding-block: 55px;
+    grid-auto-flow: column;
+    justify-content: space-between;
+
+    .m-social {
+      --icon-size: 24px;
+      --social-item-gap: 33px;
+    }
+
+    &.-centered {
+      justify-content: center;
+      gap: 40px;
+    }
+
+    //this duplicates default behaviour only in order to show what alignment variants could be
+    &.-stretched {
+      justify-content: space-between;
+    }
+  }
+}
+
+.o-socialMedia.-largeIcons {
+  @include respond-to("MEDIUM") {
+    --icon-size: 36px;
+    --social-item-gap: 32px;
+  }
+}

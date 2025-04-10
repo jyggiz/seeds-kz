@@ -1,0 +1,6 @@
+<div data-component="c000-pagination" class="c000-pagination">
+    {{> (lookup . "componentName") (ternaryOperator (condition componentName "===" "m48-slider-pagination") 
+                                                    (setProperties data 'autoplay' false)
+                                                    data)}}
+</div>
+

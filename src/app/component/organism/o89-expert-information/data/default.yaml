@@ -1,0 +1,18 @@
+title: 'o89-expert-information'
+
+heading:
+  element: h1
+  size: h4
+  text: 'Vishal Wanchoo'
+role: NEOM Industry Executive
+video:
+  props:
+    sources:
+      - src: 'video/the-line-background-video.mp4'
+        type: video/mp4
+image:
+  alt: Expert Vishal Wanchoo
+  src: 'image/c50-expert-cards/expert-mobile.jpg'
+  sources:
+    - src: 'image/c50-expert-cards/expert-desktop.jpg'
+      media: '(min-width: 1240px)'

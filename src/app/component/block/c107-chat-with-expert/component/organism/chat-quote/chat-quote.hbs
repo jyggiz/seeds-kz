@@ -1,0 +1,18 @@
+<div class="o-chatQuote" data-chat-quote>
+  <div class="o-chatQuote__iconWrapper">
+    {{> atom/a02-icon name='quote' }}
+  </div>
+  <div class="o-chatQuote__textWrapper">
+    <div class="o-chatQuote__title">
+      {{title}}
+    </div>
+    {{#with quote}}
+      <div class="o-chatQuote__quote {{#if size}} -{{size}}{{^}} -xlarge{{/if}}">
+        {{text}}
+      </div>
+    {{/with}}
+  </div>
+  <div data-more-button>
+    {{> molecule/m02-button label=ctaLabel theme='white' icon='arrow-right'}}
+  </div>
+</div>

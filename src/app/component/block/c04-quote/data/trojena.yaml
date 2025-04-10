@@ -1,0 +1,23 @@
+scrollComponent: true
+
+quote:
+  variant: royalAnnouncement
+  icon: royal
+  author:
+    prefix: His Royal Highness
+    name: Mohammed bin Salman, Crown Prince and Chairman of the NEOM Company Board of Directors
+  quote:
+    '“Today we present TROJENA to the world, showcasing NEOM’s ambitions to become a leading tourist
+    destination, as well as an important catalyst for economic growth and diversity in the Kingdom.
+    Tourism is a key pillar of Vision 2030 and TROJENA will be a year-round destination for
+    visitors, while creating jobs and growth for NEOM. This new destination will become one of the
+    most exciting and recognizable destinations in the region and the home and workplace for
+    residents from around the world, offering an additional incentive to local and global
+    communities to come and experience how future living will evolve at NEOM.”'
+
+callToActions:
+  - label: Press Release
+    href: ${pressreleaseLink}
+    target: _blank
+    icon: arrow-right
+    level: secondary

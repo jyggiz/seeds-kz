@@ -1,0 +1,55 @@
+title:
+  heading:
+    text: ЕУРАЗИЯЛЫҚ ЭКОНОМИКАЛЫҚ ОДАҚҚА МҮШЕ МЕМЛЕКЕТТЕРДІҢ ЗАҢНАМАСЫ
+    size: h4
+items:
+  - heading:
+      text: Қазақстан Республикасының Кәсіпкерлік Кодексі
+    description: Қазақстан Республикасының 29 қазандағы кодексі 2015 жылғы № 375-V ҚРЗ
+    link:
+      href: 'https://adilet.zan.kz/kaz/docs/K1500000375'
+      label: Сайттағы заңға сілтеме adilet.kz
+  - heading:
+      text: Әкімшілік құқық бұзушылық туралы
+    description: Қазақстан Республикасының 5 шілдедегі кодексі 2014 жылғы № 235-V
+    link:
+      href: 'https://adilet.zan.kz/kaz/docs/K1400000235'
+      label: Сайттағы заңға сілтеме adilet.kz
+  - heading:
+      text: Селекциялық жетістіктерді қорғау туралы
+    description: Қазақстан Республикасының 13 шілдедегі кодексі 1999 жылғы № 422-I
+    link:
+      href: 'https://adilet.zan.kz/kaz/docs/Z990000422_'
+      label: Сайттағы заңға сілтеме adilet.kz
+  - heading:
+      text: Өсімдіктер карантині туралы
+    description: Қазақстан Республикасының 11 ақпандағы кодексі 1999 жылғы № 344-I
+    link:
+      href: 'https://adilet.zan.kz/kaz/docs/Z990000344_'
+      label: Сайттағы заңға сілтеме adilet.kz
+  - heading:
+      text: Өсімдіктерді қорғау туралы
+    description: Қазақстан Республикасының 3 шілдедегі кодексі 2002 жылғы № 331-I
+    link:
+      href: 'https://adilet.zan.kz/kaz/docs/Z020000331_'
+      label: Сайттағы заңға сілтеме adilet.kz
+  - heading:
+      text: >-
+        Агроөнеркәсіптік кешенді және ауылдық аумақтарды дамытуды мемлекеттік
+        реттеу туралы
+    description: Қазақстан Республикасының 8 шілдедегі кодексі 2005 жылғы № 66-I
+    link:
+      href: 'https://adilet.zan.kz/kaz/docs/Z050000066_'
+      label: Сайттағы заңға сілтеме adilet.kz
+  - heading:
+      text: Ауыл шаруашылығы кооперативтері туралы
+    description: Қазақстан Республикасының Заңы 2015 жылғы 29 қазандағы № 372-V
+    link:
+      href: 'https://adilet.zan.kz/kaz/docs/Z1500000372'
+      label: Сайттағы заңға сілтеме adilet.kz
+  - heading:
+      text: Органикалық өнім өндірісі және айналымы туралы
+    description: Қазақстан Республикасының Заңы 2024 жылғы 10 маусымдағы № 89-VIII
+    link:
+      href: 'https://adilet.zan.kz/kaz/docs/Z2400000089'
+      label: Сайттағы заңға сілтеме adilet.kz

@@ -1,0 +1,27 @@
+scrollComponent: true
+
+heading:
+  text: 'Tourism at NEOM'
+  size: h3
+
+backgroundVideo:
+  autoloop: true
+  props:
+    enhancedPoster:
+      image:
+        src: 'image/c26-hero-banner/teaser-homepage.jpg'
+        alt: 'Homepage teaser image'
+        sources:
+          - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+            media: '(min-width: 1024px)'
+          - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+            media: '(min-width: 768px)'
+    src: 'video/the-line-background-video.mp4'
+    type: 'video/mp4'
+    sources:
+      - src: 'video/the-line-background-video.mp4'
+        type: 'video/mp4'
+        media: '(min-width: 1024px)'
+      - src: 'video/the-line-background-video.mp4'
+        type: 'video/mp4'
+        media: '(min-width: 768px)'

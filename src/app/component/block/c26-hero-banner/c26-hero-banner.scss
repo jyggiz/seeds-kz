@@ -1,0 +1,9 @@
+.b-heroBanner {
+  @include vh(100, min-height);
+
+  display: flex;
+
+  &.-clip {
+    @include vh(85, min-height);
+  }
+}

@@ -1,0 +1,221 @@
+.b-profile {
+  @include fullMinHeight;
+  @include padding-block(var(--component-block-padding, var(--container-margin)));
+
+  --swiper-scrollbar-drag-color: var(--component-highlight-color);
+  --swiper-scrollbar-background-color: var(--color-black-20a);
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  overflow: hidden;
+  position: relative;
+
+  &__container {
+    @include container;
+  }
+
+  &__sectorImage {
+    @include size(60px);
+
+    .a-image__img {
+      object-fit: contain;
+    }
+  }
+
+  .m-componentHeader {
+    margin: 25px 0 0 0;
+    max-width: 790px;
+    transform: translateY(100px);
+
+    // TODO: Remove after early-display fix
+    &[data-component="m04-component-header"] {
+      opacity: 0;
+    }
+
+    .a-eyebrow {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__people {
+    margin: 40px 0 0 0;
+    list-style: none;
+  }
+
+  &__sliderItems {
+    list-style: none;
+  }
+
+  &__controls {
+    display: none;
+  }
+
+  .swiper-container {
+    overflow: visible;
+  }
+
+  @include respond-to("MEDIUM") {
+    &__sectorImage {
+      @include size(80px);
+    }
+
+    &__people {
+      margin: 35px 0 0 0;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__person {
+      width: 100%;
+      max-width: var(--personCard-width);
+      box-sizing: border-box;
+    }
+
+    &__sliderItems {
+      width: auto;
+    }
+
+    .m-componentHeader {
+      .a-eyebrow {
+        margin: 0 0 27px;
+      }
+    }
+  }
+
+  @include respond-to("LARGE") {
+    --profile-row-gap: 45px;
+    --profile-controls-offset: calc(10px + 33.333vw);
+
+    &__container {
+      display: grid;
+      row-gap: var(--profile-row-gap);
+      column-gap: var(--grid-gap);
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    &__sectorImage {
+      @include size(140px);
+
+      grid-column: 1 / span 3;
+      grid-row-start: 1;
+      justify-self: center;
+    }
+
+    .m-componentHeader {
+      grid-column: 4 / span 6;
+      grid-row-start: 1;
+      align-self: end;
+      margin: 0;
+
+      .a-eyebrow {
+        margin: 0 0 33px;
+      }
+    }
+
+    &__people {
+      grid-column: 4 / span 9;
+      grid-row-start: 2;
+      margin: 0;
+    }
+
+    &__controls {
+      @include size(140px, 60px);
+
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      top: var(--profile-controls-offset);
+
+      z-index: zindex($zLayout, content);
+
+      [dir="ltr"] & {
+        right: 0;
+      }
+
+      [dir="rtl"] & {
+        left: 0;
+      }
+    }
+
+    .swiper-slide {
+      .m-personCard__image {
+        opacity: 0.4;
+      }
+
+      .m-personCard__content {
+        margin-inline-end: -170px;
+        opacity: 0;
+      }
+    }
+
+    .swiper-slide-active {
+      .m-personCard__image {
+        opacity: 1;
+      }
+
+      .m-personCard__content {
+        opacity: 1;
+      }
+    }
+
+    .a-pageIndicators {
+      display: none;
+    }
+
+    &.-isStatic {
+      .b-profile__people {
+        pointer-events: none;
+      }
+
+      .m-personCard__email {
+        pointer-events: auto;
+      }
+
+      .swiper-slide {
+        .m-personCard__image {
+          opacity: 1;
+        }
+
+        .m-personCard__content {
+          margin-inline-end: 0;
+          opacity: 1;
+        }
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+    }
+  }
+
+  @include respond-to("XLARGE") {
+    --profile-controls-offset: calc(10px + 25vw);
+  }
+
+  @include respond-to("XXLARGE") {
+    --profile-controls-offset: calc(20px + 25vw);
+
+    .m-componentHeader {
+      .a-eyebrow {
+        margin: 0 0 16px;
+      }
+    }
+  }
+
+  @include respond-to("XXXLARGE") {
+    --profile-row-gap: 60px;
+    --personCard-width: 450px;
+    --profile-controls-offset: calc(var(--personCard-width) + 40px);
+
+    &__sectorImage {
+      @include size(148px);
+    }
+  }
+
+  @include neomThemes {
+    --component-heading-color: var(--color-black);
+    --component-text-color: var(--color-black-75);
+  }
+}

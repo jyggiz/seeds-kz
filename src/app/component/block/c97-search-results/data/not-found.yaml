@@ -1,0 +1,11 @@
+emptyContent:
+  alignment: start
+  heading:
+    text: No result found
+    size: h5
+    element: h1
+  moustache:
+    text:
+      Sorry, we couldn't find any result.<br />Check the spelling or try searching for a different
+      word.
+    size: small

@@ -1,0 +1,99 @@
+&__regions {
+  --pagination-item-border-color: var(--color-white-25a);
+
+  .o-regionSliderNavigation__pagination {
+    --hotspot-position-1: 29%;
+    --hotspot-position-2: 39%;
+    --hotspot-position-3: 48%;
+    --hotspot-position-4: 56%;
+
+    &Item {
+      --pagination-item-size: 30px;
+
+      @include size(var(--pagination-item-size));
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid var(--pagination-item-border-color);
+
+      &:nth-child(1) {
+        left: var(--hotspot-position-1);
+        top: 66%;
+      }
+
+      &:nth-child(2) {
+        left: var(--hotspot-position-2);
+        top: 57%;
+      }
+
+      &:nth-child(3) {
+        left: var(--hotspot-position-3);
+        top: 48%;
+      }
+
+      &:nth-child(4) {
+        left: var(--hotspot-position-4);
+        top: 40%;
+      }
+    }
+  }
+
+  .a-stepIndicator {
+    --step-indicator-size: 12px;
+
+    background-color: var(--color-accent);
+
+    &.-isActive {
+      --step-indicator-size: 12px;
+      --pagination-item-border-color: transparent;
+    }
+
+    &__label {
+      display: none;
+    }
+
+    @include hover {
+      opacity: 0;
+    }
+  }
+
+  @include respond-to(LARGE) {
+    .o-regionSliderNavigation__pagination {
+      &Item {
+        --pagination-item-size: 42px;
+        --hotspot-position-1: 26%;
+        --hotspot-position-2: 37%;
+        --hotspot-position-3: 47%;
+        --hotspot-position-4: 57%;
+      }
+    }
+
+    .a-stepIndicator {
+      --step-indicator-size: 24px;
+
+      &__label {
+        transform: translate(-15px, -50px);
+        display: flex;
+        height: 40px;
+      }
+
+      &.-isActive {
+        --step-indicator-size: 24px;
+        --pagination-item-border-color: transparent;
+      }
+    }
+  }
+
+  @include respond-to(XXXLARGE) {
+    .o-regionSliderNavigation__pagination {
+      &Item {
+        --hotspot-position-1: 30%;
+        --hotspot-position-2: 42%;
+        --hotspot-position-3: 52%;
+        --hotspot-position-4: 62%;
+      }
+    }
+  }
+}

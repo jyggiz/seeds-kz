@@ -1,0 +1,162 @@
+scrollComponent: true
+earlyDisplay: true
+
+items:
+  - align:
+      horizontal: start
+      vertical: bottom
+
+    topic: slide-1
+
+    background:
+      transitionDirection: 'left'
+      image:
+        src: 'image/c26-hero-banner/homepage/teaser-homepage.jpg'
+        alt: 'Homepage teaser image'
+
+      video:
+        props:
+          sources:
+            - src: './video/background-video-preview.mp4'
+              type: 'video/mp4'
+
+    content:
+      header:
+        heading:
+          element: h1
+          size: h4
+          text: Changing the future of tourism
+
+      buttons:
+        - level: primary
+          icon: play-solid
+          theme: white
+          variant: play
+          video:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: video/mp4
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: false
+            muted: false
+            loop: false
+            disablePreload: true
+            controls:
+              fullscreen: true
+              playPause: true
+              seek: true
+            eventTracking:
+              event: 'video_start'
+              video:
+                src: 'video/video-preview.mp4'
+                title: 'A Vision of a New Future: Explainer videosss'
+                titleInEnglish: 'A Vision of a New Future: Explainer video'
+
+    scrollButton: true
+  - align:
+      horizontal: start
+      vertical: bottom
+
+    topic: slide-2
+
+    background:
+      image:
+        src: './image/homepage-mountain-background.jpg'
+        alt: 'Mountain background'
+
+    content:
+      header:
+        heading:
+          element: h1
+          size: h4
+          text: MADE TO CHANGE THE FUTURE OF WORK, LIVING AND SUSTAINABILITY
+        eyebrow:
+          text: discover neom
+
+      buttons:
+        - level: primary
+          theme: white
+          icon: play-solid
+          variant: play
+          video:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: video/mp4
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: true
+            muted: false
+            loop: false
+            disablePreload: true
+            controls:
+              playPause: true
+              fullscreen: true
+              seek: true
+            eventTracking:
+              event: 'video_start'
+              video:
+                titleInEnglish: 'A Vision of a New Future: Explainer video'
+                title: 'A Vision of a New Future: Explainer video'
+                src: 'video/video-preview.mp4'
+
+          data:
+            video-button: null
+
+    scrollButton: true
+
+  - align:
+      horizontal: start
+      vertical: bottom
+
+    topic: slide-3
+
+    background:
+      transitionDirection: 'left'
+
+      image:
+        src: 'image/c26-hero-banner/homepage/teaser-homepage.jpg'
+        alt: 'Homepage teaser image'
+
+      video:
+        props:
+          sources:
+            - src: './video/background-video-preview.mp4'
+              type: 'video/mp4'
+
+    content:
+      header:
+        heading:
+          element: h1
+          size: h4
+          text: MADE TO CHANGE THE FUTURE OF WORK, LIVING AND SUSTAINABILITY
+        eyebrow:
+          text: discover neom
+
+      buttons:
+        - level: primary
+          icon: play-solid
+          theme: white
+          variant: play
+          video:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: video/mp4
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: false
+            muted: false
+            loop: false
+            disablePreload: true
+            controls:
+              fullscreen: true
+              playPause: true
+              seek: true
+            eventTracking:
+              event: 'video_start'
+              video:
+                src: 'video/video-preview.mp4'
+                title: 'A Vision of a New Future: Explainer video'
+                titleInEnglish: 'A Vision of a New Future: Explainer video'
+
+    scrollButton: true

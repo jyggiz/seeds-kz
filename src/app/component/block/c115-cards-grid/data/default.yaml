@@ -1,0 +1,57 @@
+scrollComponent: true
+
+padding:
+  start: 'large'
+  end: 'large'
+
+header:
+  alignment: center
+  heading:
+    text: What we Are Building
+    size: h3
+    element: h3
+  moustache:
+    text:
+      Introduction text here..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+      vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad
+      litora torquent per conubia nostra, per inceptos himenaeos.
+    size: small
+
+items:
+  - image:
+      src: 'image/c115-cards-grid/card-production.png'
+      alt: 'Production image'
+    title: SCREEN PRODUCTION
+    href: '#'
+    description: 'Diverse possibilities for productions of all scales'
+  - image:
+      src: 'image/c115-cards-grid/card-publishing.png'
+      alt: 'Publishing image'
+    title: DIGITAL PUBLISHING
+    href: '#'
+    id: 'publishing-image'
+    description: 'Industry-leading publishing solutions'
+  - image:
+      src: 'image/c115-cards-grid/card-gaming.png'
+      alt: 'Gaming background'
+    title: GAMING
+    href: '#'
+    description: 'Offering gamers ultra-advanced tech & environments'
+  - image:
+      src: 'image/c115-cards-grid/card-production.png'
+      alt: 'Production image'
+    title: SCREEN PRODUCTION
+    href: '#'
+    description: 'Diverse possibilities for productions of all scales'
+  - image:
+      src: 'image/c115-cards-grid/card-publishing.png'
+      alt: 'Publishing image'
+    title: DIGITAL PUBLISHING
+    href: '#'
+    description: 'Industry-leading publishing solutions'
+  - image:
+      src: 'image/c115-cards-grid/card-gaming.png'
+      alt: 'Gaming background'
+    title: GAMING
+    href: '#'
+    description: 'Offering gamers ultra-advanced tech & environments'

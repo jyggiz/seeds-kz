@@ -1,0 +1,48 @@
+.m-hoverableCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+
+  .a-image__img {
+    object-fit: contain;
+  }
+
+  .a-image,
+  .a-image__picture,
+  .a-image__img {
+    @include position(unset);
+
+    position: relative;
+  }
+
+  &__label {
+    @include type("overline", "medium");
+    @include size(min-content);
+
+    position: absolute;
+    color: var(--color-white);
+    inset: 0;
+    margin: auto;
+    white-space: nowrap;
+  }
+
+  &__description {
+    @include type("body", "small");
+
+    position: absolute;
+    color: var(--color-white);
+    opacity: 0;
+    width: calc(100% - 60px);
+    visibility: hidden;
+  }
+
+  &__icon {
+    --icon-fill: var(--color-white);
+
+    position: absolute;
+    opacity: 0;
+    bottom: 30px;
+    left: -60px;
+  }
+}

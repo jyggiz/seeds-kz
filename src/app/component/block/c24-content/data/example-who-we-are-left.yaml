@@ -1,0 +1,23 @@
+scrollComponent: true
+variant: double
+
+items:
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'paragraph'
+    content:
+      heading:
+        size: h3
+        text: 'Who we<br /> are'
+
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'paragraph'
+    content:
+      copy:
+        content:
+          '<p>By working with the best minds in the industry, utilizing the latest technology and
+          innovations, we are implementing world-class, smart and connected water
+          infrastructures.</p>'

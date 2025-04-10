@@ -1,0 +1,16 @@
+image:
+  src: './image/c11-slider/mountainbiking.webp'
+  alt: 'Mountainbiking asset'
+
+content:
+  heading:
+    text: 'TITAN - Mountain biking'
+
+button:
+  icon: 'arrow-right'
+  label: 'Read more'
+  theme: 'dark-gold'
+
+link:
+  href: '#'
+  target: '_blank'

@@ -1,0 +1,34 @@
+scrollComponent: true
+variant: 'double-1-2'
+
+background:
+  image:
+    alt: 'alt'
+    src: 'image/c24-content/intro-bg.jpg'
+    sources:
+      - src: 'image/c24-content/intro-bg.jpg'
+        media: '(min-width: 768px)'
+
+items:
+  - align:
+      horizontal: end
+      vertical: middle
+    type: 'asset'
+    content:
+      variant: square
+      image:
+        variant: contain
+        src: 'image/c24-content/brandbook-iconography-intro-image.png'
+        alt: 'Intro icon'
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      copy:
+        size: 'medium'
+        content:
+          '<p>Iconography is a visual language used to represent features, functionality, or
+          content. Icons are meant to be simple, visual elements that are recognized and understood
+          immediately.<br /><br />Icons are a crucial part of any design system or product
+          experience. Icons help us quickly navigate and they are language independent.</p>'

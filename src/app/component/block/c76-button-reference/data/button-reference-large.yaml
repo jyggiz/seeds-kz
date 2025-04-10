@@ -1,0 +1,65 @@
+heading:
+  element: 'h2'
+  size: 'h5'
+  text: 'Buttons'
+copy:
+  size: 'small'
+  content:
+    '<p>Large buttons are the primary call to actions on both desktop and mobile, we tend to use the
+    color that has more contrast with the background, black over white, white or gold over white,
+    etc. We use other colors with less contrast when some buttons are secondary or do not need to
+    have so much weight on the page.</p>'
+
+examples:
+  - heading:
+      text: 'Primary / Black'
+    theme: black
+    level: primary
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Primary / White'
+    theme: white
+    level: primary
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Primary / Cream'
+    theme: cream
+    level: primary
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Primary / Dark gold'
+    theme: dark-gold
+    level: primary
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Primary / Gold'
+    theme: gold
+    level: primary
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Secondary / Black'
+    theme: black
+    level: secondary
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Secondary / White'
+    level: secondary
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Tertiary / White'
+    level: tertiary
+    items: 'import!./button-examples-tertiary.yaml'
+  - heading:
+      text: 'Tertiary / Gold'
+    level: tertiary
+    items: 'import!./button-examples-tertiary.yaml'
+  - heading:
+      text: 'Tertiary / Black'
+    theme: black
+    level: tertiary
+    items: 'import!./button-examples-tertiary.yaml'
+  - heading:
+      text: 'Tertiary / Dark Gold'
+    theme: dark-gold
+    level: tertiary
+    items: 'import!./button-examples-tertiary.yaml'

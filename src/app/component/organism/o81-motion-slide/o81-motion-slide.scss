@@ -1,0 +1,128 @@
+.o-motionSlide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__image {
+    @include size(100%);
+
+    position: relative;
+    height: 300px;
+
+    .a-image__img {
+      object-fit: contain;
+    }
+  }
+
+  .m-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .m-paragraph__asset {
+      margin: 0 0 30px 0;
+    }
+
+    .a-eyebrow {
+      margin: 0 0 10px;
+    }
+
+    .m-paragraph__heading {
+      text-align: center;
+      margin: 0 0 20px 0;
+    }
+
+    .m-paragraph__content {
+      margin: 0 0 30px;
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &__copy {
+    margin-top: 25px;
+  }
+
+  @include respond-to(MEDIUM) {
+    @include size(100%, unset);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: opacity 0.75s ease;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 20px;
+
+    &__image {
+      height: unset;
+
+      .a-image,
+      .a-image__picture {
+        position: static;
+        height: unset;
+      }
+    }
+
+    &.-equalContentWidth {
+      .o-motionSlide__image {
+        width: 50%;
+      }
+    }
+
+    &.-inverse,
+    [dir="rtl"] & {
+      flex-direction: row-reverse;
+    }
+
+    &__copy {
+      width: 50%;
+      margin-top: 0;
+
+      &.-top {
+        align-self: start;
+      }
+
+      &.-bottom {
+        align-self: end;
+      }
+    }
+
+    .m-paragraph {
+      align-items: flex-start;
+
+      .m-paragraph__asset {
+        justify-content: flex-start;
+        margin: 0 0 10px 0;
+
+        .a-image {
+          width: auto;
+        }
+      }
+
+      .m-paragraph__content {
+        text-align: start;
+        margin-block-end: 30px;
+      }
+
+      .m-paragraph__heading {
+        text-align: start;
+      }
+    }
+
+    &__buttons {
+      justify-content: flex-start;
+    }
+  }
+
+  @include respond-to(XLARGE) {
+    align-items: center;
+  }
+}

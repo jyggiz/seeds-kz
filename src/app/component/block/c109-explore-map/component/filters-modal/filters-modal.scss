@@ -1,0 +1,101 @@
+.o-filtersModal {
+  padding-inline: var(--container-margin);
+  position: relative;
+  height: 100%;
+
+  &__customCheckbox {
+    @include size(18px);
+
+    border-radius: 4px;
+    background-color: var(--color-white);
+    margin-inline: auto 20px;
+    border: 1px solid var(--color-black-10);
+    transition: background-color 250ms ease, border-color 250ms ease;
+    display: grid;
+    place-items: center;
+
+    &::after {
+      @include pseudo(block, static, "");
+      @include offset(9px, 5px);
+      @include size(5px, 10px);
+
+      border: solid var(--color-white);
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__itemsWrapper {
+    display: grid;
+
+    input {
+      display: none;
+
+      &:checked ~ .o-filtersModal__customCheckbox {
+        background-color: var(--color-dark-accent);
+        border-color: var(--color-dark-accent);
+      }
+    }
+
+    label {
+      @include type("overline", "small");
+
+      display: flex;
+      align-items: center;
+      padding-block: 20px;
+      border-top: 1px solid var(--color-black-10);
+
+      &:last-child {
+        border-bottom: 1px solid var(--color-black-10);
+      }
+
+      &.-light-blue {
+        --icon-background-color: var(--color-light-blue);
+      }
+
+      &.-dark-gold {
+        --icon-background-color: var(--color-dark-gold);
+      }
+
+      &.-green {
+        --icon-background-color: var(--color-green);
+      }
+
+      &.-gray {
+        --icon-background-color: var(--color-black-75);
+      }
+
+      .a-icon {
+        --icon-size: 40px;
+
+        background-color: var(--icon-background-color);
+        border-radius: 50%;
+        padding: 4px;
+        color: var(--color-white);
+        margin-inline-end: 20px;
+      }
+    }
+  }
+
+  &__closeModalButton {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+
+    .m-button {
+      .a-icon {
+        order: -1;
+        margin-inline-end: calc(var(--button-icon-size) / 1.5);
+        margin-inline-start: 0;
+      }
+    }
+  }
+  .a-heading {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+}

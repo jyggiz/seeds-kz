@@ -1,0 +1,9 @@
+variant: indexed
+index: 34
+
+heading:
+  text: 'Lorem Ipsum'
+copy: 'Single paragraph only'
+cta:
+  href: '#'
+  target: '_self'

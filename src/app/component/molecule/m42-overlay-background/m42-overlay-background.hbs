@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="./m42-overlay-background.scss">
+<script src="./M42OverlayBackground.ts"></script>
+
+
+<div class="m-overlayBackground"
+         data-component="m42-overlay-background"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}>
+    <div class="m-overlayBackground__overlayBackgrounds">
+      <div class="m-overlayBackground__wrapper" data-overlay-wrapper>
+      {{#each overlayBackgrounds}}
+        <div class="m-overlayBackground__overlayBackground" data-background-image-url="{{src}}" data-image>
+        </div>
+      {{/each}}
+      </div>
+    </div>
+</div>

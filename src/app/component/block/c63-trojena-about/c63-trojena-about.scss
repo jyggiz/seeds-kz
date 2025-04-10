@@ -1,0 +1,72 @@
+.b-trojenaAbout {
+  @include neomThemes;
+
+  background-color: var(--component-background-color, var(--color-page-background));
+  color: var(--component-text-color);
+  position: relative;
+  overflow: hidden;
+
+  &__intro {
+    position: relative;
+
+    .a-image {
+      transform-origin: 50% 80%;
+    }
+
+    .a-image__img {
+      object-fit: fill;
+      object-position: bottom center;
+    }
+  }
+
+  &__container {
+    @include container;
+
+    position: absolute;
+    top: var(--component-block-padding, var(--container-margin));
+    width: 100%;
+  }
+
+  &.-has-bottom-image {
+    .b-trojenaAbout__intro {
+      padding-block: var(--component-block-padding, var(--container-margin));
+    }
+
+    .b-trojenaAbout__container {
+      position: relative;
+      top: 0;
+    }
+  }
+
+  &__heading {
+    grid-column: 1 / -1;
+  }
+
+  &__copy {
+    align-self: center;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: minmax(0, 1fr);
+    margin: 0 auto;
+    max-width: 1080px;
+    position: relative;
+
+    &.-isSingleColumn {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__intro {
+      .a-image {
+        transform-origin: 50% 75%;
+      }
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__copy {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}

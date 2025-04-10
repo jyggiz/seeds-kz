@@ -1,0 +1,28 @@
+logo:
+  href: 'homepage.html'
+  image:
+    src: 'image/logo-neom.png'
+    alt: 'NEOM logo'
+
+items:
+  - language: en
+    direction: ltr
+    eyebrow:
+      size: small
+      text: Our Apologies
+    heading:
+      element: h1
+      size: h6
+      text: The page you requested cannot be found.
+    description:
+      Either the page is not available, or the address (URL) you have entered is incorrect.
+  - language: ar
+    direction: rtl
+    eyebrow:
+      size: small
+      text: نأسف
+    heading:
+      element: h2
+      size: h6
+      text: الصفحة المطلوبة غير موجودة.
+    description: قد يكون سبب المشكلة أن الصفحة غير متاحة، أو أن رابط الصفحة الذي أدخلته غير صحيح.

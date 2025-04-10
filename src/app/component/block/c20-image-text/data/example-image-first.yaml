@@ -1,0 +1,33 @@
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: asset
+    content:
+      variant: 'landscape'
+      image:
+        src: 'image/c20-test-image.jpg'
+
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: 'NEOM'
+      heading:
+        text: 'is a vision of what the future might look like'
+        size: h5
+        element: h2
+      copy:
+        size: 'small'
+        content:
+          '<p>As part of NEOM’s vision, environmental sustainability and wise resource use is at the
+          forefront. NEOM aims to implement circular economic models across all fields, where all
+          waste is utilized as valuable resources. The main “waste” from traditional wastewater
+          treatment are biosolids or sludge. This is also the main resource, as a nutrient-rich
+          dense organic material with the potential for nutrient and energy recovery. NEOM
+          Wastewater aims to implement best practice biosolids management from the ground up with a
+          strong focus on leveraging the regional need for land application and energy-neutral
+          processes with Water Recycling and Recovery Plants (WRRPs).</p>'
+      buttons: 'import!./partial-buttons-small.yaml'

@@ -1,0 +1,16 @@
+scrollComponent: true
+variant: 'double-1-2'
+items:
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'asset'
+    content:
+      variant: portrait
+      image:
+        src: 'image/c24-content/seed-card-example.jpg'
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content: 'import!../../../molecule/m18-paragraph/data/seed-example.yaml'

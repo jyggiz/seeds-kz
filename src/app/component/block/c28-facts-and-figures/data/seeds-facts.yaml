@@ -1,0 +1,15 @@
+scrollComponent: true
+
+figures:
+  - label: Всего <br/>хозяйств
+    value: 240+
+  - label: Поголовье КРС
+    value: 128 364+
+  - label: Лет опыта
+    value: 10+
+  - label: Количество пород
+    value: 10+
+  - label: cooler than the rest of the GCC
+    value: 10%
+  - label: perennial solar resources
+    value: 20mj/m²

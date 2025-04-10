@@ -1,0 +1,131 @@
+.b-countdownTimer {
+  --eyebrow-text-color: var(--color-gold);
+
+  @include vh(100, height);
+
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    @include size(100%);
+    @include container();
+
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    max-width: 1000px;
+    position: relative;
+  }
+
+  &__buttons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__subheader {
+    margin: 25px 0;
+  }
+
+  &.-center {
+    .b-countdownTimer__container {
+      margin: 0 auto;
+    }
+    .m-logo {
+      margin: 25px auto;
+    }
+
+    .b-countdownTimer__buttons {
+      justify-content: center;
+    }
+
+    .b-countdownTimer__subheader {
+      text-align: center;
+    }
+  }
+
+  &.-start {
+    .b-countdownTimer__container {
+      margin-inline-end: auto;
+    }
+
+    .m-logo {
+      margin-block: 25px;
+      margin-inline-end: auto;
+    }
+
+    .b-countdownTimer__buttons {
+      justify-content: flex-start;
+    }
+
+    .b-countdownTimer__subheader {
+      text-align: start;
+    }
+
+    [dir="ltr"] & {
+      .o-timer__items {
+        margin-left: 0;
+      }
+    }
+
+    [dir="rtl"] & {
+      .o-timer__items {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &.-end {
+    .b-countdownTimer__container {
+      margin-inline-start: auto;
+    }
+
+    .m-logo {
+      margin-block: 25px;
+      margin-inline-start: auto;
+    }
+
+    .b-countdownTimer__buttons {
+      justify-content: flex-end;
+    }
+
+    .b-countdownTimer__subheader {
+      text-align: end;
+    }
+
+    [dir="ltr"] & {
+      .o-timer__items {
+        margin-right: 0;
+      }
+    }
+
+    [dir="rtl"] & {
+      .o-timer__items {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .m-componentHeader {
+    color: var(--color-white);
+  }
+
+  .o-timer {
+    padding: 0 0 60px 0;
+
+    --color-timer-details: var(--color-white);
+  }
+
+  .m-timerItem {
+    --color-timer-item: var(--color-white);
+  }
+
+  &__button {
+    &:not(:first-child) {
+      margin-inline-start: 20px;
+      margin-top: 0;
+    }
+  }
+}

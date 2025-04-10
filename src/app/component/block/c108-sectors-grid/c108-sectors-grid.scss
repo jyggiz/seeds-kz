@@ -1,0 +1,39 @@
+.b-sectorsGrid {
+  @include neomThemes;
+
+  background-color: var(--component-background-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  &__container {
+    @include container;
+  }
+
+  &__tabs {
+    margin: 30px 0 60px;
+
+    .m-sliderPagination__timedPagination {
+      gap: 20px;
+      position: unset;
+    }
+  }
+
+  &__item {
+    display: none;
+
+    &.-isActive {
+      display: block;
+    }
+  }
+
+  .m-componentHeader {
+    position: relative;
+    z-index: zindex($zLayout, default);
+  }
+
+  @include respond-to("MEDIUM") {
+    &__tabs {
+      margin: 65px 0 100px;
+    }
+  }
+}

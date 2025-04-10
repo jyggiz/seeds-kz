@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="./m13-highlight-item.scss">
+<script src="./M13HighlightItem.ts"></script>
+
+<div class="m-highlightItem" data-component="m13-highlight-item">
+  <div class="m-highlightItem__image" data-slide-in>
+    {{> atom/a01-image image disableTransition=true }}
+  </div>
+  {{#with title}}<h3 class="m-highlightItem__title{{#if size}} -{{size}}{{^}} -small{{/if}}" data-slide-in>{{ text }}</h3>{{/with}}
+  {{#with description}}<p class="m-highlightItem__description{{#if size}} -{{size}}{{^}} -small{{/if}}" data-slide-in>{{{ text }}}</p>{{/with}}
+  {{#with link}}<div data-slide-in>{{> molecule/m06-link}}</div>{{/with}}
+</div>

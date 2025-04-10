@@ -1,0 +1,56 @@
+scrollComponent: true
+
+align: start
+
+header:
+  eyebrow:
+    text: NEOM
+    size: medium
+  heading:
+    text: Healthy Investors<br />Climate
+    size: h5
+
+items:
+  - heading:
+      text: Airline Network Planning Specialist
+    copy:
+      Lorem ipsum dolor sit ametcon sectetur adipiscing elit ut aliq uam, purus sit amet luctus
+      venenatis, lectus magna fringillurna, porttitor rhoncus dolorpurus non enim
+    link:
+      label: find out more
+      target: _blank
+      href: 'http://newsroom.neom.com/'
+
+  - heading:
+      text: Digital Mobility Product Management
+
+    copy:
+      Magna lorem ipsum dolor sit amet, consectetur adipiscing elit ut ali quam, purus amet luctus
+      venenatis, lectus magna frigilla urna, porttitor dolor purus non enim rhoncus
+    link:
+      label: find out more
+      # target: _blank
+      href: '#'
+
+  - heading:
+      text: Security Systems Infrastructure and Operations Specialist
+
+    copy:
+      Dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+      lectus magna fringilla urna, porttitor rhoncus dolor purus non enim purus sit amet. Amet
+      consectetur adipiscing elit ut aliquam, purus  amet luctus venenatis.
+    link:
+      label: find out more
+      target: _blank
+      href: '#'
+
+  - heading:
+      text: Senior Mechanical Specialist
+
+    copy:
+      Amet consectetur adipiscing elit ut aliquam, purus  amet luctus venenatis, lectus magna
+      fringilla urna, porttitor rhoncus dolor purus non enimlorem ipsum dolor sit
+    link:
+      label: find out more
+      # target: _blank
+      href: '#'

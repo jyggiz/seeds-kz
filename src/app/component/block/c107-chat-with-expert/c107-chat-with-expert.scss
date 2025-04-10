@@ -1,0 +1,266 @@
+.b-chatWithExpert {
+  --component-text-color: var(--color-white);
+  --eyebrow-text-color: var(--component-text-color);
+  --component-highlight-color: var(--color-gold);
+  --component-heading-color: var(--component-text-color);
+  --mobile-pagination-indicator-size: 7px;
+
+  background: var(--color-black);
+  position: relative;
+  overflow: hidden;
+
+  .-isHidden {
+    display: none;
+  }
+
+  &__eyebrowWrapper {
+    @include container;
+
+    --eyebrow-text-color: var(--color-black-20);
+
+    position: absolute;
+    z-index: zindex($zLayout, dropdown);
+    inset-block-start: 20px;
+    opacity: 0.8;
+
+    .a-eyebrow.-xLarge {
+      @include type("overline", "small");
+    }
+  }
+
+  &__sliderPagination {
+    position: absolute;
+    width: 100%;
+    z-index: zindex($zLayout, dropdown);
+    transition: 0.5s ease-in-out opacity;
+
+    .m-sliderPagination {
+      display: none;
+    }
+  }
+
+  &__indicators {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__indicator {
+    @include size(7px);
+
+    background: var(--component-text-color);
+    border-radius: 100%;
+    opacity: 0.5;
+    transition: opacity 0.2s linear;
+
+    &.-isActive {
+      opacity: 1;
+    }
+  }
+
+  &__slides {
+    position: relative;
+  }
+
+  &__slide {
+    position: absolute;
+    min-width: 100vw;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: 0.5s linear opacity;
+
+    &.-isActive {
+      opacity: 1;
+      visibility: initial;
+      pointer-events: initial;
+    }
+
+    .o-chatQuote {
+      margin-top: calc(50vh + 100px);
+
+      @media (max-height: 800px) {
+        margin-top: 500px; //if screen size less than 800px, margin-top should be equal to 800/2 + 100 = 500, since image size has min-height of 400px
+      }
+    }
+
+    &.-isInitialised {
+      .o-chatQuote,
+      .o-chatDetails {
+        transition: 0.5s ease-in-out opacity;
+      }
+    }
+
+    .o-expertInformation {
+      @include vh(100, min-height);
+
+      height: 100%;
+      position: absolute;
+      z-index: 0;
+
+      &__asset .a-image {
+        min-height: 400px;
+        height: 50vh;
+
+        &__img {
+          object-fit: contain;
+        }
+      }
+
+      &__expertBio {
+        position: relative;
+        top: 50vh;
+
+        @media (max-height: 800px) {
+          top: 400px; //if screen size less than 800px, expert bio top should be equal to 800/2 = 400, since image size has min-height of 400px
+        }
+      }
+    }
+
+    .o-chatQuote[data-visible="false"],
+    .o-chatDetails[data-visible="false"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .o-chatQuote[data-visible="true"],
+    .o-chatDetails[data-visible="true"] {
+      position: relative;
+      opacity: 1;
+    }
+
+    &Grid {
+      @include vh(100, min-height);
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      position: relative;
+      z-index: zindex($zLayout, content);
+      padding-inline: 20px;
+
+      &Content {
+        grid-column: 1 / -1;
+        position: relative;
+        padding-block: 60px;
+      }
+    }
+  }
+
+  .o-sliderControls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    padding-inline: var(--container-margin);
+    top: 25vh;
+
+    @media (max-height: 800px) {
+      top: 200px; //if screen size less than 800px, sliderControls top should be equal to 800/4 = 200, since image size has min-height of 400px
+    }
+  }
+
+  @include respond-to(XLARGE) {
+    &__slideGridContent {
+      grid-column: 1 / -1;
+      display: grid;
+      column-gap: var(--grid-gap);
+      align-items: center;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      padding-inline: fluid-clamp-ideal(0px, 70px);
+    }
+
+    .o-chatQuote {
+      position: relative;
+      bottom: initial;
+      margin-top: initial;
+      grid-column: 5 / 11;
+    }
+
+    .o-expertInformation {
+      &__asset .a-image {
+        height: 100%;
+
+        &__img {
+          object-fit: cover;
+        }
+      }
+
+      &__expertBio {
+        position: absolute;
+        top: initial;
+      }
+    }
+
+    .o-chatDetails {
+      grid-column: 5 / -1;
+    }
+
+    &__sliderPagination {
+      .m-sliderPagination {
+        --pagination-bar-color-hover: var(--component-highlight-color);
+
+        display: block;
+
+        &__timedPagination {
+          position: static;
+        }
+
+        &__paginationBar {
+          transition: color 0.2s ease;
+
+          &.-isActive {
+            --pagination-bar-color: var(--component-highlight-color);
+            --eyebrow-text-color: var(--pagination-bar-color);
+          }
+        }
+
+        &__title {
+          cursor: pointer;
+        }
+      }
+
+      .o-sliderControls {
+        display: none;
+      }
+    }
+
+    &__indicators {
+      display: none;
+    }
+
+    &.-hasEyebrow,
+    &.-hasPagination {
+      .b-chatWithExpert__slideGridContent {
+        padding-block-start: 180px;
+      }
+    }
+
+    &.-hasEyebrow.-hasPagination {
+      .b-chatWithExpert__slideGridContent {
+        padding-block-start: 200px;
+      }
+    }
+
+    &__eyebrowWrapper {
+      --eyebrow-text-color: var(--component-text-color);
+
+      inset-block-start: 70px;
+      opacity: 1;
+
+      .a-eyebrow.-xLarge {
+        @include type("heading", "h5");
+      }
+    }
+  }
+
+  @include theme("oxagon") {
+    --component-highlight-color: var(--color-light-blue);
+
+    background: var(--color-dark-blue);
+
+    .o-expertInformation__expertRole {
+      color: var(--component-highlight-color);
+    }
+  }
+}

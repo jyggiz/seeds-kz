@@ -1,0 +1,59 @@
+
+
+
+<section class="b-contentColumns{{#if theme}} t-{{theme}}{{/if}}{{#if variant}} -{{variant}}{{/if}}"
+  data-component="c45-content-columns"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+         style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+           {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+           {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+         data-lazy-component
+>
+  <div class="b-contentColumns__container">
+    {{#each columns}}
+      <div class="b-contentColumns__column
+                  {{#with align}}
+                    {{#if horizontal}} -{{horizontal}}{{^}} -start{{/if}}
+                    {{#if vertical}} -{{vertical}}{{^}} -middle{{/if}}
+                  {{/with}}
+                  {{#if variant}} -{{variant}}{{/if}}"
+      >
+        {{#if (condition componentId '===' 'm04')}}
+          {{> molecule/m04-component-header data  theme=../theme}}
+        {{/if}}
+        {{#if (condition componentId '===' 'm18')}}
+          {{> molecule/m18-paragraph data }}
+        {{/if}}
+        {{#if (condition componentId '===' 'c30')}}
+          {{> block/c30-downloads downloads=data direction="column" theme=../theme }}
+        {{/if}}
+        {{#if (condition componentId '===' 'o45')}}
+          {{> organism/o45-form data theme=../theme }}
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+  {{#if (condition buttons '||' shareButton)}}
+    <div class="b-contentColumns__buttons" data-buttons>
+      {{#each buttons}}
+        {{> molecule/m02-button }}
+      {{/each}}
+      {{#with shareButton}}
+        {{> molecule/m02-button
+          data=(object
+            share-button=null
+            share=(toJson this)
+            success-message=@root.i18n.copied
+          )
+          icon="share"
+          label=@root.i18n.shareArticle
+          level="secondary"
+          theme="black"
+        }}
+      {{/with}}
+    </div>
+  {{/if}}
+</section>
+

@@ -1,0 +1,73 @@
+scrollComponent: true
+
+items:
+  - image:
+      src: 'image/c108-sectors-grid/energy.png'
+      alt: 'Energy image'
+    title: ENERGY
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/water.png'
+      alt: 'water image'
+    title: WATER
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/mobility.png'
+      alt: 'mobility'
+    title: MOBILITY
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/culture.png'
+      alt: 'Energy'
+    title: ENTERTAINMENT & CULTURE
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/manufacturing.png'
+      alt: 'manufacturing'
+    title: MANUFACTURING
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/food.png'
+      alt: 'Energy'
+    title: FOOD
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/media.png'
+      alt: 'Energy'
+    title: MEDIA
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/tourism.png'
+      alt: 'Energy'
+    title: TOURISM
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/sport.png'
+      alt: 'Energy'
+    title: SPORT
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/digital.png'
+      alt: 'Energy'
+    title: TECHNOLOGY & Digital
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/health.png'
+      alt: 'Energy'
+    title: HEALTH, WELL-BEING & BIOTECH
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/design.png'
+      alt: 'Energy'
+    title: DESIGN
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/education.png'
+      alt: 'Energy'
+    title: EDUCATION
+    href: '#'
+  - image:
+      src: 'image/c108-sectors-grid/FINANCE.png'
+      alt: 'Energy'
+    title: FINANCIAL SERVICES
+    href: '#'

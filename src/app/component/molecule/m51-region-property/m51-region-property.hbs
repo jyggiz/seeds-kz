@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="./m51-region-property.scss">
+<script src="./M51RegionProperty.ts"></script>
+
+
+<div class="m-regionProperty"
+     data-component="m51-region-property"
+     {{#if scrollComponent}}data-scroll-component{{/if}}>
+  <div class="m-regionProperty__image">{{> atom/a01-image image disableTransition=true }}</div>
+  <h4 class="m-regionProperty__heading">{{{ heading }}}</h4>
+  <p class="m-regionProperty__description">{{{ description }}}</p>
+</div>

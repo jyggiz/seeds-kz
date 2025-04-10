@@ -1,0 +1,63 @@
+scrollComponent: true
+align: start
+variant: indexed
+
+header:
+  eyebrow:
+    text: NEOM
+    size: medium
+  heading:
+    text: Healthy Investors<br />Climate
+    size: h5
+
+items:
+  - heading:
+      text: Renewable energy integration
+    copy:
+      100% renewable energy will be utilized for desalination and mineral recovery processes via
+      concentrated solar power, waste heat, and renewable energy-sourced electrical grids.
+
+  - heading:
+      text: Brine usage for greenhouse cooling
+    copy:
+      Concentrating brine by evaporative cooling in seawater greenhouses thereby enabling high-value
+      crop production and mineral recovery delivering the greatest benefit for its customers
+
+  - heading:
+      text: Desalination technologies
+    copy:
+      A Global reference to showcase new and innovative approaches to desalination, including high
+      recovery membrane technologies, low energy systems, and integration with renewable energy
+      supplies
+
+  - heading:
+      text: Brine processing for minerals
+    copy:
+      World Class full seawater processing (brine mining) for high-value minerals and by-products
+      such as magnesium metals and high purity salts, thereby achieving zero waste while generating
+      strong economic value.
+
+  - heading:
+      text: Renewable energy integration
+    copy:
+      100% renewable energy will be utilized for desalination and mineral recovery processes via
+      concentrated solar power, waste heat, and renewable energy-sourced electrical grids.
+
+  - heading:
+      text: Brine usage for greenhouse cooling
+    copy:
+      Concentrating brine by evaporative cooling in seawater greenhouses thereby enabling high-value
+      crop production and mineral recovery delivering the greatest benefit for its customers
+
+  - heading:
+      text: Brine processing for minerals
+    copy:
+      World Class full seawater processing (brine mining) for high-value minerals and by-products
+      such as magnesium metals and high purity salts, thereby achieving zero waste while generating
+      strong economic value.
+
+  - heading:
+      text: Renewable energy integration
+    copy:
+      100% renewable energy will be utilized for desalination and mineral recovery processes via
+      concentrated solar power, waste heat, and renewable energy-sourced electrical grids.

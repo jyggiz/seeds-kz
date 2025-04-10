@@ -1,0 +1,22 @@
+
+
+
+<section class="b-scrollStories"
+         data-component="c67-scroll-stories"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         data-lazy-component>
+
+  <div data-scroll-pin-container class="b-scrollStories__pinContainer">
+    {{#each items}}
+      <div class="b-scrollStories__item" data-item>
+        <div class="b-scrollStories__imageWrapper" data-image>
+          {{> atom/a01-image image disableTransition=true }}
+        </div>
+        <div class="b-scrollStories__contentWrapper  -{{align.horizontal}} -{{align.vertical}}" data-content>
+          {{> molecule/m18-paragraph content}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>

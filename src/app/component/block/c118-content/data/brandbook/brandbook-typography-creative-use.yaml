@@ -1,0 +1,30 @@
+scrollComponent: true
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              element: 'h3'
+              text: 'Creative Use of Typography'
+              size: 'h5'
+            copy:
+              size: 'medium'
+              content:
+                <p>Playing with scale, leading, alignment and tracking can add beautiful details but
+                this style of typography must be used sparingly so it stands out as special.</p>
+                <p>Track characters out to give a grand sense of space. Increase the leading to
+                heighten the effect. There are no hard rules for how far you can alter these
+                settings but any use of typography must feel like it comes from NEOM — Ultimately,
+                all NEOM typography should promote a premium and timeless brand.</p> <p>Here are a
+                few samples...</p>
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

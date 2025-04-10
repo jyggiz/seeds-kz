@@ -1,0 +1,57 @@
+scrollComponent: true
+theme: 'dark'
+
+grid:
+  rowGap:
+    smallScreen: 0
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: 'Explore the red sea'
+              size: 'medium'
+            heading:
+              size: h4
+              text: 'Discovering new depths with OceanX'
+            copy:
+              size: 'small'
+              content:
+                '<p>Beneath the surface of the Red Sea lies an unexplored world. NEOM and OceanX
+                embarked on a mission to learn more about life in the ocean’s depths. Over six
+                weeks, 30 world-renowned experts carried out pioneering work in the deep sea and
+                shallow reefs - focused on oceanography, mapping and genetics. Their groundbreaking
+                discoveries will lay the foundations for NEOM’s ambitious conservation program. This
+                will protect the incredible biodiversity for generations to come.</p>'
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                level: primary
+                theme: white
+                label: 'learn more'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 2 / 2 / 8
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m16-figure
+          data:
+            variant: portrait
+            image:
+              src: 'image/c24-content/content-nature.jpg'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 9 / 2 / 13

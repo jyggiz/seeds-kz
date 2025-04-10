@@ -1,0 +1,15 @@
+.b-cardsGrid {
+  @include neomThemes;
+
+  background-color: var(--component-background-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  &__container {
+    @include container;
+  }
+
+  .m-componentHeader {
+    position: relative;
+  }
+}

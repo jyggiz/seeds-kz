@@ -1,0 +1,48 @@
+title: 'c66-color-swatches'
+scrollComponent: true
+
+heading:
+  text: Primary Colors
+  size: h3
+description:
+  '<p>Cream and white should be used predominantly or background colors. The light tones keep
+  content fresh and easy to read. Cream should only be used for graphic elements and never for text.
+  A deliberate and generous use of white space gives a premium and artful feel to communications and
+  is an essential element of the NEOM brand. Black should be used sparingly within the system, and
+  used primarily in rectangular frames and text. Gold is used as an accent color within the system.
+  Gold is appropriate for use in infographics, icons, and other graphic elements meant to highlight
+  important content.</p>'
+isPrimary: true
+colors:
+  - label: cream
+    hex: '#F3EFE5'
+  - label: cream 50%
+    hex: '#F9F7F2'
+  - label: cream 25%
+    hex: '#FCFBF8'
+  - label: white
+    hex: '#FFFFFF'
+  - label: dark gold
+    hex: '#B89535'
+  - label: gold
+    hex: '#EBC03F'
+  - label: bright yellow
+    hex: '#FFD02A'
+  - label: yellow hover
+    hex: '#FFE973'
+  - label: deep black
+    hex: '#161719'
+  - label: black
+    hex: '#1D1F22'
+  - label: black 90%
+    hex: '#343538'
+  - label: black 75
+    hex: '#565759'
+  - label: black 50%
+    hex: '#8E8F90'
+  - label: black 20%
+    hex: '#D2D2D3'
+  - label: black 10%
+    hex: '#E8E9E9'
+  - label: light grey bg
+    hex: '#F8F8F8'

@@ -1,0 +1,71 @@
+items:
+  - src: 'image/c75-image-grid/sector-icons/sector-energy.png'
+    alt: 'Energy icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-energy.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-water.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-water.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-mobility.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-mobility.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-tech.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-tech.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-food.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-food.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-manufacturing.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-manufacturing.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-media.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-media.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-entertainment.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-entertainment.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-tourism.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-tourism.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-sport.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-sport.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-design.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-design.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-financial.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-financial.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-health.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-health.png'
+        media: '(min-width: 480px)'
+  - src: 'image/c75-image-grid/sector-icons/sector-education.png'
+    alt: 'Water icon'
+    sources:
+      - src: 'image/c75-image-grid/sector-icons/sector-education.png'
+        media: '(min-width: 480px)'

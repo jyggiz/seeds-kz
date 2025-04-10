@@ -1,0 +1,9 @@
+background:
+  mask:
+    opacity: 0.9
+    solid: true
+  image:
+    src: 'image/c102-social-media/background.jpeg'
+    alt: 'background oxagon image'
+social: 'import!../../../organism/o94-social-media/data/multiple-rows.yaml'
+backgroundPosition: 'bottom'

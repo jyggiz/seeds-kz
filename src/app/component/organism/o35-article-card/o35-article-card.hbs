@@ -1,0 +1,43 @@
+
+<article class="o-articleCard
+  {{#if highlighted}} -highlighted{{/if}}"
+  data-component="o35-article-card"
+  data-content-category="{{content-category}}"
+  data-content-index="{{@index}}"
+  data-content-category-total="{{content-category-total}}"
+  {{#if highlighted}}data-highlighted="{{highlighted}}"{{/if}}
+>
+    <section class="o-articleCard__image" data-card-image>
+      {{#if image}}
+        {{> atom/a01-image image disableTransition=true aria=(object hidden="true") }}
+      {{^}}
+        {{> atom/a01-image @root.fallbackImage disableTransition=true aria=(object hidden="true") }}
+      {{/if}}
+    </section>
+    <section class="o-articleCard__content">
+      {{#if datePublished}}<p class="o-articleCard__publicationDate" data-published-date>{{datePublished}}</p>{{/if}}
+      {{#if heading.text }}
+        <h3 class="o-articleCard__heading" data-title-in-english="{{headingInEnglish.text}}" data-card-heading>
+          {{ heading.text }}
+        </h3>
+      {{/if}}
+      {{#if copy }}
+        <p class="o-articleCard__copy" data-card-copy>{{ copy }}</p>
+      {{/if}}
+      {{#if highlighted}}
+        {{#with link}}
+          <div class="o-articleCard__link">
+            {{> molecule/m06-link icon=(condition icon '||' "arrow-right") size="small" }}
+          </div>
+        {{/with}}
+      {{/if}}
+    </section>
+
+    {{#unless highlighted}}
+      {{#with link}}
+        <section class="o-articleCard__link" data-action-indicator>
+          {{> molecule/m06-link icon=(condition icon '||' "arrow-right") size="small" }}
+        </section>
+      {{/with}}
+    {{/unless}}
+</article>

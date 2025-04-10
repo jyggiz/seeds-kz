@@ -1,0 +1,64 @@
+.b-cardGrid {
+  padding: 70px 0;
+  --grid-gap: 20px;
+
+  &__containerItems {
+    @include container();
+    padding: 0 var(--largeContainerMargin);
+  }
+
+  &__items {
+    @include list-reset();
+  }
+
+  @include respond-to("MEDIUM") {
+    --grid-column-count: 2;
+
+    &__items {
+      display: grid;
+      grid-gap: var(--grid-gap);
+      grid-template-columns: repeat(var(--grid-column-count, 12), minmax(0, 1fr));
+    }
+  }
+
+  @include respond-to("LARGE") {
+    --grid-column-count: 3;
+    --grid-gap: 75px;
+  }
+
+  @include respond-to("XLARGE") {
+    --grid-column-count: 4;
+    --grid-gap: 40px;
+  }
+
+  &__item {
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+    margin-bottom: 25px;
+
+    @include respond-to("MEDIUM") {
+      margin-bottom: 0;
+    }
+
+    &.-isDisabled {
+      opacity: 0.25;
+    }
+  }
+
+  &__filters {
+    .o-filter__container,
+    .o-filter__selectedFilterList {
+      padding-left: var(--largeContainerMargin);
+      padding-right: var(--largeContainerMargin);
+    }
+  }
+
+  &__controls {
+    @include container();
+    padding: 0 var(--largeContainerMargin);
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

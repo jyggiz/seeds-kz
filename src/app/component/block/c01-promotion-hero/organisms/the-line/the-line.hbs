@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="./the-line.scss">
+<script src="./TheLine.ts"></script>
+
+<div class="o-theLine" data-component="the-line">
+  {{#with logo}}
+    <h1 class="o-theLine__logo s-content" {{#with label}}aria-label="{{this}}"{{/with}} data-logo>
+      {{{content}}}
+    </h1>
+  {{/with}}
+  {{#with moustache}}
+    {{> atom/a05-moustache }}
+  {{/with}}
+  {{#with buttons}}
+    <div class="o-theLine__buttons" data-buttons>
+      {{#each this}}
+        {{> molecule/m02-button this }}
+      {{/each}}
+    </div>
+  {{/with}}
+</div>

@@ -1,0 +1,15 @@
+type: 'social'
+icon: 'twitter'
+
+content:
+  description:
+    size: 'medium'
+    copy:
+      '<p>Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget lacus
+      eget semper. Nulla et ante tempor, tempus mauris et, consectetur arcu. Donec non nulla mauris.
+      Cras pretium lorem enim, eget iaculis odio ullamcorper eu.</p>'
+
+link:
+  href: 'https://twitter.com'
+  target: '_blank'
+  label: 'An SEO friendly link text for this card'

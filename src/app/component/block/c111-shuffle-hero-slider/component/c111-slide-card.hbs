@@ -1,0 +1,11 @@
+<div class="b-shuffleHeroSlider__slideCard">
+  {{#with slideImage}}
+    {{> atom/a01-image disableTransition=true }}
+  {{/with}}
+  <div class="b-shuffleHeroSlider__slideCardLabel">
+    {{label}}
+  </div>
+  {{#with cta}}
+    {{> molecule/m02-button modal=../modalContent data=(object modal-open-button="") }}
+  {{/with}}
+</div>

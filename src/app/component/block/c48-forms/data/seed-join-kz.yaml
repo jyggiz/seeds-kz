@@ -1,0 +1,110 @@
+id: form
+action: '#'
+method: post
+form_id: newsroom_contact_form
+heading:
+  size: h4
+  text: Қауымдастыққа қосылуға өтініш беру
+messages:
+  success: Сіздің өтінішіңіз сәтті жіберілді!
+  error: 'Серверде қате пайда болды, кейінірек көріңіз'
+groups:
+  - items:
+      - type: text
+        label: Толық аты
+        name: full-name
+        id: full-name
+        placeholder: Толық атыңызды енгізіңіз
+        required: true
+        validate:
+          presence:
+            message: ^Толық атыңызды енгізіңіз
+            allowEmpty: false
+      - type: phone
+        label: Телефон нөмірі
+        name: Phone number
+        id: phone-number
+        placeholder: Телефон нөміріңізді енгізіңіз
+        titleInEnglish: Phone number
+        required: false
+        countryDropdown:
+          flagsPath: image/flags/
+          placeholder: Код
+          showRawValue: true
+          isWideDropdown: true
+          name: COUNTRY
+          id: country
+          titleInEnglish: Country
+          items:
+            - value: '+7'
+              label: KZ
+              countryCode: KZ
+        validate:
+          numericality:
+            numericality: true
+            message: ^Тек сандарды қолданыңыз
+      - type: select
+        label: Аймақ
+        id: region
+        placeholder: Аймағыңызды таңдаңыз
+        name: region
+        titleInEnglish: Регион
+        items:
+          - value: Абай облысы
+            label: Абай облысы
+          - value: Ақмола облысы
+            label: Ақмола облысы
+          - value: Ақтөбе облысы
+            label: Ақтөбе облысы
+          - value: Алматы облысы
+            label: Алматы облысы
+          - value: Атырау облысы
+            label: Атырау облысы
+          - value: Шығыс Қазақстан облысы
+            label: Шығыс Қазақстан облысы
+          - value: Жамбыл облысы
+            label: Жамбыл облысы
+          - value: Жетісу облысы
+            label: Жетісу облысы
+          - value: Батыс Қазақстан облысы
+            label: Батыс Қазақстан облысы
+          - value: Қарағанды облысы
+            label: Қарағанды облысы
+          - value: Қостанай облысы
+            label: Қостанай облысы
+          - value: Қызылорда облысы
+            label: Қызылорда облысы
+          - value: Маңғыстау облысы
+            label: Маңғыстау облысы
+          - value: Павлодар облысы
+            label: Павлодар облысы
+          - value: Солтүстік Қазақстан облысы
+            label: Солтүстік Қазақстан облысы
+          - value: Түркістан облысы
+            label: Түркістан облысы
+          - value: Ұлытау облысы
+            label: Ұлытау облысы
+          - value: Астана
+            label: Астана
+          - value: Алматы
+            label: Алматы
+          - value: Шымкент
+            label: Шымкент
+        validate:
+          presence:
+            message: ^Аймағыңызды таңдаңыз
+      - type: text
+        label: Компанияның / шаруашылықтың атауы
+        name: company
+        id: company
+        placeholder: Компанияңыздың / шаруашылығыңыздың атауын енгізіңіз
+        required: true
+        validate:
+          presence:
+            message: ^Компанияңыздың / шаруашылығыңыздың атауын енгізіңіз
+            allowEmpty: false
+buttons:
+  - label: Жіберу
+    size: small
+    theme: gold
+    type: submit

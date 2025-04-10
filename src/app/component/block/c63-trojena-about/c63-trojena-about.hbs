@@ -1,0 +1,49 @@
+
+
+
+<section class="b-trojenaAbout{{#if theme}} t-{{theme}}{{/if}}{{#if image}} -has-bottom-image{{/if}}"
+         data-component="c63-trojena-about"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         {{#if (condition backgroundColor '||' padding)}}
+         style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+                 {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+                 {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+         {{/if}}
+         {{#if enableTextAppearingAnimation}}data-text-animation="{{enableTextAppearingAnimation}}"{{/if}}
+         {{#if enableImageZoomingAnimation}}data-zooming-animation="{{enableImageZoomingAnimation}}"{{/if}}
+         data-lazy-component
+>
+  {{#with intro}}
+    <div class="b-trojenaAbout__intro" data-intro>
+      {{#with background.image}}
+        {{#if ../../image}}
+          {{> atom/a01-image this disableTransition=true aria=(object hidden="true") }}
+        {{^}}
+          {{> atom/a01-image this disableTransition=true variant="block" aria=(object hidden="true") }}
+        {{/if}}
+      {{/with}}
+
+      <div class="b-trojenaAbout__container">
+        <div class="b-trojenaAbout__copy{{#if isSingleColumn}} -isSingleColumn{{/if}}">
+          {{#with heading}}
+            <div class="b-trojenaAbout__heading">
+              {{> atom/a03-heading }}
+            </div>
+          {{/with}}
+
+          {{#each content}}
+            <div class="b-trojenaAbout__content">
+              {{> molecule/m18-paragraph }}
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  {{/with}}
+  {{#if image}}
+    {{#with image}}
+      {{> atom/a01-image this disableTransition=true variant="block" aria=(object hidden="true") }}
+    {{/with}}
+  {{/if}}
+</section>

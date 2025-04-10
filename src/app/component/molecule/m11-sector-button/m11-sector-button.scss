@@ -1,0 +1,206 @@
+.m-sectorButton {
+  --sector-button-background-color: var(--color-black);
+  --sector-button-border-color: rgba(0, 0, 0, 0);
+  --sector-button-icon-color: var(--color-white);
+  --sector-button-text-color: var(--color-black-20);
+
+  @mixin activeSectorButton {
+    --sector-button-background-color: var(--color-white);
+    --sector-button-icon-color: var(--color-gold);
+    --sector-button-text-color: var(--color-black);
+  }
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &,
+  & * {
+    pointer-events: none;
+  }
+
+  &__container {
+    --sector-button-container-size: 266px;
+
+    @include size(30vw);
+
+    border: 2px solid var(--sector-button-border-color);
+    border-radius: 50%;
+    color: var(--sector-button-text-color);
+    display: grid;
+    margin: 0 0 15px;
+    max-height: var(--sector-button-container-size);
+    max-width: var(--sector-button-container-size);
+    place-items: center;
+    position: relative;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: border-color 0.4s ease, transform 0.5s ease;
+    }
+  }
+
+  &__circle {
+    @include offset;
+    @include size(100%);
+
+    fill: var(--sector-button-background-color);
+    position: absolute;
+
+    circle {
+      pointer-events: auto;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: fill 0.4s ease;
+    }
+  }
+
+  &__icon {
+    --icon-size: 100%;
+
+    color: var(--sector-button-icon-color);
+    display: none;
+    flex: 0 0 auto;
+    margin: auto;
+    width: 33%;
+    z-index: 1;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: opacity 0.4s ease;
+
+      svg {
+        transition: fill 0.6s ease;
+      }
+    }
+  }
+
+  &__arrow {
+    --icon-fill: var(--color-black);
+
+    display: none;
+    inset-inline-end: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .a-icon {
+      opacity: 0;
+      transform: translateX(-100%);
+
+      [dir="rtl"] & {
+        transform: translateX(100%);
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition: 0.3s ease;
+        transition-property: transform, opacity;
+      }
+    }
+  }
+
+  &__label {
+    @include type("exception", "sectorLabel");
+
+    padding: 0 10%;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: color 0.3s ease, opacity 0.6s ease;
+    }
+
+    [lang="ar"] & {
+      @include fluid-type(12px, 16px);
+    }
+  }
+
+  &.-isCurrent {
+    @include activeSectorButton;
+
+    circle {
+      pointer-events: none;
+    }
+  }
+
+  &:not(.-isCurrent) {
+    @include hover {
+      @include activeSectorButton;
+
+      cursor: pointer;
+
+      .m-sectorButton__arrow {
+        .a-icon {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  &.-isDisabled {
+    --sector-button-background-color: transparent;
+    --sector-button-border-color: var(--color-white-20a);
+
+    .m-sectorButton {
+      &__icon {
+        opacity: 0.2;
+      }
+
+      &__label {
+        opacity: 0;
+      }
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &__container {
+      @include size(21vw);
+    }
+
+    &__icon,
+    &__arrow {
+      display: block;
+    }
+
+    &__arrow {
+      inset-inline-end: 40px;
+
+      [dir="rtl"] & {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
+
+    &__label {
+      @include size(100%, 50%);
+      @include offset(50%, 50%);
+
+      display: grid;
+      padding: 0 20%;
+      place-items: center;
+      position: absolute;
+      transform: translateX(-50%);
+    }
+  }
+
+  @include respond-to(LARGE) {
+    &__container {
+      @include size(15.4vw);
+
+      margin: 0;
+    }
+
+    &:not(.-isCurrent) {
+      @include hover {
+        .m-sectorButton__container {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &.-isDisabled {
+      .m-sectorButton__container {
+        transform: scale(0.8);
+      }
+    }
+  }
+}

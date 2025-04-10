@@ -1,0 +1,31 @@
+.o-videoContent {
+  @include size(100%);
+
+  &__content {
+    @include offset;
+    @include size(100%);
+    @include display-flex-center(column);
+
+    position: absolute;
+    padding: var(--container-margin);
+
+    .a-heading {
+      color: var(--color-white);
+    }
+    .m-button {
+      margin-top: 30px;
+    }
+  }
+
+  .a-video,
+  .a-video__video {
+    position: relative;
+  }
+
+  @include respond-to("MEDIUM") {
+    &__content {
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+  }
+}

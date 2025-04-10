@@ -1,0 +1,125 @@
+.m-hotspotButton {
+  --icon-size: 24px;
+  --hotspot-background: var(--color-bright-yellow);
+  --hotspot-background-hover: var(--color-gold);
+  --hotspot-border-color: var(--color-white);
+  --hotspot-border-width: 2px;
+  --hotspot-color: var(--color-black);
+  --hotspot-size: 28px;
+  --hotspot-scale-hover: 1.5;
+
+  @include size(var(--hotspot-size));
+  @include offset();
+
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  color: var(--hotspot-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  z-index: zindex($zLayout, content);
+  pointer-events: auto;
+
+  &::before {
+    @include size(var(--hotspot-size));
+    @include offset(50%, 50%);
+
+    align-items: center;
+    background: var(--hotspot-background);
+    border-radius: 50%;
+    border: var(--hotspot-border-width) solid var(--hotspot-border-color);
+    box-shadow: 0 4px calc(var(--hotspot-size) / 2) rgba(0, 0, 0, 0.25);
+    content: "";
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all 500ms $easeOutExpo;
+    z-index: 1;
+  }
+
+  .a-icon {
+    position: relative;
+    transition: all 500ms $easeOutExpo;
+    z-index: 2;
+  }
+
+  &.-event {
+    --hotspot-background: var(--color-light-blue);
+    --hotspot-background-hover: var(--color-light-blue);
+    --hotspot-color: var(--color-white);
+
+    .a-icon {
+      height: 57%;
+      width: 57%;
+    }
+  }
+
+  &.-alternate {
+    --hotspot-size: 7px;
+    --hotspot-background: var(--color-white);
+    --hotspot-scale-hover: 2;
+    --border-width: 0;
+  }
+
+  &.-light-blue {
+    --hotspot-background: var(--color-light-blue);
+    --hotspot-background-hover: var(--color-light-blue);
+    --hotspot-border-color: var(--color-white);
+    --hotspot-color: var(--color-white);
+    --icon-size: 24px;
+  }
+
+  &.-dark-blue {
+    --hotspot-background: var(--color-dark-blue);
+    --hotspot-background-hover: var(--color-dark-blue);
+    --hotspot-border-color: var(--color-white);
+    --hotspot-color: var(--color-white);
+    --icon-size: 18px;
+  }
+
+  &.-green {
+    --hotspot-background: var(--color-green);
+    --hotspot-background-hover: var(--color-green);
+    --hotspot-border-color: var(--color-white);
+    --hotspot-color: var(--color-white);
+    --icon-size: 24px;
+  }
+
+  &.-gray {
+    --hotspot-background: var(--color-gray);
+    --hotspot-background-hover: var(--color-gray);
+    --hotspot-border-color: var(--color-white);
+    --hotspot-color: var(--color-white);
+    --icon-size: 24px;
+  }
+
+  &.-dark-gold {
+    --hotspot-background: var(--color-dark-gold);
+    --hotspot-background-hover: var(--color-dark-gold);
+    --hotspot-border-color: var(--color-white);
+    --hotspot-color: var(--color-white);
+    --icon-size: 34px;
+  }
+
+  &.-orange {
+    --hotspot-background: var(--color-orange);
+    --hotspot-background-hover: var(--color-orange);
+    --hotspot-border-color: var(--color-white);
+    --hotspot-color: var(--color-white);
+    --icon-size: 24px;
+  }
+
+  @include hover() {
+    &::before {
+      transform: translate(#{calc(var(--hotspot-size) / -2)}, #{calc(var(--hotspot-size) / -2)})
+        scale(var(--hotspot-scale-hover));
+      background: var(--hotspot-background-hover);
+    }
+  }
+}

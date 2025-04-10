@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="./a24-progress-bar.scss">
+<script src="./A24ProgressBar.ts"></script>
+
+
+<div class="a-progressBar{{#with size}} -{{size}}{{/with}}{{#if dark}} -dark{{/if}}"
+     data-component="a24-progress-bar"
+     style="{{#with loaded}}--progress-bar-loaded: {{this}}%;{{/with}}
+            {{#with current}}--progress-bar-current: {{this}}%;{{/with}}
+            {{#with selected}}--progress-bar-selected: {{this}}%{{/with}}">
+  <div class="a-progressBar__duration -loaded" data-progress-bar-loaded></div>
+  <div class="a-progressBar__duration -current" data-progress-bar-current></div>
+  <div class="a-progressBar__duration -selected" data-progress-bar-selected></div>
+</div>

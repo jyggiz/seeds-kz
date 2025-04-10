@@ -1,0 +1,87 @@
+
+
+
+<section class="b-buttonReference" data-component="c76-button-reference" {{#if
+  scrollComponent}}data-scroll-component{{/if}} {{#if id}} id="{{id}}" {{/if}} data-lazy-component>
+  <header class="b-buttonReference__header">
+    {{#with heading}}
+    <div class="m-paragraph__heading">
+      {{> atom/a03-heading this }}
+    </div>
+    {{/with}}
+    {{#with copy}}
+    <div class="m-paragraph__content s-content{{#if size}} -{{size}}{{^}} -medium{{/if}}">
+      {{{ content }}}
+    </div>
+    {{/with}}
+  </header>
+
+
+  {{#unless variant}}
+  {{#each examples}}
+  <section class="b-buttonReference__example{{#if theme}} t-{{theme}}{{/if}}">
+    <div class="b-buttonReference__container">
+      <div class="b-buttonReference__referenceSheet">
+        <h3 class="b-buttonReference__subHeading">{{{ heading.text }}}</h3>
+        <div class="b-buttonReference__buttonExamples">
+          {{#each items}}{{> molecule/m02-button theme=../theme size=../size level=../level }}{{#if (condition @index
+          '===' 3)}}<br />{{/if}}{{/each}}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{/each}}
+  {{/unless}}
+
+  {{#if (condition variant "===" "other")}}
+  {{#each examples}}
+
+  <section class="b-buttonReference__example{{#if theme}} t-{{theme}}{{/if}} -{{id}} {{#if hideOnMobile}} -hide{{/if}}">
+    <div class="b-buttonReference__container">
+      <div class="b-buttonReference__referenceSheet">
+        <h3 class="b-buttonReference__subHeading">{{{ heading.text }}}</h3>
+        <div class="b-buttonReference__buttonExamples">
+          {{#if (condition id "===" "a08")}}
+          {{> atom/a08-page-indicators example}}
+          {{/if}}
+          {{#if (condition id "===" "m10")}}
+          <div
+            style="width: 100px; height: 100px;position: relative; background-color: var(--color-black);color: var(--color-white);">
+            {{> molecule/m10-scroll-button}}
+          </div>
+          {{/if}}
+          {{#if (condition id "===" "m11")}}
+          {{> molecule/m11-sector-button example}}
+          {{/if}}
+          {{#if (condition id "===" "m12")}}
+          {{> molecule/m12-social example}}
+          {{/if}}
+          {{#if (condition id "===" "m14")}}
+          {{> molecule/m14-toggle-button }}
+          {{/if}}
+          {{#if (condition id "===" "m15")}}
+          {{> molecule/m15-action-button example }}
+          {{> molecule/m15-action-button example variant="isActive" }}
+          {{/if}}
+          {{#if (condition id '===' 'm25') }}
+          {{> molecule/m25-tile-button example theme=theme variant="previous" icon="arrow-left"}}
+          {{> molecule/m25-tile-button example theme=theme variant="next" icon="arrow-right"}}
+          {{/if}}
+          {{#if (condition id "===" "m26")}}
+          {{> molecule/m26-hotspot-button }}
+          {{/if}}
+          {{#if (condition id "===" "m32")}}
+          <div style="display: flex;">
+            {{#each example.items}}
+            {{> molecule/m32-share-button this }}
+            {{/each}}
+          </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{/each}}
+  {{/if}}
+
+</section>

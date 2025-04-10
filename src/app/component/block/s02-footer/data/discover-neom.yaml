@@ -1,0 +1,20 @@
+scrollComponent: true
+
+marginalia:
+  items:
+    - label: 'Privacy policy'
+      href: 'privacy-policy.html'
+      target: '_blank'
+    - label: 'Terms of Use'
+      href: 'terms-of-use.html'
+      target: '_blank'
+    - label: 'Cookie Policy'
+      href: 'cookie-policy.html'
+      target: '_blank'
+  recaptcha:
+    statement:
+      'This site is protected by reCAPTCHA and the <a
+      href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a
+      href="https://policies.google.com/terms">Terms of Service</a> apply.'
+
+copyrightNotice: '© 2022 NEOM'

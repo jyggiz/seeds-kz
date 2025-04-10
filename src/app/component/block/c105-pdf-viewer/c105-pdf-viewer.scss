@@ -1,0 +1,247 @@
+.b-pdfViewer {
+  @include vh(100, height);
+
+  position: relative;
+  background-color: var(--color-black-90);
+  color: var(--color-white);
+  display: flex;
+  align-items: stretch;
+
+  &__topToolbar {
+    @include offset(0);
+
+    padding: 5px var(--container-margin);
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    @include respond-to(MEDIUM) {
+      padding: 20px var(--container-margin);
+    }
+  }
+
+  &__loader {
+    @include size(100px);
+
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid var(--color-black-75);
+    border-right-color: transparent;
+    animation: rotate 1.5s linear infinite;
+    pointer-events: none;
+    transition: opacity 250ms ease, visibility 250ms ease;
+
+    &.-isHidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &__divider {
+    width: 1px;
+    background-color: var(--color-black-75);
+    margin: 0 10px;
+    align-self: stretch;
+  }
+
+  &__pagination {
+    @include type("body", "small");
+
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    input {
+      line-height: 100%;
+      max-width: 100px;
+      text-align: center;
+      padding: 3px;
+    }
+  }
+
+  &__container {
+    padding-block: var(--component-block-padding, var(--container-margin));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__book {
+    width: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 250ms ease, visibility 250ms ease;
+    opacity: 0;
+    visibility: hidden;
+
+    &.-isVisible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      color: var(--color-black-20);
+      cursor: pointer;
+    }
+  }
+
+  #canvas-container {
+    transition: transform 250ms linear;
+
+    @include respond-to(MEDIUM) {
+      &.-isFirstPage {
+        transform: translateX(-25%);
+      }
+
+      &.-isLastPage {
+        transform: translateX(25%);
+      }
+    }
+
+    canvas {
+      @include offset(0);
+
+      background: var(--color-black-75);
+      position: absolute;
+    }
+  }
+
+  &__toolbar {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button,
+    a {
+      @include size(35px);
+
+      display: grid;
+      place-items: center;
+      background: transparent;
+      border: none;
+      color: var(--color-black-20);
+      cursor: pointer;
+      transition: background 100ms ease;
+      border-radius: 3px;
+
+      &:hover,
+      &.-isOpen {
+        background: var(--color-black-75);
+      }
+    }
+  }
+
+  &__minimap {
+    @include offset(0);
+    @include size(0, 100%);
+
+    position: absolute;
+    background: var(--color-black-90);
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    column-gap: 10px;
+    justify-content: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    transition: width 250ms ease;
+    padding-top: 20px;
+    z-index: zindex($zLayout, default);
+
+    &Label {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    &CloseButton {
+      margin-inline-start: auto;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--color-black-20);
+    }
+
+    &.-isOpen {
+      width: 100%;
+    }
+
+    * {
+      @include hover {
+        cursor: pointer;
+      }
+    }
+
+    @include respond-to(MEDIUM) {
+      @include size(0);
+      @include vh(100);
+
+      position: static;
+      column-gap: 0;
+      grid-template-columns: repeat(2, 100px);
+
+      &.-isOpen {
+        width: 250px;
+      }
+    }
+  }
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    position: relative;
+    margin-bottom: 20px;
+
+    @include respond-to(MEDIUM) {
+      .canvas-wrapper {
+        position: relative;
+
+        &:after {
+          @include size(100%);
+          @include pseudo;
+          @include offset(0);
+
+          pointer-events: none;
+        }
+      }
+
+      &:nth-child(even) .canvas-wrapper:after {
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.2) 100%);
+      }
+
+      &:nth-child(odd) .canvas-wrapper:after {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.2) 100%);
+      }
+
+      &:nth-child(2),
+      &:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+
+        .canvas-wrapper:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

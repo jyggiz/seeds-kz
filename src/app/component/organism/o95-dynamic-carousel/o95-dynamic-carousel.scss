@@ -1,0 +1,7 @@
+.o-dynamicCarousel {
+  @include respond-to(MEDIUM) {
+    .a-pageIndicators {
+      display: none;
+    }
+  }
+}

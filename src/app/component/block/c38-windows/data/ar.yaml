@@ -1,0 +1,37 @@
+scrollComponent: true
+
+eyebrow:
+  text: our goals & objectives
+  size: medium
+
+items:
+  - heading:
+      Become global leaders in renewable-powered desalination processing with Zero Liquid Discharge
+    description:
+      NEOM's vision of a financial ecosystem is as advanced and ethical as it gets. By targeting
+      clean technologies and socially sustainable actions, the city encourages economic growth while
+      protecting the environment and its people.
+
+  - heading:
+      Design and implement a smart network that distributes high-standard water to all of NEOM
+    description:
+      NEOM's vision of a financial ecosystem is as advanced and ethical as it gets. By targeting
+      clean technologies and socially sustainable actions, the city encourages economic growth while
+      protecting the environment and its people. <br><br> NEOM's vision of a financial ecosystem is
+      as advanced and ethical as it gets.
+
+  - heading:
+      Pioneer water recycling and stewardship, recycling every drop and treating it for re-use
+    description:
+      NEOM's vision of a financial ecosystem is as advanced and ethical as it gets. By targeting
+      clean technologies and socially sustainable actions, the city encourages economic growth while
+      protecting the environment and its people.
+
+  - heading:
+      Create a global innovation hub for the research and development of the water solutions of the
+      future
+    description:
+      NEOM’s Innovation Hub will house Centers of Excellence focused on the investigation of water
+      usage and management, attracting the world’s greatest minds. By exporting technology,
+      knowledge and expertise, NEOM’s Water Solution Company will become the global leader in water
+      technology.

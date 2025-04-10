@@ -1,0 +1,17 @@
+type: figures
+items:
+  - value: 26
+    unit: 'thousand'
+    copy: km2 area in Saudi Arabia
+  - value: 5
+    unit: 'minutes'
+    copy: walk to nature from any point
+  - value: 4
+    unit: 'hours'
+    copy: flight away for 40% of the globe
+  - value: 100
+    unit: '%'
+    copy: renewable energy
+  - value: 5
+    unit: 'mj/m²'
+    copy: perennial solar resources

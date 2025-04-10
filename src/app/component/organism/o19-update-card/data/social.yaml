@@ -1,0 +1,16 @@
+heading:
+  text: Live in Harmony with Nature
+variant: social
+link:
+  href: https://www.instagram.com/p/CHfdnyHgz0L/
+  target: '_blank'
+authorInfo:
+  writtenBy: 'DISCOVERNEOM'
+  date: 'November 12, 2020'
+socialMediaIcon: instagram
+image:
+  alt: 'Image'
+  src: 'image/c16-carousel/updates_instagram.jpg'
+  sources:
+    - src: 'image/c16-carousel/updates_instagram.jpg'
+      media: '(min-width: 768px)'

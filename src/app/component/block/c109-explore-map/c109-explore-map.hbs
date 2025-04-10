@@ -1,0 +1,51 @@
+<section class="b-exploreMap{{#if intro}} -hasIntro{{/if}}"
+  data-component="c109-explore-map"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#if padding}}
+    style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component
+>
+  {{#with intro}}
+    {{> organism/o66-intro-steps}}
+  {{/with}}
+
+  <div class="b-exploreMap__map" data-region-hotspot-map>
+    <div class="b-exploreMap__content">
+      {{#with introductionSlide}}
+        <div class="b-exploreMap__contentItem b-exploreMap__contentItemIntro -isActive" data-content-item>
+          {{> molecule/m18-paragraph }}
+          {{#with ../tags}}
+            <div class="b-exploreMap__tagsHeading">
+              {{label}}
+            </div>
+            <div class="b-exploreMap__tags">
+              {{#each items}}
+                <input id="{{id}}" type="checkbox" name="tag" value="{{id}}" checked data-tag-button />
+                <label for="{{id}}" class="b-exploreMap__tagsLabel">
+                  {{> atom/a02-icon name=icon }}
+                  {{name}}
+                </label>
+              {{/each}}
+            </div>
+          {{/with}}
+        </div>
+      {{/with}}
+      {{#each items}}
+        {{> ./component/content-item }}
+      {{/each}}
+    </div>
+    {{> organism/o64-hotspot-map xAxisMobileOffset=45 }}
+    {{#with tags}}
+      <div class="b-exploreMap__filterToggleWrapper" data-filters-payload="{{toJson this}}">
+        {{> molecule/m02-button level="primary" theme="white" data=(object filter-toggle="") }}
+      </div>
+    {{/with}}
+  </div>
+
+  {{> molecule/m02-button stopExploringButton data=(object stop-exploring-button="") }}
+
+  {{> organism/o65-mobile-instructions mobileInstructions}}
+</section>

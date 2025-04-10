@@ -1,0 +1,16 @@
+image:
+  src: './image/c11-slider/beachsoccer.webp'
+  alt: 'Beach Soccer asset'
+
+content:
+  heading:
+    text: 'Beach Soccer<br />Worldwide'
+
+button:
+  icon: 'arrow-right'
+  label: 'Read more'
+  theme: 'dark-gold'
+
+link:
+  href: '#'
+  target: '_blank'

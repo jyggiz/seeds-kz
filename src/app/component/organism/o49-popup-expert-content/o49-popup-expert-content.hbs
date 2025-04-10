@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="./o49-popup-expert-content.scss">
+<script src="./O49PopupExpertContent.ts"></script>
+
+<div class="o-popupExpertContent" 
+  data-component="o49-popup-expert-content"
+  data-card-information="{{toJson cardInformation}}"
+>
+  <div class="o-popupExpertContent__mask" data-expert-mask></div>
+  <div class="o-popupExpertContent__wrapper" data-expert-popup >
+    {{> molecule/m02-button icon="close" level="tertiary" size="small" variant="close"}}
+    
+    <div class="o-popupExpertContent__container">
+      <p class="o-popupExpertContent__question" data-expert-popup-copy>{{content.question}}</p>
+      <p class="o-popupExpertContent__answer" data-expert-popup-copy>{{{content.answer}}}</p>
+    </div>
+  </div>
+</div>

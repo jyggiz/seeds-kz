@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="./o61-timer.scss">
+<script src="./O61Timer.ts"></script>
+
+
+<div class="o-timer{{#if variant}} -{{variant}}{{/if}}"
+  data-component="o61-timer"
+  dir="ltr"
+  {{#if id}} id="{{id}}"{{/if}}>
+
+  <ul class="o-timer__items" data-countdown="{{date}}">
+    {{#each displayOptions}}
+      {{#if (condition this '!==' false)}}
+        <li class="o-timer__item">
+          {{> molecule/m38-timer-item variant=../variant }}
+        </li>
+      {{/if}}
+    {{/each}}
+  </ul>
+
+</div>

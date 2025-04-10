@@ -1,0 +1,138 @@
+scrollComponent: true
+
+header:
+  heading:
+    element: h2
+    text: A revolution in civilization
+    size: h4
+
+items:
+  - heading:
+      text: 'Unparalleled<br>access to nature'
+    textContent:
+      items:
+        - Skiing
+        - Snowboarding
+        - Winter Fashion Week
+        - Ice Skating
+        - Music Festival
+        - Film Festival
+    image:
+      alt: Live where people come first
+      src: 'image/c03-blinds/the-line/01.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Urban Architecture: Giovanna Carnevali'
+            title: 'Urban Architecture: Giovanna Carnevali'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: Clean air for <br>everyone
+    description:
+      text:
+        'Replacing cars and streets with walkable distances for a healthy lifestyle.<br>The longest
+        journey will never be more than 20 minutes.'
+    image:
+      alt: Walk anywhere - everything is 5 minutes away
+      src: 'image/c03-blinds/the-line/02.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'Mobility: Florian Lennert'
+            title: 'Mobility: Florian Lennert'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: More time to spend <br>with loved ones
+    description:
+      text:
+        Protecting stunning landscapes and integrating nature into the heart of communities for
+        unmatched lifestyle and well-being.
+    image:
+      alt: Live in harmony with nature
+      src: 'image/c03-blinds/the-line/03.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'The Future of Environment: Dr. Paul Marshall'
+            title: 'The Future of Environment: Dr. Paul Marshall'
+            src: video/video-preview.mp4
+
+  - heading:
+      text: A perfect<br>climate all-<br>year-round
+    description:
+      text:
+        Making everyday life seamless through invisible AI-enabled infrastructure that continuously
+        learns and predicts ways to make life easier for residents and businesses.
+    image:
+      alt: Live a simplified life enhanced by predictive technology
+      src: 'image/c03-blinds/the-line/04.jpg'
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish:
+              'Cognitive cities: how NEOM will fully utilize data to fundamentally improve life'
+            title:
+              'Cognitive cities: how NEOM will fully utilize data to fundamentally improve life'
+            src: video/video-preview.mp4

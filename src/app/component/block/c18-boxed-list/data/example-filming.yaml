@@ -1,0 +1,98 @@
+scrollComponent: true
+
+align: start
+
+background:
+  image:
+    src: 'image/c18-boxed-list/background.jpg'
+
+header:
+  eyebrow:
+    text: pick the challenge
+    size: small
+  heading:
+    text: Healthy Investors<br />Climate
+    size: h5
+
+items:
+  - content:
+      heading:
+        text: WorLd-class facilities 1
+      copy: 'NEOM is home to the countrys largest sound stages and film production facilities.
+
+        Media Village A 2,400m² sound stage with make-up and green rooms, production offices and
+        three more stages being built, the Village can host 144 cast and crew, with great lifestyle
+        and retail offerings.
+
+        Bajdah Studios Two 3,000m² sound stages and four more opening soon, with production offices,
+        prop shops, wardrobe, SFX facilities, backlot spaces for custom builds and resort-style
+        living for 200 people.'
+      image:
+        alt: Ras Kulayb
+        src: 'image/c06-hotspots/coastal-image.jpg'
+      iconFile:
+        alt: clean energy
+        src: 'icon/c08-stats/clean-energy.svg'
+    align: start
+    heading:
+      text: WorLd-class facilities 1
+    icon: 'facilities'
+    copy: 4 sound stages with full production support spaces & backlots
+    link:
+      label: find out more
+      target: _blank
+      href: '#'
+      icon: arrow-right
+    modal: true
+
+  - content:
+      heading:
+        text: Production incentives 2
+      copy: 'NEOM offers a generous 40%++ cash rebate production incentive scheme. This is available
+        for film and all genres of TV and production including drama, reality shows and
+        documentaries, as well as the production of commercials and short form content.
+
+        We also offer Producers the opportunity to secure a higher percentage, based on their
+        contribution to their development of our media industry ecosystem - including production
+        placements and internships for young Saudis..'
+      image:
+        alt: Ras Kulayb
+        src: 'image/c06-hotspots/coastal-image.jpg'
+      icon: 'facilities'
+    align: start
+    heading:
+      text: Production incentives 2
+    icon: 'facilities'
+    copy: 40%++ cash rebate for all TV, Film and TVCs
+    link:
+      label: find out more
+      target: _blank
+      href: '#'
+      icon: arrow-right
+    modal: true
+
+  - content:
+      heading:
+        text: Heading not for the modal 3
+      copy: 'NEOM offers a generous 40%++ cash rebate production incentive scheme. This is available
+        for film and all genres of TV and production including drama, reality shows and
+        documentaries, as well as the production of commercials and short form content.
+
+        We also offer Producers the opportunity to secure a higher percentage, based on their
+        contribution to their development of our media industry ecosystem - including production
+        placements and internships for young Saudis..'
+      image:
+        alt: Ras Kulayb
+        src: 'image/c06-hotspots/coastal-image.jpg'
+      icon: 'facilities'
+    align: start
+    heading:
+      text: Production incentives 3
+    icon: 'facilities'
+    copy: 40%++ cash rebate for all TV, Film and TVCs
+    link:
+      label: find out more
+      target: _blank
+      href: '#'
+      icon: arrow-right
+    modal: true

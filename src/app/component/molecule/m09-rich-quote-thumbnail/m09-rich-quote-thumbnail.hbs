@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="./m09-rich-quote-thumbnail.scss">
+<script src="./M09RichQuoteThumbnail.ts"></script>
+
+
+<div class="m-richQuoteThumbnail -{{direction}}" data-component="m09-rich-quote-thumbnail">
+  <div class="m-richQuoteThumbnail__container">
+    {{#each items}}
+      {{#with quote.author}}
+        <div class="m-richQuoteThumbnail__information" data-thumbnail-information>
+          <p class="m-richQuoteThumbnail__author">{{ name }}</p>
+          <p class="m-richQuoteThumbnail__role">{{ role }}</p>
+        </div>
+      {{/with}}
+    {{/each}}
+
+    <div class="m-richQuoteThumbnail__image" aria-hidden="true" data-thumbnail-image>
+      {{#each items}}
+        <div class="m-richQuoteThumbnail__mask" data-thumbnail-mask>
+          <div class="m-richQuoteThumbnail__wrapper" data-thumbnail-wrapper>
+            {{> atom/a01-image thumbnail disableTransition=true }}
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+    {{#if (condition direction '===' 'next')}}
+      <div class="m-richQuoteThumbnail__iconContainer">
+        {{> atom/a02-icon name="arrow-right" className="m-richQuoteThumbnail__arrow -next"}}
+      </div>
+    {{^}}
+      <div class="m-richQuoteThumbnail__iconContainer">
+        {{> atom/a02-icon name="arrow-left" className="m-richQuoteThumbnail__arrow -previous"}}
+      </div>
+    {{/if}}
+  </div>
+</div>

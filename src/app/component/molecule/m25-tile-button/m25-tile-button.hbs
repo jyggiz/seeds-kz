@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="./m25-tile-button.scss">
+<script src="./M25TileButton.ts"></script>
+
+<div class="m-tileButton{{#if variant}} -{{variant}}{{/if}}{{#if theme}} t-{{theme}}{{/if}}{{#unless image}} -noImage{{/unless}}" data-component="m25-tile-button">
+  {{#with image}}<div class="m-tileButton__image" data-tile-button-image>{{> atom/a01-image this disableTransition=true }}</div>{{/with}}
+  <div class="m-tileButton__content" data-tile-button-content>
+    <p class="m-tileButton__label" data-tile-button-label>
+      <span class="m-tileButton__labelCopy">
+        {{#if (condition variant '===' 'previous')}}
+          {{ @root.i18n.previous }}
+        {{^}}
+          {{ @root.i18n.next }}
+        {{/if}}
+      </span>
+      {{> atom/a02-icon name=icon }}
+    </p>
+    <h3 class="m-tileButton__heading{{#if transform}} -transform-{{transform}}{{/if}}" data-tile-button-heading>
+      <span class="m-tileButton__headingCopy">{{ heading.text }}</span>
+    </h3>
+  </div>
+  <a class="m-tileButton__link" href="{{link.href}}"><span class="m-tileButton__linkCopy">{{heading.text}}</span></a>
+</div>

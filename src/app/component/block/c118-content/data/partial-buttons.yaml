@@ -1,0 +1,18 @@
+- componentName: m02-button
+  data:
+    level: primary
+    theme: black
+    label: 'Primary button'
+- componentName: m02-button
+  data:
+    level: secondary
+    theme: black
+    label: 'Secondary button'
+- componentName: m02-button
+  data:
+    level: primary
+    label: Download
+    theme: black
+    icon: download
+    href: 'downloads/download-placeholder.zip'
+    variant: download

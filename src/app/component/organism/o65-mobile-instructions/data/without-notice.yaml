@@ -1,0 +1,10 @@
+heading:
+  element: h2
+  text: Explore <strong>Magna</strong>
+  size: h4
+content:
+  An epic journey along some of the world’s most beautiful coastline, Magna is a new region from
+  NEOM that defies imagination.
+button:
+  size: small
+  label: start exploring

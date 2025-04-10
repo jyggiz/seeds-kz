@@ -1,0 +1,11 @@
+
+
+
+<section class="b-breadcrumbs{{#with theme}} t-{{this}}{{/with}}{{#with divider}} -{{this}}Divider{{/with}}"
+  data-component="c98-breadcrumbs"
+  {{#if backgroundColor}}
+    style="{{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+>
+  {{> molecule/m57-breadcrumbs}}
+</section>

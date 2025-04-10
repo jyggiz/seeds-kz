@@ -1,0 +1,7 @@
+disableTransition: true # default
+
+image:
+  src: 'image/c56-full-width-media/theline-hero.jpg'
+  sources:
+    - src: 'image/c56-full-width-media/theline-hero.jpg'
+      media: '(min-width: 768px)'

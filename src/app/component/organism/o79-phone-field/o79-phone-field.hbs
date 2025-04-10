@@ -1,0 +1,25 @@
+
+
+
+<div class="o-phoneField" data-component="o79-phone-field" {{#if id}} id="{{id}}" {{/if}} >
+
+  <div class="o-phoneField__textLabel{{#if required}} -isRequired{{/if}}">
+    {{> atom/a07-label text=label size="small" }}
+
+    {{#if validate.length.maximum}}
+      <span class="o-phoneField__limit">{{validate.length.maximum}} {{@root.i18n.characters}}</span>
+    {{/if}}
+  </div>
+  <div class="o-phoneField__container">
+
+    {{> molecule/m41-country-dropdown countryDropdown }}
+
+    <div class="o-phoneField__phoneInput">
+      {{> atom/a14-input type="text" }}
+
+      {{> atom/a25-form-error }}
+    </div>
+
+  </div>
+
+</div>

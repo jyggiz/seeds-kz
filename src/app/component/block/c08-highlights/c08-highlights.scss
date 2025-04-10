@@ -1,0 +1,103 @@
+@use "sass:math";
+
+.b-highlights {
+  @include fullMinHeight();
+
+  position: relative;
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+  text-align: center;
+
+  &__container {
+    @include container();
+
+    display: grid;
+    column-gap: var(--grid-gap);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    position: relative;
+  }
+
+  &__description {
+    @include type("subTitle", "small");
+
+    grid-column: 1 / -1;
+    text-transform: none;
+    margin-block-start: 30px;
+    margin-block-end: 50px;
+  }
+
+  &__list {
+    @include list-reset(60px 0 0, 0);
+  }
+
+  &__item {
+    margin: 0 0 60px;
+  }
+
+  .m-componentHeader {
+    grid-column: 1 / -1;
+    .a-eyebrow {
+      margin: 0 0 35px;
+    }
+  }
+
+  .o-highlightList {
+    grid-column: 1 / -1;
+  }
+
+  @include respond-to("MEDIUM") {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      flex: 0 0 50%;
+
+      &:nth-child(3n + 3) {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__item {
+      flex: 0 0 math.div(100%, 3);
+
+      &:nth-child(3n + 3) {
+        flex: 0 0 math.div(100%, 3);
+      }
+    }
+  }
+
+  @include neomThemes;
+
+  &.t-dark &__description {
+    color: var(--color-white);
+  }
+
+  &.t-darkGreen {
+    .m-highlightItem {
+      color: var(--color-dim-green);
+    }
+  }
+
+  &.v-large {
+    .b-highlights__description {
+      grid-column: 3 / -3;
+    }
+
+    .m-componentHeader,
+    .o-highlightList {
+      grid-column: 2 / -2;
+    }
+
+    .m-highlightItem {
+      &__title {
+        @include type("overline", "large");
+      }
+    }
+  }
+}

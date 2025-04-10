@@ -1,0 +1,79 @@
+theme: 'dark'
+
+scrollComponent: false
+
+padding:
+  start: large
+  end: large
+
+header:
+  heading:
+    size: h4
+    element: h4
+    text: НАША ИСТОРИЯ
+
+initialSlideIndex: '0'
+
+timelinePoints:
+  - id: '2012'
+    description: '2012'
+  - id: '2013'
+    description: '2013'
+  - id: '2014'
+    description: '2014'
+
+items:
+  - componentName: journey-card
+    data:
+      timelinePointId: '2012'
+      eyebrow:
+        text: 'Январь'
+        size: 'large'
+      moustache:
+        text:
+          'В 2012 году создана Республиканская Палата по молочному скотоводству, куда входят:
+          голштинская, черно-пестрая, алатауская, симментальская, аулиеатинская, красно-степная,
+          швицкая, холмогорская, бестужевская, сычевская и монбельярдская породы.'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-1.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2013'
+      eyebrow:
+        text: 'Январь'
+        size: 'large'
+      moustache:
+        text:
+          'С целью установления сотрудничества в сфере содействия развитию агропромышленного
+          комплекса, в том числе поддержки молочного скотоводства Палатой подписан Меморандум с
+          Палатой Предпринимателей РК, где представители Палаты принимают участие в работе Комитета
+          АПК Президиума Национальной Палаты, представляющим взаимный интерес.'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/o85-news-card/news-card-2.jpg'
+        sources:
+          - src: 'image/o85-news-card/news-card-2.jpg'
+            media: '(min-width: 768px)'
+  - componentName: journey-card
+    data:
+      timelinePointId: '2014'
+      eyebrow:
+        text: 'Январь'
+        size: 'large'
+      moustache:
+        text:
+          'Палата с 2014 года является полноправным членом Американской ассоциации голштинской
+          породы.'
+        size: 'small'
+      image:
+        alt: 'Image'
+        src: 'image/o85-news-card/news-card-1.jpg'
+        sources:
+          - src: 'image/o85-news-card/news-card-1.jpg'
+            media: '(min-width: 768px)'

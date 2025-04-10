@@ -1,0 +1,25 @@
+scrollComponent: true
+align: center
+variant: indexed
+
+header:
+  heading:
+    text: РЕСПУБЛИКАНСКАЯ ПАЛАТА В ЦИФРАХ
+    size: h5
+
+items:
+  - heading:
+      text: Всего хозяйств
+    index: 240+
+
+  - heading:
+      text: Поголовье КРС
+    index: 128364+
+
+  - heading:
+      text: Лет опыта
+    index: 10+
+
+  - heading:
+      text: Количество пород
+    index: 10+

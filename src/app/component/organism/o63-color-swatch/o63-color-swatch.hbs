@@ -1,0 +1,17 @@
+
+
+<div class="o-colorSwatch"
+         data-component="o63-color-swatch"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         >
+    <div class="o-colorSwatch__colorContainer">
+      <div class="o-colorSwatch__color" style="--swatch-color: {{hex}};" data-color-card data-color={{hex}}>
+        {{> atom/a04-eyebrow text=label size="small"}}
+        {{> molecule/m44-copy-progress-indicator id=parentId}}
+        <span class="o-colorSwatch__hexCode" data-hex>
+        {{> atom/a04-eyebrow text=hex size="small"}}
+        </span>
+      </div>
+    </div>
+</div>

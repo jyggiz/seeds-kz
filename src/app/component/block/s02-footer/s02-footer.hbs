@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="./s02-footer.scss">
+<script src="./S02Footer.ts"></script>
+
+<footer class="b-footer {{#if theme}} t-{{theme}}{{/if}}" data-component="s02-footer" {{#if scrollComponent}}data-scroll-component{{/if}}>
+  {{#if sitemap}}
+    <div class="b-footer__container">
+      <ul class="b-footer__sitemap">
+      {{#each sitemap}}
+        <li>
+          <ul class="b-footer__sitemapColumn">
+            {{#each this}}
+              <li class="b-footer__sitemapItem" data-sitemap-item>
+                <ul class="b-footer__links" data-footer-links>
+                  {{#each items}}
+                    <li class="b-footer__link">
+                      {{> molecule/m06-link variant="footerLink" }}
+                    </li>
+                  {{/each}}
+                </ul>
+              </li>
+            {{/each}}
+          </ul>
+        </li>
+      {{/each}}
+      {{#with social}}
+        <li class="b-footer__socialLabel">
+          {{> atom/a03-heading size="h6" text=label }}
+        </li>
+        <li class="b-footer__social">
+          {{> molecule/m12-social this }}
+        </li>
+      {{/with}}
+      </ul>
+    </div>
+  {{/if}}
+  {{#with marginalia}}
+    <div class="b-footer__marginalia" data-marginalia>
+      <ul class="b-footer__marginaliaItems">
+      {{#each items }}
+        <li class="b-footer__marginaliaItem">
+          {{> molecule/m06-link variant="marginaliaLink" }}
+        </li>
+      {{/each}}
+        <li class="b-footer__marginaliaItem -copyrightNotice">
+          {{../copyrightNotice}}
+        </li>
+      </ul>
+      {{#with ../social}}
+        <div class="b-footer__social">
+          {{> molecule/m12-social this }}
+        </div>
+      {{/with}}
+    </div>
+  {{/with}}
+</footer>

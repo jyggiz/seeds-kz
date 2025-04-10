@@ -1,0 +1,31 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              element: 'h3'
+              text: 'General icons'
+              size: 'h5'
+            copy:
+              size: 'medium'
+              content:
+                <p>For all other iconography we use a flat version of the ribbon, without shadows.
+                This ensures the economic sector icons are seen to have a more important role within
+                NEOM. They are uniform in line width, used at small to medium sizes and rendered in
+                any of the primary colors. The twist in the ribbon ensures they stand out as unique
+                to NEOM.</p>
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

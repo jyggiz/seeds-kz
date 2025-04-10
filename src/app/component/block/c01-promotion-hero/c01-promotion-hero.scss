@@ -1,0 +1,21 @@
+.b-promotionHero {
+  --color-background: var(--color-black);
+  --component-text-color: var(--color-white);
+
+  @include vh(100, height);
+
+  position: relative;
+
+  &__container {
+    @include container;
+
+    height: 100%;
+    padding-block: 20px;
+  }
+
+  @include respond-to(MEDIUM) {
+    &__container {
+      padding-block: 70px;
+    }
+  }
+}

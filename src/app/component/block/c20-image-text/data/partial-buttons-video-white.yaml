@@ -1,0 +1,21 @@
+- level: primary
+  theme: white
+  label: 'Watch film'
+  size: small
+  icon: play-outline
+  data:
+    play-button:
+  video:
+    props:
+      sources:
+        - src: './video/background-video-preview.mp4'
+          type: video/mp4
+      originalWidth: 16
+      originalHeight: 9
+      autoplay: true
+      muted: false
+      loop: true
+      controls:
+        playPause: true
+        fullscreen: true
+        seek: true

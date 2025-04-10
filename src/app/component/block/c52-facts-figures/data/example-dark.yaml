@@ -1,0 +1,15 @@
+scrollComponent: true
+
+theme: 'dark'
+header:
+  disableTransition: true
+  alignment: left
+  eyebrow:
+    text: Overline text
+  heading:
+    text: Heading text
+    size: h4
+
+items:
+  - 'import!../../../organism/o58-facts-list/data/example-icons.yaml'
+  - 'import!../../../organism/o58-facts-list/data/example-figures.yaml'

@@ -1,0 +1,8 @@
+images:
+  background:
+    src: 'image/c17-sectors/health-wellbeing-biotech.jpg'
+    alt: 'Pretty reef picture'
+label: WATER AUTONOMY
+mask:
+  opacity: 1
+  solid: true

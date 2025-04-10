@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="./o36-secondary-navigation.scss">
+<script src="./O36SecondaryNavigation.ts"></script>
+
+<div class="o-secondaryNavigation" data-component="o36-secondary-navigation">
+  <div class="o-secondaryNavigation__container">
+
+    <button class="o-secondaryNavigation__sectorButton" data-sector-toggle>
+      {{#with parent.label}}{{{this}}}{{/with}}
+      {{> atom/a02-icon name="chevron-down" }}
+    </button>
+
+    <ul class="o-secondaryNavigation__items" data-navigation-collapsible>
+      {{#with parent}}
+        <li class="o-secondaryNavigation__item -parent" data-secondary-navigation-item>
+          <span class="o-secondaryNavigation__itemMain">
+            {{{label}}}
+          </span>
+        </li>
+      {{/with}}
+      {{#each items}}
+        <li class="o-secondaryNavigation__item{{#if active}} -isActive{{/if}}" data-secondary-navigation-item>
+          {{#if items}}
+
+            <button class="o-secondaryNavigation__itemButton" aria-expanded="false" aria-haspopup="true" data-button>
+              <span class="o-secondaryNavigation__itemLabel">{{label}}</span>
+              {{> atom/a02-icon name="chevron-down" }}
+            </button>
+
+            <div class="o-secondaryNavigation__childList" data-dropdown-list>
+              <div class="o-secondaryNavigation__childWrapper">
+                <ul class="o-secondaryNavigation__childItems">
+                  {{#each items }}
+                    <li class="o-secondaryNavigation__childItem{{#if active}} -isActive{{/if}}">
+                      <a href="{{ href }}" class="o-secondaryNavigation__childLink" data-dropdown-link>
+                        {{ label }}
+                      </a>
+                    </li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+
+          {{^}}
+
+            <a class="o-secondaryNavigation__itemLink" href="{{href}}" {{#if externalLink}}target="_blank" rel="noopener"{{/if}}>{{label}}</a>
+
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

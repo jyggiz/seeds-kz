@@ -1,0 +1,26 @@
+
+<script src="./O97NavigationPlaceholder.ts"></script>
+
+<nav class="o-navigationPlaceholder"
+  data-component="o97-navigation-placeholder"
+  style="display: none;"
+  data-navigation-template="{{navigationtemplate}}"
+  data-navigation-data-endpoint="{{navigationDataEndpoint}}"
+  data-early-display
+>
+  {{#with navigation}}
+      {{#if main}}
+        {{> ./component/molecule/_link-list.hbs items=main}}
+      {{/if}}
+      {{#if aside}}
+        {{> ./component/molecule/_link-list.hbs items=aside}}
+      {{/if}}
+  {{/with}}
+
+  {{#with secondaryNavigation}}
+    {{> ./component/molecule/_link-list.hbs items=(appendArray items parent)}}
+  {{/with}}
+  {{#with languages}}
+    {{> ./component/molecule/_link-list.hbs items=options}}
+  {{/with}}
+</nav>

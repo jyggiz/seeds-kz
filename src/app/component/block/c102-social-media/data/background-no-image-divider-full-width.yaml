@@ -1,0 +1,3 @@
+theme: 'dark'
+divider: 'fullWidth'
+social: 'import!../../../organism/o94-social-media/data/multiple-rows.yaml'

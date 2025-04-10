@@ -1,0 +1,33 @@
+scrollComponent: true
+optimizeForLCP: true
+earlyDisplay: true
+fullHeight: true
+align:
+  horizontal: start
+  vertical: bottom
+background:
+  image:
+    src: >-
+      https://images.prismic.io/seeds-kz/Z_aXBXdAxsiBwfrF_hero-banner-3.webp?auto=format,compress
+    alt: ''
+content:
+  header:
+    heading:
+      element: h1
+      size: h4
+      text: СІЗДІҢ СЕНІМІҢІЗДІ БАҒАЛАЙМЫЗ
+    eyebrow:
+      size: medium
+      text: '"ҚАЗАҚСТАННЫҢ ТҰҚЫМ ӨСІРУШІЛЕР ҚАУЫМДАСТЫҒЫ" ЗТБ'
+  buttonType: pillar-short
+  buttons:
+    - icon: wallet
+      title: Қауымдастыққа қосылу
+      label: Нысанды толтыру
+      href: /join.html#form
+      transparent: true
+    - icon: clapper
+      title: Бизнес ұсыныстар
+      label: Бізбен хабарласыңыз
+      href: /contacts.html#contacts
+      transparent: true

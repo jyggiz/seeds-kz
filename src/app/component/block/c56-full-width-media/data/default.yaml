@@ -1,0 +1,10 @@
+disableTransition: true # default
+
+heading:
+  text: 'EXPLORE OUR FACTS AND FIGURES'
+  size: h4
+image:
+  src: 'image/c20-test-image.jpg'
+  sources:
+    - src: 'image/gavin-van-tonder-main.jpg'
+      media: '(min-width: 768px)'

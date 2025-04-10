@@ -1,0 +1,95 @@
+heading: 'Leading the world in'
+eyebrow:
+  text: hidden marina
+  size: medium
+
+variant: large
+
+items:
+  - title: 'Exemplary capital projects & infrastructure'
+    image:
+      alt: 'Globe image'
+      src: 'image/c71-facts-list/1.jpg'
+    modal:
+      eyebrow:
+        text: eyebrows
+        size: small
+      heading:
+        text: 'Exemplary capital projects & infrastructure'
+      copy:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, iste temporibus
+        facilis ipsa porro hic voluptates et reprehenderit tempore consequuntur nam architecto
+        consectetur labore explicabo dolores cum inventore quia.
+  - title: 'Circular economy, internet of things & robotics'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/2.jpg'
+    modal:
+      heading:
+        text: 'Circular economy, internet of things & robotics'
+      copy:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, iste temporibus
+        facilis ipsa porro hic voluptates et reprehenderit tempore consequuntur nam architecto
+        consectetur labore explicabo dolores cum inventore quia.
+  - title: 'Cognitive cities, autonomous vehicles & digital twins'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/3.jpg'
+    modal:
+      eyebrow:
+        text: eyebrows
+        size: small
+      heading:
+        text: 'Cognitive cities, autonomous vehicles & digital twins'
+      copy:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, iste temporibus
+        facilis ipsa porro hic voluptates et reprehenderit tempore consequuntur nam architecto
+        consectetur labore explicabo dolores cum inventore quia.
+  - title: 'Worker welfare & livability for all'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/4.jpg'
+    modal:
+      heading:
+        text: 'Worker welfare & livability for all'
+      copy:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, iste temporibus
+        facilis ipsa porro hic voluptates et reprehenderit tempore consequuntur nam architecto
+        consectetur labore explicabo dolores cum inventore quia.
+  - title: 'Low-carbon sustainable construction'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/5.jpg'
+    modal:
+      heading:
+        text: 'Low-carbon sustainable construction'
+      copy:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, iste temporibus
+        facilis ipsa porro hic voluptates et reprehenderit tempore consequuntur nam architecto
+        consectetur labore explicabo dolores cum inventore quia.
+  - title: 'Enabling industry investment & incubation'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/6.jpg'
+    modal:
+      heading:
+        text: 'Enabling industry investment & incubation'
+      copy:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, iste temporibus
+        facilis ipsa porro hic voluptates et reprehenderit tempore consequuntur nam architecto
+        consectetur labore explicabo dolores cum inventore quia.
+  - title: 'Off-site modular construction & 3D printing'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/7.jpg'
+  - title: 'Digital design & transformational thinking'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/8.jpg'
+    modal:
+      heading:
+        text: 'Digital design & transformational thinking'
+      copy:
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid, iste temporibus
+        facilis ipsa porro hic voluptates et reprehenderit tempore consequuntur nam architecto
+        consectetur labore explicabo dolores cum inventore quia.

@@ -1,0 +1,16 @@
+image:
+  src: './image/c11-slider/triathlon.webp'
+  alt: 'Basketball asset'
+
+content:
+  heading:
+    text: 'SUPER LEAGUE<br />TRIATHLON'
+
+button:
+  icon: 'arrow-right'
+  label: 'Read more'
+  theme: 'dark-gold'
+
+link:
+  href: '#'
+  target: '_blank'

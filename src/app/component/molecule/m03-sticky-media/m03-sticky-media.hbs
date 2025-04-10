@@ -1,0 +1,16 @@
+
+
+
+<div class="m-stickyMedia" data-component="m03-sticky-media" data-scroll-component>
+  <div class="m-stickyMedia__container">
+    <div class="m-stickyMedia__background" data-sticky-background>
+      {{#if image}}
+        {{> atom/a01-image image disableTransition=true}}
+      {{/if}}
+      {{!-- todo: re-assess this component -organism for simple video playback is overkill? --}}
+      {{#if video}}
+        {{> organism/o01-video video }}
+      {{/if}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+.m-progressBar {
+  width: 100%;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  height: 40px;
+  padding: 18px 0;
+
+  &__wrapper {
+    position: relative;
+    border-radius: 100vw;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &__label {
+    @include type("overline", "small");
+
+    position: absolute;
+    transform: translateY(-100%);
+    bottom: 14px;
+  }
+
+  &__currentProgress {
+    transform: scaleX(0);
+  }
+
+  &__currentProgress,
+  &__selectedProgress,
+  &__initialProgress {
+    background: var(--color-white);
+    height: 100%;
+    transform-origin: left center;
+  }
+
+  &__currentProgress,
+  &__selectedProgress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  &__selectedProgress {
+    opacity: 0;
+    transition: opacity 0.8s $easeOutExpo;
+  }
+
+  &__initialProgress {
+    opacity: 0.3;
+  }
+
+  &.-isDisabled {
+    .m-progressBar__initialProgress,
+    .m-progressBar__selectedProgress,
+    [data-component="a09-time-indicator"] {
+      cursor: not-allowed;
+    }
+  }
+
+  &:hover,
+  &.-isSeeking {
+    .m-progressBar__selectedProgress {
+      opacity: 0.3;
+    }
+
+    :not([data-timing]) [data-component="a09-time-indicator"] {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+scrollComponent: true
+shareButton: 'import!../../c44-article-content/data/share.yaml'
+
+cropped: true
+
+eyebrow:
+  text: 'Ready to sign up?'
+  size: 'medium'
+
+heading:
+  text: 'Time to turn your idea<br /> into a reality'
+  size: 'h4'
+
+buttons:
+  - theme: 'gold'
+    label: "Let's do this"
+    href: '#'
+
+image:
+  alt: null
+  src: 'image/homepage-mountain-background.jpg'

@@ -1,0 +1,21 @@
+scrollComponent: true
+
+eyebrow:
+  text: '"ذا لاين"'
+
+heading:
+  text: 'تمكين مستقبل الحياة الحضرية'
+  size: h4
+
+moustache:
+  size: small
+  text: 'يمثل "ذا لاين" أحد أضخم مشاريع نيوم، كونه ركيزة الحياة الحضرية فيها.'
+
+buttons:
+  - theme: white
+    label: لمعرفة المزيد عن "ذا لاين"
+    href: 'the-line-ar.html'
+
+image:
+  alt: null
+  src: 'image/homepage-mountain-background.jpg'

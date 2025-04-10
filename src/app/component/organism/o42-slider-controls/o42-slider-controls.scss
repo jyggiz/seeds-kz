@@ -1,0 +1,45 @@
+.o-sliderControls {
+  display: grid;
+  grid-gap: var(--grid-gap);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 140px;
+
+  .m-button {
+    &.-isDisabled {
+      @mixin disable {
+        --button-background-color: var(--button-background-color-disabled, transparent);
+        --button-border-color: var(--color-black-10a);
+        --button-text-color: var(--color-black-20a);
+      }
+
+      @include disable;
+
+      pointer-events: none;
+
+      .m-button__container {
+        @include hover {
+          @include disable;
+        }
+      }
+
+      .o-sliderControls.t-dark & {
+        .o-sliderControls.t-darkMono & {
+          --button-border-color: var(--color-white-10a);
+          --button-text-color: var(--color-white-20a);
+        }
+      }
+    }
+  }
+
+  @include neomThemes() {
+    &.t-dark {
+      .m-button.-white.-secondary {
+        --button-border-color: var(--component-text-color);
+
+        &.-isDisabled {
+          --button-border-color: transparent;
+        }
+      }
+    }
+  }
+}

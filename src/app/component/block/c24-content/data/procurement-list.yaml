@@ -1,0 +1,24 @@
+scrollComponent: true
+variant: 'single'
+theme: 'dark'
+
+fullMinHeight: false
+
+padding:
+  start: large
+  end: large
+
+background:
+  image:
+    alt: 'alt'
+    src: 'image/procurement-background.jpg'
+    sources:
+      - src: 'image/procurement-background.jpg'
+        media: '(min-width: 768px)'
+
+items:
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'list'
+    content: 'import!../../../molecule/m17-list/data/definitions-ordered.yaml'

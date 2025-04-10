@@ -1,0 +1,17 @@
+
+
+
+<section class="b-socialMedia{{#with backgroundPosition}} -{{this}}{{/with}}{{#with divider}} -{{this}}Divider{{/with}}
+  {{#if theme}} t-{{theme}}{{/if}}"
+  data-component="c102-social-media"
+  {{#if backgroundColor}}
+    style="{{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component
+>
+
+  {{#with background}}
+    {{> molecule/m34-component-background disableTransition=true }}
+  {{/with}}
+  {{> organism/o94-social-media social }}
+</section>

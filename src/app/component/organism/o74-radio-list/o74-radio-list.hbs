@@ -1,0 +1,25 @@
+
+
+<div class="o-radioList" data-component="o74-radio-list" {{#if scrollComponent}}data-scroll-component{{/if}} {{#if id}}
+  id="{{id}}" {{/if}} data-lazy-component>
+  <fieldset class="o-radioList__fieldset" {{#if validate}} data-validate="{{toJson validate}}" {{/if}} {{#with
+    id}}id="{{this}}" {{/with}}>
+    <div class="o-radioList__container">
+    {{#if legend}}
+    {{> atom/a26-fieldset-legend legend=legend.text variant=legend.variant required=required}}
+    {{/if}}
+
+    {{#each items}}
+    {{> molecule/m28-radio-option }}
+    {{/each}}
+
+    {{#with showTextareaForOtherChoice}}<div class="o-radioList__optionalTextarea{{#if wide}} -wide{{/if}}">
+      {{>molecule/m30-text-field type='textarea' blockValidation=true disabled=true}}</div>
+    {{/with}}
+     {{> atom/a25-form-error }}
+    </div>
+  </fieldset>
+
+  {{#if (condition variant "===" "subgroup")}} {{>
+  ../../block/c59-multi-step-form/component/atom/form-group-divider.hbs }} {{/if}}
+</div>

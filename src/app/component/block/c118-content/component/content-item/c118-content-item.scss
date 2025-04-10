@@ -1,0 +1,27 @@
+.b-content__contentItem {
+  position: relative;
+  margin-bottom: var(--grid-gap);
+  height: 100%;
+
+  &.-paragraph {
+    padding-inline: var(--container-margin);
+  }
+
+  &.-asset {
+    .m-figure {
+      max-width: 60%;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  @include respond-to("MEDIUM") {
+    margin-bottom: 0;
+  }
+
+  @include respond-to("LARGE") {
+    --image-max-width: var(--large-image-max-width, 100%);
+  }
+}

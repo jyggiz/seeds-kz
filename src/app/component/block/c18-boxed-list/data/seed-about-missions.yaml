@@ -1,0 +1,28 @@
+scrollComponent: true
+
+align: center
+theme: white
+
+background:
+  image:
+    src: './image/c18-boxed-list/seed_about-mission.jpg'
+
+header:
+  heading:
+    text: Наши ценности
+    size: h5
+
+items:
+  - heading:
+      text: МИССИЯ ПАЛАТЫ
+    copy:
+      'Объединение субъектов в области семеноводства, защита их интересов, налаживание тесной связи
+      между селекционерами и семеноводами'
+    icon: bulb
+
+  - heading:
+      text: ЦЕЛЬ ПАЛАТЫ
+    copy:
+      'ОЮЛ "Ассоциация семеноводов Казахстана" создана в целях координации семеноводческих хозяйств, а
+      также представления и защиты интересов членов Палаты'
+    icon: heart

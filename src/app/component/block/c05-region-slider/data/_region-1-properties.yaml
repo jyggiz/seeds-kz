@@ -1,0 +1,33 @@
+header:
+  eyebrow:
+    text: 'Marine Seascape'
+  heading:
+    text: 'Scenic Islands & Coasts'
+description:
+  'NEOM’s scenic islands and coastal areas support rich biodiversity and provide unforgettable
+  nature experiences.'
+
+images:
+  background:
+    src: 'image/c05-region-slider/region-1/background.jpg'
+    alt: 'Pretty reef picture'
+    sources:
+      - src: 'image/c05-region-slider/region-1/background.jpg'
+        media: '(min-width: 768px)'
+  region:
+    src: 'image/c05-region-slider/map-coastal-square.png'
+    alt: 'Region #1 highlight layer image here'
+    sources:
+      - src: 'image/c05-region-slider/map-coastal-square.png'
+        media: '(min-width: 768px)'
+
+properties:
+  - items:
+      - 'import!../../../molecule/m51-region-property/data/green-sea-turtle.yaml'
+      - 'import!../../../molecule/m51-region-property/data/default.yaml'
+  - items:
+      - 'import!../../../molecule/m51-region-property/data/green-sea-turtle.yaml'
+      - 'import!../../../molecule/m51-region-property/data/default.yaml'
+  - items:
+      - 'import!../../../molecule/m51-region-property/data/green-sea-turtle.yaml'
+      - 'import!../../../molecule/m51-region-property/data/default.yaml'

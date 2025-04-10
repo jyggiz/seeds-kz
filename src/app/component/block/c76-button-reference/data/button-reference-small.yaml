@@ -1,0 +1,73 @@
+heading:
+  element: 'h2'
+  size: 'h5'
+  text: 'Buttons'
+copy:
+  size: 'small'
+  content: '<p>Small buttons Lorem Ipsum.</p>'
+
+examples:
+  - heading:
+      text: 'Primary / Black'
+    theme: black
+    level: primary
+    size: small
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Primary / White'
+    theme: white
+    level: primary
+    size: small
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Primary / Cream'
+    theme: cream
+    level: primary
+    size: small
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Primary / Dark gold'
+    theme: dark-gold
+    level: primary
+    size: small
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Primary / Gold'
+    theme: gold
+    level: primary
+    size: small
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Secondary / Black'
+    theme: black
+    level: secondary
+    size: small
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Secondary / White'
+
+    level: secondary
+    size: small
+    items: 'import!./button-examples.yaml'
+  - heading:
+      text: 'Tertiary / White'
+    level: tertiary
+    size: small
+    items: 'import!./button-examples-tertiary.yaml'
+  - heading:
+      text: 'Tertiary / Gold'
+    level: tertiary
+    size: small
+    items: 'import!./button-examples-tertiary.yaml'
+  - heading:
+      text: 'Tertiary / Black'
+    theme: black
+    level: tertiary
+    size: small
+    items: 'import!./button-examples-tertiary.yaml'
+  - heading:
+      text: 'Tertiary / Dark Gold'
+    theme: dark-gold
+    level: tertiary
+    size: small
+    items: 'import!./button-examples-tertiary.yaml'

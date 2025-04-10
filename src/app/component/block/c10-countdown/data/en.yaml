@@ -1,0 +1,20 @@
+logo:
+  src: 'image/c10-countdown/logo-neom.svg'
+  alt: 'NEOM logo'
+
+heading: IT'S TIME TO DRAW THE LINE
+
+countdown:
+  date: ${countdown}
+  days: Days
+  hours: Hours
+  minutes: Minutes
+  seconds: Seconds
+
+languages:
+  activeLanguageCode: en
+  href: 'the-line'
+  options: 'import!../../../organism/o04-language-selector/data/languages.yaml'
+
+video:
+  src: 'video/the-line-background-video.mp4'

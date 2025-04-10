@@ -1,0 +1,63 @@
+.o-pagination {
+  --pagination-item-size: 60px;
+
+  position: relative;
+
+  &__container {
+    min-width: 100%;
+    margin: 0 auto 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+
+    &.-isHidden {
+      display: none;
+    }
+  }
+
+  &__list {
+    @include list-reset();
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item,
+  &__paginationControl {
+    @include size(var(--pagination-item-size));
+
+    margin-inline-end: 5px;
+  }
+
+  &__paginationControl {
+    .m-button {
+      --button-padding: 0;
+      --button-text-color: var(--color-black-75);
+      --button-border-color-disabled: var(--color-black-10a);
+      --button-text-color-disabled: var(--color-black-20a);
+
+      width: var(--button-size);
+    }
+
+    &.-isDisabled {
+      pointer-events: none;
+
+      .m-button__container {
+        --button-background-color: transparent;
+        --button-border-color: var(--color-black-20);
+        --button-text-color: var(--color-black-20);
+      }
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__container {
+      justify-content: center;
+    }
+
+    &__list {
+      flex-wrap: wrap;
+    }
+  }
+}

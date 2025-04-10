@@ -1,0 +1,74 @@
+.m-breadcrumbs {
+  --breadcrumbs-inactive-color: var(--color-dark-accent);
+  --breadcrumbs-active-color: var(--color-black-75);
+  --breadcrumbs-divider-color: var(--color-black-30a);
+
+  display: flex;
+
+  &__items {
+    align-items: center;
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    @include type("body", "xsmall");
+    @include textTransform;
+
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    text-transform: uppercase;
+    color: var(--breadcrumbs-inactive-color);
+
+    &.-isActive {
+      pointer-events: none;
+      color: var(--breadcrumbs-active-color);
+    }
+
+    &.-isNotClickable {
+      pointer-events: none;
+    }
+
+    &.-isHidden {
+      display: none;
+    }
+  }
+
+  &__divider {
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    color: var(--breadcrumbs-divider-color);
+    display: flex;
+    align-items: center;
+
+    &.-left {
+      color: currentColor;
+    }
+
+    &.-right {
+      display: none;
+    }
+
+    .a-icon {
+      @include size(7px);
+
+      [dir="rtl"] & {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__divider {
+      &.-left {
+        display: none;
+      }
+
+      &.-right {
+        display: flex;
+      }
+    }
+  }
+}

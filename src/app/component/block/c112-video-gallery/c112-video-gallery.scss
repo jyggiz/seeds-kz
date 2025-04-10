@@ -1,0 +1,45 @@
+.b-videoGallery {
+  background-color: var(--component-background-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+
+  &__container {
+    @include container;
+  }
+
+  &__items {
+    @include list-reset;
+
+    display: grid;
+    gap: 50px;
+    padding-block: 50px;
+  }
+
+  &__item {
+    .o-galleryCard {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .o-galleryCard__thumbnail {
+      @include aspect-ratio(3, 2);
+    }
+
+    .o-galleryCard__copy {
+      @include type("overline", "large");
+
+      color: var(--component-text-color);
+      margin-block-start: 23px;
+      position: relative;
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &__items {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 50px 80px;
+    }
+  }
+
+  @include neomThemes;
+}

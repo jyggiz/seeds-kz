@@ -1,0 +1,29 @@
+dir: ltr
+language: ru
+head: 'import!../app/data/yaml/seeds-npa.yaml'
+
+navigation: 'import!../app/component/organism/o97-navigation-placeholder/data/default.yaml'
+
+meta:
+  id: 'p01'
+  status: 'done'
+  notes: ''
+  category: 'Pages'
+
+blocks:
+  - name: 'c26-hero-banner'
+    data: 'import!../app/component/block/c26-hero-banner/data/seeds-npa.yaml'
+
+  - name: 'c75-image-grid'
+    data: 'import!../app/component/block/c75-image-grid/data/files.yaml'
+
+  - name: 'c75-image-grid'
+    data: 'import!../app/component/block/c75-image-grid/data/files-2.yaml'
+
+  - name: 'c75-image-grid'
+    data: 'import!../app/component/block/c75-image-grid/data/files-3.yaml'
+
+  - name: 's02-footer'
+    data: 'import!../app/component/block/s02-footer/data/seeds-index.yaml'
+
+scrollToTop: true

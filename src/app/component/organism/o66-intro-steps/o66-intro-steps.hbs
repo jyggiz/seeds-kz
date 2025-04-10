@@ -1,0 +1,26 @@
+
+<div class="o-introSteps"
+         data-component="o66-intro-steps"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         >
+  {{#if (condition type "===" "video")}}
+    <div class="o-introSteps__mapVideo" data-region-hotspots-video-container>
+      {{> atom/a19-video video}}
+      {{#each steps}}
+        <p class="o-introSteps__caption" data-region-hotspots-caption>
+          {{caption}}
+        </p>
+      {{/each}}
+    </div>
+  {{^}}
+    {{#each steps}}
+      <div class="o-introSteps__mapImage" data-region-hotspots-image-container>
+        {{> atom/a01-image image disableTransition=true}}
+        <p class="o-introSteps__caption" data-region-hotspots-caption>
+          {{caption}}
+        </p>
+      </div>
+    {{/each}}
+  {{/if}}
+</div>

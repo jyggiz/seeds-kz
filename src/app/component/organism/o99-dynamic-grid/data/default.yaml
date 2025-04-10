@@ -1,0 +1,56 @@
+columns:
+  columnsXS: 1
+  columnsS: 2
+  columnsM: 3
+  columnsL: 5
+gap: 40px
+autoRows: auto
+items:
+  - componentName: m53-tile-cta
+    data:
+      label: I'm interested in becoming a supplier
+      href: '#'
+  - componentName: m58-pillar-cta
+    data:
+      icon: dna
+      title: Research & innovation
+      label: Transform your business
+      href: '#'
+      backgroundImage:
+        disableTransition: true
+        src: './image/c26-hero-banner/formula-e-modal.jpg'
+        alt: ''
+  - componentName: m56-statistic-card
+    data:
+      figures:
+        - value: '486'
+          measure: 'KM'
+          label: 'COASTLINE LENGTH'
+        - value: '10-77'
+          measure: 'KM²'
+          label: 'land foorprint'
+        - value: '4'
+          measure: '%'
+          label: 'of world trade goes through red sea'
+        - value: '20'
+          label: 'number of islands'
+      images:
+        - src: 'image/c95-transition-slider/environment/1.png'
+          alt: 'desert'
+          title: 'Coastal desert'
+        - src: 'image/c95-transition-slider/environment/2.png'
+          alt: 'island'
+          title: 'Island'
+
+  - componentName: m53-tile-cta
+    data:
+      label: I'm interested in a specific region or company
+      href: '#'
+  - componentName: m53-tile-cta
+    data:
+      label: I'm interested in becoming a supplier
+      href: '#'
+  - componentName: m53-tile-cta
+    data:
+      label: I'm interested in a specific region or company
+      href: '#'

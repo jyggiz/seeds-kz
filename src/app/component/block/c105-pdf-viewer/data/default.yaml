@@ -1,0 +1,9 @@
+id: 'test'
+
+eyebrow:
+  text: Screen production at NEOM
+
+paginationLabel: Pages
+minimapLabel: Minimap
+
+pdfUrl: https://www.neom.com/content/dam/neom/mvp/media/filming/content-c24/NEOM_ScreenProduction_Brochure_Apr23-1_compressed.pdf

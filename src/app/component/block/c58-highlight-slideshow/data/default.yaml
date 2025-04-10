@@ -1,0 +1,163 @@
+disableUI: false
+
+roundedPagination: true
+disableScaleAnimation: false
+
+items:
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-1.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-1.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'An extraordinary escape'
+        size: 'h5'
+    description:
+      Leyja is a stunning natural valley carved between 400-meter high mountains. With three
+      boutique hotels - each with their own unique offering - guests who venture here can choose how
+      they wish to experience our spectacular destination.
+    active: true
+    eventTracking:
+      slider:
+        slideTitleInEnglish: title 1 in english
+    alignment:
+      vertical: bottom
+      horizontal: start
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-2.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-2.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Transformative experiences'
+        size: 'h3'
+    alignment:
+      vertical: middle
+      horizontal: start
+    active: false
+    eventTracking:
+      slider:
+        slideTitleInEnglish: title 2 in english
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-3.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-3.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Architectural excellence'
+        size: 'h3'
+
+    active: false
+    alignment:
+      vertical: top
+      horizontal: center
+    eventTracking:
+      slider:
+        slideTitleInEnglish: title 3 in english
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-4.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-4.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Premium luxury'
+        size: 'h3'
+
+    active: false
+    alignment:
+      vertical: bottom
+      horizontal: center
+    eventTracking:
+      slider:
+        slideTitleInEnglish: title 4 in english
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-5.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-5.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Protected heritage sites'
+        size: 'h3'
+    alignment:
+      vertical: bottom
+      horizontal: end
+    active: false
+    eventTracking:
+      slider:
+        slideTitleInEnglish: title 5 in english
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-6.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-6.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Thriving wildlife reserves'
+        size: 'h3'
+    alignment:
+      vertical: top
+      horizontal: start
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-7.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-7.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Advanced technology observatory'
+        size: 'h3'
+    alignment:
+      vertical: top
+      horizontal: end
+    active: false
+  - image:
+      src: 'image/c58-highlight-slideshow/highlight-8.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c58-highlight-slideshow/highlight-8.jpg'
+          media: '(min-width: 480px)'
+    header:
+      eyebrow:
+        text: 'Setting new global standards in'
+        size: large
+      heading:
+        text: 'Exclusive resorts, residences & events'
+        size: 'h3'
+    alignment:
+      vertical: top
+      horizontal: end
+    active: false

@@ -1,0 +1,84 @@
+.o-popupExpertContent {
+  &__wrapper {
+    background: var(--color-cream-25);
+    height: 100%;
+    overflow: scroll;
+  }
+
+  &__mask {
+    @include size(100%);
+    @include offset();
+
+    position: fixed;
+    background: var(--color-black-15a);
+    opacity: 0;
+  }
+
+  &__container {
+    width: 100%;
+    position: relative;
+    padding: 0 0 40px;
+    pointer-events: none;
+    padding-inline-start: 30px;
+    padding-inline-end: 55px;
+
+    [dir="rtl"] & {
+      direction: rtl;
+    }
+  }
+
+  &__question {
+    @include type("body", "medium");
+
+    color: var(--color-dark-accent);
+  }
+
+  &__answer {
+    @include type("body", "small");
+
+    color: var(--color-black);
+    margin: 35px 0 0;
+  }
+
+  .m-button.-close.-tertiary {
+    --button-size: 60px;
+    --icon-fill: var(--color-black-50);
+
+    position: sticky;
+    left: 100%;
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+
+    [dir="rtl"] & {
+      left: 0;
+    }
+  }
+
+  [dir="rtl"] & {
+    // Usefull for the Gsap translation X in AR pages
+    direction: ltr;
+  }
+
+  @include respond-to(XLARGE) {
+    &__mask {
+      opacity: 1;
+    }
+
+    &__container {
+      padding-inline-start: 45px;
+      padding-inline-end: 60px;
+    }
+  }
+
+  @include theme("oxagon") {
+    &__wrapper {
+      background: var(--color-oxagon-white);
+    }
+
+    &__question {
+      color: var(--color-accent);
+    }
+  }
+}

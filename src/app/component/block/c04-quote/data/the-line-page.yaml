@@ -1,0 +1,38 @@
+scrollComponent: true
+
+quote:
+  variant: royalAnnouncement
+  size: small
+  author:
+    prefix: His Royal Highness
+    name: Mohammed bin Salman, Crown Prince and Chairman of the NEOM Company Board of Directors
+  quote:
+    '“THE LINE will tackle the challenges facing humanity in urban life today and will shine a light
+    on alternative ways for humanity to live on Earth. We cannot ignore the livability and the
+    environmental crises facing our world’s cities, and NEOM is at the forefront of delivering new
+    and imaginative solutions to address these issues. We are bringing together the brightest minds
+    in architecture, engineering and construction to make the idea of building upwards a reality.
+    THE LINE and NEOM are an international endeavor because of the scale and importance of the
+    issues we hope to solve."'
+callToActions:
+  - label: Read press Release
+    href: neom.com
+    target: _blank
+    icon: arrow-right
+    level: secondary
+  - label: Royal announcement
+    icon: play-outline
+    data:
+      play-button:
+    video:
+      props:
+        youtube: xLN2Vu1iels
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true

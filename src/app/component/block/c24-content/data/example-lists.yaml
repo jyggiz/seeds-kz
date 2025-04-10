@@ -1,0 +1,20 @@
+scrollComponent: true
+variant: 'triple'
+items:
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'list'
+    content: 'import!../../../molecule/m17-list/data/bulleted.yaml'
+
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'list'
+    content: 'import!../../../molecule/m17-list/data/ordered.yaml'
+
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'list'
+    content: 'import!../../../molecule/m17-list/data/definitions.yaml'

@@ -1,0 +1,50 @@
+logo: 'import!../../../molecule/m19-logo/data/default.yaml'
+
+navigation:
+  main:
+    - label: 'Brand Story'
+      href: '/page-brandbook-brand-story.html'
+    - label: 'Visual Guidelines'
+      type: 'menu'
+      active: true
+      items:
+        - label: 'Neom'
+          items:
+            - label: 'Brand Marks'
+              href: './page-brandbook-brand-marks.html'
+            - label: 'Typograhpy'
+              href: './page-brandbook-typography.html'
+            - label: 'Colors'
+              href: './page-brandbook-colors.html'
+            - label: 'Grids'
+              href: './page-brandbook-grids.html'
+            - label: 'Iconography'
+              href: './page-brandbook-iconography.html'
+            - label: 'Call to actions'
+              href: './page-brandbook-call-to-actions.html'
+            - label: 'Forms'
+              href: './page-brandbook-forms.html'
+            - label: 'Photography'
+              href: './page-brandbook-photography.html'
+            - label: 'Cookies'
+              href: '#'
+            - label: 'Terms of Usage'
+              href: '#'
+            - label: 'Media'
+              href: '#'
+        - label: 'Oxagon'
+          #          active: true
+          items:
+            - label: 'Terms of Usage'
+              href: '#'
+            #              active: true
+            - label: 'Media'
+              href: '#'
+        - label: 'Trojena'
+
+    - label: 'Downloads'
+      href: '#'
+    - label: 'NEOM.com'
+      target: '_blank'
+      href: 'https://www.neom.com'
+# todo: determine languages support for the future

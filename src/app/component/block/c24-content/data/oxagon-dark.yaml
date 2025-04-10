@@ -1,0 +1,28 @@
+scrollComponent: true
+variant: 'single'
+theme: 'dark'
+items:
+  - align:
+      horizontal: center # start | center | end
+      vertical: middle # top | middle | bottom
+    type: 'paragraph'
+    content:
+      image:
+        src: 'image/c24-content/oxagon-dark.png'
+      heading:
+        text: 'Create the solutions for an <br /> <strong> industry  4.0 revolution </strong>'
+        size: h5
+        element: h2
+
+      copy:
+        size: 'small'
+        content:
+          '<p>OXAGON will help you to be a catalyst for advanced and clean industries, bringing
+          together the latest technologies and circular economy principles. This approach to 4.0
+          manufacturing will enable new and existing businesses to build and benefit from factories
+          of the future, creating products of the future.</p>'
+      buttons:
+        - level: primary
+          theme: dark-accent
+          label: 'Dark theme button'
+          size: small

@@ -1,0 +1,75 @@
+.b-simpleCardCarousel {
+  @include neomThemes;
+
+  --moustache-text-color: var(--component-text-color);
+
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+  background-color: var(--component-background-color);
+
+  &__container {
+    @include container;
+  }
+
+  &__buttonsWrapper {
+    margin-top: 40px;
+  }
+
+  &__textCard {
+    margin-block-end: 80px;
+
+    .swiper-slide & {
+      margin-inline-end: 60px;
+      margin-block-end: 0;
+      max-width: 420px;
+    }
+  }
+
+  .swiper-container {
+    overflow: visible;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    width: auto;
+    max-width: 540px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  .o-dynamicCarousel__controls {
+    display: none;
+  }
+
+  .o-galleryCard .m-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  &.-isSingleVariant {
+    .o-dynamicCarousel__controls {
+      top: 40px;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    .o-dynamicCarousel__controls {
+      @include size(140px, 60px);
+
+      display: block;
+      position: absolute;
+      top: 110px;
+      z-index: zindex($zLayout, content);
+      inset-inline-end: var(--containerMargin);
+
+      &.-isHidden {
+        display: none;
+      }
+    }
+  }
+}

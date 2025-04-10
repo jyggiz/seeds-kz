@@ -1,0 +1,43 @@
+scrollComponent: true
+
+filter:
+  title:
+    text: 'Сорта зерна'
+    size: h4
+  filterApiUrl: '/bin/api/newsroom/gallery?componentResourcePath=/content/neom/en-us/newsroom/gallery/jcr:content/root/responsivegrid/c46_media_list&' # Not disclosed for authors
+  devEnvironmentUrl: 'https://dev.neom.com' # Not disclosed for authors
+
+apiUrl: '/bin/api/assets/download'
+
+content:
+  items:
+    - heading: Рожь
+      image:
+        src: 'image/c24-content/seed-card-example.jpg'
+      description: '<p>Вид злака, выращиваемый преимущественно в умеренных широтах</p>'
+      href: /seed_card.html
+    - heading: Рожь
+      image:
+        src: 'image/c24-content/seed-card-example.jpg'
+      description: '<p>Вид злака, выращиваемый преимущественно в умеренных широтах</p>'
+      href: /seed_card.html
+    - heading: Рожь
+      image:
+        src: 'image/c24-content/seed-card-example.jpg'
+      description: '<p>Вид злака, выращиваемый преимущественно в умеренных широтах</p>'
+      href: /seed_card.html
+    - heading: Рожь
+      image:
+        src: 'image/c24-content/seed-card-example.jpg'
+      description: '<p>Вид злака, выращиваемый преимущественно в умеренных широтах</p>'
+      href: /seed_card.html
+    - heading: Рожь
+      image:
+        src: 'image/c24-content/seed-card-example.jpg'
+      description: '<p>Вид злака, выращиваемый преимущественно в умеренных широтах</p>'
+      href: /seed_card.html
+    - heading: Рожь
+      image:
+        src: 'image/c24-content/seed-card-example.jpg'
+      description: '<p>Вид злака, выращиваемый преимущественно в умеренных широтах</p>'
+      href: /seed_card.html

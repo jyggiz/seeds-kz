@@ -1,0 +1,111 @@
+.b-imageText {
+  @include fullMinHeight();
+
+  --image-text-pull-start: calc(var(--containerMargin) * -1);
+  --image-text-pull-end: var(--containerMargin);
+
+  [dir="rtl"] & {
+    --image-text-pull-end: calc(var(--containerMargin) * -1);
+    --image-text-pull-start: var(--containerMargin);
+  }
+
+  @include respond-to("MEDIUM") {
+    .o-contentGrid__item {
+      grid-column-end: span 5;
+    }
+
+    &.-assetFirst {
+      .o-contentGrid__item {
+        &.-asset {
+          grid-column-start: 1;
+        }
+
+        &.-paragraph {
+          grid-column-start: 7;
+        }
+      }
+
+      &.-assetPull {
+        .o-contentGrid__item {
+          &.-asset {
+            transform: translateX(var(--image-text-pull-start));
+          }
+        }
+      }
+    }
+
+    &.-assetLast {
+      // stylelint-disable no-descending-specificity
+      .o-contentGrid__item {
+        &.-asset {
+          grid-column-start: 8;
+        }
+
+        &.-paragraph {
+          grid-column-start: 2;
+        }
+      }
+      // stylelint-enable no-descending-specificity
+
+      &.-assetPull {
+        .o-contentGrid__item {
+          &.-asset {
+            transform: translateX(var(--image-text-pull-end));
+          }
+        }
+      }
+    }
+  }
+
+  &.-wideAsset {
+    &.-assetFirst {
+      .o-contentGrid__item {
+        &.-asset {
+          grid-column: 2 / span 5;
+        }
+
+        &.-paragraph {
+          grid-column: 8 / span 4;
+        }
+      }
+    }
+
+    &.-assetLast {
+      .o-contentGrid__item {
+        &.-asset {
+          grid-column: 7 / span 5;
+        }
+
+        &.-paragraph {
+          grid-column: 2 / span 4;
+        }
+      }
+    }
+  }
+
+  &.-tallAsset {
+    &.-assetFirst {
+      .o-contentGrid__item {
+        &.-asset {
+          grid-column: 2 / span 4;
+        }
+
+        &.-paragraph {
+          grid-column: 8 / span 4;
+        }
+      }
+    }
+
+    &.-assetLast {
+      .o-contentGrid__item {
+        &.-asset {
+          grid-column: 8 / span 4;
+        }
+
+        &.-paragraph {
+          grid-column: 2 / span 4;
+        }
+      }
+    }
+  }
+}

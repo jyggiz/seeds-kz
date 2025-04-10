@@ -1,0 +1,60 @@
+<section class="b-multiStepForm" data-component="c59-multi-step-form" {{#if
+  scrollComponent}}data-scroll-component{{/if}} {{#if id}} id="{{id}}" {{/if}}
+  data-lazy-component
+  data-sitekey="{{recaptcha.sitekey}}"
+  {{#with conditionalStep}}data-conditional-step="{{toJson this}}"{{/with}}
+  {{#with titleInEnglish}}data-title-in-english="{{this}}"{{/with}}
+>
+
+  <div class="b-multiStepForm__submitView" data-form-submitView>
+    {{> organism/o73-submit-step submitView}}
+
+  </div>
+
+  <div class="b-multiStepForm__container" data-form-container>
+
+    <div class="b-multiStepForm__background">
+      {{> molecule/m34-component-background background disableTransition=true scrollComponent=true }}
+      <div class="b-multiStepForm__legendContainer">
+        {{#each steps}}
+          <div class="b-multiStepForm__legend -step{{@index}} {{#if (condition @index '==' 0)}}-isActive{{/if}}"
+               data-form-step-legend>
+            {{> molecule/m04-component-header header
+              disableTransition=true alignment='none'}}</div>
+        {{/each}}
+      </div>
+      {{#with recaptcha.statement}}
+        {{> atom/a32-recaptcha-statement statement=this }}
+      {{/with}}
+    </div>
+
+    <div class="b-multiStepForm__content">
+      <form class="b-multiStepForm__form" data-form
+            data-api-url="{{apiUrl}}" id="{{id}}" dir="{{dir}}">
+        <input type="hidden" name="form_id" value="{{form_id}}" />
+        <div class="b-multiStepForm__sliderContainer" data-slider-container>
+          <div class="b-multiStepForm__slider swiper-container" data-slider>
+            <div class="b-multiStepForm__items swiper-wrapper" data-slider-wrapper>
+              {{!-- Form step start --}}
+              {{#each steps}}
+                <div class="b-multiStepForm__item swiper-slide" data-slider-item>
+                  <div class="b-multiStepForm__emptyScrollArea"></div>
+
+                  {{> ./component/organism/form-step this step=@index recaptchaStatement=../recaptcha.statement}}
+
+                </div>
+              {{/each}}
+              {{!-- Form step end --}}
+            </div>
+          </div>
+        </div>
+
+        <div class="b-multiStepForm__controls" data-form-controls>
+          {{> atom/a24-progress-bar current=(arithmetic 100 '/' steps.length) }}
+          {{> ./component/organism/form-controls}}
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>

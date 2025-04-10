@@ -1,0 +1,241 @@
+scrollComponent: true
+
+static: false
+
+alternateHotspotStyle: true
+
+mapBackground:
+  src: 'image/c61-hotspot-map/world-map.jpg'
+  alt: 'map image'
+
+mobileInstructions: 'import!../../../organism/o65-mobile-instructions/data/without-notice.yaml'
+stopExploringButton:
+  icon: exit
+  size: small
+  theme: black
+  label: EXIT
+  variant: leftIcon
+
+items:
+  - content:
+      - heading:
+          text: OCEANX
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: OCEANX
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    active: false
+    offset:
+      y: 45
+      x: 15.5
+  - content:
+      - heading:
+          text: AFC
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: AFC
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 61.1
+      x: 73.5
+  - content:
+      - heading:
+          text: Mercedes-EQ Formula E Team
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise  waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Mercedes-EQ Formula E Team
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 34
+      x: 47
+  - content:
+      - heading:
+          text: Air products
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Air products
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 41.4
+      x: 26.8
+  - content:
+      - heading:
+          text: Gulf Modular International
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Gulf Modular International
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 33.5
+      x: 46.2
+  - content:
+      - heading:
+          text: Hyzon
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Midian Tombs Province is located on the Gulf
+          of Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the
+          road that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what
+          strikes people first is the imposing shape of the 600-meter-high granite massif of the
+          Tayeb Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Hyzon
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 41
+      x: 27.8
+  - content:
+      - heading:
+          text: Volocopter
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Volocopter
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 36
+      x: 49
+  - content:
+      - heading:
+          text: KAUST
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.Tayeb Al-Ism is one of the magical
+          natural wonders'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: KAUST
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 50.9
+      x: 57.3
+  - content:
+      - heading:
+          text: Desert Technologies
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Desert Technologies
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+      - heading:
+          text: Saudia
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: Saudia
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 52
+      x: 57.3
+  - content:
+      - heading:
+          text: MBC
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: MBC
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+      - heading:
+          text: SAFEIS
+        copy:
+          'Tayeb Al-Ism is one of the magical natural wonders of Saudi Arabia that takes visitors by
+          surprise. This incredible natural feature of Tabuk Province is located on the Gulf of
+          Aqaba, just 15 kilometers north of the coastal town of Maqna. When approaching by the road
+          that runs along the turquoise waters and white beaches of the Gulf of Aqaba, what strikes
+          people first is the imposing shape of the 600-meter-high granite massif of the Tayeb
+          Al-Ism, whose sharp edges fall into the Gulf of Aqaba.'
+        buttons:
+          - label: 'Find out more'
+            href: '#'
+        image:
+          alt: SAFEIS
+          src: 'image/c61-hotspot-map/c32-modal-image.jpg'
+    offset:
+      y: 50.5
+      x: 59.5

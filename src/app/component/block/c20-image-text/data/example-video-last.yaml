@@ -1,0 +1,40 @@
+variant: 'wideAsset'
+theme: 'dark'
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: 'NEOM'
+        size: 'small'
+      heading:
+        text: 'is a vision of what the future might look like'
+        size: h6
+        element: h2
+      copy:
+        size: 'small'
+        content:
+          '<p><small>It’s an attempt to do something that’s never been done before and it’s coming
+          at a time when the world needs fresh thinking and new solutions. Simply put, NEOM will be
+          a destination, a home for people who dream big and want to be part of building a new model
+          for sustainable living, working and prospering.</small></p>'
+      buttons: 'import!./partial-buttons-video-white.yaml'
+
+  - align:
+      horizontal: start
+      vertical: middle
+    type: asset
+    content:
+      video:
+        props:
+          sources:
+            - src: './video/background-video-preview.mp4'
+              type: video/mp4
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: true
+          loop: true
+          disablePreload: true

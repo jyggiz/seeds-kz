@@ -1,0 +1,13 @@
+.c118-grid {
+  @include container;
+
+  &.-noPadding {
+    padding-inline: 0;
+  }
+
+  @include respond-to("MEDIUM") {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+  }
+}

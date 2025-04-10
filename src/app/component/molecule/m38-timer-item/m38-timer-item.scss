@@ -1,0 +1,53 @@
+.m-timerItem {
+  --time-item-color: var(--color-gold);
+  &__digit {
+    @include type("heading", "h2");
+    font-weight: 200;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .a-label {
+    bottom: -10px;
+    color: --time-item-color;
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+  }
+
+  @include respond-to("LARGE") {
+    &__digit {
+      &.-h1 {
+        @include type("heading", "h1");
+      }
+
+      &.-h2 {
+        @include type("heading", "h2");
+      }
+
+      &.-h3 {
+        @include type("heading", "h3");
+      }
+
+      &.-h4 {
+        @include type("heading", "h4");
+      }
+
+      &.-h5 {
+        @include type("heading", "h5");
+      }
+
+      &.-h6 {
+        @include type("heading", "h6");
+      }
+    }
+    .a-label {
+      @include type("button", "large");
+    }
+  }
+}

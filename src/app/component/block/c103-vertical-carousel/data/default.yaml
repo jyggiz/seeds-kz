@@ -1,0 +1,54 @@
+theme: dark
+
+padding:
+  start: large
+
+hideInactiveSlides: true
+
+eyebrow:
+  text: 'Why choose Neom?'
+scrollLabel: 'Scroll'
+
+items:
+  - heading:
+      text: 'Investment'
+    copy:
+      "We call ourselves 'dreamers and doers' for a reason: we can make happen not just what is
+      possible, but what is impossible. <br> NEOM is a unique investment opportunity, unrivalled
+      anywhere else. This is not business as usual. Be a part of it. Invest in the new future now,
+      invest in NEOM."
+    image:
+      src: 'image/c103-vertical-carousel/invest.jpg'
+      alt: 'The Line construction'
+    cta:
+      label: 'Invest'
+      href: '#'
+      theme: 'dark-accent'
+  - heading:
+      text: 'Careers'
+    copy:
+      "We're collaborating on fresh ideas and new solutions built on pure creativity and innovation.
+      <br> By becoming part of our team at NEOM, you will join world-leading talents; a global
+      community of visionary minds and adventurous spirits, brought together by the chance to make
+      history."
+    image:
+      src: 'image/c103-vertical-carousel/careers.jpg'
+      alt: '4 persons'
+    cta:
+      label: 'Explore'
+      href: '#'
+      theme: 'dark-accent'
+  - heading:
+      text: 'Industry 4.0'
+    copy:
+      "We're creating the factories of the future. Oxagon will be a circular economy where
+      innovators and entrepreneurs can rapidly accelerate ideas from lab to market. Driven by
+      Industry 4.0, our fully-automated next-gen port will offer instant and unparalleled
+      connectivity to the world."
+    image:
+      src: 'image/c103-vertical-carousel/industry.jpg'
+      alt: 'The Line construction'
+    cta:
+      label: 'More'
+      href: '#'
+      theme: 'dark-accent'

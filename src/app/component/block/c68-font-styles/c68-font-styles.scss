@@ -1,0 +1,338 @@
+.b-fontStyles {
+  --component-border-color: var(--color-black-10);
+
+  @include type("body", "small");
+
+  padding: 0 0 60px;
+
+  &__accordionsHeading {
+    @include type("body", "large");
+
+    border-bottom: 1px solid var(--component-border-color);
+    color: var(--color-black-75);
+    padding: 40px 0;
+    text-transform: none;
+  }
+
+  &__accordionsWrapper {
+    @include container("compact");
+    &.-isHidden {
+      display: none;
+    }
+  }
+
+  &__accordion {
+    border-bottom: 1px solid var(--component-border-color);
+    padding: 0 0 20px;
+  }
+
+  &__accordionTitle {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .m-toggleButton {
+      transition: transform 0.3s ease;
+
+      &.-accordion {
+        width: auto;
+      }
+
+      &.-rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__accordionTitleCopy {
+    width: 100%;
+  }
+
+  &__accordionBodyColumn {
+    width: 50%;
+  }
+
+  &__accordionBody {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+
+    &.-show {
+      height: auto;
+    }
+  }
+
+  &__accordionBodyCopy {
+    @include type("overline", "large");
+    margin: 0 0 20px;
+  }
+
+  &__tableWrapper {
+    &.-isHidden {
+      display: none;
+    }
+  }
+
+  &.-desktop {
+    .-h1 {
+      @include typeFixed("heading", "h1", "desktop");
+    }
+
+    .-h2 {
+      @include typeFixed("heading", "h2", "desktop");
+    }
+
+    .-h3 {
+      @include typeFixed("heading", "h3", "desktop");
+    }
+
+    .-h4 {
+      @include typeFixed("heading", "h4", "desktop");
+    }
+
+    .-h5 {
+      @include typeFixed("heading", "h5", "desktop");
+    }
+
+    .-h6 {
+      @include typeFixed("heading", "h6", "desktop");
+    }
+
+    .-overlineL {
+      @include typeFixed("overline", "large", "desktop");
+    }
+
+    .-overlineM {
+      @include typeFixed("overline", "medium", "desktop");
+    }
+
+    .-overlineS {
+      @include typeFixed("overline", "small", "desktop");
+    }
+
+    .-navigationL {
+      @include typeFixed("navigation", "large", "desktop");
+    }
+
+    .-navigationS {
+      @include typeFixed("navigation", "small", "desktop");
+    }
+
+    .-capsCopyL {
+      @include typeFixed("capsCopy", "large", "desktop");
+    }
+
+    .-capsCopyS {
+      @include typeFixed("capsCopy", "small", "desktop");
+    }
+
+    .-subTitleL {
+      @include typeFixed("subTitle", "large", "desktop");
+    }
+
+    .-subTitleS {
+      @include typeFixed("subTitle", "small", "desktop");
+    }
+
+    .-bodyXXL {
+      @include typeFixed("body", "xxlarge", "desktop");
+    }
+
+    .-bodyXL {
+      @include typeFixed("body", "xlarge", "desktop");
+    }
+
+    .-bodyL {
+      @include typeFixed("body", "large", "desktop");
+    }
+
+    .-bodyM {
+      @include typeFixed("body", "medium", "desktop");
+    }
+
+    .-bodyS {
+      @include typeFixed("body", "small", "desktop");
+    }
+
+    .-body14 {
+      @include typeFixed("exception", "body14", "desktop");
+    }
+
+    .-bodyXS {
+      @include typeFixed("body", "xsmall", "desktop");
+    }
+
+    .-tags {
+      @include typeFixed("tag", "medium", "desktop");
+    }
+
+    .-filters {
+      @include typeFixed("exception", "filters", "desktop");
+      text-transform: uppercase;
+    }
+
+    .-small-links {
+      @include typeFixed("exception", "small-links", "desktop");
+    }
+
+    .-number {
+      @include typeFixed("exception", "factsNumberOutline", "desktop");
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--color-gold);
+    }
+  }
+
+  &.-mobile {
+    .-h1 {
+      @include typeFixed("heading", "h1", "mobile");
+    }
+
+    .-h2 {
+      @include typeFixed("heading", "h2", "mobile");
+    }
+
+    .-h3 {
+      @include typeFixed("heading", "h3", "mobile");
+    }
+
+    .-h4 {
+      @include typeFixed("heading", "h4", "mobile");
+    }
+
+    .-h5 {
+      @include typeFixed("heading", "h5", "mobile");
+    }
+
+    .-h6 {
+      @include typeFixed("heading", "h6", "mobile");
+    }
+
+    .-overlineL {
+      @include typeFixed("overline", "large", "mobile");
+    }
+
+    .-overlineM {
+      @include typeFixed("overline", "medium", "mobile");
+    }
+
+    .-overlineS {
+      @include typeFixed("overline", "small", "mobile");
+    }
+
+    .-navigationL {
+      @include typeFixed("navigation", "large", "mobile");
+    }
+
+    .-navigationS {
+      @include typeFixed("navigation", "small", "mobile");
+    }
+
+    .-capsCopyL {
+      @include typeFixed("capsCopy", "large", "mobile");
+    }
+
+    .-capsCopyS {
+      @include typeFixed("capsCopy", "small", "mobile");
+    }
+
+    .-subTitleL {
+      @include typeFixed("subTitle", "large", "mobile");
+    }
+
+    .-subTitleS {
+      @include typeFixed("subTitle", "small", "mobile");
+    }
+
+    .-bodyXXL {
+      @include typeFixed("body", "xxlarge", "mobile");
+    }
+
+    .-bodyXL {
+      @include typeFixed("body", "xlarge", "mobile");
+    }
+
+    .-bodyL {
+      @include typeFixed("body", "large", "mobile");
+    }
+
+    .-bodyM {
+      @include typeFixed("body", "medium", "mobile");
+    }
+
+    .-bodyS {
+      @include typeFixed("body", "small", "mobile");
+    }
+
+    .-body14 {
+      @include typeFixed("exception", "body14", "mobile");
+    }
+
+    .-bodyXS {
+      @include typeFixed("body", "xsmall", "mobile");
+    }
+
+    .-tags {
+      @include typeFixed("tag", "medium", "mobile");
+    }
+
+    .-filters {
+      @include typeFixed("exception", "filters", "mobile");
+      text-transform: uppercase;
+    }
+
+    .-small-links {
+      @include typeFixed("exception", "small-links", "mobile");
+    }
+
+    .-number {
+      @include typeFixed("exception", "factsNumberOutline", "mobile");
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--color-gold);
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__tableWrapper {
+      @include container("compact");
+    }
+
+    &__table {
+      @include type("body", "small");
+
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    &__col {
+      width: 10%;
+
+      &.-style {
+        width: 30%;
+      }
+
+      &.-font,
+      &.-weight {
+        width: 15%;
+      }
+    }
+
+    &__cell {
+      text-align: start;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--component-border-color);
+
+      &.-spacing,
+      &.-lineHeight {
+        text-align: end;
+      }
+
+      .b-fontStyles__thead & {
+        @include type("body", "xsmall");
+
+        padding: 40px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.a-progressBar {
+  --progress-bar-loaded-background: var(--color-black-10a);
+  --progress-bar-selected-background: var(--color-white-50a);
+
+  @include size(100%, var(--progress-bar-height, 4px));
+
+  background-color: var(--progress-bar-background, #ccc);
+  position: relative;
+  user-select: none;
+
+  &__duration {
+    @include size(0, 100%);
+
+    bottom: 0;
+    position: absolute;
+    top: 0;
+
+    [dir="ltr"] & {
+      left: 0;
+    }
+
+    [dir="rtl"] & {
+      right: 0;
+    }
+
+    &.-loaded {
+      background-color: var(--progress-bar-loaded-background, #eee);
+      pointer-events: none;
+      width: var(--progress-bar-loaded, 0%);
+      z-index: 1;
+    }
+
+    &.-current {
+      background-color: var(--progress-bar-current-background, #666);
+      pointer-events: none;
+      width: var(--progress-bar-current, 0%);
+      z-index: 2;
+    }
+
+    &.-selected {
+      background-color: var(--progress-bar-selected-background, rgba(255, 255, 255, 0.5));
+      width: var(--progress-bar-selected, 0%);
+      z-index: 3;
+    }
+  }
+
+  &.-dark {
+    --progress-bar-background: var(--color-black-90);
+    --progress-bar-current-background: var(--color-gold);
+    --progress-bar-loaded-background: var(--color-black-75);
+    --progress-bar-selected-background: var(--color-white-50a);
+  }
+}

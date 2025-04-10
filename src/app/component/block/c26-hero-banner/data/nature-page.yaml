@@ -1,0 +1,17 @@
+scrollComponent: true
+
+align:
+  horizontal: center # start | center | end
+  vertical: middle # top | middle | bottom
+
+background:
+  image:
+    src: './image/homepage-mountain-background.jpg'
+    alt: 'Mountain background'
+
+content:
+  header:
+    heading:
+      element: h1
+      size: h3
+      text: Tourism at NEOM

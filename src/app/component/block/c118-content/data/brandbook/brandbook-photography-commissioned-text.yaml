@@ -1,0 +1,54 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m16-figure
+          data:
+            variant: square
+            image:
+              variant: contain
+              src: 'image/c24-content/brandbook-photography-commissioned.png'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 1 / 2 / 5
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: 'Commissioned Photography'
+              size: 'medium'
+            heading:
+              size: 'h6'
+              text:
+                'Commissioned environmental photography follows the same principles as bought
+                photography.'
+            copy:
+              size: 'medium'
+              content:
+                '<p>Portraiture and group shots are more subtle because of their personal nature.
+                NEOM is at the start of its journey but it needs to feel like a real place is taking
+                shape. NEOM’s principles of future facing, multifaceted, graphic and bold in color
+                underpin all commissioned photography, and as much as it must look beautiful and
+                aspirational it must also feel as real as possible.<br><br>The choice of
+                photographer is critical to any shoot and must be chosen based on experience
+                capturing the NEOM style.</p>'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 1 / 6 / 2 / 12

@@ -1,0 +1,99 @@
+.b-siteIndex {
+  --content-row-gap: 30px;
+  --section-heading-margin: 30px;
+  --section-padding: 50px;
+  --column-heading-margin: 0;
+  --column-row-gap: 30px;
+  --subcolumn-row-gap: 30px;
+  --subcolumn-margin: 0;
+
+  padding: var(--component-block-padding, var(--container-margin)) 0;
+  position: relative;
+
+  * {
+    list-style: none;
+  }
+
+  &__container {
+    @include container;
+
+    & > .a-heading {
+      text-decoration: underline;
+    }
+  }
+
+  &__section {
+    padding: var(--section-padding) 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-black-10);
+    }
+
+    &Heading {
+      font-size: unset;
+      margin-bottom: var(--section-heading-margin);
+
+      .m-link .a-label {
+        @include type("heading", "h6");
+
+        color: var(--color-dark-accent);
+      }
+    }
+
+    &Content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(max(20%, 250px), 1fr));
+      column-gap: var(--grid-gap);
+      row-gap: var(--content-row-gap);
+    }
+
+    &Column {
+      display: grid;
+      row-gap: var(--column-row-gap);
+
+      @include respond-to(MEDIUM) {
+        grid-auto-rows: minmax(25px, max-content);
+
+        &.-noHeading:before {
+          @include pseudo(block, static, "");
+        }
+      }
+    }
+
+    &Subcolumn {
+      margin: var(--subcolumn-margin) 0;
+      padding-inline-start: 20px;
+      border-inline-start: 1px solid currentColor;
+
+      .b-siteIndex__sectionItem {
+        margin-top: var(--subcolumn-row-gap);
+      }
+    }
+
+    &Item .m-link .a-label {
+      @include type("overline", "medium");
+
+      color: var(--color-black-75);
+      font-weight: 300;
+      text-transform: none;
+      text-decoration: underline;
+      flex: auto;
+
+      &.-heading {
+        @include type("button", "large");
+
+        margin-bottom: var(--column-heading-margin);
+      }
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    --content-row-gap: 50px;
+    --section-heading-margin: 20px;
+    --section-padding: 60px;
+    --column-heading-margin: 10px;
+    --column-row-gap: 10px;
+    --subcolumn-row-gap: 10px;
+    --subcolumn-margin: 10px;
+  }
+}

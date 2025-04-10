@@ -1,0 +1,93 @@
+.o-galleryCard {
+  @include neomThemes;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 284px;
+  max-width: 540px;
+
+  &__thumbnail {
+    @include imageRatio();
+
+    position: relative;
+
+    &__play {
+      bottom: 24px;
+      left: 24px;
+      position: absolute;
+    }
+
+    &__fullscreen {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px var(--button-shadow-color);
+      z-index: 1;
+
+      > .m-button {
+        --button-background-color: var(--color-white);
+        --button-border-color: var(--color-white-20a);
+        --button-size: 60px;
+        --button-text-color: var(--color-black);
+      }
+    }
+  }
+
+  &__copy {
+    @include type("body", "small");
+
+    margin: 10px 0;
+    padding: 0;
+    color: var(--component-text-color);
+  }
+
+  &__download {
+    @include type("exception", "download-zip");
+
+    --icon-size: 10px;
+
+    color: var(--content-link-color);
+    margin-block-start: 20px;
+    text-align: center;
+    transition: color 0.2s ease-in-out;
+
+    @include hover() {
+      color: var(--content-link-color-hover);
+    }
+
+    .a-icon {
+      vertical-align: baseline;
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    margin: 60px 0;
+
+    &.-landscape {
+      width: 600px;
+    }
+
+    &.-portrait {
+      width: 512px;
+    }
+
+    &.-widescreen {
+      width: 720px;
+    }
+
+    &__thumbnail {
+      &__fullscreen {
+        bottom: 15px;
+        right: 15px;
+      }
+    }
+
+    &__download {
+      text-align: end;
+    }
+  }
+}

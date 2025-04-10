@@ -1,0 +1,11 @@
+
+<div class="o-lightbox" data-component="o38-lightbox" aria-modal="true" role="dialog" data-i18n="{{toJson @root.i18n
+.modals}}">
+  <div class="o-lightbox__mask" data-lightbox-mask></div>
+  {{> molecule/m02-button level="secondary" icon="close" theme="white" variant="close" aria=(object label=@root.i18n.modals.common.back)}}
+  <div class="o-lightbox__wrapper" data-lightbox-wrapper>
+    <div class="o-lightbox__container" data-lightbox-container>
+      {{!-- Lightbox content injected here --}}
+    </div>
+  </div>
+</div>

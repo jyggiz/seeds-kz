@@ -1,0 +1,39 @@
+.b-layeredComponentDemo {
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+  position: relative;
+
+  &__heading {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__sliderPagination {
+    display: none;
+  }
+
+  @include respond-to(MEDIUM) {
+    min-height: 100vh;
+    overflow: hidden;
+
+    &__slider {
+      margin-right: 80px;
+      position: relative;
+      height: 100%;
+    }
+
+    &__heading {
+      margin-bottom: fluid-clamp-ideal(50px, 100px, 768px, 1440px);
+      padding: 0 80px;
+      text-align: start;
+    }
+
+    &__sliderPagination {
+      display: block;
+      padding: 0 80px;
+    }
+  }
+
+  @include neomThemes;
+}

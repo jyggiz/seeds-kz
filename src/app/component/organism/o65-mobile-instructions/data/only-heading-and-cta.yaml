@@ -1,0 +1,7 @@
+heading:
+  element: h2
+  text: Explore <strong>Magna</strong>
+  size: h4
+button:
+  size: small
+  label: start exploring

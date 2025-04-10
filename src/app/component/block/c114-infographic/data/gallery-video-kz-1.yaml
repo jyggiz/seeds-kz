@@ -1,0 +1,217 @@
+scrollComponent: true
+headingStartAlignment: true
+padding:
+  start: 'regular'
+  end: 'regular'
+heading:
+  element: h2
+  size: h4
+  text: 'Семинарлар'
+  alignment: start
+image:
+  src: '/image/c46-media-list/item1.jpg'
+  alt: ''
+lightbox: true
+
+items:
+  - variant: 'landscape'
+    video:
+      props:
+        sources:
+          - src: '/video/seminar.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+    image:
+      src: '/image/c46-media-list/seminar_preview.jpg'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/seminar_preview.jpg'
+    copy: '"Дәнді дақылдардың тұрақты өнімін алу" семинарының өтуі туралы есеп'
+  - variant: 'landscape'
+    video:
+      props:
+        youtube: lFtYCQRZF1M
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: '/image/c46-media-list/seminar-2.jpg'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/seminar-2.jpg'
+    copy: '2024 жылғы 3 шілдеде "бұршақ дақылдарын өсіру ерекшеліктері (бұршақ мысалында)" тақырыбындағы семинар'
+  - variant: 'landscape'
+    video:
+      props:
+        youtube: 444DjyxtmH0
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: '/image/c46-media-list/seminar-4.jpg'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/seminar-4.jpg'
+    copy: '"Майлы дақылдардың тәжірибелік шаруашылығы" ЖШС мысалында күнбағыс будандарын өсіру технологиясы'
+  - variant: 'landscape'
+    video:
+      props:
+        youtube: DU-VTO04auQ
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: '/image/c46-media-list/seminar-3.jpg'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/seminar-3.jpg'
+    copy: '2024 жылғы 8 қазанда "жүгері: ШҚО-да өсіру технологиясының ерекшеліктері"тақырыбында семинар өткізілді'
+  - variant: 'landscape'
+    video:
+      props:
+        youtube: 7EA6UqP2O2c
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: '/image/c46-media-list/seminar-5.jpg'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/seminar-5.jpg'
+    copy: '"ШҚО-да ресурстарды үнемдейтін егіншілік элементтері бар дәнді дақылдардың тұрақты өнімін алу"'
+  - variant: 'landscape'
+    video:
+      props:
+        youtube: sqYwJNUPynQ
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: '/image/c46-media-list/seminar-6.jpg'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/seminar-6.jpg'
+    copy: '2024 жылғы 9 қазанда "күздік бидай өсіру технологиясы"тақырыбында семинар ұйымдастырылып, өткізілді'
+  - variant: 'landscape'
+    video:
+      props:
+        youtube: fYWNxiZIXZk
+        cover: true
+        vimeo: 209537164
+        originalWidth: 3
+        originalHeight: 1
+        autoplay: true
+        controls:
+          playPause: true
+          volumeToggle: true
+          seek: true
+          fullscreen: true
+      playCta:
+        title: Play video
+      pauseCta:
+        title: Pause video
+      mutaCta:
+        title: Mute
+      unmuteCta:
+        title: Unmute
+      fullscreenCta:
+        title: Toggle fullscreen
+    image:
+      src: '/image/c46-media-list/seminar-7.jpg'
+    lightbox:
+      image:
+        src: '/image/c46-media-list/seminar-7.jpg'
+    copy: '21.11.2024 ж. "егістік дақылдарының агроклиматтық жағдайларға тәуелділігі 2020-2024 ж."семинары'

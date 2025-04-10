@@ -1,0 +1,8 @@
+<div class="o-staticGrid__item grid-item--{{@index}}"
+     style="{{#if alignment.vertical}}--vertical-align-{{@index}}: {{alignment.vertical}};{{/if}}
+       {{#if gridArea.smallScreen}}--grid-area-small-{{@index}}: {{gridArea.smallScreen}};{{/if}}
+       {{#if gridArea.mediumScreen}}--grid-area-medium-{{@index}}: {{gridArea.mediumScreen}};{{/if}}
+       {{#if gridArea.largeScreen}}--grid-area-large-{{@index}}: {{gridArea.largeScreen}};{{/if}}"
+     data-grid-item>
+  {{> (lookup . 'componentName') data }}
+</div>

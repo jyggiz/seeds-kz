@@ -1,0 +1,36 @@
+scrollComponent: true
+
+grid:
+  fullWidth: true
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: نيوم
+            heading:
+              text: هي الرؤية الطّموحة التي ستشكل المستقبل الجديد
+              size: h4
+              element: h2
+            copy:
+              '<p>هي مواجهة تحدي التغيير الذي لم يجرؤ أحد على خوضه من قبل، في زمن يحتاج فيه العالم
+              للتفكير بطريقة مبتكرة وإيجاد حلول جديدة. وبعبارة أوضح، لن تكون نيوم مجرد وجهة، بل
+              ستفتح أبوابها لتكون موطناً لأصحاب الأحلام الكبيرة، ولكل من يطمح أن يُسهم في بناء نموذج
+              جديد لاستدامة الحياة والعمل والازدهار.</p>'
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                level: primary
+                theme: white
+                label: عرض البرنامج
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

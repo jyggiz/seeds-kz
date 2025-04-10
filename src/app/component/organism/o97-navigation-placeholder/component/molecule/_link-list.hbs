@@ -1,0 +1,14 @@
+<ul>
+    {{#each items}}
+        <li>
+            {{#if (condition type '===' 'CTA')}}
+                {{> ../atom/_list-item.hbs button}}
+            {{^}}
+                {{> ../atom/_list-item this}}
+            {{/if}}
+            {{#if items}}
+                {{> ./_link-list.hbs items=items}}
+            {{/if}}
+        </li>
+    {{/each}}
+</ul>

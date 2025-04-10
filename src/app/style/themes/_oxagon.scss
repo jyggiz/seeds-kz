@@ -1,0 +1,28 @@
+@include theme("oxagon", true) {
+  --color-accent: var(--color-teal);
+  --color-accent-25: var(--color-teal-25);
+  --color-accent-50: var(--color-teal-50);
+  --color-accent-hover: var(--color-white);
+  --button-text-color-hover: var(--color-white);
+
+  --color-dark-accent: var(--color-purple-blue);
+  --color-dark-accent-00a: var(--color-purple-blue-00a);
+  --color-dark-accent-10a: var(--color-purple-blue-10a);
+  --color-dark-accent-20a: var(--color-purple-blue-20a);
+  --color-dark-accent-70a: var(--color-purple-blue-70a);
+
+  --color-dark-blue: #2b3640;
+  --color-light-blue: #009abb;
+  --color-oxagon-white: #f0f0ee;
+  --color-gradient-dark-blue: linear-gradient(180deg, #2b3640 0%, #252b5b 100%);
+
+  --component-text-color: var(--color-dark-blue);
+  --component-heading-color: var(--color-dark-blue);
+  --component-highlight-color: var(--color-accent);
+
+  --color-page-background: var(--color-oxagon-white);
+  --checkbox-group-background-color: var(--color-black-10);
+
+  --progress-bar-background: var(--color-page-background);
+  --progress-bar-current-background: var(--color-light-blue);
+}

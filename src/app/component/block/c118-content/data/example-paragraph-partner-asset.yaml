@@ -1,0 +1,34 @@
+scrollComponent: true
+theme: 'dark'
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            image:
+              src: 'image/c51-logos/mediamonks-logo.svg'
+              alt: 'Hello world'
+            copy:
+              size: small
+              content:
+                '<p>NEOM is not just a place – it is a mindset. Citizens will embody an
+                international ethos and embrace a culture of exploration, risk-taking and diversity,
+                all supported by a progressive legal system compatible with international norms &
+                conducive to economic growth.</p>'
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                size: small
+                label: hello world
+                theme: white
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

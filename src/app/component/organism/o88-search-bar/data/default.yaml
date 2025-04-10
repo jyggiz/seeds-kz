@@ -1,0 +1,4 @@
+redirectUrl: '#'
+placeholder: 'Placeholder text'
+id: 'search'
+inputId: 'input-search-id'

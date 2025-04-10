@@ -1,0 +1,20 @@
+.m-dropdownField {
+  margin: 0 0 40px;
+  position: relative;
+
+  &__textLabel {
+    margin: 0 0 10px;
+
+    &.-isRequired::after {
+      @include asterisk();
+    }
+  }
+
+  &__dependentDropdown:first-of-type {
+    margin-top: 20px;
+  }
+
+  &__optionalTextarea {
+    margin-top: 20px;
+  }
+}

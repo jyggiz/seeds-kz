@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="./m22-person-card.scss">
+<script src="./M22PersonCard.ts"></script>
+
+<div class="m-personCard" data-component="m22-person-card">
+  <div class="m-personCard__image">
+    {{> atom/a01-image image disableTransition=true }}
+  </div>
+
+  <div class="m-personCard__content">
+    <p class="m-personCard__name">{{name}}</p>
+    <p class="m-personCard__role">{{role}}</p>
+    {{#if subrole}}
+    <p class="m-personCard__role">{{subrole}}</p>
+    {{/if}}
+    {{#if biography}}
+    <p class="m-personCard__biography">{{{biography}}}</p>
+    {{/if}}
+    {{#with email}}
+    <a href="{{href}}" class="m-personCard__email">
+      {{> atom/a02-icon name="contact-email-gold"}}
+      {{> atom/a07-label text=@root.i18n.sendEmail}}
+    </a>
+    {{/with}}
+    {{#with hasArrow}}
+    <div class="m-personCard__icon">
+      {{> atom/a02-icon name='arrow-right' }}
+    </div>
+    {{/with}}
+  </div>
+
+</div>

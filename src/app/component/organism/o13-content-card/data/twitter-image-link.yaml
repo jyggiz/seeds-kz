@@ -1,0 +1,18 @@
+type: 'social'
+icon: 'twitter'
+
+thumbnail:
+  aspectRatio: 'square'
+  image:
+    src: './image/c16-carousel/updates_instagram.jpg'
+    alt: null
+
+content:
+  description:
+    size: 'small'
+    copy: '<p>Highlights of the opening ceremony</p>'
+
+link:
+  href: 'https://twitter.com'
+  label: 'An SEO friendly link text for this card'
+  target: '_blank'

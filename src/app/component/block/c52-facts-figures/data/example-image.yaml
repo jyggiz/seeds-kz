@@ -1,0 +1,16 @@
+scrollComponent: true
+
+background:
+  scrollComponent: false
+  sticky: false
+  disableTransition: false
+  image:
+    src: './image/homepage-mountain-background.jpg'
+    alt: 'Something Something'
+    sources:
+      - src: 'image/c49-scroll-gallery/gallery-image-7.jpg'
+        media: '(max-width: 768px)'
+
+items:
+  - 'import!../../../organism/o58-facts-list/data/example-icons.yaml'
+  - 'import!../../../organism/o58-facts-list/data/example-figures.yaml'

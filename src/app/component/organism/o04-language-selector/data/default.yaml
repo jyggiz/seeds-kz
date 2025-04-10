@@ -1,0 +1,4 @@
+activeLanguageCode: en
+
+target: 'the-line'
+options: 'import!./languages.yaml'

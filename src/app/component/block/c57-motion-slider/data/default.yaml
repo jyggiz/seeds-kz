@@ -1,0 +1,283 @@
+padding:
+  start: 'large'
+  end: 'none'
+
+heading:
+  text: 'Proudly Hosting'
+  size: 'h5'
+
+items:
+  - image:
+      src: 'image/c57-motion-slider/mobile/1.png'
+      alt: 'test image'
+      sources:
+        - src: 'image/c57-motion-slider/desktop/1.png'
+          media: '(min-width: 768px)'
+    eyebrow:
+      text: 'GKA FREESTYLE WORLD CUP'
+    content:
+      image:
+        src: 'image/c57-motion-slider/logo-1.png'
+        alt: 'Hello world'
+      eyebrow:
+        text: 'NOV 4-5'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        element: 'h2'
+        text: 'GKA FREESTYLE WORLD CUP'
+      copy:
+        size: 'small'
+        content:
+          'Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget lacus
+          eget semper. Ante tempor, tempus mauris et, consectetur.'
+    buttons:
+      - level: 'primary'
+        theme: 'black'
+        label: 'Learn more'
+        icon: 'arrow-right'
+      - level: 'primary'
+        theme: 'white'
+        icon: 'play-solid'
+        variant: 'play'
+        title: null
+        video:
+          props:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: 'video/mp4'
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: true
+            muted: false
+            loop: false
+            controls:
+              playPause: true
+              fullscreen: true
+              seek: true
+            eventTracking:
+              event: 'video_start'
+              video:
+                src: 'video/video-preview.mp4'
+                title: 'A Vision of a New Future: Explainer video'
+                titleInEnglish: 'A Vision of a New Future: Explainer video'
+
+  - image:
+      src: 'image/c57-motion-slider/mobile/2.png'
+      alt: 'test image'
+      sources:
+        - src: 'image/c57-motion-slider/desktop/2.png'
+          media: '(min-width: 768px)'
+    eyebrow:
+      text: 'Super league Triathlon'
+    content:
+      image:
+        src: 'image/c57-motion-slider/logo-2.png'
+        alt: 'Hello world'
+      eyebrow:
+        text: 'NOV 4-5'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        element: 'h2'
+        text: 'Super league Triathlon'
+      copy:
+        size: 'small'
+        content:
+          'Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget lacus
+          eget semper. Ante tempor, tempus mauris et, consectetur.'
+    buttons:
+      - level: 'primary'
+        theme: 'black'
+        label: 'Learn more'
+        icon: 'arrow-right'
+      - level: 'primary'
+        theme: 'white'
+        icon: 'play-solid'
+        variant: 'play'
+        title: null
+        video:
+          props:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: 'video/mp4'
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: true
+            muted: false
+            loop: false
+            controls:
+              playPause: true
+              fullscreen: true
+              seek: true
+          eventTracking:
+            event: 'video_start'
+            video:
+              src: 'video/video-preview.mp4'
+              title: 'A Vision of a New Future: Explainer video'
+              titleInEnglish: 'A Vision of a New Future: Explainer video'
+
+  - image:
+      src: 'image/c57-motion-slider/mobile/3.png'
+      alt: 'test image'
+      sources:
+        - src: 'image/c57-motion-slider/desktop/3.png'
+          media: '(min-width: 768px)'
+    eyebrow:
+      text: '3x3 SUPER QUEST BASKETBALL'
+    content:
+      image:
+        src: 'image/c57-motion-slider/logo-3.png'
+        alt: 'Hello world'
+      eyebrow:
+        text: 'NOV 4-5'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        element: 'h2'
+        text: '3x3 SUPER QUEST BASKETBALL'
+      copy:
+        size: 'small'
+        content:
+          'Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget lacus
+          eget semper. Ante tempor, tempus mauris et, consectetur.'
+    buttons:
+      - level: 'primary'
+        theme: 'black'
+        label: 'Learn more'
+        icon: 'arrow-right'
+      - level: 'primary'
+        theme: 'white'
+        icon: 'play-solid'
+        variant: 'play'
+        title: null
+        video:
+          props:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: 'video/mp4'
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: true
+            muted: false
+            loop: false
+            controls:
+              playPause: true
+              fullscreen: true
+              seek: true
+            eventTracking:
+              event: 'video_start'
+              video:
+                src: 'video/video-preview.mp4'
+                title: 'A Vision of a New Future: Explainer video'
+                titleInEnglish: 'A Vision of a New Future: Explainer video'
+
+  - image:
+      src: 'image/c57-motion-slider/mobile/4.png'
+      alt: 'test image'
+      sources:
+        - src: 'image/c57-motion-slider/desktop/4.png'
+          media: '(min-width: 768px)'
+    eyebrow:
+      text: 'Beach Soccer Worldwide'
+    content:
+      image:
+        src: 'image/c57-motion-slider/logo-4.png'
+        alt: 'Hello world'
+      eyebrow:
+        text: 'NOV 4-5'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        element: 'h2'
+        text: 'health-wellbeing-biotech'
+      copy:
+        size: 'small'
+        content:
+          'Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget lacus
+          eget semper. Ante tempor, tempus mauris et, consectetur.'
+    buttons:
+      - level: 'primary'
+        theme: 'black'
+        label: 'Learn more'
+        icon: 'arrow-right'
+      - level: 'primary'
+        theme: 'white'
+        icon: 'play-solid'
+        variant: 'play'
+        title: null
+        video:
+          props:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: 'video/mp4'
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: true
+            muted: false
+            loop: false
+            controls:
+              playPause: true
+              fullscreen: true
+              seek: true
+            eventTracking:
+              event: 'video_start'
+              video:
+                src: 'video/video-preview.mp4'
+                title: 'A Vision of a New Future: Explainer video'
+                titleInEnglish: 'A Vision of a New Future: Explainer video'
+
+  - image:
+      src: 'image/c57-motion-slider/mobile/5.png'
+      alt: 'test image'
+      sources:
+        - src: 'image/c57-motion-slider/desktop/5.png'
+          media: '(min-width: 768px)'
+    eyebrow:
+      text: 'TITAN WORLD SERIES'
+    content:
+      image:
+        src: 'image/c57-motion-slider/logo-5.png'
+        alt: 'Hello world'
+      eyebrow:
+        text: 'NOV 4-5'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        element: 'h2'
+        text: 'TITAN WORLD </br>SERIES'
+      copy:
+        size: 'small'
+        content:
+          'Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget lacus
+          eget semper. Ante tempor, tempus mauris et, consectetur.'
+    buttons:
+      - level: 'primary'
+        theme: 'black'
+        label: 'Learn more'
+        icon: 'arrow-right'
+      - level: 'primary'
+        theme: 'white'
+        icon: 'play-solid'
+        variant: 'play'
+        title: 'null'
+        video:
+          props:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: 'video/mp4'
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: true
+            muted: false
+            loop: false
+            controls:
+              playPause: true
+              fullscreen: true
+              seek: true
+            eventTracking:
+              event: 'video_start'
+              video:
+                src: 'video/video-preview.mp4'
+                title: 'A Vision of a New Future: Explainer video'
+                titleInEnglish: 'A Vision of a New Future: Explainer video'

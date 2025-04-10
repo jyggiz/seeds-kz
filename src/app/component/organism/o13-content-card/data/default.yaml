@@ -1,0 +1,17 @@
+thumbnail:
+  image:
+    src: './image/c45-media-list/item2.jpg'
+    alt: ''
+
+content:
+  heading:
+    text: 'Hello world'
+  description:
+    size: 'medium'
+    copy: '<p>Lorem Ipsum dolor sit amet</p>'
+
+button:
+  label: 'Read more'
+  icon: 'play-solid'
+  theme: 'dark-gold'
+  size: 'small'

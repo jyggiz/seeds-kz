@@ -1,0 +1,43 @@
+scrollComponent: true
+variant: 'quadruple'
+
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Quadruple column'
+        size: h6
+        element: h2
+
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Quadruple column'
+        size: h6
+        element: h2
+
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Quadruple column'
+        size: h6
+        element: h2
+
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        text: 'Quadruple column'
+        size: h6
+        element: h2

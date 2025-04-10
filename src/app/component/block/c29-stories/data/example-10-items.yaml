@@ -1,0 +1,200 @@
+scrollComponent: true
+theme: 'dark-mono'
+
+header:
+  disableTransition: true
+  alignment: left
+  heading:
+    text: Inside<br>NEOM
+    size: h3
+
+items:
+  - title: Rethinking Water
+    image:
+      src: 'image/c29-stories/stories_episodewater.jpg'
+      alt: Rethinking Water
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - title: Where humanity and nature live in harmony
+    image:
+      src: 'image/c29-stories/humanity-harmony.jpg'
+      alt: Where humanity and nature live in harmony
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - title: The Dreamers and Doers
+    image:
+      src: 'image/c29-stories/stories_settlers.jpg'
+      alt: The Dreamers and Doers
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - title: Building the School of the Future
+    image:
+      src: 'image/c29-stories/stories_education.jpg'
+      alt: Building the School of the Future
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - title: Powering NEOM
+    image:
+      src: 'image/c29-stories/stories_peterterium.jpg'
+      alt: Powering NEOM
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - title: Putting Nature First
+    image:
+      src: 'image/c29-stories/stories_environment.jpg'
+      alt: Putting Nature First
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - title: A Preventative Approach to Health
+    image:
+      src: 'image/c29-stories/stories_health.jpg'
+      alt: A Preventative Approach to Health
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - title: Rethinking Water
+    image:
+      src: 'image/c29-stories/stories_episodewater.jpg'
+      alt: Rethinking Water
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - title: Where humanity and nature live in harmony
+    image:
+      src: 'image/c29-stories/humanity-harmony.jpg'
+      alt: Where humanity and nature live in harmony
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+
+  - title: Where humanity and nature live in harmony
+    image:
+      src: 'image/c29-stories/humanity-harmony.jpg'
+      alt: Where humanity and nature live in harmony
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: 'video/mp4'
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true

@@ -1,0 +1,37 @@
+scrollComponent: true
+forceBlackText: true
+
+intro:
+  background:
+    image:
+      src: 'image/c63-about-trojena/mountain-image-top.jpg'
+      alt: ''
+      sources:
+        src: 'image/c63-about-trojena/mountain-image-top.jpg'
+        media: '(min-width: 768px)'
+
+  heading:
+    text: 'What does "NEOM" means?'
+    size: 'h4'
+  isSingleColumn: true
+  content:
+    - copy:
+        size: 'large'
+        content:
+          'TROJENA is part of NEOM’s regional plan, located 65km from the Gulf of Aqaba coast in the
+          heart of our nature region – with elevations ranging from 1,500m to 2,650m and covering an
+          area of nearly 60 square kilometers.'
+    - copy:
+        size: 'medium'
+        content:
+          'Capitalizing on the different climate in the area, where winter temperatures drop below
+          zero celsius and year-round temperatures are generally 10 degrees cooler than the rest of
+          the region – with its clear fresh air and stunning views, TROJENA will not only be a
+          mesmerizing place to visit, but also a magical place to live and work. '
+
+image:
+  src: 'image/c63-about-trojena/mountain-image-bottom.jpg'
+  alt: ''
+  sources:
+    src: 'image/c63-about-trojena/mountain-image-top.jpg'
+    media: '(min-width: 768px)'

@@ -1,0 +1,55 @@
+scrollComponent: true
+id: 'testFragmentID'
+
+header:
+  heading:
+    element: h2
+    text: NEOM reimagines how life could be
+    size: h4
+
+button:
+  video: Watch video
+
+items:
+  - heading:
+      text: Built from<br /> the ground up
+    description:
+      text:
+        'NEOM reimagines urban living by establishing walkability as its
+        cornerstone.<br><br>Communities will be built on a physical and digital infrastructure layer
+        containing essential utilities and transportation services integrated below the surface.'
+    image:
+      alt: Built from the ground up
+      src: 'image/c03-blinds/homepage/home-key-feature-image-01.jpg'
+
+  - heading:
+      text: Sustainability as <br/> the main driver
+    description:
+      text:
+        'NEOM will introduce a new model for urban sustainability powered by 100% renewable
+        energy.<br><br> It will adopt environmental responsibility principles, that promote
+        sustainable and regenerative development practices.'
+    image:
+      alt: Sustainability as the main driver
+      src: 'image/c03-blinds/homepage/home-key-feature-image-02.jpg'
+
+  - heading:
+      text: Humanity-centered
+    description:
+      text:
+        'NEOM will be built around people, not cars, and designed for convenience and walkability.
+        Adopting a pedestrian-first approach, all amenities will be within a five-minute walk.'
+    image:
+      alt: Humanity-centered
+      src: 'image/c03-blinds/homepage/home-key-feature-image-03.jpg'
+  - heading:
+      text: Economic engine
+    description:
+      text:
+        'NEOM will be a hub for innovation, where established global businesses and emerging players
+        can research, incubate and commercialize groundbreaking technologies to accelerate human
+        progress.<br><br> Commerce and industry will be integrated into community centers to build
+        supply chains that facilitate innovative and efficient operations.'
+    image:
+      alt: Economic engine
+      src: 'image/c03-blinds/homepage/home-key-feature-image-04.jpg'

@@ -1,0 +1,5 @@
+scrollComponent: true
+fullMinHeight: true
+
+items:
+  - 'import!../../../organism/o58-facts-list/data/example-long-figures.yaml'

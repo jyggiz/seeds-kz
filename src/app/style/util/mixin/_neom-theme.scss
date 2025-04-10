@@ -1,0 +1,76 @@
+@mixin neomThemes() {
+  &.t-dark {
+    --component-background-color: var(--color-black);
+    --component-heading-color: var(--component-text-color);
+    --component-highlight-color-hover: var(--color-accent-hover);
+    --component-highlight-color: var(--color-accent);
+    --component-text-color: var(--color-white);
+  }
+
+  &.t-darkMono {
+    --component-background-color: var(--color-black);
+    --component-heading-color: var(--component-text-color);
+    --component-highlight-color-hover: var(--component-text-color);
+    --component-highlight-color: var(--component-text-color);
+    --component-text-color: var(--color-white);
+  }
+
+  &.t-light {
+    --component-background-color: var(--color-page-background);
+    --component-heading-color: var(--component-text-color);
+    --component-highlight-color-hover: var(--color-dark-accent);
+    --component-highlight-color: var(--color-accent);
+    --component-text-color: var(--color-black);
+  }
+
+  &.t-lightMono {
+    --component-background-color: var(--color-page-background);
+    --component-heading-color: var(--component-text-color);
+    --component-highlight-color-hover: var(--component-text-color);
+    --component-highlight-color: var(--component-text-color);
+    --component-text-color: var(--color-black);
+  }
+
+  &.t-darkGreen {
+    --component-background-color: var(--color-dark-green);
+    --component-heading-color: var(--component-text-color);
+    --component-highlight-color-hover: var(--component-text-color);
+    --component-highlight-color: var(--component-text-color);
+    --component-text-color: var(--color-white);
+  }
+
+  &.t-orange {
+    --color-accent: var(--color-orange);
+    --component-background-color: var(--color-black);
+    --component-heading-color: var(--component-text-color);
+    --component-highlight-color-hover: var(--color-orange);
+    --component-highlight-color: var(--color-orange);
+    --component-text-color: var(--color-white);
+  }
+
+  @include theme("oxagon") {
+    &.t-darkMono,
+    &.t-dark {
+      --component-background-color: var(--color-dark-blue);
+      --component-background-gradient: var(--color-gradient-dark-blue);
+    }
+
+    &.t-darkOxagonBlue {
+      --component-background-color: var(--color-dark-accent);
+      --component-heading-color: var(--component-text-color);
+      --component-highlight-color-hover: var(--component-text-color);
+      --component-highlight-color: var(--component-text-color);
+      --component-text-color: var(--color-white);
+    }
+
+    &.t-lightOxagonBlue {
+      --component-background-color: var(--color-accent);
+      --component-text-color: var(--color-white);
+      --component-highlight-color: var(--component-text-color);
+      --component-highlight-color-hover: var(--component-text-color);
+      --component-heading-color: var(--component-text-color);
+    }
+  }
+
+  @content;
+}

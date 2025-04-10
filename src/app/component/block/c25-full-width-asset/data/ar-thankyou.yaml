@@ -1,0 +1,26 @@
+scrollComponent: true
+
+eyebrow:
+  text: نشكرك على اهتمامك بمشروع نيوم
+
+heading:
+  text: 'ونتطلّع للتواصل معك في أقرب وقت.'
+  size: h4
+
+moustache:
+  size: small
+  text:
+    'إذا كنت ترغب في الحصول على تفاصيل أكثر، يمكنك تحميل حزمة من المعلومات المتعلقة بمشروع نيوم من
+    هنا.'
+
+buttons:
+  - theme: white
+    label: تحميل حزمة من المعلومات المتعلقة
+    href: 'downloads/download-placeholder.zip'
+  - theme: white
+    label: الصفحة الرئيسية
+    href: 'homepage-ar.html'
+
+image:
+  alt: null
+  src: 'image/homepage-mountain-background.jpg'

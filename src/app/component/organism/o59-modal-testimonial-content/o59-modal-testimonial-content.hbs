@@ -1,0 +1,20 @@
+
+
+<div class="o-modalTestimonialContent" data-component="o59-modal-testimonial-content">
+
+    {{#if backButtonLabel }}
+      <div class="o-modalTestimonialContent__previousModalButton" data-back-button>
+        {{> molecule/m02-button label=backButtonLabel variant="leftIcon" icon="arrow-left" theme="dark-gold"
+        level="tertiary" size="small"}}
+      </div>
+    {{/if}}
+    {{#with images}}
+     <div class="o-modalTestimonialContent__image">
+      {{> atom/a01-image default disableTransition=true }}
+     </div>
+    {{/with}}
+    {{#with testimonial}}
+      {{> organism/o87-testimonial }}
+    {{/with}}
+
+</div>

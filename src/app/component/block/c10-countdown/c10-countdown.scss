@@ -1,0 +1,186 @@
+.b-countdown {
+  @include vh(100, height);
+
+  align-items: center;
+  background: var(--color-black) image("c10-countdown/background-countdown.jpg") center / cover;
+  color: var(--color-white);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    @include size(100%);
+
+    background: linear-gradient(1deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+    content: "";
+    position: absolute;
+  }
+
+  &::after {
+    @include size(100%);
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 65%);
+    content: "";
+    position: absolute;
+  }
+
+  &__logoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__counterContainer {
+    @include size(90%, auto);
+  }
+
+  &__container {
+    @include size(100%);
+
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 50px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+
+  &__countdown {
+    @include type("exception", "countdownNumbers");
+
+    display: grid;
+    grid-gap: var(--grid-gap);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-content: space-between;
+    line-height: 1;
+    margin-bottom: 130px;
+    width: 100%;
+  }
+
+  &__digits {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    line-height: 1;
+
+    &::after {
+      @include type("exception", "countdownColon");
+
+      content: ":";
+      display: block;
+      left: 100%;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      transform: translateX(-0.0675em);
+      width: 20px;
+    }
+  }
+
+  &__number {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 1.3em;
+    position: relative;
+    width: 100%;
+
+    &:last-child {
+      .b-countdown__digits::after {
+        content: normal;
+      }
+    }
+  }
+
+  &__label {
+    @include type("overline", "medium");
+
+    bottom: -30px;
+    color: var(--color-black-10);
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    transform: translateX(-50%);
+  }
+
+  &__logo {
+    @include size(93px, 120px);
+  }
+
+  &__copy {
+    text-align: center;
+    text-transform: uppercase;
+
+    &.-intro {
+      @include type("overline", "large");
+    }
+
+    &.-place {
+      @include type("heading", "h4");
+
+      margin: 20px 0;
+    }
+
+    &.-date {
+      @include type("overline", "medium");
+    }
+  }
+
+  @media (max-width: 320px) {
+    &__container {
+      max-width: unset;
+    }
+
+    &__label {
+      font-size: 11px;
+    }
+  }
+
+  @include respond-to("XSMALL") {
+    &__countdown {
+      margin-bottom: 40px;
+    }
+
+    &__label {
+      @include type("overline", "small");
+    }
+
+    &__counterContainer {
+      @include size(100%, auto);
+    }
+  }
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    height: 100%;
+    padding: 50px 0;
+  }
+
+  @include respond-to("MEDIUM") {
+    &__separation {
+      margin: auto 30px;
+    }
+
+    &__label {
+      bottom: -40px;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__container {
+      padding: 80px 20px 92px;
+      max-width: 1440px;
+    }
+
+    &__countdown {
+      margin-bottom: 72px;
+    }
+
+    &__copy.-heading {
+      margin: 25px 0 20px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+- level: primary
+  theme: white
+  label: 'Primary button'
+- level: secondary
+  label: Play
+  theme: white
+  icon: play-solid
+  variant: play
+  video:
+    props:
+      sources:
+        - src: 'video/background-video-preview.mp4'
+          type: video/mp4
+      originalWidth: 16
+      originalHeight: 9
+      autoplay: true
+      muted: false
+      loop: false
+      disablePreload: true
+      controls:
+        playPause: true
+        fullscreen: true
+        seek: true
+      eventTracking:
+        event: 'video_start'
+        video:
+          titleInEnglish: 'A Vision of a New Future: Explainer video'
+          title: 'A Vision of a New Future: Explainer video'
+          src: 'video/video-preview.mp4'

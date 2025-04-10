@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="./o88-search-bar.scss">
+<script src="./O88SearchBar.ts"></script>
+
+
+<div class="o-searchBar"
+  data-component="o88-search-bar"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#if fullWidth}}data-full-width{{/if}}
+>
+  <form class="o-searchBar__searchForm" action="{{redirectUrl}}">
+    {{> atom/a02-icon name='search' }}
+      {{> atom/a14-input
+        type='search'
+        name='search'
+        id=inputId
+        placeholder=placeholder
+      }}
+    <div class="o-searchBar__actionContainer">
+      {{> molecule/m02-button icon='search' level='secondary' theme='white' type='submit' aria=searchButtonAria }}
+      {{> molecule/m02-button icon='close' level='secondary' theme='white' type='button' aria=closeButtonAria }}
+    </div>
+  </form>
+</div>

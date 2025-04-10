@@ -1,0 +1,261 @@
+.b-transitionSlider {
+  @include vh(100, min-height);
+
+  --component-heading-color: var(--color-white);
+  --component-text-color: var(--color-white);
+  --component-background-color: var(--color-black-90);
+  --top-offset: 80px;
+
+  position: relative;
+  background: var(--component-background-color);
+  padding-block: var(--component-block-padding);
+
+  .swiper-container {
+    .swiper-slide {
+      transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
+
+      &:not(.swiper-slide-active) {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+
+  &__index {
+    max-width: 1600px;
+    width: 100%;
+    padding-inline-start: var(--container-margin);
+    padding-inline-end: var(--container-margin);
+    margin: 0 auto;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    color: var(--color-white);
+    text-align: center;
+    z-index: zindex($zLayout, content);
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    @include respond-to(LARGE) {
+      text-align: start;
+    }
+  }
+
+  &__items {
+    @include list-reset;
+
+    position: relative;
+    height: 100%;
+  }
+
+  &__item {
+    height: 100%;
+  }
+
+  &__titlePagination {
+    display: none;
+    min-width: 200px;
+    width: fit-content;
+    list-style: none;
+    position: absolute;
+    left: var(--container-margin);
+    top: var(--top-offset);
+    z-index: zindex($zLayout, content);
+
+    &Item {
+      padding-bottom: 32px;
+      color: var(--component-text-color);
+      transition: color 250ms ease;
+      cursor: pointer;
+      position: relative;
+
+      &:before {
+        @include pseudo(block, static, "");
+        @include size(100%, 2px);
+
+        background-color: var(--color-white-30a);
+        margin-bottom: 20px;
+      }
+
+      &:after {
+        @include pseudo;
+        @include offset(0);
+        @include size(100%, 2px);
+
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 250ms ease;
+      }
+
+      &Cta {
+        @include type("overline", "medium");
+
+        background-color: transparent;
+        border: none;
+        color: currentColor;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .a-icon {
+          opacity: 0;
+          transform: translateX(-10px);
+          transition: opacity 250ms ease;
+
+          @media (prefers-reduced-motion: no-preference) {
+            transition: opacity 250ms ease, transform 250ms ease;
+          }
+
+          [dir="rtl"] & {
+            transform: rotate(180deg) translateX(10px);
+          }
+        }
+
+        &.focus-visible {
+          .a-icon {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+        }
+      }
+
+      &.-isActive {
+        color: var(--color-accent);
+
+        &:after {
+          background-color: var(--color-accent);
+          transform: scaleX(1);
+        }
+
+        .a-icon {
+          opacity: 0;
+        }
+      }
+
+      &:hover:not(.-isActive) {
+        color: var(--color-white);
+
+        &:after {
+          background-color: var(--color-white);
+          transform: scaleX(1);
+        }
+
+        .a-icon {
+          opacity: 1;
+          transform: translateX(0px);
+
+          [dir="rtl"] & {
+            transform: rotate(180deg) translateX(0);
+          }
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    --page-indicator-color: var(--color-white-25a);
+    --page-indicator-color-active: var(--color-gold);
+
+    position: relative;
+
+    @include respond-to(LARGE) {
+      display: none;
+    }
+  }
+
+  &__slidesWrapper {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in, visibility 1s ease-in;
+    flex: 1;
+
+    &.-isVisible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__intro video {
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+
+    &.-isHidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .m-overlayBackground {
+    &__overlayBackgrounds {
+      z-index: zindex($zLayout, content);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 1s ease;
+
+      &.-isVisible {
+        opacity: 0.25;
+      }
+    }
+
+    &__overlayBackground {
+      @media (max-width: 1023.5px) {
+        @include size(800%, 100%);
+
+        &:nth-child(1) {
+          top: -15%;
+        }
+
+        &:nth-child(2) {
+          top: 28%;
+        }
+
+        &:nth-child(3) {
+          top: 26%;
+        }
+      }
+    }
+  }
+
+  .m-componentBackground {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms ease, visibility 250ms ease;
+
+    &.-isActive {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @include respond-to(LARGE) {
+    padding-block: var(--component-block-padding, var(--container-margin));
+
+    &__titlePagination {
+      display: block;
+    }
+
+    &__heading {
+      position: static;
+    }
+
+    &__slidesWrapper {
+      @include position(0);
+
+      position: absolute;
+    }
+
+    .o-transitionSlide {
+      padding-top: calc(var(--top-offset) + var(--container-margin, 70px));
+    }
+  }
+
+  @include respond-to(XXLARGE) {
+    --top-offset: 130px;
+  }
+}

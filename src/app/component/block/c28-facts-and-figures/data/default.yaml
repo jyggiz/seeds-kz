@@ -1,0 +1,15 @@
+scrollComponent: true
+
+figures:
+  - label: area in saudi arabia
+    value: 26,000km²
+  - label: WALK TO NATURE FROM ANY POINT
+    value: 5MIN
+  - label: flight away for 40% of the globe
+    value: 4HR
+  - label: Renewable energy
+    value: 100%
+  - label: cooler than the rest of the GCC
+    value: 10%
+  - label: perennial solar resources
+    value: 20mj/m²

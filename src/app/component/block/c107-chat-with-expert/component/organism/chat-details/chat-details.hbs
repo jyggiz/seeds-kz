@@ -1,0 +1,18 @@
+<div class="o-chatDetails -isHidden" data-component="chat-details" data-chat-details data-lazy-component data-visible="false">
+  <div class="o-chatDetails__close" data-close-button>
+    {{> molecule/m02-button icon='close' theme='primary'}}
+  </div>
+  <div class="o-chatDetails__wrapper">
+    <div class="o-chatDetails__heading" data-heading>
+      {{>atom/a03-heading expertInterviewHeading}}
+    </div>
+    <ol class="o-chatDetails__content" data-chat-content>
+      {{#each items}}
+        <li class="o-chatDetails__qna">
+          <div class="o-chatDetails__question">{{question}}</div>
+          <div class="o-chatDetails__answer">{{{answer}}}</div>
+        </li>
+      {{/each}}
+    </ol>
+  </div>
+</div>

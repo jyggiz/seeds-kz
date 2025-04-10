@@ -1,0 +1,49 @@
+.o-cardsGrid {
+  @include list-reset;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap);
+  justify-content: center;
+  margin-block-start: 40px;
+
+  &.-fullWidth {
+    .o-cardsGrid__item {
+      width: 100%;
+    }
+
+    .m-hoverableCard {
+      max-width: unset;
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 310px;
+    }
+
+    &.-fullWidth {
+      --card-width: calc(25% - var(--grid-gap));
+
+      .o-cardsGrid__item {
+        width: var(--card-width);
+      }
+    }
+  }
+
+  @include respond-to("XXLARGE") {
+    &__item {
+      flex: 0 0 18%;
+    }
+
+    &.-fullWidth {
+      .o-cardsGrid__item {
+        flex: 0 0 var(--card-width);
+      }
+    }
+  }
+}

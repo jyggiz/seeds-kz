@@ -1,0 +1,14 @@
+label: SINDALAH
+link:
+  href: '#'
+  label: GO TO SINDALAH
+images:
+  region:
+    src: 'image/c95-transition-slider/map-outline.png'
+    alt: 'Region #1 highlight layer image here'
+video:
+  props:
+    src: 'video/background-video-preview.mp4'
+    type: 'video/mp4'
+    playsinline: true
+    muted: true

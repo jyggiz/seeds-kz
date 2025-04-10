@@ -1,0 +1,197 @@
+.b-multiStepForm {
+  --component-highlight-color: var(--color-dark-accent);
+  --component-heading-color: var(--color-white);
+  --checkbox-active-background-color: var(--color-accent);
+  --checkbox-background-color: var(--color-white);
+  --checkbox-border-color: var(--color-accent-50);
+  --checkbox-border-radius: var(--input-border-radius);
+  --checkbox-border-width: var(--input-border-width);
+  --checkbox-checkmark-color: var(--color-white);
+  --checkbox-size: 20px;
+
+  --radio-active-color: var(--color-dark-accent);
+  --radio-background-color: var(--checkbox-background-color);
+  --radio-border-color: var(--color-black-10);
+  --radio-border-radius: 50%;
+  --radio-size: var(--checkbox-size);
+
+  --input-background-color: var(--color-white);
+  --input-border-radius: 4px;
+  --input-border-width: 1.5px;
+  --input-box-shadow-focus: var(--color-black-10);
+  --input-height: 40px;
+  --input-text-color: var(--color-black);
+
+  background-color: var(--color-page-background);
+  overflow-y: auto;
+
+  .m-componentHeader {
+    --eyebrow-text-color: var(--color-white);
+    --moustache-text-color: var(--color-white);
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  &__sliderContainer {
+    height: 100%;
+  }
+
+  &__sliderContainer,
+  &__slider {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  &__background {
+    min-width: 0;
+    position: relative;
+    min-height: 22vh;
+  }
+
+  &__controls {
+    .a-progressBar {
+      width: 100%;
+    }
+  }
+
+  &__legendContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: var(--color-white);
+    margin: 50px 70px;
+
+    &.-start {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__header {
+    padding: 0 0 40px;
+
+    @include respond-to("LARGE") {
+      padding: 0 0 60px;
+    }
+  }
+
+  &__content {
+    min-width: 0;
+    margin: 0;
+  }
+
+  &__items {
+    &.-withDelay {
+      transition-delay: 1.5s;
+    }
+  }
+
+  &__item {
+    min-height: 300px;
+  }
+
+  &__emptyScrollArea {
+    display: none;
+  }
+
+  &__legend {
+    @include type("body", "xlarge");
+
+    display: none;
+    text-transform: none;
+
+    [dir="rtl"] & {
+      @include type("body", "large");
+    }
+
+    &.-isActive {
+      display: block;
+    }
+
+    &.-success,
+    &.-error {
+      display: none;
+    }
+
+    &.-isRequired::after {
+      @include asterisk;
+    }
+  }
+
+  .a-recaptcha {
+    display: none;
+  }
+
+  @include respond-to(LARGE) {
+    @include vh(100);
+
+    &__container {
+      display: block;
+      position: relative;
+    }
+
+    &__item {
+      display: flex;
+    }
+
+    .o-formStep__container {
+      width: 66%;
+    }
+
+    &__emptyScrollArea {
+      display: block;
+      width: 33%;
+    }
+
+    &__background {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      width: 33%;
+    }
+
+    &__legend {
+      margin: 0 0 60px;
+    }
+
+    &__controls {
+      margin-inline-start: 33%;
+    }
+
+    &__legendContainer {
+      margin: 0 70px;
+    }
+
+    .a-recaptchaStatement {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 70px;
+      margin: 0 70px 20px 0;
+
+      [dir="rtl"] & {
+        left: unset;
+        right: 70px;
+        margin: 0 0 0 70px;
+      }
+    }
+
+    &__copy,
+    .a-recaptchaStatement__statement {
+      @include type("exception", "small-description");
+
+      color: var(--color-white);
+
+      a {
+        color: var(--color-white);
+      }
+    }
+  }
+}

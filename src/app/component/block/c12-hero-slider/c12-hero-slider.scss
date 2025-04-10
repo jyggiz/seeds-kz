@@ -1,0 +1,96 @@
+@import "~swiper/components/pagination/pagination.scss";
+
+.b-heroSlider {
+  --page-indicator-color: var(--color-black-50);
+
+  overflow: hidden;
+
+  &__container {
+    @include vh(100, height);
+
+    .-clip & {
+      @include vh(85, height);
+    }
+
+    position: relative;
+  }
+
+  &__controls {
+    display: none;
+  }
+
+  &__swiperContainer {
+    height: 100%;
+    overflow: visible;
+  }
+
+  &__items {
+    list-style: none;
+    z-index: 1;
+  }
+
+  &__item {
+    width: 100vw;
+  }
+
+  .a-pageIndicators {
+    position: absolute;
+    z-index: zindex($zLayout, default);
+    padding: 20px 0;
+  }
+
+  &__content {
+    height: 100%;
+  }
+
+  .o-heroContent__container {
+    padding-block-end: 75px;
+  }
+
+  @include respond-to("MEDIUM") {
+    &__controls {
+      @include size(100%, 60px);
+
+      align-self: flex-end;
+      display: flex;
+      flex-direction: row;
+      left: 0;
+      padding: 0 var(--containerMargin);
+      position: absolute;
+      top: 50%;
+      z-index: zindex($zLayout, content);
+
+      &.-isHidden {
+        display: none;
+      }
+    }
+
+    .o-sliderControls {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .a-pageIndicators {
+      padding: 20px 0;
+    }
+
+    .a-pageIndicators__item {
+      --page-indicator-size: 9px;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__container {
+      display: grid;
+      column-gap: var(--grid-gap);
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    &__content {
+      grid-column: 1 / span 12;
+    }
+  }
+
+  @include neomThemes;
+}

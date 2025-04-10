@@ -1,0 +1,28 @@
+scrollComponent: false
+variant: 'double'
+
+background:
+  image:
+    alt: 'alt'
+    src: 'image/c24-content/intro-background.jpg'
+    sources:
+      - src: 'image/c24-content/intro-background.jpg'
+        media: '(min-width: 768px)'
+
+items:
+  - align:
+      horizontal: start
+      vertical: top
+    type: 'asset'
+    content:
+      variant: square
+      image:
+        alt: 'alt'
+        src: 'image/c24-content/intro-icon-call-to-actions.png'
+        variant: contain
+
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content: 'import!../../../molecule/m18-paragraph/data/brandbook-call-to-actions.yaml'

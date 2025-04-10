@@ -1,0 +1,36 @@
+.b-content {
+  .o-contentGrid {
+    @include theme("oxagon") {
+      &.t-light {
+        .a-heading {
+          --component-heading-color: var(--color-dark-accent);
+
+          strong {
+            --component-highlight-color: var(--color-accent);
+          }
+        }
+      }
+    }
+  }
+
+  &.-fullMinHeight {
+    .o-contentGrid {
+      @include vh(100, min-height);
+
+      display: block;
+    }
+  }
+
+  .m-paragraph__asset.-start .a-image__img {
+    @include respond-to(XSMALL) {
+      max-width: 100%;
+    }
+  }
+
+  @include neomThemes;
+}
+
+strong {
+  font-style: normal;
+  color: var(--component-highlight-color);
+}

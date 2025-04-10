@@ -1,0 +1,118 @@
+scrollComponent: true
+disableTransition: false
+
+items:
+  - label: Primary
+    content:
+      - componentId: c66
+        data:
+          id: 1
+          scrollComponent: false
+          heading:
+            text: Primary Colors
+            size: h3
+          description:
+            '<p>Cream and white should be used predominantly or background colors. The light tones
+            keep content fresh and easy to read. Cream should only be used for graphic elements and
+            never for text. A deliberate and generous use of white space gives a premium and artful
+            feel to communications and is an essential element of the NEOM brand. Black should be
+            used sparingly within the system, and used primarily in rectangular frames and text.
+            Gold is used as an accent color within the system. Gold is appropriate for use in
+            infographics, icons, and other graphic elements meant to highlight important
+            content.</p>'
+          isPrimary: true
+          colors:
+            - label: cream
+              hex: '#F3EFE5'
+            - label: cream 50%
+              hex: '#F9F7F2'
+            - label: cream 25%
+              hex: '#FCFBF8'
+            - label: white
+              hex: '#FFFFFF'
+            - label: dark gold
+              hex: '#B89535'
+            - label: gold
+              hex: '#EBC03F'
+            - label: bright yellow
+              hex: '#FFD02A'
+            - label: yellow hover
+              hex: '#FFE973'
+            - label: deep black
+              hex: '#161719'
+            - label: black
+              hex: '#1D1F22'
+            - label: black 90%
+              hex: '#343538'
+            - label: black 75
+              hex: '#565759'
+            - label: black 50%
+              hex: '#8E8F90'
+            - label: black 20%
+              hex: '#D2D2D3'
+            - label: black 10%
+              hex: '#E8E9E9'
+            - label: light grey bg
+              hex: '#F8F8F8'
+  - label: Secondary
+    content:
+      - componentId: c66
+        data:
+          id: 2
+          scrollComponent: false
+          heading:
+            text: Secondary colors
+            size: h3
+          description:
+            '<p>The secondary colors are inspired by the five principles of the future loop mark –
+            technology, nature, livability, sustainability and community. The secondary palette is
+            deliberately limited in order to complement the more vibrant colors of the future loop
+            mark, ribbons and photography. This also works to preserve the purity and strength of
+            the primary NEOM brand assets. Secondary colors should be used more sparingly than their
+            primary counterparts when designing for the master brand – for example, to highlight
+            information within technical documents and infographics.</p>'
+          colors:
+            - label: Dark blue
+              hex: '#003865'
+            - label: Green
+              hex: '#006B44'
+            - label: orange
+              hex: '#F18825'
+            - label: light blue
+              hex: '#007BB5'
+            - label: red
+              hex: '#E0403F'
+  - label: Ratio
+    content:
+      - componentId: c66
+        scrollComponent: false
+        data:
+          id: 3
+          heading:
+            text: color ratio
+            size: h3
+          description:
+            '<p>A robust color palette provides for many design options, however thoughtful
+            consideration and restraint ensures NEOM retains its sophisticated visual identity. The
+            primary color palette should always dominate communication. Here is a general guide for
+            making effective color choices in compositions. This isn’t meant to imply a strict
+            mathematical distribution of the colors; rather, these ratios should help your layout
+            pass a squint test.</p>'
+          colorRatio:
+            image:
+              alt: color ratio
+              src: 'image/c66-color-swatches/color-ratio-mobile.png'
+              sources:
+                - src: 'image/c66-color-swatches/color-ratio.png'
+                  media: '(min-width: 768px)'
+            ratioInfo:
+              - tabsCopy: 'cream'
+                tag: '40%'
+              - tabsCopy: 'white'
+                tag: '30%'
+              - tabsCopy: 'gold'
+                tag: '10%'
+              - tabsCopy: 'black'
+                tag: '10%'
+              - tabsCopy: 'Each accent color'
+                tag: '2%'

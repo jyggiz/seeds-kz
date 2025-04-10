@@ -1,0 +1,213 @@
+& {
+  --button-background-color-hover: var(--color-accent);
+  --button-background-color-ripple: var(--color-white-20a);
+  --button-border-color-disabled: var(--color-black-10);
+  --button-border-color-hover: transparent;
+  --button-text-color-disabled: var(--color-black-20);
+  --button-text-color-hover: var(--color-white);
+  --button-affix-color: var(--button-text-color);
+}
+
+&.-black {
+  --button-border-color: transparent;
+
+  &.-primary {
+    --button-affix-color: var(--button-background-color);
+    --button-background-color: var(--color-black);
+    --button-text-color: var(--color-white);
+  }
+
+  &.-secondary,
+  &.-tertiary {
+    --button-background-color: transparent;
+    --button-text-color: var(--color-black);
+  }
+
+  &.-secondary {
+    --button-border-color: var(--color-black-20a);
+  }
+
+  &.-tertiary {
+    --button-background-color-hover: transparent;
+    --button-text-color-hover: var(--color-accent);
+  }
+}
+
+&.-cream {
+  --button-text-color: var(--color-dark-gold);
+
+  &.-primary {
+    --button-affix-color: var(--button-background-color);
+    --button-background-color: var(--color-cream);
+    --button-border-color: var(--color-dark-gold-10a);
+  }
+
+  &.-secondary,
+  &.-tertiary {
+    --button-background-color: transparent;
+  }
+
+  &.-secondary {
+    --button-border-color: var(--color-dark-gold-20a);
+  }
+
+  &.-tertiary {
+    --button-background-color-hover: transparent;
+    --button-text-color-hover: var(--color-gold);
+  }
+}
+
+&.-dark-gold {
+  --button-text-color: var(--color-dark-gold);
+  --button-background-color-hover: var(--color-gold);
+
+  &.-primary {
+    --button-affix-color: var(--button-background-color);
+    --button-background-color: var(--color-dark-gold);
+    --button-border-color: var(--color-black-10a);
+    --button-text-color: var(--color-white);
+  }
+
+  &.-secondary,
+  &.-tertiary {
+    --button-background-color: transparent;
+    --button-text-color: var(--color-dark-gold);
+  }
+
+  &.-secondary {
+    --button-border-color: var(--color-dark-gold-20a);
+  }
+
+  &.-tertiary {
+    --button-background-color-hover: transparent;
+    --button-text-color-hover: var(--color-gold);
+  }
+}
+
+&.-gold {
+  --button-affix-color: var(--button-background-color);
+  --button-background-color-hover: var(--color-gold-hover);
+  --button-background-color-ripple: var(--color-white-20a);
+  --button-border-color-hover: transparent;
+  --button-border-color: transparent;
+  --button-text-color-hover: var(--color-white);
+  --button-text-color: var(--color-white);
+
+  &.-primary {
+    --button-background-color: var(--color-gold);
+    --button-text-color: var(--color-white);
+  }
+
+  &.-secondary,
+  &.-tertiary {
+    --button-text-color: var(--color-gold);
+  }
+
+  &.-secondary {
+    --button-border-color: var(--color-gold);
+  }
+
+  &.-tertiary {
+    --button-background-color-hover: transparent;
+    --button-text-color-hover: var(--color-gold-hover);
+  }
+}
+
+&.-white {
+  --button-border-color-disabled: var(--color-white-10a);
+  --button-text-color-disabled: var(--color-white-10a);
+
+  &.-primary {
+    --button-affix-color: var(--button-background-color);
+    --button-background-color: var(--color-white);
+    --button-border-color: var(--color-black-10a);
+    --button-text-color: var(--color-black);
+  }
+
+  &.-secondary,
+  &.-tertiary {
+    --button-text-color: var(--color-white);
+    --button-background-color: transparent;
+  }
+
+  &.-secondary {
+    --button-border-color: var(--color-white-10a);
+    --button-text-color: var(--color-white);
+  }
+
+  &.-tertiary {
+    --button-background-color-hover: transparent;
+    --button-text-color-hover: var(--color-accent);
+  }
+}
+
+&.-dark-accent {
+  --button-text-color: var(--color-dark-accent);
+
+  &.-primary {
+    --button-affix-color: var(--button-background-color);
+    --button-background-color: var(--color-dark-accent);
+    --button-border-color: var(--color-black-10a);
+    --button-text-color: var(--color-white);
+  }
+
+  &.-secondary,
+  &.-tertiary {
+    --button-background-color: transparent;
+    --button-text-color: var(--color-dark-accent);
+  }
+
+  &.-secondary {
+    --button-border-color: var(--color-dark-gold-20a);
+  }
+
+  &.-tertiary {
+    --button-background-color-hover: transparent;
+    --button-text-color-hover: var(--color-accent);
+  }
+}
+
+&.-accent {
+  --button-affix-color: var(--button-background-color);
+  --button-background-color-hover: var(--color-accent-hover);
+  --button-background-color-ripple: var(--color-white-20a);
+  --button-border-color-hover: transparent;
+  --button-border-color: transparent;
+  --button-text-color-hover: var(--color-white);
+  --button-text-color: var(--color-white);
+
+  &.-primary {
+    --button-background-color: var(--color-accent);
+    --button-text-color: var(--color-white);
+  }
+
+  &.-secondary,
+  &.-tertiary {
+    --button-text-color: var(--color-accent);
+  }
+
+  &.-secondary {
+    --button-border-color: var(--color-accent);
+  }
+
+  &.-tertiary {
+    --button-background-color-hover: transparent;
+    --button-text-color-hover: var(--color-accent-hover);
+  }
+}
+
+@include theme("oxagon") {
+  &.-accent {
+    &.-primary {
+      --button-background-color: var(--color-accent);
+      --button-background-color-hover: var(--color-dark-accent);
+      --button-text-color-hover: var(--color-white);
+    }
+  }
+
+  &.-dark-accent {
+    --button-background-color: var(--color-accent);
+    --button-background-color-hover: var(--color-white);
+    --button-text-color-hover: var(--color-dark-accent);
+  }
+}

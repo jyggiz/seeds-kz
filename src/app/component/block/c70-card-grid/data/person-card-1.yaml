@@ -1,0 +1,27 @@
+image:
+  alt: Gavin van Tonder portrait
+  src: 'image/c36-profile/gavin-van-tonder.jpg'
+name: Gavin van Tonder
+role: CEO Oxagon
+subrole: Executive Director Future of Water Sector
+sector: Water
+region: Trojena
+social:
+  items:
+    - icon: instagram-gold
+      href: 'https://www.instagram.com/discoverneom/?hl=en'
+      target: _blank
+      label: Twitter
+    - icon: facebook-gold
+      href: 'https://www.facebook.com/discoverneom/'
+      target: _blank
+      label: Facebook
+copy:
+  Here we will add the description about each person.Here we will add the description about each
+  person.Here we will add the description about each person.Here we will add the description about
+  each person.Here we will add the description about each person.Here we will add the description
+  about each person. Here we will add the description about each person.Here we will add the
+  description about each person.Here we will add the description about each person.Here we will add
+  the description about each person.Here we will add the description about each person.Here we will
+  add the description about each person.
+hasArrow: true

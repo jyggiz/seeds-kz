@@ -1,0 +1,40 @@
+scrollComponent: true
+fullMinHeight: true
+
+quote:
+  variant: royalAnnouncement
+  author:
+    prefix: His Royal Highness
+    name: Mohammed bin Salman, Crown Prince and Chairman of the NEOM Company Board of Directors
+  quote:
+    '“I present to you THE LINE, a city of a million residents with a length of 170 km that
+    preserves 95% of nature within NEOM, with zero cars, zero streets and zero carbon emissions.”'
+
+callToActions:
+  - label: Press Release
+    href: ${pressreleaseLink}
+    target: _blank
+    icon: arrow-right
+    level: secondary
+  - label: Launch announcement
+    icon: play-outline
+    data:
+      play-button:
+    video:
+      props:
+        youtube: xLN2Vu1iels
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: c04 quote video
+            title: c04 quote video
+            src: youtube xLN2Vu1iels

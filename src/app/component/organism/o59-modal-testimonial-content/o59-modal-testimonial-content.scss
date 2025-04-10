@@ -1,0 +1,31 @@
+.o-modalTestimonialContent {
+  position: relative;
+  padding: 20px 20px 0;
+
+  &__image {
+    @include aspect-ratio(1);
+
+    max-width: 240px;
+    margin: 60px auto 20px;
+
+    .a-image__img {
+      object-fit: contain;
+    }
+  }
+
+  .m-blockquote.-testimonial {
+    position: relative;
+    visibility: visible;
+
+    .m-blockquote__quote,
+    .m-blockquote__role {
+      color: var(--modal-text-color);
+    }
+  }
+
+  @include theme("oxagon") {
+    &__image {
+      background-color: var(--color-black);
+    }
+  }
+}

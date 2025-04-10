@@ -1,0 +1,32 @@
+
+
+
+
+<section class="b-newsletterSubscription {{#if alignment}} -{{alignment}}{{^}} -start{{/if}}"
+  data-component="c96-newsletter-subscription"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#with padding}}
+    style="--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};"
+  {{/with}}
+  data-lazy-component
+>
+  {{#with background}}
+    {{> molecule/m34-component-background }}
+  {{/with}}
+
+  <div class="b-newsletterSubscription__container">
+    <div data-form-wrapper>
+      {{> molecule/m04-component-header header alignment=alignment }}
+      <div class="b-newsletterSubscription__form">
+        {{> organism/o45-form form}}
+      </div>
+    </div>
+
+    <div class="b-newsletterSubscription__response -isHidden" data-response-wrapper>
+      {{> molecule/m04-component-header successHeader alignment=alignment disableTransition=true }}
+    </div>
+  </div>
+</section>
+

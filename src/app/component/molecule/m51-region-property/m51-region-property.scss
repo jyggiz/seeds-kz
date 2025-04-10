@@ -1,0 +1,34 @@
+@use "sass:math";
+
+.m-regionProperty {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 256px;
+  text-align: center;
+
+  &__image {
+    @include size(128px);
+
+    border-radius: 50%;
+    background-color: var(--color-black-20a);
+    margin: 0 auto 15px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__heading {
+    @include type("body", "small");
+
+    color: var(--component-heading-color, var(--color-black));
+    margin: 0 auto 10px;
+    text-transform: none;
+  }
+
+  &__description {
+    @include type("body", "xsmall");
+
+    color: var(--component-text-color, var(--color-black-75));
+    max-width: math.div(100%, 1.5);
+  }
+}

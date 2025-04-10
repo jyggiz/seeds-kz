@@ -1,0 +1,56 @@
+title:
+  heading:
+    text: 'ЗАКОНОДАТЕЛЬСТВО ГОСУДАРСТВ-ЧЛЕНОВ ЕВРАЗИЙСКОГО ЭКОНОМИЧЕСКОГО СОЮЗА'
+    size: 'h4'
+
+items:
+  - heading:
+      text: Предпринимательский кодекс Республики Казахстан
+    description: Кодекс Республики Казахстан от 29 октября 2015 года № 375-V ЗРК
+    link:
+      href: 'https://adilet.zan.kz/rus/docs/K1500000375'
+      label: 'Ссылка на закон на сайте adilet.kz'
+  - heading:
+      text:
+        Об административных правонарушениях
+    description: Кодекс Республики Казахстан от 5 июля 2014 года № 235-V ЗРК
+    link:
+      href: 'https://adilet.zan.kz/rus/docs/K1400000235'
+      label: 'Ссылка на закон на сайте adilet.kz'
+  - heading:
+      text: Об охране селекционных достижений
+    description: Закон Республики Казахстан от 13 июля 1999 года N 422-I
+    link:
+      href: 'https://adilet.zan.kz/rus/docs/Z990000422_'
+      label: 'Ссылка на закон на сайте adilet.kz'
+  - heading:
+      text:  О карантине растений
+    description: Закон Республики Казахстан от 11 февраля 1999 года № 344
+    link:
+      href: 'https://adilet.zan.kz/rus/docs/Z990000344_'
+      label: 'Ссылка на закон на сайте adilet.kz'
+  - heading:
+      text: О защите растений
+    description: Закон Республики Казахстан от 3 июля 2002 года N 331
+    link:
+      href: 'https://adilet.zan.kz/rus/docs/Z020000331_'
+      label: 'Ссылка на закон на сайте adilet.kz'
+  - heading:
+      text:
+        О государственном регулировании развития агропромышленного комплекса и сельских территорий
+    description: Закон Республики Казахстан от 8 июля 2005 года № 66
+    link:
+      href: 'https://adilet.zan.kz/rus/docs/Z050000066_'
+      label: 'Ссылка на закон на сайте adilet.kz'
+  - heading:
+      text: О сельскохозяйственных кооперативах
+    description: Закон Республики Казахстан от 29 октября 2015 года № 372-V ЗРК
+    link:
+      href: 'https://adilet.zan.kz/rus/docs/Z1500000372/info'
+      label: 'Ссылка на закон на сайте adilet.kz'
+  - heading:
+      text: О производстве и обороте органической продукции
+    description: Закон Республики Казахстан от 10 июня 2024 года № 89-VIII ЗРК
+    link:
+      href: 'https://adilet.zan.kz/rus/docs/Z2400000089'
+      label: 'Ссылка на закон на сайте adilet.kz'

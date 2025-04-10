@@ -1,0 +1,107 @@
+scrollComponent: true
+
+image:
+  src: 'image/c26-hero-banner/teaser-homepage.jpg'
+  alt: Neom launches the Line
+
+heading:
+  element: h1
+  text: 'Building the airport of the future – free of legacy and monopoly thinking '
+  size: h4
+
+metaString: 'by <span class="isHighlighted">John Selden</span> on may 22, 2022'
+
+author: 'import!./../component/molecule/author-info/data/default.yaml'
+articleCta: 'import!./../component/organism/article-cta/data/default.yaml'
+
+items:
+  - id: 'first-paragraph'
+    type: 'paragraph'
+    item:
+      heading:
+        size: 'h6'
+        text:
+          'Going through an airport is rarely a pleasure due to the rigid global aviation industry,
+          but new disruptive solutions can move the dialon the customer experience and at the same
+          time boost economic growth – writes NEOM Airports CEO John Selden.'
+      copy:
+        size: 'small'
+        content:
+          'Most passengers arrive at an airport with one thing on their mind: How quickly can I get
+          out of here? For the sake of enhanced customer experience and increased capacity, it makes
+          sense for airports to be much more about freedom of movement and much less about keeping
+          people captive, in order to overcharge them for bottled water and cold sandwiches. <br />
+          In fact, the provocative question should be asked as to whether airports should even be
+          for-profit at all. Perhaps they might, instead, be looked at as a public good. Simply
+          there to generate benefits for citizens, places and economies.'
+  - id: 'second-paragraph'
+    type: 'paragraph'
+    item:
+      heading:
+        size: 'h6'
+        text: 'the classic airport model is obsolete'
+      copy:
+        size: 'small'
+        content:
+          'Especially when you consider that today airports are struggling in the aftermath of
+          COVID. The pandemic meant they temporarily lost their passenger base and workforce. I used
+          to run Atlanta, the busiest airport in the world, and we went from 2,400 flights a day –
+          with 320,000 passengers – to almost nothing overnight when the virus hit. As customer
+          demand has quickly bounced back after the restrictions were lifted, the capacity to scale
+          back up again has been lost due to employee shortages. It takes time to vet, hire and
+          train new staff. Expect worse to come. By 2050, forecasters are predicting that the number
+          of passengers will grow by a factor of 2.5 on the pre-COVID levels of 2019. If we carry on
+          regardless, it will <strong>mean</strong> chaos for airlines, airports and worse still
+          customers. Ticket prices will rise through the roof. Pollution levels will escalate. Noise
+          pollution will blight lives. And urban sprawl will be unstoppable. Bigger airports,
+          expanded budgets and limitless runways are not the answer. For example, London Heathrow
+          Airport – like many of the global aviation hubs – is already completely saturated and
+          after 20 years of trying they still do not have approval for a third runway. And even if
+          you do build bigger terminals, passengers don’t want to travel 45 minutes to get to their
+          gate. The new airport in Istanbul will serve 350 destinations from 10 runways. This
+          untrammeled expansion is simply not the way to go. Smart airports, progressive design and
+          advanced technologies with a human touch are the areas where our energy must be channeled.'
+  - id: 'third-paragraph'
+    type: 'paragraph'
+    item:
+      heading:
+        size: 'h6'
+        text: 'technological innovation leads to success'
+      copy:
+        size: 'medium'
+        content:
+          'Artificial intelligence, meanwhile, can guide passengers around the airport in the same
+          way that Google Maps gets people to their destinations. It should be that easy to find
+          somewhere to change your currency, buy a coffee or find an Uber by simply looking at an
+          app on your phone. For that matter, while you’re in the air on a plane, there is no reason
+          free dependable 6G shouldn’t be the norm. If I’m a regular traveler, why do I have to
+          choose from 50 movies I’ve already seen? Why can’t I have 200 movies I may not have
+          watched? Why can’t I use the time to catch up on emails or watch Netflix? Although not all
+          solutions require expensive tech. Imagine if we board passengers by window, middle and
+          then aisle seats – rather than by seat number or zone. That sort of simplification saves
+          so much time, pain and effort. We want to see all these next-gen features and more besides
+          in our NEOM airports. Luckily, we have a blank sheet of paper, so if anyone can do it we
+          can. This will extend to our NEOM airline too, meaning we can create continuity of service
+          from destination-to-destination – including time on the plane. It will be completely
+          integrated and seamless because both the airline and the airport will be serving the same
+          vision, same owner and same passenger. Innovations in the air might even include
+          horizontal seats in all classes and perhaps a better way to manage hand luggage that
+          doesn’t require you to store a bag above your head.'
+  - type: 'cta'
+    item: 'import!./../component/organism/article-cta/data/default.yaml'
+  - type: 'paragraph'
+    item:
+      copy:
+        size: 'small'
+        content:
+          'For every customer should feel like an honored guest. And every trip should feel like a
+          pleasure. That way, people will arrive at their destinations with an overwhelming feeling
+          of positivity. If we can do all that, people might not feel that they want to exit an
+          airport as quickly as is humanly possible. Although, to unlock more capacity, we will
+          probably want them to.'
+
+share: 'import!./share.yaml'
+backButton: true
+overviewLink:
+  href: './'
+tableOfContents: 'import!./../component/organism/table-of-contents/data/default.yaml'

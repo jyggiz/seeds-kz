@@ -1,0 +1,91 @@
+@mixin imageGrid {
+  display: grid;
+  grid-column-gap: var(--grid-gap);
+  grid-row-gap: var(--grid-gap);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-auto-rows: minmax(0, 450px);
+}
+
+.b-imageGrid {
+  --component-background-color: var(--color-cream);
+  --brand-book-grid-max-width: 1080px;
+  --brand-book-grid-padding: 20px;
+
+  &__title {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--brand-book-grid-padding) 0;
+  }
+
+  &__items {
+    @include list-reset();
+
+    height: 640px;
+    display: flex;
+  }
+
+  &__itemWrapper {
+    padding: 0 var(--brand-book-grid-padding);
+  }
+
+  &__item {
+    @include aspect-ratio(1, 1);
+
+    height: 100%;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .a-pageIndicators {
+    .a-pageIndicators_item {
+      margin: 0 calc(var(--grid-gap) / 2) calc(var(--grid-gap) / 2);
+    }
+  }
+
+  .m-downloadItem {
+    position: absolute;
+    inset: 0;
+  }
+
+  @include respond-to(MEDIUM) {
+    &__content {
+      height: auto;
+      flex-direction: row;
+      overflow: visible;
+    }
+
+    &__items {
+      height: 500px;
+    }
+
+    &__items {
+      @include imageGrid;
+      @include list-reset(60px var(--brand-book-grid-padding));
+
+      height: auto;
+      max-width: var(--brand-book-grid-max-width);
+      position: relative;
+    }
+
+    &__itemWrapper {
+      padding: 0;
+    }
+
+    &__pagination {
+      display: none;
+    }
+  }
+}

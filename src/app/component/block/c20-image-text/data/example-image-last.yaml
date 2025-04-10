@@ -1,0 +1,30 @@
+theme: 'dark'
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      eyebrow:
+        text: 'NEOM'
+      heading:
+        text: 'is a vision of what the future might look like'
+        size: h5
+        element: h2
+      copy:
+        size: 'small'
+        content:
+          '<p>It’s an attempt to do something that’s never been done before and it’s coming at a
+          time when the world needs fresh thinking and new solutions. Simply put, NEOM will be a
+          destination, a home for people who dream big and want to be part of building a new model
+          for sustainable living, working and prospering.</p>'
+      buttons: 'import!../../c24-content/data/partial-buttons-white.yaml'
+
+  - align:
+      horizontal: start
+      vertical: top
+    type: asset
+    content:
+      variant: 'landscape'
+      image:
+        src: 'image/c20-test-image.jpg'

@@ -1,0 +1,27 @@
+scrollComponent: true
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            image:
+              src: 'image/logo-mark-neom.png'
+              alt: 'NEOM logo mark'
+            eyebrow:
+              text: 'Our Vision'
+            copy:
+              size: 'medium'
+              content:
+                '<p>The land of the future, where the greatest minds and best talents are empowered
+                to embody pioneering ideas and exceed boundaries in a world inspired by
+                imagination.</p>'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

@@ -1,0 +1,153 @@
+.o-regionSliderNavigation {
+  @include aspect-ratio(1, $relative: false);
+
+  max-width: 100vw;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  z-index: zindex($zLayout, default);
+  max-height: calc((13 / 18) * 100vw);
+
+  &__container {
+    @include offset(0, 0);
+    @include size(100%);
+
+    overflow: hidden;
+    position: absolute;
+  }
+
+  &__map {
+    @include aspect-ratio(1);
+  }
+
+  .a-image,
+  .a-image__background,
+  .a-image__picture {
+    top: -10%;
+  }
+
+  &__pagination {
+    bottom: 45%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transform: skewY(359deg);
+  }
+
+  &__paginationItems {
+    @include list-reset();
+  }
+
+  &__paginationItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    .a-stepIndicator__label {
+      pointer-events: none;
+    }
+
+    &:nth-child(1) {
+      left: 15%;
+
+      .a-stepIndicator__index {
+        animation-delay: 1s;
+      }
+    }
+
+    &:nth-child(2) {
+      left: 32%;
+
+      .a-stepIndicator__index {
+        animation-delay: 2s;
+      }
+    }
+
+    &:nth-child(3) {
+      left: 52%;
+
+      .a-stepIndicator__index {
+        animation-delay: 3s;
+      }
+    }
+
+    &:nth-child(4) {
+      left: 73%;
+
+      .a-stepIndicator__index {
+        animation-delay: 4s;
+      }
+    }
+
+    .a-stepIndicator:not(.-isActive) {
+      .a-stepIndicator__index {
+        animation: pulse 4s infinite;
+      }
+    }
+  }
+
+  &__paginationLine {
+    position: absolute;
+    bottom: -2px;
+    left: 8.8%;
+    right: 8.8%;
+    border: 2px solid var(--color-gold);
+  }
+
+  &__regions {
+    @include size(100%);
+    @include offset(0, 0);
+
+    position: absolute;
+  }
+
+  &__region {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity 0.7s ease-out;
+    opacity: 0;
+    height: auto;
+    overflow: hidden;
+
+    &.-isActive {
+      opacity: 1;
+    }
+
+    /* NOTE:
+    ** Removes the border that is created automatically with an empty image
+    ** It's impossible to remove using other CSS declarations
+    **
+    ** TODO: Delete CSS selector when NEOM-4425 will be resolved on BE
+    */
+    .a-image {
+      .a-image__img {
+        &:not([src]),
+        &[src=""] {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include respond-to("LARGE_LANDSCAPE") {
+    @include offset(0);
+
+    max-width: min(50vw, 75vh);
+    max-height: 100%;
+
+    &__pagination {
+      bottom: 40%;
+    }
+
+    .a-image,
+    .a-image__background,
+    .a-image__picture {
+      top: 0px;
+    }
+  }
+}

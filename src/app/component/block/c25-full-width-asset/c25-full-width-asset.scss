@@ -1,0 +1,91 @@
+.b-fullWidthAsset {
+  --component-heading-color: var(--color-white);
+  --component-text-color: var(--color-white);
+  --component-background-color: var(--color-black);
+
+  @include vh(100, min-height);
+  @include blockPadding();
+
+  position: relative;
+  width: 100%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  overflow: hidden;
+
+  &.-cropped {
+    min-height: calc((var(--vh) * 100) - (2 * var(--block-padding-large)));
+  }
+
+  .o-video video,
+  .a-image__picture {
+    --media-component-block-padding: var(--component-block-padding, 0);
+
+    padding-block: var(--media-component-block-padding, 0);
+  }
+
+  &__buttons {
+    text-align: center;
+    margin-top: 55px;
+
+    .m-button {
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__container {
+    @include size(100%);
+
+    max-width: 1020px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: zindex($zLayout, content);
+  }
+
+  .m-componentHeader {
+    @include container();
+
+    .a-moustache {
+      margin: 1em 0 0;
+    }
+  }
+
+  .o-video {
+    @include size(100%);
+    @include offset();
+
+    position: absolute;
+  }
+
+  .m-button.-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  @include respond-to(MEDIUM) {
+    &__buttons {
+      .m-button {
+        &:not(:first-child) {
+          margin-inline-start: 40px;
+          margin-top: 0;
+        }
+      }
+    }
+
+    .m-button.-close {
+      right: 40px;
+      top: 40px;
+    }
+  }
+  @include neomThemes;
+}

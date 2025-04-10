@@ -1,0 +1,12 @@
+scrollComponent: true
+disableTransition: false
+
+items:
+  - label: 'Desktop'
+    content:
+      - componentId: c68
+        data: 'import!../../c68-font-styles/data/desktop.yaml'
+  - label: 'Mobile'
+    content:
+      - componentId: c68
+        data: 'import!../../c68-font-styles/data/mobile.yaml'

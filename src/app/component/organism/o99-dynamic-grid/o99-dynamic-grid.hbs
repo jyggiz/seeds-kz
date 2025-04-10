@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="./o99-dynamic-grid.scss">
+<script src="./O99DynamicGrid.ts"></script>
+
+
+<div class="o-dynamicGrid"
+  data-component="o99-dynamic-grid"
+  {{#if id}} id="{{id}}"{{/if}}
+  style="{{#each columns}}--grid-template-{{@key}}:repeat({{this}}, minmax(0, 1fr));{{/each}}
+         {{#if autoRows}}--grid-auto-rows:{{autoRows}};{{/if}}
+         {{#if gap}}--grid-gap:{{gap}};{{/if}}"
+>
+  {{#each items}}
+    <div class="o-dynamicGrid__item" data-grid-item>
+      {{> (lookup . 'componentName') data }}
+    </div>
+  {{/each}}
+</div>

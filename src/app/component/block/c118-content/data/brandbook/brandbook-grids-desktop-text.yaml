@@ -1,0 +1,29 @@
+scrollComponent: true
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            heading:
+              element: 'h3'
+              text: 'L - Desktop'
+              size: 'h5'
+            copy:
+              size: 'medium'
+              content:
+                <p>1440px and above. 12 columns, 20px baseline. Using a baseline  allows elements
+                across columns to line up visually. It helps to unify scale. It's a quick way to
+                consistently line things up across pages. </p>
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

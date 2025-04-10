@@ -1,0 +1,38 @@
+theme: 'dark'
+heading: 'Leading the world in'
+
+variant: medium
+
+items:
+  - title: 'Exemplary capital projects & infrastructure'
+    image:
+      alt: 'Globe image'
+      src: 'image/c71-facts-list/1.jpg'
+  - title: 'Circular economy, internet of things & robotics'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/2.jpg'
+  - title: 'Cognitive cities, autonomous vehicles & digital twins'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/3.jpg'
+  - title: 'Worker welfare & livability for all'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/4.jpg'
+  - title: 'Low-carbon sustainable construction'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/5.jpg'
+  - title: 'Enabling industry investment & incubation'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/6.jpg'
+  - title: 'Off-site modular construction & 3D printing'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/7.jpg'
+  - title: 'Digital design & transformational thinking'
+    image:
+      alt: 'Hallway image'
+      src: 'image/c71-facts-list/8.jpg'

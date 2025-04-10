@@ -1,0 +1,15 @@
+
+
+<div class="m-progressBar" data-component="progress-bar" aria-hidden="true"{{#if timing}} data-timing="{{toJson timing}}"{{/if}}>
+  {{#with timing.label}}
+    <div class="m-progressBar__label">
+      {{this}}
+    </div>
+  {{/with}}
+  <div class="m-progressBar__wrapper">
+    <div class="m-progressBar__initialProgress"></div>
+    <div class="m-progressBar__currentProgress" data-current-progress-bar></div>
+    <div class="m-progressBar__selectedProgress" data-selected-progress-bar></div>
+  </div>
+  {{> atom/a09-time-indicator variant="tooltip"}}
+</div>

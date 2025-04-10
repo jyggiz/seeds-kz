@@ -1,0 +1,152 @@
+@mixin text-style {
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+}
+
+.o-languageSelector {
+  align-items: center;
+  display: flex;
+
+  &__list {
+    @include size(100%);
+    @include vh(100);
+
+    background: var(--color-black-75a);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    position: fixed;
+    text-transform: uppercase;
+    top: 0;
+    padding: 120px 0 0 0;
+
+    @include respond-to("MEDIUM") {
+      padding: 139px 0 0 0;
+    }
+  }
+
+  &__wrapper {
+    align-items: flex-start;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    overflow-x: visible;
+    overflow-y: auto;
+    width: 100%;
+    border-top: 1px solid var(--color-white-15a);
+  }
+
+  &__toggle {
+    @include text-style;
+
+    --icon-size: 10px;
+
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+
+    &.-ar {
+      font-size: 17px;
+      letter-spacing: 0;
+
+      .o-languageSelector__code {
+        transform: translateY(-4px);
+      }
+    }
+
+    .a-icon {
+      margin-inline-start: 5px;
+      transform: rotate(180deg);
+      transition: transform 0.25s ease-in-out;
+    }
+  }
+
+  &__items {
+    @include list-reset(0, 20px 0 0);
+
+    max-width: 280px;
+    text-align: right;
+    width: 100%;
+    padding: 0 $containerMargin 0;
+
+    @include respond-to("MEDIUM") {
+      padding: 0 $containerMargin 0;
+    }
+  }
+
+  &__item {
+    --icon-size: 12px;
+
+    opacity: 0.6;
+    position: relative;
+    width: 100%;
+    min-width: 90px;
+
+    &.-isActive,
+    &:hover {
+      opacity: 1;
+    }
+
+    &.-isActive {
+      pointer-events: none;
+    }
+
+    // stylelint-disable no-descending-specificity
+    .a-icon {
+      color: transparent;
+      position: absolute;
+      right: 0;
+      transform: translateY(1px);
+
+      [dir="rtl"] & {
+        left: -6px;
+        right: initial;
+      }
+    }
+    // stylelint-enable no-descending-specificity
+  }
+
+  &__link {
+    @include text-style;
+
+    display: flex;
+    justify-content: flex-end;
+    padding: min(1.6vh, 16px) 16px min(1.7vh, 17px) 12px;
+    white-space: nowrap;
+
+    &.-ar {
+      letter-spacing: 0;
+    }
+  }
+
+  &.-isExpanded {
+    .o-languageSelector__list {
+      display: flex;
+    }
+
+    .o-languageSelector__toggle {
+      .a-icon {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    &__items {
+      padding-top: 40px;
+    }
+
+    &__wrapper {
+      overflow: visible;
+    }
+  }
+}

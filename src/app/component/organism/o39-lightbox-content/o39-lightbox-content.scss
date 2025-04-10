@@ -1,0 +1,205 @@
+.o-lightboxContent {
+  @include size(85%, 100%);
+
+  position: relative;
+  max-width: 1340px;
+  color: var(--color-white);
+
+  &__main {
+    flex: 1 0 auto;
+    height: 100%;
+  }
+
+  &__currentImageContainer {
+    display: none;
+  }
+
+  &__swiper {
+    @include list-reset;
+
+    display: flex;
+  }
+
+  &__swiperContainer {
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__item {
+    max-height: 90%;
+    overflow-y: scroll;
+  }
+
+  &__thumbnail {
+    @include size(100%);
+
+    pointer-events: none;
+    display: block;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  &__controls {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    transition: opacity 0.3s ease;
+  }
+
+  .-isDisabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &__paginationWrapper {
+    --page-indicator-color: var(--color-white-20a);
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  @include respond-to(LARGE) {
+    @include size(100%);
+
+    &__swiperContainer {
+      width: 80%;
+    }
+
+    &__item {
+      max-height: initial;
+      overflow-y: hidden;
+    }
+
+    &__controls {
+      @include size(100%);
+
+      margin: 0 auto;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &.-prev {
+        left: 0;
+      }
+
+      &.-next {
+        right: 0;
+      }
+
+      [dir="rtl"] & {
+        &.-prev {
+          left: inherit;
+          right: 0;
+        }
+
+        &.-next {
+          right: inherit;
+          left: 0;
+        }
+      }
+    }
+
+    &__paginationWrapper {
+      display: none;
+    }
+
+    &__thumbnail {
+      .o-videoControls {
+        display: none;
+      }
+    }
+
+    &.-isExtended {
+      .o-lightboxContent__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 65px;
+      }
+
+      .o-lightboxContent__currentImageContainer {
+        @include size(80%, 100%);
+
+        display: block;
+        position: relative;
+
+        .o-lightboxContent__currentImage {
+          @include size(100%);
+
+          position: absolute;
+          z-index: 1;
+
+          &:not(.-isActive) {
+            display: none;
+          }
+        }
+
+        .a-image__img {
+          margin: 0 auto;
+          object-fit: contain;
+        }
+
+        .o-video {
+          margin: 0 auto;
+          height: 100%;
+        }
+      }
+
+      .o-lightboxContent__swiperContainer {
+        max-height: 140px;
+      }
+
+      .o-lightboxContent__item {
+        max-width: 200px;
+
+        .o-lightboxContent__thumbnail {
+          pointer-events: auto;
+          display: block;
+          padding: 0;
+          border: none;
+          background: transparent;
+
+          &.-isActive {
+            border: 1px solid var(--color-white);
+
+            .a-image__picture {
+              padding: 5px;
+            }
+          }
+
+          &:focus {
+            border: 2px solid var(--color-light-blue);
+            border-radius: 2px;
+
+            .a-image__picture {
+              padding: 5px;
+            }
+          }
+        }
+      }
+
+      .o-lightboxContent__control {
+        top: unset;
+        bottom: 15px;
+      }
+    }
+  }
+
+  @include respond-to(XXXLARGE) {
+    max-width: 1660px;
+  }
+}

@@ -1,0 +1,25 @@
+.o-formControls {
+  &__container {
+    padding: 20px 20px;
+    background: var(--color-white);
+
+    .m-button {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-inline-start: auto;
+      }
+    }
+  }
+
+  &__controls {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include respond-to(LARGE) {
+    &__container {
+      padding: 30px 70px;
+    }
+  }
+}

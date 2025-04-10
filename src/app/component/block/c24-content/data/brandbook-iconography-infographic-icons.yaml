@@ -1,0 +1,19 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      heading:
+        element: 'h3'
+        text: 'Infographic icons'
+        size: 'h5'
+      copy:
+        size: 'medium'
+        content:
+          <p>The infographic icons are not used on the website. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Pellentesque ut ullamcorper elit. Sed nec varius quam,
+          pharetra ornare nibh. Vestibulum sed tellus tortor.</p>

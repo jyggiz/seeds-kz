@@ -1,0 +1,40 @@
+scrollComponent: true
+hasHighlight: true
+
+button:
+  label: Load more media
+
+header:
+  heading:
+    element: h3
+    size: h3
+    text: Neom insights
+
+items:
+  - image:
+      src: 'image/c20-test-image.jpg'
+    heading:
+      text: 'Seawater desalination plant'
+    copy:
+      'NEOM will innovate desalination processes through revolutionary, sustainable and renewable
+      technology. A vast facility integrated with brine processing, the Seawater Desalination Plant
+      is at the core of this transformation. Based on new high recovery reverse osmosis membrane
+      technology, it aims to supply the entire region for a 10 year period. These innovations will
+      allow for a 60% recovery and will process up to 1M m3 of water a day.'
+    link:
+      href: '#'
+      label: Learn more
+
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'
+  - 'import!../../../organism/o35-article-card/data/example-newsroom.yaml'

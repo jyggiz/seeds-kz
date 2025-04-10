@@ -1,0 +1,44 @@
+.o-popupMessageContent {
+  background-color: var(--color-white);
+  padding: 25px;
+
+  &__copy {
+    margin: 40px 0;
+  }
+
+  &__buttons {
+    @include type("body", "xsmall");
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .m-button {
+      &:not(:first-child) {
+        margin: 20px 0 0;
+      }
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    padding: 35px;
+
+    &__buttons {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .m-button {
+        width: 100%;
+
+        &:not(:first-child) {
+          margin: 0;
+          margin-inline-start: 20px;
+        }
+      }
+    }
+  }
+
+  @include respond-to(LARGE) {
+    padding: 65px;
+  }
+}

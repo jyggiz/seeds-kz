@@ -1,0 +1,16 @@
+image:
+  src: './image/c11-slider/kitesurfing.webp'
+  alt: 'Kitesurfing asset'
+
+content:
+  heading:
+    text: 'GKA<br />Kitesurfing'
+
+button:
+  icon: 'arrow-right'
+  label: 'Read more'
+  theme: 'dark-gold'
+
+link:
+  href: '#'
+  target: '_blank'

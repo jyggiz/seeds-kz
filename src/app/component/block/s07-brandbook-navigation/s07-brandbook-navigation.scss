@@ -1,0 +1,479 @@
+/* stylelint-disable no-descending-specificity */
+.b-brandbookNavigation {
+  --container-height: 100px;
+
+  &__overlay {
+    @include vh(100, height);
+    background-color: var(--color-white);
+    display: none;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    width: 100%;
+    z-index: zindex($zLayout, dropdown-navigation-mask);
+  }
+
+  &__hamburgerContainer {
+    position: fixed;
+    z-index: zindex($zLayout, hamburger);
+    top: 28px;
+    right: 5vw;
+
+    .m-hamburgerMenu {
+      &.-isOpen,
+      .b-brandbookNavigation.-isScrolled & {
+        --hamburger-icon-color: var(--color-black);
+        --breadcrumb-color: var(--color-black);
+      }
+    }
+  }
+
+  &__logoContainer {
+    height: var(--container-height);
+    display: flex;
+    align-items: center;
+
+    &.-light {
+      display: flex;
+    }
+
+    &.-dark {
+      display: none;
+    }
+  }
+
+  &__closeButtonContainer {
+    display: none;
+  }
+
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: zindex($zLayout, navigation);
+    width: 100%;
+    background-color: transparent;
+    height: var(--container-height);
+    box-sizing: border-box;
+    transition: background-color 0.4s ease;
+    border-bottom: 1px solid var(--color-white-15a);
+
+    .b-brandbookNavigation.-isScrolled & {
+      background-color: var(--color-white);
+
+      .b-brandbookNavigation__logoContainer.-light {
+        display: none;
+      }
+
+      .b-brandbookNavigation__logoContainer.-dark {
+        display: flex;
+      }
+    }
+
+    .b-brandbookNavigation.-isOpen & {
+      background-color: var(--color-white);
+
+      .b-brandbookNavigation__content {
+        border-bottom: 1px solid var(--color-border-grey);
+      }
+
+      .b-brandbookNavigation__logoContainer.-light {
+        display: none;
+      }
+
+      .b-brandbookNavigation__logoContainer.-dark {
+        display: flex;
+      }
+    }
+  }
+
+  &__content {
+    @include container;
+
+    align-items: center;
+    height: var(--container-height);
+  }
+
+  &__items {
+    @include list-reset();
+    @include type("navigation", "large");
+
+    color: var(--navigation-item-color);
+    display: none;
+    font-size: 16px;
+
+    &.-primary {
+      overflow-y: auto;
+      height: calc(100vh - var(--container-height));
+    }
+
+    &.-secondary {
+      @include type("overline", "large");
+
+      list-style-type: decimal;
+      margin-inline-start: 20px;
+    }
+
+    &.-tertiary {
+      @include type("overline", "small");
+      color: var(--navigation-item-color);
+    }
+  }
+
+  &__item {
+    .a-icon {
+      @include size(12px);
+      margin-bottom: 3px;
+      margin-inline-start: 3px;
+    }
+
+    &.-isActive {
+      &::marker {
+        color: var(--navigation-item-active-color);
+      }
+    }
+
+    &.-primary {
+      line-height: 40px;
+      padding: 15px 0;
+      position: relative;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--color-border-grey);
+      width: 100%;
+      padding-inline-end: 3%;
+    }
+
+    &.-tertiary {
+      margin: 25px 0;
+    }
+
+    &.-secondary {
+      line-height: 1;
+      margin: 20px 0 0;
+
+      &.-isOpen {
+        .b-brandbookNavigation__items.-tertiary {
+          display: block;
+        }
+
+        .a-icon {
+          transition: transform 0.3s ease;
+          transform: rotate(180deg);
+        }
+      }
+
+      &.-isActive {
+        .b-brandbookNavigation__button.-secondary {
+          color: var(--navigation-item-active-color);
+        }
+      }
+    }
+
+    &.-primary.-isOpen {
+      .b-brandbookNavigation__button.-primary {
+        .a-icon {
+          transform: rotate(180deg);
+        }
+      }
+      .b-brandbookNavigation__menuContainer {
+        display: block;
+
+        .b-brandbookNavigation__items.-secondary {
+          display: block;
+        }
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__link,
+  &__button {
+    color: var(--navigation-item-color);
+    transition: 0.3s ease-in;
+
+    &.-secondary {
+      display: inline-block;
+    }
+
+    @include hover() {
+      color: var(--navigation-item-active-color);
+    }
+  }
+
+  &__button {
+    appearance: none;
+    margin: 0;
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-transform: inherit;
+
+    &.-primary {
+      @include type("overline", "large");
+      display: flex;
+      padding: 10px 0;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    &.-secondary {
+      @include type("overline", "large");
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .m-button {
+    justify-self: flex-end;
+    margin-inline-start: auto;
+  }
+
+  --navigation-item-color: var(--color-black-50);
+  --navigation-item-active-color: var(--color-black);
+
+  @include respond-to("MEDIUM") {
+    --container-height: 140px;
+    --navigation-item-color: var(--color-white-70a);
+    --navigation-item-active-color: var(--color-white);
+
+    &.-isScrolled,
+    &.-isOpen {
+      --navigation-item-color: var(--color-black-50);
+      --navigation-item-active-color: var(--color-black);
+    }
+
+    &.-isScrolled {
+      .b-brandbookNavigation__item.-primary.-isActive {
+        border-bottom: none;
+      }
+    }
+
+    &__closeButtonContainer {
+      display: none;
+    }
+
+    &__menuContainer {
+      height: calc(100vh - 140px);
+      left: 0;
+      position: absolute;
+      overflow: auto;
+      top: 140px;
+      right: -140px;
+      display: none;
+      transition: 0.3s ease-in;
+    }
+
+    &__content {
+      flex-wrap: nowrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: none;
+    }
+
+    &__logoHamburgerContainer {
+      width: 15%;
+    }
+
+    &__items {
+      color: var(--navigation-item-color);
+
+      &.-primary {
+        display: flex;
+        flex: 8 1 0;
+        justify-content: center;
+        overflow-y: unset;
+        height: unset;
+      }
+      &.-secondary {
+        margin: 0;
+      }
+      &.-tertiary {
+        margin: 0 0 0 -32px;
+      }
+    }
+
+    &__item {
+      &.-isActive {
+        &::marker {
+          color: var(--navigation-item-color);
+        }
+      }
+
+      &.-primary {
+        border-bottom: none;
+        width: unset;
+        padding: 50px 0;
+        margin: 0 25px;
+
+        &.-isActive {
+          border-bottom: 1px solid var(--color-gold);
+        }
+      }
+
+      &.-secondary {
+        margin: 0 0 0 34px;
+
+        &.-isActive {
+          .b-brandbookNavigation__button.-secondary {
+            color: var(--navigation-item-color);
+          }
+        }
+        &.-isOpen {
+          .b-brandbookNavigation__button.-secondary {
+            color: var(--navigation-item-color);
+          }
+        }
+      }
+
+      &.-tertiary {
+        @include type("overline", "medium");
+        margin: 20px 0;
+      }
+
+      .a-icon {
+        @include size(10px);
+      }
+    }
+
+    &__link,
+    &__button {
+      &.-primary {
+        @include type("navigation", "small");
+        font-weight: 500;
+      }
+
+      &.-secondary {
+        margin: 40px 0 30px;
+        width: auto;
+      }
+    }
+
+    &__button {
+      &.-primary,
+      &.-secondary {
+        display: inline-block;
+      }
+
+      &.-primary {
+        padding: 0;
+      }
+    }
+
+    &__hamburgerContainer {
+      display: none;
+      position: fixed;
+      top: 40px;
+      right: 2vw;
+      z-index: zindex($zLayout, hamburger);
+
+      .m-hamburgerMenu {
+        &__menu {
+          @include size(var(--min-touch-size));
+          display: grid;
+          place-items: center;
+          position: relative;
+          background-color: var(--color-white-70a);
+          border-radius: 50%;
+          transition: background-color 250ms ease-out;
+        }
+
+        &__breadcrumb {
+          position: absolute;
+          margin-inline-end: 0;
+          height: var(--min-touch-size);
+          overflow: hidden;
+          right: 0;
+          transition: padding-inline-end 250ms ease-out, opacity 250ms ease-out;
+          background-color: var(--color-white);
+          display: flex;
+          opacity: 0;
+          align-items: center;
+          padding-inline-start: 40px;
+          pointer-events: none;
+          border-radius: 30px;
+        }
+      }
+
+      @include hover {
+        .m-hamburgerMenu {
+          &__menu {
+            background-color: var(--color-white);
+          }
+
+          &__breadcrumb {
+            padding-inline-end: calc(var(--min-touch-size) + 10px);
+            opacity: 1;
+            pointer-events: all;
+          }
+        }
+      }
+    }
+
+    &__container {
+      flex-direction: row;
+    }
+
+    &.-isOpen {
+      --icon-size: 32px;
+
+      .b-brandbookNavigation__closeButtonContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-white);
+        opacity: 0.75;
+        color: var(--color-black);
+        padding: 30px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: fixed;
+        top: 40px;
+        right: 2vw;
+        z-index: zindex($zLayout, hamburger);
+
+        .a-icon {
+          @include size(32px);
+          position: absolute;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__link,
+    &__button {
+      &.-primary {
+        @include type("navigation", "large");
+      }
+    }
+
+    &__container {
+      .b-brandbookNavigation.-isScrolled & {
+        background-color: transparent;
+      }
+    }
+
+    &__item {
+      .a-icon {
+        @include size(12px);
+      }
+
+      &.-primary {
+        margin: 0 40px;
+      }
+    }
+  }
+}

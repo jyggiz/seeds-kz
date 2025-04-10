@@ -1,0 +1,40 @@
+
+
+<section class="b-journey t-{{theme}}" data-component="c104-journey" {{#if
+scrollComponent}}data-scroll-component{{/if}} {{#if id}} id="{{id}}" {{/if}} {{#if (condition backgroundColor '||'
+padding)}}
+style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+  {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+  {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+{{/if}} data-initial-slide-index="{{#if initialSlideIndex}}{{initialSlideIndex}}{{^}}0{{/if}}" data-lazy-component>
+
+  <div class="b-journey__heading">
+    {{> molecule/m04-component-header header disableTransition=true}}
+  </div>
+
+  {{> ./component/timeline timelinePoints=timelinePoints}}
+
+  <div class="b-journey__carousel">
+    {{> organism/o95-dynamic-carousel items=items }}
+  </div>
+
+  <ul class="b-journey__cardInfoContainer">
+    {{#each items}}
+    <li class="b-journey__cardInfo" data-card-info>
+      {{#with data}}
+        {{#if eyebrow}}
+        <div class="b-journey__cardInfoEyebrow">
+          {{> atom/a04-eyebrow eyebrow}}
+        </div>
+        {{/if}}
+        {{#if moustache}}
+        <div class="b-journey__cardInfoMoustache">
+          {{> atom/a05-moustache moustache}}
+        </div>
+        {{/if}}
+      {{/with}}
+    </li>
+    {{/each}}
+  </ul>
+
+</section>

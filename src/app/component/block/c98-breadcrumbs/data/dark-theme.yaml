@@ -1,0 +1,13 @@
+theme: 'dark'
+items:
+  - label: 'NEOM made to change'
+    href: '/home'
+  - label: 'Regions'
+    href: '/regions'
+  - label: 'Sindalah 1'
+    href: '/sindalah-1'
+  - label: 'Sindalah 2'
+    href: '/sindalah-2'
+    nonClickable: true
+  - label: 'Sindalah 3'
+    href: '/sindalah-3'

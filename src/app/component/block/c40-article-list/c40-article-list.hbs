@@ -1,0 +1,24 @@
+
+
+<section class="b-articleList{{#if firstBlock}} -isFirstBlock{{/if}}"
+         data-component="c40-article-list"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if columnCount}}style="--article-list-columns: {{columnCount}}"{{/if}}
+         data-lazy-component>
+  <div class="b-articleList__container">
+    {{#with header}}
+      <header class="b-articleList__header">
+        {{> molecule/m18-paragraph this }}
+      </header>
+    {{/with}}
+
+    <ul class="b-articleList__items">
+      {{#each items}}
+        <li class="b-articleList__item{{#if (condition ../hasHighlight '&&' (condition @index '===' 0))}} -highlighted{{/if}}">
+            {{> organism/o35-article-card this highlighted=(condition ../hasHighlight '&&' (condition @index '===' 0))}}
+        </li>
+      {{/each}}
+    </ul>
+
+  </div>
+</section>

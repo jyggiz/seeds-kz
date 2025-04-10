@@ -1,0 +1,14 @@
+navigation: 'import!../app/component/block/s01-navigation/data/navigation-en-blank.yaml'
+language: kk
+
+meta:
+  id: '0.4'
+  status: 'done'
+  notes: ''
+  category: 'Pages'
+
+blocks:
+  - name: 'c37-legal-content'
+    data: 'import!../app/component/block/c37-legal-content/data/kz-cookie-policy.yaml'
+  - name: 's02-footer'
+    data: 'import!../app/component/block/s02-footer/data/seeds-index-kz.yaml'

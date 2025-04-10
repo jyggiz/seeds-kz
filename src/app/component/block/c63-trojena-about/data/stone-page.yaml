@@ -1,0 +1,33 @@
+scrollComponent: true
+forceBlackText: true
+
+enableTextAppearingAnimation: true
+enableImageZoomingAnimation: true
+
+theme: dark
+
+intro:
+  background:
+    image:
+      src: 'image/c63-about-trojena/stones-desktop.jpg'
+      alt: ''
+      sources:
+        - src: 'image/c63-about-trojena/stones-desktop.jpg'
+          media: '(min-width: 768px)'
+        - src: 'image/c63-about-trojena/stones-mobile.jpg'
+          media: '(max-width: 767px)'
+
+  content:
+    - copy:
+        size: 'large'
+        content:
+          'Some 95% of our land is committed to a nature reserve. Residents, tourists and wildlife
+          will benefit from our regreening and rewilding model. For humans, enhanced livability will
+          be the norm.'
+    - copy:
+        size: 'medium'
+        content:
+          'For native animals and plants, they will live in harmony with the land and sea – and be
+          under no threat from people or desertification. We must us all become stewards of tomorrow
+          – in order to repair our climate, save species and replenish natural resources. For NEOM
+          is an accelerator of planetary regeneration and nature has to come first.'

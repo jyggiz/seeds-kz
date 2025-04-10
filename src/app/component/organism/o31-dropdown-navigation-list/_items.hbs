@@ -1,0 +1,20 @@
+ <ul class="o-dropdownNavigationList__items{{#with type}} -{{this}}{{/with}}{{#each items}} {{#if items}}-line{{/if}}{{/each}}" data-dropdown-navigation-list>
+
+      {{#each items}}
+        <li class="o-dropdownNavigationList__item{{#with ../type}} -{{this}}{{/with}}"  data-navigation-list-item>
+          {{#if (condition ../type '===' 'projectMenu')}}
+            {{> molecule/m20-project-menu-item }}
+          {{/if}}
+          {{#if (condition ../type '===' 'sectorMenu')}}
+            {{> molecule/m21-sector-menu-item variant="dropdown" }}
+          {{/if}}
+          {{#if (condition ../type '===' 'menu')}}
+            {{#if items}}
+            {{> ./_menu-button.hbs }}
+            {{else}}
+            {{> ./_menu-link.hbs }}
+            {{/if}}
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>

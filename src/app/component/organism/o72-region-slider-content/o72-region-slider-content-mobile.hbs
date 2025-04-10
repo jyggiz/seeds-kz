@@ -1,0 +1,18 @@
+
+<ul class="o-regionSliderContent__propertyList swiper-wrapper">
+  {{#each properties}}
+    {{#each items}}
+      <li class="o-regionSliderContent__propertySubItem swiper-slide" data-swiper-slide>
+        {{#with image}}
+          <div class="o-regionSliderContent__propertyImageWrapper">
+            {{> atom/a01-image disableTransition=true}}
+          </div>
+        {{/with}}
+        <h6 class="o-regionSliderContent__propertySubItemHeading">{{heading}}</h6>
+        <p class="o-regionSliderContent__propertySubItemDescription">{{{description}}}</p>
+      </li>
+    {{/each}}
+  {{/each}}
+</ul>
+
+{{> atom/a08-page-indicators items=null }}

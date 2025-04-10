@@ -1,0 +1,8 @@
+images:
+  background:
+    src: 'image/c17-sectors/water.jpg'
+    alt: 'Pretty reef picture'
+label: REFORESTATION
+mask:
+  opacity: 1
+  solid: true

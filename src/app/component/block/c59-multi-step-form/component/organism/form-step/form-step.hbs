@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="./form-step.scss">
+<script src="./FormStep.ts"></script>
+
+
+<div class="o-formStep__container -step{{step}}" data-step="{{step}}" data-component="form-step" {{#if
+  scrollComponent}}data-scroll-component{{/if}} {{#if id}} id="{{id}}" {{/if}}>
+
+  {{#with groupsHeading}}
+  {{> atom/a03-heading size="h6" element="h6" }}
+  {{/with}}
+
+  {{!-- Input groups start --}}
+  {{#each groups}}
+
+  {{!-- Radio stylized fieldset --}}
+  {{#if (condition type '===' 'radioStylized')}}
+  {{> organism/o15-stylized-options}}
+  {{/if}}
+
+  {{!-- Checkbox stylized fieldset --}}
+  {{#if (condition type '===' 'checkboxStylized')}}
+  {{> organism/o15-stylized-options}}
+  {{/if}}
+
+  {{!-- Radio fieldset --}}
+  {{#if (condition type '===' 'radio')}}
+  {{> organism/o74-radio-list}}
+  {{/if}}
+
+  {{!-- Checkbox fieldset --}}
+  {{#if (condition type '===' 'checkbox')}}
+  {{> organism/o75-checkbox-list}}
+  {{/if}}
+
+  {{!-- Radio group fieldset --}}
+  {{#if (condition type '===' 'radioGroup')}}
+  {{> organism/o76-radio-group}}
+  {{/if}}
+
+  {{!-- Grid fieldset --}}
+  {{#if (condition type '===' 'grid')}}
+  {{> organism/o77-input-list}}
+  {{/if}}
+
+  {{/each}}
+  {{!-- Input groups end --}}
+
+  <p class="o-formStep__recaptcha">{{{recaptchaStatement}}}</p>
+</div>

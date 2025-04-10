@@ -1,0 +1,28 @@
+scrollComponent: true
+
+padding:
+  end: 'large'
+
+background:
+  mask:
+    opacity: 0
+  image:
+    src: 'image/c11-slider/athletes-ribbon.jpg'
+
+header:
+  heading:
+    element: 'h2'
+    size: 'h4'
+    text: 'Explore other sports'
+
+  articleIndicator:
+    text: '8 Articles in total'
+
+componentId: 'o14'
+
+items:
+  - 'import!../../../organism/o14-popout-card/data/basketball.yaml'
+  - 'import!../../../organism/o14-popout-card/data/beachsoccer.yaml'
+  - 'import!../../../organism/o14-popout-card/data/kitesurfing.yaml'
+  - 'import!../../../organism/o14-popout-card/data/mountainbiking.yaml'
+  - 'import!../../../organism/o14-popout-card/data/triathlon.yaml'

@@ -1,0 +1,6 @@
+title: 'a28-scale'
+
+scaleCell:
+  - startValue: 100 KM
+    value: 50 KM
+  - value: 0 KM

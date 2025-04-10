@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="./m39-step-indicators.scss">
+<script src="./M39StepIndicators.ts"></script>
+
+
+<div class="m-stepIndicators"
+         data-component="m39-step-indicators"
+         style="--step-indicator-items: {{total}}"
+         {{#if dir}}dir="{{dir}}"{{/if}}>
+  {{#each items}}
+    {{> atom/a22-step-indicator
+      active=(condition (arithmetic @index '+' 1) '===' ../current)
+      index=(arithmetic @index '+' 1)
+      passed=(condition (arithmetic @index '+' 1) '<' ../current)}}
+  {{/each}}
+  <div class="m-stepIndicators__progressBar" data-progress-bar>
+    <div class="m-stepIndicators__progressIndicator" data-progress-indicator></div>
+  </div>
+</div>

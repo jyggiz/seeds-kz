@@ -1,0 +1,25 @@
+scrollComponent: true
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: 'health-wellbeing-biotech'
+            copy:
+              content:
+                '<p><span class="s-paragraph -xlarge">Nam libero tempore, cum soluta nobis est
+                eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+                possimus, omnis voluptas assumenda est.</span></p>'
+        buttons:
+          contentButtons: 'import!./partial-buttons.yaml'
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

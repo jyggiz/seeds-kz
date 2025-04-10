@@ -1,0 +1,87 @@
+
+
+<section class="b-sectors{{#if theme}} t-{{theme}}{{/if}}" data-component="c17-sectors" {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+         style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+           {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+           {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  {{#with id}}
+    id="{{this}}"
+  {{/with}}
+data-lazy-component
+>
+  <div class="b-sectors__backgrounds">
+    {{#each items}}
+      {{#unless placeholder}}
+        <div class="b-sectors__backgroundImage" data-background>
+          {{> atom/a01-image image disableTransition=true }}
+        </div>
+      {{/unless}}
+    {{/each}}
+  </div>
+
+  <div class="b-sectors__container">
+    {{> molecule/m04-component-header }}
+    {{#with description}}
+      {{> molecule/m18-paragraph this}}
+    {{/with}}
+
+    <div class="b-sectors__content">
+        <div class="b-sectors__row">
+          <div class="b-sectors__placeholder" data-sector data-sector-placeholder>
+            <div class="b-sectors__placeholderWrapper"></div>
+          </div>
+          {{#each items}}
+            {{#if (condition @index '<' 5) }}
+              {{> molecule/m11-sector-button }}
+            {{/if}}
+          {{/each}}
+          <div class="b-sectors__placeholder" data-sector data-sector-placeholder>
+            <div class="b-sectors__placeholderWrapper"></div>
+          </div>
+        </div>
+
+        <div class="b-sectors__row -compact">
+          <div class="b-sectors__placeholder" data-sector data-sector-placeholder>
+            <div class="b-sectors__placeholderWrapper"></div>
+          </div>
+          <div class="b-sectors__placeholder" data-sector data-sector-placeholder>
+            <div class="b-sectors__placeholderWrapper"></div>
+          </div>
+
+          {{#each items}}
+            {{#if (condition (condition @index '>' 4) '&&' (condition @index '<' 9))}}
+                {{> molecule/m11-sector-button }}
+            {{/if}}
+          {{/each}}
+          <div class="b-sectors__placeholder" data-sector data-sector-placeholder>
+            <div class="b-sectors__placeholderWrapper"></div>
+          </div>
+          <div class="b-sectors__placeholder" data-sector data-sector-placeholder>
+            <div class="b-sectors__placeholderWrapper"></div>
+          </div>
+        </div>
+        <div class="b-sectors__row">
+          <div class="b-sectors__placeholder" data-sector data-sector-placeholder>
+            <div class="b-sectors__placeholderWrapper"></div>
+          </div>
+          {{#each items}}
+            {{#if (condition @index '>' 8) }}
+              {{#if placeholder}}
+              <div class="b-sectors__placeholder -isVisible" data-sector data-sector-placeholder>
+                <div class="b-sectors__placeholderWrapper"></div>
+              </div>
+              {{else}}
+                {{> molecule/m11-sector-button }}
+              {{/if}}
+            {{/if}}
+          {{/each}}
+          <div class="b-sectors__placeholder" data-sector data-sector-placeholder>
+            <div class="b-sectors__placeholderWrapper"></div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</section>

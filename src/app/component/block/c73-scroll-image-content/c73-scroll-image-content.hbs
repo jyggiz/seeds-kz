@@ -1,0 +1,47 @@
+
+
+
+<section class="b-scrollImageContent"
+         data-component="c73-scroll-image-content"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         data-lazy-component>
+  <div class="b-scrollImageContent__scrollContainer" data-scroll-pin-container>
+    {{#each sections}}
+      <div class="b-scrollImageContent__item{{#with theme}} t-{{this}}{{^}} t-light{{/with}}" data-item>
+        <div class="b-scrollImageContent__itemContent">
+          <div class="b-scrollImageContent__imageWrapper" data-image-wrapper>
+            {{#with image.caption}}{{> atom/a04-eyebrow this}}{{/with}}
+            {{> atom/a01-image image disableTransition=true variant="block" }}
+            {{#with labels}}
+              <ul class="b-scrollImageContent__labels" data-label-wrapper>
+                {{#each this}}
+                  <li class="b-scrollImageContent__label -{{direction}} -{{#with textAlign}}{{this}}{{^}}center{{/with}}" data-location="{{toJson location}}" data-direction="{{direction}}" data-align="{{#with textAlign}}{{this}}{{^}}center{{/with}}" data-label>
+                    {{#with label}}
+                      <div class="b-scrollImageContent__labelCopyWrapper" data-copy>
+                        {{#with overline}}<p class="b-scrollImageContent__labelOverline">{{this}}</p>{{/with}}
+                        <p class="b-scrollImageContent__labelCopy">{{{copy}}}</p>
+                      </div>
+                    {{/with}}
+                    <span class="b-scrollImageContent__labelLine" data-line></span>
+                    <span class="b-scrollImageContent__labelDot" data-dot></span>
+                  </li>
+                {{/each}}
+              </ul>
+            {{/with}}
+          </div>
+          {{#with copy}}
+          <div class="b-scrollImageContent__contentWrapper" data-item-content>
+            {{> atom/a04-eyebrow eyebrow}}
+            <div class="b-scrollImageContent__copyWrapper">
+              {{#each descriptions}}
+                <p class="b-scrollImageContent__copy">{{{this}}}</p>
+              {{/each}}
+            </div>
+          </div>
+          {{/with}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>

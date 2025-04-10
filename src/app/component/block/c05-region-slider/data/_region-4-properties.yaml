@@ -1,0 +1,31 @@
+header:
+  eyebrow:
+    text: 'Upper Desert Region'
+  heading:
+    text: 'Incredibly Diverse Valleys'
+description: 'NEOM’s majestic valleys offer magnificent sceneries and support special biodiversity.'
+
+images:
+  background:
+    src: 'image/c05-region-slider/region-4/background.jpg'
+    alt: 'Pretty reef picture'
+    sources:
+      - src: 'image/c05-region-slider/region-4/background.jpg'
+        media: '(min-width: 768px)'
+  region:
+    src: 'image/c05-region-slider/map-upper-valley-square.png'
+    alt: 'Region #4 highlight layer image here'
+    sources:
+      src: 'image/c05-region-slider/map-upper-valley-square.png'
+      media: '(min-width: 768px)'
+
+properties:
+  - items:
+      - 'import!../../../molecule/m51-region-property/data/green-sea-turtle.yaml'
+      - 'import!../../../molecule/m51-region-property/data/default.yaml'
+  - items:
+      - 'import!../../../molecule/m51-region-property/data/green-sea-turtle.yaml'
+      - 'import!../../../molecule/m51-region-property/data/default.yaml'
+  - items:
+      - 'import!../../../molecule/m51-region-property/data/green-sea-turtle.yaml'
+      - 'import!../../../molecule/m51-region-property/data/default.yaml'

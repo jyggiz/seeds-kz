@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="./m56-statistic-card.scss">
+<script src="./M56StatisticCard.ts"></script>
+
+
+<div class="m-statisticCard"
+  data-component="m56-statistic-card"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  
+>
+  <div class="m-statisticCard__figures">
+    {{#each figures}}
+      <div class="m-statisticCard__figureItem">
+        {{#if value}}
+          <div class="m-statisticCard__figureValue{{#if size}} -{{size}}{{/if}}">
+            {{value}}
+            {{~#if measure}}<span class="m-statisticCard__figureMeasure">{{measure}}</span>{{/if}}
+          </div>
+        {{else if icon}}
+          {{> atom/a02-icon name=icon}}
+        {{/if}}
+        <div class="m-statisticCard__figureLabel">
+          {{{label}}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

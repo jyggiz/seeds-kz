@@ -1,0 +1,33 @@
+scrollComponent: true
+theme: 'dark'
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: 'NEOM'
+              size: medium
+            heading:
+              size: h5
+              text: 'Similique sun in culpaqui<br /> officia deserunt mollitia'
+            copy:
+              content:
+                '<p><small>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos do lores et quas molestias
+                excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+                officia deserunt mollitia animi, id est laborum et dolorum fuga.</small></p> <ul>
+                <li>iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                atque corrupti quos do lores</li> <li>At vero eos et accusamus et iusto odio
+                dignissimos ducimus</li> </ul>'
+      alignment:
+        vertical:
+          - end
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

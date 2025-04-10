@@ -1,0 +1,7 @@
+actionButton:
+  href: 'https://www.neom.com'
+  label:
+    top: كن جزءاً من
+    bottom: نيوم
+  target: '_blank'
+  variant: 'link'

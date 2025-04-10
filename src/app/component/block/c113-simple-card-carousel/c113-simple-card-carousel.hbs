@@ -1,0 +1,16 @@
+<section class="b-simpleCardCarousel{{#if theme}} t-{{theme}}{{/if}}"
+  data-component="c113-simple-card-carousel"
+  data-items="{{toJson items}}"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+    style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+    {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component
+>
+  <div class="b-simpleCardCarousel__container" data-container>
+    {{> organism/o95-dynamic-carousel items=items }}
+  </div>
+</section>

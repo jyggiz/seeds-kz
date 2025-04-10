@@ -1,0 +1,78 @@
+scrollComponent: true
+theme: 'dark'
+
+title:
+  heading:
+    text: 'Утвержденные формы'
+    size: 'h5'
+
+linkWithArrows: true
+
+items:
+  - label: 'США'
+    eventTracking:
+      componentId: 'FAQ id'
+    content:
+      - heading:
+          text: Образец сертификата быка-производителя голштинской породы США (2016 год)
+        description: Скачать сертификат
+        link:
+          label: PDF файл
+          href: 'https://qazaqsut.kz/storage/app/media/sample-of-the-certificate-of-the-holstein-breed-producer-bull-of-the-usa-2016.pdf'
+      - heading:
+          text: Образец сертификата быка-производителя голштинской породы США (2016 год)
+        description: Скачать сертификат
+        link:
+          label: PDF файл
+          href: 'https://qazaqsut.kz/storage/app/media/sample-of-the-certificate-of-the-holstein-breed-producer-bull-of-the-usa-2016.pdf'
+  - label: 'Германия'
+    content:
+      - heading:
+          text: Образец сертификата быка-производителя голштинской породы США (2016 год)
+        description: Скачать сертификат
+        link:
+          label: PDF файл
+          href: 'https://qazaqsut.kz/storage/app/media/sample-of-the-certificate-of-the-holstein-breed-producer-bull-of-the-usa-2016.pdf'
+  - label: 'Российская Федерация'
+    content:
+      - heading:
+          text: Образец сертификата быка-производителя голштинской породы США (2016 год)
+        description: Скачать сертификат
+        link:
+          label: PDF файл
+          href: 'https://qazaqsut.kz/storage/app/media/sample-of-the-certificate-of-the-holstein-breed-producer-bull-of-the-usa-2016.pdf'
+  - label: 'Канада'
+    content:
+      - heading:
+          text: Образец сертификата быка-производителя голштинской породы США (2016 год)
+        description: Скачать сертификат
+        link:
+          label: PDF файл
+          href: 'https://qazaqsut.kz/storage/app/media/sample-of-the-certificate-of-the-holstein-breed-producer-bull-of-the-usa-2016.pdf'
+
+  - label: 'Франция'
+    content:
+      - heading:
+          text: Образец сертификата быка-производителя голштинской породы США (2016 год)
+        description: Скачать сертификат
+        link:
+          label: PDF файл
+          href: 'https://qazaqsut.kz/storage/app/media/sample-of-the-certificate-of-the-holstein-breed-producer-bull-of-the-usa-2016.pdf'
+
+  - label: 'Украина'
+    content:
+      - heading:
+          text: Образец сертификата быка-производителя голштинской породы США (2016 год)
+        description: Скачать сертификат
+        link:
+          label: PDF файл
+          href: 'https://qazaqsut.kz/storage/app/media/sample-of-the-certificate-of-the-holstein-breed-producer-bull-of-the-usa-2016.pdf'
+
+  - label: 'Венгрия'
+    content:
+      - heading:
+          text: Образец сертификата быка-производителя голштинской породы США (2016 год)
+        description: Скачать сертификат
+        link:
+          label: PDF файл
+          href: 'https://qazaqsut.kz/storage/app/media/sample-of-the-certificate-of-the-holstein-breed-producer-bull-of-the-usa-2016.pdf'

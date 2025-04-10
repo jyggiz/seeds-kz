@@ -1,0 +1,20 @@
+
+<div class="o-window" data-component="o33-window" >
+  {{#if image}}
+  <div class="o-window__image">
+    {{> atom/a01-image image disableTransition=true }}
+  </div>
+  {{/if}}
+  <div class="o-window__container">
+    <div class="o-window__header" data-window-header>
+      {{> atom/a10-index }}
+      <h3 class="o-window__title" data-window-heading>{{{heading}}}</h3>
+      <div class="o-window__chevron">{{> atom/a02-icon name="chevron-down" className="-chevron"}}</div>
+    </div>
+    <div class="o-window__contentWrapper" data-window-content>
+      <div class="o-window__content">
+        <p class="o-window__description">{{{ description }}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="./m24-tooltip.scss">
+<script src="./M24Tooltip.ts"></script>
+
+<div class="m-tooltip {{#if isStatic}}-isStatic{{/if}}"
+     data-component="m24-tooltip"
+     id={{id}}
+     {{#with aria}}aria-hidden="{{hidden}}"{{/with}}
+>
+  {{> atom/a04-eyebrow size="small" }}
+  <span class="m-tooltip__arrow" data-tooltip-arrow></span>
+</div>

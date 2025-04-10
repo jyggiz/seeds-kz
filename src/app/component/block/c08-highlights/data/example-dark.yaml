@@ -1,0 +1,61 @@
+scrollComponent: true
+theme: 'dark'
+
+background:
+  mask:
+    opacity: 0.9
+  image:
+    src: 'image/c18-boxed-list/background.jpg'
+
+description:
+  'Credibility, relevance, differentiation and excitement are the three pillars that support our
+  approach. NIF has the risk appetite, ingenuity and investing power to test and learn – ensuring
+  NEOM is a commercial powerhouse at the forefront of change, with a diverse portfolio and effective
+  use of land.'
+
+header:
+  eyebrow:
+    text: 'Modern Cities are unsustainable'
+    size: 'medium'
+  heading:
+    text: "There is a future, <br />It's called The Line"
+    size: 'h4'
+
+items:
+  - image:
+      alt: No cars
+      src: 'icon/c08-stats/no-cars.svg'
+    title:
+      text: No Cars
+    description:
+      text: Communities built for people with a five-minute walk to live, work and play
+  - image:
+      alt: MAX 20 MINUTE COMMUTE
+      src: 'icon/c08-stats/commute.svg'
+    title:
+      text: MAX 20 MINUTE COMMUTE
+    description:
+      text: Less travel time between communities
+  - image:
+      alt: A CITY INTEGRATED WITH NATURE
+      src: 'icon/c08-stats/nature.svg'
+    title:
+      text: A CITY INTEGRATED WITH NATURE
+    description:
+      text:
+        Restoring our connection with nature to improve our health and well-being for a happier
+        lifestyle.
+  - image:
+      alt: POWERED BY CLEAN ENERGY
+      src: 'icon/c08-stats/clean-energy.svg'
+    title:
+      text: POWERED BY CLEAN ENERGY
+    description:
+      text: Abundant renewable energy for a sustainable future.
+  - image:
+      alt: ENABLED BY THE LATEST TECH
+      src: 'icon/c08-stats/tech.svg'
+    title:
+      text: ENABLED BY THE LATEST TECH
+    description:
+      text: Tech that continuously learns and improves to make life easier for all

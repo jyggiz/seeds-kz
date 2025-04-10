@@ -1,0 +1,8 @@
+image:
+  alt: 'Neom Logo'
+  src: 'icon/economic-crossroads.svg'
+title: 'Highlight Item'
+description: 'Renders a single item used in the Highlight block.'
+link:
+  label: Learn more
+  href: '#'

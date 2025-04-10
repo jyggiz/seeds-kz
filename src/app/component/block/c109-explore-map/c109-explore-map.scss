@@ -1,0 +1,252 @@
+.b-exploreMap {
+  --start: 0;
+
+  position: relative;
+  transition: transform 0.2s ease-in-out;
+
+  &.-hasIntro {
+    .b-exploreMap__map {
+      position: relative;
+      z-index: zindex($zLayout, navigation-mask);
+      mask-image: radial-gradient(
+        circle at 50% 50%,
+        black calc(var(--start, 0) * 90%),
+        transparent calc(min(1, var(--start) + 0) * 100%)
+      );
+    }
+  }
+
+  &__tagsHeading {
+    @include type("overline", "medium");
+
+    margin-top: 10px;
+  }
+
+  &__filterToggleWrapper {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__tags {
+    --icon-size: 20px;
+
+    display: block;
+
+    &Label {
+      @include type("button", "small");
+
+      width: max-content;
+      padding: 10px 28px;
+      margin-inline-end: 15px;
+      margin-block-end: 15px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border: 1px solid var(--color-black-20);
+      transition: background-color 250ms ease, border-color 250ms ease;
+      user-select: none;
+
+      &:nth-child(4n + 2) {
+        float: left;
+      }
+
+      &::after {
+        visibility: hidden;
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+      }
+
+      .a-icon {
+        margin-inline-end: 10px;
+      }
+    }
+
+    input {
+      display: none;
+
+      &:checked + label {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        border-color: var(--color-black);
+      }
+    }
+  }
+
+  &__content {
+    @include offset;
+    @include container;
+    @include size(42%, 100%);
+
+    --component-heading-color: var(--color-dark-accent);
+
+    display: none;
+    padding-inline: unset;
+    padding-left: var(--container-margin);
+    position: absolute;
+    background: linear-gradient(90deg, var(--color-page-background) 0%, transparent 100%);
+    z-index: zindex($zLayout, navigation-mask);
+
+    &Item {
+      @include type("body", "small");
+      @include size(calc(100% - var(--container-margin)), 100%);
+
+      position: absolute;
+      display: grid;
+      align-content: center;
+      row-gap: 20px;
+      transition: visibility 300ms ease, opacity 300ms ease, transform 300ms ease;
+      transform: translateX(-100%);
+      visibility: hidden;
+      opacity: 0;
+
+      &Intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &.-isActive {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .a-heading {
+        line-height: initial;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        transition: none;
+      }
+    }
+
+    &Copy {
+      color: var(--color-black);
+    }
+  }
+
+  &__features {
+    display: flex;
+    list-style-position: inside;
+    flex-wrap: wrap;
+
+    &Item {
+      margin-inline-end: 10px;
+      color: var(--color-black-75);
+
+      &::marker {
+        color: var(--color-dark-accent);
+      }
+    }
+  }
+
+  &__media {
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+    display: grid;
+    align-items: end;
+    padding: 20px;
+  }
+
+  &__buttons {
+    @include list-reset;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__button {
+    [dir="rtl"] & {
+      .m-button__container {
+        padding: 0 var(--button-padding) 0 calc(var(--button-padding) / 2);
+      }
+    }
+  }
+
+  &__map .m-hotspotButton {
+    --hotspot-size: 36px;
+    --icon-size: 22px;
+
+    &::after {
+      @include pseudo(block, absolute, "+");
+
+      font-size: 22px;
+      color: var(--color-black);
+      z-index: zindex($zLayout, default);
+      transform: rotate(45deg);
+      margin-inline-start: 4px;
+      margin-block-end: 5px;
+      opacity: 0;
+      transition: opacity 250ms ease;
+    }
+
+    .a-icon {
+      transition: opacity 250ms ease;
+    }
+
+    &.-isActive {
+      --hotspot-background: var(--color-white);
+      --hotspot-background-hover: var(--color-white);
+
+      .a-icon {
+        opacity: 0;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  [data-stop-exploring-button] {
+    position: absolute;
+    z-index: zindex($zLayout, navigation-mask);
+    opacity: 0;
+    right: 20px;
+    transition: opacity 250ms ease, visibility 250ms ease;
+    top: 20px;
+    visibility: hidden;
+
+    &.-isVisible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .a-label {
+      @include type("link", "s");
+    }
+
+    // stylelint-disable-next-line no-descending-specificity
+    .a-icon {
+      --icon-size: 20px;
+    }
+
+    &.-leftIcon {
+      .a-label ~ .a-icon {
+        margin-inline-end: 12px;
+      }
+
+      .m-button__container {
+        padding-inline: 24px;
+      }
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &__content {
+      display: block;
+    }
+
+    &__filterToggleWrapper {
+      display: none;
+    }
+  }
+}

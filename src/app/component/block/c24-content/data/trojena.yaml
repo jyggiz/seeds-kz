@@ -1,0 +1,22 @@
+scrollComponent: true
+variant: 'single'
+
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content:
+      image:
+        src: 'image/logo-mark-neom.png'
+        alt: 'NEOM logo mark'
+      eyebrow:
+        text: 'A unique Year-Round mountain destination in NEOM'
+      copy:
+        size: 'medium'
+        content:
+          '<p>TROJENA will be an iconic, world-class destination, blending natural and developed
+          landscapes – and offering unique human-centric experiences for residents and visitors
+          alike. The destination will house six distinctive development districts centred around
+          tailored experiences that blend real with virtual architectural and engineering
+          innovations. All to create a destination like no other on earth.</p>'

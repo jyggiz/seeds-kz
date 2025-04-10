@@ -1,0 +1,53 @@
+.o-formStep {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+
+    .a-heading {
+      @include type("overline", "large");
+      @include container;
+
+      color: var(--color-black);
+      margin-bottom: 20px;
+      margin-inline: 0;
+    }
+
+    .o-formStep__recaptcha {
+      @include type("body", "xsmall");
+
+      color: var(--color-black);
+      margin: auto 35px 20px;
+
+      a {
+        color: var(--color-black);
+      }
+    }
+
+    .m-textField,
+    .m-dropdownField,
+    .o-phoneField {
+      margin: 0 0 20px;
+    }
+
+    @include respond-to(SMALL) {
+      .o-formStep__recaptcha {
+        margin: 0 45px 20px;
+      }
+    }
+
+    @include respond-to(MEDIUM) {
+      .o-formStep__recaptcha {
+        margin: 0 55px 20px;
+      }
+    }
+
+    @include respond-to(LARGE) {
+      padding: 70px 0 0;
+
+      .o-formStep__recaptcha {
+        display: none;
+      }
+    }
+  }
+}

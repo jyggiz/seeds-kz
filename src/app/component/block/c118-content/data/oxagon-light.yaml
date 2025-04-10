@@ -1,0 +1,38 @@
+scrollComponent: true
+theme: 'light'
+
+grid:
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: center
+        content:
+          componentName: m18-paragraph
+          data:
+            image:
+              src: 'image/c24-content/oxagon-light.png'
+            heading:
+              text: 'Create the solutions for an <br /> <strong> industry  4.0 revolution </strong>'
+              size: h5
+              element: h2
+            copy:
+              size: 'small'
+              content:
+                '<p>OXAGON will help you to be a catalyst for advanced and clean industries,
+                bringing together the latest technologies and circular economy principles. This
+                approach to 4.0 manufacturing will enable new and existing businesses to build and
+                benefit from factories of the future, creating products of the future.</p>'
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                level: primary
+                theme: accent
+                label: 'Light theme button'
+                size: small
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10

@@ -1,0 +1,77 @@
+@use "sass:math";
+
+.m-componentHeader {
+  --eyebrow-text-color: var(--component-highlight-color);
+  --moustache-text-color: var(--component-text-color);
+
+  &.-center {
+    text-align: center;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+
+    .a-heading {
+      margin: auto;
+    }
+  }
+
+  &.-start {
+    text-align: start;
+  }
+
+  &.-end {
+    text-align: end;
+  }
+
+  .a-eyebrow {
+    // todo: compare with exceptions in components, then formalize defaults.
+    margin: 0 0 1em;
+  }
+
+  .a-moustache {
+    // todo: compare with exceptions in components, then formalize defaults.
+    margin: 1em 0 0;
+  }
+
+  &__asset {
+    display: flex;
+    min-height: max-content;
+
+    &.-start {
+      justify-content: flex-start;
+    }
+
+    &.-center {
+      justify-content: center;
+    }
+
+    &.-end {
+      justify-content: flex-end;
+    }
+  }
+
+  .a-image {
+    @include offset(unset);
+    @include size(unset);
+
+    &,
+    &__picture {
+      position: relative;
+    }
+
+    &__img {
+      @include size(auto);
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    max-width: math.div(960, 1440) * 100vw;
+  }
+
+  @include respond-to("XSMALL") {
+    .a-image {
+      &__img {
+        max-width: 110px;
+      }
+    }
+  }
+}

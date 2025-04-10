@@ -1,0 +1,9 @@
+@mixin fullMinHeight() {
+  &.-fullMinHeight {
+    @include vh(100, min-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

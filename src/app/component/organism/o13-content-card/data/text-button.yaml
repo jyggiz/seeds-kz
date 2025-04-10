@@ -1,0 +1,15 @@
+content:
+  description:
+    size: 'xlarge'
+    copy: '<p>Australia’s Jane Doe wins Kitesurf Championships</p>'
+
+button:
+  icon: 'arrow-right'
+  label: 'Read More'
+  size: 'small'
+  theme: 'dark-gold'
+
+link:
+  href: 'https://twitter.com'
+  target: '_blank'
+  label: 'An SEO friendly link text for this card'

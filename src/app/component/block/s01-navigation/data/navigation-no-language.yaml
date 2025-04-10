@@ -1,0 +1,143 @@
+navigationContent:
+  scrollComponent: true
+  logo: 'import!../../../molecule/m19-logo/data/default.yaml'
+  navigation:
+  main:
+    - label: 'Regular link'
+      href: '#'
+
+    - label: 'Menu'
+      type: 'menu'
+      items:
+        - label: 'Regular menu link'
+          href: '#'
+        - label: 'External menu link'
+          href: '#'
+          target: '_blank'
+
+    - label: 'Sector'
+      type: 'sectorMenu'
+      items:
+        - label: 'Energy'
+          href: '#'
+          icon: 'energy'
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: 'Energy'
+        - label: 'Water'
+          href: '#'
+          icon: 'water'
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Mobility
+          href: '#'
+          icon: mobility
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Entertainment & Culture
+          href: '#'
+          icon: entertainment-culture
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Food
+          href: '#'
+          icon: food
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Manufacturing
+          href: '#'
+          icon: manufacturing
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Media
+          href: '#'
+          icon: media
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Tourism
+          href: '#'
+          icon: tourism
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Sport
+          href: '#'
+          icon: sport
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Design & Construction
+          href: '#'
+          icon: design-construction
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Services
+          href: '#'
+          icon: services
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Health, Well-Being & biotech
+          href: '#'
+          icon: health-wellbeing-biotech
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Education
+          href: '#'
+          icon: education
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+        - label: Technology & Digital
+          href: '#'
+          icon: technology-digital
+          image:
+            src: 'image/c17-sectors/energy.jpg'
+            alt: Energy
+
+    - label: 'Projects'
+      type: 'projectMenu'
+      items:
+        - label: Solar Dome
+          image:
+            src: 'image/s01-navigation/solar-dome.jpg'
+            alt: Solar Dome
+          href: '#'
+        - label: The Spine
+          image:
+            src: 'image/s01-navigation/the-spine.jpg'
+            alt: The Spine
+          href: '#'
+        - label: Project X
+          image:
+            src: 'image/s01-navigation/project-x.jpg'
+            alt: Project X
+          href: '#'
+
+    - label: 'External Link'
+      target: '_blank'
+      href: https://newsroom.neom.com/neom-will-be-the-home-to-worlds-largest-renewable-hydrogen-project
+
+  aside:
+    - label: 'Be part of NEOM'
+      highlighted: true
+      type: 'menu'
+      items:
+        - label: 'Invest'
+          href: '#'
+        - label: 'Start a business'
+          href: '#'
+        - label: 'Become a supplier'
+          href: '#'
+        - label: 'Partner'
+          href: '#'
+        - label: 'Work'
+          href: '#'

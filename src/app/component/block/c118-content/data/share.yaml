@@ -1,0 +1,95 @@
+scrollComponent: true
+theme: light
+
+grid:
+  rowGap:
+    smallScreen: 0
+
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            alignAsset: start # start | center | end
+            image:
+              src: 'image/c24-content/oxagon-light.png'
+            eyebrow:
+              text: FROM LAB TO MARKET
+              size: small
+            heading:
+              text: 'Empowering innovators <br /> to change the world <br />of Supply Chain'
+              size: h5
+              element: h2
+            copy:
+              size: 'small'
+              content:
+                '<p>Our program provides you with the resources and a testbed to turn your business
+                into an investor-ready powerhouse, with access to pioneers, investors and the
+                rapidly growing MENA market.</p> <p><b>Who can apply:</b></p> <p><ul> <li>A scale-up
+                company at Series A or higher.</li> <li>Your business is working on developing MHU
+                innovation, pick & pack robotics, train loading & unloading, smart locker & last
+                mile delivery, vertical distribution.</li> <li>Candidates may need to travel to
+                Oxagon during the program, as they will work with Oxagon experts to develop, refine
+                and pilot-test your solutions.</li> </ul></p>'
+      alignment:
+        vertical: center
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10
+    - componentName: c118-content-item
+      data:
+        content:
+          componentName: m18-paragraph
+          data:
+            alignAsset: start # start | center | end
+            image:
+              src: 'image/c24-content/oxagon-light.png'
+        buttons:
+          contentButtons:
+            - componentName: m02-button
+              data:
+                type: share
+                level: secondary
+                theme: black
+                label: 'Share this page'
+                size: large
+                heading:
+                  text: 'Share Page'
+                eventTracking:
+                  event: 'Page Share'
+                  article:
+                    author: 'John Doe'
+                    titleInEnglish: 'About NEOM'
+                    title: 'حول نيوم'
+                    publishingDate: '2021-05-22T18:45:09Z'
+                items:
+                  - id: twitter
+                    href: 'https://example.com/twitter/'
+                    icon: twitter-gold
+                    label: Twitter
+                  - id: facebook
+                    href: 'https://example.com/facebook/'
+                    icon: facebook-gold
+                    label: Facebook
+                  - id: linkedin
+                    href: 'https://example.com/linkedin/'
+                    icon: linkedin-gold
+                    label: Linkedin
+                  - id: whatsapp
+                    href: 'https://example.com/whatsapp/'
+                    icon: whatsapp-gold
+                    label: Whatsapp
+                  - id: clipboard
+                    href: 'https://example.com/clipboard-link/'
+                    icon: link-gold
+                    label: Copy Link
+                  - network: email
+                    href: 'https://example.com/linkedin/'
+                    icon: email-gold
+                    label: Email
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 2 / 4 / 3 / 10

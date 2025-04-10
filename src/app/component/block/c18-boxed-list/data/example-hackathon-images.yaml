@@ -1,0 +1,86 @@
+scrollComponent: true
+fullMinHeight: true
+
+align: center
+
+background:
+  video:
+    props:
+      sources:
+        - src: video/background-video-preview.mp4
+          type: video/mp4
+
+header:
+  eyebrow:
+    text: NEOM
+    size: medium
+  heading:
+    text: Hackathon with images in cards and general background video example
+    size: h5
+
+items:
+  - image:
+      src: 'image/c18-boxed-list/sector-water-shaded.png'
+      alt: 'Energy sector'
+      sources:
+        - src: 'image/c18-boxed-list/sector-water-shaded.png'
+          media: '(min-width: 768px)'
+    heading:
+      text: Desalination technologies
+    copy:
+      A Global reference to showcase new and innovative approaches to desalination, including high
+      recovery membrane technologies, low energy systems, and integration with renewable energy
+      supplies
+    background:
+      image:
+        alt: 'Green Hydrogen'
+        src: 'image/c18-boxed-list/hackathon-hydrogen.jpg'
+
+  - image:
+      src: 'image/c18-boxed-list/sector-technology-digital-shaded.png'
+      alt: 'Technology sector'
+      sources:
+        - src: 'image/c18-boxed-list/sector-technology-digital-shaded.png'
+          media: '(min-width: 768px)'
+    heading:
+      text: Brine processing for minerals
+    copy:
+      World Class full seawater processing (brine mining) for high-value minerals and by-products
+      such as magnesium metals and high purity salts, thereby achieving zero waste while generating
+      strong economic value.
+    background:
+      image:
+        alt: 'Water'
+        src: 'image/c18-boxed-list/hackathon-water.jpg'
+
+  - image:
+      src: 'image/c18-boxed-list/sector-food-shaded.png'
+      alt: 'Food sector'
+      sources:
+        - src: 'image/c18-boxed-list/sector-food-shaded.png'
+          media: '(min-width: 768px)'
+    heading:
+      text: Renewable energy integration
+    copy:
+      100% renewable energy will be utilized for desalination and mineral recovery processes via
+      concentrated solar power, waste heat, and renewable energy-sourced electrical grids.
+    background:
+      image:
+        alt: 'Green Hydrogen'
+        src: 'image/c18-boxed-list/hackathon-hydrogen.jpg'
+
+  - image:
+      src: 'image/c18-boxed-list/sector-energy-shaded.png'
+      alt: 'Green hydrogen sector'
+      sources:
+        - src: 'image/c18-boxed-list/sector-energy-shaded.png'
+          media: '(min-width: 768px)'
+    heading:
+      text: Brine usage for greenhouse cooling usage
+    copy:
+      Concentrating brine by evaporative cooling in seawater greenhouses thereby enabling high-value
+      crop production and mineral recovery delivering the greatest benefit for its customers
+    background:
+      image:
+        alt: 'Water'
+        src: 'image/c18-boxed-list/hackathon-water.jpg'

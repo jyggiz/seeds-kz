@@ -1,0 +1,37 @@
+.o-paginationItem {
+  .m-button {
+    --border-radius: calc(var(--button-size) / 2);
+    --button-padding: 0;
+    --button-text-color: var(--color-black-75);
+    --button-border-color-disabled: var(--color-black-10a);
+    --button-text-color-disabled: var(--color-black-20a);
+
+    width: var(--button-size);
+  }
+
+  .a-label {
+    font-weight: 100;
+    margin: 0.07em 0 0;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  &.-isActive {
+    pointer-events: none;
+
+    .m-button__container {
+      --button-text-color: var(--color-black);
+      --button-hover-text-color: var(--color-white);
+      --button-border-color: var(--color-gold);
+    }
+  }
+  &.-isDisabled {
+    pointer-events: none;
+
+    .m-button__container {
+      --button-background-color: transparent;
+      --button-border-color: var(--color-black-20);
+      --button-text-color: var(--color-black-20);
+    }
+  }
+}

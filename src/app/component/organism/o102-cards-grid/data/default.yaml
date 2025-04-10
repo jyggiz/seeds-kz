@@ -1,0 +1,27 @@
+scrollComponent: true
+
+items:
+  - image:
+      src: 'image/c115-cards-grid/card-production.png'
+      alt: 'Sindalah region island from the top'
+    title: Sindalah
+    href: '#'
+    description: 'Diverse possibilities for productions of all scales'
+  - image:
+      src: 'image/c115-cards-grid/card-production.png'
+      alt: 'The Line region image from the top'
+    title: The line
+    href: '#'
+    description: 'Diverse possibilities for productions of all scales'
+  - image:
+      src: 'image/c115-cards-grid/card-production.png'
+      alt: 'Trojena region photo from the top'
+    title: Trojena
+    href: '#'
+    description: 'Diverse possibilities for productions of all scales'
+  - image:
+      src: 'image/c115-cards-grid/card-production.png'
+      alt: 'Oxagon region photo from the top'
+    title: Oxagon
+    href: '#'
+    description: 'Diverse possibilities for productions of all scales'

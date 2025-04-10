@@ -1,0 +1,116 @@
+.m-pillarCta {
+  --icon-size: 40px;
+  --border-radius: 4px;
+  --background-color: var(--color-accent);
+  --component-padding: 20px;
+  --component-highlight-color: var(--color-dark-accent);
+  --component-title-color: var(--color-white);
+  padding: var(--component-padding);
+  background-color: var(--background-color);
+  text-align: start;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  position: relative;
+  transition: background-color 250ms ease;
+
+  &.-isTransparent {
+    --background-color: var(--color-white);
+    --background-opacity: 0;
+    --component-highlight-color: var(--color-accent);
+    --component-title-color: var(--color-black);
+    --border-radius: 8px;
+  }
+
+  &__title,
+  &__icon,
+  &__labelWrapper {
+    position: relative;
+  }
+
+  &__background {
+    @include position(0);
+
+    position: absolute;
+    opacity: var(--background-opacity, 0);
+    transition: opacity 250ms ease-in;
+  }
+
+  &__title {
+    @include type("overline", "small");
+
+    color: var(--component-title-color);
+    margin: 0 20px;
+    white-space: normal;
+  }
+
+  &__icon,
+  &__labelWrapper {
+    color: var(--component-title-color);
+    transition: color 250ms ease;
+  }
+
+  &__labelWrapper {
+    @include type("overline", "small");
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-inline-start: auto;
+    white-space: break-spaces;
+
+    .a-icon {
+      --icon-size: 20px;
+
+      [dir="rtl"] & {
+        transform: rotate(180deg);
+      }
+    }
+
+    .m-pillarCta__label {
+      display: none;
+    }
+  }
+
+  @include hover {
+    --background-color: var(--color-white);
+    --background-opacity: 0.25;
+    --component-highlight-color: var(--color-white);
+    --component-title-color: var(--color-dark-accent);
+
+    &.-isTransparent {
+      --background-color: var(--color-white);
+      --background-opacity: 0;
+      --component-highlight-color: var(--color-accent);
+      --component-title-color: var(--color-black);
+    }
+  }
+
+  @include respond-to("XLARGE") {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &.-isTransparent {
+      --background-color: transparent;
+      --component-highlight-color: var(--color-white);
+      --component-title-color: var(--color-white);
+
+      border: 2px solid var(--color-white-10a);
+    }
+
+    &__title {
+      @include type("overline", "large");
+      margin: 20px 0 35px;
+      margin-inline-end: 50px;
+    }
+
+    &__labelWrapper {
+      margin-top: auto;
+      margin-inline-start: 0;
+
+      .m-pillarCta__label {
+        display: block;
+      }
+    }
+  }
+}

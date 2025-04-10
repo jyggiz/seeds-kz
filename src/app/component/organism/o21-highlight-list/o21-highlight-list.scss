@@ -1,0 +1,33 @@
+@use "sass:math";
+
+.o-highlightList {
+  @include list-reset(60px 0 0, 0);
+
+  &__item {
+    margin: 0 0 60px;
+  }
+
+  @include respond-to("MEDIUM") {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__item {
+      flex: 0 0 50%;
+
+      &:nth-child(3n + 3) {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__item {
+      flex: 0 0 math.div(100%, 3);
+
+      &:nth-child(3n + 3) {
+        flex: 0 0 math.div(100%, 3);
+      }
+    }
+  }
+}

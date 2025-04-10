@@ -1,0 +1,4 @@
+- level: primary
+  theme: black
+  label: 'Подробней о палате'
+  href: /seed_about.html

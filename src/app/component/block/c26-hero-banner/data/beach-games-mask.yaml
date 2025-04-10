@@ -1,0 +1,49 @@
+scrollComponent: true
+id: c26-beach-game
+
+align:
+  horizontal: 'start'
+  vertical: 'bottom'
+
+background:
+  image:
+    src: 'image/c26-hero-banner/beach-games.jpg'
+    alt: 'Homepage teaser image'
+
+content:
+  header:
+    eyebrow:
+      size: 'medium'
+      text: 'Teaser'
+    heading:
+      element: 'h2'
+      size: 'h3'
+      text: 'The Beach Games'
+
+  buttons:
+    - level: primary
+      icon: play-solid
+      theme: white
+      variant: play
+      video:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          fullscreen: true
+          playPause: true
+          seek: true
+        eventTracking:
+          event: 'Video Play'
+          video:
+            src: 'video/video-preview.mp4'
+            title: 'A Vision of a New Future: Explainer video'
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+
+scrollButton: false

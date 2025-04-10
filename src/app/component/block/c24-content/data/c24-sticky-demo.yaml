@@ -1,0 +1,26 @@
+scrollComponent: true
+variant: 'single'
+
+background:
+  scrollComponent: true
+  sticky: true
+  image:
+    alt: 'alt'
+    src: 'image/c24-content/i_am_change_mobile.jpg'
+    sources:
+      - src: 'image/c24-content/i_am_change_desktop.jpg'
+        media: '(min-width: 768px)'
+
+items:
+  - align:
+      horizontal: middle
+      vertical: center
+    type: 'paragraph'
+    content:
+      copy:
+        size: 'medium'
+        content:
+          '<p>The NEOM brand relies on the use of a limited color palette to create a classic
+          premium feel for the brand.<br /><br /> The elegant use of four colors-black, white, cream
+          and gold, create a simple and chic canvas for the NEOM brand. When using brand color
+          please use the provided values to ensure consistency across all touchpoints.</p>'

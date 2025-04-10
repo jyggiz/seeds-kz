@@ -1,0 +1,60 @@
+background:
+  image:
+    src: './image/c01-promotion-hero/the-line.jpg'
+    alt: 'The Line'
+
+promotionID: the-line
+
+content:
+  moustache:
+    size: small
+    text: 'ثورة في الحياة الحضرية'
+  logo:
+    label: 'ذا لاين'
+    content:
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137 41"><g data-name="Layer 2"><path
+      d="M8.187 5.055a2.192 2.192 0 1 1 2.192 2.192 2.195 2.195 0 0 1-2.192-2.192Zm36.719
+      27.326a2.173 2.173 0 1 0 2.172 2.172 2.175 2.175 0 0 0-2.172-2.172Zm-5.743 0a2.173 2.173 0 1 0
+      2.173 2.172 2.174 2.174 0 0
+      0-2.173-2.172Zm33.155-6.2-9.348-.008V6.61h-3.714v19.561l-8.3-.009v3.467h21.362l3.713-3.4V0l-3.713.022Zm-29.293.043V8.813h-3.379v17.358H20.419V8.813h-3.713v20.819h-6.095c-4.925
+      0-6.894-2.258-6.894-6.711V8.813H0v15.009c0 5.969 3.64 9.5 10.031
+      9.5H17l3.419-3.695v.007h19.2Zm73.048-15.379h-3.588v3.4h2.737c4.112 0 5.919 1.541 5.919
+      6.088v5.925h-14.057V29.7h14.057l3.356-3.4v-6.434c.003-5.9-2.913-9.019-8.424-9.019Zm-1.54-3.254a2.173
+      2.173 0 1 0-2.173-2.171 2.174 2.174 0 0 0 2.173 2.173ZM94.9 29.7h3.714V0H94.9Z"
+      style="fill:#fff" data-name="Layer 1"/></g></svg>'
+
+  buttons:
+    - level: primary
+      theme: white
+      icon: play-solid
+      variant: play
+      video:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: false
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+            title: 'A Vision of a New Future: Explainer video'
+            src: 'video/video-preview.mp4'
+
+      data:
+        video-button: null
+
+    - level: primary
+      theme: white
+      label: ابقى على تواصل
+      href: '#'
+
+scrollButton: true

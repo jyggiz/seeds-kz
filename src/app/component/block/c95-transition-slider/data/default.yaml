@@ -1,0 +1,197 @@
+heading:
+  text: 'WHAT IS NEOM?'
+  size: h5
+
+scrollComponent: true
+
+intro:
+  props:
+    enhancedPoster:
+      image:
+        src: 'image/c26-hero-banner/teaser-homepage.jpg'
+        alt: 'Homepage teaser image'
+        sources:
+          - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+            media: '(min-width: 1024px)'
+          - src: 'image/c26-hero-banner/teaser-homepage.jpg'
+            media: '(min-width: 768px)'
+    src: 'video/neom-map.mp4'
+    type: 'video/mp4'
+    playsinline: true
+    muted: true
+    loop: false
+    sources:
+      - src: 'video/neom-map.mp4'
+        type: 'video/mp4'
+        media: '(min-width: 1024px)'
+      - src: 'video/neom-map.mp4'
+        type: 'video/mp4'
+        media: '(min-width: 768px)'
+
+cloudsOverlay:
+  - src: 'image/c61-hotspot-map/cloud-1.png'
+  - src: 'image/c61-hotspot-map/cloud-3.png'
+  - src: 'image/c61-hotspot-map/cloud-4.png'
+
+padding:
+  start: regular
+
+slides:
+  - label: 'PEOPLE & PLACE'
+    copy:
+      content:
+        'A living laboratory for entrepreneurship, a home for an international community of dreamers
+        and doers, and a place with exceptional livability – set in breathtaking natural landscapes
+        and driven by advanced disruptive technology. A living laboratory for entrepreneurship, a
+        home for an international community of dreamers and doers, and a place with exceptional
+        livability – set in breathtaking natural landscapes and driven by advanced disruptive
+        technology.'
+      size: 'small'
+    statistic:
+      figures:
+        - icon: mountain
+          label: 'COASTLINE LENGTH'
+        - value: '26.5'
+          measure: ' K'
+          label: 'KM² land footprint'
+        - value: '13'
+          measure: ' %'
+          label: 'of world trade goes <br /> through red sea'
+        - value: '41'
+          label: 'number of islands'
+    buttons:
+      - level: 'primary'
+        theme: 'white'
+        label: 'ABOUT NEOM'
+    initialImage:
+      region:
+        src: 'image/c95-transition-slider/map.jpg'
+        alt:
+  - label: 'FRESH APPROACH'
+    copy:
+      content:
+        'A cashless society with seamless technology elegantly connecting people and places.
+        Desalinated water powered by renewable energy will supply our communities.'
+      size: 'small'
+    backgrounds:
+      - 'import!./_feature-1.yaml'
+      - 'import!./_feature-2.yaml'
+      - 'import!./_feature-3.yaml'
+    initialImage:
+      region:
+        src: 'image/c95-transition-slider/map.jpg'
+        alt:
+    mapType: features
+    statistic:
+      figures:
+        - value: '10°'
+          measure: 'C'
+          label: 'COOLER THAN THE REST OF THE GCC'
+        - value: '10-77'
+          measure: 'MM'
+          label: 'OF RAINFALL A YEAR'
+        - value: '4'
+          label: 'DISTINCTIVE ECOLOGIES'
+        - value: '20'
+          measure: 'MJ/M²'
+          label: 'OF PERENNIAL SOALR RESOURCES'
+    buttons:
+      - level: 'primary'
+        theme: 'white'
+        label: 'ABOUT NEOM'
+  - label: 'PLACEMAKING'
+    copy:
+      content:
+        'NEOM is much more than just a place. It is a vision of what a new future might look like at
+        a time when the world needs fresh thinking and solutions. We are building a new model for
+        sustainable living, where entrepreneurship and innovation will drive progress. As the worlds
+        most ambitious project, NEOM aims to be an accelerator of human progress.'
+      size: 'small'
+    statistic:
+      figures:
+        - value: '1700'
+          measure: '+'
+          label: 'pioneers living in NEOM'
+        - value: '70'
+          label: 'Nationalities in our team'
+        - value: '$500'
+          measure: 'BN'
+          label: 'public investment fund backing'
+        - value: '380,000'
+          label: 'new jobs created by 2030'
+    buttons:
+      - level: 'primary'
+        theme: 'white'
+        label: 'ABOUT NEOM'
+    initialImage:
+      region:
+        src: 'image/c95-transition-slider/map-with-line.jpg'
+        alt:
+    backgrounds:
+      - 'import!./_place-1.yaml'
+      - 'import!./_place-2.yaml'
+      - 'import!./_place-3.yaml'
+      - 'import!./_place-4.yaml'
+    mapType: places
+  - label: 'FUTURE-PROOF'
+    copy:
+      content:
+        'It’s time to address the critical challenges facing our planet. Our goal is to identify new
+        ways of working and living in harmony with the environment that diminish human impact,
+        revolutionize urban development, disrupt legacy industries – and give birth to new leaders,
+        products and companies. This will be the largest global project ever seen.'
+      size: 'small'
+    initialImage:
+      region:
+        src: 'image/c95-transition-slider/map.jpg'
+        alt:
+    statistic:
+      figures:
+        - value: '$48'
+          measure: 'BN'
+          label: 'saudi gdp boost by 2030'
+        - value: '40'
+          measure: '%'
+          label: 'of world can reach us in less than 6 hours'
+        - value: '5'
+          measure: 'MILLION+'
+          label: 'tourists expected by 2030'
+        - value: '10.3'
+          label: 'meters per second wind speed'
+    buttons:
+      - level: 'primary'
+        theme: 'white'
+        label: 'ABOUT NEOM'
+  - label: 'NATURE FIRST'
+    copy:
+      content:
+        'Diverse terrain that includes red-desert expanses and snow-capped mountains with views of
+        the Gulf of Aqaba. This new future for sustainable living will conserve 95% of NEOM’s
+        natural landscape and enhance livability for residents, while protecting habitats and animal
+        populations.'
+      size: 'small'
+    statistic:
+      figures:
+        - value: '95'
+          measure: '%'
+          label: 'of land protected for nature'
+        - value: '14'
+          label: 'knowledge economy sectors'
+        - value: '2024'
+          label: 'first destinations go live'
+        - value: '2026'
+          label: 'one million residents living here'
+    buttons:
+      - level: 'primary'
+        theme: 'white'
+        label: 'ABOUT NEOM'
+    backgrounds:
+      - 'import!./_region-1-properties.yaml'
+      - 'import!./_region-2-properties.yaml'
+      - 'import!./_region-3-properties.yaml'
+      - 'import!./_region-4-properties.yaml'
+    initialImage:
+      region:
+        src: 'image/c95-transition-slider/map-borders.jpg'
+        alt:
+    mapType: regions

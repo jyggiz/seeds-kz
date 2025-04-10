@@ -1,0 +1,28 @@
+scrollComponent: true
+alignment: 'center'
+
+background:
+  image:
+    src: 'image/c54-countdown-timer/hackaphon.jpg'
+
+header:
+  heading:
+    size: 'h4'
+    element: 'h4'
+    label: 'Hello<br />World'
+  disableTransition: true
+
+subheader:
+  text: 'October this year'
+
+timer:
+  date: '9/12/2022 14:00:00 UTC'
+  displayOptions:
+    days: true
+    hours: true
+    minutes: true
+    seconds: true
+
+buttons:
+  - label: 'Sign us up'
+    theme: 'white'

@@ -1,0 +1,21 @@
+scrollComponent: true
+
+align:
+  horizontal: center
+  vertical: middle
+
+background:
+  image:
+    src: 'image/c26-hero-banner/hero-banner-brandbook.jpg'
+    alt: 'Brandbook hero image'
+
+content:
+  header:
+    heading:
+      element: h1
+      size: h3
+      text: grids
+    eyebrow:
+      text: Visual guidelines / neom
+
+scrollButton: true

@@ -1,0 +1,547 @@
+diff --git a/node_modules/muban-core/index.js b/node_modules/muban-core/index.js
+index 1f1b159..87327ab 100644
+--- a/node_modules/muban-core/index.js
++++ b/node_modules/muban-core/index.js
+@@ -1,31 +1,64 @@
+-"use strict";
+-
+-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
++'use strict';
+ 
++var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+ exports.__esModule = true;
+-exports.updateComponent = exports.registerComponent = exports.updateElement = exports.initComponents = exports.getComponentForElement = exports.cleanElement = exports.CoreComponent = void 0;
+-
+-var _CoreComponent = _interopRequireDefault(require("./lib/CoreComponent"));
+-
++exports.updateElement =
++  exports.updateComponent =
++  exports.requestEmptyInitSlot =
++  exports.registerComponent =
++  exports.initComponents =
++  exports.getComponentForElement =
++  exports.cleanElement =
++  exports.CoreComponent =
++    void 0;
++var _CoreComponent = _interopRequireDefault(require('./lib/CoreComponent'));
+ exports.CoreComponent = _CoreComponent.default;
+-
+-var _componentStore = require("./lib/utils/componentStore");
+-
++var _componentStore = require('./lib/utils/componentStore');
+ exports.registerComponent = _componentStore.registerComponent;
+ exports.updateComponent = _componentStore.updateComponent;
+-
+-var _cleanElement = _interopRequireDefault(require("./lib/utils/cleanElement"));
+-
++var _cleanElement = _interopRequireDefault(require('./lib/utils/cleanElement'));
+ exports.cleanElement = _cleanElement.default;
+-
+-var _getComponentForElement = _interopRequireDefault(require("./lib/utils/getComponentForElement"));
+-
++var _getComponentForElement = _interopRequireDefault(require('./lib/utils/getComponentForElement'));
+ exports.getComponentForElement = _getComponentForElement.default;
+-
+-var _initComponents = _interopRequireDefault(require("./lib/utils/initComponents"));
+-
++var _initComponents = _interopRequireWildcard(require('./lib/utils/initComponents'));
+ exports.initComponents = _initComponents.default;
+-
+-var _updateElement = _interopRequireDefault(require("./lib/utils/updateElement"));
+-
++exports.requestEmptyInitSlot = _initComponents.requestEmptyInitSlot;
++var _updateElement = _interopRequireDefault(require('./lib/utils/updateElement'));
+ exports.updateElement = _updateElement.default;
++function _getRequireWildcardCache(nodeInterop) {
++  if (typeof WeakMap !== 'function') return null;
++  var cacheBabelInterop = new WeakMap();
++  var cacheNodeInterop = new WeakMap();
++  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
++    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
++  })(nodeInterop);
++}
++function _interopRequireWildcard(obj, nodeInterop) {
++  if (!nodeInterop && obj && obj.__esModule) {
++    return obj;
++  }
++  if (obj === null || (typeof obj !== 'object' && typeof obj !== 'function')) {
++    return { default: obj };
++  }
++  var cache = _getRequireWildcardCache(nodeInterop);
++  if (cache && cache.has(obj)) {
++    return cache.get(obj);
++  }
++  var newObj = {};
++  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
++  for (var key in obj) {
++    if (key !== 'default' && Object.prototype.hasOwnProperty.call(obj, key)) {
++      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
++      if (desc && (desc.get || desc.set)) {
++        Object.defineProperty(newObj, key, desc);
++      } else {
++        newObj[key] = obj[key];
++      }
++    }
++  }
++  newObj.default = obj;
++  if (cache) {
++    cache.set(obj, newObj);
++  }
++  return newObj;
++}
+diff --git a/node_modules/muban-core/lib/dist.js b/node_modules/muban-core/lib/dist.js
+index e83cb25..37444ce 100644
+--- a/node_modules/muban-core/lib/dist.js
++++ b/node_modules/muban-core/lib/dist.js
+@@ -1,31 +1,35 @@
+ "use strict";
+ 
+-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+-
+ exports.__esModule = true;
+ exports.bootstrap = bootstrap;
+-
+-var _initComponents = _interopRequireDefault(require("./utils/initComponents"));
+-
++var _initComponents = _interopRequireWildcard(require("./utils/initComponents"));
+ var _waitForStyleSheetsLoaded = require("./utils/waitForStyleSheetsLoaded");
+-
++function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
++function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+ /**
+  * Code being executed on production builds on start
+  */
++
+ function bootstrap(appRoot, options) {
+   if (options === void 0) {
+     options = {};
+   }
+-
+   document.addEventListener('DOMContentLoaded', function () {
+-    // most of the time this should already be the case, but to be sure we check if all sheets are loaded
+-    (0, _waitForStyleSheetsLoaded.waitForLoadedStyleSheets)(document).then(function () {
+-      // before initing components, to be compatible with dev mode
+-      options.onBeforeInit == null ? void 0 : options.onBeforeInit(); // Makes the website interactive, all hbs components are already loaded and registered, since they
+-      // are included in the webpack entry
++    // yield to main before starting the init process to avoid having a long task
++    // made up from the bundle evaluation + the DOMContentLoaded listener processes
++    (0, _initComponents.yieldToMain)().then(function () {
++      return (
++        // most of the time this should already be the case, but to be sure we check if all sheets are loaded
++        (0, _waitForStyleSheetsLoaded.waitForLoadedStyleSheets)(document).then(function () {
++          // before initing components, to be compatible with dev mode
++          options.onBeforeInit == null ? void 0 : options.onBeforeInit();
+ 
+-      (0, _initComponents.default)(appRoot);
+-      options.onInit == null ? void 0 : options.onInit();
++          // Makes the website interactive, all hbs components are already loaded and registered, since they
++          // are included in the webpack entry
++          (0, _initComponents.default)(appRoot);
++          options.onInit == null ? void 0 : options.onInit();
++        })
++      );
+     });
+   });
+ }
+\ No newline at end of file
+diff --git a/node_modules/muban-core/lib/utils/initComponents.js b/node_modules/muban-core/lib/utils/initComponents.js
+index b4cd2ba..4172ce1 100644
+--- a/node_modules/muban-core/lib/utils/initComponents.js
++++ b/node_modules/muban-core/lib/utils/initComponents.js
+@@ -1,98 +1,284 @@
+ "use strict";
+ 
++var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+ exports.__esModule = true;
+-exports.default = initComponents;
+-
++exports.default = initComponentsInChunks;
++exports.requestEmptyInitSlot = requestEmptyInitSlot;
++exports.yieldToMain = yieldToMain;
++var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
++var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
+ var _componentStore = require("./componentStore");
+-
+-/**
+- * Called to init components for the elements in the DOM.
+- *
+- * Once the component tree for the passed rootElement is fully constructed, the adopted() lifecycle
+- * method will be called on all new components that implement that method.
+- * When the adopted() method is called, it means that the component is fully adopted by all its
+- * parents and the application is fully mounted.
+- *
+- * These function will only init components that were not already initialized before.
+- *
+- * @param {HTMLElement} rootElement Only components on or in this element will be constructed, this
+- * means you can update a new section of HTML at a later time.
+- */
+-function initComponents(rootElement) {
++function _createForOfIteratorHelperLoose(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (it) return (it = it.call(o)).next.bind(it); if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; return function () { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
++function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
++function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
++function yieldToMain() {
++  return new Promise(function (resolve) {
++    setTimeout(resolve, 0);
++  });
++}
++var currentlyExecutingInit = false;
++var isInitSlotEmpty = function isInitSlotEmpty() {
++  return new Promise(function (resolve, reject) {
++    if (!currentlyExecutingInit) {
++      resolve(true);
++    } else {
++      reject(false);
++    }
++  });
++};
++function requestEmptyInitSlot(_x) {
++  return _requestEmptyInitSlot.apply(this, arguments);
++}
++function _requestEmptyInitSlot() {
++  _requestEmptyInitSlot = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee6(callback) {
++    var emptySlot;
++    return _regenerator.default.wrap(function _callee6$(_context6) {
++      while (1) switch (_context6.prev = _context6.next) {
++        case 0:
++          emptySlot = new Promise(function (resolve) {
++            var checkForEmptyInitSlot = function checkForEmptyInitSlot() {
++              isInitSlotEmpty().then(resolve).catch(function () {
++                return setTimeout(checkForEmptyInitSlot, 0);
++              });
++            };
++            checkForEmptyInitSlot();
++          });
++          _context6.next = 3;
++          return emptySlot;
++        case 3:
++          _context6.next = 5;
++          return callback();
++        case 5:
++          return _context6.abrupt("return", _context6.sent);
++        case 6:
++        case "end":
++          return _context6.stop();
++      }
++    }, _callee6);
++  }));
++  return _requestEmptyInitSlot.apply(this, arguments);
++}
++var initEntry = /*#__PURE__*/function () {
++  var _ref2 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee(_ref, deadline) {
++    var component, element, BlockConstructor, displayName, instance;
++    return _regenerator.default.wrap(function _callee$(_context) {
++      while (1) switch (_context.prev = _context.next) {
++        case 0:
++          component = _ref.component, element = _ref.element;
++          BlockConstructor = component;
++          displayName = BlockConstructor.displayName;
++          _context.prev = 3;
++          instance = new BlockConstructor(element);
++          if (!(performance.now() >= deadline)) {
++            _context.next = 8;
++            break;
++          }
++          _context.next = 8;
++          return yieldToMain();
++        case 8:
++          (0, _componentStore.setComponentInstance)(displayName, {
++            instance: instance,
++            element: element
++          });
++          return _context.abrupt("return", instance);
++        case 12:
++          _context.prev = 12;
++          _context.t0 = _context["catch"](3);
++          // eslint-disable-next-line no-console
++          console.error(_context.t0);
++          return _context.abrupt("return", undefined);
++        case 16:
++        case "end":
++          return _context.stop();
++      }
++    }, _callee, null, [[3, 12]]);
++  }));
++  return function initEntry(_x2, _x3) {
++    return _ref2.apply(this, arguments);
++  };
++}();
++var getEntries = function getEntries(rootElement) {
+   var list = [];
+-  (0, _componentStore.getComponents)().forEach(function (component) {
++  for (var _iterator = _createForOfIteratorHelperLoose((0, _componentStore.getComponents)()), _step; !(_step = _iterator()).done;) {
++    var component = _step.value;
+     var BlockConstructor = component;
+     var displayName = BlockConstructor.displayName;
+-
+     if (!(0, _componentStore.hasComponentInstance)(rootElement)) {
+       if (rootElement.getAttribute('data-component') === displayName) {
+         list.push({
+-          component: component,
++          component: BlockConstructor,
+           element: rootElement,
+           depth: getComponentDepth(rootElement)
+         });
+       }
+-    } // find all DOM elements that belong the this block
+-
+-
+-    Array.from(rootElement.querySelectorAll("[data-component=\"" + displayName + "\"]")).forEach(function (element) {
+-      if (!(0, _componentStore.hasComponentInstance)(element)) {
++    }
++    // find all DOM elements that belong in this block
++    var componentElements = Array.from(rootElement.querySelectorAll("[data-component=\"" + displayName + "\"]"));
++    for (var _i = 0, _componentElements = componentElements; _i < _componentElements.length; _i++) {
++      var _element = _componentElements[_i];
++      if (!(0, _componentStore.hasComponentInstance)(_element)) {
+         list.push({
+-          component: component,
+-          element: element,
+-          depth: getComponentDepth(element)
++          component: BlockConstructor,
++          element: _element,
++          depth: getComponentDepth(_element)
+         });
+       }
+-    });
+-  }); // sort list by deepest element first
+-  // this will make sure that child components are constructed
+-  // before any parents, allowing the parents to directly reference them
+-
+-  var sortedList = list.concat().sort(function (a, b) {
+-    return b.depth - a.depth;
+-  });
+-  var newInstances = []; // create all corresponding classes
+-
+-  sortedList.forEach(function (_ref) {
+-    var component = _ref.component,
+-        element = _ref.element;
+-    var BlockConstructor = component;
+-    var displayName = BlockConstructor.displayName; // we don't want an error in one component to stop creating all other components
+-
+-    try {
+-      var instance = new BlockConstructor(element);
+-      (0, _componentStore.setComponentInstance)(displayName, {
+-        instance: instance,
+-        element: element
+-      });
+-      newInstances.push(instance);
+-    } catch (error) {
+-      // eslint-disable-next-line no-console
+-      console.error(error);
+-    }
+-  });
+-  newInstances.forEach(function (instance) {
+-    if (typeof instance.adopted === 'function') {
+-      instance.adopted();
+     }
+-  });
++  }
++  return list;
++};
++var initComponentEntries = /*#__PURE__*/function () {
++  var _ref3 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee3(componentEntries) {
++    var instances, initAndGetInstance;
++    return _regenerator.default.wrap(function _callee3$(_context3) {
++      while (1) switch (_context3.prev = _context3.next) {
++        case 0:
++          instances = [];
++          initAndGetInstance = /*#__PURE__*/function () {
++            var _ref4 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee2(entry, deadline) {
++              var instance;
++              return _regenerator.default.wrap(function _callee2$(_context2) {
++                while (1) switch (_context2.prev = _context2.next) {
++                  case 0:
++                    if (!entry) {
++                      _context2.next = 5;
++                      break;
++                    }
++                    _context2.next = 3;
++                    return initEntry(entry, deadline);
++                  case 3:
++                    instance = _context2.sent;
++                    instance && instances.push(instance);
++                  case 5:
++                  case "end":
++                    return _context2.stop();
++                }
++              }, _callee2);
++            }));
++            return function initAndGetInstance(_x5, _x6) {
++              return _ref4.apply(this, arguments);
++            };
++          }();
++          _context3.next = 4;
++          return yieldToMainWhileLooping({
++            list: componentEntries,
++            deadlineExtension: 10,
++            runWhenThreadClear: initAndGetInstance
++          });
++        case 4:
++          return _context3.abrupt("return", instances);
++        case 5:
++        case "end":
++          return _context3.stop();
++      }
++    }, _callee3);
++  }));
++  return function initComponentEntries(_x4) {
++    return _ref3.apply(this, arguments);
++  };
++}();
++function initComponentsInChunks(_x7) {
++  return _initComponentsInChunks.apply(this, arguments);
+ }
+-/**
+- * Returns the depth of an element in the DOM
+- *
+- * @param {HTMLElement} element
+- * @return {number}
+- */
+-
+-
++function _initComponentsInChunks() {
++  _initComponentsInChunks = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee7(rootElement) {
++    var entriesList, sortedList, instances;
++    return _regenerator.default.wrap(function _callee7$(_context7) {
++      while (1) switch (_context7.prev = _context7.next) {
++        case 0:
++          currentlyExecutingInit = true;
++          entriesList = getEntries(rootElement);
++          sortedList = entriesList.concat().sort(function (a, b) {
++            return b.depth - a.depth;
++          });
++          _context7.next = 5;
++          return initComponentEntries(sortedList);
++        case 5:
++          instances = _context7.sent;
++          _context7.next = 8;
++          return callAdoptedOnInitComponents(instances.concat());
++        case 8:
++          currentlyExecutingInit = false;
++        case 9:
++        case "end":
++          return _context7.stop();
++      }
++    }, _callee7);
++  }));
++  return _initComponentsInChunks.apply(this, arguments);
++}
++var callAdoptedOnInitComponents = /*#__PURE__*/function () {
++  var _ref5 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee4(instances) {
++    var executeAdopted;
++    return _regenerator.default.wrap(function _callee4$(_context4) {
++      while (1) switch (_context4.prev = _context4.next) {
++        case 0:
++          executeAdopted = function executeAdopted(instance) {
++            if (instance && typeof instance.adopted === 'function') {
++              instance.adopted();
++            }
++          };
++          _context4.next = 3;
++          return yieldToMainWhileLooping({
++            list: instances,
++            deadlineExtension: 10,
++            runWhenThreadClear: executeAdopted
++          });
++        case 3:
++        case "end":
++          return _context4.stop();
++      }
++    }, _callee4);
++  }));
++  return function callAdoptedOnInitComponents(_x8) {
++    return _ref5.apply(this, arguments);
++  };
++}();
++var yieldToMainWhileLooping = /*#__PURE__*/function () {
++  var _ref7 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee5(_ref6) {
++    var list, deadlineExtension, runWhenThreadClear, deadline, _item;
++    return _regenerator.default.wrap(function _callee5$(_context5) {
++      while (1) switch (_context5.prev = _context5.next) {
++        case 0:
++          list = _ref6.list, deadlineExtension = _ref6.deadlineExtension, runWhenThreadClear = _ref6.runWhenThreadClear;
++          deadline = performance.now() + deadlineExtension;
++        case 2:
++          if (!(list.length > 0)) {
++            _context5.next = 13;
++            break;
++          }
++          if (!(performance.now() >= deadline)) {
++            _context5.next = 8;
++            break;
++          }
++          _context5.next = 6;
++          return yieldToMain();
++        case 6:
++          deadline = performance.now() + deadlineExtension;
++          return _context5.abrupt("continue", 2);
++        case 8:
++          _item = list.shift();
++          _context5.next = 11;
++          return runWhenThreadClear(_item, deadline);
++        case 11:
++          _context5.next = 2;
++          break;
++        case 13:
++        case "end":
++          return _context5.stop();
++      }
++    }, _callee5);
++  }));
++  return function yieldToMainWhileLooping(_x9) {
++    return _ref7.apply(this, arguments);
++  };
++}();
+ function getComponentDepth(element) {
+   var depth = 0;
+   var currentElement = element;
+-
+   while (currentElement.parentElement) {
+     ++depth;
+     currentElement = currentElement.parentElement;
+   }
+-
+   return depth;
+ }
+\ No newline at end of file
+diff --git a/node_modules/muban-core/index.d.ts b/node_modules/muban-core/index.d.ts
+index ea97815..b06d6a4 100644
+--- a/node_modules/muban-core/index.d.ts
++++ b/node_modules/muban-core/index.d.ts
+@@ -4,4 +4,5 @@ export { updateComponent } from './lib/utils/componentStore';
+ export { default as cleanElement } from './lib/utils/cleanElement';
+ export { default as getComponentForElement } from './lib/utils/getComponentForElement';
+ export { default as initComponents } from './lib/utils/initComponents';
++export { requestEmptyInitSlot } from './lib/utils/initComponents';
+ export { default as updateElement } from './lib/utils/updateElement';
+diff --git a/node_modules/muban-core/lib/utils/initComponents.d.ts b/node_modules/muban-core/lib/utils/initComponents.d.ts
+index 12c3082..b3b88ee 100644
+--- a/node_modules/muban-core/lib/utils/initComponents.d.ts
++++ b/node_modules/muban-core/lib/utils/initComponents.d.ts
+@@ -1,5 +1,17 @@
++export declare function yieldToMain(): Promise<unknown>;
+ /**
+- * Called to init components for the elements in the DOM.
++ * Request an empty initialization slot. This guarantees that all initialization processes that might have been started before the call
++ * to this function, will have finished executing by the time the passed callback is executed.
++ * 
++ * @param {() => void | Promise<unknown>} callback - A callback to be executed when an empty initialization slot is obtained.
++ * 
++ * @returns {Promise<unknown>} - The result of the callback function.
++ */
++export declare function requestEmptyInitSlot(callback: () => void | Promise<unknown>): Promise<unknown>;
++/**
++ * Called to init components for the elements in the DOM. This is a modified version of the initComponents
++ * function of the muban-core package. The difference is that it breaks up the initialization process into chunks,
++ * yielding to the main thread between each chunk to prevent creating long tasks that block the browser main thread.
+  *
+  * Once the component tree for the passed rootElement is fully constructed, the adopted() lifecycle
+  * method will be called on all new components that implement that method.
+@@ -10,5 +22,6 @@
+  *
+  * @param {HTMLElement} rootElement Only components on or in this element will be constructed, this
+  * means you can update a new section of HTML at a later time.
++ * @returns {Promise<void>} - A promise that resolves when all components have been initialized.
+  */
+-export default function initComponents(rootElement: HTMLElement): void;
++export default function initComponentsInChunks(rootElement: HTMLElement): Promise<void>;

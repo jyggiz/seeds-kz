@@ -1,0 +1,10 @@
+<div class="b-simpleCardCarousel__textCard" {{#with id}}id={{this}}{{/with}} data-text-card>
+  {{> molecule/m18-paragraph }}
+  {{#with buttons}}
+    <div class="b-simpleCardCarousel__buttonsWrapper">
+      {{#each this }}
+        {{> molecule/m02-button }}
+      {{/each}}
+    </div>
+  {{/with}}
+</div>

@@ -1,0 +1,34 @@
+scrollComponent: true
+variant: 'double-1-2'
+
+background:
+  image:
+    alt: 'alt'
+    src: 'image/c24-content/intro-bg.jpg'
+    sources:
+      - src: 'image/c24-content/intro-bg.jpg'
+        media: '(min-width: 768px)'
+
+items:
+  - align:
+      horizontal: end
+      vertical: middle
+    type: 'asset'
+    content:
+      variant: square
+      image:
+        variant: contain
+        src: 'image/c24-content/brandbook-typography-intro-image.png'
+        alt: 'Intro icon'
+  - align:
+      horizontal: start
+      vertical: middle
+    type: 'paragraph'
+    content:
+      copy:
+        size: 'medium'
+        content:
+          '<p>The NEOM brand uses four typefaces.<br /><br />Brown is the Roman brand typeface used
+          for all touchpoints in both print and digital. 29LT Bukra is the Arabic headline typeface
+          and 29LT Zarid Text is the Arabic body copy typeface. Arial is the typeface for both Roman
+          and Arabic system applications. Please only use these styles.</p>'

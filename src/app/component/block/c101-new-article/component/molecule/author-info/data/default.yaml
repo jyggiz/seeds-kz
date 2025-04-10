@@ -1,0 +1,13 @@
+label: 'Author'
+image:
+  alt: 'Author image'
+  src: 'image/c101-new-article/author.jpeg'
+name: 'John Doe'
+position: 'CEO NEOM Airport Development'
+description:
+  'About John Selden text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua. About John Selden text here. Lorem
+  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+  dolore magna aliqua.'
+social:
+  items: 'import!../../../../../../molecule/m12-social/data/default.yaml'

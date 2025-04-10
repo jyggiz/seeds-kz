@@ -1,0 +1,15 @@
+scrollComponent: true
+
+lottieMobile:
+  jsonFilePath: '/json/c19-map/neom_staticHTML_map_MOBILE_ar.json'
+  assetsFolderPath: '/image/c19-map/neom_staticHTML_map_MOBILE_ar/'
+  alt: 'Neom map test desktop'
+  loop: true
+  autoplay: false
+
+lottieDesktop:
+  jsonFilePath: '/json/c19-map/neom_staticHTML_map_FHD_ar.json'
+  assetsFolderPath: '/image/c19-map/neom_staticHTML_map_FHD_ar/'
+  alt: 'Neom map test mobile'
+  loop: true
+  autoplay: false

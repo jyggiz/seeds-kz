@@ -1,0 +1,13 @@
+scrollComponent: true
+
+items:
+  previous:
+    heading:
+      text: 'Visual Guidelines: Call to actions'
+    link:
+      href: './page-brandbook-call-to-actions.html'
+  next:
+    heading:
+      text: 'Visual Guidelines: Downloads'
+    link:
+      href: './page-brandbook-downloads.html'

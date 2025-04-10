@@ -1,0 +1,19 @@
+- level: primary
+  theme: black
+  label: 'Watch film'
+  size: small
+  icon: play-outline
+  data:
+    play-button:
+  video:
+    props:
+      youtube: xLN2Vu1iels
+      originalWidth: 16
+      originalHeight: 9
+      autoplay: true
+      muted: false
+      loop: true
+      controls:
+        playPause: true
+        fullscreen: true
+        seek: true

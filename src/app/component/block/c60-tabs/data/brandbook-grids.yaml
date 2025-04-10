@@ -1,0 +1,28 @@
+scrollComponent: false
+disableTransition: false
+
+items:
+  - label: 'Desktop'
+    content:
+      - componentId: 'c24'
+        data: 'import!../../c24-content/data/brandbook-grids-desktop-text.yaml'
+      - componentId: 'c56'
+        data: 'import!../../c56-full-width-media/data/brandbook-grids-desktop-image.yaml'
+  - label: 'Tablet'
+    content:
+      - componentId: 'c24'
+        data: 'import!../../c24-content/data/brandbook-grids-tablet-text.yaml'
+      - componentId: 'c56'
+        data: 'import!../../c56-full-width-media/data/brandbook-grids-tablet-image.yaml'
+  - label: 'Mobile'
+    content:
+      - componentId: 'c24'
+        data: 'import!../../c24-content/data/brandbook-grids-mobile-text.yaml'
+      - componentId: 'c56'
+        data: 'import!../../c56-full-width-media/data/brandbook-grids-mobile-image.yaml'
+  - label: 'Big screen'
+    content:
+      - componentId: 'c24'
+        data: 'import!../../c24-content/data/brandbook-grids-bigscreen-text.yaml'
+      - componentId: 'c56'
+        data: 'import!../../c56-full-width-media/data/brandbook-grids-bigscreen-image.yaml'

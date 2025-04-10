@@ -1,0 +1,39 @@
+.b-anchorLinkButton {
+  @include size(100%);
+  @include vh(100, height, dvh);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: zindex($zLayout, floating-button);
+
+  &__buttonContainer {
+    @include size(80px);
+    display: none;
+    pointer-events: all;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    //transition: bottom 0.05s ease-out;
+
+    [dir="rtl"] & {
+      left: 20px;
+      right: auto;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__buttonContainer {
+      @include size(100px);
+      bottom: 60px;
+      right: 60px;
+      transition: bottom 0.6s ease-in-out;
+
+      [dir="rtl"] & {
+        left: 60px;
+        right: auto;
+      }
+    }
+  }
+}

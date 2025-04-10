@@ -1,0 +1,82 @@
+scrollComponent: true
+
+backgroundColor: cream
+theme: light
+
+padding:
+  start: large
+  end: large
+
+header:
+  alignment: start
+  heading:
+    text: How to visit <br />NEOM in <strong>2024</strong>
+    size: h4
+    element: h4
+
+description:
+  text: Here are some of the things you may want to consider when planning your future trip to NEOM.
+  size: medium
+
+items:
+  - title: Currency
+    copy:
+      This is one of the most forward-thinking and far-reaching projects ever undertaken to achieve
+      the vision to make NEOM the Land of the Future.
+    icon: globe
+    image:
+      src: 'image/c03-blinds/homepage/home-key-feature-image-04.jpg'
+      alt: ''
+
+  - title: Flights
+    copy:
+      This is one of the most forward-thinking and for-reaching projects ever undertaken to achieve
+      the vision. This is one of the most forward-thinking and far-reaching projects ever unde
+    icon: plane
+    image:
+      src: 'image/c16-carousel/discover-neom-2.jpg'
+      alt: ''
+
+  - title: Visa information
+    copy:
+      This is one of the most forward-thinking and for-reaching projects ever undertaken to achieve
+      the vision
+    icon: sponsorship
+    image:
+      src: 'image/c16-carousel/discover-neom-3.jpg'
+      alt: ''
+
+  - title: Climate
+    copy:
+      This is one of the most forward-thinking and for-reaching projects ever undertaken to achieve
+      the vision
+    icon: mountain
+    image:
+      src: 'image/c16-carousel/updates_instagram.jpg'
+      alt: ''
+    expandCtaAria:
+      label: show content
+
+  - title: Climate
+    copy:
+      This is one of the most forward-thinking and for-reaching projects ever undertaken to achieve
+      the vision
+    icon: commute
+    image:
+      src: 'image/c29-stories/humanity-harmony.jpg'
+      alt: ''
+    expandCtaAria:
+      label: show content
+
+  - title: Climate
+    copy:
+      This is one of the most forward-thinking and for-reaching projects ever undertaken to achieve
+      the vision
+    icon: resident
+    image:
+      src: 'image/c46-media-list/item6.jpg'
+      alt: ''
+    expandCtaAria:
+      label: show content
+    closeCtaAria:
+      label: hide content

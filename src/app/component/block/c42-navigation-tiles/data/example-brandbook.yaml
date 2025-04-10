@@ -1,0 +1,15 @@
+scrollComponent: true
+
+items:
+  previous:
+    heading:
+      text: 'Title of previous page'
+      transform: 'none'
+    link:
+      href: '#'
+  next:
+    heading:
+      text: 'Title of next page'
+      transform: 'none'
+    link:
+      href: '#'

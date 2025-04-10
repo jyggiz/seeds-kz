@@ -1,0 +1,8 @@
+variant: 'portrait'
+
+image:
+  src: 'image/joseph_bradley.jpg'
+copy: 'A portrait of Joseph Bradley, giving an example of the portrait image variant.'
+lightbox:
+  image:
+    src: 'image/joseph_bradley.jpg'

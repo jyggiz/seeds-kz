@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="./m07-language-toggle.scss">
+<script src="./M07LanguageToggle.ts"></script>
+
+
+<div class="m-languageToggle" data-component="m07-language-toggle">
+  <ul class="m-languageToggle__items">
+    {{#each languages.options }}
+      <li class="
+        m-languageToggle__item
+        {{#if (condition languageCode '===' ../languages.activeLanguageCode)}} -isActive{{/if}}"
+        lang="{{languageCode}}">
+        <a href="{{href}}" class="m-languageToggle__link">
+          {{#if shortLabel}}{{shortLabel}}{{^}}{{ languageCode }}{{/if}}
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+</div>

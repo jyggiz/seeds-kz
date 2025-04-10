@@ -1,0 +1,36 @@
+.b-mediaList {
+  position: static;
+  padding-block: var(--component-block-padding, var(--container-margin));
+
+  &__container {
+    @include container();
+  }
+
+  &__items {
+    @include list-reset(0 0 80px);
+  }
+
+  &__warningMessage {
+    @include type("body", "small");
+
+    display: block;
+
+    &.-isHidden {
+      display: none;
+    }
+  }
+
+  @include respond-to("MEDIUM") {
+    --grid-column-count: 2;
+
+    &__items {
+      display: grid;
+      grid-gap: 80px;
+      grid-template-columns: repeat(var(--grid-column-count, 12), minmax(0, 1fr));
+    }
+  }
+
+  @include respond-to("LARGE") {
+    --grid-column-count: var(--media-list-columns, 3);
+  }
+}

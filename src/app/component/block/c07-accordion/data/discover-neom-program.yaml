@@ -1,0 +1,43 @@
+scrollComponent: true
+
+title:
+  heading:
+    text: 'Program'
+    size: h4
+
+items:
+  - - label: '[9:20 - 9:55] REINVENTING LIVABILITY AND URBANISM'
+      eventTracking:
+        accordionId: 'discover program id'
+      content:
+        '<p><strong>9:20 - 9:55</strong><br/>The Industrial City Reimagined</p> <p>(5 min)
+        Introductory Sector Spotlight:<br/>Vishal Wanchoo, CEO OXAGON, a Region of NEOM</p> <p>(15
+        min) Followed by panel discussion<br/> 1x Moderator<br/> 3x Speaker
+        Profiles:</p><ul><li>Vishal Wanchoo, CEO OXAGON, a Region of NEOM</li><li>Logistics,
+        manufacturing, urban development, research & innovation, urban parks, design & construction
+        </li><li>Professor Georg Windeck, Partner, Windeck Architects</li></ul> <p>(15 min) Q&A</p>'
+    - label: '[9:55 – 11:25] BUILDING THE ECOSYSTEMS FOR THRIVING INDUSTRIES'
+      content:
+        '<p><strong>9:20 - 9:55</strong><br/>The Industrial City Reimagined</p> <p>(5 min)
+        Introductory Sector Spotlight:<br/>Vishal Wanchoo, CEO OXAGON, a Region of NEOM</p> <p>(15
+        min) Followed by panel discussion<br/> 1x Moderator<br/> 3x Speaker
+        Profiles:</p><ul><li>Vishal Wanchoo, CEO OXAGON, a Region of NEOM</li><li>Logistics,
+        manufacturing, urban development, research & innovation, urban parks, design & construction
+        </li><li>Professor Georg Windeck, Partner, Windeck Architects</li></ul> <p>(15 min) Q&A</p>'
+
+  - - label: '[11:25 – 12:10] INNOVATING FOR A RESILIENT FUTURE'
+      content:
+        '<p><strong>9:20 - 9:55</strong><br/>The Industrial City Reimagined</p> <p>(5 min)
+        Introductory Sector Spotlight:<br/>Vishal Wanchoo, CEO OXAGON, a Region of NEOM</p> <p>(15
+        min) Followed by panel discussion<br/> 1x Moderator<br/> 3x Speaker
+        Profiles:</p><ul><li>Vishal Wanchoo, CEO OXAGON, a Region of NEOM</li><li>Logistics,
+        manufacturing, urban development, research & innovation, urban parks, design & construction
+        </li><li>Professor Georg Windeck, Partner, Windeck Architects</li></ul> <p>(15 min) Q&A</p>'
+    - label: '[12:10 - 17:00] ENABLING PEOPLE AND NATURE TO LIVE IN HARMONY'
+      content:
+        '<p><strong>9:20 - 9:55</strong><br/>The Industrial City Reimagined</p> <p>(5 min)
+        Introductory Sector Spotlight:<br/>Vishal Wanchoo, CEO OXAGON, a Region of NEOM</p> <p>(15
+        min) Followed by panel discussion<br/> 1x Moderator<br/> 3x Speaker
+        Profiles:</p><ul><li>Vishal Wanchoo, CEO OXAGON, a Region of NEOM</li><li>Logistics,
+        manufacturing, urban development, research & innovation, urban parks, design & construction
+        </li><li>Professor Georg Windeck, Partner, Windeck Architects</li></ul> <p>(15 min) Q&A</p>'

@@ -1,0 +1,45 @@
+
+
+
+<div class="o-radioGroup" data-component="o76-radio-group" {{#if scrollComponent}}data-scroll-component{{/if}} {{#if
+  id}} id="{{id}}" {{/if}} data-lazy-component>
+  <fieldset class="o-radioGroup__fieldset" {{#if validate}} data-validate="{{toJson validate}}" {{/if}}
+    {{#with id}}id="{{this}}" {{/with}} data-fieldset>
+    <div class="o-radioGroup__container">
+    {{#if legend}}
+    {{> atom/a26-fieldset-legend legend=legend.text variant=legend.variant required=required}}
+    {{/if}}
+
+    <div class="o-radioGroup__grid" data-direct-inputs>
+    {{#each items}}
+    {{> molecule/m28-radio-option }}
+    {{/each}}
+    </div>
+
+    {{#if dependentItems}}
+    <ul class="o-radioGroup__dependentInputs">
+    {{#each dependentItems}}
+    <li data-dependent-input-for="{{toJson values}}">
+      {{#with input}}
+      {{> (lookup . 'componentName') data }}
+      {{/with}}
+    </li>
+    {{/each}}
+    </ul>
+    {{/if}}
+
+    {{#with showTextareaForOtherChoice}}
+    <div class="o-radioGroup__optionalTextarea{{#if wide}} -wide{{/if}}" data-optional-textarea>
+      {{>molecule/m30-text-field type='textarea' blockValidation=true disabled=true}}
+    </div>
+    {{/with}}
+    {{> atom/a25-form-error }}
+
+    <div class="o-radioGroup__radioGroupCopy">{{{ copy }}}</div>
+    
+    </div>
+  </fieldset>
+
+  {{#if (condition variant "===" "subgroup")}} {{>
+  ../../block/c59-multi-step-form/component/atom/form-group-divider.hbs }} {{/if}}
+</div>

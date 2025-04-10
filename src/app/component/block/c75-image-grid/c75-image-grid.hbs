@@ -1,0 +1,31 @@
+
+
+<section class="b-imageGrid"
+         data-component="c75-image-grid" data-scroll-component
+         {{#if id}} id="{{id}}"{{/if}}
+         data-lazy-component>
+             {{#with title.heading }}
+      <div class="b-imageGrid__title">
+        {{> atom/a03-heading }}
+      </div>
+    {{/with}}
+  <div class="b-imageGrid__content swiper-container" data-slider>
+    <ul class="b-imageGrid__items swiper-wrapper">
+      {{#each items}}
+        <li class="b-imageGrid__itemWrapper swiper-slide" data-item>
+          <div class="b-imageGrid__item">
+            {{#if this.src}}
+              {{> atom/a01-image this disableTransition=true}}
+            {{/if}}
+            {{#if this.link}}
+              {{> molecule/m05-download-item }}
+            {{/if}}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+    <div class="b-imageGrid__pagination" data-pagination>
+        {{> atom/a08-page-indicators items=null }}
+      </div>
+  </div>
+</section>

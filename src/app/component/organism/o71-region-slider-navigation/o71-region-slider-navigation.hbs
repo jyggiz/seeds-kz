@@ -1,0 +1,40 @@
+
+
+
+<div class="o-regionSliderNavigation{{#if variant}} -{{variant}}{{/if}}"
+     data-component="o71-region-slider-navigation"
+     {{#if resetOnLeave}}data-reset-on-leave="{{resetOnLeave}}"{{/if}}>
+  <div class="o-regionSliderNavigation__container" data-region-slider-container>
+
+    <div class="o-regionSliderNavigation__map" aria-hidden="true" data-region-slider-map>
+      {{> atom/a01-image images.region disableTransition=true }}
+      {{#each items}}
+        {{#if images.region.src }}
+          <div class="o-regionSliderNavigation__region" data-region-slider-region>
+            {{> atom/a01-image images.region disableTransition=true }}
+          </div>
+        {{/if}}
+      {{/each}}
+    </div>
+
+    <div class="o-regionSliderNavigation__pagination">
+      <ul class="o-regionSliderNavigation__paginationItems" data-pagination-items>
+      {{#each items}}
+        <li class="o-regionSliderNavigation__paginationItem" data-pagination-item>
+          {{> atom/a22-step-indicator
+            active=(condition (arithmetic @index '+' 1) '===' ../current)
+            index=(arithmetic @index '+' 1)
+            variant='regionSlider'}}
+          <div class="o-regionSliderNavigation__pulse" data-pagination-pulse></div>
+          {{#if link}}
+            <a href="{{link.href}}"{{#if (condition link.target '===' '_blank')}} target="_blank"{{/if}}>
+              {{> molecule/m24-tooltip eyebrow text=link.label}}
+            </a>
+          {{/if}}
+        </li>
+      {{/each}}
+      </ul>
+      <div class="o-regionSliderNavigation__paginationLine" data-pagination-line></div>
+    </div>
+  </div>
+</div>

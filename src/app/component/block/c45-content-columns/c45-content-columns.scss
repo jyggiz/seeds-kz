@@ -1,0 +1,81 @@
+.b-contentColumns {
+  --grid-column-count: 2;
+
+  background-color: var(--component-background-color);
+  color: var(--component-text-color);
+  padding-block: var(--component-block-padding, var(--container-margin));
+
+  &__container,
+  &__buttons {
+    @include container();
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-block: 20px 0;
+  }
+
+  &.-articleGrid {
+    .b-contentColumns__container,
+    .b-contentColumns__buttons {
+      @include container("compact");
+    }
+
+    .b-contentColumns__container {
+      display: grid;
+      gap: 40px;
+    }
+  }
+
+  @include respond-to("LARGE") {
+    &__container {
+      display: grid;
+      gap: 80px;
+      grid-template-columns: repeat(var(--grid-column-count, 1), minmax(0, 1fr));
+    }
+
+    &__column {
+      &.-start {
+        text-align: start;
+      }
+
+      &.-center {
+        text-align: center;
+      }
+
+      &.-end {
+        text-align: end;
+      }
+
+      &.-top {
+        align-self: start;
+      }
+
+      &.-middle {
+        align-self: center;
+      }
+
+      &.-bottom {
+        align-self: end;
+      }
+
+      &.-wide {
+        grid-column: 1/3;
+      }
+    }
+
+    &__buttons {
+      margin-block: 40px 0;
+    }
+
+    &.-articleGrid {
+      .b-contentColumns__container {
+        grid-gap: var(--container-margin) 80px;
+      }
+    }
+  }
+
+  @include neomThemes();
+}

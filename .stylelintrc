@@ -1,0 +1,30 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "plugins": [
+    "./build-tools/script/util/style-linter/at-mixin-called-first.js",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "custom/at-mixin-called-first": true,
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["aspect-ratio"]
+      }
+    ],
+    "scss/at-mixin-argumentless-call-parentheses": "never",
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["after-comment", "first-nested"]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-same-name-blockless"],
+        "ignore": ["after-comment", "first-nested"]
+      }
+    ]
+  }
+}

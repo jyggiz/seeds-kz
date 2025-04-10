@@ -1,0 +1,11 @@
+@mixin vh($value, $prop: height, $unit: svh) {
+  #{$prop}: calc(var(--vh) * #{$value});
+
+  @supports (height: 1 + $unit) {
+    #{$prop}: calc(#{$value} * #{1 + $unit});
+  }
+
+  [data-editor="true"] & {
+    #{$prop}: 800px;
+  }
+}

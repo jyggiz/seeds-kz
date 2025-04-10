@@ -1,0 +1,43 @@
+scrollComponent: true
+columnCount: 2
+hasHighlight: true
+
+header:
+  heading:
+    text: 'C40 column demos'
+    size: 'h5'
+    element: 'h1'
+  copy:
+    '<p><small>This page demonstrates both double and triple column layouts with an optional
+    highlighted articleCard in each.</small></p>'
+
+items:
+  - image:
+      src: 'image/c20-test-image.jpg'
+    heading:
+      text: 'Seawater desalination plant'
+    highlighted: true
+    copy:
+      'NEOM will innovate desalination processes through revolutionary, sustainable and renewable
+      technology. A vast facility integrated with brine processing, the Seawater Desalination Plant
+      is at the core of this transformation. Based on new high recovery reverse osmosis membrane
+      technology, it aims to supply the entire region for a 10 year period. These innovations will
+      allow for a 60% recovery and will process up to 1M m3 of water a day.'
+    link:
+      href: '#'
+      label: Learn more
+
+  - 'import!../../../organism/o35-article-card/data/example.yaml'
+
+  - image:
+      src: 'image/c20-test-image.jpg'
+    heading:
+      text: 'Potable Water Storage'
+    copy:
+      'Potable water reservoirs, able to satisfy up to five days of demand, will be built across
+      NEOM’s smart water network. Most of these reservoirs will be impressive concrete structures
+      with a storage capacity of over 100,000 m3 to supply safe, high-quality drinking water
+      on-demand.'
+    link:
+      href: '#'
+      label: Learn more

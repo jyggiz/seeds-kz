@@ -1,0 +1,8 @@
+- level: primary
+  theme: black
+  label: 'Primary button'
+  size: small
+- level: secondary
+  theme: black
+  label: 'Secondary button'
+  size: small

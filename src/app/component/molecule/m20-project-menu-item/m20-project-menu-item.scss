@@ -1,0 +1,138 @@
+.m-projectMenuItem {
+  display: block;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+
+  &__image {
+    @include aspect-ratio(20, 9);
+
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      @include size(100%);
+      @include offset();
+
+      background: rgb(0, 0, 0);
+      opacity: 0.65;
+      content: "";
+      position: absolute;
+      transition: opacity 0.25s linear;
+      z-index: 1;
+    }
+
+    .a-image {
+      transform: scale(1);
+      transition: transform 0.5s ease-out;
+    }
+  }
+
+  &__link {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    padding-inline-start: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &.focus-visible {
+      border: 2px solid var(--color-light-blue);
+      border-radius: 2px;
+    }
+  }
+
+  &__title {
+    --icon-size: 10px;
+
+    @include type("overline", "large");
+
+    display: flex;
+    align-items: center;
+
+    .a-icon {
+      margin-inline-start: 10px;
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: opacity 0.5s ease-in, transform 0.5s ease;
+
+      [dir="rtl"] & {
+        transform: translateX(30px);
+      }
+    }
+  }
+
+  &.-dropdown {
+    .m-projectMenuItem__image::after {
+      content: normal;
+    }
+
+    .m-projectMenuItem__label {
+      @include type("body", "medium");
+
+      margin: 40px 0 0;
+      position: static;
+      transform: translate(0, 0);
+      text-transform: none;
+    }
+  }
+
+  @include respond-to("XXLARGE") {
+    &__image {
+      @include aspect-ratio(16, 9);
+      &::after {
+        opacity: 0.25;
+      }
+    }
+
+    &__link {
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+
+    &__copy {
+      @include type("body", "small");
+
+      overflow: hidden;
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+
+      p {
+        padding-top: 16px;
+      }
+    }
+
+    @include hover() {
+      .m-projectMenuItem__image {
+        &::after {
+          opacity: 0.75;
+        }
+
+        .a-image {
+          transform: scale(1.1);
+        }
+      }
+
+      .m-projectMenuItem__title {
+        .a-icon {
+          opacity: 1;
+          transform: translateX(0);
+
+          [dir="rtl"] & {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to("XLARGE") {
+    max-width: 500px;
+  }
+}

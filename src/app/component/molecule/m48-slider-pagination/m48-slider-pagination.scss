@@ -1,0 +1,99 @@
+.m-sliderPagination {
+  --pagination-bar-color: var(--component-text-color);
+  --pagination-bar-color-hover: var(--component-highlight-color);
+  --pagination-bar-color-active: var(--component-highlight-color);
+  --pagination-bar-color-passed: var(--component-highlight-color);
+
+  color: var(--component-text-color);
+
+  &__timedPagination {
+    bottom: 20px;
+    display: flex;
+    gap: 5px;
+    left: 0;
+    list-style-type: none;
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+  }
+
+  &__title {
+    display: block;
+    color: var(--text-color);
+    text-align: start;
+    padding: 15px 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+    cursor: default;
+    transform-origin: left;
+
+    [dir="rtl"] & {
+      transform-origin: right;
+    }
+  }
+
+  &__paginationBar {
+    @include size(100%, 2px);
+
+    background-color: currentColor;
+    color: var(--pagination-bar-color);
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    @include hover {
+      color: var(--pagination-bar-color-hover);
+    }
+
+    &.-isActive {
+      color: var(--pagination-bar-color-active);
+      pointer-events: none;
+    }
+  }
+
+  &.-contentWidth {
+    .m-sliderPagination__paginationBar {
+      width: fit-content;
+    }
+
+    .m-sliderPagination__timedPagination {
+      padding: 0;
+    }
+  }
+
+  &__paginationBarInner {
+    @include size(100%);
+
+    background-color: var(--component-text-color);
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleX(0);
+
+    &.-isPassed {
+      background-color: var(--paginination-color-passed);
+      transform: scaleX(1);
+    }
+  }
+
+  @include respond-to(MEDIUM) {
+    &.-contentWidth {
+      .m-sliderPagination__title {
+        padding-inline-end: 40px;
+      }
+    }
+  }
+
+  @include respond-to(LARGE) {
+    &__timedPagination {
+      padding: 0 60px;
+      bottom: 60px;
+      gap: 15px;
+    }
+
+    &.-contentWidth {
+      .m-sliderPagination__timedPagination {
+        padding: 0;
+      }
+    }
+  }
+}

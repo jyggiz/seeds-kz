@@ -1,0 +1,37 @@
+scrollComponent: true
+id: c26-sector-food-accelerator
+
+align:
+  horizontal: start
+  vertical: bottom
+
+background:
+  image:
+    src: './image/homepage-mountain-background.jpg'
+    alt: 'Mountain background'
+
+content:
+  header:
+    flipHeading:
+      element: 'h1'
+      size: 'h3'
+      prefix: 'A flip heading'
+      labels:
+        - 'alternates'
+        - 'between'
+        - 'a list of'
+        - 'terms or text'
+    eyebrow:
+      text: 'Starting in September 2022'
+
+  buttons:
+    - level: 'primary'
+      theme: 'white'
+      label: 'Sign up'
+      variant: 'play'
+      href: '#'
+      target: '_blank'
+      eventTracking:
+        componentId: 'CTA id'
+
+scrollButton: true

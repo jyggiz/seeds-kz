@@ -1,0 +1,8 @@
+heading:
+  element: h2
+  text: Explore <strong>Magna</strong>
+  size: h4
+notice: Tap on Start exploring, then drag and drop over the map to discover hidden hotspots.
+button:
+  size: small
+  label: start exploring

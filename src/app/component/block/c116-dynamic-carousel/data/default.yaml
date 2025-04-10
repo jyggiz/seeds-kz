@@ -1,0 +1,23 @@
+scrollComponent: true
+
+background:
+  mask:
+    opacity: 0
+  image:
+    src: 'image/c11-slider/news-ribbon.jpg'
+
+listSorter: 'import!../../../organism/o82-generic-slider/data/list-sorter.yaml'
+
+header:
+  heading:
+    element: 'h2'
+    size: 'h4'
+    text: 'In the news'
+
+componentId: 'o13'
+
+items:
+  - 'import!../../../organism/o13-content-card/data/video-description.yaml'
+  - 'import!../../../organism/o13-content-card/data/text-button.yaml'
+  - 'import!../../../organism/o13-content-card/data/card-full.yaml'
+  - 'import!../../../organism/o13-content-card/data/video-thumbnail-description.yaml'

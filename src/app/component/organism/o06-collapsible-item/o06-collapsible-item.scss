@@ -1,0 +1,50 @@
+.o-collapsibleItem {
+  --collapsible-item-padding-inline: 25px;
+  --collapsible-item-padding-block: 15px;
+  --accordion-item-background-color: white;
+  --accordion-text-color: black;
+  --accordion-item-background-active-color: white;
+
+  background: var(--accordion-item-background-color);
+  color: var(--accordion-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: 0.3s $easeOutExpo;
+  transition-property: border-color, background-color;
+
+  &__container {
+    color: var(--color-black-20);
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 0 var(--collapsible-item-padding-inline) var(--collapsible-item-padding-block);
+  }
+
+  .m-toggleButton.-accordion {
+    --toggle-button-text-color: var(--accordion-text-color);
+    --toggle-button-icon-color: var(--accordion-item-chevron-color);
+
+    padding-block: 20px;
+  }
+
+  &__body {
+    --text-color: var(--accordion-item-text-color);
+
+    @include type("body", "small");
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &.-isExpanded {
+    background: var(--accordion-item-background-active-color);
+  }
+
+  @include respond-to("MEDIUM") {
+    --collapsible-item-padding-inline: 0px;
+    --collapsible-item-padding-block: 30px;
+  }
+}

@@ -1,0 +1,90 @@
+scrollComponent: false
+theme: 'darkMono'
+
+padding:
+  start: 'large'
+  end: 'large'
+
+background:
+  mask:
+    opacity: 0
+  image:
+    src: './image/pattern@2x.png'
+
+header:
+  eyebrow:
+    size: 'medium'
+    text: 'Eye-catcher'
+  heading:
+    element: 'h2'
+    size: 'h3'
+    text: 'Optional header lives here'
+  moustache:
+    size: 'small'
+    text:
+      'The component header is purely optional, future-proofing for the next release that comes
+      along.'
+
+items:
+  - id: 'o53'
+    data:
+      type: 'paragraph'
+      text:
+        content: 'import!../../../molecule/m18-paragraph/data/the-line-1.yaml'
+      asset:
+        content: 'import!../../../molecule/m16-figure/data/example-asset-portrait.yaml'
+
+  - id: 'o53'
+    data:
+      assetFirst: true
+      type: 'list'
+      text:
+        content: 'import!../../../molecule/m17-list/data/definitions-ordered.yaml'
+      asset:
+        content: 'import!../../../molecule/m16-figure/data/example-asset-portrait.yaml'
+
+  - id: 'o53'
+    data:
+      assetPull: true
+      type: 'paragraph'
+      text:
+        content: 'import!../../../molecule/m18-paragraph/data/the-line-3.yaml'
+      asset:
+        content: 'import!../../../molecule/m16-figure/data/example-asset-video.yaml'
+
+  - id: 'o53'
+    data:
+      assetFirst: true
+      type: 'paragraph'
+      text:
+        content: 'import!../../../molecule/m18-paragraph/data/the-line-4.yaml'
+      asset:
+        content: 'import!../../../molecule/m16-figure/data/example-asset-square.yaml'
+
+buttons:
+  - level: primary
+    label: Play
+    theme: white
+    icon: play-solid
+    variant: play
+    video:
+      props:
+        sources:
+          - src: 'video/video-preview.mp4'
+            type: video/mp4
+        originalWidth: 16
+        originalHeight: 9
+        autoplay: true
+        muted: false
+        loop: false
+        disablePreload: true
+        controls:
+          playPause: true
+          fullscreen: true
+          seek: true
+        eventTracking:
+          event: 'video_start'
+          video:
+            titleInEnglish: 'A Vision of a New Future: Explainer video'
+            title: 'A Vision of a New Future: Explainer video'
+            src: 'video/video-preview.mp4'

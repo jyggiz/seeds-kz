@@ -1,0 +1,8 @@
+variant: 'landscape'
+image:
+  src: 'image/c46-media-list/item1.jpg'
+lightbox:
+  image:
+    src: 'image/c46-media-list/item1.jpg'
+
+copy: '<p>An image cropped in 3:2 ratio, giving an example of the landscape image variant.</p>'

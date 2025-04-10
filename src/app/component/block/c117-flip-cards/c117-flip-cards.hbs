@@ -1,0 +1,50 @@
+
+<section class="b-flipCards{{#if theme}} t-{{theme}}{{/if}}"
+  data-component="c117-flip-cards"
+  {{#if scrollComponent}}data-scroll-component{{/if}}
+  {{#if id}} id="{{id}}"{{/if}}
+  {{#if (condition backgroundColor '||' padding)}}
+    style="{{#with padding}}--component-block-padding: var(--{{#with start}}block-padding-{{this}}{{else}}container-margin{{/with}})
+    {{#unless (condition start '===' end)}}var(--{{#with end}}block-padding-{{this}}{{else}}container-margin{{/with}}){{/unless}};{{/with}}
+    {{#with backgroundColor}}--component-background-color: {{#unless (condition this '===' transparent)}}var(--color-{{this}}){{^}}transparent{{/unless}};{{/with}}"
+  {{/if}}
+  data-lazy-component
+>
+  <div class="b-flipCards__container">
+    <div class="b-flipCards__header">
+      {{#with header}}{{> molecule/m04-component-header }}{{/with}}
+      {{#with description}}<span class="b-flipCards__description{{#if size}} -{{size}}{{/if}}" data-description>{{{ text }}}</span>{{/with}}
+    </div>
+
+    <ul class="b-flipCards__items">
+      {{#each items}}
+        <li class="b-flipCards__item{{#if (condition @index '>' 5)}} -isHidden{{/if}}" data-item>
+          {{> atom/a01-image image disableTransition=true }}
+
+          <div class="b-flipCards__itemContentWrapper" data-card>
+            {{#if icon}}
+              {{> atom/a02-icon name=icon }}
+            {{/if}}
+            <div class="b-flipCards__itemContent">
+              <span class="b-flipCards__itemContent__title">{{ title }}</span>
+              {{> molecule/m02-button icon="plus-big" level="secondary" theme="white" size="small" aria=expandCtaAria }}
+            </div>
+          </div>
+
+          <div class="b-flipCards__itemFlip -isHidden" data-flip>
+            <span class="b-flipCards__itemFlip__title">{{ title }}</span>
+            <span class="b-flipCards__itemFlip__copy">{{{ copy }}}</span>
+            {{> molecule/m02-button icon="minus" level="primary" theme="black" size="small" aria=closeCtaAria }}
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+    {{#if (condition items.length '>' 6)}}
+      {{#with loadMoreButton}}
+        <div class="b-flipCards__loadMoreButtonWrapper">
+          {{> molecule/m02-button data=(object load-more-button="")}}
+        </div>
+      {{/with}}
+    {{/if}}
+  </div>
+</section>

@@ -1,0 +1,132 @@
+scrollComponent: true
+theme: 'dark'
+header:
+  eyebrow:
+    text: Discover what our partners say about us
+
+items:
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/logo-neom.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/logo-neom.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/logo-neom.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/logo-neom.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/logo-neom-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder
+  - images:
+      default:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo.svg'
+      active:
+        alt: Logo
+        src: 'image/c24-content/mediamonks-logo-navy.svg'
+    testimonial:
+      quote:
+        'As a new way of working and living, NIC was such a compelling option for my company
+        partners and I. The accessibility, connectivity and sustainability just show what can be
+        done when a city is built from scratch – with progressive goals and a recognition that the
+        legacy systems of the past are no longer fit for purpose.'
+      author:
+        name: James Dyson
+        role: Inventor and Company Co-Founder

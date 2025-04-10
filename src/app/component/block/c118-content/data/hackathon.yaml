@@ -1,0 +1,61 @@
+id: c24-hackathon
+scrollComponent: true
+fullMinHeight: true
+padding:
+  start: large
+  end: large
+
+grid:
+  rowGap:
+    smallScreen: 0
+  items:
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m18-paragraph
+          data:
+            eyebrow:
+              text: 'MAY THE BEST TEAM WIN'
+              size: medium
+            heading:
+              size: h5
+              element: h2
+              text: 'WHAT IS THE HACKATHON?'
+            copy:
+              content:
+                'A competition led by NEOM OXAGON that challenges you to solve issues related to the
+                tech industries, water, e-fuel and green hydrogen. If youre a team of talented tech
+                wizards looking to make an impact, sign up now and show your critical thinking
+                skills.Who can apply?'
+      alignment:
+        vertical: end
+      gridArea:
+        smallScreen: 1 / 1 / 2 / 5
+        mediumScreen: 1 / 4 / 2 / 10
+
+    - componentName: c118-content-item
+      data:
+        alignment:
+          horizontal: start
+        content:
+          componentName: m17-list
+          data:
+            header:
+              heading:
+                text: 'Who can apply?'
+                size: 'h6'
+                element: h3
+            size: 'small'
+            items:
+              - Males and females
+              - Teams of 3-6, aged 18-65
+              - Riyadh-based with a Saudi national as team leader
+              - Programmers, developers, designers, students, professors, founders, marketers,
+                managers… ANYONE who's a big thinker with big ideas
+      alignment:
+        vertical: start
+      gridArea:
+        smallScreen: 2 / 1 / 3 / 5
+        mediumScreen: 2 / 4 / 3 / 10

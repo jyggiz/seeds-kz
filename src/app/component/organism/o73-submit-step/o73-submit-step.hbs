@@ -1,0 +1,61 @@
+
+
+
+<div class="o-submitStep"
+         data-component="o73-submit-step"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         >
+  <div class="o-submitStep__wrapper">
+    {{> molecule/m34-component-background background }}
+    <div class="o-submitStep__content">
+      <div class="o-submitStep__messages">
+        <div  class="o-submitStep__message">
+          {{#with success}}
+          <div class="o-submitStep__success" data-submit-success>
+            {{> molecule/m18-paragraph this}}
+          </div>
+          {{/with}}
+          {{#with error}}
+          <div class="o-submitStep__error" data-submit-error>
+            {{> molecule/m18-paragraph this}}
+          </div>
+          {{/with}}
+        </div>
+        <div class="o-submitStep__buttonsWrapper">
+          <ul class="o-submitStep__buttons">
+            {{#with buttons}}
+              <li class="o-submitStep__button">
+                  {{> molecule/m02-button
+                    done
+                    data=(object done-button=null)
+                    level="primary"
+                    theme="dark-accent"
+                    size="small"
+                  }}
+              </li>
+              <li class="o-submitStep__button">
+                  {{> molecule/m02-button
+                    retry
+                    data=(object retry-button=null)
+                    level="primary"
+                    theme="white"
+                    href=""
+                    size="small"
+                  }}
+              </li>
+            {{/with}}
+          </ul>
+        </div>
+      </div>
+      {{#with social}}
+      <div class="o-submitStep__social">
+        <p class="o-submitStep__socialCallToAction">{{ cta }}</p>
+        {{> molecule/m12-social this }}
+      </div>
+      {{/with}}
+    </div>
+  </div>
+</div>
+ 
+ 

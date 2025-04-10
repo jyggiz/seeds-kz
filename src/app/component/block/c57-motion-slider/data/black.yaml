@@ -1,0 +1,90 @@
+theme: dark
+backgroundColor: dark-black
+
+padding:
+  start: 'regular'
+  end: 'regular'
+
+heading:
+  text: 'Proudly Hosting'
+  size: 'h5'
+
+items:
+  - variant: inverse
+    image:
+      src: 'image/c57-motion-slider/desktop/dark-1.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c57-motion-slider/desktop/dark-1.jpg'
+          media: '(min-width: 768px)'
+    eyebrow:
+      text: 'GKA FREESTYLE WORLD CUP'
+    content:
+      align: bottom
+      heading:
+        size: 'h6'
+        element: 'h2'
+        text: 'About formula E'
+      copy:
+        size: 'small'
+        content:
+          "Formula E is the world's first all-electric international single-seater championship.
+          Officially known as the ABB FIA Formula E World Championship, its mission is to promote
+          sustainable mobility and to drive electric vehicles to the fore in the race to a better,
+          cleaner future."
+
+  - variant: inverse
+    image:
+      src: 'image/c57-motion-slider/desktop/dark-2.jpg'
+      alt: 'test image'
+      sources:
+        - src: 'image/c57-motion-slider/desktop/dark-2.jpg'
+          media: '(min-width: 768px)'
+    eyebrow:
+      text: 'Super league Triathlon'
+    content:
+      image:
+        src: 'image/c57-motion-slider/logo-2.png'
+        alt: 'Hello world'
+      eyebrow:
+        text: 'NOV 4-5'
+        size: 'medium'
+      heading:
+        size: 'h6'
+        element: 'h2'
+        text: 'Super league Triathlon'
+      copy:
+        size: 'small'
+        content:
+          'Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget lacus
+          eget semper. Ante tempor, tempus mauris et, consectetur.'
+    buttons:
+      - level: 'primary'
+        theme: 'black'
+        label: 'Learn more'
+        icon: 'arrow-right'
+      - level: 'primary'
+        theme: 'white'
+        icon: 'play-solid'
+        variant: 'play'
+        title: null
+        video:
+          props:
+            sources:
+              - src: 'video/video-preview.mp4'
+                type: 'video/mp4'
+            originalWidth: 16
+            originalHeight: 9
+            autoplay: true
+            muted: false
+            loop: false
+            controls:
+              playPause: true
+              fullscreen: true
+              seek: true
+          eventTracking:
+            event: 'video_start'
+            video:
+              src: 'video/video-preview.mp4'
+              title: 'A Vision of a New Future: Explainer video'
+              titleInEnglish: 'A Vision of a New Future: Explainer video'

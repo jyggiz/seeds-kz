@@ -1,0 +1,17 @@
+scrollComponent: true
+id: 'c24-filming'
+variant: 'single'
+background:
+  mask:
+    opacity: 0
+  image:
+    src: 'image/filming_pattern@2x.png'
+padding:
+  start: 'large'
+  end: 'large'
+items:
+  - align:
+      horizontal: center
+      vertical: middle
+    type: 'paragraph'
+    content: 'import!../../../molecule/m18-paragraph/data/filming.yaml'

@@ -1,0 +1,55 @@
+itemsGridArea:
+  smallScreen:
+    - 1 / 1 / 2 / 5
+    - 2 / 1 / 3 / 5
+    - 3 / 1 / 4 / 5
+  mediumScreen:
+    - 1 / 1 / 2 / 13
+    - 2 / 1 / 3 / 7
+    - 2 / 7 / 3 / 13
+  largeScreen:
+    - 1 / 1 / 2 / 7
+    - 1 / 7 / 2 / 10
+    - 1 / 10 / 2 / 13
+
+rowGap:
+  smallScreen: 0
+alignments:
+  vertical:
+    - center
+    - center
+    - center
+
+items:
+  - componentName: c118-content-item
+    data:
+      horizontalAlign: center
+      imageMaxWidth: calc(100% / 1.5)
+      content:
+        componentName: m16-figure
+        data:
+          variant: 'circle'
+          image:
+            src: 'image/c24-content/c24-portrait-placeholder.jpg'
+
+  - componentName: c118-content-item
+    data:
+      horizontalAlign: start
+      content:
+        componentName: m18-paragraph
+        data:
+          heading:
+            text: 'volupta repudian<br /> sint et'
+            size: h5
+
+  - componentName: c118-content-item
+    data:
+      horizontalAlign: start
+      content:
+        componentName: m18-paragraph
+        data:
+          copy:
+            content:
+              '<p>By working with the best minds in the industry, utilizing the latest technology
+              and innovations, we are implementing world-class, smart and connected water
+              infrastructures.</p>'

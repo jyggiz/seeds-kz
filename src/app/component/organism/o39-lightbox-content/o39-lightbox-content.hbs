@@ -1,0 +1,58 @@
+
+
+<div class="o-lightboxContent {{#if isExtended}}-isExtended{{/if}}"
+  data-component="o39-lightbox-content"
+  data-index="{{index}}"
+  data-terms="{{ toJson content.termsOfUse}}"
+  {{#if isExtended}}data-is-extended="{{isExtended}}"{{/if}}
+>
+  <div class="o-lightboxContent__main">
+    {{#if isExtended}}
+      <div class="o-lightboxContent__currentImageContainer">
+        {{#each content.items}}
+          <div class="o-lightboxContent__currentImage" data-current-slide>
+            {{#if video}}
+              {{> organism/o01-video video tracking="false" }}
+            {{^}}
+              {{> atom/a01-image lightbox.image disableTransition=true }}
+            {{/if}}
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
+
+    <div class="o-lightboxContent__swiperContainer" data-lightbox-slider>
+      <ul class="o-lightboxContent__swiper swiper-wrapper">
+        {{#each content.items}}
+          {{#if ../isExtended}}
+            <li class="o-lightboxContent__item swiper-slide">
+              <div tabindex="0" role="button" class="o-lightboxContent__thumbnail" data-lightbox-thumbnail>
+                {{> organism/o40-lightbox-item video=(setProperties video 'props.autoplay' false)}}
+              </div>
+            </li>
+          {{else}}
+            <li class="o-lightboxContent__item swiper-slide" data-lightbox-thumbnail>
+              {{> organism/o40-lightbox-item }}
+            </li>
+          {{/if}}
+        {{/each}}
+      </ul>
+      <div class="o-lightboxContent__paginationWrapper">
+        {{> atom/a08-page-indicators items=null }}
+      </div>
+    </div>
+
+    <div class="o-lightboxContent__controls" data-lightbox-controls>
+      <div class="o-lightboxContent__control -prev">
+        <div class="swiper-button-prev">
+          {{> molecule/m02-button theme="white" level="primary" icon="arrow-left" aria=(object label=previousArrowButtonLabel) data=(object lightbox-previous-button=null)}}
+        </div>
+      </div>
+      <div class="o-lightboxContent__control -next">
+        <div class="swiper-button-next">
+          {{> molecule/m02-button theme="white" level="primary" icon="arrow-right" aria=(object label=nextArrowButtonLabel) data=(object lightbox-next-button=null)}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

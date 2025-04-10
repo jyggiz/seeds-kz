@@ -1,0 +1,150 @@
+items:
+  - componentName: o19-update-card
+    data:
+      heading:
+        text: Live in Harmony with Nature
+      variant: social
+      link:
+        href: https://www.instagram.com/p/CHfdnyHgz0L/
+        target: '_blank'
+      authorInfo:
+        writtenBy: 'DISCOVERNEOM'
+        date: 'November 12, 2020'
+      socialMediaIcon: instagram
+      image:
+        alt: 'Image'
+        src: 'image/c16-carousel/discover-neom-1.jpg'
+        sources:
+          - src: 'image/c16-carousel/discover-neom-2.jpg'
+            media: '(min-width: 768px)'
+
+  - componentName: o13-content-card
+    data:
+      thumbnail:
+        aspectRatio: 'square'
+        image:
+          src: './image/c16-carousel/updates_instagram.jpg'
+          alt: null
+      meta:
+        sector: 'Beach'
+        date: 'May 25th 2022'
+      content:
+        heading:
+          text: 'Heading'
+        description:
+          size: 'small'
+          copy:
+            '<p>Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget
+            lacus eget semper.</p>'
+      button:
+        theme: 'dark-gold'
+        level: 'tertiary'
+        icon: 'arrow-right'
+        label: 'Read more'
+        size: 'small'
+      link:
+        href: 'https://twitter.com/'
+        label: 'SEO friendly name'
+        target: '_blank'
+
+  - componentName: o14-popout-card
+    data:
+      image:
+        src: './image/c11-slider/basketball.webp'
+        alt: 'Basketball asset'
+      content:
+        heading:
+          text: 'FIBA 3&times;3<br /> Basketball'
+      button:
+        icon: 'arrow-right'
+        label: 'Read more'
+        theme: 'dark-gold'
+      link:
+        href: '#'
+        target: '_blank'
+
+  - componentName: o18-story-card
+    data:
+      title: Rethinking Water
+      image:
+        src: 'image/c29-stories/stories_episodewater.jpg'
+        alt: Rethinking Water
+      video:
+        props:
+          sources:
+            - src: 'video/video-preview.mp4'
+              type: 'video/mp4'
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: false
+          loop: false
+          controls:
+            playPause: true
+            fullscreen: true
+            seek: true
+  - componentName: o13-content-card
+    data:
+      thumbnail:
+        aspectRatio: 'square'
+        image:
+          src: './image/c16-carousel/updates_instagram.jpg'
+          alt: null
+      meta:
+        sector: 'Beach'
+        date: 'May 25th 2022'
+      content:
+        heading:
+          text: 'Heading'
+        description:
+          size: 'small'
+          copy:
+            '<p>Fusce ultrices luctus elit, ut vehicula diam consequat vitae. Nullam tempus eget
+            lacus eget semper.</p>'
+      button:
+        theme: 'dark-gold'
+        level: 'tertiary'
+        icon: 'arrow-right'
+        label: 'Read more'
+        size: 'small'
+      link:
+        href: 'https://twitter.com/'
+        label: 'SEO friendly name'
+        target: '_blank'
+
+  - componentName: o14-popout-card
+    data:
+      image:
+        src: './image/c11-slider/basketball.webp'
+        alt: 'Basketball asset'
+      content:
+        heading:
+          text: 'FIBA 3&times;3<br /> Basketball'
+      button:
+        icon: 'arrow-right'
+        label: 'Read more'
+        theme: 'dark-gold'
+      link:
+        href: '#'
+        target: '_blank'
+
+  - componentName: o18-story-card
+    data:
+      title: Rethinking Water
+      image:
+        src: 'image/c29-stories/stories_episodewater.jpg'
+        alt: Rethinking Water
+      video:
+        props:
+          sources:
+            - src: 'video/video-preview.mp4'
+              type: 'video/mp4'
+          originalWidth: 16
+          originalHeight: 9
+          autoplay: true
+          muted: false
+          loop: false
+          controls:
+            playPause: true
+            fullscreen: true
+            seek: true

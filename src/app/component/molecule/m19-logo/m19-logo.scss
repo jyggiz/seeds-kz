@@ -1,0 +1,10 @@
+.m-logo {
+  @include size(62px, 80px);
+
+  position: relative;
+  z-index: zindex($zLayout, logo);
+
+  &__link {
+    @include size(100%);
+  }
+}

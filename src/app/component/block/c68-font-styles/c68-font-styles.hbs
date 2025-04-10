@@ -1,0 +1,81 @@
+
+
+
+<section class="b-fontStyles {{#if variant }} -{{variant}}{{/if}}"
+
+         data-component="c68-font-styles"
+         {{#if scrollComponent}}data-scroll-component{{/if}}
+         {{#if id}} id="{{id}}"{{/if}}
+         data-lazy-component>
+  <div class="b-fontStyles__accordionsWrapper" data-accordion-wrapper>
+    <h2 class="b-fontStyles__accordionsHeading">{{ @root.i18n.style }}</h2>
+    {{#each items}}
+    <div class="b-fontStyles__accordion" data-accordion>
+      <div class="b-fontStyles__accordionTitle">
+        <p class="{{#if styleType }} -{{styleType}}{{/if}} b-fontStyles__accordionTitleCopy">{{ style }}</p>
+        {{> molecule/m14-toggle-button variant="accordion"}}
+      </div>
+      <div class="b-fontStyles__accordionBody" data-accordion-body>
+        <div class="b-fontStyles__accordionBodyColumn">
+            <div class="b-fontStyles__accordionBodyCopy s-content">
+              <dt>{{ @root.i18n.font }}</dt>
+              <dd>{{ name }}</dd>
+              <dt>{{ @root.i18n.weight }}</dt>
+              <dd>{{ weight }}</dd>
+              <dt>{{ @root.i18n.size }}</dt>
+              <dd>{{ size }}</dd>
+            </div>
+        </div>
+        <div class="b-fontStyles__accordionBodyColumn">
+            <div class="b-fontStyles__accordionBodyCopy s-content">
+              <dt>{{ @root.i18n.case }}</dt>
+              <dd>{{ case }}</dd>
+              <dt>{{ @root.i18n.spacing }}</dt>
+              <dd>{{ spacing }}</dd>
+              <dt>{{ @root.i18n.lineHeight }}</dt>
+              <dd>{{ lineHeight }}</dd>
+            </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+  <div class="b-fontStyles__tableWrapper" data-table>
+      <table class="b-fontStyles__table">
+        <colgroup>
+          <col class="b-fontStyles__col -style" />
+          <col class="b-fontStyles__col -font" />
+          <col class="b-fontStyles__col -weight" />
+          <col class="b-fontStyles__col -size" />
+          <col class="b-fontStyles__col -case" />
+          <col class="b-fontStyles__col -spacing" />
+          <col class="b-fontStyles__col -lineHeight" />
+        </colgroup>
+        <thead class="b-fontStyles__thead">
+          <tr>
+            <th class="b-fontStyles__cell">{{@root.i18n.style}}</th>
+            <th class="b-fontStyles__cell">{{@root.i18n.font}}</th>
+            <th class="b-fontStyles__cell">{{@root.i18n.weight}}</th>
+            <th class="b-fontStyles__cell">{{@root.i18n.size}}</th>
+            <th class="b-fontStyles__cell">{{@root.i18n.case}}</th>
+            <th class="b-fontStyles__cell -spacing">{{@root.i18n.spacing}}</th>
+            <th class="b-fontStyles__cell -lineHeight">{{@root.i18n.lineHeight}}</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#each items}}
+          <tr>
+            <td class="b-fontStyles__cell{{#if styleType }} -{{styleType}}{{/if}}">{{ style }}</td>
+            <td class="b-fontStyles__cell">{{ name }}</td>
+            <td class="b-fontStyles__cell">{{ weight }}</td>
+            <td class="b-fontStyles__cell">{{ size }}</td>
+            <td class="b-fontStyles__cell">{{ case }}</td>
+            <td class="b-fontStyles__cell -spacing">{{ spacing }}</td>
+            <td class="b-fontStyles__cell -lineHeight">{{ lineHeight }}</td>
+          </tr>
+        {{/each}}
+        </tbody>
+      </table>
+  </div>
+</section>

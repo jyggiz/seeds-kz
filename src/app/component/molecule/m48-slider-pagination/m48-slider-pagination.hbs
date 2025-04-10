@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="./m48-slider-pagination.scss">
+<script src="./M48SliderPagination.ts"></script>
+
+<div class="m-sliderPagination{{#with variant}} -{{this}}{{/with}}"
+     data-component="m48-slider-pagination"
+     {{#if autoplay}}data-autoplay="true"{{/if}}>
+  <ul class="m-sliderPagination__timedPagination {{#if isSlider}}swiper-wrapper{{/if}}">
+    {{#each items}}
+      <li class="m-sliderPagination__paginationBar {{#if ../isSlider}}swiper-slide{{/if}}" data-pagination-bar>
+        <span class="m-sliderPagination__paginationBarInner" data-pagination-bar-inner></span>
+        {{#with eyebrow}}
+          <div class="m-sliderPagination__title" data-pagination-title>
+            {{> atom/a04-eyebrow text=text size="medium" }}
+          </div>
+        {{/with}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
