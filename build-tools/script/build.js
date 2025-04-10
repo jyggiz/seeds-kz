@@ -4,6 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 const chokidar = require('chokidar');
 const clientLib = require('./clientlib');
+const fs = require('fs-extra');
 
 const { createTaskSpinner } = require('./util/spinner');
 const {
@@ -166,5 +167,9 @@ function buildAll() {
 
   buildCode()
     .then(() => buildHTML({ cleanPartials: true }))
-    .then(handleBuildComplete);
+    .then(handleBuildComplete)
+    .then(() => {
+      fs.mkdirSync(path.dirname(config.buildPath), { recursive: true });
+      fs.copyFileSync(`${config.staticPath}/favicon.ico`, `${config.buildPath}/favicon.ico`);
+    });
 }

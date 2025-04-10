@@ -124,13 +124,21 @@ function renderPage(template, content, page, outputPath, data) {
   // make it pretty
   const html = beautifyHtml(templateStandaloneResult, { indent_size: 2 });
 
+  const isKz = page.includes('kz')
+  const pageName = page.replace(/-kz/g, "")
   // output to disk
   return new Promise((resolve, reject) => {
-    fs.writeFile(path.resolve(outputPath, `${page}.html`), html, 'utf-8', (err, res) => {
+    const finalOutputPath = isKz ? path.join(outputPath, 'kz') : outputPath;
+
+    fs.mkdirSync(finalOutputPath, { recursive: true });
+
+    const fullPath = path.join(finalOutputPath, `${pageName}.html`);
+
+    fs.writeFile(fullPath, html, 'utf-8', (err) => {
       if (err) {
         reject(err);
       } else {
-        resolve(res);
+        resolve(fullPath);
       }
     });
   });

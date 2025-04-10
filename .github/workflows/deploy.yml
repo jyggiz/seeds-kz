@@ -19,7 +19,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn
 
       - name: Build project
         run: yarn build
@@ -34,6 +34,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist                  # change if your build folder is different
+          local-dir: ./dist/site                  # change if your build folder is different
           server-dir: ${{ secrets.FTP_TARGET_DIR }}
           delete: false                      # keeps existing remote files

@@ -1,135 +1,126 @@
 scrollComponent: true
-
 filter:
   title:
-    text: 'Қауымдастық мүшелері'
+    text: Қауымдастық мүшелері
     size: h4
-  filterApiUrl: '/bin/api/newsroom/gallery?componentResourcePath=/content/neom/en-us/newsroom/gallery/jcr:content/root/responsivegrid/c46_media_list&' # Not disclosed for authors
-  devEnvironmentUrl: 'https://dev.neom.com' # Not disclosed for authors
   secondary:
     items:
-      - label: 'Орналасқан жері'
+      - label: Орналасқан жері
         value: location
         items:
-          - label: 'Ақмола облысы'
+          - label: Ақмола облысы
             value: akmoly
-          - label: 'Ақтөбе облысы'
+          - label: Ақтөбе облысы
             value: aktobe
-          - label: 'Алматы облысы'
+          - label: Алматы облысы
             value: almaty
-          - label: 'Атырау облысы'
+          - label: Атырау облысы
             value: atyrau
-          - label: 'Шығыс Қазақстан облысы'
+          - label: Шығыс Қазақстан облысы
             value: vko
-          - label: 'Жамбыл облысы'
+          - label: Жамбыл облысы
             value: zhambyl
-          - label: 'Қарағанды облысы'
+          - label: Қарағанды облысы
             value: karaganda
-          - label: 'Қостанай облысы'
+          - label: Қостанай облысы
             value: kostanay
-          - label: 'Қызылорда облысы'
+          - label: Қызылорда облысы
             value: kyzylorda
-          - label: 'Солтүстік Қазақстан облысы'
+          - label: Солтүстік Қазақстан облысы
             value: sko
-          - label: 'Павлодар облысы'
+          - label: Павлодар облысы
             value: pavlodar
-          - label: 'Түркістан облысы'
+          - label: Түркістан облысы
             value: turkestan
-          - label: 'Батыс Қазақстан облысы'
+          - label: Батыс Қазақстан облысы
             value: zko
-          - label: 'Маңғыстау облысы'
+          - label: Маңғыстау облысы
             value: mangystau
-          - label: 'Шетелдік'
+          - label: Шетелдік
             value: abroad
-
-apiUrl: '/bin/api/assets/download'
-
-eventTracking:
-  event: 'Download'
-  eventAction: 'Download - ZIP'
-  eventCategory: 'Download'
-
 content:
   items:
     - heading: «EVS Group» ЖШС
-      tag: 'akmoly'
+      tag: akmoly
       image:
-        src: '/image/c46-media-list/evs-group.png'
-      description: '<p>Астана қ.</p>'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_Zum3dAxsiBwfBs_evs-group.png?auto=format,compress
+      description: <p>Астана қ.</p>
     - heading: «Ақмола-Феникс» АҚ
+      tag: akmoly
       image:
-        src: '/image/c46-media-list/1.jpg'
-      tag: 'akmoly'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZulXdAxsiBwfBl_1.jpg?auto=format,compress
       description: '<p>Целиноград ауданы, Ақмол ауылы</p>'
-
     - heading: «Құмқұдық» ЖШС
+      tag: aktobe
       image:
-        src: '/image/c46-media-list/2.jpg'
-      tag: 'aktobe'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZulXdAxsiBwfBm_2.jpg?auto=format,compress
       description: '<p>Әйтеке би ауданы, Құмкұдық с. </p>'
-
     - heading: «Опытное хозяйство масличных культур» ЖШС
+      tag: vko
       image:
-        src: '/image/c46-media-list/too-ohmc.webp'
-      tag: 'vko'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZuoXdAxsiBwfBy_too-ohmc.webp?auto=format,compress
       description: '<p>Глубокое ауданы, С. Солнечный</p>'
-
     - heading: «Астана-Бизнес» ЖШС
+      tag: vko
       image:
-        src: '/image/c46-media-list/too-astana-business.webp'
-      tag: 'vko'
-      description: '<p>Өскемен Қ.</p>'
-
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_Zun3dAxsiBwfBw_too-astana-business.webp?auto=format,compress
+      description: <p>Өскемен Қ.</p>
     - heading: «Милейко» ЖШС
+      tag: vko
       image:
-        src: '/image/c46-media-list/3.jpg'
-      tag: 'vko'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZulndAxsiBwfBn_3.jpg?auto=format,compress
       description: '<p>Глубокое ауданы, Винное ауылы</p>'
-
     - heading: «ТАЛДЫ- ЕКПІН» ЖШС
+      tag: vko
       image:
-        src: '/image/c46-media-list/7.jpg'
-      tag: 'vko'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZumndAxsiBwfBr_7.jpeg?auto=format,compress
       description: '<p>Сакмар ауданы, Самар ауылы</p>'
-
     - heading: «SBA-Agro Group» ЖШС
+      tag: vko
       image:
-        src: '/image/c46-media-list/sba-group.webp'
-      tag: 'vko'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZunHdAxsiBwfBt_sba-group.webp?auto=format,compress
       description: '<p>Глубокое ауданы, Секисовка ауылы</p>'
-
     - heading: «Найдоровское» ЖШС
+      tag: karaganda
       image:
-        src: '/image/c46-media-list/too-neudorf.webp'
-      tag: 'karaganda'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZuoHdAxsiBwfBx_too-neudorf.webp?auto=format,compress
       description: '<p>Осакаров ауданы, Ақпан ауылы</p>'
-
     - heading: «Trade Company Akseleu» ЖШС
+      tag: kostanay
       image:
-        src: '/image/c46-media-list/6.jpg'
-      tag: 'kostanay'
-      description: '<p>Қостанай қ.</p>'
-
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZumXdAxsiBwfBq_6.jpg?auto=format,compress
+      description: <p>Қостанай қ.</p>
     - heading: «Галицкое» ЖШС
+      tag: pavlodar
       image:
-        src: '/image/c46-media-list/5.jpg'
-      tag: 'pavlodar'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZumHdAxsiBwfBp_5.jpg?auto=format,compress
       description: '<p>Успен ауданы, Галицкое ауылы</p>'
-
     - heading: «ТҰҚЫМ» ЖШС
+      tag: sko
       image:
-        src: '/image/c46-media-list/4.jpg'
-      tag: 'sko'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_Zul3dAxsiBwfBo_4.jpg?auto=format,compress
       description: '<p>Аудан.Ғабит Мүсірепов, Рузаевка ауылы</p>'
-
     - heading: «АгроСервис-Батыс» ЖШС
+      tag: zko
       image:
-        src: '/image/c46-media-list/too-agro-service-batys.webp'
-      tag: 'zko'
-      description: '<p>Бәйтерек Ауданы</p>'
-
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZunndAxsiBwfBv_too-agro-service-batys.webp?auto=format,compress
+      description: <p>Бәйтерек Ауданы</p>
     - heading: SECOBRA RECHERCHES
+      tag: abroad
       image:
-        src: '/image/c46-media-list/secobra-recherches.webp'
-      tag: 'abroad'
+        src: >-
+          https://images.prismic.io/seeds-kz/Z_ZunXdAxsiBwfBu_secobra-recherches.webp?auto=format,compress
       description: '<p>Франция, Мауле қ.</p>'
